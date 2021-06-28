@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ArborText, Inc., 1988-2002, v.4002-->
+<!DOCTYPE DocumentTypeConfiguration PUBLIC "-//Arbortext//DTD Document Type Configuration 2.0//EN"
+ "dcfdtd.dtd">
+<DocumentTypeConfiguration>
+<Options allowApplicationToolbar="no" allowComposeStylesheetList="no" allowFosiMod="yes"
+allowTouchup="no" defaultExtension="alias" protected="no" burstSpecWarning="no"/>
+<ElementOptions>
+<ElementOption element="section" category="division"/>
+<ElementOption element="division" category="division"/>
+<ElementOption element="glossary" category="division"/>
+<ElementOption element="term.and.definitions" category="division"/>
+<ElementOption element="definitions" category="division"/>
+<ElementOption element="note" category="division"/>
+<ElementOption element="figure" category="division"/>
+<ElementOption element="title" category="title"/>
+<ElementOption element="designator" category="title"/>
+<ElementOption allowCharacterSubstitution="no" element="example"/>
+</ElementOptions>
+</DocumentTypeConfiguration>

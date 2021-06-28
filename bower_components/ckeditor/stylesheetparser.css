@@ -1,0 +1,27 @@
+body
+{
+font-family: Arial, Verdana, sans-serif;
+font-size: 12px;
+color: #222;
+background-color: #fff;
+}
+div.case_metadata {  background-color:#2fbbff;border-style:solid; border-color:#2fbbff; color: #000000;}
+div.opinion_body {  background-color:#ff80c0;border-style:solid; border-color:#ff80c0; color: #000000;}
+div.case_title {  background-color:#804040;border-style:solid; border-color:#804040; color: #ffffff;}
+span.court { background-color:#400040; color: #ffffff;}
+span.docket_number { background-color:#004080; color: #ffffff;}
+span.date { background-color:#ff8080; color: #000000;}
+span.appeal { background-color:#ffff80; color: #000000;}
+span.judge_name { background-color:#80ffff; color: #000000;}
+span.counsel { background-color:#400080; color: #ffffff;}
+span.title_cite { background-color:#a80054; color: #ffffff;}
+span.footnote_reference { background-color:#8080ff; color: #000000;}
+div.footnote_text {  background-color:#8080c0;border-style:solid; border-color:#8080c0; color: #ffffff;}
+span.party_name { background-color:#313131; color: #ffffff;}
+span.versus { background-color:#0080c0; color: #ffffff;}
+span.head { background-color:#daffc4; color: #000000;}
+div.mso-element:footnote-list {  background-color:#a91864;border-style:solid; border-color:#a91864; color: #fdfdfd;}
+span.above95 { background-color:#c1ffc1; color: #000000;}
+span.above80 { background-color:#ff9da7; color: #000000;}
+span.below79 { background-color:#ff8040; color: #000000;}
+span.ATC { text-decoration: underline;text-decoration-color: red; text-decoration-style: wavy;}

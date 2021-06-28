@@ -1,0 +1,871 @@
+Search string                    Error Message
+=============================================================================
+`                                E / Unconverted character [`]
+~                                E / Unconverted character [~]
+€                                E / Unconverted character [€]
+‚                                E / Unconverted character [‚]
+ƒ                                E / Unconverted character [ƒ]
+„                                E / Unconverted character [„]
+…                                E / Unconverted character […]
+†                                E / Unconverted character [†]
+‡                                E / Unconverted character [‡]
+ˆ                                E / Unconverted character [ˆ]
+‰                                E / Unconverted character [‰]
+Š                                E / Unconverted character [Š]
+‹                                E / Unconverted character [‹]
+Œ                                E / Unconverted character [Œ]
+Ž                                E / Unconverted character [Ž]
+‘                                E / Unconverted character [‘]
+’                                E / Unconverted character [’]
+“                                E / Unconverted character [“]
+”                                E / Unconverted character [”]
+•                                E / Unconverted character [•]
+–                                E / Unconverted character [–]
+—                                E / Unconverted character [—]
+˜                                E / Unconverted character [˜]
+™                                E / Unconverted character [™]
+š                                E / Unconverted character [š]
+›                                E / Unconverted character [›]
+œ                                E / Unconverted character [œ]
+ž                                E / Unconverted character [ž]
+Ÿ                                E / Unconverted character [Ÿ]
+                                 E / Unconverted character [ALT+255]
+¡                                E / Unconverted character [¡]
+¢                                E / Unconverted character [¢]
+£                                E / Unconverted character [£]
+¤                                E / Unconverted character [¤]
+¥                                E / Unconverted character [¥]
+¦                                E / Unconverted character [¦]
+§                                E / Unconverted character [§]
+¨                                E / Unconverted character [¨]
+©                                E / Unconverted character [©]
+ª                                E / Unconverted character [ª]
+¬                                E / Unconverted character [¬]
+­                                E / Unconverted character [­]
+®                                E / Unconverted character [®]
+¯                                E / Unconverted character [¯]
+°                                E / Unconverted character [°]
+±                                E / Unconverted character [±]
+²                                E / Unconverted character [²]
+³                                E / Unconverted character [³]
+´                                E / Unconverted character [´]
+µ                                E / Unconverted character [µ]
+¶                                E / Unconverted character [¶]
+·                                E / Unconverted character [·]
+¸                                E / Unconverted character [¸]
+¹                                E / Unconverted character [¹]
+º                                E / Unconverted character [º]
+¼                                E / Unconverted character [¼]
+½                                E / Unconverted character [½]
+¾                                E / Unconverted character [¾]
+¿                                E / Unconverted character [¿]
+À                                E / Unconverted character [À]
+Á                                E / Unconverted character [Á]
+Â                                E / Unconverted character [Â]
+Ã                                E / Unconverted character [Ã]
+Ä                                E / Unconverted character [Ä]
+Å                                E / Unconverted character [Å]
+Æ                                E / Unconverted character [Æ]
+Ç                                E / Unconverted character [Ç]
+È                                E / Unconverted character [È]
+É                                E / Unconverted character [É]
+Ê                                E / Unconverted character [Ê]
+Ë                                E / Unconverted character [Ë]
+Ì                                E / Unconverted character [Ì]
+Í                                E / Unconverted character [Í]
+Î                                E / Unconverted character [Î]
+Ï                                E / Unconverted character [Ï]
+Ð                                E / Unconverted character [Ð]
+Ñ                                E / Unconverted character [Ñ]
+Ò                                E / Unconverted character [Ò]
+Ó                                E / Unconverted character [Ó]
+Ô                                E / Unconverted character [Ô]
+Õ                                E / Unconverted character [Õ]
+Ö                                E / Unconverted character [Ö]
+×                                E / Unconverted character [×]
+Ø                                E / Unconverted character [Ø]
+Ù                                E / Unconverted character [Ù]
+Ú                                E / Unconverted character [Ú]
+Û                                E / Unconverted character [Û]
+Ü                                E / Unconverted character [Ü]
+Ý                                E / Unconverted character [Ý]
+Þ                                E / Unconverted character [Þ]
+ß                                E / Unconverted character [ß]
+à                                E / Unconverted character [à]
+á                                E / Unconverted character [á]
+â                                E / Unconverted character [â]
+ã                                E / Unconverted character [ã]
+ä                                E / Unconverted character [ä]
+å                                E / Unconverted character [å]
+æ                                E / Unconverted character [æ]
+ç                                E / Unconverted character [ç]
+è                                E / Unconverted character [è]
+é                                E / Unconverted character [é]
+ê                                E / Unconverted character [ê]
+ë                                E / Unconverted character [ë]
+ì                                E / Unconverted character [ì]
+í                                E / Unconverted character [í]
+î                                E / Unconverted character [î]
+ï                                E / Unconverted character [ï]
+ð                                E / Unconverted character [ð]
+ñ                                E / Unconverted character [ñ]
+ò                                E / Unconverted character [ò]
+ó                                E / Unconverted character [ó]
+ô                                E / Unconverted character [ô]
+õ                                E / Unconverted character [õ]
+ö                                E / Unconverted character [ö]
+÷                                E / Unconverted character [÷]
+ø                                E / Unconverted character [ø]
+ù                                E / Unconverted character [ù]
+ú                                E / Unconverted character [ú]
+û                                E / Unconverted character [û]
+ü                                E / Unconverted character [ü]
+ý                                E / Unconverted character [ý]
+þ                                E / Unconverted character [þ]
+ÿ                                E / Unconverted character [ÿ]
+À                                E / Unconverted character [À]
+¶                                E / Unconverted character [¶]
+§                                E / Unconverted character [§]
+&<space>                         E / Unconverted character [&<space>]
+<<space>                         E / Unconverted character [<<space>]
+<space>>                         E / Unconverted character [<space>>]
+`                                E / Unconverted character [`]
+¦                                E / Unconverted character [¦]
+Ç                                E / Unconverted character [Ç]
+ü                                E / Unconverted character [ü]
+é                                E / Unconverted character [é]
+â                                E / Unconverted character [â]
+ä                                E / Unconverted character [ä]
+à                                E / Unconverted character [à]
+å                                E / Unconverted character [å]
+ç                                E / Unconverted character [ç]
+ê                                E / Unconverted character [ê]
+ë                                E / Unconverted character [ë]
+è                                E / Unconverted character [è]
+ï                                E / Unconverted character [ï]
+î                                E / Unconverted character [î]
+ì                                E / Unconverted character [ì]
+Ä                                E / Unconverted character [Ä]
+Ä                                E / Unconverted character [Ä]
+É                                E / Unconverted character [É]
+æ                                E / Unconverted character [æ]
+Æ                                E / Unconverted character [Æ]
+ô                                E / Unconverted character [ô]
+ö                                E / Unconverted character [ö]
+ò                                E / Unconverted character [ò]
+û                                E / Unconverted character [û]
+ù                                E / Unconverted character [ù]
+ÿ                                E / Unconverted character [ÿ]
+Ö                                E / Unconverted character [Ö]
+Ü                                E / Unconverted character [Ü]
+¢                                E / Unconverted character [¢]
+£                                E / Unconverted character [£]
+¥                                E / Unconverted character [¥]
+á                                E / Unconverted character [á]
+í                                E / Unconverted character [í]
+ó                                E / Unconverted character [ó]
+ú                                E / Unconverted character [ú]
+ñ                                E / Unconverted character [ñ]
+Ñ                                E / Unconverted character [Ñ]
+ª                                E / Unconverted character [ª]
+ª                                E / Unconverted character [ª]
+¿                                E / Unconverted character [¿]
+¬                                E / Unconverted character [¬]
+½                                E / Unconverted character [½]
+¼                                E / Unconverted character [¼]
+¡                                E / Unconverted character [¡]
+¯                                E / Unconverted character [¯]
+ß                                E / Unconverted character [ß]
+µ                                E / Unconverted character [µ]
+±                                E / Unconverted character [±]
+÷                                E / Unconverted character [÷]
+°                                E / Unconverted character [°]
+·                                E / Unconverted character [·]
+²                                E / Unconverted character [²]
+	                         E / Unconverted tab [09]
+a<space><hrt>                    E / SPACE + HRT found! Please verify.
+b<space><hrt>                    E / SPACE + HRT found! Please verify.
+c<space><hrt>                    E / SPACE + HRT found! Please verify.
+d<space><hrt>                    E / SPACE + HRT found! Please verify.
+e<space><hrt>                    E / SPACE + HRT found! Please verify.
+f<space><hrt>                    E / SPACE + HRT found! Please verify.
+g<space><hrt>                    E / SPACE + HRT found! Please verify.
+h<space><hrt>                    E / SPACE + HRT found! Please verify.
+i<space><hrt>                    E / SPACE + HRT found! Please verify.
+j<space><hrt>                    E / SPACE + HRT found! Please verify.
+k<space><hrt>                    E / SPACE + HRT found! Please verify.
+l<space><hrt>                    E / SPACE + HRT found! Please verify.
+m<space><hrt>                    E / SPACE + HRT found! Please verify.
+n<space><hrt>                    E / SPACE + HRT found! Please verify.
+o<space><hrt>                    E / SPACE + HRT found! Please verify.
+p<space><hrt>                    E / SPACE + HRT found! Please verify.
+q<space><hrt>                    E / SPACE + HRT found! Please verify.
+r<space><hrt>                    E / SPACE + HRT found! Please verify.
+s<space><hrt>                    E / SPACE + HRT found! Please verify.
+t<space><hrt>                    E / SPACE + HRT found! Please verify.
+u<space><hrt>                    E / SPACE + HRT found! Please verify.
+v<space><hrt>                    E / SPACE + HRT found! Please verify.
+w<space><hrt>                    E / SPACE + HRT found! Please verify.
+x<space><hrt>                    E / SPACE + HRT found! Please verify.
+y<space><hrt>                    E / SPACE + HRT found! Please verify.
+z<space><hrt>                    E / SPACE + HRT found! Please verify.
+.<space><hrt>                    E / SPACE + HRT found! Please verify.
+;<space><hrt>                    E / SPACE + HRT found! Please verify.
+'<space><hrt>                    E / SPACE + HRT found! Please verify.
+"<space><hrt>                    E / SPACE + HRT found! Please verify.
+?<space><hrt>                    E / SPACE + HRT found! Please verify.
+,<space><hrt>                    E / SPACE + HRT found! Please verify.
+!<space><hrt>                    E / SPACE + HRT found! Please verify.
+%<space><hrt>                    E / SPACE + HRT found! Please verify.
+*<space><hrt>                    E / SPACE + HRT found! Please verify.
+(<space><hrt>                    E / SPACE + HRT found! Please verify.
+)<space><hrt>                    E / SPACE + HRT found! Please verify.
+-<space><hrt>                    E / SPACE + HRT found! Please verify.
++<space><hrt>                    E / SPACE + HRT found! Please verify.
+\<space><hrt>                    E / SPACE + HRT found! Please verify.
+1<space><hrt>                    E / SPACE + HRT found! Please verify.
+2<space><hrt>                    E / SPACE + HRT found! Please verify.
+3<space><hrt>                    E / SPACE + HRT found! Please verify.
+4<space><hrt>                    E / SPACE + HRT found! Please verify.
+5<space><hrt>                    E / SPACE + HRT found! Please verify.
+6<space><hrt>                    E / SPACE + HRT found! Please verify.
+7<space><hrt>                    E / SPACE + HRT found! Please verify.
+8<space><hrt>                    E / SPACE + HRT found! Please verify.
+9<space><hrt>                    E / SPACE + HRT found! Please verify.
+0<space><hrt>                    E / SPACE + HRT found! Please verify.
+A<space><hrt>                    E / SPACE + HRT found! Please verify.
+B<space><hrt>                    E / SPACE + HRT found! Please verify.
+C<space><hrt>                    E / SPACE + HRT found! Please verify.
+D<space><hrt>                    E / SPACE + HRT found! Please verify.
+E<space><hrt>                    E / SPACE + HRT found! Please verify.
+F<space><hrt>                    E / SPACE + HRT found! Please verify.
+G<space><hrt>                    E / SPACE + HRT found! Please verify.
+H<space><hrt>                    E / SPACE + HRT found! Please verify.
+I<space><hrt>                    E / SPACE + HRT found! Please verify.
+J<space><hrt>                    E / SPACE + HRT found! Please verify.
+K<space><hrt>                    E / SPACE + HRT found! Please verify.
+L<space><hrt>                    E / SPACE + HRT found! Please verify.
+M<space><hrt>                    E / SPACE + HRT found! Please verify.
+N<space><hrt>                    E / SPACE + HRT found! Please verify.
+O<space><hrt>                    E / SPACE + HRT found! Please verify.
+P<space><hrt>                    E / SPACE + HRT found! Please verify.
+Q<space><hrt>                    E / SPACE + HRT found! Please verify.
+R<space><hrt>                    E / SPACE + HRT found! Please verify.
+S<space><hrt>                    E / SPACE + HRT found! Please verify.
+T<space><hrt>                    E / SPACE + HRT found! Please verify.
+U<space><hrt>                    E / SPACE + HRT found! Please verify.
+V<space><hrt>                    E / SPACE + HRT found! Please verify.
+W<space><hrt>                    E / SPACE + HRT found! Please verify.
+X<space><hrt>                    E / SPACE + HRT found! Please verify.
+Y<space><hrt>                    E / SPACE + HRT found! Please verify.
+Z<space><hrt>                    E / SPACE + HRT found! Please verify.
+<space><hrt>                     E / SPACE + HRT found! Please verify.
+&amp;cacute;                     E / Do not convert ampersand on conversion
+&amp;itilde;                     E / Do not convert ampersand on conversion
+&amp;Lstrok;                     E / Do not convert ampersand on conversion
+&amp;nacute;                     E / Do not convert ampersand on conversion
+&amp;Sacute;                     E / Do not convert ampersand on conversion
+&amp;sacute;                     E / Do not convert ampersand on conversion
+&amp;Agrave;                     E / Do not convert ampersand on conversion
+&amp;Aacute;                     E / Do not convert ampersand on conversion
+&amp;Acirc;                      E / Do not convert ampersand on conversion
+&amp;Atilde;                     E / Do not convert ampersand on conversion
+&amp;Auml;                       E / Do not convert ampersand on conversion
+&amp;Aring;                      E / Do not convert ampersand on conversion
+&amp;AElig;                      E / Do not convert ampersand on conversion
+&amp;Ccedil;                     E / Do not convert ampersand on conversion
+&amp;Egrave;                     E / Do not convert ampersand on conversion
+&amp;Eacute;                     E / Do not convert ampersand on conversion
+&amp;Ecirc;                      E / Do not convert ampersand on conversion
+&amp;Euml;                       E / Do not convert ampersand on conversion
+&amp;Igrave;                     E / Do not convert ampersand on conversion
+&amp;Iacute;                     E / Do not convert ampersand on conversion
+&amp;Icirc;                      E / Do not convert ampersand on conversion
+&amp;Iuml;                       E / Do not convert ampersand on conversion
+&amp;ETH;                        E / Do not convert ampersand on conversion
+&amp;Ntilde;                     E / Do not convert ampersand on conversion
+&amp;Ograve;                     E / Do not convert ampersand on conversion
+&amp;Oacute;                     E / Do not convert ampersand on conversion
+&amp;Ocirc;                      E / Do not convert ampersand on conversion
+&amp;Otilde;                     E / Do not convert ampersand on conversion
+&amp;Ouml;                       E / Do not convert ampersand on conversion
+&amp;Oslash;                     E / Do not convert ampersand on conversion
+&amp;Ugrave;                     E / Do not convert ampersand on conversion
+&amp;Uacute;                     E / Do not convert ampersand on conversion
+&amp;Ucirc;                      E / Do not convert ampersand on conversion
+&amp;Uuml;                       E / Do not convert ampersand on conversion
+&amp;Yacute;                     E / Do not convert ampersand on conversion
+&amp;THORN;                      E / Do not convert ampersand on conversion
+&amp;szlig;                      E / Do not convert ampersand on conversion
+&amp;agrave;                     E / Do not convert ampersand on conversion
+&amp;aacute;                     E / Do not convert ampersand on conversion
+&amp;acirc;                      E / Do not convert ampersand on conversion
+&amp;atilde;                     E / Do not convert ampersand on conversion
+&amp;auml;                       E / Do not convert ampersand on conversion
+&amp;aring;                      E / Do not convert ampersand on conversion
+&amp;aelig;                      E / Do not convert ampersand on conversion
+&amp;ccedil;                     E / Do not convert ampersand on conversion
+&amp;egrave;                     E / Do not convert ampersand on conversion
+&amp;eacute;                     E / Do not convert ampersand on conversion
+&amp;ecirc;                      E / Do not convert ampersand on conversion
+&amp;euml;                       E / Do not convert ampersand on conversion
+&amp;igrave;                     E / Do not convert ampersand on conversion
+&amp;iacute;                     E / Do not convert ampersand on conversion
+&amp;icirc;                      E / Do not convert ampersand on conversion
+&amp;iuml;                       E / Do not convert ampersand on conversion
+&amp;eth;                        E / Do not convert ampersand on conversion
+&amp;ntilde;                     E / Do not convert ampersand on conversion
+&amp;ograve;                     E / Do not convert ampersand on conversion
+&amp;oacute;                     E / Do not convert ampersand on conversion
+&amp;ocirc;                      E / Do not convert ampersand on conversion
+&amp;otilde;                     E / Do not convert ampersand on conversion
+&amp;ouml;                       E / Do not convert ampersand on conversion
+&amp;oslash;                     E / Do not convert ampersand on conversion
+&amp;ugrave;                     E / Do not convert ampersand on conversion
+&amp;uacute;                     E / Do not convert ampersand on conversion
+&amp;ucirc;                      E / Do not convert ampersand on conversion
+&amp;uuml;                       E / Do not convert ampersand on conversion
+&amp;yacute;                     E / Do not convert ampersand on conversion
+&amp;thorn;                      E / Do not convert ampersand on conversion
+&amp;yuml;                       E / Do not convert ampersand on conversion
+&amp;sacute;                     E / Do not convert ampersand on conversion
+&amp;Sacute;                     E / Do not convert ampersand on conversion
+&amp;nacute;                     E / Do not convert ampersand on conversion
+&amp;cacute;                     E / Do not convert ampersand on conversion
+&amp;Lstrok;                     E / Do not convert ampersand on conversion
+&amp;abreve;                     E / Do not convert ampersand on conversion
+&amp;Abreve;                     E / Do not convert ampersand on conversion
+&amp;amacr;                      E / Do not convert ampersand on conversion
+&amp;Amacr;                      E / Do not convert ampersand on conversion
+&amp;aogon;                      E / Do not convert ampersand on conversion
+&amp;Aogon;                      E / Do not convert ampersand on conversion
+&amp;Cacute;                     E / Do not convert ampersand on conversion
+&amp;ccaron;                     E / Do not convert ampersand on conversion
+&amp;Ccaron;                     E / Do not convert ampersand on conversion
+&amp;ccirc;                      E / Do not convert ampersand on conversion
+&amp;Ccirc;                      E / Do not convert ampersand on conversion
+&amp;cdot;                       E / Do not convert ampersand on conversion
+&amp;Cdot;                       E / Do not convert ampersand on conversion
+&amp;dcaron;                     E / Do not convert ampersand on conversion
+&amp;Dcaron;                     E / Do not convert ampersand on conversion
+&amp;dstrok;                     E / Do not convert ampersand on conversion
+&amp;Dstrok;                     E / Do not convert ampersand on conversion
+&amp;ecaron;                     E / Do not convert ampersand on conversion
+&amp;Ecaron;                     E / Do not convert ampersand on conversion
+&amp;edot;                       E / Do not convert ampersand on conversion
+&amp;Edot;                       E / Do not convert ampersand on conversion
+&amp;emacr;                      E / Do not convert ampersand on conversion
+&amp;Emacr;                      E / Do not convert ampersand on conversion
+&amp;eogon;                      E / Do not convert ampersand on conversion
+&amp;Eogon;                      E / Do not convert ampersand on conversion
+&amp;etilde;                     E / Do not convert ampersand on conversion
+&amp;gacute;                     E / Do not convert ampersand on conversion
+&amp;gbreve;                     E / Do not convert ampersand on conversion
+&amp;Gbreve;                     E / Do not convert ampersand on conversion
+&amp;Gcedil;                     E / Do not convert ampersand on conversion
+&amp;gcirc;                      E / Do not convert ampersand on conversion
+&amp;Gcirc;                      E / Do not convert ampersand on conversion
+&amp;gdot;                       E / Do not convert ampersand on conversion
+&amp;Gdot;                       E / Do not convert ampersand on conversion
+&amp;hcirc;                      E / Do not convert ampersand on conversion
+&amp;Hcirc;                      E / Do not convert ampersand on conversion
+&amp;hstrok;                     E / Do not convert ampersand on conversion
+&amp;Hstrok;                     E / Do not convert ampersand on conversion
+&amp;Idot;                       E / Do not convert ampersand on conversion
+&amp;Imacr;                      E / Do not convert ampersand on conversion
+&amp;imacr;                      E / Do not convert ampersand on conversion
+&amp;ijlig;                      E / Do not convert ampersand on conversion
+&amp;IJlig;                      E / Do not convert ampersand on conversion
+&amp;inodot;                     E / Do not convert ampersand on conversion
+&amp;iogon;                      E / Do not convert ampersand on conversion
+&amp;Iogon;                      E / Do not convert ampersand on conversion
+&amp;Itilde;                     E / Do not convert ampersand on conversion
+&amp;jcirc;                      E / Do not convert ampersand on conversion
+&amp;Jcirc;                      E / Do not convert ampersand on conversion
+&amp;kcedil;                     E / Do not convert ampersand on conversion
+&amp;Kcedil;                     E / Do not convert ampersand on conversion
+&amp;kgreen;                     E / Do not convert ampersand on conversion
+&amp;lacute;                     E / Do not convert ampersand on conversion
+&amp;Lacute;                     E / Do not convert ampersand on conversion
+&amp;lcaron;                     E / Do not convert ampersand on conversion
+&amp;Lcaron;                     E / Do not convert ampersand on conversion
+&amp;lcedil;                     E / Do not convert ampersand on conversion
+&amp;Lcedil;                     E / Do not convert ampersand on conversion
+&amp;lmidot;                     E / Do not convert ampersand on conversion
+&amp;Lmidot;                     E / Do not convert ampersand on conversion
+&amp;lstrok;                     E / Do not convert ampersand on conversion
+&amp;Nacute;                     E / Do not convert ampersand on conversion
+&amp;eng;                        E / Do not convert ampersand on conversion
+&amp;ENG;                        E / Do not convert ampersand on conversion
+&amp;napos;                      E / Do not convert ampersand on conversion
+&amp;ncaron;                     E / Do not convert ampersand on conversion
+&amp;Ncaron;                     E / Do not convert ampersand on conversion
+&amp;ncedil;                     E / Do not convert ampersand on conversion
+&amp;Ncedil;                     E / Do not convert ampersand on conversion
+&amp;odblac;                     E / Do not convert ampersand on conversion
+&amp;Odblac;                     E / Do not convert ampersand on conversion
+&amp;Omacr;                      E / Do not convert ampersand on conversion
+&amp;omacr;                      E / Do not convert ampersand on conversion
+&amp;ocaron;                     E / Do not convert ampersand on conversion
+&amp;oelig;                      E / Do not convert ampersand on conversion
+&amp;OElig;                      E / Do not convert ampersand on conversion
+&amp;racute;                     E / Do not convert ampersand on conversion
+&amp;Racute;                     E / Do not convert ampersand on conversion
+&amp;rcaron;                     E / Do not convert ampersand on conversion
+&amp;Rcaron;                     E / Do not convert ampersand on conversion
+&amp;rcedil;                     E / Do not convert ampersand on conversion
+&amp;Rcedil;                     E / Do not convert ampersand on conversion
+&amp;scaron;                     E / Do not convert ampersand on conversion
+&amp;Scaron;                     E / Do not convert ampersand on conversion
+&amp;scedil;                     E / Do not convert ampersand on conversion
+&amp;Scedil;                     E / Do not convert ampersand on conversion
+&amp;scirc;                      E / Do not convert ampersand on conversion
+&amp;Scirc;                      E / Do not convert ampersand on conversion
+&amp;tcaron;                     E / Do not convert ampersand on conversion
+&amp;Tcaron;                     E / Do not convert ampersand on conversion
+&amp;tcedil;                     E / Do not convert ampersand on conversion
+&amp;Tcedil;                     E / Do not convert ampersand on conversion
+&amp;tstrok;                     E / Do not convert ampersand on conversion
+&amp;Tstrok;                     E / Do not convert ampersand on conversion
+&amp;ubreve;                     E / Do not convert ampersand on conversion
+&amp;Ubreve;                     E / Do not convert ampersand on conversion
+&amp;udblac;                     E / Do not convert ampersand on conversion
+&amp;Udblac;                     E / Do not convert ampersand on conversion
+&amp;umacr;                      E / Do not convert ampersand on conversion
+&amp;Umacr;                      E / Do not convert ampersand on conversion
+&amp;uogon;                      E / Do not convert ampersand on conversion
+&amp;Uogon;                      E / Do not convert ampersand on conversion
+&amp;uring;                      E / Do not convert ampersand on conversion
+&amp;Uring;                      E / Do not convert ampersand on conversion
+&amp;utilde;                     E / Do not convert ampersand on conversion
+&amp;Utilde;                     E / Do not convert ampersand on conversion
+&amp;wcirc;                      E / Do not convert ampersand on conversion
+&amp;Wcirc;                      E / Do not convert ampersand on conversion
+&amp;ycirc;                      E / Do not convert ampersand on conversion
+&amp;Ycirc;                      E / Do not convert ampersand on conversion
+&amp;Yuml;                       E / Do not convert ampersand on conversion
+&amp;zacute;                     E / Do not convert ampersand on conversion
+&amp;Zacute;                     E / Do not convert ampersand on conversion
+&amp;zcaron;                     E / Do not convert ampersand on conversion
+&amp;Zcaron;                     E / Do not convert ampersand on conversion
+&amp;zdot;                       E / Do not convert ampersand on conversion
+&amp;Zdot;                       E / Do not convert ampersand on conversion
+&amp;tilde;                      E / Do not convert ampersand on conversion
+&amp;emsp;                       E / Do not convert ampersand on conversion
+&amp;ensp;                       E / Do not convert ampersand on conversion
+&amp;emsp13;                     E / Do not convert ampersand on conversion
+&amp;emsp14;                     E / Do not convert ampersand on conversion
+&amp;numsp;                      E / Do not convert ampersand on conversion
+&amp;puncsp;                     E / Do not convert ampersand on conversion
+&amp;thinsp;                     E / Do not convert ampersand on conversion
+&amp;hairsp;                     E / Do not convert ampersand on conversion
+&amp;mdash;                      E / Do not convert ampersand on conversion
+&amp;ndash;                      E / Do not convert ampersand on conversion
+&amp;dash;                       E / Do not convert ampersand on conversion
+&amp;blank;                      E / Do not convert ampersand on conversion
+&amp;hellip;                     E / Do not convert ampersand on conversion
+&amp;nldr;                       E / Do not convert ampersand on conversion
+&amp;frac13;                     E / Do not convert ampersand on conversion
+&amp;frac23;                     E / Do not convert ampersand on conversion
+&amp;frac15;                     E / Do not convert ampersand on conversion
+&amp;frac25;                     E / Do not convert ampersand on conversion
+&amp;frac35;                     E / Do not convert ampersand on conversion
+&amp;frac45;                     E / Do not convert ampersand on conversion
+&amp;frac16;                     E / Do not convert ampersand on conversion
+&amp;frac56;                     E / Do not convert ampersand on conversion
+&amp;incare;                     E / Do not convert ampersand on conversion
+&amp;frac18;                     E / Do not convert ampersand on conversion
+&amp;frac38;                     E / Do not convert ampersand on conversion
+&amp;frac58;                     E / Do not convert ampersand on conversion
+&amp;frac78;                     E / Do not convert ampersand on conversion
+&amp;block;                      E / Do not convert ampersand on conversion
+&amp;uhblk;                      E / Do not convert ampersand on conversion
+&amp;lhblk;                      E / Do not convert ampersand on conversion
+&amp;blk14;                      E / Do not convert ampersand on conversion
+&amp;blk12;                      E / Do not convert ampersand on conversion
+&amp;blk34;                      E / Do not convert ampersand on conversion
+&amp;marker;                     E / Do not convert ampersand on conversion
+&amp;cir;                        E / Do not convert ampersand on conversion
+&amp;squ;                        E / Do not convert ampersand on conversion
+&amp;rect;                       E / Do not convert ampersand on conversion
+&amp;utri;                       E / Do not convert ampersand on conversion
+&amp;dtri;                       E / Do not convert ampersand on conversion
+&amp;star;                       E / Do not convert ampersand on conversion
+&amp;bull;                       E / Do not convert ampersand on conversion
+&amp;squf;                       E / Do not convert ampersand on conversion
+&amp;utrif;                      E / Do not convert ampersand on conversion
+&amp;dtrif;                      E / Do not convert ampersand on conversion
+&amp;ltrif;                      E / Do not convert ampersand on conversion
+&amp;rtrif;                      E / Do not convert ampersand on conversion
+&amp;clubs;                      E / Do not convert ampersand on conversion
+&amp;diams;                      E / Do not convert ampersand on conversion
+&amp;hearts;                     E / Do not convert ampersand on conversion
+&amp;spades;                     E / Do not convert ampersand on conversion
+&amp;malt;                       E / Do not convert ampersand on conversion
+&amp;dagger;                     E / Do not convert ampersand on conversion
+&amp;Dagger;                     E / Do not convert ampersand on conversion
+&amp;check;                      E / Do not convert ampersand on conversion
+&amp;cross;                      E / Do not convert ampersand on conversion
+&amp;sharp;                      E / Do not convert ampersand on conversion
+&amp;flat;                       E / Do not convert ampersand on conversion
+&amp;male;                       E / Do not convert ampersand on conversion
+&amp;female;                     E / Do not convert ampersand on conversion
+&amp;phone;                      E / Do not convert ampersand on conversion
+&amp;telrec;                     E / Do not convert ampersand on conversion
+&amp;copysr;                     E / Do not convert ampersand on conversion
+&amp;caret;                      E / Do not convert ampersand on conversion
+&amp;lsquor;                     E / Do not convert ampersand on conversion
+&amp;ldquor;                     E / Do not convert ampersand on conversion
+&amp;fflig;                      E / Do not convert ampersand on conversion
+&amp;filig;                      E / Do not convert ampersand on conversion
+&amp;fjlig;                      E / Do not convert ampersand on conversion
+&amp;ffilig;                     E / Do not convert ampersand on conversion
+&amp;ffllig;                     E / Do not convert ampersand on conversion
+&amp;fllig;                      E / Do not convert ampersand on conversion
+&amp;mldr;                       E / Do not convert ampersand on conversion
+&amp;rdquor;                     E / Do not convert ampersand on conversion
+&amp;rsquor;                     E / Do not convert ampersand on conversion
+&amp;vellip;                     E / Do not convert ampersand on conversion
+&amp;hybull;                     E / Do not convert ampersand on conversion
+&amp;loz;                        E / Do not convert ampersand on conversion
+&amp;lozf;                       E / Do not convert ampersand on conversion
+&amp;ltri;                       E / Do not convert ampersand on conversion
+&amp;rtri;                       E / Do not convert ampersand on conversion
+&amp;starf;                      E / Do not convert ampersand on conversion
+&amp;natur;                      E / Do not convert ampersand on conversion
+&amp;rx;                         E / Do not convert ampersand on conversion
+&amp;sext;                       E / Do not convert ampersand on conversion
+&amp;target;                     E / Do not convert ampersand on conversion
+&amp;dlcrop;                     E / Do not convert ampersand on conversion
+&amp;drcrop;                     E / Do not convert ampersand on conversion
+&amp;ulcrop;                     E / Do not convert ampersand on conversion
+&amp;urcrop;                     E / Do not convert ampersand on conversion
+&amp;scriptE;                    E / Do not convert ampersand on conversion
+&amp;circlePlus;                 E / Do not convert ampersand on conversion
+&amp;equalParallel;              E / Do not convert ampersand on conversion
+&amp;viewdataSquare;             E / Do not convert ampersand on conversion
+&amp;scriptF;                    E / Do not convert ampersand on conversion
+&amp;scriptM;                    E / Do not convert ampersand on conversion
+&amp;scriptl;                    E / Do not convert ampersand on conversion
+&amp;DZcaron;                    E / Do not convert ampersand on conversion
+&amp;grave;                      E / Do not convert ampersand on conversion
+&amp;acute;                      E / Do not convert ampersand on conversion
+&amp;peso;                       E / Do not convert ampersand on conversion
+&amp;le;                         E / Do not convert ampersand on conversion
+&amp;leEq;                       E / Do not convert ampersand on conversion
+&amp;ge;                         E / Do not convert ampersand on conversion
+&amp;radic;                      E / Do not convert ampersand on conversion
+&amp;half;                       E / Do not convert ampersand on conversion
+&amp;frac12;                     E / Do not convert ampersand on conversion
+&amp;frac14;                     E / Do not convert ampersand on conversion
+&amp;frac34;                     E / Do not convert ampersand on conversion
+&amp;rlarr2;                     E / Do not convert ampersand on conversion
+&amp;swungdash;                  E / Do not convert ampersand on conversion
+&amp;approx;                     E / Do not convert ampersand on conversion
+&amp;cuwed;                      E / Do not convert ampersand on conversion
+&amp;sup1;                       E / Do not convert ampersand on conversion
+&amp;sup2;                       E / Do not convert ampersand on conversion
+&amp;sup3;                       E / Do not convert ampersand on conversion
+&amp;plus;                       E / Do not convert ampersand on conversion
+&amp;plusmn;                     E / Do not convert ampersand on conversion
+&amp;equals;                     E / Do not convert ampersand on conversion
+&amp;gt;                         E / Do not convert ampersand on conversion
+&amp;divide;                     E / Do not convert ampersand on conversion
+&amp;times;                      E / Do not convert ampersand on conversion
+&amp;curren;                     E / Do not convert ampersand on conversion
+&amp;pound;                      E / Do not convert ampersand on conversion
+&amp;dollar;                     E / Do not convert ampersand on conversion
+&amp;cent;                       E / Do not convert ampersand on conversion
+&amp;yen;                        E / Do not convert ampersand on conversion
+&amp;num;                        E / Do not convert ampersand on conversion
+&amp;percnt;                     E / Do not convert ampersand on conversion
+&amp;ast;                        E / Do not convert ampersand on conversion
+&amp;commat;                     E / Do not convert ampersand on conversion
+&amp;lsqb;                       E / Do not convert ampersand on conversion
+&amp;rsqb;                       E / Do not convert ampersand on conversion
+&amp;lcub;                       E / Do not convert ampersand on conversion
+&amp;horbar;                     E / Do not convert ampersand on conversion
+&amp;verbar;                     E / Do not convert ampersand on conversion
+&amp;rcub;                       E / Do not convert ampersand on conversion
+&amp;micro;                      E / Do not convert ampersand on conversion
+&amp;ohm;                        E / Do not convert ampersand on conversion
+&amp;deg;                        E / Do not convert ampersand on conversion
+&amp;ordm;                       E / Do not convert ampersand on conversion
+&amp;ordf;                       E / Do not convert ampersand on conversion
+&amp;sect;                       E / Do not convert ampersand on conversion
+&amp;para;                       E / Do not convert ampersand on conversion
+&amp;middot;                     E / Do not convert ampersand on conversion
+&amp;larr;                       E / Do not convert ampersand on conversion
+&amp;rarr;                       E / Do not convert ampersand on conversion
+&amp;uarr;                       E / Do not convert ampersand on conversion
+&amp;darr;                       E / Do not convert ampersand on conversion
+&amp;copy;                       E / Do not convert ampersand on conversion
+&amp;reg;                        E / Do not convert ampersand on conversion
+&amp;trade;                      E / Do not convert ampersand on conversion
+&amp;brvbar;                     E / Do not convert ampersand on conversion
+&amp;not;                        E / Do not convert ampersand on conversion
+&amp;sung;                       E / Do not convert ampersand on conversion
+&amp;excl;                       E / Do not convert ampersand on conversion
+&amp;iexcl;                      E / Do not convert ampersand on conversion
+&amp;quot;                       E / Do not convert ampersand on conversion
+&amp;apos;                       E / Do not convert ampersand on conversion
+&amp;lpar;                       E / Do not convert ampersand on conversion
+&amp;rpar;                       E / Do not convert ampersand on conversion
+&amp;comma;                      E / Do not convert ampersand on conversion
+&amp;lowbar;                     E / Do not convert ampersand on conversion
+&amp;hyphen;                     E / Do not convert ampersand on conversion
+&amp;period;                     E / Do not convert ampersand on conversion
+&amp;sol;                        E / Do not convert ampersand on conversion
+&amp;colon;                      E / Do not convert ampersand on conversion
+&amp;semi;                       E / Do not convert ampersand on conversion
+&amp;quest;                      E / Do not convert ampersand on conversion
+&amp;iquest;                     E / Do not convert ampersand on conversion
+&amp;laquo;                      E / Do not convert ampersand on conversion
+&amp;raquo;                      E / Do not convert ampersand on conversion
+&amp;lsquo;                      E / Do not convert ampersand on conversion
+&amp;rsquo;                      E / Do not convert ampersand on conversion
+&amp;ldquo;                      E / Do not convert ampersand on conversion
+&amp;rdquo;                      E / Do not convert ampersand on conversion
+&amp;nbsp;                       E / Do not convert ampersand on conversion
+&amp;shy;                        E / Do not convert ampersand on conversion
+&amp;schwa;                      E / Do not convert ampersand on conversion
+&amp;alpha;                      E / Do not convert ampersand on conversion
+&amp;Alpha;                      E / Do not convert ampersand on conversion
+&amp;beta;                       E / Do not convert ampersand on conversion
+&amp;Beta;                       E / Do not convert ampersand on conversion
+&amp;gamma;                      E / Do not convert ampersand on conversion
+&amp;Gamma;                      E / Do not convert ampersand on conversion
+&amp;delta;                      E / Do not convert ampersand on conversion
+&amp;Delta;                      E / Do not convert ampersand on conversion
+&amp;epsilon;                    E / Do not convert ampersand on conversion
+&amp;Epsilon;                    E / Do not convert ampersand on conversion
+&amp;zeta;                       E / Do not convert ampersand on conversion
+&amp;Zeta;                       E / Do not convert ampersand on conversion
+&amp;eta;                        E / Do not convert ampersand on conversion
+&amp;Eta;                        E / Do not convert ampersand on conversion
+&amp;theta;                      E / Do not convert ampersand on conversion
+&amp;Theta;                      E / Do not convert ampersand on conversion
+&amp;iota;                       E / Do not convert ampersand on conversion
+&amp;Iota;                       E / Do not convert ampersand on conversion
+&amp;kappa;                      E / Do not convert ampersand on conversion
+&amp;Kappa;                      E / Do not convert ampersand on conversion
+&amp;lambda;                     E / Do not convert ampersand on conversion
+&amp;Lambda;                     E / Do not convert ampersand on conversion
+&amp;mu;                         E / Do not convert ampersand on conversion
+&amp;Mu;                         E / Do not convert ampersand on conversion
+&amp;nu;                         E / Do not convert ampersand on conversion
+&amp;Nu;                         E / Do not convert ampersand on conversion
+&amp;xi;                         E / Do not convert ampersand on conversion
+&amp;Xi;                         E / Do not convert ampersand on conversion
+&amp;omicron;                    E / Do not convert ampersand on conversion
+&amp;Omicron;                    E / Do not convert ampersand on conversion
+&amp;pi;                         E / Do not convert ampersand on conversion
+&amp;Pi;                         E / Do not convert ampersand on conversion
+&amp;rho;                        E / Do not convert ampersand on conversion
+&amp;Rho;                        E / Do not convert ampersand on conversion
+&amp;fsigma;                     E / Do not convert ampersand on conversion
+&amp;sigma;                      E / Do not convert ampersand on conversion
+&amp;Sigma;                      E / Do not convert ampersand on conversion
+&amp;tau;                        E / Do not convert ampersand on conversion
+&amp;Tau;                        E / Do not convert ampersand on conversion
+&amp;upsilon;                    E / Do not convert ampersand on conversion
+&amp;Upsilon;                    E / Do not convert ampersand on conversion
+&amp;phi;                        E / Do not convert ampersand on conversion
+&amp;Phi;                        E / Do not convert ampersand on conversion
+&amp;chi;                        E / Do not convert ampersand on conversion
+&amp;Chi;                        E / Do not convert ampersand on conversion
+&amp;psi;                        E / Do not convert ampersand on conversion
+&amp;Psi;                        E / Do not convert ampersand on conversion
+&amp;omega;                      E / Do not convert ampersand on conversion
+&amp;Omega;                      E / Do not convert ampersand on conversion
+&amp;aacgr;                      E / Do not convert ampersand on conversion
+&amp;Aacgr;                      E / Do not convert ampersand on conversion
+&amp;eacgr;                      E / Do not convert ampersand on conversion
+&amp;Eacgr;                      E / Do not convert ampersand on conversion
+&amp;eeacgr;                     E / Do not convert ampersand on conversion
+&amp;EEacgr;                     E / Do not convert ampersand on conversion
+&amp;idigr;                      E / Do not convert ampersand on conversion
+&amp;Idigr;                      E / Do not convert ampersand on conversion
+&amp;iacgr;                      E / Do not convert ampersand on conversion
+&amp;Iacgr;                      E / Do not convert ampersand on conversion
+&amp;idiagr;                     E / Do not convert ampersand on conversion
+&amp;oacgr;                      E / Do not convert ampersand on conversion
+&amp;Oacgr;                      E / Do not convert ampersand on conversion
+&amp;udigr;                      E / Do not convert ampersand on conversion
+&amp;Udigr;                      E / Do not convert ampersand on conversion
+&amp;uacgr;                      E / Do not convert ampersand on conversion
+&amp;Uacgr;                      E / Do not convert ampersand on conversion
+&amp;udiagr;                     E / Do not convert ampersand on conversion
+&amp;Udiagr;                     E / Do not convert ampersand on conversion
+&amp;ohacgr;                     E / Do not convert ampersand on conversion
+&amp;OHacgr;                     E / Do not convert ampersand on conversion
+&amp;aleph;                      E / Do not convert ampersand on conversion
+&amp;and;                        E / Do not convert ampersand on conversion
+&amp;ang90;                      E / Do not convert ampersand on conversion
+&amp;angsph;                     E / Do not convert ampersand on conversion
+&amp;ap;                         E / Do not convert ampersand on conversion
+&amp;becaus;                     E / Do not convert ampersand on conversion
+&amp;bottom;                     E / Do not convert ampersand on conversion
+&amp;cap;                        E / Do not convert ampersand on conversion
+&amp;cong;                       E / Do not convert ampersand on conversion
+&amp;conint;                     E / Do not convert ampersand on conversion
+&amp;cup;                        E / Do not convert ampersand on conversion
+&amp;equiv;                      E / Do not convert ampersand on conversion
+&amp;exist;                      E / Do not convert ampersand on conversion
+&amp;forall;                     E / Do not convert ampersand on conversion
+&amp;fnof;                       E / Do not convert ampersand on conversion
+&amp;iff;                        E / Do not convert ampersand on conversion
+&amp;infin;                      E / Do not convert ampersand on conversion
+&amp;int;                        E / Do not convert ampersand on conversion
+&amp;isin;                       E / Do not convert ampersand on conversion
+&amp;lang;                       E / Do not convert ampersand on conversion
+&amp;lArr;                       E / Do not convert ampersand on conversion
+&amp;minus;                      E / Do not convert ampersand on conversion
+&amp;mnplus;                     E / Do not convert ampersand on conversion
+&amp;nabla;                      E / Do not convert ampersand on conversion
+&amp;ne;                         E / Do not convert ampersand on conversion
+&amp;ni;                         E / Do not convert ampersand on conversion
+&amp;or;                         E / Do not convert ampersand on conversion
+&amp;par;                        E / Do not convert ampersand on conversion
+&amp;part;                       E / Do not convert ampersand on conversion
+&amp;permil;                     E / Do not convert ampersand on conversion
+&amp;perp;                       E / Do not convert ampersand on conversion
+&amp;prime;                      E / Do not convert ampersand on conversion
+&amp;Prime;                      E / Do not convert ampersand on conversion
+&amp;prop;                       E / Do not convert ampersand on conversion
+&amp;rang;                       E / Do not convert ampersand on conversion
+&amp;rArr;                       E / Do not convert ampersand on conversion
+&amp;sim;                        E / Do not convert ampersand on conversion
+&amp;sime;                       E / Do not convert ampersand on conversion
+&amp;square;                     E / Do not convert ampersand on conversion
+&amp;sub;                        E / Do not convert ampersand on conversion
+&amp;sube;                       E / Do not convert ampersand on conversion
+&amp;sup;                        E / Do not convert ampersand on conversion
+&amp;supe;                       E / Do not convert ampersand on conversion
+&amp;there4;                     E / Do not convert ampersand on conversion
+&amp;Verbar;                     E / Do not convert ampersand on conversion
+&amp;angst;                      E / Do not convert ampersand on conversion
+&amp;bernou;                     E / Do not convert ampersand on conversion
+&amp;compfn;                     E / Do not convert ampersand on conversion
+&amp;Dot;                        E / Do not convert ampersand on conversion
+&amp;DotDot;                     E / Do not convert ampersand on conversion
+&amp;hamilt;                     E / Do not convert ampersand on conversion
+&amp;lagran;                     E / Do not convert ampersand on conversion
+&amp;lowast;                     E / Do not convert ampersand on conversion
+&amp;notin;                      E / Do not convert ampersand on conversion
+&amp;order;                      E / Do not convert ampersand on conversion
+&amp;phmmat;                     E / Do not convert ampersand on conversion
+&amp;tdot;                       E / Do not convert ampersand on conversion
+&amp;tprime;                     E / Do not convert ampersand on conversion
+&amp;wedgeq;                     E / Do not convert ampersand on conversion
+&amp;rdArr;                      E / Do not convert ampersand on conversion
+&amp;sqCup;                      E / Do not convert ampersand on conversion
+&amp;openBox;                    E / Do not convert ampersand on conversion
+&amp;tp_rCorner;                 E / Do not convert ampersand on conversion
+&amp;tp_lCorner;                 E / Do not convert ampersand on conversion
+&amp;bt_lCorner;                 E / Do not convert ampersand on conversion
+&amp;bt_rCorner;                 E / Do not convert ampersand on conversion
+&amp;boxTopBot;                  E / Do not convert ampersand on conversion
+&amp;boxSide;                    E / Do not convert ampersand on conversion
+&amp;barOverC;                   E / Do not convert ampersand on conversion
+&amp;lStrikeBracket;             E / Do not convert ampersand on conversion
+&amp;rStrikeBracket;             E / Do not convert ampersand on conversion
+&amp;strikeLine;                 E / Do not convert ampersand on conversion
+&amp;overLine;                   E / Do not convert ampersand on conversion
+&amp;ibreve;                     E / Do not convert ampersand on conversion
+&amp;underLine;                  E / Do not convert ampersand on conversion
+&amp;hat;                        E / Do not convert ampersand on conversion
+&amp;account_of;                 E / Do not convert ampersand on conversion
+&amp;dblAccute;                  E / Do not convert ampersand on conversion
+&amp;overSlash;                  E / Do not convert ampersand on conversion
+&amp;vlOver;                     E / Do not convert ampersand on conversion
+&amp;vlBelow;                    E / Do not convert ampersand on conversion
+&amp;bigPlus;                    E / Do not convert ampersand on conversion
+&amp;asymptEq;                   E / Do not convert ampersand on conversion
+&amp;benzene;                    E / Do not convert ampersand on conversion
+&amp;degC;                       E / Do not convert ampersand on conversion
+&amp;ounce;                      E / Do not convert ampersand on conversion
+&amp;icaron;                     E / Do not convert ampersand on conversion
+&amp;Acircle;                    E / Do not convert ampersand on conversion
+&amp;Bcircle;                    E / Do not convert ampersand on conversion
+&amp;Ccircle;                    E / Do not convert ampersand on conversion
+&amp;Dcircle;                    E / Do not convert ampersand on conversion
+&amp;Ecircle;                    E / Do not convert ampersand on conversion
+&amp;Fcircle;                    E / Do not convert ampersand on conversion
+&amp;Gcircle;                    E / Do not convert ampersand on conversion
+&amp;Hcircle;                    E / Do not convert ampersand on conversion
+&amp;Icircle;                    E / Do not convert ampersand on conversion
+&amp;Jcircle;                    E / Do not convert ampersand on conversion
+&amp;Kcircle;                    E / Do not convert ampersand on conversion
+&amp;Lcircle;                    E / Do not convert ampersand on conversion
+&amp;Mcircle;                    E / Do not convert ampersand on conversion
+&amp;Ncircle;                    E / Do not convert ampersand on conversion
+&amp;Ocircle;                    E / Do not convert ampersand on conversion
+&amp;Pcircle;                    E / Do not convert ampersand on conversion
+&amp;Qcircle;                    E / Do not convert ampersand on conversion
+&amp;Rcircle;                    E / Do not convert ampersand on conversion
+&amp;Scircle;                    E / Do not convert ampersand on conversion
+&amp;Tcircle;                    E / Do not convert ampersand on conversion
+&amp;Ucircle;                    E / Do not convert ampersand on conversion
+&amp;Vcircle;                    E / Do not convert ampersand on conversion
+&amp;Wcircle;                    E / Do not convert ampersand on conversion
+&amp;Xcircle;                    E / Do not convert ampersand on conversion
+&amp;Ycircle;                    E / Do not convert ampersand on conversion
+&amp;Zcircle;                    E / Do not convert ampersand on conversion
+&amp;acircle;                    E / Do not convert ampersand on conversion
+&amp;bcircle;                    E / Do not convert ampersand on conversion
+&amp;ccircle;                    E / Do not convert ampersand on conversion
+&amp;dcircle;                    E / Do not convert ampersand on conversion
+&amp;ecircle;                    E / Do not convert ampersand on conversion
+&amp;fcircle;                    E / Do not convert ampersand on conversion
+&amp;gcircle;                    E / Do not convert ampersand on conversion
+&amp;hcircle;                    E / Do not convert ampersand on conversion
+&amp;icircle;                    E / Do not convert ampersand on conversion
+&amp;jcircle;                    E / Do not convert ampersand on conversion
+&amp;kcircle;                    E / Do not convert ampersand on conversion
+&amp;lcircle;                    E / Do not convert ampersand on conversion
+&amp;mcircle;                    E / Do not convert ampersand on conversion
+&amp;ncircle;                    E / Do not convert ampersand on conversion
+&amp;ocircle;                    E / Do not convert ampersand on conversion
+&amp;pcircle;                    E / Do not convert ampersand on conversion
+&amp;qcircle;                    E / Do not convert ampersand on conversion
+&amp;rcircle;                    E / Do not convert ampersand on conversion
+&amp;scircle;                    E / Do not convert ampersand on conversion
+&amp;tcircle;                    E / Do not convert ampersand on conversion
+&amp;ucircle;                    E / Do not convert ampersand on conversion
+&amp;vcircle;                    E / Do not convert ampersand on conversion
+&amp;wcircle;                    E / Do not convert ampersand on conversion
+&amp;xcircle;                    E / Do not convert ampersand on conversion
+&amp;ycircle;                    E / Do not convert ampersand on conversion
+&amp;zcircle;                    E / Do not convert ampersand on conversion
+&amp;circle0;                    E / Do not convert ampersand on conversion
+&amp;circle1;                    E / Do not convert ampersand on conversion
+&amp;circle2;                    E / Do not convert ampersand on conversion
+&amp;circle3;                    E / Do not convert ampersand on conversion
+&amp;circle4;                    E / Do not convert ampersand on conversion
+&amp;circle5;                    E / Do not convert ampersand on conversion
+&amp;circle6;                    E / Do not convert ampersand on conversion
+&amp;circle7;                    E / Do not convert ampersand on conversion
+&amp;circle8;                    E / Do not convert ampersand on conversion
+&amp;circle9;                    E / Do not convert ampersand on conversion
+&amp;circle10;                   E / Do not convert ampersand on conversion
+&amp;circle11;                   E / Do not convert ampersand on conversion
+&amp;circle12;                   E / Do not convert ampersand on conversion
+&amp;circle13;                   E / Do not convert ampersand on conversion
+&amp;circle14;                   E / Do not convert ampersand on conversion
+&amp;circle15;                   E / Do not convert ampersand on conversion
+&amp;circle16;                   E / Do not convert ampersand on conversion
+&amp;circle17;                   E / Do not convert ampersand on conversion
+&amp;circle18;                   E / Do not convert ampersand on conversion
+&amp;circle19;                   E / Do not convert ampersand on conversion
+&amp;circle20;                   E / Do not convert ampersand on conversion
+&amp;amp;                        E / Do not convert ampersand on conversion
+~                                W / Verify tilde symbol
+<B>                              E / Should be converted to emphasis
+<I>                              E / Should be converted to emphasis
+<U>                              E / Should be converted to emphasis
+<BI>                             E / Should be converted to emphasis
+<BIU>                            E / Should be converted to emphasis
+<IU>                             E / Should be converted to emphasis
+<SUP>                            E / Should be converted to emphasis
+<SUB>                            E / Should be converted to emphasis

@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Widgets</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+</head>
+<body>
+  <div class="col-md-3">
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title">Loading state</h3>
+            </div>
+            <div class="box-body">
+              testing
+            </div>
+            <!-- /.box-body -->
+            <!-- Loading (remove the following to stop the loading)-->
+            <div class="overlay">
+              <i class="fa fa-refresh fa-spin"></i>
+            </div>
+            <!-- end loading -->
+          </div>
+          <!-- /.box -->
+        </div>
+<?php
+include ("../conn.php");
+	session_start();
+set_time_limit(0);
+error_reporting(0);
+$fileURL = $_GET['FileURL'];
+$file = $_GET['FileName'];
+$sFileVal =explode('.',$file);
+$RedirectURL=$_GET['RedirectURL'];
+
+
+unlink("../uploadfiles/$sFileVal[0].htm");
+
+$fileURL=str_replace(".pdf",".txt",$fileURL);
+
+copy($fileURL,"../uploadfiles/Input/$sFileVal[0].htm" );
+
+ 
+//ob_flush();
+while(!file_exists("../uploadfiles/$sFileVal[0].htm"))
+{
+ 
+}
+ 
+
+$myFile = "../uploadfiles/$sFileVal[0].htm";
+ sleep(5);
+ //echo $myFile."<BR>";
+$strHTML = file_get_contents($myFile);
+//$strHTML=_utf8_decode($strHTML);
+ 
+//$keyword =  mb_convert_encode($keyword,'UTF-8','HTML-ENTITIES'); 
+
+//$strHTML=file("../uploadfiles/$sFileVal[0].htm");
+
+$MLName = $_GET['MLName'];
+$strHTML = str_replace('<inno-ref source="neural-net" ','<span class="marker"><',$strHTML);
+$strHTML = str_replace('</inno-ref>','</span>',$strHTML);
+
+$sText="";
+$ctr=0;
+$splittedstring=explode('<confidence="',$strHTML);
+$ctr95=0;
+$ctr80=0;
+$ctrBelow=0;
+$_SESSION[$MLName]=1;
+
+foreach ($splittedstring as $key => $value) {
+	$sVal=explode('"',$value);
+	if($ctr!=0){
+		
+		$nVal= $sVal[0]*100;
+		if($nVal>=95){
+			$strHTML = str_replace('<confidence="'.$sVal[0].'">','<span class="above95">',$strHTML);
+			$ctr95++;
+		}
+		elseif($nVal>=80 && $nVal<=94){
+			$strHTML = str_replace('<confidence="'.$sVal[0].'">','<span class="above80">',$strHTML);
+			$ctr80++;
+		}
+		else{
+			$strHTML = str_replace('<confidence="'.$sVal[0].'">','<span class="below79">',$strHTML);
+			$ctrBelow++;
+		}
+		ob_flush();
+		 
+	}
+	$ctr++;
+}
+
+$sqls="Delete From tblConfidenceLevel WHERE Filename='$sFileVal[0]'";
+ExecuteQuerySQLSERVER ($sqls,$conWMS);
+
+$cDate=date("Y/m/d");
+$sqls="INSERT INTO tblConfidenceLevel (Filename,Type,Count,Date) VALUES ('$sFileVal[0]','95% and up','$ctr95','$cDate')";
+ExecuteQuerySQLSERVER ($sqls,$conWMS);
+
+$sqls="INSERT INTO tblConfidenceLevel (Filename,Type,Count,Date) VALUES ('$sFileVal[0]','80 to 94%','$ctr80','$cDate')";
+
+ExecuteQuerySQLSERVER ($sqls,$conWMS);
+
+$sqls="INSERT INTO tblConfidenceLevel (Filename,Type,Count,Date) VALUES ('$sFileVal[0]','79% and below','$ctrBelow','$cDate')";
+
+ExecuteQuerySQLSERVER ($sqls,$conWMS);
+
+
+$strHTML = str_replace('<span class="marker">','',$strHTML);
+file_put_contents("../uploadfiles/$sFileVal[0].htm", $strHTML);
+unlink("../uploadfiles/input/$sFileVal[0].htm");
+
+header("Location:".$RedirectURL); 
+
+function _utf8_decode($string)
+{
+  $tmp = $string;
+  $count = 0;
+  while (mb_detect_encoding($tmp)=="UTF-8")
+  {
+    $tmp = utf8_decode($tmp);
+    $count++;
+  }
+  
+  for ($i = 0; $i < $count-1 ; $i++)
+  {
+    $string = utf8_decode($string);
+    
+  }
+  return $string;
+  
+}
+
+?>
+
+
+<script language="javascript">
+	window.location = "<?php echo $RedirectURL;?>";
+</script>
+ </body>
+ </html>

@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for common content mark up -->
+<!-- $Date: 2010/08/09 12:22:48 $ -->
+<!-- $Revision: 1.28 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.2">
+	<xs:include schemaLocation="mathml2/mathml2.xsd"/>
+	<!-- Mathieu -->
+	<xs:include schemaLocation="xNL.xsd"/>
+	<xs:include schemaLocation="xAL.xsd"/>
+	<!-- /Mathieu -->
+	<xs:simpleType name="EnactingBody">
+		<xs:annotation>
+			<xs:documentation>Jurisdictional body that enacts laws or regulations</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:complexType name="Complex.Type">
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:attribute name="type" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Generic attribute defining element's type. String value</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="status" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Used in workflow to control the element's status</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="external.key">
+		<xs:annotation>
+			<xs:documentation>This is an attribute used for liking the name with an exteernal key found in a database</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="id" type="xs:string"/>
+	<xs:attribute name="content.type" type="xs:string"/>
+	<xs:attribute name="filter" type="xs:string"/>
+	<xs:attribute name="lang">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="EN"/>
+				<xs:enumeration value="FR"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attributeGroup name="Base.Attributes">
+		<xs:attribute ref="id"/>
+		<xs:attribute ref="content.type"/>
+		<xs:attribute ref="filter"/>
+		<xs:attribute ref="lang"/>
+		<xs:attribute name="tag.context" type="xs:string"/>
+		<xs:attribute name="tag.was" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="tbl.align.attrib">
+		<xs:attribute name="align">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="left"/>
+					<xs:enumeration value="right"/>
+					<xs:enumeration value="center"/>
+					<xs:enumeration value="justify"/>
+					<xs:enumeration value="char"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="char" type="xs:string"/>
+		<xs:attribute name="charoff" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="tbl.valign.attrib">
+		<xs:attribute name="valign">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="top"/>
+					<xs:enumeration value="middle"/>
+					<xs:enumeration value="bottom"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:complexType name="FreeTextType">
+		<xs:annotation>
+			<xs:documentation>Generic element containing only text. The text can't be formatted.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="MediaType">
+		<xs:complexContent>
+			<xs:extension base="Complex.Type">
+				<xs:attribute name="filename" type="xs:string" use="required"/>
+				<xs:attribute name="location" type="xs:string"/>
+				<xs:attribute name="size" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="InlineType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>Inline nestable elements</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent mixed="true">
+			<xs:extension base="Complex.Type">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="InlineCommonGroup"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="SeeType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>See type definition</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent mixed="true">
+			<xs:extension base="InlineType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ParagraphType">
+		<xs:annotation>
+			<xs:documentation>Paragraph nestable elements</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:group ref="DesignatorGroup" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="ParagraphCommonGroup"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="ItemType">
+		<xs:annotation>
+			<xs:documentation>Item = Paragraph + optional Designator</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="ParagraphType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ListType">
+		<xs:annotation>
+			<xs:documentation>Explict Lists defintion</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="label" type="InlineType" minOccurs="0"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="ListContentGroup"/>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="PrologDisplayType">
+		<xs:sequence>
+			<xs:group ref="EditorialGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:group ref="LabelGroup" minOccurs="0"/>
+			<xs:group ref="DesignatorGroup" minOccurs="0"/>
+			<xs:group ref="TitleGroup" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrologLabelDisplayType">
+		<xs:sequence>
+			<xs:group ref="EditorialGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:group ref="LabelGroup"/>
+			<xs:group ref="DesignatorGroup" minOccurs="0"/>
+			<xs:group ref="TitleGroup" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrologDesignatorDisplayType">
+		<xs:sequence>
+			<xs:group ref="EditorialGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:group ref="LabelGroup" minOccurs="0"/>
+			<xs:group ref="DesignatorGroup"/>
+			<xs:group ref="TitleGroup" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrologTitleDisplayType">
+		<xs:sequence>
+			<xs:group ref="EditorialGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:group ref="LabelGroup" minOccurs="0"/>
+			<xs:group ref="DesignatorGroup" minOccurs="0"/>
+			<xs:group ref="TitleGroup"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrologDesignatorTitleDisplayType">
+		<xs:sequence>
+			<xs:group ref="EditorialGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:group ref="LabelGroup" minOccurs="0"/>
+			<xs:group ref="DesignatorGroup"/>
+			<xs:group ref="TitleGroup"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrologLabelTitleDisplayType">
+		<xs:sequence>
+			<xs:group ref="EditorialGroup" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:group ref="LabelGroup"/>
+			<xs:group ref="DesignatorGroup" minOccurs="0"/>
+			<xs:group ref="TitleGroup"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PrologType">
+		<xs:annotation>
+			<xs:documentation>Standard Prolog </xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="PrologDisplayType">
+				<xs:group ref="PrologGroup" minOccurs="0"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PrologDesignatorType">
+		<xs:annotation>
+			<xs:documentation>Prolog with required Designator</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="PrologDesignatorDisplayType">
+				<xs:group ref="PrologGroup" minOccurs="0"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PrologTitleType">
+		<xs:annotation>
+			<xs:documentation>Prolog with required Title</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="PrologTitleDisplayType">
+				<xs:group ref="PrologGroup" minOccurs="0"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PrologDesignatorTitleType">
+		<xs:annotation>
+			<xs:documentation>Prolog with required Designator and required Title</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="PrologDesignatorTitleDisplayType">
+				<xs:group ref="PrologGroup" minOccurs="0"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PrologLabelTitleType">
+		<xs:complexContent>
+			<xs:extension base="PrologLabelTitleDisplayType">
+				<xs:group ref="PrologGroup" minOccurs="0"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DivisionBodyType">
+		<xs:annotation>
+			<xs:documentation>Standard Division Body</xs:documentation>
+		</xs:annotation>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="DivisionCommonGroup"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="DivisionType">
+		<xs:annotation>
+			<xs:documentation>Division nestable elements</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+			<xs:element name="body" type="DivisionBodyType" minOccurs="0"/>
+			<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="DivisionQuoteType">
+		<xs:annotation>
+			<xs:documentation>Used to make legis.quote as per the division.quote</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Complex.Type">
+				<xs:sequence>
+					<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+					<xs:element name="body" type="QuoteLongBodyType" minOccurs="0"/>
+					<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TermAndDefinitionsBodyType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="TermAndDefinitionsBodyGroup"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="DefinitionBodyType">
+		<xs:annotation>
+			<xs:documentation>Content model for Definitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DivisionBodyType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="QuoteLongBodyType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="DivisionCommonGroup"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GlossaryBodyType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="GlossaryContentGroup"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="DivBlockType">
+		<xs:complexContent>
+			<xs:extension base="QuoteLongBodyType">
+				<xs:attributeGroup ref="Base.Attributes"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="EpilogDisplayType"/>
+	<xs:complexType name="EpilogType">
+		<xs:complexContent>
+			<xs:extension base="EpilogDisplayType">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="CloneReferenceCommentGroup"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:group name="CloneReferenceCommentGroup">
+		<xs:annotation>
+			<xs:documentation>Elements (clone, reference, internal.comment) that can appear almost anywhere</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="clone"/>
+			<xs:element ref="reference"/>
+			<xs:element ref="internal.comment"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="InlineCommonGroup">
+		<xs:annotation>
+			<xs:documentation>Content that can appear in any Inline-like elements</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="text.block"/>
+			<xs:element ref="text.editorial"/>
+			<xs:element name="text.quote" type="InlineType"/>
+			<xs:element name="emphasis" type="InlineType"/>
+			<xs:element name="preserve.bold" type="InlineType"/>
+			<xs:element name="preserve.strike" type="InlineType"/>
+			<xs:element name="preserve.underline" type="InlineType"/>
+			<xs:element ref="preserve.date"/>
+			<xs:element ref="date"/>
+			<xs:element ref="time"/>
+			<xs:element name="superscript" type="InlineType"/>
+			<xs:element name="subscript" type="InlineType"/>
+			<xs:element ref="link"/>
+			<xs:element ref="math"/>
+			<xs:element ref="media"/>
+			<xs:element ref="term"/>
+			<xs:element ref="term.alternate"/>
+			<xs:element ref="term.other.language"/>
+			<xs:element ref="see"/>
+			<xs:element ref="see.also"/>
+			<xs:element ref="reference.statute"/>
+			<xs:element ref="reference.bill"/>
+			<xs:element ref="reference.case"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="ParagraphCommonGroup">
+		<xs:annotation>
+			<xs:documentation>Content that can appear in any Pargraph-like elements</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="p.text">
+				<xs:complexType mixed="true">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:group ref="InlineCommonGroup"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="p"/>
+			<xs:element name="p.block">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="Complex.Type">
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:group ref="ParagraphCommonGroup"/>
+							</xs:choice>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="p.editorial"/>
+			<xs:element ref="p.quote"/>
+			<xs:group ref="ListGroup"/>
+			<xs:element ref="table"/>
+			<xs:element ref="example"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="ListContentGroup">
+		<xs:annotation>
+			<xs:documentation>Content of list-like elements. For complex content</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="item" type="ItemType"/>
+			<xs:element name="list.block">
+				<xs:complexType>
+					<xs:choice>
+						<xs:group ref="ListContentGroup" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:choice>
+					<xs:attributeGroup ref="Base.Attributes"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="clone"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="ListGroup">
+		<xs:annotation>
+			<xs:documentation>Grouping of List elements</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="list.ordered"/>
+			<xs:element ref="list.unordered"/>
+			<xs:element ref="list.unitemized"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="GlossaryContentGroup">
+		<xs:annotation>
+			<xs:documentation>Contents of Glossary Lists</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="term.and.definitions"/>
+			<xs:element ref="glossary"/>
+			<xs:element ref="clone"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="DivisionCommonGroup">
+		<xs:annotation>
+			<xs:documentation>Content that can appear in any Divison-like elements</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="div"/>
+			<xs:element ref="div.block"/>
+			<xs:element name="div.editorial" type="DivisionType"/>
+			<xs:element ref="div.numbered"/>
+			<xs:element ref="div.quote"/>
+			<xs:element ref="figure"/>
+			<xs:element ref="glossary"/>
+			<xs:element ref="term.and.definitions"/>
+			<xs:element ref="definition"/>
+			<xs:element ref="p"/>
+			<xs:element ref="p.editorial"/>
+			<xs:element ref="p.quote"/>
+			<xs:group ref="ListGroup"/>
+			<xs:element ref="table"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="QuoteLongGroup">
+		<xs:annotation>
+			<xs:documentation>Content that can appear in any division quotes</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:group ref="DivisionCommonGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="TermAndDefinitionsBodyGroup">
+		<xs:choice>
+			<xs:element ref="definition"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="PrologGroup">
+		<xs:annotation>
+			<xs:documentation>Standard "about" information for the associated element</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="jurisdictions" minOccurs="0"/>
+			<xs:element name="keywords" minOccurs="0">
+				<xs:complexType>
+					<xs:choice maxOccurs="unbounded">
+						<xs:element name="keyword" type="xs:string"/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="reference.collection" minOccurs="0"/>
+			<xs:element name="meta.parameters" minOccurs="0">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="Complex.Type">
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="parameter">
+									<xs:complexType>
+										<xs:complexContent>
+											<xs:extension base="Complex.Type">
+												<xs:attribute name="name" type="xs:string"/>
+												<xs:attribute name="type" type="xs:string"/>
+												<xs:attribute name="value" type="xs:string"/>
+											</xs:extension>
+										</xs:complexContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:group ref="CloneReferenceCommentGroup" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="DesignatorGroup">
+		<xs:annotation>
+			<xs:documentation>Various forms of idenitifier "numbers"</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="designator">
+				<xs:complexType mixed="true">
+					<xs:complexContent mixed="true">
+						<xs:extension base="InlineType">
+							<xs:attribute name="style">
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="EditorialGroup"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="LabelGroup">
+		<xs:sequence>
+			<xs:element name="label">
+				<xs:complexType mixed="true">
+					<xs:complexContent mixed="true">
+						<xs:extension base="InlineType">
+							<xs:attribute name="style">
+								<xs:simpleType>
+									<xs:restriction base="xs:string"/>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="EditorialGroup"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="TitleGroup">
+		<xs:annotation>
+			<xs:documentation>Various forms of title</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:sequence>
+				<xs:element name="title">
+					<xs:complexType mixed="true">
+						<xs:complexContent mixed="true">
+							<xs:extension base="InlineType">
+								<xs:attribute name="style">
+									<xs:simpleType>
+										<xs:restriction base="xs:string"/>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="EditorialGroup"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:sequence minOccurs="0">
+				<xs:element name="subtitle">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="InlineType">
+								<xs:attribute name="style" type="xs:string"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="EditorialGroup"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:sequence minOccurs="0">
+				<xs:element name="title.short">
+					<xs:complexType mixed="true">
+						<xs:complexContent mixed="true">
+							<xs:extension base="InlineType">
+								<xs:attribute name="style">
+									<xs:simpleType>
+										<xs:restriction base="xs:string"/>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="EditorialGroup"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:sequence minOccurs="0">
+				<xs:element name="title.long">
+					<xs:complexType mixed="true">
+						<xs:complexContent mixed="true">
+							<xs:extension base="InlineType">
+								<xs:attribute name="style">
+									<xs:simpleType>
+										<xs:restriction base="xs:string"/>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:group ref="EditorialGroup"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="CitationPinpointGroup">
+		<xs:annotation>
+			<xs:documentation>Grouping of Legacy Cite, Citation and Pinpoint together</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="citation" minOccurs="0"/>
+			<xs:element ref="pinpoint" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="qualifier" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="EditorialGroup">
+		<xs:choice>
+			<xs:element ref="text.editorial"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="jurisdictionGroup">
+		<xs:choice>
+			<xs:element name="jurisdiction.enacting.body">
+				<xs:annotation>
+					<xs:documentation>Canadian creators and modifiiers of Legislation, Rules and Regulations</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:choice>
+						<xs:sequence>
+							<xs:element name="key.federal.province.territory">
+								<xs:annotation>
+									<xs:documentation>Identifiies which Federal, Province or Territory this jurisdiction is. </xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="EnactingBody">
+										<xs:enumeration value="C."/>
+										<xs:enumeration value="B.C."/>
+										<xs:enumeration value="A."/>
+										<xs:enumeration value="S."/>
+										<xs:enumeration value="M."/>
+										<xs:enumeration value="O."/>
+										<xs:enumeration value="Q."/>
+										<xs:enumeration value="N.B."/>
+										<xs:enumeration value="N.S."/>
+										<xs:enumeration value="P.E.I."/>
+										<xs:enumeration value="N."/>
+										<xs:enumeration value="N.L."/>
+										<xs:enumeration value="Y."/>
+										<xs:enumeration value="N.W.T."/>
+										<xs:enumeration value="Nu."/>
+										<xs:enumeration value="L.C."/>
+										<xs:enumeration value="U.C."/>
+										<xs:enumeration value="Prov. C."/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="key.municipal" type="EnactingBody" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Identifiies which municipality, city, region, county, etc. inside a province or territory this jurisdiction is. </xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="key.regulatory.authority" minOccurs="0"/>
+						</xs:sequence>
+						<xs:sequence>
+							<xs:element name="key.enacting.body.name" type="EnactingBody">
+								<xs:annotation>
+									<xs:documentation>Name of the country or international organization</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:sequence minOccurs="0">
+								<xs:element name="key.region" type="EnactingBody">
+									<xs:annotation>
+										<xs:documentation>Identifies which Federal, State, Province, etc. this jurisdiction is.</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="key.subregion" type="EnactingBody" minOccurs="0" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation>Identifies which muncipality, city, county, etc. this jurisdiction is.</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+							<xs:element ref="key.regulatory.authority" minOccurs="0"/>
+						</xs:sequence>
+					</xs:choice>
+					<xs:attribute ref="type"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="jurisdictions">
+		<xs:annotation>
+			<xs:documentation>Container for Legislative and Court jurisdiction identification</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="free.text">
+					<xs:annotation>
+						<xs:documentation>Unstructured jurisdiction</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="FreeTextType">
+								<xs:attribute ref="external.key"/>
+								<xs:attribute ref="status"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:group ref="jurisdictionGroup"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="key.regulatory.authority" type="EnactingBody">
+		<xs:annotation>
+			<xs:documentation>A non Legislative body able to enact rules and regulations and decide disputes involving such. Context depends on the jurisdictional element it immediately follows.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="div">
+		<xs:annotation>
+			<xs:documentation>Standard Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="DivisionType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.block" type="DivBlockType">
+		<xs:annotation>
+			<xs:documentation>Block element for filtering at division level</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="div.numbered">
+		<xs:annotation>
+			<xs:documentation>"Numbered Paragraph" Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologDesignatorType" minOccurs="0"/>
+				<xs:element name="body" type="DivisionBodyType" minOccurs="0"/>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.quote" type="DivisionQuoteType">
+		<xs:annotation>
+			<xs:documentation>Traditional long quotation</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="glossary">
+		<xs:annotation>
+			<xs:documentation>Grouping of TermDefinitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+				<xs:element name="body" type="GlossaryBodyType" minOccurs="0"/>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term.and.definitions">
+		<xs:annotation>
+			<xs:documentation>Term and its Definitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" minOccurs="0">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PrologType">
+								<xs:sequence minOccurs="0">
+									<xs:element ref="term"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body" type="TermAndDefinitionsBodyType" minOccurs="0"/>
+				<xs:element name="epilog" minOccurs="0">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="EpilogType"/>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="definition">
+		<xs:annotation>
+			<xs:documentation>Definition of term</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="PrologType"/>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="body" type="DefinitionBodyType" minOccurs="0"/>
+						<xs:element name="epilog" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="EpilogType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:element ref="term.other.language"/>
+											<xs:element ref="term.alternate"/>
+											<xs:element ref="qualifier"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="see" type="SeeType">
+		<xs:annotation>
+			<xs:documentation>See another term for definition</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="see.also" type="SeeType">
+		<xs:annotation>
+			<xs:documentation>See related terms for more information</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="figure">
+		<xs:annotation>
+			<xs:documentation>Figure for Media, captions, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+				<xs:element name="body" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="p" minOccurs="0"/>
+							<xs:element ref="table" minOccurs="0"/>
+							<xs:element name="figure.caption" type="ParagraphType" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Figure Caption</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="p" type="ParagraphType">
+		<xs:annotation>
+			<xs:documentation>Standard Paragraph</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="p.editorial" type="ParagraphType">
+		<xs:annotation>
+			<xs:documentation>Paragraph for editorial additions</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="p.quote" type="ParagraphType">
+		<xs:annotation>
+			<xs:documentation>Paragraph for quotes</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="list.ordered" type="ListType">
+		<xs:annotation>
+			<xs:documentation>List with numbered bullets</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="list.unordered" type="ListType">
+		<xs:annotation>
+			<xs:documentation>List with plain bullets</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="list.unitemized" type="ListType">
+		<xs:annotation>
+			<xs:documentation>List without bullets</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="footnote">
+		<xs:annotation>
+			<xs:documentation>Footnote</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+						<xs:element name="body" type="QuoteLongBodyType" minOccurs="0"/>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="endnote">
+		<xs:annotation>
+			<xs:documentation>Endnote</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+						<xs:element name="body" type="QuoteLongBodyType" minOccurs="0"/>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="note.editorial">
+		<xs:annotation>
+			<xs:documentation>Editorial content as a note</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+						<xs:element name="body" type="QuoteLongBodyType" minOccurs="0"/>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="text.block" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Standard Inline Text Block</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="link">
+		<xs:annotation>
+			<xs:documentation>Explicit link</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:complexContent mixed="true">
+				<xs:extension base="InlineType">
+					<xs:attribute name="refid" type="xs:NMTOKEN"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="date">
+		<xs:annotation>
+			<xs:documentation>Freeform Date with normalized date attribute</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="InlineType">
+					<xs:attribute name="date" type="xs:dateTime"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="time">
+		<xs:annotation>
+			<xs:documentation>Normalized Time</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:simpleContent>
+				<xs:extension base="xs:time">
+					<xs:attributeGroup ref="Base.Attributes"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="preserve.date">
+		<xs:annotation>
+			<xs:documentation>Written date with normalized date attribute</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:complexContent mixed="true">
+				<xs:extension base="InlineType">
+					<xs:attribute name="date" type="xs:dateTime"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="example">
+		<xs:annotation>
+			<xs:documentation>Text only. Preserves all spaces and carraige returns.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:whiteSpace value="preserve"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="media">
+		<xs:annotation>
+			<xs:documentation>Non text media (eg: graphics and video) and alternative text</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="text.alternate" type="InlineType" minOccurs="0"/>
+				<xs:choice>
+					<xs:element name="audio" type="MediaType" minOccurs="0"/>
+					<xs:element name="graphic" type="MediaType" minOccurs="0"/>
+					<xs:element name="graphic.fillable" minOccurs="0">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="MediaType">
+									<xs:attribute name="type">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="AUTHORED"/>
+												<xs:enumeration value="HISTROP"/>
+												<xs:enumeration value="LEGIS"/>
+												<xs:enumeration value="LEGISALL"/>
+												<xs:enumeration value="LIMPERT"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="movie" type="MediaType" minOccurs="0"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="internal.comment">
+		<xs:annotation>
+			<xs:documentation>Comments for internal use only</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:simpleContent>
+				<xs:extension base="FreeTextType">
+					<xs:attribute name="user.id" type="xs:string"/>
+					<xs:attribute name="date.created" type="xs:dateTime"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="citation">
+		<xs:annotation>
+			<xs:documentation>Citation main element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:group ref="TitleGroup" minOccurs="0"/>
+					<xs:choice>
+						<xs:element ref="cite.sgml"/>
+						<xs:sequence>
+							<xs:element name="source.volume" type="xs:string" minOccurs="0"/>
+							<xs:element ref="jurisdictions" minOccurs="0"/>
+							<xs:element name="year" type="xs:gYear" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="source.chapter.number" type="xs:string" minOccurs="0"/>
+							<xs:element name="source.page" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:choice>
+					<xs:element name="session" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="supplement" type="xs:string" minOccurs="0"/>
+				</xs:sequence>
+				<xs:element name="citation.block" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="Complex.Type">
+								<xs:choice>
+									<xs:sequence>
+										<xs:group ref="TitleGroup" minOccurs="0"/>
+										<xs:choice>
+											<xs:element ref="cite.sgml"/>
+											<xs:sequence>
+												<xs:element name="source.volume" type="xs:string" minOccurs="0"/>
+												<xs:element ref="jurisdictions" minOccurs="0"/>
+												<xs:element name="year" type="xs:gYear" minOccurs="0" maxOccurs="unbounded"/>
+												<xs:element name="source.chapter.number" type="xs:string" minOccurs="0"/>
+												<xs:element name="source.page" type="xs:string" minOccurs="0"/>
+											</xs:sequence>
+										</xs:choice>
+										<xs:element name="session" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="supplement" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:choice>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="free.text" type="FreeTextType"/>
+			</xs:choice>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cite.sgml" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Legacy Citation </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="pinpoint" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Pinpoint when referencing a Citation</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="qualifier" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Qualifier for what follows a Citation and its pinpoints</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="reference.statute">
+		<xs:annotation>
+			<xs:documentation>Statute (Act) Citation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:group ref="CitationPinpointGroup"/>
+					<xs:element name="amending.citation" minOccurs="0">
+						<xs:complexType>
+							<xs:attributeGroup ref="Base.Attributes"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="repealing.citation" minOccurs="0">
+						<xs:complexType>
+							<xs:attributeGroup ref="Base.Attributes"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="appendix.citation" minOccurs="0">
+						<xs:complexType>
+							<xs:attributeGroup ref="Base.Attributes"/>
+						</xs:complexType>
+					</xs:element>
+					<xs:element ref="reference.statute" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:element name="reference.statute.block" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="Complex.Type">
+								<xs:sequence>
+									<xs:group ref="CitationPinpointGroup"/>
+									<xs:element name="amending.citation" minOccurs="0">
+										<xs:complexType>
+											<xs:attributeGroup ref="Base.Attributes"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="repealing.citation" minOccurs="0">
+										<xs:complexType>
+											<xs:attributeGroup ref="Base.Attributes"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="appendix.citation" minOccurs="0">
+										<xs:complexType>
+											<xs:attributeGroup ref="Base.Attributes"/>
+										</xs:complexType>
+									</xs:element>
+									<xs:element ref="reference.statute" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="reference.bill">
+		<xs:annotation>
+			<xs:documentation>Bill in Progress Citation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="CitationPinpointGroup"/>
+				<xs:element name="bill.number" minOccurs="0">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attributeGroup ref="Base.Attributes"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="legislative.session" minOccurs="0">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attributeGroup ref="Base.Attributes"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="bill.status" minOccurs="0">
+					<xs:complexType>
+						<xs:attributeGroup ref="Base.Attributes"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="reference.case">
+		<xs:annotation>
+			<xs:documentation>Reference to a "Case"</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="caseref.sgml">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="soc" minOccurs="0">
+								<xs:complexType mixed="true">
+									<xs:complexContent mixed="true">
+										<xs:extension base="InlineType">
+											<xs:attribute ref="type"/>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="judgdate" type="InlineType" minOccurs="0"/>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="docket" type="InlineType"/>
+								<xs:element name="decider" type="InlineType"/>
+								<xs:element name="year">
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attributeGroup ref="Base.Attributes"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+								<xs:element ref="cite.sgml"/>
+								<xs:element name="pagenum">
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attributeGroup ref="Base.Attributes"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="paranum">
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attributeGroup ref="Base.Attributes"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="refn" type="InlineType"/>
+								<xs:element name="correlat">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="soc" type="InlineType" minOccurs="0"/>
+											<xs:element ref="cite.sgml" minOccurs="0"/>
+											<xs:element name="pagenum" type="xs:string" minOccurs="0"/>
+											<xs:element name="paranum" type="xs:string" minOccurs="0"/>
+										</xs:sequence>
+										<xs:attributeGroup ref="Base.Attributes"/>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="courtjur">
+									<xs:complexType>
+										<xs:simpleContent>
+											<xs:extension base="xs:string">
+												<xs:attributeGroup ref="Base.Attributes"/>
+											</xs:extension>
+										</xs:simpleContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+							<xs:element name="per" type="InlineType" minOccurs="0"/>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element name="casehist">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="casedisp" type="InlineType" minOccurs="0"/>
+											<xs:element ref="reference.case"/>
+										</xs:sequence>
+										<xs:attributeGroup ref="Base.Attributes"/>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="jurisdic">
+									<xs:complexType>
+										<xs:attributeGroup ref="Base.Attributes"/>
+									</xs:complexType>
+								</xs:element>
+							</xs:choice>
+							<xs:element name="casetrmt" minOccurs="0">
+								<xs:complexType>
+									<xs:attributeGroup ref="Base.Attributes"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="length" type="InlineType" minOccurs="0"/>
+						</xs:sequence>
+						<xs:attributeGroup ref="Base.Attributes"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="free.text" type="FreeTextType">
+					<xs:annotation>
+						<xs:documentation>Added by Mathieu</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="table">
+		<xs:annotation>
+			<xs:documentation>TLR Table</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="TitleGroup" minOccurs="0"/>
+				<xs:element ref="tgroup" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="frame">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="top"/>
+						<xs:enumeration value="bottom"/>
+						<xs:enumeration value="topbot"/>
+						<xs:enumeration value="all"/>
+						<xs:enumeration value="sides"/>
+						<xs:enumeration value="none"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="colsep" type="xs:string"/>
+			<xs:attribute name="rowsep" type="xs:string"/>
+			<xs:attribute name="pgwide" type="xs:string"/>
+			<xs:attribute name="orient">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="port"/>
+						<xs:enumeration value="land"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="reduced">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="yes"/>
+						<xs:enumeration value="no"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tgroup">
+		<xs:annotation>
+			<xs:documentation>TLR Table group</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="colspec" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="thead" minOccurs="0"/>
+				<xs:element ref="tbody"/>
+			</xs:sequence>
+			<xs:attribute name="cols" type="xs:integer" use="required"/>
+			<xs:attribute name="colsep" type="xs:string"/>
+			<xs:attribute name="rowsep" type="xs:string"/>
+			<xs:attributeGroup ref="tbl.align.attrib"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="colspec">
+		<xs:annotation>
+			<xs:documentation>TLR Table column specification</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="colnum" type="xs:integer"/>
+			<xs:attribute name="colname" type="xs:NMTOKEN"/>
+			<xs:attribute name="colwidth" type="xs:string"/>
+			<xs:attribute name="colsep" type="xs:string"/>
+			<xs:attribute name="rowsep" type="xs:string"/>
+			<xs:attributeGroup ref="tbl.align.attrib"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="thead">
+		<xs:annotation>
+			<xs:documentation>TLR Table head</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="row" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attributeGroup ref="tbl.valign.attrib"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tbody">
+		<xs:annotation>
+			<xs:documentation>TLR Table body</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="row" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attributeGroup ref="tbl.valign.attrib"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="row">
+		<xs:annotation>
+			<xs:documentation>TLR Table rol</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="entry" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="rowsep" type="xs:string"/>
+			<xs:attributeGroup ref="tbl.valign.attrib"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="entry">
+		<xs:annotation>
+			<xs:documentation>TLR Table cell</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:group ref="ParagraphCommonGroup" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="colname" type="xs:NMTOKEN"/>
+			<xs:attribute name="namest" type="xs:NMTOKEN"/>
+			<xs:attribute name="nameend" type="xs:NMTOKEN"/>
+			<xs:attribute name="morerows" type="xs:integer"/>
+			<xs:attribute name="colsep" type="xs:string"/>
+			<xs:attribute name="rowsep" type="xs:string"/>
+			<xs:attributeGroup ref="tbl.align.attrib"/>
+			<xs:attributeGroup ref="tbl.valign.attrib"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="clone">
+		<xs:annotation>
+			<xs:documentation>Pointer to a replacement element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:attribute name="refid"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="reference">
+		<xs:annotation>
+			<xs:documentation>Reference to something (note) in another location</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:attribute name="refid"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term.other.language" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Synonyms for a term in other languages</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="term.alternate" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Synonyms for a term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="text.editorial" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Inline editorial addition</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="reference.collection">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="reference.holder">
+					<xs:complexType>
+						<xs:sequence minOccurs="0">
+							<xs:any/>
+						</xs:sequence>
+						<xs:attributeGroup ref="Base.Attributes"/>
+						<xs:attribute name="refid" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

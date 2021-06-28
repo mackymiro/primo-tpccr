@@ -1,0 +1,24 @@
+body
+{
+font-family: Arial, Verdana, sans-serif;
+font-size: 12px;
+color: #222;
+background-color: #fff;
+}
+span.subject_area {border-style:solid;border-color: #ffff80; }
+span.note {border-style:solid;border-color: #80ff80; }
+span.court {border-style:solid;border-color: #cfe3fa; }
+span.case_name {border-style:solid;border-color: #fefbbc; }
+span.docket_number {border-style:solid;border-color: #ffc1ff; }
+span.date_submitted {border-style:solid;border-color: #f4e193; }
+span.date_decided {border-style:solid;border-color: #8080ff; }
+span.prior_history {border-style:solid;border-color: #d6d2dd; }
+span.counsel {border-style:solid;border-color: #ff0080; }
+span.judge {border-style:solid;border-color: #c1f394; }
+span.section {border-style:solid;border-color: #00ea00;}
+span.reference { background-color: #9889d3; }
+span.above95 { background-color: #80ff80; }
+span.above80 { background-color: #ff0000; }
+span.below79 { background-color: #ff8000; }
+span.edited { background-color: #0080ff; }
+span.party {border-style:solid;border-color: #8b2e58; }

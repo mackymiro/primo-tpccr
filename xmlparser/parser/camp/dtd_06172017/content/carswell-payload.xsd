@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for content mark up -->
+<!-- $Date: 2010/02/02 18:58:37 $ -->
+<!-- $Revision: 1.2 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.1">
+	<xs:include schemaLocation="carswell-content.xsd"/>
+	<xs:complexType name="SizeType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="units">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="pages"/>
+							<xs:enumeration value="kilobytes"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="payload">
+		<xs:annotation>
+			<xs:documentation>Root element.  Every document has a payload container.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="metadata" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>System and workflow data about a document.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element ref="document" minOccurs="0"/>
+					<xs:element name="payloads" minOccurs="0">
+						<xs:complexType>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element ref="payload"/>
+							</xs:choice>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="content.id" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="size" type="SizeType"/>
+	<xs:element name="notes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="internal.comment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="metadata">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="workflows" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="general" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="abridgement.titles" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="key.abridgement.title" type="xs:string" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="date.received" type="xs:date" minOccurs="0"/>
+										<xs:element name="key.content.type" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element ref="content.subtype" minOccurs="0"/>
+												</xs:sequence>
+												<xs:attribute name="value" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="key.duplicate.status" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>New | Translation | Duplicate | Modification - Replacement | Modification - Banned | Modification - Redaction | Modification - Corrigenda</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="New"/>
+													<xs:enumeration value="Translation"/>
+													<xs:enumeration value="Duplicate"/>
+													<xs:enumeration value="Modfication - Replacement"/>
+													<xs:enumeration value="Modfication - Banned"/>
+													<xs:enumeration value="Modfication - Redaction"/>
+													<xs:enumeration value="Modfication - Corrigenda"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element ref="jurisdictions" minOccurs="0"/>
+										<xs:element name="languages" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="key.language" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="original.document" minOccurs="0">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="xs:anyType">
+														<xs:attribute name="link.original" type="xs:string"/>
+														<xs:attribute name="key.media.type.received">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="Data Capture"/>
+																	<xs:enumeration value="Electronic"/>
+																	<xs:enumeration value="Electronic - PDF (graphic)"/>
+																	<xs:enumeration value="Electronic - PDF (text)"/>
+																	<xs:enumeration value="Electronic - PDF (text and graphic)"/>
+																	<xs:enumeration value="Electronic - Link"/>
+																	<xs:enumeration value="Hardcopy"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="select.sorting" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Additional sorting attributes required.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="key.sort" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="name" type="xs:string"/>
+															<xs:attribute name="select" type="xs:boolean"/>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="size.document" type="SizeType" minOccurs="0"/>
+										<xs:element name="subjects" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element name="key.general.subject" type="xs:string" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="task" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence minOccurs="0">
+													<xs:element ref="notes" minOccurs="0"/>
+													<xs:element name="size.task" type="SizeType" minOccurs="0"/>
+												</xs:sequence>
+												<xs:attribute ref="id"/>
+												<xs:attribute name="name" type="xs:string"/>
+												<xs:attribute name="group" type="xs:string"/>
+												<xs:attribute ref="status"/>
+												<xs:attribute name="time.start" type="xs:dateTime"/>
+												<xs:attribute name="time.end" type="xs:dateTime"/>
+												<xs:attribute name="time.due" type="xs:dateTime"/>
+												<xs:attribute name="user.id" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="case.law" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="cites" minOccurs="0"/>
+										<xs:element name="daily.doc" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute name="key.writer.id" type="xs:string"/>
+												<xs:attribute name="link" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element ref="decision.dates" minOccurs="0"/>
+										<xs:element ref="dockets" minOccurs="0"/>
+										<xs:element name="forums" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence minOccurs="0" maxOccurs="unbounded">
+													<xs:element ref="forum.identification" minOccurs="0"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="history.required" type="xs:boolean" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>yes | no</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="key.research.type" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute name="case.law" type="xs:boolean"/>
+												<xs:attribute name="legislation" type="xs:boolean"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="key.summary.type" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>ABRClass | Legal Summary | Research | Undigestable</xs:documentation>
+											</xs:annotation>
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="Undigestable"/>
+													<xs:enumeration value="Research"/>
+													<xs:enumeration value="ABRClass"/>
+													<xs:enumeration value="Legal Summary"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="priorities" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute name="tax" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="supreme.court" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="court.of.appeal" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="high.profile" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="law.report" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="litigator">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="ordered" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+												<xs:attribute name="repertorie" type="xs:boolean">
+													<xs:annotation>
+														<xs:documentation>yes | no</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="release.classification" minOccurs="0">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:enumeration value="clearn"/>
+													<xs:enumeration value="redact"/>
+													<xs:enumeration value="banned-hold"/>
+													<xs:enumeration value="banned-delete"/>
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element ref="repertories" minOccurs="0"/>
+										<xs:element name="select.expert.witness" type="xs:boolean" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>yes | no</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="select.law.reports" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="key.law.report" minOccurs="0" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element ref="notes" minOccurs="0"/>
+																<xs:element name="reporter" type="FreeTextType" minOccurs="0">
+																	<xs:annotation>
+																		<xs:documentation>Reporter title or group</xs:documentation>
+																	</xs:annotation>
+																</xs:element>
+															</xs:sequence>
+															<xs:attribute name="select" type="xs:boolean">
+																<xs:annotation>
+																	<xs:documentation>yes | no</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+															<xs:attribute name="code" type="xs:string"/>
+															<xs:attribute name="date.published" type="xs:date">
+																<xs:annotation>
+																	<xs:documentation>ISO standard data</xs:documentation>
+																</xs:annotation>
+															</xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="select.quantum" type="xs:boolean" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>yes | no</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element ref="socs" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="systems" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="alfresco" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="node.id" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="carswell" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="key.ccdb.number" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Contains the ccdb number</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="key.decinum" type="FreeTextType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Contains the decinum</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="key.eyb.number" type="FreeTextType" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Contains the NoEYB from Jurisprudence DTD</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="content.subtype">
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element ref="content.subtype" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="value" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

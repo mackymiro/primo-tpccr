@@ -1,0 +1,3260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tag and Attribute declarations for Carswell legacy and equivalent mark up -->
+<!-- $Date: 2008/11/24 19:15:06 $ -->
+<!-- $Revision: 1.16 $ -->
+<!-- General entity files for special characters -->
+<!-- XHTML entities (not used) -->
+
+<!-- <!ENTITY % xhtml-lat1 SYSTEM "iso-lat1.ent">
+%xhtml-lat1;
+-->
+
+<!-- 
+<!ENTITY % xhtml-special SYSTEM "xhtml1-special.ent">
+%xhtml-special;
+<!ENTITY % xhtml-symbol SYSTEM "xhtml1-symbol.ent">
+%xhtml-symbol; 
+-->
+<!ENTITY % iso-ents SYSTEM "iso-ents.ent">
+%iso-ents;
+
+<!ENTITY % car.ent SYSTEM "xcarswell-symbol.ent">
+%car.ent;
+
+
+<!-- 
+<!ENTITY % xcarswell-symbol SYSTEM "xcarswell-symbol.ent">
+%xcarswell-symbol;
+-->
+
+
+<!-- ==========  Parameter Entity Declariations ============  -->
+<!-- Parameter Entities: Frequent Attribute Types -->
+<!ENTITY % abbrev "ABBREV CDATA #IMPLIED">
+<!ENTITY % adddate "ADDDATE NMTOKEN #REQUIRED adddate NMTOKEN #REQUIRED">
+<!ENTITY % sync "SYNC CDATA #IMPLIED">
+<!ENTITY % views "VIEWS CDATA #IMPLIED">
+<!ENTITY % product "PRODUCT CDATA #IMPLIED">
+<!ENTITY % short "SHORT CDATA #IMPLIED">
+<!ENTITY % lang "LANG (EN | FR) #IMPLIED">
+<!ENTITY % proclaim "PROCLAIM (YES | NO) #IMPLIED">
+<!ENTITY % tocid "TOCID CDATA #IMPLIED">
+<!ENTITY % attindex "INDEX CDATA #IMPLIED">
+<!ENTITY % label "LABEL CDATA #IMPLIED">
+<!ENTITY % tigre "TIGRE CDATA #IMPLIED">
+<!ENTITY % position "POSITION CDATA #IMPLIED">
+<!ENTITY % id "ID CDATA #IMPLIED">
+<!--Parameter Entity: Document Properties Attibutes -->
+<!ENTITY % docprop "DOCUMENT (YES | NO)  #IMPLIED
+  ADDDATE CDATA #IMPLIED
+  adddate CDATA #IMPLIED
+  LANG (EN | FR) #IMPLIED 
+  MODDATE CDATA #IMPLIED 
+  moddate CDATA #IMPLIED 
+  INITID CDATA  #IMPLIED">
+<!-- Appear Everywhere Elements -->
+<!ENTITY % every "EDITNOTE | FOOTNOTE | GLUE | PATCH | PROPOSED | QUOTE">
+<!--Parameter Entity: Inline text Elements.
+    Typographic conventions.
+    Cross-references.
+    Text exclusion/inclusion.
+    Modification marker.
+-->
+<!-- <!ENTITY % linetxt "((#PCDATA) | bold | em | strike | under | 
+                     sub | sup | 
+                     textfrac | caseref | statref | term | termref | see | 
+                     seealso | condtext | ex | text | modify)"> 
+FOOTNOTE  EDITNOTE QUOTE added -->
+<!ENTITY % linetxt "#PCDATA | BOLD | CONDTEXT | EM | EX | MODIFY | STRIKE | SUB | SUP |
+  TERM | TERMREF | TEXT | TEXTFRAC | UNDER | SEE | SEEALSO |
+  STATREF | CASEREF |
+ %every;">
+<!--Parameter Entity: In-line text elements + paragraph-breaking elements.
+    Typographic conventions.
+    Cross-references.
+    Text exclusion/inclusion.
+    Modification marker.
+    Formulas.
+    Graphic placeholders.
+    Ordered and unordered lists.
+    Quotes and excerpts.
+    Tables.
+    "Words and Phrases" term paragraphs.
+-->
+
+<!ENTITY % lritext "(( TABLE | (CASEREF | STATREF | REGREF | REFN | 
+                       TERMP | CAPTION | AUTHORS)
+                       |  (CASETRMT | STATTRMT)
+                       |  ((TI | (CLICSOC?, CITE?)), 
+                      ((VOLUME?, REPORTER, PAGENUM, COURTJUR?, DECIDER?) | 
+                       (DECIDER?, COURTJUR, REPORTER, PAGENUM)))))" >
+
+<!-- <!ENTITY % paratxt "((#PCDATA) | bold | em | strike | under | 
+                     sub | sup | 
+                     textfrac |
+                     caseref | statref | term | termref | see | seealso |
+                     condtext | ex | text |
+                     modify |
+                     df |
+                     graphic |
+                     item | line |
+                     endnote |
+                     quote | excerpt |
+                     table |
+                     termp )">     -->
+<!ENTITY % paratxt "%linetxt; | ITEM | LINE | ENDNOTE | EXCERPT | DF | GRAPHIC | FILLABLEGRAPHIC | TABLE | TERMP">
+<!--Parameter Entity: Formula and fraction elements.
+    Typographic elements.
+    Fraction.
+    Fenced fraction.
+-->
+<!ENTITY % fractxt "#PCDATA | SUP | SUB | FRAC | FENCE | UNDER | %every;">
+<!--Parameter Entity: Table Cell contents.
+    author,surti,ti,subti,longti is for Title Pages. Moved from 
+    bookiden floating elements.
+    authtext deleted as obsolete: use line.
+-->
+<!ENTITY % celltxt "%linetxt; | GRAPHIC | FILLABLEGRAPHIC | FRAC | AUTHOR | SURTI | TI | SUBTI | LONGTI">
+<!--Parameter Entities: Element Names Expanded to include "Appear Anywhere Elements" 
+Use these in an element's content rather than the actual element name -->
+<!ENTITY % block0 "( %every; )* , BLOCK0 , ( %every; )*">
+<!ENTITY % block1 "( %every; )* , BLOCK1 , ( %every; )*">
+<!ENTITY % block2 "( %every; )* , BLOCK2 , ( %every; )*">
+<!ENTITY % block3 "( %every; )* , BLOCK3 , ( %every; )*">
+<!ENTITY % block4 "( %every; )* , BLOCK4 , ( %every; )*">
+<!ENTITY % block5 "( %every; )* , BLOCK5 , ( %every; )*">
+<!ENTITY % block6 "( %every; )* , BLOCK6 , ( %every; )*">
+<!ENTITY % block7 "( %every; )* , BLOCK7 , ( %every; )*">
+<!ENTITY % block8 "( %every; )* , BLOCK8 , ( %every; )*">
+<!ENTITY % block9 "( %every; )* , BLOCK9 , ( %every; )*">
+<!ENTITY % freeform "( %every; )* , FREEFORM , ( %every; )*">
+<!ENTITY % appendix "( %every; )* , APPENDIX , ( %every; )*">
+<!ENTITY % archive "( %every; )* , ARCHIVE , ( %every; )*">
+<!ENTITY % comment "( %every; )* , COMMENT , ( %every; )*">
+<!ENTITY % prepart "( %every; )* , PREPART , ( %every; )*">
+<!ENTITY % caseref "( %every; )* , CASEREF , ( %every; )*">
+<!ENTITY % em "( %every; )* , EM , ( %every; )*">
+<!ENTITY % ex "( %every; )* , EX , ( %every; )*">
+<!ENTITY % text "( %every; )* , TEXT , ( %every; )*">
+<!ENTITY % modify "( %every; )* , MODIFY , ( %every; )*">
+<!ENTITY % strike "( %every; )* , STRIKE , ( %every; )*">
+<!ENTITY % sub "( %every; )* , SUB , ( %every; )*">
+<!ENTITY % sup "( %every; )* , SUP , ( %every; )*">
+<!ENTITY % term "( %every; )* , TERM , ( %every; )*">
+<!ENTITY % termalt "( %every; )* , TERMALT , ( %every; )*">
+<!ENTITY % termref "( %every; )* , TERMREF , ( %every; )*">
+<!ENTITY % textfrac "( %every; )* , TEXTFRAC , ( %every; )*">
+<!ENTITY % bold "( %every; )* , BOLD , ( %every; )*">
+<!ENTITY % under "( %every; )* , UNDER , ( %every; )*">
+<!ENTITY % n "( %every; )* , N , ( %every; )*">
+<!ENTITY % ti "( %every; )* , TI , ( %every; )*">
+<!ENTITY % longti "( %every; )* , LONGTI , ( %every; )*">
+<!ENTITY % subti "( %every; )* , SUBTI , ( %every; )*">
+<!ENTITY % surti "( %every; )* , SURTI , ( %every; )*">
+<!ENTITY % author "( %every; )* , AUTHOR , ( %every; )*">
+<!ENTITY % authors "( %every; )* , AUTHORS , ( %every; )*">
+<!ENTITY % firsname "( %every; )* , FIRSNAME , ( %every; )*">
+<!ENTITY % lastname "( %every; )* , LASTNAME , ( %every; )*">
+<!ENTITY % designat "( %every; )* , DESIGNAT , ( %every; )*">
+<!ENTITY % p "( %every; )* , P , ( %every; )*">
+<!ENTITY % p1 "( %every; )* , P1 , ( %every; )*">
+<!ENTITY % p2 "( %every; )* , P2 , ( %every; )*">
+<!ENTITY % p3 "( %every; )* , P3 , ( %every; )*">
+<!ENTITY % p4 "( %every; )* , P4 , ( %every; )*">
+<!ENTITY % p5 "( %every; )* , P5 , ( %every; )*">
+<!ENTITY % p6 "( %every; )* , P6 , ( %every; )*">
+<!ENTITY % np "( %every; )* , NP , ( %every; )*">
+<!ENTITY % item "( %every; )* , ITEM , ( %every; )*">
+<!ENTITY % line "( %every; )* , LINE , ( %every; )*">
+<!ENTITY % line1 "( %every; )* , LINE1 , ( %every; )*">
+<!ENTITY % line2 "( %every; )* , LINE2 , ( %every; )*">
+<!ENTITY % endnote "( %every; )* , ENDNOTE , ( %every; )*">
+<!ENTITY % condtext "( %every; )* , CONDTEXT , ( %every; )*">
+<!ENTITY % docp "( %every; )* , DOCP , ( %every; )*">
+<!ENTITY % editnote "( %every; )* , EDITNOTE , ( %every; )*">
+<!ENTITY % quote "( %every; )* , QUOTE , ( %every; )*">
+<!ENTITY % excerpt "( %every; )* , EXCERPT , ( %every; )*">
+<!ENTITY % footnote "( %every; )* , FOOTNOTE , ( %every; )*">
+<!ENTITY % cite "( %every; )* , CITE , ( %every; )*">
+<!ENTITY % citeinfo "( %every; )* , CITEINFO , ( %every; )*">
+<!ENTITY % regref "( %every; )* , REGREF , ( %every; )*">
+<!ENTITY % statref "( %every; )* , STATREF , ( %every; )*">
+<!ENTITY % stathist "( %every; )* , STATHIST , ( %every; )*">
+<!ENTITY % statdisp "( %every; )* , STATDISP , ( %every; )* ">
+<!ENTITY % stattrmt "( %every; )* , STATTRMT , ( %every; )*">
+<!ENTITY % refn "( %every; )* , REFN , ( %every; )*">
+<!ENTITY % refn1 "( %every; )* , REFN1 , ( %every; )*">
+<!ENTITY % refn2 "( %every; )* , REFN2 , ( %every; )*">
+<!ENTITY % jurisdic "( %every; )* , JURISDIC , ( %every; )*">
+<!ENTITY % actunder "( %every; )* , ACTUNDER , ( %every; )*">
+<!ENTITY % preamble "( %every; )* , PREAMBLE , ( %every; )*">
+<!ENTITY % legiddoc "( %every; )* , LEGIDDOC , ( %every; )*">
+<!ENTITY % fulln "( %every; )* , FULLN , ( %every; )*">
+<!ENTITY % oldn "( %every; )* , OLDN , ( %every; )*">
+<!ENTITY % form "( %every; )* , FORM , ( %every; )*">
+<!ENTITY % var "( %every; )* , VAR , ( %every; )*">
+<!ENTITY % varcl "( %every; )* , VARCL , ( %every; )*">
+<!ENTITY % vardef "( %every; )* , VARDEF , ( %every; )*">
+<!ENTITY % varpara "( %every; )* , VARPARA , ( %every; )*">
+<!ENTITY % varscl "( %every; )* , VARSCL , ( %every; )*">
+<!ENTITY % varspara "( %every; )* , VARSPARA , ( %every; )*">
+<!ENTITY % varsscl "( %every; )* , VARSSCL , ( %every; )*">
+<!ENTITY % def "( %every; )* , DEF , ( %every; )*">
+<!ENTITY % defp "( %every; )* , DEFP , ( %every; )*">
+<!ENTITY % ssscl "( %every; )* , SSSCL , ( %every; )*">
+<!ENTITY % sssclp "( %every; )* , SSSCLP , ( %every; )*">
+<!ENTITY % para "( %every; )* , PARA , ( %every; )*">
+<!ENTITY % parap "( %every; )* , PARAP , ( %every; )*">
+<!ENTITY % spara "( %every; )* , SPARA , ( %every; )*">
+<!ENTITY % sparap "( %every; )* , SPARAP , ( %every; )*">
+<!ENTITY % cl "( %every; )* , CL , ( %every; )*">
+<!ENTITY % clp "( %every; )* , CLP , ( %every; )*">
+<!ENTITY % scl "( %every; )* , SCL , ( %every; )*">
+<!ENTITY % sclp "( %every; )* , SCLP , ( %every; )*">
+<!ENTITY % sscl "( %every; )* , SSCL , ( %every; )*">
+<!ENTITY % ssclp "( %every; )* , SSCLP , ( %every; )*">
+<!ENTITY % article "( %every; )* , ARTICLE , ( %every; )*">
+<!ENTITY % class "( %every; )* , CLASS , ( %every; )*">
+<!ENTITY % sec "( %every; )* , SEC , ( %every; )*">
+<!ENTITY % sssdiv "( %every; )* , SSSDIV , ( %every; )*">
+<!ENTITY % secdiv "( %every; )* , SECDIV , ( %every; )*">
+<!ENTITY % secp "( %every; )* , SECP , ( %every; )*">
+<!ENTITY % ssdiv "( %every; )* , SSDIV , ( %every; )*">
+<!ENTITY % ssec "( %every; )* , SSEC , ( %every; )*">
+<!ENTITY % ssecp "( %every; )* , SSECP , ( %every; )*">
+<!ENTITY % part "( %every; )* , PART , ( %every; )*">
+<!ENTITY % book "( %every; )* , BOOK , ( %every; )*">
+<!ENTITY % title "( %every; )* , TITLE , ( %every; )*">
+<!ENTITY % chapter "( %every; )* , CHAPTER , ( %every; )*">
+<!ENTITY % div "( %every; )* , DIV , ( %every; )*">
+<!ENTITY % sdiv "( %every; )* , SDIV , ( %every; )*">
+<!ENTITY % containr "( %every; )* , CONTAINR , ( %every; )*">
+<!ENTITY % scheddoc "( %every; )* , SCHEDDOC , ( %every; )*">
+<!ENTITY % schedule "( %every; )* , SCHEDULE , ( %every; )*">
+<!ENTITY % mdiv "( %every; )* , MDIV , ( %every; )*">
+<!ENTITY % mdiv0 "( %every; )* , MDIV0 , ( %every; )*">
+<!ENTITY % mdiv1 "( %every; )* , MDIV1 , ( %every; )*">
+<!ENTITY % mdiv2 "( %every; )* , MDIV2 , ( %every; )*">
+<!ENTITY % mdiv3 "( %every; )* , MDIV3 , ( %every; )*">
+<!ENTITY % mdiv4 "( %every; )* , MDIV4 , ( %every; )*">
+<!ENTITY % remision "( %every; )* , REMISION , ( %every; )*">
+<!ENTITY % convent "( %every; )* , CONVENT , ( %every; )*">
+<!ENTITY % misclaw "( %every; )* , MISCLAW , ( %every; )*">
+<!ENTITY % rule "( %every; )* , RULE , ( %every; )*">
+<!ENTITY % reg "( %every; )* , REG , ( %every; )*">
+<!ENTITY % act "( %every; )* , ACT , ( %every; )*">
+<!ENTITY % proposed "( %every; )* , PROPOSED , ( %every; )*">
+<!ENTITY % applic "( %every; )* , APPLIC , ( %every; )*">
+<!ENTITY % scope "( %every; )* , SCOPE , ( %every; )*">
+<!ENTITY % format "( %every; )* , FORMAT , ( %every; )*">
+<!ENTITY % polidoc "( %every; )* , POLIDOC , ( %every; )*">
+<!ENTITY % polident "( %every; )* , POLIDENT , ( %every; )*">
+<!ENTITY % polisumm "( %every; )* , POLISUMM , ( %every; )*">
+<!ENTITY % source "( %every; )* , SOURCE , ( %every; )*">
+<!ENTITY % tngroup "( %every; )* , TNGROUP , ( %every; )*">
+<!ENTITY % technote "( %every; )* , TECHNOTE , ( %every; )*">
+<!ENTITY % currency "( %every; )* , CURRENCY , ( %every; )*">
+<!ENTITY % date "( %every; )* , DATE , ( %every; )*">
+<!ENTITY % subject "( %every; )* , SUBJECT , ( %every; )*">
+<!ENTITY % subjtitl "( %every; )* , SUBJTITL , ( %every; )*">
+<!ENTITY % caption "( %every; )* , CAPTION , ( %every; )*">
+<!ENTITY % df "( %every; )* , DF , ( %every; )*">
+<!ENTITY % frac "( %every; )* , FRAC , ( %every; )*">
+<!ENTITY % fence "( %every; )* , FENCE , ( %every; )*">
+<!ENTITY % numer "( %every; )* , NUMER , ( %every; )*">
+<!ENTITY % over "( %every; )* , OVER , ( %every; )*">
+<!ENTITY % graphic "( %every; )* , GRAPHIC , ( %every; )*">
+<!ENTITY % linktext "( %every; )* , LINKTEXT , ( %every; )*">
+<!ENTITY % asciitbl "( %every; )* , ASCIITBL , ( %every; )*">
+<!ENTITY % sgmltbl "( %every; )* , SGMLTBL , ( %every; )*">
+<!ENTITY % table "( %every; )* , TABLE , ( %every; )*">
+<!ENTITY % tblbody "( %every; )* , TBLBODY , ( %every; )*">
+<!ENTITY % tblcdef "( %every; )* , TBLCDEF , ( %every; )*">
+<!ENTITY % tblcdefs "( %every; )* , TBLCDEFS , ( %every; )*">
+<!ENTITY % tblcell "( %every; )* , TBLCELL , ( %every; )*">
+<!ENTITY % tblhead "( %every; )* , TBLHEAD , ( %every; )*">
+<!ENTITY % tblnote "( %every; )* , TBLNOTE , ( %every; )*">
+<!ENTITY % tblnotes "( %every; )* , TBLNOTES , ( %every; )*">
+<!ENTITY % tblrow "( %every; )* , TBLROW , ( %every; )*">
+<!ENTITY % tblrows "( %every; )* , TBLROWS , ( %every; )*">
+<!ENTITY % xrefdoc "( %every; )* , XREFDOC , ( %every; )*">
+<!ENTITY % xrefcat "( %every; )* , XREFCAT , ( %every; )*">
+<!ENTITY % xrefscat "( %every; )* , XREFSCAT , ( %every; )*">
+<!ENTITY % xreflins "( %every; )* , XREFLINS , ( %every; )*">
+<!ENTITY % xrefline "( %every; )* , XREFLINE , ( %every; )*">
+<!ENTITY % infop "( %every; )* , INFOP , ( %every; )*">
+<!ENTITY % rectfoot "( %every; )* , RECTFOOT , ( %every; )*">
+<!ENTITY % recto "( %every; )* , RECTO , ( %every; )*">
+<!ENTITY % cover "( %every; )* , COVER , ( %every; )*">
+<!ENTITY % running "( %every; )* , RUNNING , ( %every; )*">
+<!ENTITY % verso "( %every; )* , VERSO , ( %every; )*">
+<!ENTITY % prepage "( %every; )* , PREPAGE , ( %every; )*">
+<!ENTITY % preear "( %every; )* , PREEAR , ( %every; )*">
+<!ENTITY % nextpage "( %every; )* , NEXTPAGE , ( %every; )*">
+<!ENTITY % relname "( %every; )* , RELNAME , ( %every; )*">
+<!ENTITY % spine "( %every; )* , SPINE , ( %every; )*">
+<!ENTITY % startpag "( %every; )* , STARTPAG , ( %every; )*">
+<!ENTITY % classifn "( %every; )* , CLASSIFN , ( %every; )*">
+<!ENTITY % classif "( %every; )* , CLASSIF , ( %every; )*">
+<!ENTITY % capphra "( %every; )* , CAPPHRA , ( %every; )*">
+<!ENTITY % ref "( %every; )* , REF , ( %every; )*">
+<!ENTITY % see "( %every; )* , SEE , ( %every; )*">
+<!ENTITY % seealso "( %every; )* , SEEALSO , ( %every; )*">
+<!ENTITY % bookpart "( %every; )* , BOOKPART , ( %every; )*">
+<!ENTITY % lrindex "( %every; )* , LRINDEX , ( %every; )*">
+<!ENTITY % lrindex0 "( %every; )* , LRINDEX0 , ( %every; )*">
+<!ENTITY % index "( %every; )* , INDEX , ( %every; )*">
+<!ENTITY % index0 "( %every; )* , INDEX0 , ( %every; )*">
+<!ENTITY % index1 "( %every; )* , INDEX1 , ( %every; )*">
+<!ENTITY % index2 "( %every; )* , INDEX2 , ( %every; )*">
+<!ENTITY % index3 "( %every; )* , INDEX3 , ( %every; )*">
+<!ENTITY % index4 "( %every; )* , INDEX4 , ( %every; )*">
+<!ENTITY % index5 "( %every; )* , INDEX5 , ( %every; )*">
+<!ENTITY % index6 "( %every; )* , INDEX6 , ( %every; )*">
+<!ENTITY % index7 "( %every; )* , INDEX7 , ( %every; )*">
+<!ENTITY % indexdiv "( %every; )* , INDEXDIV , ( %every; )*">
+<!ENTITY % backmat "( %every; )* , BACKMAT , ( %every; )*">
+<!ENTITY % frontmat "( %every; )* , FRONTMAT , ( %every; )*">
+<!ENTITY % bookiden "( %every; )* , BOOKIDEN , ( %every; )*">
+<!ENTITY % copyrigh "( %every; )* , COPYRIGH , ( %every; )*">
+<!ENTITY % frontdoc "( %every; )* , FRONTDOC , ( %every; )*">
+<!ENTITY % appendoc "( %every; )* , APPENDOC , ( %every; )*">
+<!ENTITY % toc "( %every; )* , TOC , ( %every; )*">
+<!ENTITY % hub1 "( %every; )* , HUB1 , ( %every; )*">
+<!ENTITY % hub2 "( %every; )* , HUB2 , ( %every; )*">
+<!ENTITY % casetrmt "( %every; )* , CASETRMT , ( %every; )*">
+<!ENTITY % pagenum "( %every; )* , PAGENUM , ( %every; )*">
+<!ENTITY % paranum "( %every; )* , PARANUM , ( %every; )*">
+<!ENTITY % per "( %every; )* , PER , ( %every; )*">
+<!ENTITY % soc "( %every; )* , SOC , ( %every; )*">
+<!ENTITY % year "( %every; )* , YEAR , ( %every; )*">
+<!ENTITY % docket "( %every; )* , DOCKET , ( %every; )*">
+<!ENTITY % decider "( %every; )* , DECIDER , ( %every; )*">
+<!ENTITY % judgdate "( %every; )* , JUDGDATE , ( %every; )*">
+<!ENTITY % digdate "( %every; )* , DIGDATE , ( %every; )*">
+<!ENTITY % courtjur "( %every; )* , COURTJUR , ( %every; )*">
+<!ENTITY % length "( %every; )* , LENGTH , ( %every; )*">
+<!ENTITY % correlat "( %every; )* , CORRELAT , ( %every; )*">
+<!ENTITY % caseanno "( %every; )* , CASEANNO , ( %every; )*">
+<!ENTITY % casedisp "( %every; )* , CASEDISP , ( %every; )*">
+<!ENTITY % casehist "( %every; )* , CASEHIST , ( %every; )*">
+<!ENTITY % caseref "( %every; )* , CASEREF , ( %every; )*">
+<!ENTITY % fillablegraphic "( %every; )* , FILLABLEGRAPHIC , ( %every; )*">
+
+
+
+
+
+
+<!ENTITY % abdigest "( %every; )* , ABDIGEST , ( %every; )*">
+<!ENTITY % abref "( %every; )* , ABREF , ( %every; )*">
+<!ENTITY % address "( %every; )* , ADDRESS , ( %every; )*">
+<!ENTITY % age "( %every; )* , AGE , ( %every; )*">
+<!ENTITY % apology "( %every; )* , APOLOGY , ( %every; )*">
+<!ENTITY % award "( %every; )* , AWARD , ( %every; )*">
+<!ENTITY % awardrange "( %every; )* , AWARDRANGE , ( %every; )*">
+<!ENTITY % awards "( %every; )* , AWARDS , ( %every; )*">
+<!ENTITY % basisofdependency "( %every; )* , BASISOFDEPENDENCY , ( %every; )*">
+<!ENTITY % bookpart "( %every; )* , BOOKPART , ( %every; )*">
+<!ENTITY % breachinfo "( %every; )* , BREACHINFO , ( %every; )*">
+<!ENTITY % caseannO "( %every; )* , CASEANNO , ( %every; )*">
+<!ENTITY % caseblk2 "( %every; )* , CASEBLK2 , ( %every; )*">
+<!ENTITY % caseblk3 "( %every; )* , CASEBLK3 , ( %every; )*">
+<!ENTITY % caseblk4 "( %every; )* , CASEBLK4 , ( %every; )*">
+<!ENTITY % caseblk5 "( %every; )* , CASEBLK5 , ( %every; )*">
+<!ENTITY % caseblk6 "( %every; )* , CASEBLK6 , ( %every; )*">
+<!ENTITY % caseblk7 "( %every; )* , CASEBLK7 , ( %every; )*">
+<!ENTITY % casecomm "( %every; )* , CASECOMM , ( %every; )*">
+<!ENTITY % casedata "( %every; )* , CASEDATA , ( %every; )*">
+<!ENTITY % casedige "( %every; )* , CASEDIGE , ( %every; )*">
+<!ENTITY % casehsts "( %every; )* , CASEHSTS , ( %every; )*">
+<!ENTITY % casesdoc "( %every; )* , CASESDOC , ( %every; )*">
+<!ENTITY % casesumm "( %every; )* , CASESUMM , ( %every; )*">
+<!ENTITY % causdate "( %every; )* , CAUSDATE , ( %every; )*">
+<!ENTITY % cclref "( %every; )* , CCLREF , ( %every; )*">
+<!ENTITY % claimantage "( %every; )* , CLAIMANTAGE , ( %every; )*">
+<!ENTITY % claimantagerange "( %every; )* , CLAIMANTAGERANGE , ( %every; )*">
+<!ENTITY % claimantassetrange "( %every; )* , CLAIMANTASSETRANGE , ( %every; )*">
+<!ENTITY % claimantassets "( %every; )* , CLAIMANTASSETS , ( %every; )*">
+<!ENTITY % claimantinfo "( %every; )* , CLAIMANTINFO , ( %every; )*">
+<!ENTITY % clicsoc "( %every; )* , CLICSOC , ( %every; )*">
+<!ENTITY % cmsact "( %every; )* , CMSACT , ( %every; )*">
+<!ENTITY % cmsid "( %every; )* , CMSID , ( %every; )*">
+<!ENTITY % cmsset "( %every; )* , CMSSET , ( %every; )*">
+<!ENTITY % connector "( %every; )* , CONNECTOR , ( %every; )*">
+<!ENTITY % contracttype "( %every; )* , CONTRACTTYPE , ( %every; )*">
+<!ENTITY % correlas "( %every; )* , CORRELAS , ( %every; )*">
+<!ENTITY % counsel "( %every; )* , COUNSEL , ( %every; )*">
+<!ENTITY % counselblock "( %every; )* , COUNSELBLOCK , ( %every; )*">
+<!ENTITY % counsels "( %every; )* , COUNSELS , ( %every; )*">
+<!ENTITY % courtfil "( %every; )* , COURTFIL , ( %every; )*">
+<!ENTITY % courtfile "( %every; )* , COURTFILE , ( %every; )*">
+<!ENTITY % csupportinfo "( %every; )* , CSUPPORTINFO , ( %every; )*">
+<!ENTITY % datapool "( %every; )* , DATAPOOL , ( %every; )*">
+<!ENTITY % dateblk "( %every; )* , DATEBLK , ( %every; )*">
+<!ENTITY % dcounsel "( %every; )* , DCOUNSEL , ( %every; )*">
+<!ENTITY % decdummy "( %every; )* , DECDUMMY , ( %every; )*">
+<!ENTITY % decision "( %every; )* , DECISION , ( %every; )*">
+<!ENTITY % defamationeffect "( %every; )* , DEFAMATIONEFFECT , ( %every; )*">
+<!ENTITY % defamationinfo "( %every; )* , DEFAMATIONINFO , ( %every; )*">
+<!ENTITY % defendantparticulars "( %every; )* , DEFENDANTPARTICULARS , ( %every; )*">
+<!ENTITY % digcite "( %every; )* , DIGCITE , ( %every; )*">
+<!ENTITY % digcites "( %every; )* , DIGCITES , ( %every; )*">
+<!ENTITY % digekey "( %every; )* , DIGEKEY , ( %every; )*">
+<!ENTITY % dincome "( %every; )* , DINCOME , ( %every; )*">
+<!ENTITY % dincomerange "( %every; )* , DINCOMERANGE , ( %every; )*">
+<!ENTITY % disp "( %every; )* , DISP , ( %every; )*">
+<!ENTITY % docti "( %every; )* , DOCTI , ( %every; )*">
+<!ENTITY % employeeage "( %every; )* , EMPLOYEEAGE , ( %every; )*">
+<!ENTITY % employeeagerange "( %every; )* , EMPLOYEEAGERANGE , ( %every; )*">
+<!ENTITY % employeeinfo "( %every; )* , EMPLOYEEINFO , ( %every; )*">
+<!ENTITY % employeename "( %every; )* , EMPLOYEENAME , ( %every; )*">
+<!ENTITY % employeeoccupationcategory "( %every; )* , EMPLOYEEOCCUPATIONCATEGORY , ( %every; )*">
+<!ENTITY % employeeoccupationtitle "( %every; )* , EMPLOYEEOCCUPATIONTITLE , ( %every; )*">
+<!ENTITY % employeesalary "( %every; )* , EMPLOYEESALARY , ( %every; )*">
+<!ENTITY % employerindustry "( %every; )* , EMPLOYERINDUSTRY , ( %every; )*">
+<!ENTITY % employerinfo "( %every; )* , EMPLOYERINFO , ( %every; )*">
+<!ENTITY % employername "( %every; )* , EMPLOYERNAME , ( %every; )*">
+<!ENTITY % employmentlength "( %every; )* , EMPLOYMENTLENGTH , ( %every; )*">
+<!ENTITY % employmentrange "( %every; )* , EMPLOYMENTRANGE , ( %every; )*">
+<!ENTITY % essay "( %every; )* , ESSAY , ( %every; )*">
+<!ENTITY % estateassetrange "( %every; )* , ESTATEASSETRANGE , ( %every; )*">
+<!ENTITY % estateassets "( %every; )* , ESTATEASSETS , ( %every; )*">
+<!ENTITY % estateinfo "( %every; )* , ESTATEINFO , ( %every; )*">
+<!ENTITY % exceptioncsg "( %every; )* , EXCEPTIONCSG , ( %every; )*">
+<!ENTITY % expert "( %every; )* , EXPERT , ( %every; )*">
+<!ENTITY % expertise "( %every; )* , EXPERTISE , ( %every; )*">
+<!ENTITY % expertisearea "( %every; )* , EXPERTISEAREA , ( %every; )*">
+<!ENTITY % expertisespecialty "( %every; )* , EXPERTISESPECIALTY , ( %every; )*">
+<!ENTITY % experts "( %every; )* , EXPERTS , ( %every; )*">
+<!ENTITY % fact "( %every; )* , FACT , ( %every; )*">
+<!ENTITY % factum "( %every; )* , FACTUM , ( %every; )*">
+<!ENTITY % faircomment "( %every; )* , FAIRCOMMENT , ( %every; )*">
+<!ENTITY % firmname "( %every; )* , FIRMNAME , ( %every; )*">
+<!ENTITY % firmtype "( %every; )* , FIRMTYPE , ( %every; )*">
+<!ENTITY % flapplic "( %every; )* , FLAPPLIC , ( %every; )*">
+<!ENTITY % flcite "( %every; )* , FLCITE , ( %every; )*">
+<!ENTITY % fldef "( %every; )* , FLDEF , ( %every; )*">
+<!ENTITY % fldesc "( %every; )* , FLDESC , ( %every; )*">
+<!ENTITY % flentry "( %every; )* , FLENTRY , ( %every; )*">
+<!ENTITY % flsum "( %every; )* , FLSUM , ( %every; )*">
+<!ENTITY % gender "( %every; )* , GENDER , ( %every; )*">
+<!ENTITY % headnblk "( %every; )* , HEADNBLK , ( %every; )*">
+<!ENTITY % headnote "( %every; )* , HEADNOTE , ( %every; )*">
+<!ENTITY % heardate "( %every; )* , HEARDATE , ( %every; )*">
+<!ENTITY % held "( %every; )* , HELD , ( %every; )*">
+<!ENTITY % ident "( %every; )* , IDENT , ( %every; )*">
+<!ENTITY % identbit "( %every; )* , IDENTBIT , ( %every; )*">
+<!ENTITY % injury "( %every; )* , INJURY , ( %every; )*">
+<!ENTITY % injuryagerange "( %every; )* , INJURYAGERANGE , ( %every; )*">
+<!ENTITY % injurycause "( %every; )* , INJURYCAUSE , ( %every; )*">
+<!ENTITY % injuryduration "( %every; )* , INJURYDURATION , ( %every; )*">
+<!ENTITY % injuryinfo "( %every; )* , INJURYINFO , ( %every; )*">
+<!ENTITY % internaltoc "( %every; )* , INTERNALTOC , ( %every; )*">
+<!ENTITY % intromat "( %every; )* , INTROMAT , ( %every; )*">
+<!ENTITY % justificationplea "( %every; )* , JUSTIFICATIONPLEA , ( %every; )*">
+<!ENTITY % keyblock1 "( %every; )* , KEYBLOCK1 , ( %every; )*">
+<!ENTITY % keyclass0 "( %every; )* , KEYCLASS0 , ( %every; )*">
+<!ENTITY % keyclass1 "( %every; )* , KEYCLASS1 , ( %every; )*">
+<!ENTITY % keyclass2 "( %every; )* , KEYCLASS2 , ( %every; )*">
+<!ENTITY % keyclass3 "( %every; )* , KEYCLASS3 , ( %every; )*">
+<!ENTITY % keyclass4 "( %every; )* , KEYCLASS4 , ( %every; )*">
+<!ENTITY % keyclass5 "( %every; )* , KEYCLASS5 , ( %every; )*">
+<!ENTITY % keyclass6 "( %every; )* , KEYCLASS6 , ( %every; )*">
+<!ENTITY % keyident "( %every; )* , KEYIDENT , ( %every; )*">
+<!ENTITY % keyref "( %every; )* , KEYREF , ( %every; )*">
+<!ENTITY % keyrefs "( %every; )* , KEYREFS , ( %every; )*">
+<!ENTITY % keysubj "( %every; )* , KEYSUBJ , ( %every; )*">
+<!ENTITY % keyxref "( %every; )* , KEYXREF , ( %every; )*">
+<!ENTITY % lawfirm "( %every; )* , LAWFIRM , ( %every; )*">
+<!ENTITY % level "( %every; )* , LEVEL , ( %every; )*">
+<!ENTITY % link "( %every; )* , LINK , ( %every; )*">
+<!ENTITY % lrentry "( %every; )* , LRENTRY , ( %every; )*">
+<!ENTITY % lrindex1 "( %every; )* , LRINDEX1 , ( %every; )*">
+<!ENTITY % lrindex2 "( %every; )* , LRINDEX2 , ( %every; )*">
+<!ENTITY % lrindex3 "( %every; )* , LRINDEX3 , ( %every; )*">
+<!ENTITY % lrref "( %every; )* , LRREF , ( %every; )*">
+<!ENTITY % lrtext "( %every; )* , LRTEXT , ( %every; )*">
+<!ENTITY % malice "( %every; )* , MALICE , ( %every; )*">
+<!ENTITY % motion "( %every; )* , MOTION , ( %every; )*">
+<!ENTITY % motionwrapper "( %every; )* , MOTIONWRAPPER , ( %every; )*">
+<!ENTITY % natureofpublication "( %every; )* , NATUREOFPUBLICATION , ( %every; )*">
+<!ENTITY % ndependentchildren "( %every; )* , NDEPENDENTCHILDREN , ( %every; )*">
+<!ENTITY % noticeperiodawarded "( %every; )* , NOTICEPERIODAWARDED , ( %every; )*">
+<!ENTITY % noticeperiodrange "( %every; )* , NOTICEPERIODRANGE , ( %every; )*">
+<!ENTITY % nrelevantchildren "( %every; )* , NRELEVANTCHILDREN , ( %every; )*">
+<!ENTITY % occupation "( %every; )* , OCCUPATION , ( %every; )*">
+<!ENTITY % oContent "( %every; )* , OCONTENT , ( %every; )*">
+<!ENTITY % opinion "( %every; )* , OPINION , ( %every; )*">
+<!ENTITY % opintro "( %every; )* , OPINTRO , ( %every; )*">
+<!ENTITY % order "( %every; )* , ORDER , ( %every; )*">
+<!ENTITY % ordertype "( %every; )* , ORDERTYPE , ( %every; )*">
+<!ENTITY % othlang "( %every; )* , OTHLANG , ( %every; )*">
+<!ENTITY % party "( %every; )* , PARTY , ( %every; )*">
+<!ENTITY % partyblock "( %every; )* , PARTYBLOCK , ( %every; )*">
+<!ENTITY % partyrole "( %every; )* , PARTYROLE , ( %every; )*">
+<!ENTITY % pcounsel "( %every; )* , PCOUNSEL , ( %every; )*">
+<!ENTITY % penalty "( %every; )* , PENALTY , ( %every; )*">
+<!ENTITY % pincome "( %every; )* , PINCOME , ( %every; )*">
+<!ENTITY % pincomerange "( %every; )* , PINCOMERANGE , ( %every; )*">
+<!ENTITY % plaintiffparticulars "( %every; )* , PLAINTIFFPARTICULARS , ( %every; )*">
+<!ENTITY % pleading "( %every; )* , PLEADING , ( %every; )*">
+<!ENTITY % pleadingwrapper "( %every; )* , PLEADINGWRAPPER , ( %every; )*">
+<!ENTITY % preceden "( %every; )* , PRECEDEN , ( %every; )*">
+<!ENTITY % prevlev "( %every; )* , PREVLEV , ( %every; )*">
+<!ENTITY % primarycustodian "( %every; )* , PRIMARYCUSTODIAN , ( %every; )*">
+<!ENTITY % privilege "( %every; )* , PRIVILEGE , ( %every; )*">
+<!ENTITY % quantum "( %every; )* , QUANTUM , ( %every; )*">
+<!ENTITY % reason "( %every; )* , REASON , ( %every; )*">
+<!ENTITY % reflist "( %every; )* , REFLIST , ( %every; )*">
+<!ENTITY % relaproc "( %every; )* , RELAPROC , ( %every; )*">
+<!ENTITY % relationshiplength "( %every; )* , RELATIONSHIPLENGTH , ( %every; )*">
+<!ENTITY % relationshiplengthrange "( %every; )* , RELATIONSHIPLENGTHRANGE , ( %every; )*">
+<!ENTITY % relationtodeceased "( %every; )* , RELATIONTODECEASED , ( %every; )*">
+<!ENTITY % reporter "( %every; )* , REPORTER , ( %every; )*">
+<!ENTITY % root "( %every; )* , ROOT , ( %every; )*">
+<!ENTITY % rulident "( %every; )* , RULIDENT , ( %every; )*">
+<!ENTITY % ruling "( %every; )* , RULING , ( %every; )*">
+<!ENTITY % sagdige "( %every; )* , SAGDIGE , ( %every; )*">
+<!ENTITY % sagref "( %every; )* , SAGREF , ( %every; )*">
+<!ENTITY % sentence "( %every; )* , SENTENCE , ( %every; )*">
+<!ENTITY % socs "( %every; )* , SOCS , ( %every; )*">
+<!ENTITY % solrec "( %every; )* , SOLREC , ( %every; )*">
+<!ENTITY % solrecs "( %every; )* , SOLRECS , ( %every; )*">
+<!ENTITY % sortcategories "( %every; )* , SORTCATEGORIES , ( %every; )*">
+<!ENTITY % sortcategory "( %every; )* , SORTCATEGORY , ( %every; )*">
+<!ENTITY % ssupportinfo "( %every; )* , SSUPPORTINFO , ( %every; )*">
+<!ENTITY % statedis "( %every; )* , STATEDIS , ( %every; )*">
+<!ENTITY % statepro "( %every; )* , STATEPRO , ( %every; )*">
+<!ENTITY % subtype "( %every; )* , SUBTYPE , ( %every; )*">
+<!ENTITY % summabit "( %every; )* , SUMMABIT , ( %every; )*">
+<!ENTITY % summarym "( %every; )* , SUMMARYM , ( %every; )*">
+<!ENTITY % titlename "( %every; )* , TITLENAME , ( %every; )*">
+<!ENTITY % toc "( %every; )* , TOC , ( %every; )*">
+<!ENTITY % tocapp "( %every; )* , TOCAPP , ( %every; )*">
+<!ENTITY % toccase "( %every; )* , TOCCASE , ( %every; )*">
+<!ENTITY % toccite "( %every; )* , TOCCITE , ( %every; )*">
+<!ENTITY % tocdef "( %every; )* , TOCDEF , ( %every; )*">
+<!ENTITY % tocdiv "( %every; )* , TOCDIV , ( %every; )*">
+<!ENTITY % tocform "( %every; )* , TOCFORM , ( %every; )*">
+<!ENTITY % tocmdiv "( %every; )* , TOCMDIV , ( %every; )*">
+<!ENTITY % tocp "( %every; )* , TOCP , ( %every; )*">
+<!ENTITY % tocpara "( %every; )* , TOCPARA , ( %every; )*">
+<!ENTITY % tocpart "( %every; )* , TOCPART , ( %every; )*">
+<!ENTITY % tocppart "( %every; )* , TOCPPART , ( %every; )*">
+<!ENTITY % tocsched "( %every; )* , TOCSCHED , ( %every; )*">
+<!ENTITY % tocscope "( %every; )* , TOCSCOPE , ( %every; )*">
+<!ENTITY % tocsdiv "( %every; )* , TOCSDIV , ( %every; )*">
+<!ENTITY % tocsec "( %every; )* , TOCSEC , ( %every; )*">
+<!ENTITY % tocsoc "( %every; )* , TOCSOC , ( %every; )*">
+<!ENTITY % tocssec "( %every; )* , TOCSSEC , ( %every; )*">
+<!ENTITY % unemploymentlength "( %every; )* , UNEMPLOYMENTLENGTH , ( %every; )*">
+<!ENTITY % view "( %every; )* , VIEW , ( %every; )*">
+<!ENTITY % volnote "( %every; )* , VOLNOTE , ( %every; )*">
+<!ENTITY % volume "( %every; )* , VOLUME , ( %every; )*">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Repeating Element Content Declarations -->
+<!ENTITY % blockcommon "( %every; )*, ( %n; )?, ( %ti; )?, ( %p; )*, ( %np; )*, ( %docp; )*">
+<!ENTITY % schedappcon "( %schedule; ) | ( %appendix; ) | ( %containr; )">
+<!ENTITY % schedcon "( %schedule; ) | ( %containr; )">
+<!-- Placeholder Element Declarations 
+  These are mostly elements outside the Legislation scope -->
+<!ELEMENT LRINDEX ANY>
+<!ELEMENT LRINDEX0 ANY>
+<!-- Obsolete Elements = Placeholder Declarations -->
+<!ELEMENT ARCHIVE ANY>
+<!ELEMENT PREPART ANY>
+<!-- Element Declariations: ROOT Element -->
+<!--Element:  Root element for containing container and document elements.
+    Class:    Function.
+    Comments: freeform shouldn't be allowed here: 
+               it is neither container nor document.
+              book,part,div allowed for convenience of processing 
+               large statutes.
+              decdummy,abdigest,ruling obsolete.
+              datapool,hub1 used in Tigre, therefore obsolete.
+              cmsset not implemented.
+              quote shouldn't float.  Allowed for CTS.  
+              
+<!ELEMENT root O O ( (( freeform |
+                     courtfile |
+                     act | reg | remision | misclaw | convent |
+                     book | part | div |
+                     legiddoc | sec | form | article | class | scheddoc |
+                     decision | courtfil | casedige | sagdige | quantum |
+                     essay | comment | casesdoc | appendoc | docp | 
+                     preceden |
+                     flentry |
+                     polidoc |
+                     tngroup |
+                     bookiden | copyrigh | frontdoc | toc |
+                     index | lrindex |
+                     xrefdoc |
+                     oDocPack | 
+                     decdummy | abdigest | ruling | 
+                     cmsset | termp |
+                     keysubj | keyxref)* ,
+                     (bookpart | frontmat | backmat | 
+                     datapool | hub1 | root | glue)*))
+      +(patch, editnote, footnote, quote, proposed, glue)>
+<!ELEMENT ROOT ((FREEFORM | ACT | REG | REMISION | MISCLAW | CONVENT | BOOK | PART | DIV | LEGIDDOC | SEC | FORM | ARTICLE | CLASS | SCHEDDOC | COMMENT | POLIDOC | TNGROUP | DOCP | XREFDOC | BOOKIDEN | COPYRIGH | FRONTDOC | TOC | INDEX | LRINDEX | APPENDOC | ODOCPACK | TERMP | %every; )*, (BOOKPART | FRONTMAT | BACKMAT | DATAPOOL | HUB1 | ROOT | %every; )*)>
+
+ -->
+
+<!ELEMENT ROOT ((FREEFORM | COURTFILE | ACT | REG | REMISION | MISCLAW | CONVENT | BOOK | PART | DIV | LEGIDDOC | SEC | FORM | ARTICLE | CLASS | SCHEDDOC | DECISION | COURTFIL | CASEDIGE | SAGDIGE | QUANTUM | ESSAY | COMMENT | CASESDOC | APPENDOC | DOCP |  PRECEDEN | FLENTRY | POLIDOC | TNGROUP | BOOKIDEN | COPYRIGH | FRONTDOC | TOC | INDEX | LRINDEX | XREFDOC | ODOCPACK |  DECDUMMY | ABDIGEST | RULING |  CMSSET | TERMP | KEYSUBJ | KEYXREF | %every; )* , (BOOKPART | FRONTMAT | BACKMAT |  DATAPOOL | HUB1 | ROOT | GLUE | %every; )*)>
+
+
+
+<!--Element:  Book Part
+    Class:    StrucPub (formerly Function, could return to Function)
+    Comments: Contains documents and headings;
+              freeform shouldn't be allowed here,
+              ruling, abdigest, decdummy are obsolete.
+              Multiple titles for bilingual Abridgment output.-->
+<!-- <!ELEMENT bookpart O O (format? ,
+                        n?, ti*, subti*,
+                       (toc | frontdoc | 
+                        freeform |
+                        polidoc | form |
+                        decision | decdummy | ruling | essay | courtfil |
+                        tngroup | termp |
+                        xrefdoc |
+                        abdigest | casedige | sagdige | quantum |
+                        flentry |
+                        comment | casesdoc | docp | preceden | appendoc |
+                        lrindex | index | 
+                        keysubj | keyxref |  
+                        oDocPack)*,
+     (root | bookpart | act | reg | convent | remision | misclaw)*) >
+
+<!ATTLIST bookpart
+          abbrev   CDATA #IMPLIED
+          label    CDATA #IMPLIED
+          views    CDATA #IMPLIED
+          fulln    CDATA #IMPLIED
+          bookmark CDATA #IMPLIED >
+<!ELEMENT BOOKPART (( %format; )?, ( %n; )?, ( %ti; )*, ( %subti; )*, (TOC | FRONTDOC | FREEFORM | POLIDOC | FORM | TNGROUP | XREFDOC | COMMENT | DOCP | INDEX | LRINDEX | APPENDOC | ODOCPACK | TERMP | %every; )*, (ROOT | BOOKPART | ACT | REG | CONVENT | REMISION | MISCLAW | %every; )*)>
+<!ATTLIST BOOKPART
+  %abbrev; %label;
+  FULLN CDATA #IMPLIED
+  BOOKMARK CDATA #IMPLIED>
+ -->
+
+<!ELEMENT BOOKPART (( %format; )?, N?, ( TI )*, ( SUBTI )*, (TOC | FRONTDOC |  FREEFORM | POLIDOC | FORM | DECISION | DECDUMMY | RULING | ESSAY | COURTFIL | TNGROUP | TERMP | XREFDOC | ABDIGEST | CASEDIGE | SAGDIGE | QUANTUM | FLENTRY | COMMENT | CASESDOC | DOCP | PRECEDEN | APPENDOC | LRINDEX | INDEX |  KEYSUBJ | KEYXREF |   ODOCPACK | %every; )*, (ROOT | BOOKPART | ACT | REG | CONVENT | REMISION | MISCLAW | %every; )*) >
+<!ATTLIST BOOKPART
+  %abbrev; %label;
+  FULLN CDATA #IMPLIED
+  BOOKMARK CDATA #IMPLIED>
+
+
+<!-- Processing Elements -->
+<!--Element:  Glue for OmniMark processing only
+    Class:    Function-->
+<!ELEMENT GLUE ANY>
+<!ATTLIST GLUE
+  TYPE CDATA #IMPLIED
+>
+<!--Element:  Patch
+    Class:    Function -->
+<!ELEMENT PATCH ANY>
+<!ATTLIST PATCH
+  REASON CDATA #REQUIRED
+>
+<!--Element:  Tigre level 1 (heading) structure
+    Class:    Function
+    Comments: Obsolete outside of Tigre-->
+<!ELEMENT HUB1 ANY>
+<!ATTLIST HUB1
+  %abbrev; 
+>
+<!--Element:  Tigre level 2 (document) structure
+    Class:    Function
+    Comments: Obsolete outside of Tigre-->
+<!ELEMENT HUB2 ANY>
+<!ATTLIST HUB2
+  %tigre; 
+  %docprop; 
+>
+<!--Element:  Online document package
+    Class:    Function-->
+<!ELEMENT ODOCPACK (OCONTENT)>
+<!ATTLIST ODOCPACK
+  %docprop; 
+>
+<!--Element:  Online content body
+    Class:    ProdSpec
+    Comments: Indexdiv and index0 may become documents by 
+               setting the document attribute to yes-->
+<!-- <!ELEMENT oContent O O	(appendoc | article | casedige | casesdoc | class | 
+                         comment | convent | courtfil | decdummy | decision | 
+                         docp | 
+                         essay | flentry | form | frontdoc | index | 
+                         indexdiv | index0 | legiddoc | lrindex | polidoc | 
+                         preceden | remision | ruling | scheddoc | sec | 
+                         toc | tngroup | 
+                         xrefdoc)? >
+<!ELEMENT OCONTENT (( %every; )*, (APPENDOC | ARTICLE | COMMENT | CONVENT | DOCP | FORM | FRONTDOC | INDEX | INDEXDIV | INDEX0 | LEGIDDOC | LRINDEX | POLIDOC | REMISION | SCHEDDOC | SEC | TOC | TNGROUP | XREFDOC)?, ( %every; )*)>
+
+
+
+<!ELEMENT OCONTENT (( %every; )*, (APPENDOC | ARTICLE | CASEDIGE | CASESDOC | CLASS |  COMMENT | CONVENT | COURTFIL | DECDUMMY | DECISION |  DOCP |  ESSAY | FLENTRY | FORM | FRONTDOC | INDEX |  INDEXDIV | INDEX0 | LEGIDDOC | LRINDEX | POLIDOC |  PRECEDEN | REMISION | RULING | SCHEDDOC | SEC |  TOC | TNGROUP |  XREFDOC)?, ( %every; )*) >
+ -->
+<!-- (( %appendoc; ) | ( %article; ) | 
+  ( %comment; ) | ( %convent; ) | ( %docp; ) | 
+  ( %form; ) | ( %frontdoc; ) | ( %index; ) | 
+  ( %indexdiv; ) | ( %index0; ) | ( %legiddoc; ) | ( %lrindex; ) | ( %polidoc; ) | 
+  ( %remision; ) | ( %scheddoc; ) | ( %sec; ) | 
+  ( %toc; ) | ( %tngroup; ) | ( %xrefdoc; ))? > -->
+<!--Element: Tigre datapool
+    Class:   Function-->
+<!-- <!ELEMENT datapool O O (appendix | schedule | scheddoc | casedige |
+                        comment | decdummy | decision | docp | essay | 
+                        flentry | form | hub2 | indexdiv | polidoc |
+                        preceden | ruling | sec | tngroup | xrefdoc | 
+                        legiddoc | appendoc)* >
+                        
+<!ELEMENT DATAPOOL (APPENDIX | SCHEDULE | SCHEDDOC | COMMENT | DOCP | FORM | HUB2 | INDEXDIV | POLIDOC | SEC | TNGROUP | XREFDOC | LEGIDDOC | APPENDOC | ( %every; ))*>
+
+ 
+<!ELEMENT DATAPOOL ( %every; | APPENDIX | SCHEDULE | SCHEDDOC | CASEDIGE | COMMENT | DECDUMMY | DECISION | DOCP | ESSAY |  FLENTRY | FORM | HUB2 | INDEXDIV | POLIDOC | PRECEDEN | RULING | SEC | TNGROUP | XREFDOC |  LEGIDDOC | APPENDOC)* >
+
+<!ATTLIST DATAPOOL
+  %abbrev; >
+ -->  
+  
+<!ELEMENT DATAPOOL ( %every; | APPENDIX | SCHEDULE | SCHEDDOC | CASEDIGE | COMMENT | DECDUMMY | DECISION | DOCP | ESSAY |  FLENTRY | FORM | HUB2 | INDEXDIV | POLIDOC | PRECEDEN | RULING | SEC | TNGROUP | XREFDOC |  LEGIDDOC | APPENDOC)* >
+<!ATTLIST DATAPOOL  
+          ABBREV CDATA #IMPLIED > 
+ 
+ 
+ 
+<!-- Element Declariations: In Line Elements-->
+<!--Element:  In-line emphasis
+    Class:    Typog-->
+<!ELEMENT EM ( %linetxt; )*>
+<!--Element:  Extra text
+    Class:    Function-->
+<!ELEMENT EX ( %linetxt; )*>
+<!--Element:  In-line text  
+    Class:    ProdSpec-->
+<!ELEMENT TEXT ( %linetxt; )*>
+<!ATTLIST TEXT
+  %views; 
+>
+<!--Element:  Modification marker 
+    Class:    Function -->
+<!ELEMENT MODIFY (#PCDATA | SUP)*>
+<!ATTLIST MODIFY
+  %adddate; 
+>
+<!--Element:  Strikeover text
+    Class:    Typog-->
+<!ELEMENT STRIKE ( %linetxt; )*>
+<!--Element:  Subscript text
+    Class:    Typog-->
+<!ELEMENT SUB ( %linetxt; )*>
+<!--Element:  Superscript text
+    Class:    Typog -->
+<!ELEMENT SUP ( %linetxt; )*>
+<!--Element:   Subtitle
+    Class:     GenPub-->
+<!ELEMENT SUBTI ( %linetxt; )*>
+<!--Element:   Surtitle
+    Class:     GenPub-->
+<!ELEMENT SURTI ( %linetxt; )*>
+<!--Element:  Defined term in legislation or case law
+    Class:    GenPub 
+    Comments: Short attribute for shortened 
+              Words and Phrases term in running head-->
+<!ELEMENT TERM ( %linetxt; )*>
+<!ATTLIST TERM
+  %short; 
+>
+<!--Element:  Words and Phrases alternate term 
+    Class:    GenPub -->
+<!ELEMENT TERMALT ( %linetxt; )*>
+<!--Element: Reference to other language of defined term  
+    Class:   GenLeg -->
+<!ELEMENT TERMREF ( %linetxt; )*>
+<!--Element:  In-line text fraction (as opposed to strutural frac)
+    Class:    Typog -->
+<!ELEMENT TEXTFRAC ( %linetxt; )*>
+<!--Element:  Bold emphasis, as specified by a decider in a quote.
+    Class:    GenLeg.
+    Comments: -->
+<!ELEMENT BOLD ( %linetxt; )*>
+<!--Element:  Underline emphasis, as specified by a decider in a quote.
+    Class:    GenLeg -->
+<!ELEMENT UNDER ( %linetxt; )*>
+<!--Element: Number 
+    Class:   Ident -->
+<!ELEMENT N ( %linetxt; )*>
+<!--Element:  Title
+    Class:    GenPub 
+    Comments: Lang for Abridgment bilingual components-->
+<!ELEMENT TI ( %linetxt; )*>
+<!ATTLIST TI
+  %product; %short; %lang;
+  %tocid; 
+>
+<!--Element: Long title of piece of legislation 
+    Class:   GenPub -->
+<!ELEMENT LONGTI ( %linetxt; )*>
+<!--Element:  Author.
+    Class:    GenPub.
+    Comments: -->
+<!ELEMENT AUTHOR (( %firsname; ), ( %lastname; ), ( %designat; )?, LINE*)>
+<!--Element:  Author container.
+    Class:    GenPub.
+    Comments: -->
+<!ELEMENT AUTHORS (( %author; )+)>
+<!--Element:  Author's first name
+    Class:    StrucPub-->
+<!ELEMENT FIRSNAME (#PCDATA | SUP)*>
+<!--Element:  Author's last name
+    Class:    StrucLeg-->
+<!ELEMENT LASTNAME (#PCDATA | SUP)*>
+<!--Element:  Author's designation
+    Class:    GenPub -->
+<!ELEMENT DESIGNAT (#PCDATA | SUP)*>
+<!-- Element Declariations: Para-like Elements-->
+<!--Element:  Paragraph level 0
+    Class:    StrucPub -->
+<!ELEMENT P ( %paratxt; | P1)*>
+<!ATTLIST P
+  %sync; %views;
+>
+<!--Element:  Paragraph level 1
+    Class:    StrucPub -->
+<!ELEMENT P1 ( %paratxt; | P2)*>
+<!--Element:  Paragraph level 2
+    Class:    StrucPub -->
+<!ELEMENT P2 ( %paratxt; | P3)*>
+<!--Element:  Paragraph level 3
+    Class:    StrucPub -->
+<!ELEMENT P3 ( %paratxt; | P4)*>
+<!--Element:  Paragraph level 4
+    Class:    StrucPub -->
+<!ELEMENT P4 ( %paratxt; | P5)*>
+<!--Element:  Paragraph level 5
+    Class:    StrucPub -->
+<!ELEMENT P5 ( %paratxt; | P6)*>
+<!--Element:   Paragraph level 6
+    Class:     StrucPub -->
+<!ELEMENT P6 ( %paratxt; )*>
+<!--Element:  Numbered paragraph, esp. of decision opinions
+    Class:    StrucPub -->
+<!ELEMENT NP (( %n; ), ( %p; )*)>
+<!ATTLIST NP
+  %product; %sync;
+>
+<!--Element: Itemized entry in a list 
+    Class:   StrucPub -->
+<!ELEMENT ITEM (( %n; )?, ( %p; )+)>
+<!ATTLIST ITEM
+  %sync; %views;
+>
+<!--Element:  Unitemized entry, level 0, in a list 
+    Class:    StrucPub -->
+<!ELEMENT LINE ( %linetxt; | LINE1)*>
+<!--Element:  Unitemized entry, level 1, in a list   
+    Class:    StrucPub -->
+<!ELEMENT LINE1 ( %linetxt; | LINE2)*>
+<!--Element:  Unitemized entry, level 2, in a list   
+    Class:   StrucPub -->
+<!ELEMENT LINE2 ( %linetxt; )*>
+<!--Element:  End note
+    Class:    StrucPub-->
+<!ELEMENT ENDNOTE (( %n; )?, ( %p; )+)>
+<!--Element:  Conditional/product specific text
+    Class:    Function-->
+<!ELEMENT CONDTEXT ( %paratxt; | P)*>
+<!ATTLIST CONDTEXT
+  %product; 
+>
+<!--Element:  Currency
+    Class:    GenPub-->
+<!ELEMENT CURRENCY ( %paratxt; | P)*>
+<!--Element:  Document paragraph
+    Class:    StrucPub-->
+<!ELEMENT DOCP (( %every; )*, ( %n; )?, ( %ti; )?, ( %p; )*)>
+<!ATTLIST DOCP
+  %tigre; %docprop; %product;
+>
+<!--Element:  Editorial note
+    Class:    GenPub-->
+<!ELEMENT EDITNOTE ( %freeform; )>
+<!ATTLIST EDITNOTE
+  %product; 
+  OTHER CDATA #IMPLIED
+>
+<!--Element:  Quoted anything
+    Class:    StrucLeg -->
+<!ELEMENT QUOTE ANY>
+<!ATTLIST QUOTE
+  %abbrev; 
+  REFN CDATA #IMPLIED
+  CONTEXT (no-c) #IMPLIED
+  SOURCE (no-s) #IMPLIED
+>
+<!--Element:  Excerpted data
+    Class:    StrucLeg-->
+<!ELEMENT EXCERPT ANY>
+<!-- Element Declariations: Freeform Elements -->
+<!--Element:  Freeform text
+    Class:    StrucPub -->
+<!ELEMENT FREEFORM (( %every; )*, ( %p; )*, ( %np; )*, ( %docp; )*, ( %block2; )*, ( %block1; )*, ( %block0; )*, ( %appendix; )*)>
+<!ATTLIST FREEFORM
+  %product; 
+>
+<!--Element:  Block level 0.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK0 ( %blockcommon; , ( %block2; )*, ( %block1; )*)>
+<!ATTLIST BLOCK0
+  %label; 
+>
+<!--Element:  Block level 1.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK1 ( %blockcommon; , ( %block2; )*)>
+<!ATTLIST BLOCK1
+  %label; 
+>
+<!--Element:  Block level 2.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK2 ( %blockcommon; , ( %block3; )*)>
+<!ATTLIST BLOCK2
+  %label; 
+>
+<!--Element:  Block level 3.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK3 ( %blockcommon; , ( %block4; )*)>
+<!ATTLIST BLOCK3
+  %label; 
+>
+<!--Element:  Block level 4.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK4 ( %blockcommon; , ( %block5; )*)>
+<!ATTLIST BLOCK4
+  %label; %views;
+>
+<!--Element:  Block level 5.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK5 ( %blockcommon; , ( %block6; )*)>
+<!ATTLIST BLOCK5
+  %label; 
+>
+<!--Element:  Block level 6.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK6 ( %blockcommon; , ( %block7; )*)>
+<!ATTLIST BLOCK6
+  %label; 
+>
+<!--Element:  Block level 7.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK7 ( %blockcommon; , ( %block8; )*)>
+<!ATTLIST BLOCK7
+  %label; 
+>
+<!--Element:  Block level 8.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK8 ( %blockcommon; , ( %block9; )*)>
+<!ATTLIST BLOCK8
+  %label; 
+>
+<!--Element:  Block level 9.
+    Class:    StrucPub.
+    Comments: I don't think docp should be allowed here. -->
+<!ELEMENT BLOCK9 ( %blockcommon; )>
+<!ATTLIST BLOCK9
+  %label; 
+>
+<!--Element:  Footnote
+    Class:    StrucPub-->
+<!ELEMENT FOOTNOTE (( %every; )*, ( %n; )?, ( %freeform; )?)>
+<!ATTLIST FOOTNOTE
+  %product; 
+>
+<!--Element:  Appendix.
+    Class:    GenStruc.
+    Comments: Not a document: occurs inside documents.
+              Don't allow legis. elements: use schedule in legis.-->
+<!ELEMENT APPENDIX (( %every; )*, (( %n; )?, ( %ti; )?, ( %statref; )?, ( %secp; )?, ((( %sec; )*, ( %mdiv; )*, ( %sdiv; )*, ( %div; )*, ( %part; )*) | ( %freeform; ) | ( %convent; ) | ( %form; ) | ( %class; ) | ( %appendix; ))*, ( %stathist; )?))>
+<!ATTLIST APPENDIX
+  %tigre; %label; %product;
+  %docprop; 
+>
+<!-- Special Elements -->
+<!--Element:  Citation
+    Class  :  Ident-->
+<!ELEMENT CITE ( %linetxt; )*>
+<!ATTLIST CITE
+  %product; %views;
+  TYPE (REPORTED | UNREP | ELECTRC | DIGEST | ISSUE | TRACKING | NEUTRAL) #IMPLIED
+  CITENUM CDATA #IMPLIED
+  DB-YEAR CDATA #IMPLIED
+  DB-VOl CDATA #IMPLIED
+  DB-REPCODE CDATA #IMPLIED
+  DB-PAGE CDATA #IMPLIED
+>
+<!--Element:  Extra Citation Information
+    Class  :  Ident-->
+<!ELEMENT CITEINFO (#PCDATA | SUP)*>
+<!--Element:  Regulation reference 
+    Class:    GenLeg-->
+<!ELEMENT REGREF (( %every; )*, (( %ti; )?, ( %cite; )?)*, ( %stathist; )?, ( %stattrmt; )?, (( %refn; ), ( %stattrmt; )?)*)>
+<!--Element:  Statute reference
+    Class:    StrucLeg -->
+<!ELEMENT STATREF (( %every; )*, ( %jurisdic; )?, (( %ti; )?, ( %cite; )?)*, ( %stathist; )?, ( %stattrmt; )?, ((( %refn; ), ( %stattrmt; )?)* | ( %regref; )*))>
+<!ATTLIST STATREF
+  %label; %product;
+>
+<!--Element:  History of that piece of legislation
+    Class:    GenLeg -->
+<!ELEMENT STATHIST (( %statdisp; )?, ( %statref; )+)>
+<!ATTLIST STATHIST
+  %views; %product;
+>
+<!--Element:   Statute disposition
+    Class:     GenLeg -->
+<!ELEMENT STATDISP (#PCDATA | SUP)*>
+<!--Element:  Treatment of statute  by decider in case law
+    Class:    GenLeg -->
+<!ELEMENT STATTRMT EMPTY>
+<!ATTLIST STATTRMT
+  TYPE (R | C | P | U) #REQUIRED
+>
+<!--Element:  Reference number Level 0
+    Class:    GenPub -->
+<!ELEMENT REFN ( %linetxt; | REFN1)*>
+<!ATTLIST REFN
+  TYPE (PAGE) #IMPLIED
+  PREFIX CDATA #IMPLIED
+>
+<!--Element:  Reference number Level 1
+    Class:    GenPub -->
+<!ELEMENT REFN1 ( %linetxt; | REFN2)*>
+<!--Element:  Reference number Level 2
+    Class:    GenPub -->
+<!ELEMENT REFN2 ( %linetxt; )*>
+<!--Element: Jurisdiction 
+    Class:   GenLeg -->
+<!ELEMENT JURISDIC ( %linetxt; )*>
+<!ATTLIST JURISDIC
+  %label; 
+  DB-JURCODE CDATA #IMPLIED
+>
+<!--Element: Act under which the Regulation or Rule is proclaimed.
+    Class:   StrucLeg.-->
+<!ELEMENT ACTUNDER ( %linetxt; )*>
+<!ATTLIST ACTUNDER
+  %label; 
+>
+<!--Element: Preamble to a statute
+    Class:   StrucLeg -->
+<!ELEMENT PREAMBLE ( %freeform; )>
+<!--Element: Legislation identification document 
+    Class:   StrucLeg -->
+<!ELEMENT LEGIDDOC (( %every; )*, ( %actunder; )*, ( %longti; )?, ( %cite; )*, ( %citeinfo; )?, ( %stathist; )?, ( %freeform; )?, ( %preamble; )?)>
+<!ATTLIST LEGIDDOC
+  %tigre; %docprop;
+>
+<!--Element:  Full number
+    Class:    Ident-->
+<!ELEMENT FULLN ( %linetxt; )*>
+<!--Element:  Old number of section, prior to consolidation
+    Class:    Ident -->
+<!ELEMENT OLDN ( %linetxt; )*>
+<!ATTLIST OLDN
+  %product; 
+>
+<!--Element:  Legislative Form
+    Class:    StrucLeg-->
+<!ELEMENT FORM (( %every; )*, ( %n; )?, ( %oldn; )?, ( %ti; )?, ( %statref; )?, ( %freeform; )?, (( %appendix; )* | ( %schedule; )*), ( %stathist; )?)>
+<!ATTLIST FORM
+  %tigre; %label; %product; %docprop;
+>
+<!--Element:  Formula variable
+    Class:    StrucLeg -->
+<!ELEMENT VAR ( %linetxt; )*>
+<!--Element:  Formula variable description in clause
+    Class:    StrucLeg -->
+<!ELEMENT VARCL (( %var; ), ( %clp; ), ( %stathist; )?)>
+<!--Element:  Formula variable description in definition or subsection
+    Class:    StrucLeg -->
+<!ELEMENT VARDEF (( %var; ), ( %defp; ), ( %stathist; )?)>
+<!--Element:  Formula variable description in paragraph
+    Class:    StrucLeg -->
+<!ELEMENT VARPARA (( %var; ), ( %parap; ), ( %stathist; )?)>
+<!--Element:  Formula variable description in subclause
+    Class:    StrucLeg -->
+<!ELEMENT VARSCL (( %var; ), ( %sclp; ), ( %stathist; )?)>
+<!--Element:  Formula variable description in subparagraph
+    Class:    StrucLeg -->
+<!ELEMENT VARSPARA (( %var; ), ( %sparap; ), ( %stathist; )?)>
+<!--Element:  Formula variable description in subsubclause
+    Class:    StrucLeg -->
+<!ELEMENT VARSSCL (( %var; ), ( %ssclp; ), ( %stathist; )?)>
+<!--Element:  Definition of term
+    Class:    StrucLeg-->
+<!ELEMENT DEF (( %fulln; )?, ( %ti; )?, ( %defp; )+, ( %stathist; )?)>
+<!ATTLIST DEF
+  %product; %sync;
+>
+<!ELEMENT DEFP ( %paratxt; | P | VARDEF | SSEC | PARA)*>
+<!--Element:  Legislative subsubsubclause
+    Class:    StrucLeg -->
+<!ELEMENT SSSCL (( %fulln; )?, ( %n; ), ( %sssclp; ))>
+<!--Element:  Legislative subsubsubclause paragraph
+    Class:    StrucLeg -->
+<!ELEMENT SSSCLP ( %paratxt; | P)*>
+<!--Element: Legislative paragraph level 
+    Class:   StrucLeg -->
+<!ELEMENT PARA (( %fulln; )?, ( %n; ), ( %ti; )?, (( %parap; )+ | ( %spara; )+), ( %stathist; )?)>
+<!ATTLIST PARA
+  %product; %sync;
+>
+<!--Element:  Legislative paragraph level text
+    Class:    StrucLeg -->
+<!ELEMENT PARAP ( %paratxt; | P | VARPARA | SPARA | DEF)*>
+<!--Element:  Legislative subparagraph
+    Class:    StrucLeg -->
+<!ELEMENT SPARA (( %fulln; )?, ( %n; ), ( %ti; )?, (( %sparap; ) | ( %cl; )+), ( %stathist; )?)>
+<!--Element:  Legislative subparagraph paragraph
+    Class:    StrucLeg -->
+<!ELEMENT SPARAP ( %paratxt; | P | VARSPARA | CL)*>
+<!--Element:  Legislative clause
+    Class     StrucLeg-->
+<!ELEMENT CL (( %fulln; )?, ( %n; ), ( %ti; )?, (( %clp; ) | ( %scl; )+), ( %stathist; )?)>
+<!--Element:  Legislative clause paragraph
+    Class:    StrucLeg-->
+<!ELEMENT CLP ( %paratxt; | P | VARCL | SCL)*>
+<!--Element:  Legislative subclause
+    Class:    StrucLeg -->
+<!ELEMENT SCL (( %fulln; )?, ( %n; ), ( %ti; )?, (( %sclp; ) | ( %sscl; )+))>
+<!--Element:  Legislative subclause paragraph
+    Class:    StrucLeg -->
+<!ELEMENT SCLP ( %paratxt; | P | VARSCL | SSCL)*>
+<!--Element:  Legislative subsubclause
+    Class:    StrucLeg -->
+<!ELEMENT SSCL (( %fulln; )?, ( %n; ), (( %ssclp; ) | ( %ssscl; )+))>
+<!--Element:   Legislative subsubclause
+    Class:     StrucLeg -->
+<!ELEMENT SSCLP ( %paratxt; | P | VARSSCL | SSSCL)*>
+<!--Element:  Convention or treaty article.
+    Class:    StrucLeg. Document.
+    Comment:  Is a document even when contains sec.-->
+<!ELEMENT ARTICLE (( %n; ), ( %ti; )?, (( %secp; ) | ( %sec; ))+)>
+<!ATTLIST ARTICLE
+  %label; %docprop;
+>
+<!--Element:  Legislative Class level
+    Class:    StrucLeg-->
+<!ELEMENT CLASS (( %fulln; )?, ( %n; ), ( %ti; )?, ( %statref; )?, (( %sec; )+ | ( %secp; )+), ( %stathist; )?)>
+<!ATTLIST CLASS
+  %label; %docprop;
+>
+<!--Element: Legislative section 
+    Class:    StrucLeg -->
+<!ELEMENT SEC (( %fulln; )?, ( %n; ), ( %oldn; )?, ( %ti; )?, ((( %secp; ), (( %ti; )?, ( %secp; ))*) | (( %secdiv; ) | ( %ssec; ))+ | ( %para; )+), (( %schedule; )* | ( %appendix; )*), ( %form; )*, ( %stathist; )?, ( %archive; )?)>
+<!ATTLIST SEC
+  %tigre; %product; %sync; 
+  %docprop; %id;
+>
+<!--Element:   Legislative subsubsubdivision level
+    Class:     StrucLeg -->
+<!ELEMENT SSSDIV (( %n; ), ( %ti; )?, ( %sec; )*)>
+<!ATTLIST SSSDIV
+  %label; 
+>
+<!--Element:   Legislative section division
+    Class:     StrucLeg-->
+<!ELEMENT SECDIV (( %ti; ), ( %ssec; )+)>
+<!--Element:  Legislative section paragraph  
+    Class:    StrucLeg -->
+<!ELEMENT SECP ( %paratxt; | VARDEF | PARA | DEF | SSEC)*>
+<!ATTLIST SECP
+  %id; 
+>
+<!--Element:  Legislative subsubdivision level
+    Class:    StrucLeg -->
+<!ELEMENT SSDIV (( %n; ), ( %ti; )?, (( %sec; )* | ( %sssdiv; )*))>
+<!ATTLIST SSDIV
+  %label; 
+>
+<!--Element:  Legislative subsection
+    Class:    StrucLeg -->
+<!ELEMENT SSEC (( %fulln; )?, ( %n; ), ( %ti; )?, ((( %ssecp; ), (( %ti; )?, ( %ssecp; ))*) | ( %para; )*), ( %stathist; )?)>
+<!ATTLIST SSEC
+  %product; %sync;
+>
+<!--Element:  Legislative subsection paragraph
+    Class:   StrucLeg -->
+<!ELEMENT SSECP ( %paratxt; | P | VARDEF | PARA | DEF)*>
+<!--Element:  Legislative Part level
+    Class:    StrucLeg -->
+<!ELEMENT PART (( %n; ), ( %ti; )?, ( %freeform; )?, ((( %sec; )*, ( %form; )*, ( %rule; )*, (( %mdiv; ) | ( %mdiv1; ))*, ( %article; )*, ( %sdiv; )*, ( %div; )*, ( %book; )*, ( %schedappcon; )*) | ( %chapter; )+ | ( %title; )+), ( %stathist; )?, ROOT?)>
+<!ATTLIST PART
+  %label; 
+>
+<!--Element:  Legislative Book level.
+    Class:    StrucLeg-->
+<!ELEMENT BOOK (( %n; ), ( %ti; ), ( %sec; )*, ( %chapter; )*, ( %title; )*, ( %stathist; )?, ROOT?)>
+<!ATTLIST BOOK
+  %label; 
+>
+<!--Element:  Legislative  title level
+    Class:    StrucLeg -->
+<!ELEMENT TITLE (( %n; ), ( %ti; )?, ( %sec; )*, ( %mdiv1; )*, ( %div; )*, ( %chapter; )*, ( %stathist; )?)>
+<!ATTLIST TITLE
+  %label; 
+>
+<!--Element:  Legislative Chapter level
+    Class:    StrucLeg
+    Comments: mdiv obsolete: use numbered mdivs-->
+<!ELEMENT CHAPTER (( %n; ), ( %ti; ), ( %sec; )*, ( %article; )*, (( %mdiv; ) | ( %mdiv0; ) | ( %mdiv1; ))*, ( %div; )*, ( %stathist; )?)>
+<!ATTLIST CHAPTER
+  %label; 
+>
+<!--Element:  Legislative Division
+    Class:    StrucLeg
+    Comments: mdiv obsolete: use numbered mdivs-->
+<!ELEMENT DIV (( %n; ), ( %ti; ), ( %freeform; )?, ( %sec; )*, ( %article; )*, ( %rule; )*, (( %mdiv; ) | ( %mdiv1; ))*, ( %sdiv; )*, ( %schedcon; )*, ( %stathist; )?, ROOT?)>
+<!ATTLIST DIV
+  %label; 
+>
+<!--Element:  Legislative subdivision level
+    Class:    StrucLeg -->
+<!ELEMENT SDIV (( %n; ), ( %ti; ), ( %sec; )*, (( %mdiv; ) | ( %mdiv1; ))*, ( %ssdiv; )*, ROOT?)>
+<!ATTLIST SDIV
+  %label; 
+>
+<!--Element:  Container
+    Class:    -->
+<!ELEMENT CONTAINR (( %every; )*, (( %scheddoc; ) | ( %form; ))*)>
+<!ATTLIST CONTAINR
+  LABEL CDATA #REQUIRED
+>
+<!--Element:  Legislative Schedule document 
+    Class:    StrucLeg-->
+<!ELEMENT SCHEDDOC (( %n; ), ( %ti; )?, ( %statref; )?, ( %freeform; ), ( %appendix; )*, ( %stathist; )?)>
+<!ATTLIST SCHEDDOC
+  %tigre; %label; %product; %docprop;
+>
+<!--Element:  Legislative schedule
+    Class:    StrucLeg-->
+<!ELEMENT SCHEDULE (( %every; )*, ( %n; )?, ( %ti; )?, ( %statref; )?, ( %secp; )?, ((( %sec; )*, (( %mdiv; ) | ( %mdiv0; ))*, ( %sdiv; )*, ( %div; )*, ( %part; )*) | ( %freeform; ) | ( %form; )* | ( %class; )* | ( %convent; )*)*, ( %stathist; )?)>
+<!ATTLIST SCHEDULE
+   %tigre; %label; %product; %docprop; 
+>
+<!--Element:  Miscellaneous division  
+    Class:    StrucLeg
+    Comments: Obsolete: use  numbered mdiv elements -->
+<!ELEMENT MDIV (( %n; )?, ( %ti; ), ( %sec; )*, ( %rule; )*, ( %mdiv; )*, ( %article; )*, ( %form; )*, ( %schedappcon; )*, ( %stathist; )?)>
+<!ATTLIST MDIV
+  %label; 
+>
+<!--Element:  Miscellaneous division level 0 
+    Class:    StrucLeg-->
+<!ELEMENT MDIV0 (( %n; )?, ( %ti; ), ( %sec; )*, ( %rule; )*, ( %mdiv1; )*, ( %article; )*, ( %form; )*, ( %schedcon; )*, ( %stathist; )?)>
+<!ATTLIST MDIV0
+  %label; 
+>
+<!--Element:  Miscellaneous division level 1
+    Class:    StrucLeg-->
+<!ELEMENT MDIV1 (( %n; )?, ( %ti; ), (( %sec; ) | ( %editnote; ))*, ( %rule; )*, ( %mdiv2; )*, ( %article; )*, ( %form; )*, ( %schedcon; )*, ( %stathist; )?)>
+<!ATTLIST MDIV1
+  %label; 
+>
+<!--Element:  Miscellaneous division level 2
+    Class:    StrucLeg-->
+<!ELEMENT MDIV2 (( %n; )?, ( %ti; ), ( %sec; )*, ( %rule; )*, ( %mdiv3; )*, ( %article; )*, ( %form; )*, ( %schedcon; )*, ( %stathist; )?)>
+<!ATTLIST MDIV2
+  %label; 
+>
+<!--Element:  Miscellaneous division level 3
+    Class:    StrucLeg-->
+<!ELEMENT MDIV3 (( %n; )?, ( %ti; ), ( %sec; )*, ( %rule; )*, ( %mdiv4; )*, ( %article; )*, ( %form; )*, ( %schedcon; )*, ( %stathist; )?)>
+<!ATTLIST MDIV3
+  %label; 
+>
+<!--Element:  Miscellaneous division level 4
+    Class:    StrucLeg-->
+<!ELEMENT MDIV4 (( %n; )?, ( %ti; ), ( %sec; )*, ( %article; )*, ( %form; )*, ( %schedcon; )*, ( %stathist; )?)>
+<!ATTLIST MDIV4
+  %label; 
+>
+<!--Element:  Remission Order
+    Class:    StrucLeg
+    Comments: Now a document-->
+<!ELEMENT REMISION (( %n; )?, ( %ti; ), ( %legiddoc; )?, ((( %freeform; ), ( %appendix; )*) | (( %sec; )*, (( %mdiv; ) | ( %mdiv0; ))*, ( %sdiv; )*, ( %div; )*, ( %part; )*, ( %schedappcon; )*, ( %form; )*)))>
+<!ATTLIST REMISION
+  %docprop; %abbrev;
+>
+<!--Element:  Convention
+    Class:    StrucLeg
+    Comments: Now a document-->
+<!ELEMENT CONVENT (( %n; )?, ( %ti; ), ((( %longti; )?, ( %cite; )?, ( %freeform; )?) | ( %legiddoc; )), (( %p; ) | ( %secp; ))*, (( %sec; )* | ( %article; )*), (( %mdiv; )* | ( %mdiv0; )*), (( %part; )* | ( %chapter; )*), ( %schedappcon; )*)>
+<!ATTLIST CONVENT
+  %docprop; %abbrev;
+>
+<!--Element:  Law issued by non-legislative body 
+    Class:    StrucLeg -->
+<!ELEMENT MISCLAW (( %n; )?, ( %ti; ), ((( %longti; )?, ( %freeform; )?) | ( %legiddoc; )), ( %sec; )*, (( %mdiv; ) | ( %mdiv0; ))*, ( %article; )*, ( %rule; )*, (( %part; )* | ( %chapter; )*), ( %schedappcon; )*, ( %form; )*, ( %stathist; )?)>
+<!ATTLIST MISCLAW
+  %abbrev; %label;
+>
+<!--Element:  Legislative Rule level
+    Class:    StrucLeg -->
+<!ELEMENT RULE (( %n; ), ( %ti; )?, (( %secp; ) | ( %sec; ))*, (( %mdiv; ) | ( %mdiv2; ))*, ( %schedcon; )*, ( %stathist; )?)>
+<!ATTLIST RULE
+  %label; 
+>
+<!--Element:  Regulation, Court Rules or other statutory instrument
+    Class:    StrucLeg -->
+<!ELEMENT REG (( %n; )?, ( %ti; ), ((( %longti; )?, ( %cite; )*, ( %freeform; )?) | ( %legiddoc; )), ( %sec; )*, ( %rule; )*, ( %prepart; )*, (( %mdiv; ) | ( %mdiv0; ))*, ( %sdiv; )*, ( %div; )*, (( %part; )* | ( %chapter; )*), ( %title; )*, ( %schedappcon; | ( %form; ))*)>
+<!ATTLIST REG
+  %abbrev; %label; 
+  %proclaim;
+  TYPE (RULES) #IMPLIED
+>
+<!--Element:  Act.
+    Class:    StrucLeg.
+    Comments: (longti,cite,freeform) group obsolete: use legiddoc.
+              prepart,mdiv obsolete: use mdiv0 instead of prepart;
+                                     numbered mdivs instead of plain mdiv.
+              appendix probably obsolete: use schedule or containr.-->
+<!ELEMENT ACT (( %ti; ), ((( %longti; )?, ( %cite; )*, ( %freeform; )?) | ( %legiddoc; )), ( %sec; )*, ( %prepart; )*, (( %mdiv; ) | ( %mdiv0; ))*, ( %sdiv; )*, ( %div; )*, (( %part; )* | ( %chapter; )*), ( %title; )*, ( %book; )*, ( %schedappcon; | ( %form; ))*, ( %stathist; )*, ROOT?)>
+<!ATTLIST ACT
+  %abbrev; 
+ %proclaim;
+>
+<!--Element:  Proposed or pending legislation
+    Class:    StrucLeg -->
+<!ELEMENT PROPOSED (( %ti; ), (( %quote; ) | ( %applic; ))*, (( %technote; ) | ( %xrefcat; ) | ( %comment; ))*)>
+<!ATTLIST PROPOSED
+  %product; 
+  EFFECT (AMEND | ADD | REPEAL | OTHER) #IMPLIED
+  STAGE (BILL | ASSENT) #IMPLIED
+  OTHER CDATA #IMPLIED
+>
+<!--Element:  Application of  proposed legislation
+    Class:    GenLeg-->
+<!ELEMENT APPLIC (( %ti; ), ( %freeform; ))>
+<!--Element:  Legislative scope of annotation or commentary
+    Class:    Function -->
+<!ELEMENT SCOPE ( %linetxt; )*>
+<!ATTLIST SCOPE
+  PRINT (YES | NO) #IMPLIED
+>
+<!-- ============           Policy Documents               ============ -->
+<!--Element:  Policy document
+    Class:    ProdSpec -->
+<!ELEMENT POLIDOC (( %polident; ), ( %polisumm; )?, ( %freeform; ), ( %appendix; )*)>
+<!ATTLIST POLIDOC
+  POSITION CDATA #IMPLIED
+  %tigre; 
+  %product; 
+  %label; 
+  %docprop; 
+>
+<!--Element:  Policy document identification
+    Class:    ProdSpec -->
+<!ELEMENT POLIDENT (( %n; ), ( %ti; )?, ( %date; )*, ( %cite; )?, ( %source; )?, ( %statref; )*)>
+<!--Element: Polidoc summary material 
+    Class:   StrucLeg -->
+<!ELEMENT POLISUMM (( %subject; )*, ( %caption; )+)>
+<!--Element:  Source of document (organization)
+    Class:    GenLeg -->
+<!ELEMENT SOURCE ( %linetxt; )*>
+<!ATTLIST SOURCE
+  %label; 
+>
+<!--Element:  Department of Finance Technical Notes group  
+    Class:    ProdSpec -->
+<!ELEMENT TNGROUP (( %n; )?, ( %scope; )?, ( %p; )*, ( %technote; )*)>
+<!ATTLIST TNGROUP
+  %tigre; %docprop;
+>
+<!--Element:  Department of Finance Technical Note 
+    Class:    ProdSpec -->
+<!ELEMENT TECHNOTE (( %ti; ), ( %scope; )?, ( %freeform; ))>
+<!ATTLIST TECHNOTE
+  RANK (1 | 2 | 3) #IMPLIED
+>
+<!-- ============      Math                    ============ -->
+<!--Element:  Display formula
+    Class:    GenLeg-->
+<!ELEMENT DF ( %fractxt; )*>
+<!--Element:  Formula fraction
+    Class:    Math-->
+<!ELEMENT FRAC (( %numer; ), ( %over; ))>
+<!--Element:  Fenced formula
+    Class:    Math-->
+<!ELEMENT FENCE ( %fractxt; )*>
+<!ATTLIST FENCE
+  TYPE (PAREN | BRACKET) #IMPLIED
+>
+<!--Element:  Numerator
+    Class:    Math -->
+<!ELEMENT NUMER ( %fractxt; )*>
+<!--Element:  Denominator
+    Class:    Math -->
+<!ELEMENT OVER ( %fractxt; )*>
+<!-- ============      Graphics / Images      ============ -->
+<!--Element:  Non-SGML graphic
+    Class:    Non-text -->
+<!ELEMENT GRAPHIC (( %every; )*, ( %n; )?, ( %ti; )?, ( %linktext; )?)>
+<!ATTLIST GRAPHIC
+  %label; 
+  FILENAME CDATA #IMPLIED
+  SIZE CDATA #IMPLIED
+>
+  <!--Element:  Non-SGML fillable form; pdf or doc format, for Estates
+  and Trusts Wlec product
+    Class:    Non-text -->
+<!ELEMENT FILLABLEGRAPHIC (( %every; )*, ( %n; )?, ( %ti; )?, ( %linktext; )?) >
+<!ATTLIST FILLABLEGRAPHIC
+    FILENAME CDATA #IMPLIED
+    %label;
+    TYPE (AUTHORED | LEGIS | HISTROP | LEGISALL | LIMPERT)  #REQUIRED
+>
+<!--Element:  Linking text for Folio
+    Class:    Function-->
+<!ELEMENT LINKTEXT ( %linetxt; )*>
+<!-- ============         Tabular Structures              ============ -->
+<!--Element:  ASCII/monospace table.
+    Class:    GenPub.
+    Comments: Needed for Folio 3.1.-->
+<!ELEMENT ASCIITBL (#PCDATA | SUP)*>
+<!--Element:  SGML Table 
+    Class:    StrucPub -->
+<!ELEMENT SGMLTBL (( %tblhead; )?, ( %tblbody; ))>
+<!ATTLIST SGMLTBL
+  REDUCED (YES | NO) #IMPLIED
+  ORIENT (PORTRAIT | LANDSCAP) #IMPLIED
+>
+<!--Element:  Tabular text
+    Class:    StrucPub 
+    Comments: Note tblnotes belong to table-->
+<!ELEMENT TABLE (( %every; )*, ( %asciitbl; )?, ( %sgmltbl; )?, ( %tblnotes; )?)>
+<!--Element:  Table body 
+    Class:    GenPub-->
+<!ELEMENT TBLBODY (( %tblcdefs; ), ( %tblrows; ))>
+<!ATTLIST TBLBODY
+  TBLWD CDATA #IMPLIED
+>
+<!--Element:  Table column definition
+    Class:    GenPub-->
+<!ELEMENT TBLCDEF EMPTY>
+<!ATTLIST TBLCDEF
+  HALIGN (LEFT | Left  | CENTER | Center  | RIGHT | Right  | CHAR | Char) #IMPLIED
+  COLWD CDATA #IMPLIED
+  COLSEP (VDOT | VDot  | VSINGLE | VSingle) #IMPLIED
+  TBLUNITS (PERCENT | percent) #IMPLIED
+  TOPSEP (HDOT | HDot  | HSINGLE | HSingle  | HDOUBLE | HDouble) #IMPLIED
+  ALIGNCHR CDATA #IMPLIED
+>
+<!--Element:  Container for table column definitions
+    Class:    GenPub-->
+<!ELEMENT TBLCDEFS (( %tblcdef; )+)>
+<!ATTLIST TBLCDEFS
+  COLSEP (VDOT | VDot  | VSINGLE | VSingle) #IMPLIED
+  HALIGN (LEFT | Left  | CENTER | Center  | RIGHT | Right  | CHAR | Char) #IMPLIED
+  ALIGNCHR CDATA #IMPLIED
+  CHARPOS CDATA #IMPLIED
+  COLWD CDATA #IMPLIED
+  TBLUNITS (PERCENT | percent) #IMPLIED
+  TOPSEP (HDOT | HDot  | HSINGLE | HSingle  | HDOUBLE | HDouble) #IMPLIED
+>
+<!--Element:  Table cell
+    Class:    GenPub-->
+<!ELEMENT TBLCELL ( %celltxt; )*>
+<!ATTLIST TBLCELL
+  ROWSEP (HDOT | HDot  | HSINGLE | HSingle  | HDOUBLE | HDouble) #IMPLIED
+  VALIGN (TOP | Top  | BOTTOM | Bottom  | MIDDLE | Middle) #IMPLIED
+  COLSTART NMTOKEN #IMPLIED
+  COLSPAN NMTOKEN #IMPLIED
+  ROWSTART NMTOKEN #IMPLIED
+  HALIGN (LEFT | Left  | CENTER | Center  | RIGHT | Right  | CHAR | Char) #IMPLIED
+  COLSEP (VDOT | VDot  | VSINGLE | VSingle) #IMPLIED
+  PROPOSED (YES | NO) #IMPLIED
+>
+<!--Element:  Table head
+    Class:    GenPub-->
+<!ELEMENT TBLHEAD (( %tblcdefs; ), ( %tblrows; ))>
+<!ATTLIST TBLHEAD
+  TBLWD CDATA #IMPLIED
+>
+<!--Element:  Table note
+    Class:   StrucPub -->
+<!ELEMENT TBLNOTE (( %n; )?, ( %p; )+)>
+<!--Element:  Container for table notes
+    Class:    StrucPub -->
+<!ELEMENT TBLNOTES (( %every; )*, ( %tblnote; )*)>
+<!ATTLIST TBLNOTES
+  %label; 
+>
+<!--Element:  Table row
+    Class:    GenPub-->
+<!ELEMENT TBLROW (( %every; )*, ( %tblcell; )*)>
+<!ATTLIST TBLROW
+  ROWSEP (HDOT | HDot  | HSINGLE | HSingle  | HDOUBLE | HDouble) #IMPLIED
+  VALIGN (TOP | Top  | BOTTOM | Bottom  | MIDDLE | Middle) #IMPLIED
+  LEFTSEP (VDOT | VDot  | VSINGLE | VSingle) #IMPLIED
+  PROPOSED (YES | NO) #IMPLIED
+>
+<!--Element:  Container for table rows
+    Class:    GenPub-->
+<!ELEMENT TBLROWS (( %tblrow; )+)>
+<!ATTLIST TBLROWS
+  ROWSEP (HDOT | HDot  | HSINGLE | HSingle  | HDOUBLE | HDouble) #IMPLIED
+  VALIGN (TOP | Top  | BOTTOM | Bottom  | MIDDLE | Middle) #IMPLIED
+  LEFTSEP (VDOT | VDot  | VSINGLE | VSingle) #IMPLIED
+>
+<!-- Miscellaneous Elements -->
+<!--Element:  Commentary
+    Class:    StrucPub-->
+<!ELEMENT COMMENT (( %format; )?, ( %n; )?, ( %ti; )?, ( %scope; )?, ( %date; )?, ( %quote; )?, ( %currency; )?, ( %freeform; ), ( %appendix; )*)>
+<!ATTLIST COMMENT
+  %product; %tigre;
+  %views; %docprop;
+  %position; 
+>
+<!--Element:  Date
+    Class:    GenPub-->
+<!ELEMENT DATE (#PCDATA | SUP)*>
+<!ATTLIST DATE
+  %label; 
+  YYYYMMDD CDATA #IMPLIED
+  DB-TYPE CDATA #IMPLIED
+  DB-DESC CDATA #IMPLIED
+>
+<!--Element:  Carswell general subject
+    Class:    GenLeg-->
+<!ELEMENT SUBJECT (#PCDATA | SUP)*>
+<!ATTLIST SUBJECT
+  %attindex; 
+  TYPE (CANREP | ABR | PID | CRIM) #IMPLIED
+>
+<!--Element:  Abridgment or other classification subject title 
+    Class:    GenLeg-->
+<!ELEMENT SUBJTITL (#PCDATA | SUP)*>
+<!ATTLIST SUBJTITLl
+  %attindex; 
+  TYPE (ABR | PID | CRIM) #IMPLIED
+>
+<!-- ============  Cross-references; Bibliographic Entries ============ -->
+<!--Element:  Cross-reference document
+    Class:    ProdSpec -->
+<!ELEMENT XREFDOC (( %every; )*, ((( %n; ), ( %ti; )?) | ( %caseref; ) | ( %statref; )), ( %scope; )?, (( %see; )* | ( %seealso; )*), (( %xrefcat; )* | ( %item; )*))>
+<!ATTLIST XREFDOC
+  %tigre;
+  %position;
+  %docprop; 
+>
+<!--Element:  Cross-reference category 
+    Class:    ProdSpec -->
+<!ELEMENT XREFCAT (( %ti; ), ( %scope; )?, (((( %line; )* | ( %item; )* | ( %xreflins; )), ( %p; )?), ( %xrefscat; )*))>
+<!ATTLIST XREFCAT
+  %product; 
+>
+<!--Element:  Cross-reference sub-category
+    Class:    ProdSpec -->
+<!ELEMENT XREFSCAT (( %every; )*, ( %ti; )?, (( %xrefline; )* | ( %line; )* | ( %item; )* | ( %xreflins; )), ( %p; )?)>
+<!--Element:  Container for cross-reference lines
+    Class:    ProdSpec -->
+<!ELEMENT XREFLINS (( %every; )*, ( %xrefline; )*)>
+<!--Element:  Cross-reference line
+    Class:    ProdSpec -->
+<!ELEMENT XREFLINE ( %linetxt; )*>
+<!ATTLIST XREFLINE
+  %product; 
+>
+<!-- ============ Print Specific: Front Matter, Tables of Contents, 
+  ndexes                              ============= -->
+<!--Element:  Information paragraph
+    Class:    StrucPub
+    Comments: Not a document -->
+<!ELEMENT INFOP ( %paratxt; | P1)*>
+<!--Element:  Recto page footer 
+    Class:    Function -->
+<!ELEMENT RECTFOOT ( %linetxt; )*>
+<!--Element:  Recto page number
+    Class:    Function -->
+<!ELEMENT RECTO ( %linetxt; )*>
+<!--Element:  Cover page text
+    Class:    Function-->
+<!ELEMENT COVER (#PCDATA | SUP)*>
+<!ATTLIST COVER
+  PLACE CDATA #IMPLIED
+>
+<!--Element:  Running head
+    Class:    Function-->
+<!ELEMENT RUNNING (#PCDATA | SUP)*>
+<!ATTLIST RUNNING
+  PLACE CDATA #IMPLIED
+>
+<!--Element:  Verso page number
+    Class:    Function -->
+<!ELEMENT VERSO ( %linetxt; )*>
+<!--Element:  Page prefix
+    Class:    Function -->
+<!ELEMENT PREPAGE (#PCDATA | SUP)*>
+<!--Element:  Print ear prefix 
+    Class:    Function -->
+<!ELEMENT PREEAR (#PCDATA | SUP)*>
+<!--Element: Next page of looseleaf contents 
+    Class:   Function -->
+<!ELEMENT NEXTPAGE (#PCDATA | SUP)*>
+<!--Element:  Release name for looseleaf
+    Class:    Function -->
+<!ELEMENT RELNAME (#PCDATA | SUP)*>
+<!--Element:  Print output spine contents 
+    Class:    -->
+<!ELEMENT SPINE (#PCDATA | SUP)*>
+<!ATTLIST SPINE
+  PLACE CDATA #IMPLIED
+>
+<!--Element:   Start page number
+    Class:     Function -->
+<!ELEMENT STARTPAG (#PCDATA | SUP)*>
+<!--Element:  Reference (Abridgment Digest)
+    Class:    GenPub
+    Comments: Not used.-->
+<!ELEMENT REF ( %linetxt; )*>
+<!--Element:  Page format information
+    Class:    Function-->
+<!ELEMENT FORMAT (( %verso; )?, ( %recto; )?, ( %prepage; )?, ( %startpag; )?, ( %nextpage; )?, ( %rectfoot; )?, ( %relname; )?, ( %date; )?, ( %preear; )?, ( %spine; )*, ( %cover; )*, ( %running; )*)>
+<!--Element:  See reference  
+    Class:    GenPub
+    Comments: Use second content model for Abridgment Key.
+              Use attributes for Abridgment Key.
+              Use position only when occurrence = range-->
+<!-- Content rule ( ( %linetxt; )* | (subjtitl, classifn?, ex?) ) is not
+  allowed in XML DTDs, but is allowed in Schemas  -->
+<!ELEMENT SEE ( %linetxt; | SUBJTITL | CLASSIFN)*>
+<!ATTLIST SEE
+  %label; 
+  POSITION (SINGULAR | START | MIDDLE | END) #IMPLIED
+>
+<!--Element:  See also reference
+    Class:    GenPub
+    Comments: Use second content model for Abridgment Key
+              Use attributes for Abridgment Key.
+              Use position only when occurrence = range-->
+<!-- Content rule ( ( %linetxt; )* | (subjtitl, classifn?, ex?) ) is not
+  allowed in XML DTDs, but is allowed in Schemas  -->
+<!ELEMENT SEEALSO ( %linetxt; | SUBJTITL | CLASSIFN)*>
+<!ATTLIST SEEALSO
+  %label; %product;
+  POSITION (SINGULAR | START | MIDDLE | END) #IMPLIED
+>
+<!--Element:  Index
+    Class:    StrucPub
+    Comments: subti for Abridgment General Index.
+              index0, not indexdiv, for Abridgment General Index:
+              Standard is indexdiv.-->
+<!ELEMENT INDEX (( %ti; )?, ( %subti; )?, (( %infop; ) | ( %freeform; ))?, (( %indexdiv; )+ | ( %index0; )+))>
+<!ATTLIST INDEX
+  %abbrev;
+  %id;
+  %docprop; 
+  TYPE (TOC) #IMPLIED
+>
+<!--Element:  Index Level 0
+    Class:    StrucPub -->
+<!ELEMENT INDEX0 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index1; )*)))>
+<!ATTLIST INDEX0
+  %product; %docprop;
+>
+<!--Element:  Index Level 1
+    Class:    StrucPub -->
+<!ELEMENT INDEX1 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index2; )*)))>
+<!ATTLIST INDEX1
+  %product; 
+>
+<!--Element:  Index Level 2
+    Class:    StrucPub -->
+<!ELEMENT INDEX2 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index3; )*)))>
+<!ATTLIST INDEX2
+  %product; 
+>
+<!--Element:  Index Level 3
+    Class:    StrucPub -->
+<!ELEMENT INDEX3 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index4; )*)))>
+<!ATTLIST INDEX3
+  %product; 
+>
+<!--Element:  Index Level 4
+    Class:    StrucPub -->
+<!ELEMENT INDEX4 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index5; )*)))>
+<!ATTLIST INDEX4
+  %product; 
+>
+<!--Element:  Index Level 5
+    Class:    StrucPub -->
+<!ELEMENT INDEX5 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index6; )*)))>
+<!ATTLIST INDEX5
+  %product; 
+>
+<!--Element:  Index Level 6
+    Class:    StrucPub -->
+<!ELEMENT INDEX6 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*, ( %index7; )*)))>
+<!ATTLIST INDEX6
+  %product; 
+>
+<!--Element:  Index Level 7
+    Class:    StrucPub -->
+<!ELEMENT INDEX7 (( %text; ), (( %see; )+ | (( %ref; )?, ( %seealso; )*)))>
+<!ATTLIST INDEX7
+  %product; 
+>
+<!--Element:  Index letter division
+    Class:    StrucPub -->
+<!ELEMENT INDEXDIV (( %ti; ), (( %index0; )* | ( %lrindex0; )*))>
+<!ATTLIST INDEXDIV
+  %sync; %product;
+  %docprop; 
+>
+<!--Element:  Back Matter container for print products.
+    Class:    StrucPub.
+    Comments: Should use bookpart as container for other outputs.-->
+<!ELEMENT BACKMAT ((( %every; )*, INDEX*)*, ROOT*)>
+<!ATTLIST BACKMAT
+  %label; 
+>
+<!--Element:  Front matter container
+    Class:    Function-->
+<!ELEMENT FRONTMAT (( %bookiden; )*, ( %copyrigh; )?, (TOC | FRONTDOC | LRINDEX | %every; )*, ROOT*)>
+<!ATTLIST FRONTMAT
+  %label; 
+>
+<!--Element:  Book identification information
+    Class:    StrucPub-->
+<!ELEMENT BOOKIDEN (( %freeform; ))>
+<!--Element:  Copyright information
+    Class:    GenPub-->
+<!ELEMENT COPYRIGH (( %freeform; ))>
+<!--Element:  Front matter document
+    Class:    StrucPub-->
+<!ELEMENT FRONTDOC (( %ti; )*, ( %subti; )*, ( %freeform; ))>
+<!ATTLIST FRONTDOC
+  %id; 
+  %docprop; 
+>
+<!--Element:  Table of Contents, Cases or Sections
+    Class:    StrucPub 
+    Comments: toc- subelements are obsolete: use legislative elements-->
+<!-- <!ELEMENT toc O O (ti*, subti*, infop?, freeform?,   
+                   (toccase* | (tocsec*, tocppart*, tocmdiv*, tocsdiv*, 
+                     tocdiv*, tocpart*, (tocapp* | tocsched*), tocform*) 
+                  | (act | reg | misclaw | convent)*) )  >
+<!ELEMENT TOC (( %ti; )*, ( %subti; )*, ( %infop; )?, ( %freeform; )?, (ACT | REG | MISCLAW | CONVENT | %every; )*)>
+<!ATTLIST TOC
+  TYPE (OVERVIEW | DETAILED) #IMPLIED
+  %id; 
+  %docprop; 
+>
+ -->
+<!--Element:  Appendix document.
+    Class:    StrucPub. Document.
+    Comments: -->
+<!ELEMENT APPENDOC (( %n; ), ( %ti; )?, ( %freeform; ), ( %appendix; )*)>
+<!ATTLIST APPENDOC
+  %docprop; 
+  %label; %product;
+>
+<!--Element:  Classification number
+    Class:    GenLeg-->
+<!ELEMENT CLASSIFN (#PCDATA | SUP)*>
+<!ATTLIST CLASSIFN
+  %attindex; 
+  TYPE (CANREP | ABR | PID | CRIM) #IMPLIED
+  PREFIX CDATA #IMPLIED
+>
+<!--Element:  Treatment of case by decider in decision
+    Class:    GenLeg
+    Comments: 0 is for default treatment for CTC citator -->
+<!ELEMENT CASETRMT EMPTY>
+<!ATTLIST CASETRMT
+  TYPE (C | R | A | D | F | N | 0) #REQUIRED
+>
+<!--Element: Page number of reported cite  
+    Class:   StrucLeg -->
+<!ELEMENT PAGENUM (#PCDATA | SUP)*>
+<!--Element:  Paragraph number of cite
+    Class:   StrucLeg -->
+<!ELEMENT PARANUM (#PCDATA | SUP)*>
+<!--Element:  Decider in a case reference
+    Class:    GenLeg -->
+<!ELEMENT PER ( %linetxt; )*>
+<!--Element:  Style of cause of decision
+    Class:    GenLeg -->
+<!ELEMENT SOC ( %linetxt; )*>
+<!ATTLIST SOC
+  TYPE (FULL | PARTIAL) #IMPLIED
+>
+<!--Element:  Year of decision
+    Class:    GenLeg-->
+<!ELEMENT YEAR (#PCDATA | SUP)*>
+<!ATTLIST YEAR
+  %attindex; 
+>
+<!--Element:  Docket number
+    Class:    GenLeg -->
+<!ELEMENT DOCKET ( %linetxt; )*>
+<!ATTLIST DOCKET
+  %label; 
+>
+<!--Element: Judge, arbiter, decider
+    Class:   GenLeg-->
+<!ELEMENT DECIDER (#PCDATA | SUP | %every; )*>
+<!ATTLIST DECIDER
+  %label; 
+>
+<!--Element: Judgment date of decision
+    Class:   GenLeg -->
+<!ELEMENT JUDGDATE ( %linetxt; )*>
+<!ATTLIST JUDGDATE
+  TYPE (ORAL | WRITTEN) #IMPLIED
+  YYYYMMDD CDATA #IMPLIED
+  %label; %attindex;
+>
+<!--Element:  Digest cite
+    Class:    GenLeg 
+    Comments: Deprecated: still used in case law work flow.-->
+<!ELEMENT DIGCITE (#PCDATA | SUP)*>
+<!ATTLIST DIGCITE
+  %views; %attindex;
+>
+<!--Element:  Court and jurisdiction
+    Class:    GenLeg-->
+<!ELEMENT COURTJUR (#PCDATA | SUP)*>
+<!ATTLIST COURTJUR
+  %attindex; 
+  ALTFORM CDATA #IMPLIED
+  DB-COURTCODE CDATA #IMPLIED
+>
+<!--Element: Length of  decision  
+    Class:   GenLeg -->
+<!ELEMENT LENGTH ( %linetxt; )*>
+<!ATTLIST LENGTH
+  %label; 
+>
+<!--Element:  Correlative citation
+    Class:    GenLeg-->
+<!ELEMENT CORRELAT (SOC?, ( CITE ), ( %pagenum; )?, ( %paranum; )?)>
+<!--Element:   Case disposition
+    Class:     GenLeg
+    Comments:  Attribute type is deprecated; use text entities-->
+<!ELEMENT CASEDISP (#PCDATA | TEXT | %every; )*>
+<!ATTLIST CASEDISP
+  %views; 
+  TYPE (AF | AM | AR | LA | LR | RF | RG | RR | RV | SA | VR) #IMPLIED
+>
+<!--Element:  Case history
+    Class:    GenLeg
+    Comments: -->
+<!ELEMENT CASEHIST (( %casedisp; )*, ( %caseref; ))>
+<!ATTLIST CASEHIST
+  TYPE (PRIOR | LATER) #IMPLIED
+  %views; 
+>
+<!--Element:   Case Reference
+    Class:     GenLeg
+    Comments:  Date is obsolete; use year.
+               Digcite deprecated: use <cite type="digest">
+               Bag o' tags is temporary, pending data fixing-->
+<!ELEMENT CASEREF (SOC?, JUDGDATE?, (DOCKET | DECIDER | DATE | YEAR | CITE | PAGENUM | PARANUM | REFN | CORRELAT | DIGCITE | COURTJUR | %every; )*, PER?, (CASEHIST | JURISDIC | %every; )*, ( %casetrmt; )?, LENGTH?)>
+<!ATTLIST CASEREF
+  CCDBNUM CDATA #IMPLIED
+  LANG (EN | FR) #IMPLIED
+  D (YES | NO) #IMPLIED
+>
+<!--Element:  Caption phrase
+    Class:    ProdSpec-->
+<!ELEMENT CAPPHRA ( %linetxt; )*>
+<!ATTLIST CAPPHRA
+  %label; 
+>
+<!--Element:  Caption
+    Class:    GenLeg
+    Comments: Subject here is obsolete-->
+<!ELEMENT CAPTION (( %every; )*, (( %subject; )? | ( %subjtitl; )?), ( %classifn; )?, ( %classif; )*, ( %capphra; )*)>
+<!ATTLIST CAPTION
+  %views; %label;
+  MAIN CDATA #IMPLIED
+  TYPE (CANREP | ABR | PRE-ABR | PID | CRIM | TAX | RFL | WEEKLY | CPR) #IMPLIED
+  LANG (EN | FR) #IMPLIED
+>
+<!--Element:  Classification phrase
+    Class:    GenLeg-->
+<!ELEMENT CLASSIF (#PCDATA | SUP)*>
+<!ATTLIST CLASSIF
+  %attindex; 
+>
+<!--Element:  Defined term (case law) paragraph 
+    Class:    LegPub -->
+<!ELEMENT TERMP (((( %term; ), (( %termalt; )* | ( %seealso; )*), ((( %jurisdic; ), ( %quote; ), ( %subjtitl; )+, ( %caseref; )*, ( %decider; )) | (( %quote; ), ( %subjtitl; )*, ( %caseref; )?, ( %decider; )?) | ( %caseref; ))) | (( %jurisdic; )?, ( %quote; ), ( %subjtitl; )+, ( %caseref; ), ( %decider; ))))>
+<!ATTLIST TERMP
+ STATUS (E | A | D | F) #IMPLIED
+  %docprop; 
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Element:  Abridgment Digest.
+    Class:    ProdSpec.
+    Comments: abdigest is a dead duck. casedige will handle it. 
+              still need to figure out level and prevlev. lrs.-->
+              
+<!ELEMENT ABDIGEST  (( %cclref; )?, ( %abref; )?, (LEVEL+, ( %ti; ), ( %capphra; )*)?,( %caption; )?, ( %headnote; )?, ( %soc; ), (DISP | ( %prevlev; ))*,(( %cite; ), ( %correlat; )*, ( %courtjur; )?)+, ( %date; ), ( %length; ))>
+
+<!--Element:  Abridgment Digest Reference.
+    Class:    Refer.-->
+
+<!ELEMENT ABREF  (( %ti; ), ( %n; ))>
+
+<!ELEMENT ADDRESS  (( %line; )+) >
+
+<!ELEMENT AGE  (#PCDATA)>
+
+<!-- Age in years -->
+
+<!ELEMENT APOLOGY  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Every type of quantum features one or more awards, which may be monetary support for the Child or Spousal Support quantums or monetary damages in the case of Wrongful Dismissal, Breach of Contract or Defamation quantums.  -->
+
+<!ELEMENT AWARD  ( %linetxt; )* >
+<!ATTLIST AWARD 
+	  TYPE CDATA #IMPLIED
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+The amount of the award, expressed as a range -->
+
+          
+<!ELEMENT AWARDRANGE  (#PCDATA) >
+<!ATTLIST AWARDRANGE 
+	  TYPE CDATA #IMPLIED>
+
+<!-- Notes from Tagging Stds:
+
+Wrapper element for the various awards possible in any quantum. <noticeperiodawarded> and <noticeperiodrange> apply only to wrongful dismissal quantums.  -->	  
+
+<!ELEMENT AWARDS  (( %noticeperiodawarded; )?, AWARD*, (( %awardrange; ) | ( %noticeperiodrange; ))*) >
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's basis of relationship to the estate. --> 
+
+<!ELEMENT BASISOFDEPENDENCY  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrapper element for the elements specific to a Breach of Contract quantum. -->
+
+<!ELEMENT BREACHINFO  (( %plaintiffparticulars; )?, ( %defendantparticulars; )?, %contracttype; , %penalty; )>
+
+<!-- Notes from Tagging Stds:
+
+A case annotation, written by a Carswell author or other independent commentator. -->
+
+<!ELEMENT CASEANNO  ( %freeform; , ( %authors; )?, LINE*) >
+<!ATTLIST CASEANNO 
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+In Commentary, a heading (e.g., <caseblk2><ti>) within a case summaries document. -->
+
+
+<!ELEMENT CASEBLK2  ( %ti; , ( %casesumm; )*, ( %caseblk3; )*) >
+
+<!-- Notes from Tagging Stds:
+
+In Commentary, a heading (e.g., <caseblk3><ti>) within a case summaries document. -->
+
+<!ELEMENT CASEBLK3  ( %ti; , ( %casesumm; )*, ( %caseblk4; )*) >
+
+<!-- Notes from Tagging Stds:
+
+In Commentary, a heading (e.g., <caseblk4><ti>) within a case summaries document. -->
+
+<!ELEMENT CASEBLK4  ( %ti; , ( %casesumm; )*, ( %caseblk5; )*) >
+
+<!-- Notes from Tagging Stds:
+
+In Commentary, a heading (e.g., <caseblk5><ti>) within a case summaries document. -->
+
+<!ELEMENT CASEBLK5  ( %ti; , ( %casesumm; )*, ( %caseblk6; )*) >
+
+<!-- Notes from Tagging Stds:
+
+In Commentary, a heading (e.g., <caseblk6><ti>) within a case summaries document. -->
+
+<!ELEMENT CASEBLK6  ( %ti; , ( %casesumm; )*, ( %caseblk7; )*) >
+
+<!-- Notes from Tagging Stds:
+
+In Commentary, a heading (e.g., <caseblk7><ti>) within a case summaries document. -->
+
+<!ELEMENT CASEBLK7  ( %ti; , ( %casesumm; )+) >
+
+<!-- Case commentary. -->
+
+<!ELEMENT CASECOMM  (SOURCE | ( %freeform; ))* >
+
+<!-- Case data are those elements of non-identifying information about the decision being digested. -->
+
+<!ELEMENT CASEDATA  ( DATE | DECIDER | JURISDIC | DOCKET | COUNSEL | CAPPHRA | AWARD | REFN | SENTENCE | LENGTH )* >
+
+
+<!-- Notes from Tagging Stds:
+
+A case law digest is based on a full-text decision, written to one of the classification or topical systems used at Carswell, such as the Canadian Abridgment or Personal Injury Damages or (in the case of quantums) Nadin-Davis. A digest is not just a precis or summary of a decision.
+
+Because certain digests do not have permanent numbers (i.e., those that appear in CCL), an ID attribute is added programmatically during output procvessing to ensure that each case digest has a unique identiifer. -->
+
+<!ELEMENT CASEDIGE  ( N?, ( %digekey; )?, ( %casedata; )?, ( %caption; )?, STATEDIS?, ( %headnote; )?, TEXT?, ( %caseref; )?, ( %reflist; )*,( SEE | SEEALSO )?) >
+<!ATTLIST CASEDIGE 
+          %docprop;>
+
+<!-- Notes from Tagging Stds:
+
+The history of the current decision. History may be prior or later: <casehist> is updated programmatically via the CCDB??. -->
+
+<!ELEMENT CASEHSTS  ( %casehist; )* >
+
+<!--Element:  Case summaries document
+    Class:    StrucPub -->
+
+<!ELEMENT CASESDOC  (( %n; )?, ( %ti; )?, ( %scope; )?, ( %p; )?, ( %casesumm; )*, ( %caseblk2; )*) >
+
+<!--Element: Case Summary or Blurb
+    Class:   StrucPub-->
+
+<!ELEMENT CASESUMM  (( %n; )?, ( %statref; )?, ( %caseref; )?, ( %p; )+) >
+
+<!--Element:  Date of cause
+    Class:    GenLeg-->
+
+<!ELEMENT CAUSDATE  ( %linetxt; )* >
+<!ATTLIST CAUSDATE 
+          LABEL CDATA #IMPLIED >
+
+<!--Element:  Canadian Current Law reference
+    Class:    Refer
+    Comments: Obsolete.-->
+
+<!ELEMENT CCLREF  ( %ti; , %n; ) >
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's age at time of the estate's death. -->
+
+<!ELEMENT CLAIMANTAGE  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's age, expressed as a range. Range values are maintained by the SMG. -->
+
+<!ELEMENT CLAIMANTAGERANGE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's assets or means from all sources, expressed as a range. The ranges are maintained by the SMG. -->
+
+<!ELEMENT CLAIMANTASSETRANGE  (#PCDATA)>
+
+<!-- Notes from Tagging  Stds:
+
+The dependant's relief claimant's assets or means from all sources. Expressed as text.
+
+Fixed attribute values are for display on Litigator Canada product. -->
+
+<!ELEMENT CLAIMANTASSETS  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrapper for the elements specific to the Claimant of a Dependant's Relief quantum. -->
+
+<!ELEMENT CLAIMANTINFO  ( %claimantassets; , %claimantassetrange; , %relationtodeceased; , %relationshiplength; , ( %relationshiplengthrange; )?, %claimantage; , %claimantagerange; , %basisofdependency; )>
+
+<!-- Notes from Tagging Stds:
+
+The short style of cause, arrived at by applying standards of the Canadian Law Information Council (therefore the name "clicsoc"). Also known as the "Indexed as" style of cause, because it follows this generated text in many Law Reports. -->
+
+<!ELEMENT CLICSOC  ( %linetxt; )* >
+
+<!-- Notes from DTD Change Log:
+
+Citation Management System action generated out of CCDB. -->
+
+<!ELEMENT CMSACT  (( ( CORRELAT | DIGCITE ) | ( REPORTER , ( CORRELAT | DIGCITE )))?, ( %caseref; )?) >
+
+<!-- Notes from DTD Change Log:
+
+Citation Management System transaction set generated out of CCDB. -->
+
+<!ELEMENT CMSID  ( %caseref; ) >
+
+<!-- Notes from DTD Change Log:
+
+Citation Management System transaction set generated out of CCDB. -->
+
+<!ELEMENT CMSSET  ( %cmsid; , ( %cmsact; )+) >
+
+<!-- Notes from Court Filings Specs:
+
+Used in <partyblock> to tag connecting words (e.g. "and") between parties. -->
+
+<!ELEMENT CONNECTOR  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+The type of breach or contract behind the action. There are 9 allowed values, e.g., "leasing agreement", "breach of fiduciuary duty", "other": the list is maintained by the SMG. -->
+
+<!ELEMENT CONTRACTTYPE  (#PCDATA)>
+<!ATTLIST CONTRACTTYPE 
+          LABEL CDATA #REQUIRED>
+
+<!-- Notes from Tagging Stds:
+
+The first <cite>, outside of <correlas>, is reserved for Carswell's electronic citation, which takes the form "year + Carswell + jurisdiction + number", as in "1999 CarswellOnt 289". This cite is suppressed from print Law Reports output. -->
+
+<!ELEMENT CORRELAS  ( %correlat; )* >
+
+<!-- Notes from Tagging Stds:
+
+<counsels> is a containing element for one or more <counsel> elements. -->
+
+<!ELEMENT COUNSEL  ( %linetxt; | TITLENAME | FIRSNAME | LASTNAME | DESIGNAT | LINE)* >
+<!ATTLIST COUNSEL  
+          LABEL CDATA #IMPLIED   >
+
+<!-- 
+Notes from Court Filings Specs:
+
+The <COUNSELBLOCK> is to contain authoring lawyer information. Most documents should contain authoring lawyer information.  -->
+
+<!ELEMENT COUNSELBLOCK  (P | ( %lawfirm; , ( %address; )?, (COUNSEL*, LINE*)*) ) >
+
+<!-- Notes from Tagging Stds:
+
+<counsels> is a containing element for one or more <counsel> elements. -->
+
+<!ELEMENT COUNSELS  ((COUNSEL*) | ( %pcounsel; , %dcounsel; )) >
+<!ATTLIST COUNSELS  
+          LABEL CDATA #IMPLIED   >
+
+<!--Element:  Court filing document
+    Class:    StrucPub-->
+
+<!ELEMENT COURTFIL  ( %n; , %ti; , %freeform; , ( %appendix; )*) >
+<!ATTLIST COURTFIL 
+          %docprop;
+          LABEL     CDATA #IMPLIED
+          FILEDDATE CDATA #IMPLIED >
+
+
+<!--Element:  Court filing document
+    Class:    StrucPub-->
+
+<!ELEMENT COURTFILE  ( PLEADING | MOTION | FACTUM | ORDER | MOTIONWRAPPER | PLEADINGWRAPPER )* >
+<!ATTLIST COURTFILE ID CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+Wrapper for the elements specific to Child Support quantums. (Payee/Payor income and Payee/Payor income range are elements shared by Child Support and Spousal Support quantums.) -->
+
+<!ELEMENT CSUPPORTINFO  ( %pincome; , %pincomerange; , %dincome; , %dincomerange; , %exceptioncsg; , %nrelevantchildren; , %primarycustodian; )>
+
+<!-- Notes from Tagging Stds:
+
+<dateblk> is a container for a number of different kinds of dates.  -->
+
+<!ELEMENT DATEBLK  ( JUDGDATE | HEARDATE | CAUSDATE | DATE )* >
+
+<!-- Notes from Tagging Stds:
+
+In <quantum>, <dcounsel> = Wrapper for one or more Defendant Counsel. -->
+
+<!ELEMENT DCOUNSEL  (COUNSEL+)>
+
+<!-- Decision  dummy (stand-in for linking when two decisions appear on same page). -->
+
+<!ELEMENT DECDUMMY  (( IDENT | CITE ), %caseref; , ( %caseref; )+) >
+<!ATTLIST DECDUMMY 
+          TIGRE CDATA #IMPLIED 
+          %docprop; >
+
+<!-- Notes from Tagging Stds:
+
+A decision of a court, board or tribunal -->
+
+<!ELEMENT DECISION  (( SORTCATEGORIES )?, ( VIEW )*, (%ident;) , SUMMARYM , ( OPINION | APPENDIX | STATEDIS | SOLRECS | CASEANNO | IDENTBIT | SUMMABIT | %every;)*) >
+<!ATTLIST DECISION  
+          TIGRE   CDATA     #IMPLIED  
+          tigre   CDATA     #IMPLIED
+          CCDBNUM CDATA     #IMPLIED 
+          DECINUM CDATA     #IMPLIED 
+          %docprop;
+          TRACKID CDATA     #IMPLIED 
+          DB-PGNUM        CDATA           #IMPLIED>
+
+<!-- Notes from Tagging Stds:
+
+Description of the effect on the plaintiff as a result of the alleged defamation. -->
+
+<!ELEMENT DEFAMATIONEFFECT  (#PCDATA)* >
+
+<!-- Notes from Tagging Stds:
+
+A wrapper for the elements specific to Defamation quantums. -->
+
+<!ELEMENT DEFAMATIONINFO  ( %natureofpublication; , ( %defamationeffect; )?, ( %apology; )?, ( %justificationplea; )?, ( %privilege; )?, ( %faircomment; )?, ( %malice; )?, ( %gender; )?, ( %age; )?, ( %occupation; )?, ( %defendantparticulars; )?)>
+
+<!-- Notes from Tagging Stds:
+
+The nature of the defendant's business or position that resulted in the breach of contract, e.g., "buyer of mobile home" or "demolition company". -->
+
+<!ELEMENT DEFENDANTPARTICULARS  (#PCDATA)>
+<!ATTLIST DEFENDANTPARTICULARS 
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+Deprecated. Still used in case law work flow. In future, we will use <cite type="digest"> instead for each occurrence of <digcite>. -->
+
+<!ELEMENT DIGCITES  ( %digcite; )* >
+
+<!-- Notes from Tagging Stds:
+
+Key information about the digest. This may be any of these elements: date, decider, jurisdic, docket, counsel, capphra, award, refn, sentence, length. The digest key depends on the type of case digest: for example, sentencing or damages digests consider "sentence" information as key; quantums or damages digests consider "award" information to be key. The digest key is usually formatted flush right and bold, in order to give it prominence.  -->
+
+<!ELEMENT DIGEKEY  (( %date; )* | ( %decider; )* | ( %jurisdic; )* | ( %docket; )* | COUNSEL* |( %capphra; )* | AWARD* | ( %refn; )* | SENTENCE* | ( %length; )*) >
+
+<!-- Notes from Tagging Stds:
+
+Income of the defendant in a child support or spousal support quantum. -->
+
+<!ELEMENT DINCOME  (#PCDATA)>
+<!ATTLIST DINCOME 
+          LABEL CDATA     #IMPLIED>
+
+<!-- Notes from Tagging Stds:
+
+Income range of the defendant in a child support or spousal support quantum. See list under <pincomerange>. Searchable field for Child Support and Spousal Support Custom Search Templates. -->
+
+<!ELEMENT DINCOMERANGE  (#PCDATA)>
+<!ATTLIST DINCOMERANGE 
+          LABEL CDATA     #IMPLIED>
+
+<!-- Case disposition.
+Comments from DTD: Obsolete: part of abdigest -->
+
+<!ELEMENT DISP  ( %linetxt; )* >
+
+<!-- Document Title. -->
+
+<!ELEMENT DOCTI  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's age in years at time of termination. -->
+
+<!ELEMENT EMPLOYEEAGE  (#PCDATA)>
+
+<!-- Note: Wrongfully dismissed employee's age range used in Quantum Digests. -->
+
+<!ELEMENT EMPLOYEEAGERANGE  (#PCDATA)>
+
+<!-- Notes from Tagging Specs:
+
+Wrapper for the elements specific to the employee information in Wrongful Dismissal quantums.  -->
+
+<!ELEMENT EMPLOYEEINFO  (EMPLOYEENAME, ( %employeeoccupationcategory; ), ( %employeeoccupationtitle; )?, ( %employeesalary; )?, ( %employeeage; ), ( %employeeagerange; ),( %employmentlength; ), ( %employmentrange; ),( %unemploymentlength; )?)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's name. -->
+
+<!ELEMENT EMPLOYEENAME  ( %linetxt; )*>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's occupation category: a controlled vocabulary maintained by Carswell SMG???. -->
+
+<!ELEMENT EMPLOYEEOCCUPATIONCATEGORY  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's occupation title. -->
+
+<!ELEMENT EMPLOYEEOCCUPATIONTITLE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's salary at time of dismissal. -->
+
+<!ELEMENT EMPLOYEESALARY  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's employer industry. Not a controlled vocabulary. -->
+
+<!ELEMENT EMPLOYERINDUSTRY  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrapper for elements specific to the employer information in a Wrongful Dismissal quantum. -->
+
+<!ELEMENT EMPLOYERINFO  ( %employername; , ( %employerindustry; )?)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's employer name. -->
+
+<!ELEMENT EMPLOYERNAME  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employee's length of employment in years and months. E.g.: 4 years/5 months. Years only are acceptable if no months are specified. -->
+
+<!ELEMENT EMPLOYMENTLENGTH  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrongfully dismissed employees range of years of employment. A fixed list maintained by the SMG -->
+
+<!ELEMENT EMPLOYMENTRANGE  (#PCDATA)>
+<!ATTLIST EMPLOYMENTRANGE 
+          LABEL CDATA #FIXED "YEARS OF EMPLOYMENT RANGE: ">
+
+<!-- Notes from Tagging Stds:
+
+An authored commentary to a decision, appearing within a case reporter separate from the decision on which it is commenting. Essays require a cite because they are often cited in the same way that a decision is cited. Essay may be used for non-decision essays; we currently don't have any non-decision essays in our databases. -->
+
+<!ELEMENT ESSAY  ( %cite; , %ti; , ( %authors; )?, ( %date; )?, %freeform; , ( %appendix; )*) >
+<!ATTLIST ESSAY  
+          TIGRE CDATA #IMPLIED  
+          %docprop; >
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief estate's assets expressed as a text range. The ranges are maintained by the SMG. -->
+
+<!ELEMENT ESTATEASSETRANGE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief estate's assets. Expressed as text. -->
+
+<!ELEMENT ESTATEASSETS  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Wrapper for the elements specific to the estate in a Dependant's Relief quantum. -->
+
+<!ELEMENT ESTATEINFO  ( %estateassets; , %estateassetrange; )>
+
+<!-- Notes from Tagging Stds:
+
+The Child Support Guidelines are a legislative and regulatory package package with tables stating payment amounts and detailed requirements for financial disclosure. Exceptions to the Guidelines are possible. These are the categories maintained by the SMG:  -->
+
+<!ELEMENT EXCEPTIONCSG  (#PCDATA)>
+<!ATTLIST EXCEPTIONCSG  
+          LABEL CDATA #IMPLIED >
+
+<!-- Note from Tagging Stds:
+
+In <quantum>, <expert> = an expert witness -->
+
+<!ELEMENT EXPERT  (( %titlename; )?, ( %firsname; )?, %lastname; , ( %designat; )?, ( %expertise; )?)>
+<!ATTLIST EXPERT  
+          LABEL CDATA #IMPLIED >
+
+<!-- Note from Tagging Stds:
+
+In <quantum>, <expertise> = the professional expertise that the expert brought to the hearing  -->
+
+<!ELEMENT EXPERTISE  ( %expertisearea; , ( %expertisespecialty; )?)>
+
+<!-- Note from Tagging Stds:
+
+In <quantum>, <expertisearea> = professional area of expertise (controlled vocabulary derived from West's Expertise List)  -->
+
+<!ELEMENT EXPERTISEAREA  (#PCDATA)>
+<!ATTLIST EXPERTISEAREA  
+          LABEL CDATA #IMPLIED >
+
+<!-- Note from Tagging Stds:
+
+In <quantum>, <expertisespecialty> = specialty within the above expertise area (controlled vocabulary derived from West's Expertise List) -->
+
+<!ELEMENT EXPERTISESPECIALTY  (#PCDATA)>
+<!ATTLIST EXPERTISESPECIALTY  
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+Expert Witnesses that were called to testify during the hearing of the parent case. For the Expert Witnesses Directory component of Litigator Canada, West? will be creating links from our Quantum expert witnesses. Therefore we need robust tagging, similar to our <author> markup. -->
+
+<!ELEMENT EXPERTS  ( %expert; )*>
+
+<!-- Notes from Tagging Specs:
+
+Typically each headnote is broken down into three parts: (1) a statement of facts (<fact>), (2) "held" line (<held>) and (3) reasons for decision (<reason>).
+
+Some legacy decision headnotes contain <headnblk> rather than <fact>, <held> and <reason> where no discernable breakdown into facts, held line and reasons could be made. The content of <headnblk> is <freeform>. -->
+
+<!ELEMENT FACT  (( %p; )*, ( %block4; )*) >
+<!ATTLIST FACT  
+          VIEWS CDATA #IMPLIED  >
+
+<!-- Notes from Court Filings Specs:
+
+Judgment Appeal and Trial Pleading Facta:
+
+Judgment Appeal <FACTUM> is numbered PA1.F1, PA2.F1, PA3.F1, etc. Trial Pleading <FACTUM> is numbered PT1.F1, PT2.F1, PT3.F1, etc. -->
+
+<!ELEMENT FACTUM  ( %n; , %graphic; , %docti; , ( %subject; )+, ( %statref; )*, %date; , ( %caseref; )+, ( %docket; )+, %courtjur; , ( %partyblock; )+, ( %counselblock; )+, ( %internaltoc; )?, %freeform; ) >
+<!ATTLIST FACTUM
+	  %docprop;
+          TYPE CDATA #IMPLIED
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes:
+
+Used in <defamationinfo> in Quantum Digests.
+
+Fixed attribute values are for display on Litigator Canada product. -->
+
+<!ELEMENT FAIRCOMMENT  (#PCDATA)>
+
+<!-- Notes from Court Filings Specs:
+
+The <LAWFIRM> contains <FIRMNAME> and optional <FIRMTYPE>. The <FIRMNAME> is to contain the name of the firm and where provided the <FIRMTYPE> is to contain the type of the firm (i.e. Barristers and Solicitors). Sole Practitioners (lawyers working under their own proper names) need to be captured as both <FIRMNAME> and as <COUNSEL>. Where there is no <FIRMNAME> but there is <COUNSEL> information, repeat the name of the <COUNSEL> within the <FIRMNAME>. -->
+
+<!ELEMENT FIRMNAME  (#PCDATA) >
+
+<!-- Notes from Court Filings Specs:
+
+The <LAWFIRM> contains <FIRMNAME> and optional <FIRMTYPE>. The <FIRMNAME> is to contain the name of the firm and where provided the <FIRMTYPE> is to contain the type of the firm (i.e. Barristers and Solicitors).  -->
+
+<!ELEMENT FIRMTYPE  (#PCDATA) >
+
+<!-- Notes from FileLaw Specs:
+
+Application text is tagged as <FLAPPLIC><QUOTE><P0>. Use the <SOURCE> tag at the end of <QUOTE> or in the <QUOTE> tags between paragraphs for stathist-like text.  -->
+
+<!ELEMENT FLAPPLIC  ( %quote; , ( %source; )?)* >
+<!ATTLIST FLAPPLIC  
+          FORM (NOT-DEF | not-def | NOT-APPL | not-appl) #IMPLIED >
+
+<!-- Notes from FileLaw Specs:
+
+Citation text is tagged as <FLCITE> with any Act or Regulation titles tagged as <EMPHASIS>. -->
+
+<!ELEMENT FLCITE  ( %linetxt; )* >
+
+<!-- Notes from FileLaw Specs:
+
+"Definition" text is tagged as <FLDEF><QUOTE><P0>. Use the <SOURCE> tag at the end of <QUOTE> or in the <QUOTE> tags between paragraphs for stathist-like text.  -->
+
+<!ELEMENT FLDEF  ( %quote; , ( %source; )?)* >
+<!ATTLIST FLDEF  
+          FORM (NOT-APPL | not-appl | NOT-DEF | not-def) #IMPLIED >
+
+<!-- Notes from FileLaw Specs:
+
+"Description" text is tagged as <FLDESC><QUOTE><P0>. -->
+
+<!ELEMENT FLDESC  ( %quote; , ( %source; )?)* >
+<!ATTLIST FLDESC  
+          FORM (NOT-APPL | not-appl | NOT-DESC | not-desc) #IMPLIED >
+
+<!-- Notes from File Law Specs:
+
+This is the de facto root element for File Law data (except note that it is surrounded by <GLUE>. -->
+
+<!ELEMENT FLENTRY  ( %n; , %ti; , ( %date; )+, ( %currency; )?, FLCITE?, ( %flsum; )?, ( %fldesc; )?, ( %fldef; )?,( %flapplic; )?, ( %comment; )?, ( %freeform; )?) >
+<!ATTLIST FLENTRY  
+          TIGRE CDATA #IMPLIED  
+          %docprop;  >
+
+<!-- Notes from File Law Specs:
+
+"Retention/Limitation:" text is tagged as <FLSUM><P0>. 
+
+Use the <SOURCE> tag at the end of  the <FLSUM> for stathist-like text.  -->
+
+<!ELEMENT FLSUM  (( %p; )*, ( %freeform; )*, ( %source; )?) >
+<!ATTLIST FLSUM  
+          FORM (NOT-SPEC | not-spec | SEE-DESC | see-desc) #IMPLIED  >
+
+
+<!-- Notes from Tagging Stds:
+
+Male or female. -->
+
+<!ELEMENT GENDER  (#PCDATA)*>
+
+<!-- Notes from Tagging Stds:
+
+Some legacy decision headnotes contain <headnblk> rather than <fact>, <held> and <reason> where no discernable breakdown into facts, held line and reasons could be made. The content of <headnblk> is <freeform>. -->
+
+<!ELEMENT HEADNBLK  ( %freeform; ) >
+
+<!-- Notes from Tagging Stds:
+
+A summary or precis of the main issues of a decision;; in topical law reports each headnote is designed to summarize the decision with the emphasis on the relevant topic.  -->
+
+<!ELEMENT HEADNOTE  (( %headnblk; )? | (( %fact; )*, ( %held; )*, ( %reason; )*)) >
+<!ATTLIST HEADNOTE  
+          TYPE (FULL | full | DIGEST | digest)  #IMPLIED
+          VIEWS CDATA          #IMPLIED  
+          LANG (EN | en | FR | fr)       #IMPLIED
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+- <heardate> is the date(s) when the decision was heard in court.  -->
+
+<!ELEMENT HEARDATE  ( %linetxt; )* >
+<!ATTLIST HEARDATE  
+          YYYYMMDD CDATA #IMPLIED
+          LABEL    CDATA #IMPLIED   >
+
+<!-- Notes from Tagging Specs:
+
+Typically each headnote is broken down into three parts: (1) a statement of facts (<fact>), (2) "held" line (<held>) and (3) reasons for decision (<reason>). -->
+
+<!ELEMENT HELD  ( %p; )* >
+<!ATTLIST HELD  
+          VIEWS CDATA #IMPLIED  
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+A container for the identification elements of the decision, also known as the "tombstone" information. The elements inside <ident> are assigned during conversion, based on the contents of the Judgment Control Sheet. -->
+
+<!ELEMENT IDENT  (CLICSOC, %socs; , ( %statref; )*, CITE?, %correlas; , ( %othlang; )?,( %digcites; )?, ( %digcite; )* , %courtjur; , %jurisdic; , %decider; , %dateblk; , ( %year; )?, ( %docket; )?, ( %relaproc; )?, %casehsts; , %counsels; , ( %length; )?, ( %refn; )?, ( %modify; )?) >
+<!ATTLIST IDENT 
+          SYNC    CDATA #IMPLIED
+          ADDDATE CDATA #IMPLIED >
+
+<!-- Non-standard identification elements for irregular decisions. -->
+
+<!ELEMENT IDENTBIT  (( %date; ) | JUDGDATE | HEARDATE | CAUSDATE | ( %courtjur; ) | JURISDIC | ( %decider; ) | DOCKET | ( %casehist; ) | ( %counsels; ) )* >
+
+<!-- Notes from Tagging Stds:
+
+Goldsmith number classification plus term associated with that number, e.g.: 41. Hand -->
+
+<!ELEMENT INJURY  ( %linetxt; )* >
+<!ATTLIST INJURY  
+          GOLDCLASS CDATA #REQUIRED
+          TYPE (PRIMARY | primary | OTHER | other) #REQUIRED >
+
+<!-- Notes from Tagging Stds:
+
+From a predefined drop down list, the age range of the plaintiff at the time of injury. Not to be displayed in Litigator Canada: use for fielded searching only. -->
+
+<!ELEMENT INJURYAGERANGE  (#PCDATA)>
+<!ATTLIST INJURYAGERANGE  
+          LABEL CDATA #FIXED "AGE RANGE: ">
+
+<!--  Notes from Tagging Stds:
+
+Prose description of what caused the injury. -->
+
+<!ELEMENT INJURYCAUSE  (#PCDATA)>
+<!ATTLIST INJURYCAUSE 
+          LABEL CDATA #FIXED "CAUSE OF INJURY: ">
+
+<!-- Notes from Tagging Stds:
+
+Prose description of long the injury lasted. -->
+
+<!ELEMENT INJURYDURATION  (#PCDATA)>
+<!ATTLIST INJURYDURATION 
+          LABEL CDATA #FIXED "DURATION OF INJURY: ">
+
+<!-- Notes from Tagging Stds:
+
+Wrapper for the elements specific to Personal Injury Quantums -->
+
+<!ELEMENT INJURYINFO  (INJURY+, ( %injuryduration; )?, ( %injurycause; )?, ( %gender; )?, ( %age; )?, ( %injuryagerange; )?, ( %occupation; )?)>
+
+<!-- internal table of content -->
+
+<!ELEMENT INTERNALTOC  ( %ti; , ( %tocp; )+) >
+
+<!-- Notes from Tagging Stds:
+
+Introductory text that precedes the opinion of a decision, supplied by the court. It falls into a category not written by the judge and not authored at Carswell.
+
+For bilingual decisions, an element should exist for each language. -->
+
+
+<!ELEMENT INTROMAT  ( %freeform; )* >
+
+<!-- Notes from Tagging Stds:
+
+Yes/no value: whether a plea of justification was issued by the defendant, e.g., defendant felt it was in the public good to publish certain information. -->
+
+<!ELEMENT JUSTIFICATIONPLEA  (#PCDATA)>
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYBLOCK1  ( %ti; , ( %p; )+) >
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS0  ( %ti; , ( %keyclass1; )+) >
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS1  (( %volnote; )?, ( %classifn; ) , ( %classif; ) , ( %keyrefs; )?, (( %keyclass2; ) | ( %editnote; ) )* ) >
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS2  (( %volnote; )?, ( %classifn; ) , ( %classif; ) , ( %keyrefs; )?, (( %keyclass3; ) | ( %editnote; ) )* )>
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS3  (( %volnote; )?, ( %classifn; ) , ( %classif; ) , ( %keyrefs; )?, (( %keyclass4; ) | ( %editnote; ) )* )>
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS4  (( %volnote; )?, ( %classifn; ) , ( %classif; ) , ( %keyrefs; )?, (( %keyclass5; ) | ( %editnote; ) )* )>
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS5  (( %volnote; )?, ( %classifn; ) , ( %classif; ) , ( %keyrefs; )?, (( %keyclass6; ) | ( %editnote; ) )* )>
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYCLASS6  (( %volnote; )?, ( %classifn; ) , ( %classif; ) , ( %keyrefs; )?) >
+
+<!-- Abridgment Key Locator or Related Titles block.  -->
+
+<!ELEMENT KEYIDENT  ( %subjtitl; , ( %subti; )?, ( %volnote; )?, ( %freeform; )?) >
+
+<!-- Abridgment Key Subject references. -->
+
+<!ELEMENT KEYREF   (( %text; , ( %see; )*) | ( %seealso; )* ) >
+
+<!-- Abridgment Key Subject references. -->
+
+<!ELEMENT KEYREFS  ( %keyref; )* >
+
+<!-- Abridgment Key Subject. -->
+
+<!ELEMENT KEYSUBJ  ( %keyident; , ( %keyblock1; )+, %keyclass0; ) >
+<!ATTLIST KEYSUBJ     ID      CDATA   #REQUIRED
+                      EDITION (2 | 3) "2" >
+
+<!-- Abridgment Key Subject references. -->
+
+<!ELEMENT KEYXREF  ( %xrefdoc; )+ >
+
+<!-- Notes from Court Filings Specs:
+
+The <LAWFIRM> contains <FIRMNAME> and optional <FIRMTYPE>. The <FIRMNAME> is to contain the name of the firm and where provided the <FIRMTYPE> is to contain the type of the firm (i.e. Barristers and Solicitors).  -->
+
+<!ELEMENT LAWFIRM  ( %firmname; , ( %firmtype; )?)>
+
+<!-- Level of Abridgment digest. -->
+
+<!ELEMENT LEVEL  ( %linetxt; )* >
+
+<!-- Notes: This seems to be used to mark a hypertext link - note that the attribute is "href" - but where is it used?. -->
+
+<!ELEMENT LINK  (#PCDATA) >
+<!ATTLIST LINK HREF CDATA #REQUIRED >
+
+<!-- Law Reports Index entry. -->
+
+<!ELEMENT LRENTRY  ( %lrtext; , %lrref; ) >
+
+<!-- Law Reports Index level 1. -->
+
+<!ELEMENT LRINDEX1  ( %lritext; , ( %lrindex2; )*) >
+
+<!-- Law Reports Index level 2. -->
+
+<!ELEMENT LRINDEX2  ( %lritext; , ( %lrindex3; )*) >
+
+<!-- Law Reports Index level 3. -->
+
+<!ELEMENT LRINDEX3  ( %lritext; ) >
+
+<!-- Law Reports Index entry reference. -->
+
+<!ELEMENT LRREF  ((( %authors; )?, ( ( %ti; ) | CLICSOC)), (( %volume; )?, ( %reporter; ) , ( %pagenum; ) , ( %courtjur; )?)) >
+
+<!-- Law Reports Index entry text. -->
+
+<!ELEMENT LRTEXT  ( ( %caseref; ) | ( %statref; ) | TERMP | ( %authors; ) | ( %caption; ) ) >
+
+<!-- Notes from Tagging Stds:
+
+Yes/no value: whether the decider found evidence of malice in the defamation. -->
+
+<!ELEMENT MALICE  (#PCDATA)>
+
+<!-- Notes from Court Filings Specs:
+
+Motions are a request to the court for an order for the relief or remedy requested which occurs during the course of a court proceeding. -->
+
+<!ELEMENT MOTION  (( %n; ), ( %graphic; ), ( %subtype; )+, ( %docti; ), ( %subject; )*, ( %statref; )+, ( %date; ), ( %caseref; )+,( %docket; )+, ( %courtjur; ), ( %partyblock; )+, ( %counselblock; )+, ( %internaltoc; )?, ( %freeform; )) >
+
+<!-- Notes from Court Filing Specs:
+
+Wrappers are a Motion document consisting of an outline of related documents associated with a particular Motion. The Wrapper must be built from information provided. -->
+
+<!ELEMENT MOTIONWRAPPER  (( %n; ), ( %subtype; ), ( %subject; )*, ( %statref; )+, ( %caseref; )+, ( %freeform; )) >
+
+<!-- Notes from Tagging Stds:
+
+The mode and extent of the publication that contained the defamation. This is a controlled vocabulary, maintained by the SMG. -->
+
+<!ELEMENT NATUREOFPUBLICATION  (#PCDATA)>
+
+<!-- Note: Number of dependent children.  Used in Quantum Digests in <ssupportinfo>. -->
+
+<!ELEMENT NDEPENDENTCHILDREN  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The amount of notice awarded to the plaintiff in a wrongful dismissal quantum. -->
+
+<!ELEMENT NOTICEPERIODAWARDED  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The amount of notice time awarded in a wrongful dismissal quantum, expressed as a range. -->
+
+<!ELEMENT NOTICEPERIODRANGE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The number of children relevant to the proceeding, i.e., the number of children requiring child support. -->
+
+<!ELEMENT NRELEVANTCHILDREN  (#PCDATA)>
+<!ATTLIST NRELEVANTCHILDREN 
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+When parent element is <injuryinfo>: the occupation of the injured plaintiff. When parent is <defamationinfo>: the occupation of the defamed plaintiff. -->
+
+<!ELEMENT OCCUPATION  (#PCDATA)>
+
+<!-- Notes from Online Elements Dictionary:
+
+An On-line content chunk. -->
+
+<!ELEMENT OCONTENT  (( %appendoc; ) | ( %article; ) | ( %casedige; ) | ( %casesdoc; ) | ( %class; ) | ( %comment; ) | ( %convent; ) | ( %courtfil; ) | ( %decdummy; ) | ( %decision; ) | ( %docp; ) | ( %essay; ) | ( %flentry; ) | ( %form; ) | ( %frontdoc; ) | ( %index; ) | ( %indexdiv; ) | ( %index0; ) | ( %legiddoc; ) | ( %lrindex; ) | ( %polidoc; ) | ( %preceden; ) | ( %remision; ) | ( %ruling; ) | ( %scheddoc; ) | ( %sec; ) | ( %toc; ) | ( %tngroup; ) | ( %xrefdoc; ))? >
+
+<!-- Notes from Tagging Stds:
+
+The reasons of a judge, chair, arbitrator. A <decision> may have more than one <opinion> if more than one judge was presiding over the decision. -->
+
+<!ELEMENT OPINION  (( %block2; )?, ( %opintro; )?, ( %freeform; )?) >
+<!ATTLIST OPINION 
+          VIEWS CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+The opinion introduction, which usually consists of the judge's name, along with other text. Tag the judge's name with <decider>. (<per> is not implemented.) This is used to generate the running ear in Law Reports print output. -->
+
+<!ELEMENT OPINTRO  ( #PCDATA | DECIDER | PER | CASEREF  | %every;)* >
+
+<!-- Notes from Court Filings Specs:
+
+Orders are a decision of a court or other decision-making body that may or may not be the final outcome of the matter. -->
+
+<!ELEMENT ORDER  (( %n; ), ( %graphic; ), ( %docti; ), ( %date; )?, ( %decider; )?, ( %caseref; )+, ( %docket; )+, ( %courtjur; )?, ( %table; )?, ( %partyblock; )+, ( %counselblock; )+, ( %internaltoc; )?, ( %freeform; )) >
+
+<!-- Notes from Tagging Stds:
+
+The type of spousal support order issued by the decider in a spousal support quantum.  -->
+
+<!ELEMENT ORDERTYPE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Contains a case reference to the "other language" version of the decision. Should always contain a <caseref> (rather than just text), to allow for programmatic updating of the case reference (via crup). -->
+
+<!ELEMENT OTHLANG  (#PCDATA | CASEREF | %every; )* >
+
+<!-- contains the party information -->
+
+<!ELEMENT PARTY  ( %linetxt; )* >
+
+<!-- wrapper for parties information -->
+
+<!ELEMENT PARTYBLOCK  (( %p; )*, ( %line; )?, (PARTY, ( %partyrole; )?, ( %connector; )?)+, ( %actunder; )*) >
+
+<!-- contains the party role information -->
+
+<!ELEMENT PARTYROLE  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+In <quantum>, <pcounsel> = Wrapper for one or more Plaintiff Counsel  -->
+
+<!ELEMENT PCOUNSEL  (COUNSEL+)>
+
+<!-- Notes from Tagging Stds:
+
+A penalty beyond any award??? -->
+
+<!ELEMENT PENALTY  (#PCDATA)>
+<!ATTLIST PENALTY 
+	  TYPE CDATA #IMPLIED
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+Income of the plaintiff in a child support or spousal support quantum. -->
+
+<!ELEMENT PINCOME  (#PCDATA)>
+<!ATTLIST PINCOME 
+          LABEL CDATA #IMPLIED >
+          
+<!-- Notes from Tagging Stds:
+
+Income range of the plaintiff in a child support or spousal support quantum.  -->      
+
+<!ELEMENT PINCOMERANGE  (#PCDATA)>
+<!ATTLIST PINCOMERANGE
+	  %docprop;
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+The nature of the plaintiff's business or position that resulted in the breach of contract, e.g., "seller of mobile home" or "excavation company". -->
+
+<!ELEMENT PLAINTIFFPARTICULARS  (#PCDATA)>
+<!ATTLIST PLAINTIFFPARTICULARS 
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+The documents that are filed with the court by the parties to a proceeding which sets out the issues or matters to be determined by the court; the foundational documents which form the record of the case with the court. -->
+
+<!ELEMENT PLEADING  (( %n; ), ( %graphic; ), ( %subtype; )+, ( %docti; ), ( %subject; )+, ( %statref; )*, ( %date; ), ( %caseref; )+, ( %p; )?, ( %docket; )+, ( %courtjur; ), ( %partyblock; )+, ( %counselblock; )+, ( %internaltoc; )?, ( %freeform; )) >
+<!ATTLIST PLEADING 
+	  %docprop;
+	  TYPE CDATA #IMPLIED
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Court Filings Specs:
+
+Pleading Wrappers are Pleading documents consisting of an outline of related documents associated with a particular Pleading. The Wrapper must be built from information provided within other documents.  -->
+
+<!ELEMENT PLEADINGWRAPPER  (( %n; ), ( %subtype; )?, ( %docti; ), ( %subject; ), ( %statref; )*, ( %caseref; )+, ( %freeform; )) >
+<!ATTLIST PLEADINGWRAPPER 
+	  %docprop;
+          LABEL CDATA #IMPLIED >
+
+<!-- Precedent (filled-in example of legislative or non-leg. form). -->
+
+<!ELEMENT PRECEDEN  (( %n; ), ( %ti; ), ( %freeform; ), ( %appendix; )*) >
+<!ATTLIST PRECEDEN  
+          TIGRE CDATA #IMPLIED  
+          LABEL CDATA #IMPLIED  
+          %docprop; >
+
+<!-- Previous level in Abridgment Digest. -->
+
+<!ELEMENT PREVLEV  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+The main custodian/caregiver of the children requiring child support.  -->
+
+<!ELEMENT PRIMARYCUSTODIAN  (#PCDATA)>
+<!ATTLIST PRIMARYCUSTODIAN 
+          LABEL CDATA #IMPLIED >
+
+<!-- Notes from Tagging Stds:
+
+Yes/no value: whether the publishing/communication of information was alleged to be privileged, i.e. protected, by the defendant.??? -->
+
+<!ELEMENT PRIVILEGE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+A quantum is derived from a full-text decision, written where there is an award provided by the court. Personal Injury Damages Quantums are organized around a topical classification. A quantum is not just a precis or summary of a decision. -->
+
+<!ELEMENT QUANTUM  (( %caseref; ), ( %counsels; ), ( %experts; )?, (( %injuryinfo; ) | (( %employeeinfo; ), ( %employerinfo; )) | (( %claimantinfo; ), ( %estateinfo; )) | ( %breachinfo; ) | ( %defamationinfo; ) | ( %csupportinfo; ) | ( %ssupportinfo; )), ( %awards; ), (( %headnote; )+ | ( %caption; )+) )>
+<!ATTLIST QUANTUM
+  %docprop; 
+  TYPE CDATA #IMPLIED
+  STATUS CDATA #IMPLIED
+  ID    CDATA               #IMPLIED
+>
+
+<!-- Notes from Tagging Specs:
+
+Typically each headnote is broken down into three parts: (1) a statement of facts (<fact>), (2) "held" line (<held>) and (3) reasons for decision (<reason>). -->
+
+<!ELEMENT REASON  (( %p; )*, ( %block4; )*)  >
+<!ATTLIST REASON 
+          VIEWS CDATA #IMPLIED  >
+
+<!-- Notes from Tagging Stds:
+
+Lists of references to other cases or to legislation that appear in the opinion. -->
+
+<!ELEMENT REFLIST  (( %freeform; )) >
+<!ATTLIST REFLIST  
+          TYPE (STATUTES | statutes | RULES | rules | REGS | regs | TREATIES | treaties | TARIFFS | tariffs | AUTHORIT | authorit | 
+                CASES | cases | WORDS | words | FORMS | forms | RULINGS | rulings | POLICIES | policies) #IMPLIED 
+          LANG (EN | en | FR | fr)                                #IMPLIED  >
+
+<!-- Notes from Tagging Stds:
+
+The history of the current decision. History may be prior or later: <casehist> is updated programmatically via the CCDB??. -->
+
+<!ELEMENT RELAPROC  (#PCDATA | CASEREF | %every; )* >
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's length of relationship to the deceased, from whose estate the claimant is making a claim. -->
+
+<!ELEMENT RELATIONSHIPLENGTH  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's length of relationship to the deceased, expressed as a range. -->
+
+<!ELEMENT RELATIONSHIPLENGTHRANGE  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+The dependant's relief claimant's relationship to the deceased, from whose estate the claimant is making a claim. -->
+
+<!ELEMENT RELATIONTODECEASED  (#PCDATA)>
+
+<!-- Law Reporter. -->
+
+<!ELEMENT REPORTER  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+A container for the identification elements of the ruling. -->
+
+<!ELEMENT RULIDENT  (CLICSOC, ( %statref; )+, ( %soc; ), ( %cite; ), ( %courtjur; ), ( %decider; ), ( %date; ), ( %year; ), ( %docket; )?) >
+
+<!-- Notes from Tagging Stds:
+
+A Ruling or Order issued by a Securities Commission. -->
+
+<!ELEMENT RULING  (( %rulident; ), ( %summarym; ), ( %freeform; ), ( %appendix; )*) >
+<!ATTLIST RULING    
+          TIGRE   CDATA #IMPLIED  
+          CCDBNUM CDATA #IMPLIED 
+          DECINUM CDATA #IMPLIED 
+          LABEL   CDATA #IMPLIED
+          %docprop; >
+
+<!--  Notes from carswell-with-quantums.dtd:
+
+Digests related to workplace decisions.
+
+SAG = sentences arbitrales de griefs. -->
+
+<!ELEMENT SAGDIGE  (( %n; ), PARTY, PARTY, ( %sagref; )?, ( %casedata; ), STATEDIS?,( %subjtitl; )+, ( %classif; )*, ( %capphra; )*, ( %headnote; )?, ( %reflist; )*) >
+
+<!-- Use in <sagdige> - digests related to workplace decisions. -->
+
+<!ELEMENT SAGREF  (#PCDATA) >
+
+<!-- Notes from carswell-with-quantums.dtd:
+
+Sentence (BCMVD).  BCMVD = British Columbia Motor Vehicle Digests = a dead duck for 5+ years. -->
+
+<!ELEMENT SENTENCE  ( %linetxt; )* >
+<!ATTLIST SENTENCE  
+          LABEL CDATA #IMPLIED   >
+
+<!-- Notes from Tagging Stds:
+
+<socs> is a required element used to contain one or more <soc> elements.
+<soc> within <socs> is the "style of cause" or name of a decision as it appears on the face of the judgment. Upper case styles of cause should be keyed in upper and lower case: we require specifications for keying upper and lower case French language styles of cause. -->
+
+
+<!ELEMENT SOCS  (( %soc; )*) >
+
+<!-- Notes from Tagging Stds:
+
+Solicitors of Record involved in the decision. May be the name of a legal firm. Appears at the end of the decision, after the opinion and statement of disposition. -->
+
+<!ELEMENT SOLREC  ( %linetxt; )* >
+
+<!-- 
+Notes from Tagging Stds:
+
+Solicitors of Record involved in the decision. May be the name of a legal firm. Appears at the end of the decision, after the opinion and statement of disposition. -->
+
+<!ELEMENT SOLRECS  (SOLREC*)  >
+
+<!-- Notes from Tagging Stds:
+
+This element was added for the CLAR AutoCopy process. -->
+
+<!ELEMENT SORTCATEGORIES  (( %sortcategory; )+) >
+
+<!-- Notes from Tagging Stds:
+
+This element was added for the CLAR AutoCopy process. -->
+
+<!ELEMENT SORTCATEGORY  (#PCDATA) >
+
+<!-- Notes from Tagging Stds:
+
+Wrapper element for the elements specific to Spousal Support quantums. (Payee/Payor income and Payee/Payor income range - <pincome>, <dincome>, <pincomerange>, <dincomerange> are elements shared by Child Support and Spousal Support quantums. -->
+
+<!ELEMENT SSUPPORTINFO  (( %pincome; ), ( %pincomerange; ), ( %dincome; ), ( %dincomerange; ), ( %ordertype; ), ( %ndependentchildren; ), ( %relationshiplength; ), ( %relationshiplengthrange; )?)>
+
+<!-- Notes from Tagging Stds:
+
+A brief statement (written by a legal writer) about the outcome of the decision, such as "Appeal dismissed." Where there are multiple deciders, there is still just one one statement of disposition. However, for bilingual decisions, there is a statement of disposition for each language. This is why <statedis> is an element inside <decision and not <opinion>. -->
+
+<!ELEMENT STATEDIS  ( %linetxt; )* >
+<!ATTLIST STATEDIS 
+          LANG  (EN | en | FR | fr) #IMPLIED  
+          VIEWS CDATA     #IMPLIED  >
+
+<!-- Notes from Tagging Stds:
+
+Statement of proceedings: a brief statement about the nature of the proceeding leading up to this decision. -->
+
+<!ELEMENT STATEPRO  ( %paratxt; )* >
+
+<!-- contains the information describing the scope of the document -->
+
+<!ELEMENT SUBTYPE  (#PCDATA) >
+
+<!-- Non-standard summary material elements for irregular decisions. -->
+
+<!ELEMENT SUMMABIT  (( %subject; ) | ( %caption; ) | ( %headnote; ) | ( %reflist; ) | ( %caseanno; ) | ( %casecomm; ) | STATEPRO | ( %intromat; ))*  >
+
+<!-- Notes from Tagging Stds:
+
+A container for the summary material/value-add information that is written by Carswell legal writers or outside authors. Some components of the summary material are not created by Carswell: the <intromat> element contains text that precedes the opinion. -->
+
+<!ELEMENT SUMMARYM  (( %subject; )*, (( %caption; ) | ( %headnote; ) | ( %caseanno; ) | ( %reflist; ) | ( %casesumm; ) | ( %text; ))*, ( %casecomm; )*, (%statepro;)*, ( %intromat; )?) >
+
+<!-- Notes from Tagging Stds:
+
+In <quantum>, <titlename> = Mr., Ms., Dr. etc. -->
+
+<!ELEMENT TITLENAME  (#PCDATA)>
+
+<!-- Table of Contents, Cases or Sections. -->
+
+<!ELEMENT TOC  (( %ti; )*, ( %subti; )*, ( %infop; )?, ( %freeform; )?,   (( %toccase; )* | (( %tocsec; )*, ( %tocppart; )*, ( %tocmdiv; )*, ( %tocsdiv; )*, ( %tocdiv; )*, ( %tocpart; )*, (( %tocapp; )* | ( %tocsched; )*), ( %tocform; )*) | (( %act; ) | ( %reg; ) | ( %misclaw; ) | ( %convent; ))*) )  >
+<!ATTLIST TOC  
+          TYPE (OVERVIEW | overview | DETAILED | detailed) #IMPLIED  
+          ID    CDATA               #IMPLIED
+          %docprop; >
+
+<!-- Table of Sections Appendix. -->
+
+<!ELEMENT TOCAPP  (( %n; ), ( %ti; ), (( %tocsec; ) | ( %tocmdiv; ) | ( %tocpart; ))*, ( %tocform; )*) >
+
+<!-- Table of Cases case entry. -->
+
+<!ELEMENT TOCCASE  ((( %caseref; ), (( %see; ) | ( %seealso; ))?, ( %refn; )?) |(TOCSCOPE?, TOCSOC, TOCCITE? ,( %headnote; )?, (( %see; ) | TOCSCOPE)?)) >
+
+<!--  Table of Cases case entry cite. -->
+
+<!ELEMENT TOCCITE  ( %linetxt; )*  >
+
+<!-- Table of Sections definition. -->
+
+<!ELEMENT TOCDEF  (#PCDATA | TERM )* >
+<!ATTLIST TOCDEF  
+          PRODUCT CDATA #IMPLIED   >
+
+<!-- Table of Sections Division or Table of Cases division (!) -->
+
+<!ELEMENT TOCDIV  ((( %n; ), ( %ti; ), ( %tocsec; )*, ( %tocmdiv; )*, ( %tocsdiv; )*) | (( %ti; ), ( %toccase; )+)) >
+
+<!-- Table of Sections Form. -->
+
+<!ELEMENT TOCFORM  (( %n; ), ( %ti; ))  >
+
+<!-- Table of Sections Miscellaneous Division. -->
+
+<!ELEMENT TOCMDIV  (( %ti; ), ( %tocsec; )*, ( %tocmdiv; )*, ( %tocform; )*) >
+
+<!--Notes from Court Filings Specs:
+ The <INTERNALTOC> element is required where an internal Table of Content has been added or marked up within the hard copy of the Pleading. -->
+
+<!ELEMENT TOCP  (#PCDATA) >
+<!ATTLIST TOCP TOCIDREF CDATA #REQUIRED >
+
+<!-- Table of Sections paragraph. -->
+
+<!ELEMENT TOCPARA  (( %n; ), ( %ti; )?) >
+<!ATTLIST TOCPARA  
+          PRODUCT CDATA #IMPLIED   >
+
+<!-- Table of Sections Part. -->
+
+<!ELEMENT TOCPART  (( %n; ), ( %ti; ), ( %tocsec; )*, ( %tocmdiv; )*, ( %tocsdiv; )*, ( %tocdiv; )*, (( %tocapp; )* | ( %tocsched; )*)) >
+<!ATTLIST TOCPART  
+          PRODUCT CDATA #IMPLIED   
+          LABEL   CDATA #IMPLIED >
+
+<!-- Table of Sections pre-Part. -->
+
+<!ELEMENT TOCPPART  (( %ti; ), ( %tocsec; )*) >
+
+<!-- Table of Sections Schedule. -->
+
+<!ELEMENT TOCSCHED  (( %n; ), ( %ti; ), (( %tocsec; ) | ( %tocmdiv; ) | ( %tocpart; ))*, ( %tocform; )*) >
+
+<!-- Table of Cases entry scope. -->
+
+<!ELEMENT TOCSCOPE  ( %linetxt; )* >
+
+<!-- Table of Sections Subdivision. -->
+
+<!ELEMENT TOCSDIV  (( %n; ), ( %ti; ), ( %tocsec; )*, ( %tocmdiv; )*) >
+
+<!-- Table of Sections section. -->
+
+<!ELEMENT TOCSEC  (( %n; ), ( %ti; )?, (( %tocssec; ) | ( %tocpara; ) | ( %tocdef; ))*) >
+<!ATTLIST TOCSEC  
+          PRODUCT CDATA #IMPLIED   >
+
+<!-- Table of Cases entry style of cause. -->
+
+<!ELEMENT TOCSOC  ( %linetxt; )*  >
+
+<!-- 
+Notes from Tagging Stds:
+
+Wrongfully dismissed employee's length of time unemployed after being dismissed. Expressed as text, e.g. 6 months.  -->
+
+<!ELEMENT UNEMPLOYMENTLENGTH  (#PCDATA)>
+
+<!-- Notes from Tagging Stds:
+
+Used to specify the various possible "views" of a decision's summary material. In conjunction with the views attributes on the summary material elements, digest generation programs assemble different digests based on different views. -->
+
+<!ELEMENT VIEW  (#PCDATA )* >
+<!ATTLIST VIEW  
+          NAME   CDATA #REQUIRED 
+          NUMBER CDATA #REQUIRED >
+
+<!-- Abridgment Key pointer to Abridgment volume. -->
+
+<!ELEMENT VOLNOTE  (( %freeform; )*) >
+
+<!-- Law Reports Index volume. -->
+
+<!ELEMENT VOLUME  (#PCDATA) >

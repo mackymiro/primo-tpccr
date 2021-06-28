@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="lego.load">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="hierarchy"/>
+				<xs:element ref="data.change.package"/>
+			</xs:choice>
+			<xs:attribute name="load.type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="initial"/>
+						<xs:enumeration value="prospective"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hierarchy">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="entry" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element ref="heading.id"/>
+							<xs:element ref="volume.number" minOccurs="0"/>
+							<xs:element ref="volume.sequence.number" minOccurs="0"/>
+							<xs:element name="sequence.number.compliment" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:nonNegativeInteger">
+										<xs:totalDigits value="14"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element ref="keyword.code"/>
+							<xs:element ref="value"/>
+							<xs:element ref="heading.text"/>
+							<xs:element ref="level"/>
+							<xs:element ref="status"/>
+							<xs:element name="westlaw.format.status.code" type="xs:string" minOccurs="0"/>
+							<xs:element name="style.mnemonic" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="5"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="hierarchy.keyword.code" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:nonNegativeInteger">
+										<xs:totalDigits value="40"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="hierarchy.value" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="400"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element ref="parent.heading.id"/>
+							<xs:element ref="eldest.child.heading.id" minOccurs="0"/>
+							<xs:element ref="next.sibling.heading.id" minOccurs="0"/>
+							<xs:element ref="previous.sibling.heading.id" minOccurs="0"/>
+							<xs:element name="last.operation.change.date" type="xs:nonNegativeInteger" minOccurs="0"/>
+							<xs:element name="last.operation.change.time" type="xs:nonNegativeInteger" minOccurs="0"/>
+							<xs:element ref="employee.id" minOccurs="0"/>
+							<xs:element ref="initial.range.heading.id" minOccurs="0"/>
+							<xs:element name="multiple.text.heading.id" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:nonNegativeInteger">
+										<xs:totalDigits value="9"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="last.system.change.date" type="xs:nonNegativeInteger" minOccurs="0"/>
+							<xs:element name="last.system.change.time" type="xs:nonNegativeInteger" minOccurs="0"/>
+							<xs:element name="last.system.change.id" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="headings.compare.exclude.flag" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="westlaw.running.header.exclude.flag" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="alt.cite.keyword.code" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:nonNegativeInteger">
+										<xs:totalDigits value="20"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="alt.cite.value" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="200"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="alt.cite.type.code" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="start.date" type="xs:string" minOccurs="0"/>
+							<xs:element name="end.date" type="xs:string" minOccurs="0"/>
+							<xs:element name="script.id" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:nonNegativeInteger">
+										<xs:totalDigits value="120"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="script.version.number" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:nonNegativeInteger">
+										<xs:totalDigits value="90"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="script.range.indicator" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="30"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="versioned" type="xs:string" minOccurs="0"/>
+							<xs:element name="v.start.date" type="xs:string" minOccurs="0"/>
+							<xs:element name="v.id" type="xs:string" minOccurs="0"/>
+							<xs:element name="vbpi.generated" type="xs:string" minOccurs="0"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="data.change.package">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="record" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="date" type="xs:nonNegativeInteger"/>
+							<xs:element name="time" type="xs:nonNegativeInteger"/>
+							<xs:element name="action" type="xs:string"/>
+							<xs:element name="document.name" type="xs:string"/>
+							<xs:element name="content.set.legacy.id" type="xs:string"/>
+							<xs:element ref="heading.id"/>
+							<xs:element name="occurrence.type" type="xs:string"/>
+							<xs:element name="legacy.wip.version.num" type="xs:string"/>
+							<xs:element name="derived.from.heading.id" type="xs:string"/>
+							<xs:element ref="status"/>
+							<xs:element name="westlaw.format.status" type="xs:string"/>
+							<xs:element ref="level"/>
+							<xs:element ref="keyword.code"/>
+							<xs:element ref="value"/>
+							<xs:element ref="volume.number"/>
+							<xs:element ref="volume.sequence.number"/>
+							<xs:element ref="initial.range.heading.id"/>
+							<xs:element ref="employee.id"/>
+							<xs:element ref="parent.heading.id"/>
+							<xs:element ref="previous.sibling.heading.id"/>
+							<xs:element ref="next.sibling.heading.id"/>
+							<xs:element ref="eldest.child.heading.id"/>
+							<xs:element name="start.effective.date" type="xs:string"/>
+							<xs:element name="end.effective.date" type="xs:string"/>
+							<xs:element name="fuzzy.effective.date.flag" type="xs:nonNegativeInteger"/>
+							<xs:element ref="heading.text"/>
+							<xs:element name="law.string" type="xs:string"/>
+							<xs:element name="law.list">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="law">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="law.type" type="xs:string"/>
+													<xs:element name="law.year" type="xs:string"/>
+													<xs:element name="law.session" type="xs:string"/>
+													<xs:element name="law.doc.type" type="xs:string"/>
+													<xs:element name="law.filename" type="xs:string"/>
+													<xs:element name="law.displayable" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="source.system" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="SHS-SOS"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="heading.id">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="9"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="keyword.code">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="2"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="value">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="0"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="level">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="3"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="status">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="parent.heading.id">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="9"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="eldest.child.heading.id">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="9"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="next.sibling.heading.id">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="9"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="previous.sibling.heading.id">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="9"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="initial.range.heading.id" type="xs:string"/>
+	<xs:element name="employee.id">
+		<xs:simpleType>
+			<xs:restriction base="xs:nonNegativeInteger">
+				<xs:totalDigits value="5"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="heading.text">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="0"/>
+				<xs:maxLength value="2000"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="volume.number" type="xs:nonNegativeInteger"/>
+	<xs:element name="volume.sequence.number" type="xs:nonNegativeInteger"/>
+</xs:schema>

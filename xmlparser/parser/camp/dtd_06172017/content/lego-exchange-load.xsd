@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute extensions for Content mark up for loading into Lego -->
+<!-- $Date: 2009/09/02 19:24:28 $ -->
+<!-- $Revision: 1.4 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="carswell-content.xsd"/>
+	<xs:complexType name="LegoNodeType">
+		<xs:annotation>
+			<xs:documentation>Structure and attributes for Lego nodes (grade.content, section, etc.)</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Complex.Type">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="document"/>
+				</xs:choice>
+				<xs:attribute name="legacy.identifier" type="xs:string"/>
+				<xs:attribute name="parent.legacy.identifier" type="xs:string"/>
+				<xs:attribute name="previous.sibling.legacy.identifier" type="xs:string"/>
+				<xs:attribute name="following.sibling.legacy.identifier" type="xs:string"/>
+				<xs:attribute name="ID" type="xs:string"/>
+				<xs:attribute name="type" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="statute">
+		<xs:annotation>
+			<xs:documentation>Lego statue element (root)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element name="grade.content">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegoNodeType"/>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="section" type="LegoNodeType"/>
+					</xs:choice>
+					<xs:attribute name="ID" type="xs:string"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

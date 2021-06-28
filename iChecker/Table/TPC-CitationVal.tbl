@@ -1,0 +1,5 @@
+Start Tag              |End Tag    |Type | Keyword       |Citation Format                                   |Error Message
+
+<tblcell               |>          | O   | colsep="      |[text]<keyword>vsingle"                           |W / Wrong attribute colsep value in tblcell.
+<tblrows               |>          | O   | leftsep="     |[text]<keyword>vsingle"                           |W / Wrong attribute leftsep value in tblrows.
+                       |           |     |               |[text]<keyword>vdot"                              |

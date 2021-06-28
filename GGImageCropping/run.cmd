@@ -1,0 +1,1 @@
+GGImageCrop.exe "D:\AppTesting\Generic\GGImageCrop\Input\51-362 [CSA Staff Notice], February 25, 2021_TEST.pdf" "D:\AppTesting\Generic\GGImageCrop\Input\51-362 [CSA Staff Notice], February 25, 2021_TEST.xml" "D:\AppTesting\Generic\GGImageCrop\Temp\OUT2"

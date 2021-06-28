@@ -1,0 +1,6 @@
+Main Tag |Reference Tag                     |Count Tag               |Heirarchy Tag  |Err Type| Error Message
+table    |<tgroup [^¥]*cols="([^"]+)"[^>]*> |<entry<space>@!<entry>  |row            |E       | tgroup value does not match row
+
+::NOTE::
+All columns must be filled-up
+In Count Tag column "@!" is used as a separator

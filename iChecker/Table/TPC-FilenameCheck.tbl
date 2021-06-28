@@ -1,0 +1,2 @@
+Qualifier  |Format                       |Clean-up |Err Type| Error Message
+<document> |@filename\....               |Uppercase|E       | Should be all caps

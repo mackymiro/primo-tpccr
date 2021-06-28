@@ -1,0 +1,671 @@
+<!-- PUBLIC "-//Carswell//ENTITIES Carswell//EN" -->
+<!--=======================================================================
+    rev. 4.5      C A R S W E L L    E N T I T I E S
+    =======================================================================-->
+
+<!-- Entity names are chosen from the ISO SGML entity sets.
+     Four-digit hex codes are UCS-2 codes.
+     Codes and names taken from ISO/IEC DIS 10646-1.2 dated
+     1991 December 26.  -->
+
+<!ENTITY Aacute SDATA "&Aacute;" > <!--LATIN CAPITAL LETTER A WITH ACUTE-->
+<!ENTITY aacute SDATA "&aacute;" > <!--LATIN SMALL LETTER A WITH ACUTE-->
+<!ENTITY Acirc  SDATA "&Acirc;"  > <!--LATIN CAPITAL LETTER A WITH CIRCUMFLEX-->
+<!ENTITY acirc  SDATA "&acirc;"  > <!--LATIN SMALL LETTER A WITH CIRCUMFLEX-->
+<!ENTITY AElig  SDATA "&AElig;"  > <!--LATIN CAPITAL AE DIPTHONG (LIGATURE)-->
+<!ENTITY aelig  SDATA "&aelig;"  > <!--LATIN SMALL AE DIPTHONG (LIGATURE)-->
+<!ENTITY Agrave SDATA "&Agrave;" > <!--LATIN CAPITAL LETTER A WITH GRAVE-->
+<!ENTITY agrave SDATA "&agrave;" > <!--LATIN SMALL LETTER A WITH GRAVE-->
+<!ENTITY alpha	SDATA "&alpha;"	 > <!--GREEK SMALL ALPHA-->
+<!ENTITY Amacr  SDATA "&Amacr;"  > <!--LATIN CAPITAL A WITH BAR-->
+<!ENTITY amacr  SDATA "&amacr;"  > <!--LATIN SMALL A WITH BAR-->
+<!ENTITY amp    SDATA "&amp;"    > <!--AMPERSAND-->
+<!ENTITY ape    SDATA "&ape;"    > <!--APPROXIMATE, EQUALS-->
+<!ENTITY Aring  SDATA "&Aring;"  > <!--LATIN CAPITAL LETTER A WITH RING-->
+<!ENTITY aring  SDATA "&aring;"  > <!--LATIN SMALL LETTER A WITH RING-->
+<!ENTITY Atilde SDATA "&Atilde;" > <!--LATIN CAPITAL LETTER A WITH TILDE-->
+<!ENTITY atilde SDATA "&atilde;" > <!--LATIN SMALL LETTER A WITH TILDE-->
+<!ENTITY Auml   SDATA "&Auml;"   > <!--LATIN CAPITAL LETTER A WITH DIAERESIS-->
+<!ENTITY auml   SDATA "&auml;"   > <!--LATIN SMALL LETTER A WITH DIAERESIS-->
+<!ENTITY beta   SDATA "&beta;"   > <!--GREEK SMALL BETA-->
+<!ENTITY block  SDATA "&block;"  > <!--block, filled-->
+<!ENTITY bull   SDATA "&bull;"   > <!--BULLET-->
+<!ENTITY Cacute SDATA "&Cacute;" > <!--LATIN CAPITAL LETTER C WITH ACUTE-->
+<!ENTITY cacute SDATA "&cacute;" > <!--LATIN SMALL LETTER C WITH ACUTE-->
+<!ENTITY cap    SDATA "&cap;"    > <!--Upper case C, tipped over forward, intersection-->
+<!ENTITY caret  SDATA "&caret;"  > <!--caret symbol, insertion mark-->
+<!ENTITY Ccedil SDATA "&Ccedil;" > <!--LATIN CAPITAL LETTER C WITH CEDILLA-->
+<!ENTITY ccedil SDATA "&ccedil;" > <!--LATIN SMALL LETTER C WITH CEDILLA-->
+<!ENTITY cents  SDATA "&cents;"  > <!--CENT SIGN-->
+<!ENTITY check  SDATA "&check;"  > <!--check mark-->
+<!ENTITY cir    SDATA "&cir;"    > <!--circle, open-->
+<!ENTITY cirf   SDATA "&cirf;"   > <!--circle, filled-->
+<!ENTITY clubs  SDATA "&clubs;" >  <!--clubs suit (solid)-->
+<!ENTITY cmacr  SDATA "&cmacr;"  > <!--small c, macron (bar above letter)-->
+<!ENTITY copy   SDATA "&copy;"   > <!--COPYRIGHT SIGN-->
+<!ENTITY dagger SDATA "&dagger;" > <!--DAGGER-->
+<!ENTITY Dagger SDATA "&Dagger;" > <!--double DAGGER-->
+<!ENTITY darr   SDATA "&darr;"   > <!--down arrow-->
+<!ENTITY deg    SDATA "&deg;"    > <!--DEGREE SIGN--> 
+<!ENTITY Delta  SDATA "&Delta;"  > <!--GREEK CAPITAL DELTA-->
+<!ENTITY delta  SDATA "&delta;"  > <!--GREEK SMALL DELTA-->
+<!ENTITY diams  SDATA "&diams;"  > <!--diamond suit (solid)-->
+<!ENTITY divide SDATA "&divide;" > <!--DIVISION SIGN-->
+<!ENTITY Dmacr  SDATA "&Dmacr;"  > <!--LATIN CAPITAL D WITH BAR-->
+<!ENTITY dtrif  SDATA "&dtrif;"  > <!--down triangle, filled -->
+<!ENTITY dtris  SDATA "&dtris;"  > <!--down triangle, shaded or hatched-->
+<!ENTITY Eacute SDATA "&Eacute;" > <!--LATIN CAPITAL LETTER E WITH ACUTE-->
+<!ENTITY eacute SDATA "&eacute;" > <!--LATIN SMALL LETTER E WITH ACUTE-->
+<!ENTITY Eacuto SDATA "&Eacuto;" > <!--LATIN CAPITAL LETTER E WITH ACUTE AND OGONEK-->
+<!ENTITY eacuto SDATA "&eacuto;" > <!--LATIN SMALL LETTER E WITH ACUTE AND OGONEK-->
+<!ENTITY Ecaron SDATA "&Ecaron;" > <!--LATIN CAPITAL LETTER E WITH CARON-->
+<!ENTITY ecaron SDATA "&ecaron;" > <!--LATIN SMALL LETTER E WITH CARON-->
+<!ENTITY Ecirc  SDATA "&Ecirc;"  > <!--LATIN CAPITAL LETTER E WITH CIRCUMFLEX-->
+<!ENTITY ecirc  SDATA "&ecirc;"  > <!--LATIN SMALL LETTER E WITH CIRCUMFLEX-->
+<!ENTITY ee     SDATA "&ee;"     > <!--exponential base of the natural logarithm-->
+<!ENTITY Egrave SDATA "&Egrave;" > <!--LATIN CAPITAL LETTER E WITH GRAVE-->
+<!ENTITY egrave SDATA "&egrave;" > <!--LATIN SMALL LETTER E WITH GRAVE-->
+<!ENTITY Egravo SDATA "&Egravo;" > <!--LATIN CAPITAL LETTER E WITH GRAVE AND OGONEK-->
+<!ENTITY egravo SDATA "&egravo;" > <!--LATIN SMALL LETTER E WITH GRAVE AND OGONEK-->
+<!ENTITY Emacr  SDATA "&Emacr;"  > <!--capital e, macron -->
+<!ENTITY emacr  SDATA "&emacr;"  > <!--small e, macron -->
+<!ENTITY epsiv  SDATA "&epsiv;"  > <!--varepsilon (variation on epsilon: more script-like)-->
+<!ENTITY equiv	SDATA "&equiv;"	 > <!--triple bar-->
+<!ENTITY erever SDATA "&erever;" > <!--Latin small letter e reversed--> 
+<!ENTITY esh    SDATA "&esh;"    > <!--Latin small s; integral operator-->
+<!ENTITY eta    SDATA "&eta;"    > <!--GREEK SMALL LETTER ETA-->
+<!ENTITY Eth    SDATA "&Eth;"    > <!--LATIN CAPITAL LETTER ETH-->
+<!ENTITY eth    SDATA "&eth;"    > <!--LATIN SMALL LETTER ETH-->
+<!ENTITY eturn  SDATA "&eturn;"  > <!--Latin small letter e turned, like schwa--> 
+<!ENTITY Euml   SDATA "&Euml;"   > <!--LATIN CAPITAL LETTER E WITH DIAERESIS-->
+<!ENTITY euml   SDATA "&euml;"   > <!--LATIN SMALL LETTER E WITH DIAERESIS-->
+<!ENTITY euro   SDATA "&euro;"   > <!--Euro currency symbol-->
+<!ENTITY female SDATA "&female;" > <!--circle with a crossed line underneath-->
+<!ENTITY fnof   SDATA "&fnof;"   > <!--FUNCTION OF italic small f-->
+<!ENTITY forall SDATA "&forall;" > <!--FOR ALL (upside down capital A)-->
+<!ENTITY gamma  SDATA "&gamma;"  > <!--small gamma, Greek-->
+<!ENTITY Gback  SDATA "&Gback;"  > <!--back g in Nisga'a language; upper case g with underline-->
+<!ENTITY gback  SDATA "&gback;"  > <!--back g in Nisga'a language; lower case g with underline-->
+<!ENTITY Gcaron SDATA "&Gcaron;" > <!--LATIN CAPITAL LETTER G WITH CARON-->
+<!ENTITY gcaron SDATA "&gcaron;" > <!--LATIN SMALL LETTER g WITH CARON-->
+<!ENTITY ge     SDATA "&ge;"     > <!--GREATER-THAN-OR-EQUAL-->
+<!ENTITY Glotta SDATA "&Glotta;" > <!--CAPITAL LETTER GLOTTAL STOP--> 
+<!ENTITY glotta SDATA "&glotta;" > <!--SMALL LETTER GLOTTAL STOP--> 
+<!ENTITY gt     SDATA "&gt;"     > <!--GREATER-THAN-->
+<!ENTITY hellip SDATA "&hellip;" > <!--HORIZONTAL ELLIPSIS-->
+<!ENTITY heart  SDATA "&heart;"  > <!--HEART SUIT SYMBOL-->
+<!ENTITY Iacute SDATA "&Iacute;" > <!--LATIN CAPITAL LETTER I WITH ACUTE-->
+<!ENTITY iacute SDATA "&iacute;" > <!--LATIN SMALL LETTER I WITH ACUTE-->
+<!ENTITY Iacuto SDATA "&Iacuto;" > <!--LATIN CAPITAL LETTER I WITH ACUTE AND OGONEK-->
+<!ENTITY iacuto SDATA "&iacuto;" > <!--LATIN SMALL LETTER I WITH ACUTE AND OGONEK-->
+<!ENTITY ibreve SDATA "&ibreve;" > <!--LATIN SMALL LETTER I WITH BREVE-->
+<!ENTITY Icirc  SDATA "&Icirc;"  > <!--LATIN CAPITAL LETTER I WITH CIRCUMFLEX-->
+<!ENTITY icirc  SDATA "&icirc;"  > <!--LATIN SMALL LETTER I WITH CIRCUMFLEX-->
+<!ENTITY Igrave SDATA "&Igrave;" > <!--LATIN CAPITAL LETTER I WITH GRAVE-->
+<!ENTITY igrave SDATA "&igrave;" > <!--LATIN SMALL LETTER I WITH GRAVE-->
+<!ENTITY imacr  SDATA "&imacr;"  > <!--small i, macron -->
+<!ENTITY Iogon  SDATA "&Iogon;"  > <!--LATIN CAPITAL LETTER I WITH OGONEK-->
+<!ENTITY iogon  SDATA "&iogon;"  > <!--LATIN SMALL LETTER I WITH OGONEK-->
+<!ENTITY iquest SDATA "&iquest;" > <!--inverted question mark-->
+<!ENTITY Itilde SDATA "&Itilde;" > <!--LATIN CAPITAL LETTER I WITH TILDE-->
+<!ENTITY itilde SDATA "&itilde;" > <!--LATIN SMALL LETTER I WITH TILDE-->
+<!ENTITY Iuml   SDATA "&Iuml;"   > <!--LATIN CAPITAL LETTER I WITH DIAERESIS-->
+<!ENTITY iuml   SDATA "&iuml;"   > <!--LATIN SMALL LETTER I WITH DIAERESIS-->
+<!ENTITY Kacute SDATA "&Kacute;" > <!--LATIN CAPITAL K WITH ACUTE-->
+<!ENTITY kacute SDATA "&kacute;" > <!--LATIN SMALL K WITH ACUTE-->
+<!ENTITY Kback  SDATA "&Kback;"  > <!--back k in Nisga'a language; upper case k with underline-->
+<!ENTITY kback  SDATA "&kback;"  > <!--back k in Nisga'a language; lower case k with underline-->
+<!ENTITY Lambda SDATA "&Lambda;" > <!--GREEK CAPITAL LETTER LAMBDA-->
+<!ENTITY lambda SDATA "&lambda;" > <!--GREEK SMALL LETTER LAMBDA-->
+<!ENTITY laquo  SDATA "&laquo;"  > <!--LEFT ANGLE QUOTATION MARK-->
+<!ENTITY larr	SDATA "&larr;"   > <!--LEFTWARD AROW-->
+<!ENTITY Lcedil SDATA "&Lcedil;" > <!--LATIN CAPITAL LETTER L WITH CEDILLA-->
+<!ENTITY lcedil SDATA "&lcedil;" > <!--LATIN SMALL LETTER L WITH CEDILLA-->
+<!ENTITY ldquo  SDATA "&ldquo;"  > <!--LEFT DOUBLE QUOTATION MARK-->
+<!ENTITY le     SDATA "&le;"     > <!--LESS THAN OR EQUAL-->
+<!ENTITY lsqb   SDATA "&lsqb;"   > <!--LEFT SQUARE BRACKET-->
+<!ENTITY lsquo  SDATA "&lsquo;"  > <!--LEFT SINGLE QUOTATION MARK-->
+<!ENTITY Lstrok SDATA "&Lstrok;" > <!--CAPITAL L, STROKE-->
+<!ENTITY lstrok SDATA "&lstrok;" > <!--SMALL L, STROKE-->
+<!ENTITY lt  	SDATA "&lt;"	 > <!--less than-->
+<!ENTITY male   SDATA "&male;"   > <!--circle with a crossed line top sideways-->
+<!ENTITY mdash  SDATA "&mdash;"  > <!--EM DASH-->
+<!ENTITY mspace SDATA "&mspace;" > <!--EMSPACE used in page.xom-->
+<!ENTITY mu     SDATA "&mu;"     > <!--GREEK SMALL LETTER MU-->
+<!ENTITY nbsp   SDATA "&nbsp;"   > <!--NO-BREAK SPACE-->
+<!ENTITY ncedil SDATA "&ncedil;" > <!--LATIN SMALL LETTER N WITH CEDILLA-->
+<!ENTITY ndash  SDATA "&ndash;"  > <!--EN DASH-->
+<!ENTITY ne     SDATA "&ne;"     > <!--not equal to sign-->
+<!ENTITY Nmacr  SDATA "&Nmacr;"  > <!--LATIN CAPITAL N WITH BAR-->
+<!ENTITY nmacr  SDATA "&nmacr;"  > <!--LATIN SMALL N WITH BAR-->
+<!ENTITY ntilde SDATA "&ntilde;" > <!--LATIN SMALL LETTER N WITH TILDE-->
+<!ENTITY Ntilde SDATA "&Ntilde;" > <!--LATIN CAPITAL LETTER N WITH TILDE-->
+<!ENTITY nu     SDATA "&nu;"     > <!--GREEK SMALL LETTER NU--> 
+<!ENTITY Oacute SDATA "&Oacute;" > <!--LATIN CAPITAL LETTER O WITH ACUTE-->
+<!ENTITY oacute SDATA "&oacute;" > <!--LATIN SMALL LETTER O WITH ACUTE-->
+<!ENTITY Oacuto SDATA "&Oacuto;" > <!--LATIN CAPITAL LETTER O WITH ACUTE AND OGONEK-->
+<!ENTITY oacuto SDATA "&oacuto;" > <!--LATIN SMALL LETTER O WITH ACUTE AND OGONEK-->
+<!ENTITY obreve SDATA "&obreve;" > <!--LATIN SMALL LETTER O WITH BREVE-->
+<!ENTITY Ocirc  SDATA "&Ocirc;"  > <!--LATIN CAPITAL LETTER O WITH CIRCUMFLEX-->
+<!ENTITY ocirc  SDATA "&ocirc;"  > <!--LATIN SMALL LETTER O WITH CIRCUMFLEX-->
+<!ENTITY odblac SDATA "&odblac;" > <!--latin small letter o with double acute-->
+<!ENTITY Odblac SDATA "&Odblac;" > <!--latin capital letter O with double acute-->
+<!ENTITY oelig  SDATA "&oelig;"  > <!--LATIN OE DIPTHONG (LIGATURE)-->
+<!ENTITY OElig  SDATA "&OElig;"  > <!--LATIN CAPITAL LETTER OE DIPTHONG (LIGATURE)-->
+<!ENTITY ograve SDATA "&ograve;" > <!--LATIN SMALL LETTER O WITH GRAVE-->
+<!ENTITY Ograve SDATA "&Ograve;" > <!--LATIN CAPITAL LETTER O WITH GRAVE-->
+<!ENTITY Ogravo SDATA "&Ogravo;" > <!--LATIN CAPITAL LETTER O WITH GRAVE AND OGONEK-->
+<!ENTITY ogravo SDATA "&ogravo;" > <!--LATIN SMALL LETTER O WITH GRAVE AND OGONEK-->
+<!ENTITY oinfin SDATA "&oinfin;" > <!--infinity symbol in circle-->
+<!ENTITY omacr  SDATA "&omacr;"  > <!--SMALL O WITH MACRON-->
+<!ENTITY Omacr  SDATA "&Omacr;"  > <!--CAPITAL O WITH MACRON-->
+<!ENTITY Omega  SDATA "&Omega;"  > <!--GREEK CAPITAL LETTER OMEGA-->
+<!ENTITY omega  SDATA "&omega;"  > <!--GREEK SMALL LETTER OMEGA-->
+<!ENTITY Oogon  SDATA "&Oogon;"  > <!--LATIN CAPITAL LETTER O WITH OGONEK-->
+<!ENTITY oogon  SDATA "&oogon;"  > <!--LATIN SMALL LETTER O WITH OGONEK-->
+<!ENTITY oplus  SDATA "&oplus;"  > <!--PLUS SIGN IN CIRCLE-->
+<!ENTITY ordm   SDATA "&ordm;"   > <!--MASCULINE ORDINAL INDICATOR-->
+<!ENTITY oslash SDATA "&oslash;" > <!--LATIN SMALL LETTER O WITH SLASH-->
+<!ENTITY Oslash SDATA "&Oslash;" > <!--LATIN CAPITAL LETTER O WITH SLASH-->
+<!ENTITY Otilde SDATA "&Otilde;" > <!--LATIN CAPITAL LETTER O WITH TILDE-->
+<!ENTITY otilde SDATA "&otilde;" > <!--LATIN SMALL LETTER O WITH TILDE-->
+<!ENTITY Ouml   SDATA "&Ouml;"   > <!--LATIN CAPITAL LETTER O WITH DIAERESIS-->
+<!ENTITY ouml   SDATA "&ouml;"   > <!--LATIN SMALL LETTER O WITH DIAERESIS-->
+<!ENTITY para   SDATA "&para;"   > <!--PILCROW SIGN-->
+<!ENTITY part   SDATA "&part;"   > <!--PARTIAL DIFFERENTIAL-->
+<!ENTITY Phi    SDATA "&Phi;"    > <!--GREEK CAPITAL LETTER PHI-->
+<!ENTITY pi     SDATA "&pi;"     > <!--GREEK SMALL LETTER PI-->
+<!ENTITY plusmn SDATA "&plusmn;" > <!--PLUS-OR-MINUS SIGN-->
+<!ENTITY Pmacr  SDATA "&Pmacr;"  > <!--capital P, macron-->
+<!ENTITY Ppeso  SDATA "&Ppeso;"  > <!--Philippine peso-->
+<!ENTITY pound	SDATA "&pound;"  > <!--POUND SIGN-->
+<!ENTITY prime  SDATA "&prime;"  > <!--FOOT/MINUTE SIGN-->
+<!ENTITY Prime  SDATA "&Prime;"  > <!--INCHES SIGN-->
+<!ENTITY Psi    SDATA "&Psi;"    > <!--GREEK CAPITAL LETTER PSI-->
+<!ENTITY psi    SDATA "&psi;"    > <!--GREEK SMALL LETTER PSI-->
+<!ENTITY radic	SDATA "&radic;"  > <!--RADICAL (square root symbol)-->
+<!ENTITY rarr	SDATA "&rarr;"   > <!--RIGHTWARD ARROW-->
+<!ENTITY raquo  SDATA "&raquo;"  > <!--RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK-->
+<!ENTITY Rcaron SDATA "&Rcaron;" > <!--LATIN CAPITAL LETTER R WITH CARON-->
+<!ENTITY rcaron SDATA "&rcaron;" > <!--LATIN SMALL LETTER R WITH CARON-->
+<!ENTITY rdquo  SDATA "&rdquo;"  > <!--RIGHT DOUBLE QUOTATION MARK-->
+<!ENTITY reg	SDATA "&reg;"    > <!--CIRCLEDR =REGISTERED SIGN-->
+<!ENTITY rsqb   SDATA "&rsqb;"   > <!--RIGHT SQUARE BRACKET-->
+<!ENTITY rsquo  SDATA "&rsquo;"  > <!--RIGHT SINGLE QUOTATION MARK-->
+<!ENTITY rx     SDATA "&rx;"     > <!--pharmaceutical prescription (Rx)-->
+<!ENTITY scaron SDATA "&scaron;" > <!--lower case s with caron-->
+<!ENTITY Scaron SDATA "&Scaron;" > <!--upper case s with caron-->
+<!ENTITY Scedil SDATA "&Scedil;" > <!--LATIN CAPITAL LETTER S WITH CEDILLA-->
+<!ENTITY scedil SDATA "&scedil;" > <!--LATIN SMALL LETTER s WITH CEDILLA-->
+<!ENTITY schwa  SDATA "&schwa;"  > <!--UPSIDE DOWN SMALL E-->
+<!ENTITY scirc  SDATA "&scirc;"  > <!--lower case s with circumflex-->
+<!ENTITY Scirc  SDATA "&Scirc;"  > <!--upper case S with circumflex-->
+<!ENTITY sect   SDATA "&sect;"   > <!--SECTION SIGN-->
+<!ENTITY Sigma  SDATA "&Sigma;"  > <!--GREEK CAPITAL LETTER SIGMA-->
+<!ENTITY sigma  SDATA "&sigma;"  > <!--GREEK SMALL LETTER SIGMA-->
+<!ENTITY smile  SDATA "&smile;"  > <!--UP CURVE-->
+<!ENTITY spades SDATA "&spades;" > <!--spade suit (solid)-->
+<!ENTITY square SDATA "&square;" > <!--WHITE SQUARE FOR CHECKBOX-->
+<!ENTITY sum	SDATA "&sum;"    > <!--summation operator-->
+
+<!ENTITY sup-e   SDATA "&sup-e;"   > <!--superscript e-->
+<!ENTITY sup-egre SDATA "&sup-egre;" > <!--superscript egre-->
+<!ENTITY sup-er  SDATA "&sup-er;"  > <!--superscript er-->
+<!ENTITY sup-ere SDATA "&sup-ere;" > <!--superscript ere-->
+<!ENTITY sup-ers SDATA "&sup-ers;" > <!--superscript ers-->
+<!ENTITY sup-r   SDATA "&sup-r;"   > <!--superscript r-->
+<!ENTITY sup-rs  SDATA "&sup-rs;"  > <!--superscript rs-->
+<!ENTITY sup-re  SDATA "&sup-re;"  > <!--superscript re-->
+<!ENTITY sup-res SDATA "&sup-res;" > <!--superscript res-->
+<!ENTITY sup-lle SDATA "&sup-lle;" > <!--superscript lle-->
+<!ENTITY sup-me  SDATA "&sup-me;"  > <!--superscript me-->
+<!ENTITY sup-os  SDATA "&sup-os;"  > <!--superscript os-->
+<!ENTITY Tacute  SDATA "&Tacute;">   <!--LATIN CAPITAL T WITH ACUTE-->
+<!ENTITY tacute  SDATA "&tacute;">   <!--LATIN SMALL t WITH ACUTE-->
+<!ENTITY tau     SDATA "&tau;">      <!--GREEK SMALL LETTER TAU-->
+<!ENTITY Theta   SDATA "&Theta;"> <!--CAPITAL THETA, GREEK-->
+<!ENTITY there4  SDATA "&there4;" > <!--therefore symbol-->
+<!ENTITY thetas  SDATA "&thetas;" > <!--STRAIGHT THETA, GREEK-->
+<!ENTITY Thorn   SDATA "&Thorn;"  > <!--upper case Icelandic Thorn-->
+<!ENTITY thorn   SDATA "&thorn;"  > <!--lower case Icelandic thorn-->
+<!ENTITY tilde   SDATA "&tilde;"  > <!--TILDE-->
+<!ENTITY times   SDATA "&times;"  > <!--MULTIPLICATION SIGN-->
+<!ENTITY timesb  SDATA "&timesb;" > <!--MULTIPLICATION SIGN IN BOX-->
+<!ENTITY trade   SDATA "&trade;"  > <!--TRADE MARK SIGN-->
+<!ENTITY Uacute  SDATA "&Uacute;" > <!--LATIN CAPITAL LETTER U WITH ACUTE-->
+<!ENTITY uacute  SDATA "&uacute;" > <!--LATIN SMALL LETTER U WITH ACUTE-->
+<!ENTITY Uacuto  SDATA "&Uacuto;" > <!--LATIN CAPITAL LETTER U WITH ACUTE AND OGONEK-->
+<!ENTITY uacuto  SDATA "&uacuto;" > <!--LATIN SMALL LETTER U WITH ACUTE AND OGONEK-->
+<!ENTITY uarr    SDATA "&uarr;"   > <!--UPWARD ARROW-->
+<!ENTITY Ucirc   SDATA "&Ucirc;"  > <!--LATIN CAPITAL LETTER U WITH CIRCUMFLEX-->
+<!ENTITY ucirc   SDATA "&ucirc;"  > <!--LATIN SMALL LETTER U WITH CIRCUMFLEX-->
+<!ENTITY Ugrave  SDATA "&Ugrave;" > <!--LATIN CAPITAL LETTER U WITH GRAVE-->
+<!ENTITY ugrave  SDATA "&ugrave;" > <!--LATIN SMALL LETTER U WITH GRAVE-->
+<!ENTITY umacr   SDATA "&umacr;"  > <!--SMALL U WITH MACRON-->
+<!ENTITY Umacr   SDATA "&Umacr;"  > <!--CAPITAL U WITH MACRON-->
+<!ENTITY utri    SDATA "&utri;"   > <!--upward triangle, open-->
+<!ENTITY utrif   SDATA "&utrif;"  > <!--upward triangle, filled-->
+<!ENTITY Uuml    SDATA "&Uuml;"   > <!--LATIN CAPITAL LETTER U WITH DIAERESIS-->
+<!ENTITY uuml    SDATA "&uuml;"   > <!--LATIN SMALL LETTER U WITH DIAERESIS-->
+<!ENTITY verbar  SDATA "&verbar;" > <!--VERTICAL BAR-->
+<!ENTITY Vmacr   SDATA "&Vmacr;"  > <!--LATIN CAPITAL V WITH BAR-->
+<!ENTITY vmacr   SDATA "&vmacr;"  > <!--LATIN SMALL V WITH BAR-->
+<!ENTITY wdash   SDATA "&wdash;"  > <!--double-u dash used by insert.xom-->
+<!ENTITY Xback   SDATA "&Xback;"  > <!--back x in Gitxsan language; upper case x with underline-->
+<!ENTITY xback   SDATA "&xback;"  > <!--back x in Gitxsan language; lower case x with underline-->
+<!ENTITY Xmacr   SDATA "&Xmacr;"  > <!--LATIN CAPITAL X WITH BAR-->
+<!ENTITY xmacr   SDATA "&xmacr;"  > <!--LATIN SMALL x WITH BAR-->
+<!ENTITY Yacute  SDATA "&Yacute;" > <!--LATIN CAPITAL LETTER Y WITH ACUTE-->
+<!ENTITY yacute  SDATA "&yacute;" > <!--LATIN SMALL LETTER Y WITH ACUTE-->
+<!ENTITY yen	 SDATA "&yen;"	 > <!--YEN CHARACTER-->
+<!ENTITY yuml    SDATA "&yuml;"   > <!--LATIN SMALL LETTER Y WITH DIAERESIS-->
+<!ENTITY Zcaron  SDATA "&Zcaron;" > <!--upper case Z with caron-->
+<!ENTITY zcaron  SDATA "&zcaron;" > <!--lower case z with caron-->
+
+
+<!ENTITY logo    SDATA "&logo;"   > <!--Carswell feather and name -->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY TCEr   SDATA "&TCEr;"   > <!--Treat.  Case   Eng.  "referred to"-->
+<!ENTITY TCFr   SDATA "&TCFr;"   > <!--Treat.  Case   Fr.   "referred to"-->
+<!ENTITY TCEc   SDATA "&TCEc;"   > <!--Treat.  Case   Eng.  "considered"-->
+<!ENTITY TCFc   SDATA "&TCFc;"   > <!--Treat.  Case   Fre.  "considered"-->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY TSEu   SDATA "&TSEu;"   > <!--Treat.  Stat.  Eng.  "unconstitutional"-->
+<!ENTITY TSFu   SDATA "&TSFu;"   > <!--Treat.  Stat.  Fre.  "unconstitutional"-->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY CT-R   SDATA "&CT-R;"   > <!--Case Treatment     "referred to"-->
+ <!--Change 9701219936 lsulky 970121>new entities for standard text...earlier 'TCE' things are dead ducks-->
+<!ENTITY CT-C   SDATA "&CT-C;"     > <!--Case Treatment     "considered"-->
+<!ENTITY CT-F   SDATA "&CT-F;"     > <!--Case Treatment     "followed"-->
+<!ENTITY CT-A   SDATA "&CT-A;"     > <!--Case Treatment     "applied"-->
+<!ENTITY CT-D   SDATA "&CT-D;"     > <!--Case Treatment     "distinguished"-->
+<!ENTITY CT-N   SDATA "&CT-N;"     > <!--Case Treatment     "not followed"-->
+<!ENTITY CT-T   SDATA "&CT-T;"     > <!--Case Treatment     "[temporary]"-->
+
+<!-- Additions July 2011 for CLEAR -->
+<!ENTITY CT-O   SDATA "&CT-O;"     > <!--Case Treatment     "overruled"-->
+<!ENTITY CT-M   SDATA "&CT-M"      > <!--Case Treatment     "considered in a minority or dissenting opinion"-->
+<!ENTITY CT-P   SDATA "&CT-P;"     > <!--Case Treatment     "referred to in a minority or dissenting opinion"-->
+<!ENTITY CT-Q   SDATA "&CT-Q;"     > <!--Case Treatment     "related proceedings"-->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!-- Brought back to use for Regs JC project, August 8, 2005.  Need entities for use by Pager.-->
+<!ENTITY ST-U   SDATA "&ST-U;"     > <!--Statute Treatment  "unconstitutional"-->
+<!ENTITY ST-C   SDATA "&ST-C;"     > <!--Statute Treatment  "considered"-->
+<!ENTITY ST-P   SDATA "&ST-P;"     > <!--Statute Treatment  "pursuant to"-->
+<!ENTITY ST-R   SDATA "&ST-R;"     > <!--Statute Treatment  "referred to"-->
+<!ENTITY ST-0   SDATA "&ST-0;"     > <!--no Treatment; map to stattrmt attribute values; 0 is used for CTC Citator as a default treatment, meaning no treatment-->
+
+<!--English forward dispositions, first level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with 2nd-5th level...they are identical-->
+<!ENTITY CD-AFD  SDATA "&CD-AFD;"   > <!--Case Disposition   "affirmed"-->
+<!ENTITY CD-AMD  SDATA "&CD-AMD;"   > <!--Case Disposition   "amended"-->
+<!ENTITY CD-ARD  SDATA "&CD-ARD;"   > <!--Case Disposition   "additional reasons at"-->
+<!--CD-ARA was not implemented-->
+<!ENTITY CD-ARA  SDATA "&CD-ARA;"   > <!--Case Disposition   "additional reasons at"-->
+<!ENTITY CD-LAD  SDATA "&CD-LAD;"   > <!--Case Disposition   "allowed leave to appeal"-->
+<!ENTITY CD-LRD  SDATA "&CD-LRD;"   > <!--Case Disposition   "refused leave to appeal"-->
+<!ENTITY CD-RFD  SDATA "&CD-RFD;"   > <!--Case Disposition   "referred for further consideration or clarification"-->
+<!ENTITY CD-RGD  SDATA "&CD-RGD;"   > <!--Case Disposition   "granted reconsideration or rehearing"-->
+<!ENTITY CD-RRD  SDATA "&CD-RRD;"   > <!--Case Disposition   "refused reconsideration or rehearing"-->
+<!ENTITY CD-RVD  SDATA "&CD-RVD;"   > <!--Case Disposition   "reversed"-->
+<!ENTITY CD-STD  SDATA "&CD-STD;"   > <!--Case Disposition   "set aside or quashed"-->
+<!ENTITY CD-VRD  SDATA "&CD-VRD;"   > <!--Case Disposition   "varied"-->
+
+<!-- Additions July 2011 for CLEAR english forward dispositions-->
+<!ENTITY CD-DAD  SDATA "&CD-DAD;"   > <!--Case Disposition   "appeal dismissed as abandoned"-->
+<!ENTITY CD-DMD  SDATA "&CD-DMD;"   > <!--Case Disposition   "appeal dismissed as moot"-->
+<!ENTITY CD-JRD  SDATA "&CD-JRD;"   > <!--Case Disposition   "application for judicial review refused"--> 
+<!ENTITY CD-JAD  SDATA "&CD-JAD;"   > <!--Case Disposition   "application for judicial review allowed"-->
+<!ENTITY CD-FLD  SDATA "&CD-FLD;"   > <!--Case Disposition   "reasons in full"-->
+
+<!--English backward dispositions, first level-->
+<!--These have NOT been verified as of 13 July 1998-->
+<!ENTITY CD-AFG  SDATA "&CD-AFG;"   > <!--Case Disposition "affirming"-->
+<!ENTITY CD-AMG  SDATA "&CD-AMG;"   > <!--Case Disposition "amending"-->
+<!ENTITY CD-ARG  SDATA "&CD-ARG;"   > <!--Case Disposition "adding reasons to"-->
+<!--CD-ART was not implemented-->
+<!ENTITY CD-ART  SDATA "&CD-ART;"   > <!--Case Disposition "additional reasons to"-->
+<!ENTITY CD-FRG  SDATA "&CD-FRG;"    > <!--Case Disposition "additional reasons [full reasons] to"-->
+<!ENTITY CD-LAG  SDATA "&CD-LAG;"   > <!--Case Disposition "allowing leave to appeal"-->
+<!ENTITY CD-LRG  SDATA "&CD-LRG;"   > <!--Case Disposition "refusing leave to appeal"-->
+<!ENTITY CD-RFG  SDATA "&CD-RFG;"   > <!--Case Disposition "referring for clarification"-->
+<!ENTITY CD-RGG  SDATA "&CD-RGG;"   > <!--Case Disposition "granting reconsideration"-->
+<!ENTITY CD-RRG  SDATA "&CD-RRG;"   > <!--Case Disposition "refusing reconsideration"-->
+<!ENTITY CD-RVG  SDATA "&CD-RVG;"   > <!--Case Disposition "reversing"-->
+<!ENTITY CD-STG  SDATA "&CD-STG;"   > <!--Case Disposition "setting aside or quashing"-->
+<!ENTITY CD-VRG  SDATA "&CD-VRG;"   > <!--Case Disposition "varying"-->
+
+<!-- Additions July 2011 for CLEAR english backward dispositions -->
+<!ENTITY CD-DAG  SDATA "&CD-DAG;"   > <!--Case Disposition   "dismissing appeal as abandoned"-->
+<!ENTITY CD-DMG  SDATA "&CD-DMG;"   > <!--Case Disposition   "dismissing appeal as moot"-->
+<!ENTITY CD-JRG  SDATA "&CD-JRG;"   > <!--Case Disposition   "refusing application for judicial review"--> 
+<!ENTITY CD-JAG  SDATA "&CD-JAG;"   > <!--Case Disposition   "allowing application for judicial review"-->
+<!ENTITY CD-FLG  SDATA "&CD-FLG;"   > <!--Case Disposition   "full reasons to"-->
+
+
+<!--English disposition extensions-->
+<!--These have been verified as of July 13, 1998-->
+<!ENTITY CD-OG   SDATA "&CD-OG;"    > <!--Case Disposition "on other grounds"-->
+<!ENTITY CD-IP   SDATA "&CD-IP;"    > <!--Case Disposition "in part"-->
+<!ENTITY CD-OP   SDATA "&CD-OP;"    > <!--Case Disposition "other proceedings"-->
+
+<!--English forward dispositions, second through fifth level prefixes-->
+<!--These have been verified as of July 13, 1998-->
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY CD2  SDATA "&CD2;"   > <!--Case Disposition "which was"-->
+<!ENTITY CD3  SDATA "&CD3;"   > <!--Case Disposition "which was"-->
+<!ENTITY CD4  SDATA "&CD4;"   > <!--Case Disposition "which was"-->
+<!ENTITY CD5  SDATA "&CD5;"   > <!--Case Disposition "which was"-->
+
+<!--English forward dispositions, second through fifth level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with first level...they are identical-->
+<!--Kelly added "which was" 23 October 1998-->
+<!ENTITY CDXAFD  SDATA "&CDXAFD;"   > <!--Case Disposition "which was affirmed"-->
+<!ENTITY CDXAMD  SDATA "&CDXAMD;"   > <!--Case Disposition "which was amended"-->
+<!ENTITY CDXARD  SDATA "&CDXARD;"   > <!--Case Disposition "additional reasons at"-->
+<!ENTITY CDXLAD  SDATA "&CDXLAD;"   > <!--Case Disposition "which was allowed leave to appeal"-->
+<!ENTITY CDXLRD  SDATA "&CDXLRD;"   > <!--Case Disposition "which was refused leave to appeal"-->
+<!ENTITY CDXRFD  SDATA "&CDXRFD;"   > <!--Case Disposition "which was referred for further consideration or clarification"-->
+<!ENTITY CDXRGD  SDATA "&CDXRGD;"   > <!--Case Disposition "which was granted reconsideration or rehearing"-->
+<!ENTITY CDXRRD  SDATA "&CDXRRD;"   > <!--Case Disposition "which was refused reconsideration or rehearing"-->
+<!ENTITY CDXRVD  SDATA "&CDXRVD;"   > <!--Case Disposition "which was reversed"-->
+<!ENTITY CDXSTD  SDATA "&CDXSTD;"   > <!--Case Disposition "which was set aside or quashed"-->
+<!ENTITY CDXVRD  SDATA "&CDXVRD;"   > <!--Case Disposition "which was varied"-->
+
+<!-- Additions July 2011 for CLEAR -->
+<!ENTITY CDXDAD  SDATA "&CDXDAD;"   > <!--Case Disposition   "which was dismissed as abandoned"-->
+<!ENTITY CDXDMD  SDATA "&CDXDMD;"   > <!--Case Disposition   "which was dismissed as moot"-->
+<!ENTITY CDXJRD  SDATA "&CDXJRD;"   > <!--Case Disposition   "which was refused judicial review"--> 
+<!ENTITY CDXJAD  SDATA "&CDXJAD;"   > <!--Case Disposition   "which was allowed judicial review"-->
+<!ENTITY CDXFLD  SDATA "&CDXFLD;"   > <!--Case Disposition   "reasons in full at"-->
+
+
+<!--French forward dispositions, first level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with 2nd-5th level...they are identical-->
+<!ENTITY CD-AFDf SDATA "&CD-AFDf;"  > <!--Case Disposition "confirm&eacute;"e-->
+<!ENTITY CD-AMDf SDATA "&CD-AMDf;"  > <!--Case Disposition "corrig&eacute;e"-->
+<!ENTITY CD-ARDf SDATA "&CD-ARDf;"  > <!--Case Disposition "motifs suppl&eacute;mentaires &agrave;"-->
+<!--CD-ARAf was never implemented-->
+<!ENTITY CD-ARAf SDATA "&CD-ARAf;"  > <!--Case Disposition "motifs suppl&eacute;mentaires &agrave;"-->
+<!ENTITY CD-LADf SDATA "&CD-LADf;"  > <!--Case Disposition "demande d'autorisation d'en appeler accord&eacute;e"-->
+<!ENTITY CD-LRDf SDATA "&CD-LRDf;"  > <!--Case Disposition "demande d'autorisation d'en appeler refus&eacute;e"-->
+<!ENTITY CD-RFDf SDATA "&CD-RFDf;"  > <!--Case Disposition "renvoy&eacute; pour r&eacute;examen ou mise au point suppl&eacute;mentaire"-->
+<!ENTITY CD-RGDf SDATA "&CD-RGDf;"  > <!--Case Disposition "nouvelle audition accord&eacute;e"-->
+<!ENTITY CD-RRDf SDATA "&CD-RRDf;"  > <!--Case Disposition "nouvelle audition refus&eacute;e"-->
+<!ENTITY CD-RVDf SDATA "&CD-RVDf;"  > <!--Case Disposition "infirm&eacute;"-->
+<!ENTITY CD-STDf SDATA "&CD-STDf;"  > <!--Case Disposition "annul&eacute; ou rejet&eacute;"-->
+<!ENTITY CD-VRDf SDATA "&CD-VRDf;"  > <!--Case Disposition "modifi&eacute;e"-->
+
+<!-- Additions July 2011 for CLEAR french forward dispositions-->
+<!ENTITY CD-DADf  SDATA "&CD-DADf;"   > <!--Case Disposition   "appel d&eacute;clar&eacute; abandonn&eacute;"-->
+<!ENTITY CD-DMDf  SDATA "&CD-DMDf;"   > <!--Case Disposition   "appel sans objet"-->
+<!ENTITY CD-JRDf  SDATA "&CD-JRDf;"   > <!--Case Disposition   "requ&ecirc;te en r&eacute;vision judiciaire rejet&eacute;e"--> 
+<!ENTITY CD-JADf  SDATA "&CD-JADf;"   > <!--Case Disposition   "requ&ecirc;te en r&eacute;vision judiciaire accueillie"-->
+<!ENTITY CD-FLDf  SDATA "&CD-FLDf;"   > <!--Case Disposition   "motifs complets"-->
+
+
+<!--French backward dispositions, first level-->
+<!--These have NOT been verified as of 13 July 1998-->
+<!ENTITY CD-AFGf SDATA "&CD-AFGf;"  > <!--Case Disposition "confirmant"-->
+<!ENTITY CD-AMGf SDATA "&CD-AMGf;"  > <!--Case Disposition "changeant"-->
+<!ENTITY CD-ARGf SDATA "&CD-ARGf;"  > <!--Case Disposition "motifs suppl&eacute;mentaires de"-->
+<!--CD-ARTf was never implemented-->
+<!ENTITY CD-ARTf SDATA "&CD-ARTf;"  > <!--Case Disposition "motifs suppl&eacute;mentaires de"-->
+<!ENTITY CD-FRGf SDATA "&CD-FRGf;"   > <!--Case Disposition "motifs suppl&eacute;mentaires [motifs entiers] de"-->
+<!ENTITY CD-LAGf SDATA "&CD-LAGf;"  > <!--Case Disposition "accordant permission d'interjeter appel"-->
+<!ENTITY CD-LRGf SDATA "&CD-LRGf;"  > <!--Case Disposition "refusant nouvelle audition"-->
+<!ENTITY CD-RFGf SDATA "&CD-RFGf;"  > <!--Case Disposition "renvoyant nouvelle audition"-->
+<!ENTITY CD-RGGf SDATA "&CD-RGGf;"  > <!--Case Disposition "accordant nouvelle audition"-->
+<!ENTITY CD-RRGf SDATA "&CD-RRGf;"  > <!--Case Disposition "refusant nouvelle audition"-->
+<!ENTITY CD-RVGf SDATA "&CD-RVGf;"  > <!--Case Disposition "infirmant"-->
+<!ENTITY CD-STGf SDATA "&CD-STGf;"  > <!--Case Disposition "annulant"-->
+<!ENTITY CD-VRGf SDATA "&CD-VRGf;"  > <!--Case Disposition "modifiant"-->
+
+<!-- Additions July 2011 for CLEAR french backward dispositions -->
+<!ENTITY CD-DAGf  SDATA "&CD-DAGf;"   > <!--Case Disposition   "d&eacute;clarant l'appel abandonn&eacute;"-->
+<!ENTITY CD-DMGf  SDATA "&CD-DMGf;"   > <!--Case Disposition   "d&eacute;clarant l'appel sans objet"-->
+<!ENTITY CD-JRGf  SDATA "&CD-JRGf;"   > <!--Case Disposition   "rejetant la requ&ecirc;te en r&eacute;vision judiciaire"--> 
+<!ENTITY CD-JAGf  SDATA "&CD-JAGf;"   > <!--Case Disposition   "accueillant la requ&ecirc;te en r&eacute;vision judiciaire"-->
+<!ENTITY CD-FLGf  SDATA "&CD-FLGf;"   > <!--Case Disposition   "motifs complets de"-->
+
+
+<!--French disposition extensions-->
+<!--These have NOT been verified as of 13 July 1998-->
+<!ENTITY CD-OGf SDATA "&CD-OGf;"   > <!--Case Disposition "pour autres"-->
+<!ENTITY CD-IPf SDATA "&CD-IPf;"   > <!--Case Disposition "en partie"-->
+<!ENTITY CD-OPf SDATA "&CD-OPf;"   > <!--Case Disposition "autres proc&eacute;dures"-->
+
+<!--French forward dispositions, second through fifth level prefixes-->
+<!--These have been verified as of 13 July 1998-->
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY CD2f SDATA "&CD2f;"  > <!--Case Disposition "qui a &eacute;t&eacute;"-->
+<!ENTITY CD3f SDATA "&CD3f;"  > <!--Case Disposition "qui a &eacute;t&eacute;"-->
+<!ENTITY CD4f SDATA "&CD4f;"  > <!--Case Disposition "qui a &eacute;t&eacute;"-->
+<!ENTITY CD5f SDATA "&CD5f;"  > <!--Case Disposition "qui a &eacute;t&eacute;"-->
+
+<!--French forward dispositions, second through fifth level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with first level...they are identical-->
+<!--Kelly added "qui a &eacute;t&eacute;" etc. 23 October 1998-->
+<!ENTITY CDXAFDf SDATA "&CDXAFDf;"  > <!--Case Disposition "qui a &eacute;t&eacute; confirm&eacute;"-->
+<!ENTITY CDXAMDf SDATA "&CDXAMDf;"  > <!--Case Disposition "qui a &eacute;t&eacute; corrig&eacute;e"-->
+<!ENTITY CDXARDf SDATA "&CDXARDf;"  > <!--Case Disposition "motifs suppl&eacute;mentaires &agrave;"-->
+<!--CDXARAF was never implemented-->
+<!ENTITY CDXARAf SDATA "&CDXARAf;"  > <!--Case Disposition "motifs supplementaires &agrave;"-->
+<!ENTITY CDXLADf SDATA "&CDXLADf;"  > <!--Case Disposition "dont la demande d'autorisation d'en appeler a &eacute;t&eacute; accord&eacute;e"-->
+<!ENTITY CDXLRDf SDATA "&CDXLRDf;"  > <!--Case Disposition "dont la demande d'autorisation d'en appeler a &eacute;t&eacute; refus&eacute;e"-->
+<!ENTITY CDXRFDf SDATA "&CDXRFDf;"  > <!--Case Disposition "qui a &eacute;t&eacute; renvoy&eacute; pour r&eacute;examen ou mise au point suppl&eacute;mentaire"-->
+<!ENTITY CDXRGDf SDATA "&CDXRGDf;"  > <!--Case Disposition "dont une nouvelle audition a &eacute;t&eacute; accord&eacute;e"-->
+<!ENTITY CDXRRDf SDATA "&CDXRRDf;"  > <!--Case Disposition "dont une nouvelle audition a &eacute;t&eacute; refus&eacute;e"-->
+<!ENTITY CDXRVDf SDATA "&CDXRVDf;"  > <!--Case Disposition "qui a &eacute;t&eacute; infirm&eacute;"-->
+<!ENTITY CDXSTDf SDATA "&CDXSTDf;"  > <!--Case Disposition "qui a &eacute;t&eacute; annul&eacute; ou rejet&eacute;"-->
+<!ENTITY CDXVRDf SDATA "&CDXVRDf;"  > <!--Case Disposition "qui a &eacute;t&eacute; modifi&eacute;e"-->
+
+
+<!-- Additions July 2011 for CLEAR -->
+<!ENTITY CDXDADf  SDATA "&CDXDADf;"   > <!--Case Disposition   "qui a &eacute;t&eacute; abandonn&eacute;"-->
+<!ENTITY CDXDMDf  SDATA "&CDXDMDf;"   > <!--Case Disposition   "qui a &eacute;t&eacute; d&eacute;clar&eacute; sans objet"-->
+<!ENTITY CDXJRDf  SDATA "&CDXJRDf;"   > <!--Case Disposition   "qui a rejet&eacute; la r&eacute;vision judiciaire"--> 
+<!ENTITY CDXJADf  SDATA "&CDXJADf;"   > <!--Case Disposition   "qui a accueilli la requ&ecirc;te en r&eacute;vision judiciaire"-->
+<!ENTITY CDXFLDf  SDATA "&CDXFLDf;"   > <!--Case Disposition   "motifs complets dans"-->
+
+
+
+<!-- A dash (-) between two letters will be interpreted as a hyphen.
+     A dash in a display formula, when surrounded by spaces, will be
+     interpreted as a minus sign.
+     Other dashes will be interpreted as ndashes? but should probably
+     be changed to the word "to". -->
+
+<!ENTITY editmark  PI   "[editmark]" > <!-- mark changes for proofreaders -->
+<!ENTITY ellipsis  PI 	"[ellipsis]" > <!-- centered ellipsis -->
+<!ENTITY feather   PI   "[feather]"   > <!--Carswell feather -->
+<!ENTITY goodpage  PI   "[goodpage]" > <!-- good place for new page -->
+<!ENTITY newline   PI	"[newline]"  > <!-- new line -->
+<!ENTITY newpage   PI   "[newpage]"  > <!-- new page -->
+<!ENTITY recto     PI  	"[recto]"    > <!-- new recto page -->
+<!ENTITY t         PI	"[t]"        > <!-- align left parenthesis in table -->
+<!ENTITY takeback  PI   "[takeback]" > <!-- squeeze one more line on page -->
+<!ENTITY verso     PI   "[verso]"    > <!-- new verso page -->
+
+<!ENTITY irm       PI   "[irm]"      > <!-- indent right margin -->
+<!ENTITY eirm      PI   "[eirm]"     > <!-- normal right margin -->
+<!ENTITY dottab    PI   "[dottab]"   > <!-- ................... -->
+
+
+<!--Shortcuts-->
+
+<!ENTITY ellip10     ".........."  > <!--10 dot ellipsis-->
+<!ENTITY ellip35     "..................................."
+				   > <!--35 dot ellipsis-->
+
+<!ENTITY #DEFAULT SYSTEM>
+
+<!--
+$Log :carswell.ent,v $
+Revision 1.19  2011/07/07 17:51:59  greenlan
+CLEAR case dispositions n treatments
+
+Revision 1.18  2010/08/17 20:47:25  greenlan
+lowercase sigma
+
+Revision 1.17  2009/09/08 16:03:15  kelly
+odblac fixes
+
+Revision 1.16  2009/04/29 20:47:31  kelly
+IM1346538 Eth and eth
+
+Revision 1.15  2009/04/16 18:11:32  gkoroste
+remove test entities
+
+Revision 1.13  2009/02/17 18:59:42  kelly
+IM1274939 &erever; &eturn;
+
+Revision 1.12  2009/02/17 16:13:35  kelly
+IM1271556 &dtrif; &dtris;
+
+Revision 1.11  2008/10/01 14:35:54  kelly
+heat 107364 added Atilde
+
+Revision 1.10  2008/10/01 14:27:22  kelly
+added Atilde
+
+Revision 1.9  2008/06/03 05:17:05  kelly
+heat 104161 spades and clubs
+
+Revision 1.8  2008/03/25 14:20:42  kelly
+heat 101733
+
+Revision 1.7  2008/03/04 17:07:19  kelly
+heat 90534
+
+Revision 1.6  2007/11/01 18:07:31  kelly
+heat 95101 lambda entities
+
+Revision 1.5  2007/10/30 20:54:35  kelly
+heat 92643 entities
+
+Revision 1.4  2007/09/11 16:09:31  kelly
+heat 90694
+
+Revision 1.3  2007/06/22 13:56:54  kelly
+rev 3.6.2 to match carswell.dtd
+
+Revision 1.2  2007/06/11 16:19:31  syung
+merge branch unix_migration_branch into main
+
+Revision 1.1.2.5  2007/05/01 22:36:22  kelly
+revision 3.6
+
+Revision 1.1.2.4  2007/01/25 18:01:34  kelly
+changed revision number to 3.5 to match DTD
+
+Revision 1.1.2.3  2007/01/25 17:28:06  kelly
+heat79911 allpro 9.5
+
+Revision 1.1.2.2  2006/11/17 20:00:24  asuessmu
+Update casekey2 and carswell.dtd
+
+Revision 1.18  2006/08/11 18:03:51  kelly
+revision 3.3 alongwith allpro 9.4
+
+Revision 1.17  2006/03/07 05:13:17  kelly
+revision 3.2
+/
+
+Revision 1.9  1999/10/27 23:43:58  kelly
+with DTD 1.53
+
+Revision 1.8  1999/09/23 19:28:02  kelly
+gback,obreve,ibreve
+
+Revision 1.7  1999/09/13 13:38:55  lsulky
+Changes from Kelly, if any, plus ibreve and obreve
+
+Revision 1.6  1999/03/15 21:58:24  kelly
+added the log
+
+
+         10 Nov 97 kb
+                  added cir and utri for RevCan Guides
+                  changed check from PI to SDATA
+
+         01 May 98 kb
+                  added ee (looks like italic "e") for MAAG document
+
+         16 July 98 kb
+                  added larr for Alberta Env. Protection Fact Sheets table
+
+         15 Dec 98 kb
+                  added caret for O.S.C.B.; our "keyboard" caret will be reserved for forming links
+
+         11 Mar 99 kb
+                  added DEFAULT entity for BASS to enable easier hubs
+
+         15 Apr 99 kb
+                  added superscript entities for better programmatic handling
+                   of superscript in cites and numbers
+
+         16 Sep 99 kb
+                  CD-ARA and CD-ART are not obsolete and should replace CD-ARD and CD-ARG respectively; added backg
+
+         1 Dec 99 kb
+                  CD-FRG and CD-FRGf added for case history
+                  diams added for Words and Phrases output
+
+         7 Dec 99 kb
+                  added CT-T for temporary treatment for provisional
+                  backlinks project
+
+         16 Dec 99 kb
+                  added utrif, cirf, block for MAAG document
+
+
+         20 Mar 2000 kb
+                 added xback (underlined x for Gitxsan language), 
+                 i macron, l cedilla, n cedilla (Latvian characters)
+
+         20 June 2000 nm
+                 added &equiv (triple bond)
+
+	11 July 2000 nm
+		added &Omega
+		added &pi
+
+	04 August 2000 nm
+		added &cap
+
+	07 August 2000 nm
+		added &female
+
+	25 August 2000 nm
+		 added &Igrave 
+		 added &igrave
+ 		 added &Oacute
+  
+	18 September 2000nm
+		added French superscript &egrave;re
+		added French superscript ere
+
+	07 August 2001 nm
+		added &male
+
+
+        12 Aug 2010 kg
+                added sigma  
+
+        7 July 2011 kg
+                added new case treatments and dispositions for CLEAR project
+
+        11 Jan 2012 kg
+                added double &Dagger, &Omacr; &Umacr; &umacr; 
+
+-->
+

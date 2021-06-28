@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="validation.messages">
+		<xs:annotation>
+			<xs:documentation>Structure for validation messages</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="message">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="trigger" type="xs:string"/>
+							<xs:element name="message.text" type="xs:string"/>
+							<xs:element name="response.text" minOccurs="0"/>
+						</xs:sequence>
+						<xs:attribute name="severity" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="FATAL"/>
+									<xs:enumeration value="ERROR"/>
+									<xs:enumeration value="WARNING"/>
+									<xs:enumeration value="INFO"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="id" type="xs:string"/>
+						<xs:attribute name="number" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

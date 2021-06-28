@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for Import-Content-Export (ICE) mark up -->
+<!-- $Date: 2009/09/02 19:24:28 $ -->
+<!-- $Revision: 1.19 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:attributeGroup name="Validation.Attributes">
+		<xs:attribute name="attr.name1"/>
+		<xs:attribute name="attr.name2"/>
+		<xs:attribute name="attr.name3"/>
+		<xs:attribute name="attr.name4"/>
+		<xs:attribute name="attr.name5"/>
+		<xs:attribute name="attr.name6"/>
+		<xs:attribute name="attr.name7"/>
+		<xs:attribute name="attr.name8"/>
+		<xs:attribute name="attr.name9"/>
+		<xs:attribute name="attr.name10"/>
+		<xs:attribute name="attr.name11"/>
+		<xs:attribute name="attr.name12"/>
+		<xs:attribute name="attr.name13"/>
+		<xs:attribute name="attr.name14"/>
+		<xs:attribute name="attr.name15"/>
+		<xs:attribute name="attr.name16"/>
+		<xs:attribute name="attr.name17"/>
+		<xs:attribute name="attr.name18"/>
+		<xs:attribute name="attr.name19"/>
+		<xs:attribute name="attr.name20"/>
+		<xs:attribute name="attr.value1"/>
+		<xs:attribute name="attr.value2"/>
+		<xs:attribute name="attr.value3"/>
+		<xs:attribute name="attr.value4"/>
+		<xs:attribute name="attr.value5"/>
+		<xs:attribute name="attr.value6"/>
+		<xs:attribute name="attr.value7"/>
+		<xs:attribute name="attr.value8"/>
+		<xs:attribute name="attr.value9"/>
+		<xs:attribute name="attr.value10"/>
+		<xs:attribute name="attr.value11"/>
+		<xs:attribute name="attr.value12"/>
+		<xs:attribute name="attr.value13"/>
+		<xs:attribute name="attr.value14"/>
+		<xs:attribute name="attr.value15"/>
+		<xs:attribute name="attr.value16"/>
+		<xs:attribute name="attr.value17"/>
+		<xs:attribute name="attr.value18"/>
+		<xs:attribute name="attr.value19"/>
+		<xs:attribute name="attr.value20"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="Common.Attributes">
+		<xs:attribute name="id" type="xs:string"/>
+		<xs:attribute name="content.type" type="xs:string"/>
+		<xs:attribute name="tag.was" type="xs:string"/>
+		<xs:attribute name="tag.context" type="xs:string"/>
+		<xs:attribute name="tag.id" type="xs:string"/>
+		<xs:attribute name="filter" type="xs:string"/>
+		<xs:attribute name="mapping.rule" type="xs:string"/>
+		<xs:attributeGroup ref="Validation.Attributes"/>
+	</xs:attributeGroup>
+	<xs:complexType name="Complex.Type">
+		<xs:attributeGroup ref="Common.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="Metalog.Type">
+		<xs:complexContent>
+			<xs:extension base="Complex.Type"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Division.Prolog.Type">
+		<xs:complexContent>
+			<xs:extension base="Metalog.Type">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="designator"/>
+					<xs:element ref="title"/>
+					<xs:element ref="inline"/>
+					<xs:element ref="clone"/>
+					<xs:group ref="Note.Group"/>
+					<xs:element name="reference.collection">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Complex.Type">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="reference.holder">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="Complex.Type">
+														<xs:choice>
+															<xs:element ref="note"/>
+															<xs:element ref="inline"/>
+														</xs:choice>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="meta.parameters">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Complex.Type">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="parameter">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="Complex.Type">
+														<xs:attribute name="name" type="xs:string"/>
+														<xs:attribute name="type" type="xs:string"/>
+														<xs:attribute name="value" type="xs:string"/>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Term.And.Definitions.Prolog.Type">
+		<xs:complexContent>
+			<xs:extension base="Metalog.Type">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="designator"/>
+					<xs:element ref="title"/>
+					<xs:element ref="inline"/>
+					<xs:element ref="clone"/>
+					<xs:element ref="term"/>
+					<xs:group ref="Note.Group"/>
+					<xs:element name="reference.collection">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Complex.Type">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="reference.holder">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="Complex.Type">
+														<xs:choice>
+															<xs:element ref="note"/>
+															<xs:element ref="inline"/>
+														</xs:choice>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="meta.parameters">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Complex.Type">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="parameter">
+											<xs:complexType>
+												<xs:complexContent>
+													<xs:extension base="Complex.Type">
+														<xs:attribute name="name" type="xs:string"/>
+														<xs:attribute name="type" type="xs:string"/>
+														<xs:attribute name="value" type="xs:string"/>
+													</xs:extension>
+												</xs:complexContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Epilog.Type">
+		<xs:complexContent>
+			<xs:extension base="Metalog.Type">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="inline"/>
+					<xs:element ref="clone"/>
+					<xs:group ref="Note.Group"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Definition.Epilog.Type">
+		<xs:complexContent>
+			<xs:extension base="Metalog.Type">
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="inline"/>
+					<xs:element ref="clone"/>
+					<xs:element ref="term"/>
+					<xs:group ref="Note.Group"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Inline.Type" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:group ref="Inline.Group" minOccurs="0"/>
+		</xs:choice>
+		<xs:attributeGroup ref="Common.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="Paragraph.Type">
+		<xs:complexContent>
+			<xs:extension base="Complex.Type">
+				<xs:sequence>
+					<xs:element name="paragraph.prolog" minOccurs="0">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Metalog.Type">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:element ref="designator"/>
+										<xs:element ref="inline"/>
+										<xs:element ref="clone"/>
+										<xs:group ref="Note.Group"/>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Paragraph.Full.Type">
+		<xs:complexContent>
+			<xs:extension base="Paragraph.Type">
+				<xs:sequence>
+					<xs:element name="paragraph.body" minOccurs="0">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Complex.Type">
+									<xs:sequence>
+										<xs:group ref="Paragraph.Body.Group" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="paragraph.epilog" type="Epilog.Type" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Division.Type">
+		<xs:complexContent>
+			<xs:extension base="Complex.Type">
+				<xs:sequence>
+					<xs:element ref="division.prolog" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Division.Full.Type">
+		<xs:complexContent>
+			<xs:extension base="Division.Type">
+				<xs:sequence>
+					<xs:element name="division.body" minOccurs="0" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="Complex.Type">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:group ref="Division.Body.Group" minOccurs="0"/>
+									</xs:choice>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element ref="division.epilog" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:group name="Null.Group">
+		<xs:choice>
+			<xs:element ref="null.element"/>
+			<xs:element ref="null.tag"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="Note.Group">
+		<xs:choice>
+			<xs:element ref="note"/>
+			<xs:element ref="reference"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="Inline.Group">
+		<xs:choice>
+			<xs:element ref="inline" minOccurs="0"/>
+			<xs:element ref="term" minOccurs="0"/>
+			<xs:element ref="media" minOccurs="0"/>
+			<xs:element ref="clone" minOccurs="0"/>
+			<xs:group ref="Note.Group" minOccurs="0"/>
+			<xs:group ref="Null.Group" minOccurs="0"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="Paragraph.Body.Group">
+		<xs:choice>
+			<xs:element name="paragraph.inline" type="Inline.Type" minOccurs="0"/>
+			<xs:element ref="paragraph" minOccurs="0"/>
+			<xs:element ref="list" minOccurs="0"/>
+			<xs:element ref="table" minOccurs="0"/>
+			<xs:element ref="example" minOccurs="0"/>
+			<xs:element ref="clone" minOccurs="0"/>
+			<xs:group ref="Note.Group" minOccurs="0"/>
+			<xs:group ref="Null.Group" minOccurs="0"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="Division.Body.Group">
+		<xs:choice>
+			<xs:element ref="division" minOccurs="0"/>
+			<xs:element ref="figure" minOccurs="0"/>
+			<xs:element ref="table" minOccurs="0"/>
+			<xs:element ref="glossary" minOccurs="0"/>
+			<xs:element ref="list" minOccurs="0"/>
+			<xs:element ref="paragraph" minOccurs="0"/>
+			<xs:element ref="clone" minOccurs="0"/>
+			<xs:group ref="Note.Group" minOccurs="0"/>
+			<xs:group ref="Null.Group" minOccurs="0"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="root">
+		<xs:annotation>
+			<xs:documentation>Document root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="division" minOccurs="0"/>
+						<xs:element ref="clone" minOccurs="0"/>
+						<xs:group ref="Null.Group" minOccurs="0"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="division" type="Division.Full.Type">
+		<xs:annotation>
+			<xs:documentation>Division</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="figure" type="Division.Full.Type">
+		<xs:annotation>
+			<xs:documentation>Specialized division for graphics, tables, etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="note" type="Division.Full.Type">
+		<xs:annotation>
+			<xs:documentation>Embeddable note</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="reference">
+		<xs:annotation>
+			<xs:documentation>Reference to something (note) in another location</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:complexContent mixed="true">
+				<xs:extension base="Complex.Type">
+					<xs:attribute name="refid"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="list">
+		<xs:annotation>
+			<xs:documentation>Enumerated collection of paragraphs</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="list.prolog" type="Division.Prolog.Type" minOccurs="0"/>
+						<xs:element name="list.body" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="Complex.Type">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:element ref="item"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="list.epilog" type="Epilog.Type" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="item" type="Paragraph.Full.Type">
+		<xs:annotation>
+			<xs:documentation>Paragraph in a list</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="glossary">
+		<xs:annotation>
+			<xs:documentation>Glossary is a special list of terms and their definitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Division.Type">
+					<xs:sequence>
+						<xs:element name="glossary.body" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="Complex.Type">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:element ref="term.and.definitions"/>
+											<xs:element ref="glossary"/>
+											<xs:element ref="division"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element ref="division.epilog" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term.and.definitions">
+		<xs:annotation>
+			<xs:documentation>Specialized division - one term and its one or more definitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="division.prolog" type="Term.And.Definitions.Prolog.Type" minOccurs="0"/>
+						<xs:element name="division.body" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="Complex.Type">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:element ref="definition"/>
+											<xs:group ref="Note.Group"/>
+											<xs:group ref="Null.Group"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element ref="division.epilog" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="definition">
+		<xs:annotation>
+			<xs:documentation>A definition associated with a term</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Division.Type">
+					<xs:sequence>
+						<xs:element name="division.body" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="Complex.Type">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="Division.Body.Group" minOccurs="0"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="division.epilog" type="Definition.Epilog.Type" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term" type="Inline.Type">
+		<xs:annotation>
+			<xs:documentation>A definable term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="table">
+		<xs:annotation>
+			<xs:documentation>Simple table</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="table.branch"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="table.branch">
+		<xs:annotation>
+			<xs:documentation>Subset of a table, such as a row</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="table.branch"/>
+						<xs:element name="table.leaf" type="Paragraph.Full.Type"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="paragraph" type="Paragraph.Full.Type">
+		<xs:annotation>
+			<xs:documentation>Paragraph</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="inline" type="Inline.Type">
+		<xs:annotation>
+			<xs:documentation>Embeddable, non line breaking element</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="media" type="Inline.Type">
+		<xs:annotation>
+			<xs:documentation>Media such as graphics, video, audio, etc.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="example">
+		<xs:annotation>
+			<xs:documentation>Whitespace preserving element</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:whiteSpace value="preserve"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="clone">
+		<xs:annotation>
+			<xs:documentation>Pointer to a replacement element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:attribute name="refid"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="division.prolog" type="Division.Prolog.Type">
+		<xs:annotation>
+			<xs:documentation>Leading metadata holder for divisions</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="designator" type="Inline.Type">
+		<xs:annotation>
+			<xs:documentation>"Number" of division or paragraph</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="title" type="Inline.Type">
+		<xs:annotation>
+			<xs:documentation>Title of division</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="division.epilog" type="Epilog.Type">
+		<xs:annotation>
+			<xs:documentation>Trailing metadata holder for divisions</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="null.element" type="xs:anyType">
+		<xs:annotation>
+			<xs:documentation>Element that will be completely removed on processing</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="null.tag" type="xs:anyType">
+		<xs:annotation>
+			<xs:documentation>Element that will have its tags and attributes removed, but its content will remain</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

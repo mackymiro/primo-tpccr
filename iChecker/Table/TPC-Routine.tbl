@@ -1,0 +1,8 @@
+Hierarchy Tag    | Subroutine Name       |Error Type
+N/A              | CheckPairValidity     |E
+                 | TextValidity          |E
+                 | UnconEntities         |E
+                 | Convert2Attrib        |E
+                 | CitationValidity      |E
+                 | NoHrt                 |E
+                 | ImgNameArtIDEquality  |E

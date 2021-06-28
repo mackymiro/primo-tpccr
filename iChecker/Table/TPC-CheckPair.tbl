@@ -1,0 +1,88 @@
+Text1     | Text2      | CheckType | Err Type | Err Message                                                    | SearchType
+[         |]           | S         | W        |Please Check Unpaired square bracket                            |
+<         | >          | S         | E        | Imbalance pair of ">"(greater than) or "<"(less than) delimiter|
+&ldquo;   | &rdquo;    | S         | E        | Imbalance pair of &ldquo; and &rdquo;                          |
+&lsquo;   | &rsquo;    | S         | E        | Imbalance pair of &lsquo; and &rsquo;                          |
+Act respecting the Minist&eg;re de l'Agriculture, des P&ec;cheries et de l'Alimentation| </em>    | L         | E        | Missing <em>                      |
+Act to preserve agricultural land| </em>    | L         | E        | Missing <em>                          |
+An Act respecting municipal taxation| </em>    | L         | E        | Missing <em>                          |
+Code municipal| </em>    | L         | E        | Missing <em>                          |
+Loi  sur la r&ea;gie de l'assurance maladie du Qu&ea;bec| </em>    | L         | E        | Missing <em>                          |
+Loi canadienne sur les soci&ea;t&ea;s par actions| </em>    | L         | E        | Missing <em>                          |
+Loi concernant la taxe sur les carburants| </em>    | L         | E        | Missing <em>                          |
+Loi concernant l'application de la Loi sur les imp&oc;ts| </em>    | L         | E        | Missing <em>                          |
+Loi concernant les droits sur les mines| </em>    | L         | E        | Missing <em>                          |
+Loi concernant les droits sur les mutations immobili&eg;res| </em>    | L         | E        | Missing <em>                          |
+Loi concernant les droits sur les transferts de terrain| </em>    | L         | E        | Missing <em>                          |
+Loi concernant les droits sur les transferts de terrains| </em>    | L         | E        | Missing <em>                          |
+Loi concernant l'imp&oc;t sur le tabac| </em>    | L         | E        | Missing <em>                          |
+Loi constitutionnelle de 1867| </em>    | L         | E        | Missing <em>                          |
+Loi de 2001 sur l'accise| </em>    | L         | E        | Missing <em>                          |
+Loi de l'imp&oc;t sur le revenu| </em>    | L         | E        | Missing <em>                          |
+Loi d'interpr&ea;tation des conventions en mati&eg;re d'imp&oc;ts sur le revenu | </em>    | L         | E        | Missing <em>                          |
+Loi favorisant le d&ea;veloppement de la formation de la main-d'&oelig;uvre| </em>    | L         | E        | Missing <em>                          |
+Loi favorisant le d&ea;veloppement de la formation de la main-d'oeuvre| </em>    | L         | E        | Missing <em>                          |
+Loi modifiant de nouveau la Charte de la ville de Montr&ea;al| </em>    | L         | E        | Missing <em>                          |
+Loi modifiant de nouveau la Loi sur la fiscalit&ea; municipale et d'autres dispositions l&ea;gislatives| </em>    | L         | E        | Missing <em>       |
+Loi modifiant diverses dispositions l&ea;gislatives concernant les finances des municipalit&ea;s et des organismes municipaux| </em>    | L         | E        | Missing <em> |
+Loi modifiant diverses dispositions l&ea;gislatives concernant les finances municipales| </em>    | L         | E        | Missing <em>                     |
+Loi modifiant la Loi sur la fiscalit&ea; municipale et d'autres dispositions l&ea;gislatives| </em>    | L         | E        | Missing <em>                  |
+Loi portant cr&ea;ation de l'Agence des douanes et du revenu| </em>    | L         | E        | Missing <em>                          |
+Loi sur la Communaut&ea; urbaine de Montr&ea;al| </em>    | L         | E        | Missing <em>                          |
+Loi sur la Cour canadienne de l'imp&oc;t| </em>    | L         | E        | Missing <em>                          |
+Loi sur la Cour canadienne de l'imp&oc;t | </em>    | L         | E        | Missing <em>                          |
+Loi sur la Cour f&ea;d&ea;rale| </em>    | L         | E        | Missing <em>                          |
+Loi sur la fiscalit&ea; municipale| </em>    | L         | E        | Missing <em>                          |
+Loi sur la protection au territoire agricole| </em>    | L         | E        | Missing <em>                          |
+Loi sur la protection du territoire agricole| </em>    | L         | E        | Missing <em>                          |
+Loi sur la R&ea;gie de l'&ea;lectricit&ea; et du gaz| </em>    | L         | E        | Missing <em>                          |
+Loi sur la r&ea;gie de l'assurance-maladie du Qu&ea;bec| </em>    | L         | E        | Missing <em>                          |
+Loi sur la taxe d'accise| </em>    | L         | E        | Missing <em>                          |
+Loi sur la taxe d'accise (TPS)| </em>    | L         | E        | Missing <em>                          |
+Loi sur la taxe d'accise concernant la taxe sur les produits et services | </em>    | L         | E        | Missing <em>                          |
+Loi sur la taxe de vente du Qu&ea;bec| </em>    | L         | E        | Missing <em>                          |
+Loi sur la taxe sur les produits et services des premi&eg;res nations| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'acc&eg;s aux documents des organismes publics et sur la protection des renseignements personnels| </em>    | L         | E        | Missing <em>    |
+Loi sur l'accise| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'administration  fiscale| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'administration fiscale| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'am&ea;nagement et l'urbanisme| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'assurance-emploi| </em>    | L         | E        | Missing <em>                          |
+Loi sur le CFI| </em>    | L         | E        | Missing <em>                          |
+Loi sur le minist&eg;re de l'Agriculture, des P&ec;cheries et de l'Alimentation| </em>    | L         | E        | Missing <em>                          |
+Loi sur le minist&eg;re du revenu| </em>    | L         | E        | Missing <em>                          |
+Loi sur le r&ea;gime de rentes du Qu&ea;bec| </em>    | L         | E        | Missing <em>                          |
+Loi sur le r&ea;gime des rentes du Qu&ea;bec| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'enregistrement des organismes de bienfaisance (renseignements de s&ea;curit&ea;)| </em>    | L         | E        | Missing <em>                  |
+Loi sur les &ea;tablissements touristiques| </em>    | L         | E        | Missing <em>                          |
+Loi sur les arrangements fiscaux entre le gouvernement f&ea;d&ea;ral et les provinces| </em>    | L         | E        | Missing <em>                          |
+Loi sur les biens culturels| </em>    | L         | E        | Missing <em>                          |
+Loi sur les centres financiers internationaux| </em>    | L         | E        | Missing <em>                          |
+Loi sur les cit&ea;s et villes| </em>    | L         | E        | Missing <em>                          |
+Loi sur les douanes| </em>    | L         | E        | Missing <em>                          |
+Loi sur les imp&oc;ts| </em>    | L         | E        | Missing <em>                          |
+Loi sur les imp&oc;ts du Qu&ea;bec| </em>    | L         | E        | Missing <em>                          |
+Loi sur les licences| </em>    | L         | E        | Missing <em>                          |
+Loi sur les mesures sp&ea;ciales &ag; l'importation| </em>    | L         | E        | Missing <em>                          |
+Loi sur les restrictions applicables aux promoteurs du cr&ea;dit d'imp&oc;t pour personnes handicap&ea;es| </em>    | L         | E        | Missing <em>      |
+Loi sur les services de sant&ea; et les services sociaux| </em>    | L         | E        | Missing <em>                          |
+Loi sur les soci&ea;t&ea;s de placements dans l'entreprise qu&ea;b&ea;coise| </em>    | L         | E        | Missing <em>                          |
+Loi sur les subventions aux municipalit&ea;| </em>    | L         | E        | Missing <em>                          |
+Loi sur les terres et for&ec;ts| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'exportation et l'importation de biens culturels| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'imp&oc;t minier| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'instruction publique| </em>    | L         | E        | Missing <em>                          |
+Loi sur l'interpr&ea;tation des conventions en mati&eg;re d'imp&oc;t sur le revenu| </em>    | L         | E        | Missing <em>                          |
+R&ea;gime de pensions du Canada| </em>    | L         | E        | Missing <em>                          |
+R&eg;glement de l'imp&oc;t sur le revenu| </em>    | L         | E        | Missing <em>                          |
+R&eg;glement sur la forme ou le contenu minimal de divers documents relatifs &ag; la fiscalit&ea; municipale| </em>    | L         | E        | Missing <em>  |
+R&eg;glement sur la proportion m&ea;diane du r&oc;le d'&ea;valuation fonci&eg;re| </em>    | L         | E        | Missing <em>                          |
+R&eg;glement sur la proportion m&ea;diane du r&oc;le de la valeur locative| </em>    | L         | E        | Missing <em>                          |
+R&eg;glement sur l'administration fiscale| </em>    | L         | E        | Missing <em>                          |
+R&eg;glement sur les imp&oc;ts| </em>    | L         | E        | Missing <em>                          |
+R&eg;gles concernant l'application de l'imp&oc;t sur le revenu| </em>    | L         | E        | Missing <em>                          |
+Regulation respecting the form or minimum content of various documents relative to municipal taxation| </em>    | L         | E        | Missing <em>         |
+Tarif des douanes| </em>    | L         | E        | Missing <em>                          |
+<POLIDENT>                 | <DATE>                     | L         | E        | Imbalance count of <POLIDENT> and <DATE>            |
+<COMMENT                  | <DATE>                     | L         | E        | Imbalance count of <COMMENT> and <DATE>            |
+(   | )    | S         | E        | Imbalance pair of ( and )                          |

@@ -1,0 +1,1463 @@
+<!-- ===================================================================== -->
+<!--               DTD : EYB_LRQ, Version 1.28  -                -->
+<!--                                                                       -->
+<!--                   Project Publication Editions Yvon Blais             -->
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  This DTD was elaborated from the DTD 2.1 of Carswell. It             -->
+<!--  describes mainly the structure of a law or a regulation.             -->
+<!--                                                                       -->
+<!--  Several adaptations were made so as to establish a control           -->
+<!--  of version of the various fragments of a law or a regulation         -->
+<!--                                                                       -->
+<!--  Finally, note that this DTD was elaborated in the context            -->
+<!--  of the project (CO-5962) with regard to the publication of           -->
+<!--  loose leaf type for Editions Yvon Blais, and more specifically       -->
+<!--  for the following publications:                                      -->
+<!--                                                                       -->
+<!--  o LOI SUR LES CIT  ET VILLES;                                       -->
+<!--  o CODE MUNICIPAL DU QU EC;                                          -->
+<!--  o LȇISLATION COMPLȍENTAIRE AU CODE MUNICIPAL ET  LA LOI SUR LES   -->
+<!--    CIT  ET VILLES (Volume I et II).                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--   This DTD was created by :                                         -->
+<!--                                                                       -->
+<!--   IROSOFT Inc.                                                        -->
+<!--   3900 C  Vertu, bureau 208                                         -->
+<!--   St-Laurent, H4R 1V4                                                 -->
+<!--                                                                       -->
+<!--   T誺 (514) 920-0020                                                 -->
+<!--   WWW: www.irosoft.com                                                -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+<!--   Creation (version 1.00, 2000-11-15)                                 -->
+<!--      Alain Lavoie, for IROSOFT Inc.                                   -->
+<!--                                                                       -->
+<!--                                                                       -->
+<!--  Modifications:
+
+   27 nov 2000 (Marie-Helene Vezina):
+	· Added PRETITLE to attribute TYPEDIV of ELEMENT DIVHEADING 
+	for the division of type preliminary title
+
+   28 nov 2000 (Marie-Helene Vezina):
+	· Changed the model of content for ELEMENT IDENTIFICATION
+
+	originally:
+
+        ELEMENT identification  (alpha?, shortti, longti, modifnote?,
+                               readernote?, stathist)
+
+	for:
+
+        ELEMENT identification  (longti, shortti, alpha?, modifnote?,
+                               readernote?, stathist)
+
+	To reproduce the order of appearance of the ELEMENTS in the paper version.
+
+
+	· Removed attribute LABEL of ELEMENT DIVHEADING.
+
+   30 nov 2000 (Alain Lavoie):
+        · Reorganization of the model with regard to the problem of ELEMENTS 
+          of 'mixed content' type used in the CARSWELL DTD.
+
+          We shall use another technique which will be less contraingante
+          for the users and for FrameMaker.
+
+        · added ELEMENT modiftext for the case of sections, paragraphs 
+          and sub-paragraphs, repealed, deleted, etc.
+
+
+   18 dec 2000 (Marie-Helene Vezina):
+	· Changed the model of content for ELEMENT SPARA
+
+	originally:
+            ELEMENT spara (ti?, n, marginalnote?, (modiftext | parap | spara+))
+  for:
+            ELEMENT spara (ti?, n, marginalnote?, (modiftext | sparap+ | spara+))
+
+	Also added the declaration of ELEMENT SPARAP:
+
+	Element:  Legislative subparagraph level text
+    	Class:    StrucLeg
+          ELEMENT sparap (pt | p | def)*
+
+   22 dec 2000 (Marie-Helene Vezina):
+	· Changed the model of the attributes for ELEMENTS PARA et SPARA
+
+	originally:
+
+        ATTLIST para
+                  stylenum  (N|A|R)    #IMPLIED
+
+        ATTLIST spara
+                  stylenum  (N|A|R)    #IMPLIED
+
+	for:
+
+        ATTLIST para
+                  stylenum  (N|NP|A|R)    #IMPLIED
+
+        ATTLIST spara
+                  stylenum  (N|NP|A|R)    #IMPLIED
+
+
+        This is to differentiate the numbers in Arabic numerals followed 
+        by a symbol of degrees (N) from numbers in Arabic numerals 
+        followed by a point (NP).
+
+   03 jan 2001 (Alain Lavoie):
+
+        · Added attribute prefix to ELEMENT pt
+
+	originally:
+           NOTHING
+  for:
+           ATTLIST pt
+               prefix  (mdash, ndash) #IMPLIED
+
+        · Changed the definition of ELEMENT floatheading
+
+        originally:
+          ELEMENT floatheading  ( n?, ti, stathist?)
+
+        for:
+         ELEMENT floatheading  ( n?, ti, modifnote?, stathist?)
+
+        · Added attribute STYLEAS to ELEMENT floatheading
+
+          STYLEAS         (PART|BOOK|TITLE|PRETITLE|
+                           CHAP|DIV|SDIV|
+                           SSDIV| SSSDIV)          #IMPLIED
+
+        · Added attribute INFORCE to all fragments of version
+
+          INFORCEDATE     CDATA                    #IMPLIED
+
+   04 jan 2001 (Alain Lavoie):
+
+        · added ELEMENT floattitle to take into account floathing titles 
+        inside sections
+
+          (ex: lois Cit豠et villes, C-19, art 412).
+
+          ELEMENT floattitle ( n?,  ti )
+          ATTLIST floattitle
+                  STYLEAS         (PART|BOOK|TITLE|PRETITLE|
+                                   CHAP|DIV|SDIV|
+                                   SSDIV| SSSDIV)              #IMPLIED
+
+        · Used in SEC, para and spara.
+
+
+   07 fevrier 2001 (Marie-Helene Vezina):
+
+	· Changed the model of content for ELEMENT IDENTIFICATION
+	  to add the ELEMENT VOLUME which represent the title of the publication such 
+	  as it appears in the heading of the paper version.
+
+	originally:
+		ELEMENT identification   longti, shortti, alpha?, modifnote?,
+                               readernote?, stathist?)
+	for:
+		ELEMENT identification  (volume?, longti, shortti, alpha?, modifnote?,
+                               readernote?, stathist?)
+
+
+	· Changed the model of content for DIVHEADING and FLOATHEADING to allow the 
+	ELEMENT SHORTTI, which will contain the version of TI to display in the heading 
+	of the paper version.
+
+	originally:
+		ELEMENT divheading  ( n, ti, modifnote?, stathist?)
+	for:
+		ELEMENT divheading  ( n, ti, shortti?, modifnote?, stathist?)
+
+
+   09 mars 2001 (Marie-Helene Vezina):
+
+	· Changed the definition of the attribute INFORCE to answer the different needs 
+	for the handling of fragments.
+
+	originally:
+		INFORCE         (yes|no)                 #IMPLIED
+
+	for:
+		INFORCE         (O|V|F|FNK)                 #IMPLIED
+
+		where 
+		  O : Obsolete,
+			V : Valid,
+			F : Future (will be valid in a known future),
+			FNK : Future not known (will be valid in a unknown future).
+
+
+	· Added the attributes NEXTID (next ID) et PREVID (previous ID) to implement
+	 adequately the links with the precedent and following ID of the same fragment.
+	 	These attributes are implemented for all ELEMENTS of versions.
+		The definition of these attributes is the same as for the one of attribute ID.
+
+   22 mars 2001 (Marie-Helene Vezina):
+
+	· Added attribute MODLINK to ELEMENT STATREF.
+	  This attribute contains, under a standardized form, the reference to a section of a law 
+	  having created the article (ELEMENT SEC) in which the ELEMENT STATREF is being a part of. 
+	  This attribute is used to established the links for the Web version.
+
+	originally:
+
+	ATTLIST statref
+          label   CDATA #IMPLIED
+          product CDATA #IMPLIED
+
+	for:
+
+
+	ATTLIST statref
+          modlink   CDATA #IMPLIED
+          label   CDATA #IMPLIED
+          product CDATA #IMPLIED
+
+        · Added attribute MODDATE to the ELEMENTS of version
+	(i.e. IDENTIFICATION, PREAMBLE, SEC, DIVHEADING, FLOATHEADING).
+
+          MODDATE         CDATA                    #IMPLIED
+
+
+   10 mai 2001 (Alain Lavoie):
+
+        · Added attribute CORRECTIONDATE to the ELEMENTS of version
+
+   19 juillet 2001 (Marie-Helene Vezina):
+
+	· Added the ELEMENTS DEBUTBLOC and FIN BLOC, which brings these changes:
+
+	adding:
+
+	ELEMENT 	debutbloc 		(#PCDATA)
+
+	ATTLIST debutbloc
+               ouvrage    	CDATA     #IMPLIED
+               envoi    	CDATA     #IMPLIED
+               pagecourante    	CDATA     #IMPLIED
+               pageavant  	CDATA     #IMPLIED
+
+
+	adding:
+
+	ELEMENT 	finbloc 		(#PCDATA)
+
+	ATTLIST finbloc
+               ouvrage    	CDATA     #IMPLIED
+               envoi    	CDATA     #IMPLIED
+               pagecourante    	CDATA     #IMPLIED
+               pageapres  	CDATA     #IMPLIED
+
+
+	modification:
+
+	from:
+	ELEMENT act  (identification, preamble?, (divheading|floatheading|SEC)*,
+                    containr?)
+
+
+	to:
+	ELEMENT act  (identification, preamble?, (divheading|floatheading|SEC)*,
+                    containr?) +(debutbloc|finbloc)
+
+   17 septembre  2001 (Alain Lavoie) (version 1.12):
+
+        · added the ELEMENTS EXPRDIV (divergent expression) EXPRERR
+          (expression in error) in the linetxt entity.
+
+
+        · added ELEMENT extrarefs in order to accomodate the supplementary 
+         references (extra) the we find after the Civil Code of Quebec sections.
+
+   15 juillet  2002 (Alain Lavoie) (version 1.13):
+
+        · Added the necessary ELEMENTS for regulations, extracts and orders.
+
+   4 septembre  2002 (Mathieu Lafleur) (version 1.14):
+
+        · Changed the definition for all elements concerned to make optionel the element stathist.
+          added ELEMENT Schedule to make the EYB DTD more similar to the Carswell DTD
+          added ELEMENT Quote in some ELEMENTS
+          added Carswell Entity (file Cars.ent) using the public identifyer ("-//Carswell//ENTITIES Carswell//EN")
+          added ELEMENT Format
+          added ELEMENT Patch
+          added ELEMENT convent
+          added ELEMENT footnote
+          added ELEMENT editnote
+          added ELEMENT patch in ELEMENT Root
+          added ELEMENT Footnote inside ELEMENT Root
+          added ELEMENT patch,quote,convent,editnote inside ELEMENT Reg
+          added ELEMENT legiddoc
+          Added attribute type to ELEMENT reg
+          Added attribute carswellelement to ELEMENT floatheading for the reconversion towards Carswell
+          Added attribute adddate and moddate to ELEMENT SEC
+          Added attribute lang, adddate and moddate to ELEMENT form
+          Added value both to the attribute halign of ELEMENT tbldef
+
+   28 octobre 2002 (Mathieu Lafleur) (version 1.14):
+         added entities Car.ent and copyr.ent
+
+   01 Novembre 2002 (Mathieu Lafleur) (version 1.15):
+         moved the ELEMENTS patch,quote,convent,editnote inside ELEMENTS of version
+         removed historef from the DTD
+
+   06 Novembre 2002 (Mathieu Lafleur) (version 1.16):
+         Changed the definition of ELEMENT act to allow for ELEMENT of version schedule and containr to be zero or 
+         multiple times
+         added ELEMENT of version notefinlr inside ELEMENTS reg and act for the handling of final provisions (notefinlr) 
+         equivalent to the preliminary provision (preamble)
+         Added attribute typeann (ELEMENT schedule) (abrogative|normale) to specify the type of schedule
+         Added attribute style (ELEMENT N) to specify if the value of N should be displayed in arabic ou roman numeral
+
+   06 Novembre 2002 (Mathieu Lafleur) (version 1.17):
+         Changed the definition of containr (added schedule and removed schedule in act)
+         Changed the definition of act (removed from schedule, notefinlr 0 or 1 time and containr 0 or many times)
+         Changed the definition of reg (removed from schedule, notefinlr 0 ou 1 time and containr 0 or many times)
+         Removed the attribute style (ELEMENT N) to specify if the value of N should be displayed in arabic ou roman 
+         numeral
+         Changed the ELEMENTS with definition O O for - -
+         Changed ELEMENT patch from - O to - -
+
+   06 Novembre 2002 (Mathieu Lafleur) (version 1.18):
+         removed attribute typeann from schedule element
+
+   13 Novembre 2002 (Mathieu Lafleur) (version 1.19):
+         Added attribute label in ELEMENT reg to apply to newly obtain regulations
+         Added attribute proclaim in ELEMENT reg to apply to newly obtain regulations
+         Changed the definition of P for compatibility with new regulations from pt to (N?, pt)
+         Added attribute carswellelement to ELEMENT P for reconversion towards Carswell
+
+   27 juin 2003 (Pierre-Luc Mercille) (version 1.20) :
+         Added attribute type to ELEMENT extraSECref to be able to specify if a section is bound or corresponding.
+         Added the declaration of ELEMENT ndlr (contains ELEMENTS n and SECP, these two could be added 1 or many times).
+         added ELEMENT n and SECP under ndlr.
+         added ELEMENT ndlr, following freeform under SEC, ndlr will be optional.
+         added the declaration of ELEMENT eyblink allowing the addition of links for ELEMENTS of type CM during the 
+         extraction of legislation (DCL).
+         added the attributes type and seg_id (under eyblink) to be able to resolve the links ELEMENTS of type CM.
+         added ELEMENT eyblink under ELEMENT SECP, could be present 0 ou many times.
+         
+   4 septembre 2003 (Pierre-Luc Mercille) (version 1.21)	         
+         Changed all ELEMENTS, entities and attributes in uppercase (to normalize all fragments and to facilitate the 
+         extraction in XML format).
+         added ELEMENT <DUMMY/> to avoid WellFormed (XML) errors while extracting legislation for DCL. 
+         Pay attention to the syntaxe of "DUMMY/".  
+         Changed the declaration of ELEMENT EYBLINK : <!ELEMENT EYBLINK (DUMMY/?) > (DUMMY/ instead of EMPTY), 
+         also to avoid WellFormed errors while extracting legislation for DCL...	         
+         Changed the declaration of ELEMENT TBLCDEF : <!ELEMENT TBLCDEF (DUMMY/?) > (DUMMY/ instead of EMPTY), 
+         also to avoid WellFormed errors while extracting legislation for DCL...	       
+         
+   22 septembre 2003 (Andree Robert) (version 1.22)
+   	     Changed all attributes of ELEMENTS specific to tables to uppercase (to normalize all fragments and to 
+   	     facilitate the extraction in XML format).
+   
+   02 juin 2005 (So Phala Im) (version 1.23)
+     added ELEMENT SHADING to allow grey highlighted display for a portion of text in a section
+     added ELEMENT SHADING inside %LINETXT, %PARATXT	   
+     added ELEMENT NDLR inside CONTAINR
+     
+   06 juin 2005 (So Phala Im) (version 1.24)
+     added type "OTHER" for ELEMENT EYBLINK
+
+   07 juin 2007 (So Phala Im) (version 1.25)
+     ai ajouté un élément legiddoc dans ACT 
+
+   11 juin 2007 (So Phala Im) (version 1.26)
+     ai ajouté P dans la liste des valeur de STYLENUM de l'élément PARA 
+     ai changé les attributs de FENCE en majuscule
+     
+   8 avril 2008 (Andrée Robert) (version 1.27)
+     ai ajouté L4 dans la liste des valeur de STYLEAS de l'élément FLOATHEADING 
+
+-->
+<!--                                                                       -->
+<!-- ===================================================================== -->	
+<!--
+<!ENTITY % ISOLAT1 PUBLIC "ISO 8879:1986//ENTITIES Added Latin 1//EN">
+<!ENTITY % ISOLAT2 PUBLIC "ISO 8879:1986//ENTITIES Added Latin 2//EN">
+<!ENTITY % ISONUM  PUBLIC "ISO 8879:1986//ENTITIES Numeric and Special Graphic//EN">
+<!ENTITY % ISOPUB  PUBLIC "ISO 8879:1986//ENTITIES Publishing//EN">
+<!ENTITY % ISOTECH PUBLIC "ISO 8879:1986//ENTITIES General Technical//EN">
+<!ENTITY % ISOAMSB PUBLIC "ISO 8879:1986//ENTITIES Added Math Symbols: Binary Operators//EN">
+
+-->
+<!-- PUT THE FOLLOWING TWO DEFINITIONS IN COMMENT IF THE PROGRAM FOR THE VISUALISATION OF THE DTD (EX: NEAR AND FAR) DO NOT FIND THE ENTITIES -->
+<!--
+<!ENTITY % ENTCAR1 PUBLIC "-//Carswell//ENTITIES Copyright Page Text//EN">
+<!ENTITY % ENTCAR2 PUBLIC "-//Carswell//ENTITIES Carswell//EN">
+
+%ISOLAT1;
+%ISOLAT2;
+%ISONUM;
+%ISOPUB;
+%ISOTECH;
+%ISOAMSB;
+-->
+
+<!-- PUT THE FOLLOWING TWO DEFINITIONS IN COMMENT IF THE PROGRAM FOR THE VISUALISATION OF THE DTD (EX: NEAR AND FAR) DO NOT FIND THE ENTITIES -->
+<!--
+%ENTCAR1;
+%ENTCAR2;
+-->
+
+
+<!ENTITY % iso-ents SYSTEM "file:/camp/dtd/content/iso-ents.ent">
+%iso-ents;
+<!ENTITY % xcarswell-symbol SYSTEM "file:/camp/dtd/content/xcarswell-symbol.ent">
+%xcarswell-symbol;
+
+<!ENTITY % everyshort "(DEBUTBLOC | FINBLOC)*">
+
+<!ENTITY % everylong "(DEBUTBLOC | EDITNOTE | FINBLOC | QUOTE | PATCH | FOOTNOTE)*">
+
+
+
+<!--PARAMETER ENTITY: INLINE TEXT ELEMENTS.
+    TYPOGRAPHIC CONVENTIONS.
+    CROSS-REFERENCES.
+    TEXT EXCLUSION/INCLUSION.
+    MODIFICATION MARKER.
+-->
+
+<!ENTITY % LINETXT "#PCDATA | BOLD | SHADING | EM |  STRIKE | UNDER | SUB | SUP |
+                     TEXTFRAC | STATREF | TERM | TERMREF | SEE |
+                     SEEALSO | EX | TEXT | MODIFY | EXPRDIV | EXPRERR" >
+
+<!--PARAMETER ENTITY: IN-LINE TEXT ELEMENTS + PARAGRAPH-BREAKING ELEMENTS.
+    TYPOGRAPHIC CONVENTIONS.
+    CROSS-REFERENCES.
+    TEXT EXCLUSION/INCLUSION.
+    MODIFICATION MARKER.
+    FORMULAS.
+    GRAPHIC PLACEHOLDERS.
+    ORDERED AND UNORDERED LISTS.
+    QUOTES AND EXCERPTS.
+    TABLES.
+    "WORDS AND PHRASES" TERM PARAGRAPHS.
+-->
+
+
+<!ENTITY % PARATXT "#PCDATA | BOLD | SHADING | EM |  STRIKE | UNDER | SUB | SUP |
+                     TEXTFRAC | EXPRDIV | EXPRERR |
+                     STATREF | TERM | TERMREF |
+                     EX | TEXT |
+                     MODIFY |
+                     DF |
+                     GRAPHIC |
+                     ITEM | LINE |
+                     ENDNOTE |
+                     TABLE | QUOTE" >
+
+
+<!--PARAMETER ENTITY: FORMULA AND FRACTION ELEMENTS.
+    TYPOGRAPHIC ELEMENTS.
+    FRACTION.
+    FENCED FRACTION.
+-->
+<!ENTITY % FRACTXT "#PCDATA | SUP | SUB | FRAC | FENCE" >
+
+
+<!-- A LEGISLATIVE DOCUMENT CAN CONTAIN A LAW OR A REGULATION  -->
+<!ELEMENT ROOT  (ACT|REG|ORDER|EXTRACT|PATCH)+  > <!--PLM 28/07/2003-->
+
+
+<!-- ELEMENT : LAW  -->
+<!ELEMENT ACT  (%everyshort; , (IDENTIFICATION, LEGIDDOC?, PREAMBLE?, (DIVHEADING|FLOATHEADING|SEC)*,
+                    EXTERNSCHEDULE*, CONTAINR*, NOTEFINLR?) , %everyshort;) >
+
+<!-- ABBREV IS A UNIQUE IDENTIFIER FOR THE LAW
+     EX: ABBREV = "LRQ[L-5.2][FR]"
+-->
+<!ATTLIST ACT
+               ABBREV    CDATA     #IMPLIED
+               LANGUAGE  (FR|EN)   #IMPLIED>
+
+<!-- ELEMENT : REGULATION -->
+<!ELEMENT REG  (IDENTIFICATION, LEGIDDOC? ,PREAMBLE?, (DIVHEADING|FLOATHEADING|SEC)*,
+                    EXTERNSCHEDULE*, CONTAINR*, NOTEFINLR?) >
+
+<!-- ABBREV IS A UNIQUE IDENTIFIER FOR THE REGULATION
+     EX: ABBREV = "RRQ[L-5.2R1][FR]" [TO BE DETERMINED....]
+-->
+
+<!ATTLIST REG
+               TYPE      (rules) #IMPLIED
+               ABBREV    CDATA     #IMPLIED
+               LABEL     CDATA   #IMPLIED
+               PROCLAIM  (yes | no) #IMPLIED
+               LANGUAGE  (FR|EN)   #IMPLIED      >
+
+<!-- ELEMENT : ORDER, ONLY FOR ORDER OF QU EC -->
+<!ELEMENT ORDER  (%everyshort; , (IDENTIFICATION, (P|PARA)*, SIGNATURE) , %everyshort; ) >
+
+<!-- ABBREV IS A UNIQUE IDENTIFIER FOR THE ORDER
+     EX: ABBREV = "DGQ[999-AAAA][FR]" [TO BE DETERMINED....]   QU EC
+
+-->
+
+<!ATTLIST ORDER
+               ABBREV    CDATA     #IMPLIED
+               LANGUAGE  (FR|EN)   #IMPLIED    >
+
+
+
+<!ELEMENT NOTEFINLR  ( %everylong; , (N?, TI?, (MARGINALNOTE?, P)+, STATHIST?) , %everylong;)>
+
+<!ATTLIST NOTEFINLR
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+<!--ELEMENT:  FOOTNOTE
+    CLASS:    STRUCPUB-->
+<!ELEMENT FOOTNOTE (N?, FREEFORM?) >
+
+<!ATTLIST FOOTNOTE
+          PRODUCT CDATA #IMPLIED   >
+
+<!ELEMENT EDITNOTE (FREEFORM) >
+
+<!ATTLIST EDITNOTE
+          PRODUCT CDATA #IMPLIED
+          OTHER   CDATA #IMPLIED >
+
+<!--ELEMENT:  PATCH
+    CLASS:    FUNCTION -->
+<!ELEMENT PATCH ANY  >
+
+<!ATTLIST PATCH
+     REASON CDATA #REQUIRED  >
+
+<!ELEMENT LEGIDDOC ( %everylong; , (CITE*, STATHIST?, FREEFORM?) , %everylong;)>
+
+<!ATTLIST LEGIDDOC
+          TIGRE           CDATA #IMPLIED
+          DOCUMENT        (yes | no)  #IMPLIED
+          ADDDATE         CDATA       #IMPLIED
+          LANG            (EN | FR)    #IMPLIED         
+          INITID          CDATA       #IMPLIED
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+
+<!--ELEMENT:  RUNNING HEAD
+    CLASS:    FUNCTION-->
+<!ELEMENT RUNNING (#PCDATA) >
+
+<!ATTLIST RUNNING
+          PLACE CDATA #IMPLIED >
+
+
+<!--ELEMENT:  PAGE FORMAT INFORMATION
+    CLASS:    FUNCTION-->
+
+<!ELEMENT FORMAT (RUNNING*) >
+
+
+<!--ELEMENT:  CONVENTION
+    CLASS:    STRUCLEG
+    COMMENTS: NOW A DOCUMENT-->
+
+<!ELEMENT CONVENT (N?, TI, (LONGTI?, CITE?, FREEFORM?),
+                      (P | SECP)*, (DIVHEADING|FLOATHEADING|SEC)*,
+                      (SCHEDULE | CONTAINR)*) >
+
+<!ATTLIST CONVENT
+                       DOCUMENT (yes | no)  #IMPLIED
+                       ADDDATE CDATA       #IMPLIED
+                       MODDATE CDATA       #IMPLIED
+                       LANG    (EN | FR)  #IMPLIED
+                       INITID  CDATA       #IMPLIED
+                       ABBREV CDATA #IMPLIED
+                                                        >
+
+
+<!-- ELEMENT : EXTRACT OF A LAW OR A REGULATION-->
+<!ELEMENT EXTRACT  ( %everylong; , (IDENTIFICATION,
+                       (PREAMBLE|DIVHEADING|FLOATHEADING|SEC|EXTERNSCHEDULE|CONTAINR)*)
+                                                                , %everylong;) >
+<!-- ABBREV IS A UNIQUE IDENTIFIER FOR THE EXTRACT
+     EX: ABBREV = "XLRQ[L-5.2][FR]"  QU EC
+         ABBREV = "XRRQ[L-5.2R1][FR]"  QU EC
+
+-->
+<!ATTLIST EXTRACT
+               ABBREV    CDATA     #IMPLIED
+               LANGUAGE  (FR|EN)   #IMPLIED      >
+
+
+<!-- ELEMENT : DEBUTBLOC  -->
+<!ELEMENT 	DEBUTBLOC 		(#PCDATA)>
+
+<!ATTLIST DEBUTBLOC
+       OUVRAGE    	CDATA     #IMPLIED
+       ENVOI    	CDATA     #IMPLIED
+       PAGECOURANTE    	CDATA     #IMPLIED
+       PAGEAVANT  	CDATA     #IMPLIED
+       CESURE		(OUI|NON)   "NON"   >
+
+<!-- ELEMENT : FINBLOC  -->
+<!ELEMENT 	FINBLOC 		(#PCDATA)>
+
+<!ATTLIST FINBLOC
+       OUVRAGE    	CDATA     #IMPLIED
+       ENVOI    	CDATA     #IMPLIED
+       PAGECOURANTE    	CDATA     #IMPLIED
+       PAGEAPRES  	CDATA     #IMPLIED
+       CESURE		(OUI|NON)   "NON"   >
+
+
+<!-- ELEMENT : IDENTIFICATION
+     REPRESENT THE WORDING OF THE LAW OR THE REGULATION.
+
+-->
+
+<!ELEMENT IDENTIFICATION  ( %everylong; , (VOLUME?, LONGTI, SHORTTI, ALPHA?, RELATEDSTATUTE*, MODIFNOTE?,
+                               READERNOTE?, STATHIST?) , %everylong;)>
+
+<!ATTLIST IDENTIFICATION
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+
+<!-- ELEMENT : ALPHA
+
+     THE ALPHA REPRESENTS THE ALPHA OF THE LAW
+     (EX: L-5.2).
+
+-->
+<!ELEMENT ALPHA  (#PCDATA) >
+
+<!-- ELEMENT : RELATEDSTATUTE
+
+     LAW(S) HABILITANTE(S)
+
+ -->
+<!ELEMENT RELATEDSTATUTE  (TI, CITE) >
+
+
+<!-- ELEMENT : VOLUME
+
+     TITLE OF THE PUBLICATION
+-->
+<!ELEMENT VOLUME  (%LINETXT;)* >
+
+<!-- ELEMENT : SHORTTI
+
+     SHORT TITLE OF PIECE OF LEGISLATION
+-->
+<!ELEMENT SHORTTI  (%LINETXT;)* >
+
+<!--ELEMENT: LONG TITLE OF PIECE OF LEGISLATION
+    CLASS:   GENPUB -->
+<!ELEMENT LONGTI   (%LINETXT;)* >
+
+<!-- ELEMENT : MODIFNOTE
+
+     TEXT OF MODIFICATION.
+-->
+<!ELEMENT MODIFNOTE  (PT | PARA | (MARGINALNOTE?, SECP))* >
+<!ATTLIST MODIFNOTE
+          TYPENOTE CDATA #IMPLIED >
+
+<!-- ELEMENT : MODIFTEXT
+
+     TEXT OF A MODIFICATION FOUND AT THE SECTION LEVEL,
+     OR A PARAGRAPH OR A SUB-PARAGRAPH.
+     USED TO SPECIFIED THAT A SECTION OR A PARAGRAPH
+     IS REPEALED, DELETED, ETC.
+-->
+<!ELEMENT MODIFTEXT  (%LINETXT;)* >
+
+<!-- ELEMENT : READERNOTE
+
+     NOTE TO READER USUALLY COMING FROM THE LEGISLATOR
+     
+-->
+<!ELEMENT READERNOTE  (PT | PARA | (MARGINALNOTE?, SECP))* >
+<!ATTLIST READERNOTE
+          TYPENOTE CDATA #IMPLIED >
+
+
+<!-- ELEMENT : PREAMBLE
+
+     REPRESENTS THE PREAMBLE OF PIECE OF LEGISLATION.
+
+-->
+<!ELEMENT PREAMBLE  ( N?, TI?, (MARGINALNOTE?, P)+, STATHIST?)>
+<!ATTLIST PREAMBLE
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+<!-- ELEMENT : FLOATHEADING
+
+     HEADING OF A FLOATHING TITLE. USUALLY IT IS A HEADING JUST ON TOP OF A SECTION.
+-->
+<!ELEMENT FLOATHEADING  ( %everylong; , ( N?, TI, SHORTTI?, MODIFNOTE?, STATHIST?) , %everylong; )>
+<!ATTLIST FLOATHEADING
+          STYLEAS         (PART|BOOK|TITLE|PRETITLE|
+                           CHAP|DIV|SDIV|
+                           SSDIV| SSSDIV|L1|L2|L3|L4) #IMPLIED
+          CARSWELLELEMENT CDATA                    #IMPLIED
+          LABEL           CDATA                    #IMPLIED
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+
+<!-- DEFINES A HEADING OF A MAJOR DIVISION OF A PIECE OF LEGISLATION.
+
+     THE MAJOR DIVISIONS ARE :
+       PARTIE, LIVRE, TITRE, CHAP, SECT, SSECT, SSSECT, SSSSECT
+
+     THE WAY IN WHICH THE MAJOR DIVISIONS APPEAR MUST ALWAYS FOLLOW THIS ORDER:
+
+        PARTIE, LIVRE, TITRE, CHAP, SECT, SSECT, SSSECT, SSSSECT
+       (PART  , BOOK , TITLE, CHAP, DIV , SDIV , SSDIV , SSSDIV)
+
+     A MAJOR DIVISION IS ALWAYS PART OF THE ELEMENTS UNDER THE CONTROL
+     OF VERSION IN THE SAME WAY AS FOR THE SECTIONS. A MAJOR DIVISION 
+     (ELEMENT DIVHEADING) WILL ALWAYS BE POSITIONED IN RELATION WITH 
+     A SECTION.
+
+     FOR EXAMPLE, WE WILL NAME THE DIVISION HEADING OF THE CHAPTER PRECEEDING
+     SECTION 24. THE ID FOR THIS ELEMENT WILL LOOK SOMETHING LIKE THIS:
+
+        ID = "LRQ[L-5.2][FR][DIVHEADING][CIII][24]"
+
+     THE ID COUPLED WITH THE INFORCE DATE (INFORCEDATE) WILL 
+     UNIQUELY IDENTIFY THE SGML FRAGMENT IN THE S.I.
+
+     ATTRIBUTS:
+        ID           : IDENTIFIER OF THE SGML FRAGMENT
+        TYPEDIV      : TYPE OF DIVISION
+        INFORCEDATE  : INFORCE DATE IN THE FOLLOWING FORMAT: YYYYMMDD.
+                       29990101 IS USED TO REPRESENT "NOT IN FORCE",  
+                       19000101 FOR AN UNKNOWN DATE.
+        MODDATE      : DATE OF MODIFICATION OF THE FRAGMENT.
+        NOSHIPPING   : SHIPPING NUMBER
+
+     NOTE : PTITLE IS USED IN THE PARTICULAR CASE OF A PRELIMINARY TITLE.
+-->
+
+<!ELEMENT DIVHEADING  ( %everylong; , ( N, TI, SHORTTI?, MODIFNOTE?, STATHIST?) , %everylong;) >
+<!ATTLIST DIVHEADING
+          TYPEDIV         (PART|BOOK|TITLE|PRETITLE|
+                           CHAP|DIV|SDIV|
+                           SSDIV| SSSDIV)          #IMPLIED
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+	        INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+
+<!-- DEFINES A SECTION OF A PIECE OF LEGISLATION.
+
+   NOTE: WE WILL USE TI TO SPECIFIED A TITLE ABOVE A PARAGRAPHE
+   				INSIDE A SECTION.
+
+         WE WILL USE THE ELEMENT MARGINALNOTE TO SPECIFY A MARGINAL NOTE.
+
+   REM : IN THE CARSWELL DTD THE ELEMENTS SSEC ET PARA REFER
+         TO PARAGRAPHS. FOR OUR NEEDS, WE CHOOSE TO USE ONLY 
+         THE  ELEMENT PARA TO DESIGNATE A PARAGRAPH.
+         THE ATTRIBUTE STYLENUM WILL TAKE THE VALUE OF N, A, OR R 
+         TO SPECIFY THE TYPE OF NUMBERING.
+
+   REM : IT IS POSSIBLE TO FIND AT THE END OF A SECTION A NOTE FROM THE LEGISLATOR.
+   			 FOR NOW WE WILL USE THE ELEMENT FREEFORM FOR THIS PURPOSE.
+
+-->
+<!ELEMENT SEC ( %everylong; , ( N,  MARGINALNOTE?,
+                   ( MODIFTEXT |
+                    (SECP, (FLOATTITLE?, MARGINALNOTE?, SECP)*) |
+                     PARA+
+                   ),
+                   STATHIST?, EXTRAREFS?, FREEFORM?, NDLR?) , %everylong;)>
+
+<!ATTLIST SEC
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED
+          LANG            CDATA                    #IMPLIED
+          ADDDATE         CDATA                    #IMPLIED              >
+
+
+
+<!-- DEFINES AN EXTERNAL REFERENCE TO A SCHEDULE OF A PIECE OF LEGISLATION.
+
+   NOTES:
+     O MAINLY USED FOR THE WEB DISTRIBUTION.
+     O ID IS THE UNIQUE IDENTIFIYER ALLOWING TO LOCATE THE EXTERNAL DOCUMENT.
+-->
+
+<!ELEMENT EXTERNSCHEDULE ( %everylong; , ( (TI, N?),  STATHIST?) , %everylong;)>
+<!ATTLIST EXTERNSCHEDULE
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+<!--ELEMENT:  CONTAINER
+    -->
+<!ELEMENT CONTAINR ( %everylong; , (( SCHEDULE | SCHEDDOC | FORM )* , NDLR?)  , %everylong;)>
+
+<!ATTLIST CONTAINR
+          LABEL CDATA #REQUIRED
+          ID              CDATA                    #IMPLIED
+          NEXTID          CDATA                	   #IMPLIED
+          PREVID          CDATA                	   #IMPLIED
+          INFORCEDATE     CDATA                    #IMPLIED
+          INFORCE         (O|V|F|FNK)              #IMPLIED
+          CORRECTIONDATE  CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          NOSHIPPING      CDATA                    #IMPLIED              >
+
+
+
+<!--ELEMENT:  LEGISLATIVE SCHEDULE DOCUMENT
+    CLASS:    STRUCLEG-->
+<!ELEMENT SCHEDDOC (N, TI?, STATREF?, FREEFORM, STATHIST?) >
+<!ATTLIST SCHEDDOC
+          ADDDATE         CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          LANG            CDATA                    #IMPLIED
+          LABEL           CDATA "Schedule" >
+
+
+<!ELEMENT SCHEDULE ( %everylong; , (N?, TI?, STATREF?, SECP?,
+                        ((DIVHEADING|FLOATHEADING|SEC)*|
+                          FREEFORM | FORM* | CONVENT*)*,
+                          STATHIST?) , %everylong;)>
+
+<!ATTLIST SCHEDULE
+          ADDDATE         CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          LANG            CDATA                    #IMPLIED
+          LABEL           CDATA "Schedule" >
+
+
+<!--ELEMENT:  QUOTED ANYTHING
+    CLASS:    STRUCLEG -->
+<!ELEMENT QUOTE ANY >
+
+<!ATTLIST QUOTE
+          ABBREV   CDATA   #IMPLIED  >
+
+<!--ELEMENT:  LEGISLATIVE FORM
+    CLASS:    STRUCLEG-->
+<!ELEMENT FORM (N?, TI?, STATREF?, FREEFORM?, STATHIST?) >
+<!ATTLIST FORM
+          ADDDATE         CDATA                    #IMPLIED
+          MODDATE         CDATA                    #IMPLIED
+          LANG            CDATA                    #IMPLIED
+          LABEL CDATA #IMPLIED >
+
+
+<!-- DEFINES A FLOATHING TITLE. USUALLY FIND INSIDE A SECTION.
+-->
+<!ELEMENT FLOATTITLE ( N?,  TI ) >
+<!ATTLIST FLOATTITLE
+          STYLEAS         (PART|BOOK|TITLE|PRETITLE|
+                           CHAP|DIV|SDIV|
+                           SSDIV| SSSDIV|L1|L2|L3)          #IMPLIED >
+
+<!--ELEMENT:  LEGISLATIVE SECTION PARAGRAPH
+    CLASS:    STRUCLEG -->
+<!ELEMENT SECP  (PT | PARA | DEF | EYBLINK )* >
+
+<!--ELEMENT: LEGISLATIVE PARAGRAPH LEVEL
+    CLASS:   STRUCLEG -->
+<!ELEMENT PARA (FLOATTITLE?, N, MARGINALNOTE?, (MODIFTEXT| PARAP+ | SPARA+)) >
+
+<!ATTLIST PARA
+          STYLENUM  (N|NP|A|R|P)    #IMPLIED >
+
+
+<!--ELEMENT:  LEGISLATIVE SUBPARAGRAPH
+    CLASS:    STRUCLEG -->
+<!ELEMENT SPARA (FLOATTITLE?, N, MARGINALNOTE?, (MODIFTEXT | SPARAP+ | SPARA+)) >
+
+<!ATTLIST SPARA
+          STYLENUM  (N|NP|A|R|P)    #IMPLIED >
+
+
+<!--ELEMENT:  LEGISLATIVE PARAGRAPH LEVEL TEXT
+    CLASS:    STRUCLEG -->
+<!ELEMENT PARAP (PT | P | SPARA | DEF)* >
+
+
+<!--ELEMENT:  LEGISLATIVE SUBPARAGRAPH LEVEL TEXT
+    CLASS:    STRUCLEG -->
+<!ELEMENT SPARAP (PT | P | SPARA | DEF)* >
+
+
+<!--ELEMENT:  DEFINITION OF TERM
+    CLASS:    STRUCLEG-->
+<!ELEMENT DEF (FLOATTITLE?, DEFP+, STATHIST?) >
+
+
+<!ATTLIST DEF
+          PRODUCT CDATA #IMPLIED
+          SYNC    CDATA #IMPLIED >
+
+<!ELEMENT DEFP (PT | P | PARA)* >
+
+
+<!ELEMENT MARGINALNOTE    (%LINETXT;)* >
+
+
+<!--ELEMENT: NUMBER
+    CLASS:   IDENT -->
+<!ELEMENT N (%LINETXT;)* >
+
+<!--ELEMENT:  PT
+    CLASS:    GENPUB
+
+    PREFIX ATTRIBUTE ALLOW TO SPECIFY IF THE PT IS PREFIXED BY A MDASH, NDASH, ...
+-->
+<!ELEMENT PT (%PARATXT;)*  >
+
+<!ATTLIST PT
+          PREFIX  (mdash | ndash) #IMPLIED >
+
+
+<!--ELEMENT:  TITLE
+    CLASS:    GENPUB
+
+    THE ATTRIBUTE STYLE WILL ALLOW TO HAVE A DIFFERENT RENDERING DEPENDING ON ITS VALUE (TO DETERMINED!).
+-->
+<!ELEMENT TI (%LINETXT;)*  >
+
+<!ATTLIST TI
+          PRODUCT CDATA #IMPLIED
+          SHORT   CDATA #IMPLIED
+          STYLE   CDATA #IMPLIED >
+
+<!--ELEMENT:   STATUTE DISPOSITION
+    CLASS:     GENLEG -->
+<!ELEMENT STATDISP  (#PCDATA)  >
+
+
+<!--ELEMENT:  CITATION
+    CLASS  :  IDENT-->
+<!ELEMENT CITE (%LINETXT;)* >
+
+<!ATTLIST CITE
+          PRODUCT CDATA #IMPLIED
+          TYPE (reported | unrep | electrc | digest | issue | tracking | neutral)
+                        #IMPLIED
+          INDEX   CDATA #IMPLIED
+          CITENUM CDATA #IMPLIED
+          VIEWS   CDATA #IMPLIED
+          DB-YEAR        CDATA                     #IMPLIED
+          DB-VOL         CDATA                     #IMPLIED
+          DB-REPCODE     CDATA                     #IMPLIED
+          DB-PAGE        CDATA                     #IMPLIED>
+
+<!--ELEMENT:  REFERENCE NUMBER LEVEL 0
+    CLASS:    GENPUB -->
+<!ELEMENT REFN (%LINETXT;)* >
+
+<!ATTLIST REFN
+          TYPE   (page) #IMPLIED
+          PREFIX CDATA  #IMPLIED  >
+
+
+<!--ELEMENT:  STATUTE REFERENCE
+    CLASS:    STRUCLEG -->
+<!ELEMENT STATREF ((TI?, CITE?)*, (REFN*))  >
+<!ATTLIST STATREF
+          MODLINK   CDATA #IMPLIED
+          LABEL   CDATA #IMPLIED
+          PRODUCT CDATA #IMPLIED  >
+
+<!--ELEMENT:  HISTORY OF THAT PIECE OF LEGISLATION
+    CLASS:    GENLEG -->
+<!ELEMENT STATHIST  (STATDISP?, STATREF+) >
+
+<!ATTLIST STATHIST
+          VIEWS CDATA   #IMPLIED
+          PRODUCT CDATA #IMPLIED >
+
+
+<!--ELEMENT:  ELEMENT USED TO SPECIFY THE "EXTRA" REFERENCES AFTER 
+							THE LEGISLATIVE HISTORY OF A SECTION.
+    CLASS:    GENLEG -->
+<!ELEMENT EXTRAREFS        (EXTRASTATREFS) >
+
+<!--ELEMENT:  REFERENCES RELATED TO THE LEGISLATIVE DOCUMENT IN THE ELEMENT EXTRAREFS.
+    CLASS:    GENLEG -->
+<!ELEMENT EXTRASTATREFS    (EXTRASTAT)+ >
+
+<!--ELEMENT:  SPECIFIC REFERENCE OF A LEGISLATIVE DOCUMENT.
+    CLASS:    GENLEG -->
+<!ELEMENT EXTRASTAT        (EXTRASTATNAME, EXTRASECREF+) >
+
+<!-- ID REFERS TO A UNIQUE ID OF THE LEGISLATIVE DOCUMENT. (TO BE DETERMINED) -->
+<!ATTLIST EXTRASTAT
+          ID      CDATA   #IMPLIED >
+
+<!--ELEMENT:  NAME OF THE LEGISLATIVE DOCUMENT TO BE DISPLAY.
+    CLASS:    GENLEG -->
+<!ELEMENT EXTRASTATNAME    (#PCDATA)  >
+
+<!--ELEMENT:  SECTION OF A LEGISLATIVE DOCUMENT.
+    CLASS:    GENLEG -->
+<!ELEMENT EXTRASECREF      (#PCDATA)  >
+<!-- ID REFERS TO A SECTION NUMBER -->
+<!ATTLIST EXTRASECREF
+          ID      CDATA   #IMPLIED
+          TYPE    (L | C) #IMPLIED >
+
+<!--ELEMENT:  SIGNATURE (ORDER)
+
+   SIGNATURE AT THE BOTTOM OF AN ORDER
+   
+ -->
+<!ELEMENT SIGNATURE      (P*, NAME, GONUM)   >
+<!ELEMENT NAME      (#PCDATA)  >
+<!ELEMENT GONUM      (#PCDATA)  >
+
+
+
+<!-- ===================================================================== -->
+<!-- ELEMENTS PART OF THE ENTITY LINETXT                            -->
+<!-- ===================================================================== -->
+
+<!--ELEMENT:  BOLD EMPHASIS, AS SPECIFIED BY A DECIDER IN A QUOTE.
+    CLASS:    GENLEG.
+    COMMENTS: -->
+<!ELEMENT BOLD (%LINETXT;)* >
+
+<!--ELEMENT:  SHADING EMPHASIS, AS SPECIFIED BY A DECIDER IN A QUOTE.
+    CLASS:    GENLEG.
+    COMMENTS: -->
+<!ELEMENT SHADING (%LINETXT;)* >
+
+<!--ELEMENT:  IN-LINE EMPHASIS
+    CLASS:    TYPOG-->
+<!ELEMENT EM (%LINETXT;)* >
+
+<!--ELEMENT:  STRIKEOVER TEXT
+    CLASS:    TYPOG-->
+<!ELEMENT STRIKE (%LINETXT;)*  >
+
+<!--ELEMENT:  UNDERLINE EMPHASIS, AS SPECIFIED BY A DECIDER IN A QUOTE.
+    CLASS:    GENLEG -->
+<!ELEMENT UNDER (%LINETXT;)* >
+
+<!--ELEMENT:  SUBSCRIPT TEXT
+    CLASS:    TYPOG-->
+<!ELEMENT SUB (%LINETXT;)* >
+
+<!--ELEMENT:  SUPERSCRIPT TEXT
+    CLASS:    TYPOG -->
+<!ELEMENT SUP (%LINETXT;)* >
+
+<!--ELEMENT:  IN-LINE TEXT FRACTION (AS OPPOSED TO STRUTURAL FRAC)
+    CLASS:    TYPOG -->
+<!ELEMENT TEXTFRAC (%LINETXT;)*  >
+
+<!--ELEMENT:  DEFINED TERM IN LEGISLATION OR CASE LAW
+    CLASS:    GENPUB -->
+<!ELEMENT TERM (%LINETXT;)* >
+
+<!--ELEMENT: REFERENCE TO OTHER LANGUAGE OF DEFINED TERM
+    CLASS:   GENLEG -->
+<!ELEMENT TERMREF (%LINETXT;)* >
+
+<!--ELEMENT:  SEE REFERENCE
+    CLASS:    GENPUB -->
+<!ELEMENT SEE (%LINETXT;)* >
+
+<!--ELEMENT:  SEE ALSO REFERENCE
+    CLASS:    PRODSPEC -->
+<!ELEMENT SEEALSO (%LINETXT;)* >
+
+<!ATTLIST SEEALSO
+          PRODUCT CDATA #IMPLIED   >
+
+<!--ELEMENT:  EXTRA TEXT
+    CLASS:    FUNCTION-->
+<!ELEMENT EX (%LINETXT;)* >
+
+<!--ELEMENT:  IN-LINE TEXT
+    CLASS:    PRODSPEC-->
+<!ELEMENT TEXT (%LINETXT;)* >
+
+<!--ELEMENT:  MODIFICATION MARKER
+    CLASS:    FUNCTION -->
+<!ELEMENT MODIFY (#PCDATA) >
+
+<!ATTLIST MODIFY
+          ADDDATE CDATA #REQUIRED >
+
+<!--ELEMENT:  ELEMENT USED TO SPECIFY THAT THE EXPRESSION IS DIVERGENT.
+    CLASS:    -->
+<!ELEMENT EXPRDIV (%LINETXT;)* >
+
+<!--ELEMENT:  ELEMENT USED TO SPECIFY THAT THE EXPRESSION IS A MISTAKE.
+    CLASS:    -->
+<!ELEMENT EXPRERR (%LINETXT;)* >
+
+
+<!-- ============      FREEFORM TEXT           ============ -->
+
+<!--ELEMENT:  FREEFORM TEXT
+    CLASS:    STRUCPUB-->
+<!ELEMENT FREEFORM (P*, BLOCK2*, BLOCK1*, BLOCK0*) >
+
+<!ATTLIST FREEFORM
+          PRODUCT CDATA #IMPLIED   >
+
+
+<!--ELEMENT:  BLOCK LEVEL 0 (TOP LEVEL).
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE. -->
+<!ELEMENT BLOCK0 (N?, TI?, P*, BLOCK2*, BLOCK1*)>
+
+<!ATTLIST BLOCK0
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 1.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE. -->
+<!ELEMENT BLOCK1 (N?, TI?, P*, BLOCK2*)>
+
+<!ATTLIST BLOCK1
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 2.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE. -->
+<!ELEMENT BLOCK2 (N?, TI?, P*, BLOCK3*)>
+
+<!ATTLIST BLOCK2
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 3.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE. -->
+<!ELEMENT BLOCK3 (N?, TI?, P*, BLOCK4*)>
+
+<!ATTLIST BLOCK3
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 4.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE.
+              ATTRIBUTE VIEWS FOR DECISION HEADNOTES. -->
+<!ELEMENT BLOCK4 (N?, TI?, P*, BLOCK5*) >
+
+<!ATTLIST BLOCK4
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 5.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE.-->
+<!ELEMENT BLOCK5 (N?, TI?, P*, BLOCK6*)>
+
+<!ATTLIST BLOCK5
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 6.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE.-->
+<!ELEMENT BLOCK6 (N?, TI?, P*, BLOCK7*)>
+
+<!ATTLIST BLOCK6
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 7.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE.-->
+<!ELEMENT BLOCK7 (N?, TI?, P*, BLOCK8*) >
+
+<!ATTLIST BLOCK7
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 8.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE.-->
+<!ELEMENT BLOCK8 (N?, TI?, P*, BLOCK9*) >
+
+<!ATTLIST BLOCK8
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  BLOCK LEVEL 9.
+    CLASS:    STRUCPUB.
+    COMMENTS: I DON'T THINK DOCP SHOULD BE ALLOWED HERE.-->
+<!ELEMENT BLOCK9 (N?, TI?, P*)>
+
+<!ATTLIST BLOCK9
+          LABEL CDATA #IMPLIED >
+
+<!--ELEMENT:  PARAGRAPH LEVEL 0
+    CLASS:    STRUCPUB -->
+<!ELEMENT P ( (N?, PT) | P1)* > <!--PLM 28/07/2003-->
+
+<!ATTLIST P
+          CARSWELLELEMENT CDATA #IMPLIED 
+          VIEWS CDATA #IMPLIED
+          SYNC  CDATA #IMPLIED  > <!--PLM 28/07/2003-->
+
+<!--ELEMENT:  PARAGRAPH LEVEL 1
+    CLASS:    STRUCPUB -->
+<!ELEMENT P1 ( PT | P2)* >
+
+<!--ELEMENT:  PARAGRAPH LEVEL 2
+    CLASS:    STRUCPUB -->
+<!ELEMENT P2 (PT | P3)* >
+
+<!--ELEMENT:  PARAGRAPH LEVEL 3
+    CLASS:    STRUCPUB -->
+<!ELEMENT P3 (PT | P4)* >
+
+<!--ELEMENT:  PARAGRAPH LEVEL 4
+    CLASS:    STRUCPUB -->
+<!ELEMENT P4 (PT | P5)* >
+
+<!--ELEMENT:  PARAGRAPH LEVEL 5
+    CLASS:    STRUCPUB -->
+<!ELEMENT P5 (PT | P6)* >
+
+<!--ELEMENT:   PARAGRAPH LEVEL 6
+    CLASS:     STRUCPUB -->
+<!ELEMENT P6 (PT)*  >
+
+
+<!--ELEMENT: ITEMIZED ENTRY IN A LIST
+    CLASS:   STRUCPUB -->
+<!ELEMENT ITEM (N?, P+) >
+
+<!ATTLIST ITEM
+          SYNC  CDATA #IMPLIED
+          VIEWS CDATA #IMPLIED  >
+
+<!--ELEMENT:  UNITEMIZED ENTRY, LEVEL 0, IN A LIST
+    CLASS:    STRUCPUB -->
+<!ELEMENT LINE (%LINETXT; | LINE1)* >
+
+<!--ELEMENT:  UNITEMIZED ENTRY, LEVEL 1, IN A LIST
+    CLASS:    STRUCPUB -->
+<!ELEMENT LINE1 (%LINETXT; | LINE2)* >
+
+<!--ELEMENT:  UNITEMIZED ENTRY, LEVEL 2, IN A LIST
+    CLASS:   STRUCPUB -->
+<!ELEMENT LINE2 (%LINETXT;)* >
+
+<!--ELEMENT:  END NOTE
+    CLASS:    STRUCPUB-->
+<!ELEMENT ENDNOTE (N?, P+) >
+
+
+<!-- ============         TABULAR STRUCTURES              ============ -->
+
+<!--ELEMENT:  ASCII/MONOSPACE TABLE.
+    CLASS:    GENPUB.
+    COMMENTS: NEEDED FOR FOLIO 3.1.-->
+<!ELEMENT ASCIITBL (#PCDATA) >
+
+
+<!--ELEMENT:  SGML TABLE
+    CLASS:    STRUCPUB -->
+<!ELEMENT SGMLTBL ((TBLHEAD?, TBLBODY)+) >
+
+<!ATTLIST SGMLTBL
+          REDUCED (YES | NO)            #IMPLIED
+          ORIENT  (PORTRAIT | LANDSCAP) #IMPLIED  >
+
+<!--ELEMENT:  TABULAR TEXT
+    CLASS:    STRUCPUB
+    COMMENTS: NOTE TBLNOTES BELONG TO TABLE-->
+<!ELEMENT TABLE (ASCIITBL?, SGMLTBL?, TBLNOTES?) >
+
+<!--ELEMENT:  TABLE BODY
+    CLASS:    GENPUB-->
+<!ELEMENT TBLBODY (TBLCDEFS, TBLROWS) >
+
+<!ATTLIST TBLBODY
+          TBLWD CDATA #IMPLIED  >
+
+<!--ELEMENT:  TABLE COLUMN DEFINITION
+    CLASS:    GENPUB-->
+<!ELEMENT TBLCDEF (DUMMY?) >
+
+<!ATTLIST TBLCDEF
+          HALIGN   (LEFT  | CENTER | RIGHT | CHAR | BOTH) #IMPLIED
+          COLWD     CDATA                      #IMPLIED
+          COLSEP   (VDOT | VSINGLE)             #IMPLIED
+          TBLUNITS (PERCENT)                   #FIXED "PERCENT"
+          TOPSEP   (HDOT | HSINGLE | HDOUBLE)    #IMPLIED
+          ALIGNCHR  CDATA                      #IMPLIED >
+
+<!--ELEMENT:  CONTAINER FOR TABLE COLUMN DEFINITIONS
+    CLASS:    GENPUB-->
+<!ELEMENT TBLCDEFS (TBLCDEF+) >
+
+
+<!ATTLIST TBLCDEFS
+          COLSEP   (VDOT | VSINGLE)             "VDOT"
+          HALIGN   (LEFT | CENTER | RIGHT | CHAR) #IMPLIED
+          ALIGNCHR  CDATA                      #IMPLIED
+          CHARPOS   CDATA                      #FIXED "75%"
+          COLWD     CDATA                      #IMPLIED
+          TBLUNITS (PERCENT)                   #FIXED "PERCENT"
+          TOPSEP   (HDOT | HSINGLE | HDOUBLE)    "HDOT"  >
+
+
+<!--ELEMENT:  TABLE CELL
+    CLASS:    GENPUB-->
+<!ELEMENT TBLCELL (%LINETXT; | FRAC)*  >
+
+<!ATTLIST TBLCELL
+          ROWSEP  (HDOT | HSINGLE | HDOUBLE)    #IMPLIED
+          VALIGN  (TOP | BOTTOM | MIDDLE)       #IMPLIED
+          COLSTART CDATA                    #IMPLIED
+          COLSPAN  CDATA                     "1"
+          ROWSTART CDATA                     #IMPLIED
+          HALIGN  (LEFT | CENTER | RIGHT | CHAR) #IMPLIED
+          COLSEP  (VDOT | VSINGLE)             #IMPLIED >
+
+
+<!--ELEMENT:  TABLE HEAD
+    CLASS:    GENPUB-->
+<!ELEMENT TBLHEAD (TBLCDEFS,  TBLROWS) >
+
+<!ATTLIST TBLHEAD
+          TBLWD CDATA #IMPLIED >
+
+<!--ELEMENT:  TABLE NOTE
+    CLASS:   STRUCPUB -->
+<!ELEMENT TBLNOTE (N?, P+) >
+
+<!--ELEMENT:  CONTAINER FOR TABLE NOTES
+    CLASS:    STRUCPUB -->
+<!ELEMENT TBLNOTES (TBLNOTE*) >
+
+<!ATTLIST TBLNOTES
+          LABEL CDATA #IMPLIED  >
+
+<!--ELEMENT:  TABLE ROW
+    CLASS:    GENPUB-->
+<!ELEMENT TBLROW (TBLCELL*) >
+
+<!ATTLIST TBLROW
+          ROWSEP  (HDOT | HSINGLE | HDOUBLE) #IMPLIED
+          VALIGN  (TOP | BOTTOM | MIDDLE)    #IMPLIED
+          LEFTSEP (VDOT | VSINGLE)          #IMPLIED >
+
+<!--ELEMENT:  CONTAINER FOR TABLE ROWS
+    CLASS:    GENPUB-->
+<!ELEMENT TBLROWS (TBLROW+) >
+
+<!ATTLIST TBLROWS
+          ROWSEP  (HDOT | HSINGLE | HDOUBLE) "HDOT"
+          VALIGN  (TOP | BOTTOM | MIDDLE)    "TOP"
+          LEFTSEP (VDOT | VSINGLE)          "VDOT" >
+
+
+<!-- ============      GRAPHICS                ============ -->
+
+<!--ELEMENT:  NON-SGML GRAPHIC
+    CLASS:    NON-TEXT -->
+<!ELEMENT GRAPHIC (N?, TI?, LINKTEXT?) >
+
+<!ATTLIST GRAPHIC
+          FILENAME CDATA #IMPLIED
+          LABEL    CDATA #IMPLIED
+          SIZE     CDATA "full" >
+
+<!--ELEMENT:  LINKING TEXT FOR FOLIO
+    CLASS:    FUNCTION-->
+<!ELEMENT LINKTEXT (#PCDATA) >
+
+
+
+<!-- ============      MATH                    ============ -->
+
+<!--ELEMENT:  DISPLAY FORMULA
+    CLASS:    GENLEG-->
+<!ELEMENT DF (%FRACTXT;)* >
+
+<!--ELEMENT:  FORMULA FRACTION
+    CLASS:    MATH-->
+<!ELEMENT FRAC (NUMER, OVER) >
+
+<!--ELEMENT:  FENCED FORMULA
+    CLASS:    MATH-->
+<!ELEMENT FENCE (%FRACTXT;)* >
+        
+<!ATTLIST FENCE
+          TYPE (paren | bracket | PAREN | BRACKET) "PAREN" >           
+
+<!--ELEMENT:  NUMERATOR
+    CLASS:    MATH -->
+<!ELEMENT NUMER (%FRACTXT;)* >
+
+<!--ELEMENT:  DENOMINATOR
+    CLASS:    MATH -->
+<!ELEMENT OVER (%FRACTXT;)* >
+
+<!-- =============    NDLR   =============== -->
+<!ELEMENT NDLR (N+, SECP+) >
+
+<!-- =============    EYBLINK   =============== -->
+<!ELEMENT EYBLINK (DUMMY?) >
+
+<!ATTLIST EYBLINK
+          TYPE      (CM | OTHER)  "CM"
+          SEG_ID    CDATA #IMPLIED >
+
+<!-- =============    DUMMY   =============== -->
+<!ELEMENT DUMMY  EMPTY >          

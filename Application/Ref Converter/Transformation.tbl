@@ -1,0 +1,11 @@
+subject_area	subject_area	subject_area
+note	note	note
+court	court	court
+case_name	case_name	case_name
+docket_number	docket_number	docket_number
+date type="submitted"	date_submitted	date
+date type="decided"	date_decided	date
+prior_history	prior_history	prior_history
+counsel	counsel	counsel
+judge	judge	judge
+section	section	section

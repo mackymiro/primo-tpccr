@@ -1,0 +1,7 @@
+Main Tag   |First Tag    |Condition | Second Tag  |Error Message
+page       |start        | =<       | end         |E / start tag should less than or equal to end tag.
+illus_page |start        | =<       | end         |E / start tag should less than or equal to end tag.
+
+
+::NOTE::
+All columns must be filled-up

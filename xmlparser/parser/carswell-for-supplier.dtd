@@ -1,0 +1,2034 @@
+<!-- PUBLIC "-//Carswell//DTD Carswell//EN" -->
+<!--=======================================================================
+    rev. 4.4           C A R S W E L L     D T D     
+    =======================================================================-->
+<!-- 
+ 1 Oct 2013 - tocid to ti; position to tngroup; to match carswell.dtd
+ 16 Aug 2013 4.3 - nrm Sync fillablegraphic attributes
+ 29 Jan 2013 4.2 - nrm Sync fillablegraphic attributes
+ 15 Jan 2013 - addition of internallink (reconciliation with carswell.dtd in progress) 
+ 25 Sep 2012 4.0 - nrm fixed the DTD with existing error (Change 9804131211 kelly 980413added 
+ adddate and moddate; may replace these attributes on document-level elements)
+ 20 Sep 2012 - nrm IM3787192 - Urgent ticket
+ 22 Feb 2012 - nrm
+     added docwrapper, classact, tocblock, tocblockti, issueinfo, doctoc, tocp, toclink for SE01-12
+     for legcon and lop project, essay cleanup project etc KG -->
+<!-- last updated Sept 20 2007 KG-->
+
+<!ENTITY % car.ent PUBLIC "-//Carswell//ENTITIES Carswell//EN">
+%car.ent;
+
+<!ENTITY % linetxt "((#PCDATA) | bold | em |  strike | under | sub | sup | 
+                     textfrac | caseref | statref | term | termref | see | 
+                     seealso | condtext | ex | text | modify | link | internallink)" >
+
+<!ENTITY % paratxt "((#PCDATA) | bold | em |  strike | under | sub | sup | 
+                     textfrac |
+                     caseref | statref | term | termref | see | seealso |
+                     condtext | ex | text |
+                     modify |
+                     df |
+                     graphic | fillablegraphic | link | internallink |                    
+                     item | line |
+                     endnote |
+                     quote | excerpt |
+                     table |
+                     termp )" >     
+
+<!ENTITY % fractxt "(#PCDATA) | sup | sub | frac | fence" >
+
+<!ENTITY % celltxt "((%linetxt;) | graphic | fillablegraphic | frac |
+                     author | surti | ti | subti | longti)" > 
+
+<!ENTITY % product "product CDATA #IMPLIED">
+
+<!ENTITY % sync "sync CDATA #IMPLIED">
+
+<!ENTITY % tigre "tigre CDATA #IMPLIED">
+
+<!ENTITY % decprop     "adddate CDATA #IMPLIED
+                        moddate CDATA #IMPLIED">  
+
+<!ENTITY % docprop    "document (yes | no)  #IMPLIED
+                       adddate CDATA       #IMPLIED
+                       moddate CDATA       #IMPLIED 
+                       lang    (en | fr)    'en'
+                       initid  CDATA       #IMPLIED"   >
+
+<!ELEMENT root - - ( (( freeform |
+                     act | reg | remision | misclaw | convent |
+                     book | part | div |
+                     legiddoc | sec | form | article | class | scheddoc |
+                     decision | courtfil | casedige | sagdige |
+                     essay | comment | casesdoc | appendoc | docp| 
+                     preceden |
+                     flentry | docwrapper |
+                     polidoc |
+                     tngroup |
+                     bookiden | copyrigh | frontdoc | toc |
+                     index | lrindex |
+                     xrefdoc |
+                     oDocPack | 
+                     decdummy | abdigest | ruling | bcmvd | 
+                     cmsset | termp |
+                     keysubj | keyxref)* ,
+                     (bookpart | frontmat | backmat | 
+                     datapool | hub1 | root | glue)*))
+      +(patch, editnote, footnote, quote, proposed, glue)>
+
+
+<!-- ============   Document container:
+                      chapters in a book,
+                      Folio and On-line Table of Contents  ============ -->
+
+<!ELEMENT bookpart - - (format? ,
+                        n?, ti?, subti*,
+                       (toc | frontdoc | 
+                        freeform |
+                        polidoc | form |
+                        decision | decdummy | ruling | essay | courtfil |
+                        tngroup | termp |
+                        xrefdoc |
+                        abdigest | casedige | bcmvd | sagdige |
+                        flentry |
+                        comment | casesdoc | docp | preceden | appendoc |
+                        lrindex | index | 
+                        keysubj | keyxref |  
+                        oDocPack)*,
+     (root | bookpart | act | reg | convent | remision | misclaw)*) >
+
+<!ATTLIST bookpart
+          abbrev   CDATA #IMPLIED
+          label    CDATA #IMPLIED
+          views    CDATA #IMPLIED
+          fulln    CDATA #IMPLIED
+          bookmark CDATA #IMPLIED >
+
+
+<!-- ============         Case Law Decisions               ============ -->
+
+
+
+<!ELEMENT decision - - (view*, ident, summarym, 
+                       (opinion | appendix | statedis | solrecs | caseanno |
+                        identbit | summabit)*) >
+<!ATTLIST decision  
+          tigre   CDATA     #IMPLIED  
+          ccdbnum CDATA     #IMPLIED 
+          decinum CDATA     #IMPLIED 
+          %docprop;
+          trackid CDATA     #IMPLIED 
+          DB-PGNUM        CDATA           #IMPLIED>
+
+
+<!ELEMENT view - - EMPTY >
+<!ATTLIST view  
+          name   CDATA #REQUIRED 
+          number CDATA #REQUIRED >
+
+
+<!ELEMENT ident - - (clicsoc, socs, statref*, cite?, correlas, othlang?,
+                     digcites?, digcite* ,
+                     courtjur, jurisdic? ,
+                     decider, dateblk, year?, docket?, relaproc?, casehsts,
+                     counsels, length?, refn?, modify?) >
+<!ATTLIST ident 
+          sync    CDATA #IMPLIED
+          adddate CDATA #IMPLIED >
+
+<!ELEMENT identbit - - (date | judgdate | heardate | causdate | courtjur |
+                        jurisdic | decider | docket | casehist | counsels)* >
+
+
+<!ELEMENT summabit - - (subject | caption | headnote | reflist | caseanno | 
+                        casecomm | statepro | intromat)*  >
+
+
+<!ELEMENT summarym - - (subject*, (caption | headnote | caseanno | reflist | 
+                                   casesumm | text)*, 
+                         casecomm*, statepro*, intromat?) >
+
+
+
+<!ELEMENT classif - - (#PCDATA) >
+<!ATTLIST classif
+          index CDATA #IMPLIED >
+
+
+<!ELEMENT classifn - - (#PCDATA) >
+<!ATTLIST classifn
+          type (canrep | abr | pid | crim) #IMPLIED
+          index  CDATA                     #IMPLIED  
+          prefix CDATA                     #IMPLIED >
+
+
+<!ELEMENT clicsoc - - (%linetxt;)* >
+<!ATTLIST clicsoc
+          short CDATA #IMPLIED >
+
+
+
+<!ELEMENT soc - - (%linetxt;)* >
+<!ATTLIST soc      
+          type (full | partial) #IMPLIED >
+
+
+<!ELEMENT socs - - (soc*) >
+
+
+<!ELEMENT solrec - - (%linetxt;)* >
+
+
+<!ELEMENT solrecs - - (solrec*)  >
+
+
+
+<!ELEMENT correlas - - (correlat*) >
+
+
+<!ELEMENT correlat - - (soc?, cite, pagenum?, paranum?) >
+
+
+<!ELEMENT counsel - - (%linetxt;)* >
+<!ATTLIST counsel  
+     label CDATA #IMPLIED   >
+
+
+<!ELEMENT counsels - - (counsel*) >
+<!ATTLIST counsels  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT courtfil - - (n, ti, freeform, appendix*) >
+<!ATTLIST courtfil 
+          %docprop;
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT courtjur - - (#PCDATA) >
+<!ATTLIST courtjur  
+          index   CDATA #IMPLIED 
+          altform CDATA #IMPLIED
+          DB-COURTCODE    CDATA     #IMPLIED>
+
+
+
+<!ELEMENT decider - - (#PCDATA | sup)* >
+<!ATTLIST decider  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT cite - - (%linetxt;)* >
+<!ATTLIST cite
+          product CDATA #IMPLIED
+          type (reported | unrep | electrc | digest | issue | 
+                tracking | neutral) #IMPLIED
+          index   CDATA #IMPLIED
+          citenum CDATA #IMPLIED
+          views   CDATA #IMPLIED 
+          DB-YEAR        CDATA                     #IMPLIED
+          DB-VOl         CDATA                     #IMPLIED
+          DB-REPCODE     CDATA                     #IMPLIED
+          DB-PAGE        CDATA                     #IMPLIED>
+
+
+
+
+<!ELEMENT othlang - - ((#PCDATA) | caseref)* >
+
+
+<!ELEMENT judgdate - - (%linetxt;)* >
+<!ATTLIST judgdate  
+          type     (oral | written) #IMPLIED 
+          yyyymmdd CDATA           #IMPLIED  
+          label    CDATA           #IMPLIED  
+          index    CDATA           #IMPLIED >
+
+
+<!ELEMENT causdate - - (%linetxt;)* >
+<!ATTLIST causdate 
+          label CDATA #IMPLIED >
+
+
+
+<!ELEMENT jurisdic - - (%linetxt;)* >
+<!ATTLIST jurisdic  
+          label CDATA #IMPLIED
+          DB-JURCODE      CDATA                  #IMPLIED >
+
+
+
+<!ELEMENT digcite - - (#PCDATA) >
+<!ATTLIST digcite  
+          views CDATA #IMPLIED  
+          index CDATA #IMPLIED >
+
+
+<!ELEMENT digcites - - (digcite*) >
+
+
+<!ELEMENT dateblk - - (judgdate | heardate | causdate | date)* >
+
+
+<!ELEMENT date - - (#PCDATA) >
+<!ATTLIST date  
+          yyyymmdd CDATA #IMPLIED
+          label    CDATA #IMPLIED 
+          DB-TYPE      CDATA                        #IMPLIED
+          DB-DESC      CDATA                        #IMPLIED>
+
+
+
+
+<!ELEMENT headnblk - - (freeform) >
+
+
+<!ELEMENT headnote - - (headnblk? | (fact*, held*, reason*)) >
+<!ATTLIST headnote  
+          type (full | digest)  #IMPLIED
+          views CDATA          #IMPLIED  
+          lang (en | fr)       #IMPLIED >
+
+
+<!ELEMENT fact - - (p*, block4*) >
+<!ATTLIST fact  
+          views CDATA #IMPLIED  >
+
+
+<!ELEMENT held - - (p*) >
+<!ATTLIST held  
+          views CDATA #IMPLIED  
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT reason - - (p*, block4*)  >
+<!ATTLIST reason 
+          views CDATA #IMPLIED  >
+
+
+
+<!ELEMENT reflist - - (freeform) >
+<!ATTLIST reflist  
+          type (statutes | rules | regs | treaties | tariffs | authorit | 
+                cases | words | forms | rulings | policies) #IMPLIED 
+          lang (en | fr)                                #IMPLIED  >
+
+
+
+<!ELEMENT termp   - - (((term, (termalt* | seealso*),
+                          (
+                          (jurisdic, quote, subjtitl+, caseref*, decider) |
+                          (quote, subjtitl*, caseref?, decider?) | (caseref)
+                          )
+                          ) |
+                          (jurisdic?, quote, subjtitl+, caseref, decider))) >
+<!ATTLIST termp %docprop; >
+
+
+<!ELEMENT heardate - - (%linetxt;)* >
+<!ATTLIST heardate  
+          yyyymmdd CDATA #IMPLIED
+          label    CDATA #IMPLIED   >
+
+
+<!ELEMENT year - - (#PCDATA) >
+<!ATTLIST year  
+          index CDATA #IMPLIED >
+
+
+<!ELEMENT docket - - (%linetxt;)* >
+<!ATTLIST docket  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT relaproc - - ((#PCDATA) | caseref)* >
+
+
+<!ELEMENT casehist - - (casedisp*, caseref) > 
+<!ATTLIST casehist
+          type (prior|later) #IMPLIED
+          views CDATA #IMPLIED >
+
+
+<!ELEMENT casehsts - - (casehist*) >
+
+
+<!ELEMENT subject - - (#PCDATA)  >
+<!ATTLIST subject  
+          type (canrep | abr | pid | crim) #IMPLIED 
+          index CDATA                   #IMPLIED >
+
+
+<!ELEMENT subjtitl - - (#PCDATA) >
+<!ATTLIST subjtitl  
+          type (abr | pid | crim) #IMPLIED  
+          index CDATA           #IMPLIED >
+
+
+
+<!ELEMENT capphra - - (%linetxt;)* >
+<!ATTLIST capphra
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT caption - - ((subject? | subjtitl?), classifn?, classif*, capphra*) >
+<!ATTLIST caption
+          views CDATA #IMPLIED
+          main  CDATA #IMPLIED
+          type  (canrep | abr | pre-abr | pid | crim | tax | rfl | 
+                 weekly) #IMPLIED
+          lang  (en | fr) #IMPLIED >
+
+
+<!ELEMENT caseanno - - (freeform, authors?, line*) >
+<!ATTLIST caseanno
+          label CDATA #IMPLIED
+          views CDATA #IMPLIED >
+
+
+<!ELEMENT statedis - - (%linetxt;)* >
+ <!ATTLIST statedis 
+          lang  (en | fr) #IMPLIED  
+          views CDATA     #IMPLIED  >
+
+
+<!ELEMENT statepro - - (%paratxt;)* >
+<!ATTLIST statepro 
+          lang (en | fr) #IMPLIED  
+          views CDATA    #IMPLIED  >
+
+
+<!ELEMENT intromat - - (freeform*) >
+
+
+<!ELEMENT opinion - - (block2?, opintro?, freeform?) >
+<!ATTLIST opinion 
+          views CDATA #IMPLIED >
+
+
+<!ELEMENT opintro - - (#PCDATA | decider | per | caseref)* >
+
+  
+
+<!ELEMENT np - - (n, p*) >
+<!ATTLIST np  
+          product CDATA #IMPLIED  
+          sync    CDATA #IMPLIED >
+
+ 
+<!ELEMENT bold - - (%linetxt;)* >
+
+
+<!ELEMENT under - - (%linetxt;)* > 
+
+
+
+<!-- ============              Legislation               ============ -->
+
+
+<!ELEMENT act     - - (ti, legiddoc,
+                       sec*, prepart*, (mdiv | mdiv0)*, sdiv*, div*,
+                      (part* | chapter*), title*, book*,
+                      (schedule | form | containr)*,
+                       stathist*)>
+<!ATTLIST act
+          abbrev   CDATA      #IMPLIED
+          proclaim (yes | no) #IMPLIED>  
+
+
+
+<!ELEMENT reg - - (n?, ti, legiddoc, 
+                   sec*, rule*, prepart*, (mdiv | mdiv0)*, sdiv*, div*,
+                   (part* | chapter*), title*, 
+                   (schedule | containr | form)*) >
+<!ATTLIST reg  
+          abbrev CDATA   #IMPLIED
+          proclaim (yes | no) #IMPLIED  
+          label  CDATA   #IMPLIED  
+          type   (rules) #IMPLIED >
+
+
+
+<!ELEMENT actunder - - (%linetxt;)* >
+<!ATTLIST actunder
+          label  CDATA   #IMPLIED  >
+
+
+<!ELEMENT remision - - ( n?, ti, legiddoc?, 
+
+                        ( 
+                          (freeform, appendix*) |
+
+                          (sec*, (mdiv | mdiv0)*, sdiv*, div*, part*, 
+                          (schedule | appendix | containr)*, form*)  
+                        ) )>
+<!ATTLIST remision  
+          %docprop; 
+
+          abbrev CDATA #IMPLIED >
+
+
+
+<!ELEMENT convent - - (n?, ti, ((longti?, cite?, freeform?) | legiddoc),
+                      (p | secp)*, (sec* | article*), 
+                      ((mdiv* | mdiv0*) | part* | chapter*),  
+                      (schedule | appendix | containr)*) >
+<!ATTLIST convent
+          %docprop; 
+
+          abbrev CDATA #IMPLIED >
+
+
+<!ELEMENT misclaw - - (n?, ti, ((longti?, freeform?) | legiddoc), 
+                       sec*, (mdiv | mdiv0)*, article*, rule*, 
+                      (part* | chapter*),
+                      (schedule | appendix | containr)* ,
+                       form*, stathist?) >
+<!ATTLIST misclaw  
+          abbrev CDATA #IMPLIED  
+          label  CDATA #IMPLIED >
+
+
+
+<!ELEMENT rule - - (n, ti?, (secp | sec)*, (mdiv | mdiv2)*, 
+                       (schedule | containr)*, stathist?) >
+<!ATTLIST rule  
+          label CDATA "Rule"  >
+
+
+
+<!ELEMENT legiddoc - - (actunder*, longti?, cite*, citeinfo?, 
+                        stathist?, freeform?, preamble?) >
+<!ATTLIST legiddoc 
+          tigre CDATA #IMPLIED  
+          %docprop; >
+
+
+<!ELEMENT citeinfo - - (#PCDATA)* >
+
+
+<!ELEMENT longti - - (%linetxt;)* >
+
+<!ELEMENT preamble - - (freeform) >
+
+<!ELEMENT mdiv   - - (n?, ti, sec*, rule*, mdiv*, article*, form*,
+                     (schedule | appendix | containr)*, stathist?) > 
+<!ATTLIST mdiv  
+          label CDATA #IMPLIED >
+
+<!ELEMENT mdiv0 - - (n?, ti, sec*, rule*, mdiv1*, article*, form* ,
+                     (schedule | containr)*, stathist?) >
+<!ATTLIST mdiv0  
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT mdiv1 - - (n?, ti, sec*, rule*, mdiv2*, article*, form*, 
+                     (schedule | containr)*, stathist?) >
+<!ATTLIST mdiv1  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT mdiv2 - - (n?, ti, sec*, rule*, mdiv3*, article*, form*, 
+                     (schedule | containr)*, stathist?) >
+<!ATTLIST mdiv2  
+          label CDATA #IMPLIED  >
+
+
+<!ELEMENT mdiv3 - - (n?, ti, sec*, rule*, mdiv4*, article*, form*, 
+                    (schedule | containr)*, stathist?) >
+<!ATTLIST mdiv3  
+          label CDATA #IMPLIED  >
+
+
+<!ELEMENT mdiv4 - - (n?, ti, sec*, article*, form*,
+                    (schedule | containr)*, stathist?) >
+<!ATTLIST mdiv4  
+          label CDATA #IMPLIED  >
+
+
+<!ELEMENT part - - (n, ti?, freeform?, 
+                    ((sec*, form*, rule*, (mdiv | mdiv1)*, article*, 
+                       sdiv*, div*, book*, 
+                       (schedule | appendix | containr)*) | 
+                       (chapter)+ | (title)+), stathist?, root?) >
+<!ATTLIST part  
+          label CDATA "Part" >
+
+
+<!ELEMENT book     - - (n, ti, sec*, chapter*, title*, stathist?, root?) >
+<!ATTLIST book  
+          label CDATA "Book" > 
+
+
+<!ELEMENT title - - (n, ti?, sec*, mdiv1*, div*, chapter*, stathist?) > 
+<!ATTLIST title  
+          label CDATA "Title" >
+
+
+
+<!ELEMENT chapter - - (n, ti, sec*, article*, 
+                      (mdiv | mdiv0 | mdiv1)*, div*, stathist?) >
+<!ATTLIST chapter
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT div - - (n, ti, freeform?, sec*, article*, rule*, (mdiv | mdiv1)*,
+                   sdiv*, (schedule | containr)*, stathist?, root?) > 
+<!ATTLIST div  
+          label CDATA "Division" >
+
+
+
+<!ELEMENT sdiv - - (n, ti, sec*, (mdiv | mdiv1)*, ssdiv*, root?) >
+<!ATTLIST sdiv  
+          label CDATA "Subdivision" >
+
+
+<!ELEMENT containr - - (scheddoc | form)* >
+<!ATTLIST containr
+          label CDATA #REQUIRED >
+
+
+<!ELEMENT scheddoc - - (n, ti?, statref?, freeform, appendix*, stathist?) >
+<!ATTLIST scheddoc 
+          label     CDATA "Schedule" 
+          tigre     CDATA #IMPLIED     
+          %docprop;
+          product   CDATA #IMPLIED >
+
+
+<!ELEMENT schedule - - (n?, ti?, statref?, secp?, 
+                        ((sec*, (mdiv | mdiv0)*, sdiv*, div*, part*) |
+                          freeform | form* | class* | convent*)*, 
+                          stathist?) >
+<!ATTLIST schedule 
+          label    CDATA "Schedule"
+          tigre    CDATA #IMPLIED     
+          %docprop;
+          product  CDATA #IMPLIED   >
+
+
+<!ELEMENT article - - (n, ti?, (secp | sec)+)>
+<!ATTLIST article %docprop;
+          label    CDATA #IMPLIED >
+
+
+
+<!ELEMENT class - - (fulln?, n, ti?, statref?, (sec+ | secp+), stathist?) >
+<!ATTLIST class 
+          label CDATA #IMPLIED
+          %docprop; >
+
+
+<!ELEMENT sec - - (fulln?, n, oldn?, ti?, 
+                   ((secp, (ti?, secp)*) | (secdiv | ssec)+ | para+),
+                     (schedule* | appendix*), form*, stathist?, archive?) >
+<!ATTLIST sec  
+          product  CDATA #IMPLIED  
+          tigre    CDATA #IMPLIED  
+          sync     CDATA #IMPLIED
+          %docprop;
+          id       CDATA #IMPLIED >
+
+
+<!ELEMENT sssdiv - - (n, ti, sec+) >
+<!ATTLIST sssdiv 
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT secdiv - - (ti, ssec+) >
+
+
+<!ELEMENT secp - - ((%paratxt;) | vardef | para | def | ssec)* >
+<!ATTLIST secp 
+          id CDATA #IMPLIED >
+     
+
+<!ELEMENT ssdiv - - (n, ti, (sec+ | sssdiv+)) >
+<!ATTLIST ssdiv  
+          label CDATA "Sub-subdivision"   >
+
+
+<!ELEMENT ssec - - (fulln?, n, ti?, ((ssecp, (ti?, ssecp)*) | para*),
+                     stathist?) >
+<!ATTLIST ssec  
+          product CDATA #IMPLIED  
+          sync CDATA    #IMPLIED >
+
+
+<!ELEMENT ssecp - - ((%paratxt;) | p | vardef | para | def)* >
+
+
+<!ELEMENT def - - (fulln?, ti?, defp+, stathist?) >
+<!ATTLIST def  
+          product CDATA #IMPLIED  
+          sync    CDATA #IMPLIED >
+
+<!ELEMENT defp - - ((%paratxt;) | p | vardef | ssec | para)* >
+
+
+
+<!ELEMENT ssscl - - (fulln?, n, sssclp) >
+
+
+<!ELEMENT sssclp - - ((%paratxt;) | p)* >
+
+
+<!ELEMENT para - - (fulln?, n, ti?, (parap+ | spara+), stathist?) >
+<!ATTLIST para  
+     product CDATA #IMPLIED  
+     sync CDATA #IMPLIED >
+
+
+<!ELEMENT parap - - ((%paratxt;) | p | varpara | spara | def)* >
+
+
+
+<!ELEMENT spara - - (fulln?, n, ti?, (sparap | cl+), stathist?) >
+
+
+<!ELEMENT sparap - - ((%paratxt;) | p | varspara | cl)* >
+
+
+<!ELEMENT cl - - (fulln?, n, ti?, (clp | scl+), stathist?) >
+
+
+<!ELEMENT clp - - ((%paratxt;) | p | varcl | scl)* >
+
+
+<!ELEMENT scl - - (fulln?, n,  ti?, (sclp | sscl+))  >
+
+
+<!ELEMENT sclp - - ((%paratxt;) | p | varscl | sscl)* >
+
+
+<!ELEMENT sscl - - (fulln?, n, (ssclp | ssscl+)) >
+
+
+<!ELEMENT ssclp - - ((%paratxt;) | p | varsscl | ssscl)* >
+
+
+
+
+<!ELEMENT var - - (%linetxt;)*  >
+
+
+<!ELEMENT varcl - - (var, clp, stathist?) >
+
+
+<!ELEMENT vardef - - (var, defp, stathist?) >
+
+
+<!ELEMENT varpara - - (var, parap, stathist?) >
+
+
+<!ELEMENT varscl - - (var, sclp, stathist?) >
+
+
+<!ELEMENT varspara - - (var, sparap, stathist?) >
+
+
+<!ELEMENT varsscl - - (var, ssclp, stathist?) >
+
+
+<!ELEMENT form - - (n?, oldn?, ti?, statref?, freeform?, 
+                    (appendix* | schedule*), stathist?) >
+<!ATTLIST form  
+          tigre CDATA #IMPLIED  
+          label CDATA #IMPLIED  
+          product CDATA #IMPLIED  
+          %docprop; >
+
+
+<!ELEMENT fulln - - (%linetxt;)* >
+
+
+<!ELEMENT oldn - - (%linetxt;)* >
+<!ATTLIST oldn
+          product CDATA #IMPLIED >
+
+
+<!ELEMENT proposed - - (ti, (quote | applic)*, 
+                        (technote | xrefcat | comment)*) >
+<!ATTLIST proposed  
+     effect (amend | add | repeal | other) #IMPLIED  
+     stage  (bill, assent)              #IMPLIED
+     other   CDATA                      #IMPLIED
+     product CDATA                      #IMPLIED  >
+
+
+<!ELEMENT applic   - - (ti, freeform) > 
+
+
+
+<!-- ============           Policy Documents               ============ -->
+
+
+<!ELEMENT polidoc - - (polident, polisumm?, freeform, appendix*)  >
+<!ATTLIST polidoc  
+          tigre    CDATA #IMPLIED  
+          product  CDATA #IMPLIED  
+          label    CDATA #IMPLIED  
+          position CDATA #IMPLIED
+          %docprop; >
+
+
+<!ELEMENT polident - - (n, ti?, date*, cite?, source?, statref*) >
+
+
+
+<!ELEMENT polisumm - - (subject*, caption+) >
+
+
+<!ELEMENT source - - (%linetxt;)* >
+<!ATTLIST source  
+          label CDATA #IMPLIED  >
+
+
+<!ELEMENT tngroup - - (n, scope?, p*, technote*) >
+<!ATTLIST tngroup 
+          tigre CDATA #IMPLIED 
+          %docprop; 
+          position CDATA #IMPLIED  >
+
+
+<!ELEMENT technote - - (ti, scope?, freeform) >
+<!ATTLIST technote  
+          rank (1 | 2 | 3) "1" >
+
+
+<!-- ============           Case Law Digests               ============ -->
+
+
+<!ELEMENT casedata - - (date | decider | jurisdic | docket | counsel |
+                        capphra | award | refn | sentence | length)* >
+
+
+<!ELEMENT casedige - - (n?, digekey?, casedata?, caption?, statedis?, 
+                        headnote?, text?, caseref?, reflist*,
+                       (see | seealso)?) >
+<!ATTLIST casedige
+          tigre    CDATA #IMPLIED
+          product  CDATA #IMPLIED
+          ccdbnum  CDATA #IMPLIED
+          ccdbnumx CDATA #IMPLIED
+          %docprop;
+          id       CDATA #IMPLIED >
+
+
+<!ELEMENT digekey - - (date* | decider* | jurisdic* | docket* | counsel* |
+                       capphra* | award* | refn* | sentence* | length*) >
+
+
+<!ELEMENT award - - (%linetxt;)* >
+<!ATTLIST award
+     label CDATA #IMPLIED >
+
+
+<!ELEMENT length - - (%linetxt;)* >
+<!ATTLIST length  
+          label CDATA #IMPLIED   >
+
+
+
+<!-- ============             SAG Plus Digests               ============ -->
+
+<!--Element: resumes de sentences arbitrales de griefs: digests related to workplace decisions
+    Class:   
+    Comments: 
+-->
+<!ELEMENT sagdige     - - (n, party, party, sagref?, casedata, statedis?,
+                           subjtitl+, classif*, capphra*, headnote?, 
+                           reflist*) >
+<!ATTLIST sagdige
+          lang        (fr) #REQUIRED >
+
+
+<!ELEMENT party        - - (#PCDATA) >
+
+<!ELEMENT sagref       - - (#PCDATA) >
+<!ATTLIST sagref
+          label    CDATA #IMPLIED >
+
+
+<!-- ============             Abridgment Key               ============ -->
+
+
+
+<!ELEMENT keysubj   - - (keyident, keyblock1+, keyclass0) >
+<!ATTLIST keysubj     id   CDATA     #REQUIRED >
+
+
+
+<!ELEMENT keyident  - - (subjtitl, subti?, volnote?, freeform?) >
+
+
+
+<!ELEMENT keyclass0 - - (ti, keyclass1+) >
+
+
+<!ELEMENT keyblock1  - -  (ti, p+) >
+
+
+<!ELEMENT keyclass1  - -  (volnote?, classifn, classif, keyrefs?, 
+                           (keyclass2 | editnote)* ) >
+
+
+<!ELEMENT keyclass2  - -  (volnote?, classifn, classif, keyrefs?, 
+                           (keyclass3 | editnote)* )>
+
+
+<!ELEMENT keyclass3  - -  (volnote?, classifn, classif, keyrefs?,
+                           (keyclass4 | editnote)* )>
+
+
+<!ELEMENT keyclass4  - -  (volnote?, classifn, classif, keyrefs?, 
+                           (keyclass5 | editnote)* )>
+
+
+<!ELEMENT keyclass5  - -  (volnote?, classifn, classif, keyrefs?, 
+                           (keyclass6 | editnote)* )>
+
+
+<!ELEMENT keyclass6  - -  (volnote?, classifn, classif, keyrefs?) >
+
+
+
+<!ELEMENT keyrefs   - -  (keyref)* >
+<!ELEMENT keyref   - -  ( (text, see*) | seealso* ) >
+
+
+
+<!ELEMENT volnote    - - (freeform*) >
+
+
+<!ELEMENT keyxref - - (xrefdoc+) >
+
+<!-- ============               Commentary                 ============ -->
+
+
+<!ELEMENT comment - - (format?, n?, ti?, scope?, date?, quote?, currency?,
+                       freeform, appendix*) >
+<!ATTLIST comment
+          product  CDATA #IMPLIED
+          tigre    CDATA #IMPLIED 
+          position CDATA #IMPLIED 
+          label    CDATA #IMPLIED   
+          views    CDATA #IMPLIED  
+          %docprop;
+          id CDATA #IMPLIED  >
+
+<!ELEMENT essay - - (cite, ti, authors?, date?, freeform, appendix*) >
+<!ATTLIST essay  
+          tigre CDATA #IMPLIED  
+          %docprop; >
+
+
+<!ELEMENT casesdoc  - - (n?, ti?, scope?, p?, casesumm*, caseblk2*) >
+<!ATTLIST casesdoc
+          position CDATA #IMPLIED 
+          label    CDATA #IMPLIED 
+          %docprop; >
+
+
+<!ELEMENT caseblk2 - - (ti, casesumm*, caseblk3*) >
+
+
+<!ELEMENT caseblk3 - - (ti, casesumm*, caseblk4*) >
+
+
+<!ELEMENT caseblk4 - - (ti, casesumm*, caseblk5*) >
+
+
+<!ELEMENT caseblk5 - - (ti, casesumm*, caseblk6*) >
+
+
+<!ELEMENT caseblk6 - - (ti, casesumm*, caseblk7*) >
+
+
+<!ELEMENT caseblk7 - - (ti, casesumm+) >
+
+
+<!ELEMENT casesumm  - - (n?, statref?, caseref?, p+) >
+
+
+<!ELEMENT appendoc - - (n, ti?, freeform, appendix*)>
+<!ATTLIST appendoc
+          %docprop;
+          label CDATA "Appendix"
+          product CDATA #IMPLIED >
+
+
+<!ELEMENT preceden - - (n, ti, freeform, appendix*) >
+<!ATTLIST preceden  
+          tigre CDATA #IMPLIED  
+          label CDATA #IMPLIED  
+          %docprop; >
+
+
+<!ELEMENT currency - - ((%paratxt;) | p)* >
+
+
+<!ELEMENT docp - - (n?, ti?, p*) >
+<!ATTLIST docp 
+          tigre CDATA #IMPLIED 
+          %docprop; 
+          product   CDATA #IMPLIED>
+
+
+<!-- ============  Cross-references; Bibliographic Entries ============ -->
+
+
+<!ELEMENT xrefdoc - - (((n, ti?) | caseref | statref), scope?, 
+                       (see* | seealso*), (xrefcat* | item*)) >
+<!ATTLIST xrefdoc  
+          tigre    CDATA #IMPLIED  
+          %docprop;
+          position CDATA #IMPLIED >
+
+
+<!ELEMENT xrefcat - - (ti, scope?, (((line*|item*|xreflins), p?), 
+                                       xrefscat*)) >
+<!ATTLIST xrefcat  
+          product CDATA #IMPLIED >
+
+
+<!ELEMENT xrefscat - - (ti?, (xrefline*|line*|item*|xreflins), p?) >  
+
+
+<!ELEMENT xreflins - - (xrefline)* >
+
+
+
+<!ELEMENT xrefline - - (%linetxt;)* >
+<!ATTLIST xrefline  
+          product CDATA #IMPLIED >
+
+
+<!-- ============ Print Specific: Front Matter, Tables of Contents, 
+                   Indexes                              ============= -->
+
+
+
+<!ELEMENT frontmat - - (bookiden*, copyrigh?, (toc | frontdoc | lrindex)*, 
+                        (root)*) > 
+<!ATTLIST frontmat
+          label CDATA #IMPLIED >
+
+
+
+<!ELEMENT backmat - - (index*, (root)*) > 
+<!ATTLIST backmat
+          label CDATA #IMPLIED >
+
+
+
+<!ELEMENT bookiden - - (freeform) >  
+                        
+
+
+<!ELEMENT copyrigh - - (freeform) >
+
+
+
+<!ELEMENT frontdoc - - (ti?, subti*, freeform) >
+<!ATTLIST frontdoc 
+          id CDATA #IMPLIED
+          %docprop; >
+
+
+<!ELEMENT toc - - (ti?, subti*, infop?, freeform?,   
+                   (toccase* | (tocsec*, tocppart*, tocmdiv*, tocsdiv*, 
+                     tocdiv*, tocpart*, (tocapp* | tocsched*), tocform*) 
+                  | (act | reg | misclaw | convent)*) )  >
+<!ATTLIST toc  
+          type (overview | detailed) #IMPLIED  
+          id    CDATA               #IMPLIED
+          %docprop; >
+
+
+<!ELEMENT format - - (verso?, recto?, prepage?, startpag?, nextpage?, 
+                      rectfoot?, relname?, date?, preear?, spine*, 
+                      cover*, running*) >
+
+
+<!ELEMENT index - - (ti?, (infop | freeform)?, (indexdiv+ | index0+)) >
+<!ATTLIST index  
+          abbrev CDATA #IMPLIED
+          type   (toc) #IMPLIED
+          id     CDATA #IMPLIED
+          %docprop; >
+
+<!ELEMENT index0 - - (text, (see+ | (ref?, seealso*, index1*))) >
+<!ATTLIST index0  
+          product CDATA #IMPLIED
+          %docprop; >
+
+<!ELEMENT index1 - - (text, (see+ | (ref?, seealso*, index2*))) > 
+<!ATTLIST index1  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT index2 - - (text, (see+ | (ref?, seealso*, index3*))) >
+<!ATTLIST index2  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT index3 - - (text, (see+ | (ref?, seealso*, index4*))) >
+<!ATTLIST index3  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT index4 - - (text, (see+ | (ref?, seealso*, index5*))) >
+<!ATTLIST index4  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT index5 - - (text, (see+ | (ref?, seealso*, index6*))) >
+<!ATTLIST index5  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT index6 - - (text, (see+ | (ref?, seealso*, index7*))) >
+<!ATTLIST index6  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT index7 - - (text, (see+ | (ref?, seealso*))) >
+<!ATTLIST index7  
+          product CDATA #IMPLIED   >
+
+<!ELEMENT indexdiv - - (ti, (index0* | lrindex0*)) >
+<!ATTLIST indexdiv  
+          sync    CDATA #IMPLIED
+          product CDATA #IMPLIED  
+          tigre   CDATA #IMPLIED
+          %docprop; >
+
+
+<!ELEMENT ref - - (%linetxt;)* >
+
+
+<!ELEMENT see - - ( (%linetxt)* | (subjtitl, classifn?, ex?) ) >
+<!ATTLIST see
+          position (singular | start | middle | end) "singular" > 
+
+
+<!ELEMENT seealso    - - ( (%linetxt)* | (subjtitl, classifn?, ex?) ) >
+<!ATTLIST seealso  
+          product  CDATA #IMPLIED 
+          position (singular | start | middle | end) "singular" > 
+
+
+
+<!ENTITY % lritext "(( table | (caseref | statref | regref | refn | 
+                       termp | caption | authors)
+                       |  (casetrmt | stattrmt)
+                       |  ((ti | (clicsoc?, cite?)), 
+                      ((volume?, reporter, pagenum, courtjur?, decider?) | 
+                       (decider?, courtjur, reporter, pagenum)))))" >
+
+
+<!ELEMENT lrindex  - - (ti?, subti*, ((lrentry* | lrindex0*) | indexdiv*)) >
+<!ATTLIST lrindex  
+          tigre CDATA #IMPLIED
+          %docprop;
+          type (author | subject | digest | tocases | cases | statutes | 
+                regs | treaties | forms | tariffs | rules | words) #IMPLIED >
+
+
+<!ELEMENT lrindex0  - - (%lritext;, lrindex1*) >
+
+
+<!ELEMENT lrindex1  - - (%lritext;, lrindex2*) >
+
+
+<!ELEMENT lrindex2  - - (%lritext;, lrindex3*) >
+
+
+<!ELEMENT lrindex3  - - (%lritext;) >
+
+
+<!ELEMENT lrentry  - - (lrtext, lrref) >
+
+
+<!ELEMENT lrtext   - - (caseref | statref | termp | authors | caption) >
+
+
+<!ELEMENT lrref    - - ((authors?, (ti | clicsoc)), 
+                        (volume?, reporter, pagenum, courtjur?)) >
+
+
+<!ELEMENT reporter - - (#PCDATA) >
+
+
+<!ELEMENT volume - - (#PCDATA) >
+
+<!ELEMENT infop  - - ((%paratxt;) | p1)* >
+
+<!ELEMENT rectfoot - - (%linetxt;)* >
+
+
+<!ELEMENT recto - - (%linetxt;)*  >
+
+
+<!ELEMENT cover - - (#PCDATA) >
+<!ATTLIST cover  
+          place CDATA #IMPLIED >
+
+
+<!ELEMENT running - - (#PCDATA)	>
+<!ATTLIST running  
+          place CDATA #IMPLIED >
+
+
+<!ELEMENT verso - - (%linetxt;)* >
+  
+
+<!ELEMENT prepage - - (#PCDATA) >
+
+
+<!ELEMENT preear - - (#PCDATA)  >
+
+
+
+<!ELEMENT nextpage - - (#PCDATA) >
+
+
+<!ELEMENT relname - - (#PCDATA) >
+
+
+
+<!ELEMENT spine - - (#PCDATA) >
+<!ATTLIST spine  
+          place CDATA #IMPLIED >
+
+
+<!ELEMENT startpag - - (#PCDATA) >
+
+
+<!-- ============      Freeform text           ============ -->
+
+
+<!ELEMENT freeform - - (p*, np*, docp*, block2*, block1*, block0*, appendix*) >
+<!ATTLIST freeform  
+          product CDATA #IMPLIED   >
+
+
+
+<!ELEMENT block0 - - (n?, ti?, p*, np*, docp*, block2*, block1*)>
+<!ATTLIST block0
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block1 - - (n?, ti?, p*, np*, docp*, block2*)>
+<!ATTLIST block1
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block2 - - (n?, ti?, p*, np*, docp*, block3*)>
+<!ATTLIST block2
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block3 - - (n?, ti?, p*, np*, docp*, block4*)>
+<!ATTLIST block3
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block4 - - (n?, ti?, p*, np*, docp*, block5*) >
+<!ATTLIST block4
+          label CDATA #IMPLIED  
+          views CDATA #IMPLIED  >
+
+
+<!ELEMENT block5 - - (n?, ti?, p*, np*, docp*, block6*)>  
+<!ATTLIST block5
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block6 - - (n?, ti?, p*, np*, docp*, block7*)>
+<!ATTLIST block6
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block7 - - (n?, ti?, p*, np*, docp*, block8*) >
+<!ATTLIST block7
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block8 - - (n?, ti?, p*, np*, docp*, block9*) >
+<!ATTLIST block8
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT block9 - - (n?, ti?, p*,  np*, docp*)>
+<!ATTLIST block9
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT p - - ((%paratxt;) | p1)* >
+<!ATTLIST p  
+          views CDATA #IMPLIED  
+          sync  CDATA #IMPLIED  >
+
+
+<!ELEMENT p1 - - ((%paratxt;) | p2)* >
+
+
+<!ELEMENT p2 - - ((%paratxt;) | p3)* >
+
+
+<!ELEMENT p3 - - ((%paratxt;) | p4)* >
+
+
+<!ELEMENT p4 - - ((%paratxt;) | p5)* >
+
+
+<!ELEMENT p5 - - ((%paratxt;) | p6)* >
+
+
+<!ELEMENT p6 - - (%paratxt;)*  >
+
+
+<!ELEMENT item - - (n?, p+) >
+<!ATTLIST item  
+          sync  CDATA #IMPLIED
+          views CDATA #IMPLIED  >
+
+
+<!ELEMENT line - - ((%linetxt;) | line1)* >
+     
+
+<!ELEMENT line1 - - ((%linetxt;) | line2)* >
+
+
+<!ELEMENT line2 - - (%linetxt;)* >
+      
+
+<!ELEMENT endnote - - (n?, p+) >
+
+<!-- ============       General Purpose: block-style    ============ -->
+
+
+<!ELEMENT appendix - - (n?, ti?, statref?, secp?,
+                       ((sec*, mdiv*, sdiv*, div*, part*) |
+                         freeform | convent | form | class | appendix)*,
+                         stathist?)>
+<!ATTLIST appendix
+          tigre   CDATA #IMPLIED
+          %docprop;
+          label   CDATA #IMPLIED
+          product CDATA #IMPLIED >  
+
+
+<!ELEMENT editnote - - (freeform) >
+<!ATTLIST editnote  
+          product CDATA #IMPLIED  
+          other   CDATA #IMPLIED >
+
+
+<!ELEMENT quote - - ANY >
+<!ATTLIST quote  
+          abbrev   CDATA   #IMPLIED 
+          refn     CDATA   #IMPLIED 
+          context  (no-c)  #IMPLIED 
+          source   (no-s)  #IMPLIED >
+
+
+<!ELEMENT excerpt - - ANY >
+
+
+<!-- ============       General Purpose: in-line    ============ -->
+
+
+<!ELEMENT casedisp - - (text | (#PCDATA))* >
+<!ATTLIST casedisp
+          views CDATA #IMPLIED
+          type (af|am|ar|la|lr|rf|rg|rr|rv|sa|vr) #IMPLIED >
+ 
+
+<!ELEMENT caseref - - (soc?, judgdate?, 
+                       (docket | decider | date | year | cite | pagenum | paranum | refn | correlat |
+                       digcite |  courtjur)*, per?, 
+                       (casehist | jurisdic)*, casetrmt?, length?) >
+<!ATTLIST caseref
+          ccdbnum CDATA #IMPLIED
+          lang (en | fr) #IMPLIED
+          jd (yes | no) #IMPLIED >
+
+
+
+<!ELEMENT casetrmt - - EMPTY >
+<!ATTLIST casetrmt
+          type (c |r | a | d | f | n | 0) #REQUIRED >
+
+
+<!ELEMENT pagenum - - (#PCDATA) >
+
+
+<!ELEMENT paranum - - (#PCDATA)  >
+
+
+<!ELEMENT per - - (#PCDATA) >
+
+
+<!ELEMENT statref - - (jurisdic?, (ti?, cite?)*, stathist?, stattrmt?,
+		         ((refn, stattrmt?)* | regref*)) >
+<!ATTLIST statref  
+          label   CDATA #IMPLIED 
+          product CDATA #IMPLIED  >
+
+
+<!ELEMENT regref  - - ((ti?, cite?)*, stathist?, stattrmt?, 
+                       (refn, stattrmt?)*)  >
+
+
+<!ELEMENT statdisp - - (#PCDATA)  >
+
+
+<!ELEMENT stathist - - (statdisp?, statref+) >
+<!ATTLIST stathist 
+          views CDATA   #IMPLIED
+          product CDATA #IMPLIED >
+
+
+
+<!ELEMENT refn - - ((%linetxt;) | refn1)* >
+<!ATTLIST refn  
+          type   (page) #IMPLIED
+          prefix CDATA  #IMPLIED  >
+
+
+
+<!ELEMENT refn1 - - ((%linetxt;) | refn2)* >
+
+
+
+
+<!ELEMENT refn2 - - (%linetxt;)* >
+
+
+<!ELEMENT stattrmt - - EMPTY  >
+<!ATTLIST stattrmt  
+          type (r | c | p | u | 0) #REQUIRED >
+
+
+<!ELEMENT footnote - - (n?, freeform?) >
+<!ATTLIST footnote  
+          product CDATA #IMPLIED   >
+
+
+<!ELEMENT modify - - (#PCDATA) >
+<!ATTLIST modify  
+          adddate NUMBER #REQUIRED >
+
+
+<!ELEMENT n - - (%linetxt;)* >
+
+
+
+<!ELEMENT author  - - (firsname, lastname, designat?, line*) >
+
+
+<!ELEMENT authors - - (author+)>
+
+
+<!ELEMENT firsname - - (#PCDATA ) >
+
+
+<!ELEMENT lastname - - (#PCDATA) >
+
+
+<!ELEMENT designat - - (#PCDATA) >
+
+
+<!ELEMENT strike - - (%linetxt;)* -(strike) >
+
+
+<!ELEMENT sub - - (%linetxt;)* >
+
+
+<!ELEMENT subti - - (%linetxt;)* >
+
+
+<!ELEMENT sup - - (%linetxt;)* >
+
+
+<!ELEMENT surti - - (%linetxt;)* >
+
+
+<!ELEMENT term - - (%linetxt;)* >
+<!ATTLIST term short CDATA #IMPLIED >
+
+
+<!ELEMENT termalt - - (%linetxt;)*  >
+
+
+<!ELEMENT termref - - (%linetxt;)* >
+
+
+<!ELEMENT text - - (%linetxt;)* >
+<!ATTLIST text  
+          views CDATA #IMPLIED  >
+
+
+<!ELEMENT textfrac - - (%linetxt;)*  >
+
+
+<!ELEMENT ti - - (%linetxt;)*  >
+<!ATTLIST ti  
+          product CDATA #IMPLIED   
+          short   CDATA #IMPLIED  
+          lang    (en | fr) #IMPLIED 
+          tocid   CDATA #IMPLIED   >
+
+<!ELEMENT scope - - (%linetxt;)* >
+<!ATTLIST scope  
+          print (yes | no) "no" >
+
+
+
+<!ELEMENT condtext - - ((%paratxt;) | p)* >
+<!ATTLIST condtext
+          product CDATA #IMPLIED >
+
+
+<!ELEMENT em - - (%linetxt;)* >
+
+
+<!ELEMENT ex - - (%linetxt;)* >
+
+<!-- ============   Kim and Orr / Newesletter New Requirement ============ -->
+
+<!ELEMENT docwrapper - - (classact)>
+
+<!ELEMENT classact - -  (cite, ti, authors?, tocblock, freeform)>
+
+<!ATTLIST classact
+          fileddate CDATA #REQUIRED
+          abbrev   CDATA      #IMPLIED
+          %docprop;>
+
+<!ELEMENT tocblock - - (tocblockti, issueinfo?, doctoc+, toclink?)>
+
+<!ELEMENT doctoc   - - (ti, (tocp, p?)*)>
+
+<!ELEMENT issueinfo  - - (p*)>
+
+<!ELEMENT toclink - -  (%paratxt;)*>
+
+<!ELEMENT tocblockti - - (%linetxt;)*>
+
+<!ELEMENT tocp          - - (%linetxt;) >
+<!ATTLIST tocp tocidref CDATA #REQUIRED >
+
+
+<!-- ============         Tabular Structures              ============ -->
+
+
+<!ELEMENT asciitbl - - (#PCDATA) >
+
+
+
+<!ELEMENT sgmltbl - - (tblhead?, tblbody) >
+<!ATTLIST sgmltbl  
+          reduced (yes | no)            #IMPLIED  
+          orient  (portrait | landscap) #IMPLIED  >
+
+
+<!ELEMENT table - - (asciitbl?, sgmltbl?, tblnotes?) >  
+
+
+<!ELEMENT tblbody - - (tblcdefs, tblrows) >
+<!ATTLIST tblbody  
+          tblwd CDATA #IMPLIED  >
+
+
+<!ELEMENT tblcdef - - EMPTY >
+<!ATTLIST tblcdef  
+          halign   (left | center | right | char) #IMPLIED  
+          colwd     CDATA                      #IMPLIED
+          colsep   (vdot, vsingle)             #IMPLIED  
+          tblunits (percent)                   #FIXED "percent" 
+          topsep   (hdot, hsingle, hdouble)    #IMPLIED
+          alignchr  CDATA                      #IMPLIED >
+
+
+<!ELEMENT tblcdefs - - (tblcdef+) >
+<!ATTLIST tblcdefs  
+          colsep   (vdot | vsingle)             "vdot"
+          halign   (left | center | right | char) #IMPLIED
+          alignchr  CDATA                      #IMPLIED 
+          charpos   CDATA                      #FIXED "75%" 
+          colwd     CDATA                      #IMPLIED 
+          tblunits (percent)                   #FIXED "percent" 
+          topsep   (hdot | hsingle | hdouble)    "hdot"  >
+
+
+<!ELEMENT tblcell - - (%celltxt;)*  >
+<!ATTLIST tblcell  
+          rowsep  (hdot | hsingle | hdouble)     #IMPLIED 
+          valign  (top | bottom | middle)        #IMPLIED 
+          colstart NUMBER                        #IMPLIED  
+          colspan  NUMBER                        "1"  
+          rowstart NUMBER                        #IMPLIED  
+          halign  (left | center | right | char) #IMPLIED  
+          colsep  (vdot | vsingle)               #IMPLIED
+          proposed (yes | no)                    #IMPLIED  >
+
+
+
+<!ELEMENT tblhead - - (tblcdefs, tblrows) >
+<!ATTLIST tblhead  
+          tblwd CDATA #IMPLIED >
+
+
+<!ELEMENT tblnote - - (n?, p+) >
+
+
+<!ELEMENT tblnotes - - (tblnote*) >
+<!ATTLIST tblnotes 
+          label CDATA #IMPLIED  >
+
+
+<!ELEMENT tblrow - - (tblcell*) >
+<!ATTLIST tblrow  
+          rowsep  (hdot | hsingle | hdouble) #IMPLIED
+          valign  (top | bottom | middle)    #IMPLIED
+          leftsep (vdot | vsingle)          #IMPLIED 
+          proposed (yes | no)               #IMPLIED >
+
+
+<!ELEMENT tblrows - - (tblrow+) >
+<!ATTLIST tblrows  
+          rowsep  (hdot | hsingle | hdouble) "hdot"
+          valign  (top | bottom | middle)    "top" 
+          leftsep (vdot | vsingle)          "vdot" >
+
+
+<!-- ============      Graphics                ============ -->
+
+
+<!ELEMENT graphic - - (n?, ti?, linktext?) >
+<!ATTLIST graphic  
+          filename CDATA #IMPLIED
+          label    CDATA #IMPLIED  
+          size     CDATA "full" >
+
+
+<!ELEMENT linktext - - (#PCDATA) >
+
+
+<!--Element:  Non-SGML fillable form; pdf or doc format, for Estates
+              and Trusts Wlec product
+    Class:    Non-text -->
+<!ELEMENT fillablegraphic - - (n?, ti?, linktext?) >
+
+<!ATTLIST fillablegraphic
+          filename CDATA #IMPLIED
+          label    CDATA #IMPLIED
+          type     (authored | legis | histrop | legisall | limpert | lscorry | litchkab |
+                litchkbc | litchkmb | litchkon | authoredet | legiset | authoredsol | legissol) #REQUIRED >
+
+
+<!-- ================    L I N K I N G    ================ -->
+
+<!ELEMENT link  - - (#PCDATA) >
+<!ATTLIST link href CDATA #REQUIRED >
+
+<!ELEMENT internallink - - (#PCDATA | bold | em | strike | under | sub | sup)*>
+<!ATTLIST internallink internalid CDATA #REQUIRED
+                        product CDATA #IMPLIED >
+
+
+<!-- ============      Math                    ============ -->
+
+
+<!ELEMENT df - - (%fractxt;)* >
+
+
+<!ELEMENT frac - - (numer, over) > 
+
+
+<!ELEMENT fence - - (%fractxt;)* >
+<!ATTLIST fence  
+          type (paren | bracket) "paren" >
+
+
+<!ELEMENT numer - - (%fractxt;)* >
+
+
+<!ELEMENT over - - (%fractxt;)* >
+
+
+
+
+<!-- ============              File Law              ============ -->
+
+
+<!ELEMENT flapplic - - (quote, source?)* >
+<!ATTLIST flapplic  
+          form (not-def | not-appl) #IMPLIED >
+
+
+<!ELEMENT flcite - - (%linetxt;)* >
+
+
+<!ELEMENT fldef - - (quote, source?)* >
+<!ATTLIST fldef  
+          form (not-appl | not-def) #IMPLIED >
+
+
+<!ELEMENT fldesc - - (quote, source?)* >
+<!ATTLIST fldesc  
+          form (not-appl | not-desc) #IMPLIED >
+
+
+<!ELEMENT flentry - - (n, ti, date+, currency?, flcite?, flsum?, fldesc?, fldef?,
+                       flapplic?, comment?, freeform?) >
+<!ATTLIST flentry  
+          tigre CDATA #IMPLIED  
+          %docprop;  >
+
+
+<!ELEMENT flsum - - (p*, freeform*, source?) >
+<!ATTLIST flsum  
+          form (not-spec | see-desc) #IMPLIED  >
+
+
+<!-- ============      For Processing                      ============ -->
+
+
+<!ELEMENT glue - - ANY +(glue) >
+<!ATTLIST glue  
+          type CDATA #IMPLIED >
+
+
+<!ELEMENT patch - - ANY  >
+<!ATTLIST patch  
+     reason CDATA #REQUIRED  >
+
+
+<!ELEMENT oDocPack - - (oContent) >
+<!ATTLIST oDocPack %docprop;>
+
+<!ELEMENT oContent - -	(appendoc | article | casedige | casesdoc | class | 
+                         comment | convent | courtfil | decdummy | decision | 
+                         docp | 
+                         essay | flentry | form | frontdoc | index | 
+                         indexdiv | index0 | legiddoc | lrindex | polidoc | 
+                         preceden | remision | ruling | scheddoc | sec | 
+                         toc | tngroup | 
+                         xrefdoc)? >
+
+
+<!ELEMENT datapool - - (appendix | schedule | scheddoc | casedige |
+                        comment | decdummy | decision | docp | essay | 
+                        flentry | form | hub2 | indexdiv | polidoc |
+                        preceden | ruling | sec | tngroup | xrefdoc | 
+                        legiddoc | appendoc)* >
+<!ATTLIST datapool  
+          abbrev CDATA #IMPLIED >
+
+
+<!ELEMENT hub1 - - ANY >
+<!ATTLIST hub1  
+     abbrev CDATA #IMPLIED >
+
+
+<!ELEMENT hub2 - - ANY >
+<!ATTLIST hub2  
+     tigre CDATA #IMPLIED  
+     %docprop; >
+
+
+<!-- ============      Citation Management System          ============ -->
+
+
+<!ELEMENT cmsset - - (cmsid, cmsact+) >
+
+
+<!ELEMENT cmsid   - - (caseref) >
+<!ATTLIST cmsid
+          tigre   CDATA  #IMPLIED >
+
+
+<!ELEMENT cmsact - - (( (correlat | digcite) | 
+                        (reporter, (correlat | digcite)))?, caseref?) >
+<!ATTLIST cmsact
+          date  CDATA #REQUIRED
+          type (addcite | delcite | modcite | modcase | delcase | addciter |
+                delciter | modciter | modcaser | delcaser) #REQUIRED >
+
+
+<!-- ============          The Obsolete                 ============ -->
+
+
+<!ELEMENT abdigest - - (cclref?, abref?, (level+, ti, capphra*)?,
+                        caption?, headnote?, soc, (disp | prevlev)*,
+                       (cite, correlat*, courtjur?)+, date, length)>
+
+
+<!ELEMENT abref   - - (ti, n)>  
+
+
+<!ELEMENT docktnum - - (#PCDATA) >
+<!ATTLIST docktnum  
+          label CDATA #IMPLIED   >
+
+
+
+<!ELEMENT docktreg - - (#PCDATA) >
+<!ATTLIST docktreg  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT casecomm - - (source | freeform)* >
+
+<!ELEMENT prepart  - - (ti?, freeform?, sec*, mdiv*, stathist?) >
+
+<!ELEMENT age      - - (%linetxt;)*>
+<!ATTLIST age  
+          label CDATA #IMPLIED>
+
+
+<!ELEMENT disp - - (%linetxt;)* >
+
+
+<!ELEMENT toccase - -	((caseref, (see | seealso)?, refn?) |
+			 (tocscope?, tocsoc, toccite? ,
+			  headnote?, (see | tocscope)?)) >
+
+
+<!ELEMENT toccite - - (%linetxt;)*  >
+
+
+<!ELEMENT tocdef - - ((#PCDATA), term, (#PCDATA)) >
+<!ATTLIST tocdef  
+          product CDATA #IMPLIED   >
+
+
+
+<!ELEMENT tocdiv - - ((n, ti, tocsec*, tocmdiv*, tocsdiv*) | 
+                       (ti, toccase+)) >
+
+
+<!ELEMENT tocform - - (n, ti)  >
+
+
+<!ELEMENT tocmdiv - - (ti, tocsec*, tocmdiv*, tocform*) >
+
+
+<!ELEMENT tocpara - - (n, ti?) >
+<!ATTLIST tocpara  
+          product CDATA #IMPLIED   >
+
+
+<!ELEMENT tocpart - - (n, ti, tocsec*, tocmdiv*, tocsdiv*, tocdiv*, 
+                       (tocapp* | tocsched*)) >
+<!ATTLIST tocpart  
+          product CDATA #IMPLIED   
+          label   CDATA #IMPLIED >
+
+
+
+<!ELEMENT tocppart - - (ti, tocsec*) >
+
+
+<!ELEMENT tocapp  - - (n, ti, (tocsec | tocmdiv | tocpart)*, tocform*) >
+      
+
+
+<!ELEMENT tocsched  - - (n, ti, (tocsec | tocmdiv | tocpart)*, tocform*) >
+       
+
+<!ELEMENT tocscope - - (%linetxt;)* >
+
+
+<!ELEMENT tocsdiv - - (n, ti, tocsec*, tocmdiv*) >
+
+
+<!ELEMENT tocsec - - (n, ti?, (tocssec | tocpara | tocdef)*) >
+<!ATTLIST tocsec  
+          product CDATA #IMPLIED   >
+
+
+<!ELEMENT tocsoc - - (%linetxt;)*  >
+
+
+<!ELEMENT tocssec - - (n, ti?, (tocpara | tocdef)*) >
+<!ATTLIST tocssec  
+          product CDATA #IMPLIED   >
+
+
+<!ELEMENT ruling  - -  (rulident, summarym, freeform, appendix*) >
+<!ATTLIST ruling    
+          tigre   CDATA #IMPLIED  
+          ccdbnum CDATA #IMPLIED 
+          decinum CDATA #IMPLIED 
+          label   CDATA #IMPLIED
+          %docprop; >
+
+
+<!ELEMENT rulident - - (clicsoc, statref+, soc, cite, courtjur,
+                        decider, date, year, docket?) >
+
+
+<!ELEMENT archive - - (sec+) >
+
+
+<!ELEMENT bcm-rcas - - (caseref | line)* >
+<!ATTLIST bcm-rcas
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT bcm-rsta - - (statref | line)*>
+<!ATTLIST bcm-rsta
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT bcmvd - - (caseref, judgdate?, docktnum?, docktreg?, decider?,
+                     pcounsel?, dcounsel?, age?, gender?, occupatn?,
+                     causdate?, injury?, duration?, pastearn?, futrearn?,
+                     pastcost?, futrcost?, statedis?, capphra* ,
+                     experts?, headnote, bcm-rsta?, bcm-rcas?, length?,
+                     n, date?)>
+
+ 
+<!ELEMENT decdummy - - ((ident | cite), caseref, caseref+) >
+<!ATTLIST decdummy 
+          tigre CDATA #IMPLIED 
+          %docprop; >
+
+
+<!ELEMENT sentence - - (%linetxt;)* >
+<!ATTLIST sentence  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT prevlev - - (#PCDATA) >
+
+
+<!ELEMENT pcounsel - - (%linetxt;)* >
+<!ATTLIST pcounsel  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT dcounsel - - (%linetxt;)* >
+<!ATTLIST dcounsel  
+          label CDATA #IMPLIED >
+
+
+
+<!ELEMENT pastcost - - (%linetxt;)* >
+<!ATTLIST pastcost  
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT pastearn - - (%linetxt;)*  >
+<!ATTLIST pastearn  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT occupatn - - (%fractxt;)* >
+<!ATTLIST occupatn  
+          label CDATA #IMPLIED >
+
+
+<!ELEMENT cclref - - (ti, n) >
+
+
+<!ELEMENT level - - (%linetxt;)* >
+
+
+<!ELEMENT gender - - (%linetxt;)* >
+<!ATTLIST gender  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT injury - - (%linetxt;)* >
+<!ATTLIST injury  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT futrcost - - (%linetxt;)* >
+<!ATTLIST futrcost  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT futrearn - - (%linetxt;)* >
+<!ATTLIST futrearn  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT expert - - (%linetxt;)* >
+<!ATTLIST expert  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT experts - - (expert*) >
+<!ATTLIST experts  
+          label CDATA #IMPLIED   >
+
+
+<!ELEMENT duration - - (#PCDATA) >
+<!ATTLIST duration  
+          label CDATA #IMPLIED   >
+
+<!--COMMENTS
+
+Nov 2002
+   to create maximized tags, removed comments
+
+Dec 5 2002
+   added updated termp content mode as in cars.dtd
+   added termp to root and bookpart
+
+Dec 10 2002
+   reinstated mdiv and prepart so Innodata could parse during testing 
+
+Jan 6 2003
+   put freeform back in schedule for quoted schedule in reg194.sgm
+
+August 20 2003
+   8.0 release to match cars.dtd
+   title allowed at end of part
+   attribute product added to form 
+   index adjusted to require indexdiv or index0
+   attribute short added to term
+   attribute lang added to ti
+   
+   8.1 release to match cars.dtd
+   article added to mdiv1, mdiv2, mdvi3, mdiv4
+   ti required on xrefcat
+   removed inclusions on bookiden, tblcell given celltxt parameter entity
+   authtext removed as defunct
+
+   8.2 release to match cars.dtd
+   added mdiv1 to title
+   added sagdige elements
+   label attribute for Appendix implied not required
+
+  8.3 release to match cars.dtd
+  added preamble in legiddoc, label to article
+
+  8.4 release to match cars.dtd
+  removed source from essay and added date
+
+  version 2.6 (August 7, 2007) 
+   added fillablegraphic and link
+   added seealso to xrefdoc
+
+  version 3.7 (to match carswell.dtd Sept 20, 2007)
+   added legisall to fillablegraphic 
+
+  version 3.8 
+   added limpert to fillablegraphic 
+-->
+
+
+
+<!--Dec 10 2002 would be nice but:
+
+1 adjusted content models for act, reg to remove  mdiv, appendix, prepart, force use of legiddoc: okay 
+2 removed freeform from schedule: won't work due to quoted schedule
+3 removed prepart and mdiv content models: legacy data problem for testing period
+4 removed mdiv from schedule, remission, convent, mislcaw, rule, part, div, sdiv, appendix: legacy data problem for testing period
+5 removed mdiv and mdiv0 from chapter: legacy data problem for testing period -->
+
+

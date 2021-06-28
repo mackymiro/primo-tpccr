@@ -1,0 +1,91 @@
+<!-- Test entities -->
+<!-- temporary declarations for entities not covered in the ISO set.
+
+Whenever this file is updated, the following are also have to be updated
+- to ensure that the special characters, strings, etc.
+can be converted back into entity references
+- to test these changes
+
+1. Backwards (characters, strings, pis into entity references) conversion mapping: 
+   camp/dtd/content/bass-entity-map.xml	and lego-entity-map.xml
+2. Input testing file basic-entities-ascii.sgm
+(the XMLized version of this test file is created during the JUnit runtime)
+3. When the basic-entities-ascii.sgm is changed,
+it is expected that various tests will fail,
+because the expected results are different,
+hence the expected results also have to be changed after they being validated.
+e.g. common/src/test/resources/com.thomsoncarswell.camp.common.util.xml
+   basic-entities-ascii-e.xml - the expected output file when the input file basic-entities-ascii.xml is parsed by 
+   								common/src/main/java/com.thomsoncarswell.camp.common.util.xml/DocumentParser with entity expansion
+   basic-entities-ascii-w.xml - the expected output file when the input file basic-entities-ascii.xml is parsed by 
+   								common/src/main/java/com.thomsoncarswell.camp.common.util.xml/DocumentParser without entity expansion
+-->
+
+<!ENTITY cents "&cent;">
+<!ENTITY minute "&prime;">
+<!ENTITY mspace "&emsp;">
+<!ENTITY cmacr "c&macr;">
+<!ENTITY Dmacr "D&macr;">
+<!ENTITY Pmacr "P&macr;">
+<!ENTITY ibreve "i&breve;">
+<!ENTITY obreve "o&breve;">
+<!ENTITY schwa "&#x18F;">
+<!ENTITY cirf "&#x25CF;">
+<!ENTITY ee "&#x2147;">
+<!ENTITY Ppeso "&#x20B1;">
+<!ENTITY Gback "G&#x0332;">
+<!ENTITY gback "g&#x0332;">
+<!ENTITY Kback "K&#x0332;">
+<!ENTITY kback "k&#x0332;">
+<!ENTITY Xback "X&#x0332;">
+<!ENTITY xback "x&#x0332;">
+<!ENTITY sup-e "<SUP>e</SUP>">
+<!ENTITY sup-egre "<SUP>egre</SUP>">
+<!ENTITY sup-er "<SUP>er</SUP>">
+<!ENTITY sup-ere "<SUP>ere</SUP>">
+<!ENTITY sup-ers "<SUP>ers</SUP>">
+<!ENTITY sup-r "<SUP>r</SUP>">
+<!ENTITY sup-rs "<SUP>rs</SUP>">
+<!ENTITY sup-re "<SUP>re</SUP>">
+<!ENTITY sup-res "<SUP>res</SUP>">
+<!ENTITY sup-lle "<SUP>lle</SUP>">
+<!ENTITY sup-me "<SUP>me</SUP>">
+<!ENTITY sup-os "<SUP>os</SUP>">
+<!ENTITY editmark "<?sgml editmark?>"> <!-- mark changes for proofreaders -->
+<!ENTITY ellipsis "<?sgml ellipsis?>"> <!-- centered ellipsis -->
+<!ENTITY feather "<?sgml feather?>"> <!--Carswell feather -->
+<!ENTITY goodpage "<?sgml goodpage?>"> <!-- good place for new page -->
+<!ENTITY newline "<?sgml newline?>"> <!-- new line -->
+<!ENTITY newpage "<?sgml newpage?>"> <!-- new page -->
+<!ENTITY recto "<?sgml recto?>"> <!-- new recto page -->
+<!ENTITY t "<?sgml t?>"> <!-- align left parenthesis in table -->
+<!ENTITY takeback "<?sgml takeback?>"> <!-- squeeze one more line on page -->
+<!ENTITY verso "<?sgml verso?>"> <!-- new verso page -->
+<!ENTITY irm "<?sgml irm?>"> <!-- indent right margin -->
+<!ENTITY eirm "<?sgml eirm?>"> <!-- normal right margin -->
+<!ENTITY dottab "<?sgml dottab?>"> <!-- ................... -->
+<!ENTITY ellip10 "..........">
+<!ENTITY ellip35 "...................................">
+<!ENTITY Oogon "&#x01EA;"> <!--LATIN CAPITAL LETTER O WITH OGONEK-->
+<!ENTITY oogon "&#x01EB;"> <!--LATIN SMALL LETTER O WITH OGONEK-->
+<!ENTITY esh "&#x0283;"> <!--Latin small s; integral operator-->
+<!ENTITY oinfin "&#x221E;&#x20DD;"> <!--infinity symbol in circle-->
+<!ENTITY ogonek "&#x0328;"> <!--COMBINING OGONEK-->
+<!ENTITY Eacuto "E&acute;&ogonek;" > <!--LATIN CAPITAL LETTER E WITH ACUTE AND OGONEK-->
+<!ENTITY eacuto "e&acute;&ogonek;" > <!--LATIN SMALL LETTER E WITH ACUTE AND OGONEK-->
+<!ENTITY Egravo "Egrave;&ogonek;" > <!--LATIN CAPITAL LETTER E WITH GRAVE AND OGONEK-->
+<!ENTITY egravo "egrave;&ogonek;" > <!--LATIN SMALL LETTER E WITH GRAVE AND OGONEK-->
+<!ENTITY Glotta "&#x0241;" > <!--CAPITAL LETTER GLOTTAL STOP--> 
+<!ENTITY glotta "&#x0242;" > <!--SMALL LETTER GLOTTAL STOP--> 
+<!ENTITY Iacuto "I&acute;&ogonek;" > <!--LATIN CAPITAL LETTER I WITH ACUTE AND OGONEK-->
+<!ENTITY iacuto "i&acute;&ogonek;" > <!--LATIN SMALL LETTER I WITH ACUTE AND OGONEK-->
+<!ENTITY Nmacr  "N&macr;"  > <!--LATIN CAPITAL N WITH BAR-->
+<!ENTITY nmacr  "n&macr;"  > <!--LATIN SMALL N WITH BAR-->
+<!ENTITY Oacuto "O&acute;&ogonek;" > <!--LATIN CAPITAL LETTER O WITH ACUTE AND OGONEK-->
+<!ENTITY oacuto "o&acute;&ogonek;" > <!--LATIN SMALL LETTER O WITH ACUTE AND OGONEK-->
+<!ENTITY Tacute "T&acute;">   <!--LATIN CAPITAL T WITH ACUTE-->
+<!ENTITY tacute "t&acute;">   <!--LATIN SMALL t WITH ACUTE-->
+<!ENTITY Uacuto "U&acute;&ogonek;" > <!--LATIN CAPITAL LETTER U WITH ACUTE AND OGONEK-->
+<!ENTITY uacuto "u&acute;&ogonek;" > <!--LATIN SMALL LETTER U WITH ACUTE AND OGONEK-->
+<!ENTITY Xmacr  "X&macr;"  > <!--LATIN CAPITAL X WITH BAR-->
+<!ENTITY xmacr  "x&macr;"  > <!--LATIN SMALL x WITH BAR-->

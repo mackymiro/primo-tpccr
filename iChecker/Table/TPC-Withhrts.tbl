@@ -1,0 +1,152 @@
+Tag Name         |Position    |Message Type
+</n>             |E           |E
+</tngroup>       |E           |E
+</scope>         |E           |E
+</legiddoc>      |E           |E
+</actunder>      |E           |E
+::</root>        |S           |E
+</authors>       |E           |E
+<backmat>        |E           |E
+<backmat label=\"[^£]\">      |E   |E
+<bookiden>       |E           |E
+</capphra>       |E           |E
+</caption>       |E           |E
+</casedata>      |E           |E
+</casedige>      |E           |E
+</courtfil>      |E           |E
+</copyrigh>      |E           |E
+</editnote>      |E           |E
+<essay>          |E           |E
+</essay>         |E           |E
+<frontmat>       |E           |E
+</frontmat>      |E           |E
+</longti>        |E           |E
+</polidoc>       |E           |E
+</polident>      |E           |E
+<table>          |E           |E
+</table>         |E           |E
+<asciitbl>       |E           |E
+</asciitbl>      |E           |E
+<sgmltbl>        |E           |E
+</sgmltbl>       |E           |E
+<tblhead tblwd="600">         |E   |E
+</tblhead>       |E           |E
+<tblbody tblwd="600">         |E   |E
+</tblbody>       |E           |E
+<tblcdefs>       |E           |E
+</tblcdefs>      |E           |E
+<tblrows>        |E           |E
+</tblrows>       |E           |E
+</tblrow>        |E           |E
+</tblcell>       |E           |E
+<tblnotes>       |E           |E
+</tblnotes>      |E           |E
+</infop>         |E           |E
+<keysubj>        |E           |E
+</keysubj>       |E           |E
+</ti>            |E           |E
+</p>             |E           |W
+</p1>            |E           |W
+</p2>            |E           |W
+</p4>            |E           |W
+</p5>            |E           |W
+</p6>            |E           |W
+</np>            |E           |W
+</item>          |E           |W
+</line>          |E           |W
+</line1>         |E           |W
+</line2>         |E           |W
+<appendix>       |E           |W
+<appendix label=\"[^£]\">     |E  |W
+</appendix>      |E           |W
+<appendoc>       |E           |W
+<appendoc label=\"[^£]\">     |E  |W
+</appendoc>      |E           |W
+</backmat>       |E           |W
+</bookiden>      |E           |W
+<bookpart>       |E           |W
+</bookpart>      |E           |W
+</bookpar0>      |E           |W
+</bookpar1>      |E           |W
+</bookpar2>      |E           |W
+</bookpar3>      |E           |W
+</bookpar4>      |E           |W
+</bookpar5>      |E           |W
+</caseblk2>      |E           |W
+</caseblk3>      |E           |W
+</caseblk4>      |E           |W
+</caseblk5>      |E           |W
+</caseblk6>      |E           |W
+</caseblk7>      |E           |W
+<casesdoc>       |E           |W
+</casesumm>      |E           |W
+</cl>            |E           |W
+</classif>       |E           |W
+</classifn>      |E           |W
+</freeform>      |E           |W
+</containr>      |E           |W
+</convent>       |E           |W
+</def>           |E           |W
+</df>            |E           |W
+</digekey>       |E           |W
+</div>           |E           |W
+</docp>          |E           |W
+</endnote>       |E           |W
+</footnote>      |E           |W
+</form>          |E           |W
+</mdiv0>         |E           |W
+</mdiv1>         |E           |W
+</mdiv2>         |E           |W
+</mdiv3>         |E           |W
+</mdiv4>         |E           |W
+</patch>         |E           |W
+</date>          |E           |W
+</proposed>      |E           |W
+</quote>         |E           |W
+</schedule>      |E           |W
+</scheddoc>      |E           |W
+</scl>           |E           |W
+</sec>           |E           |W
+</spara>         |E           |W
+</sscl>          |E           |W
+</ssec>          |E           |W
+</statref>       |E           |W
+</title>         |E           |W
+</vardef>        |E           |W
+</varpara>       |E           |W
+</varspara>      |E           |W
+</varscl>        |E           |W
+</varsscl>       |E           |W
+</xrefdoc>       |E           |W
+</xrefscat>      |E           |W
+</xreflins>      |E           |W
+</xrefline>      |E           |W
+</sagdige>       |E           |W
+</tblnote>       |E           |W
+</index0>        |E           |W
+</index1>        |E           |W
+</index2>        |E           |W
+</index3>        |E           |W
+</index4>        |E           |W
+</index5>        |E           |W
+</index6>        |E           |W
+</index7>        |E           |W
+</seealso>       |E           |W
+</see>           |E           |W
+</text>          |E           |W
+</classifn>      |E           |W
+</keyrefs>       |E           |W
+</volnote>       |E           |W
+</freeform>      |E           |W
+
+
+
+
+
+
+
+
+
+::NOTE::
+All columns must be filled-up
+

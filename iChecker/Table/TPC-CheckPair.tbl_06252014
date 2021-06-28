@@ -1,0 +1,5 @@
+Text1     | Text2      | CheckType | Err Type | Err Message                                                    | SearchType
+[         |]           | S         | W        |Please Check Unpaired square bracket                            |
+<         | >          | S         | E        | Imbalance pair of ">"(greater than) or "<"(less than) delimiter|
+&ldquo;   | &rdquo;    | S         | E        | Imbalance pair of &ldquo; and &rdquo;                          |
+&lsquo;   | &rsquo;    | S         | E        | Imbalance pair of &lsquo; and &rsquo;                          |

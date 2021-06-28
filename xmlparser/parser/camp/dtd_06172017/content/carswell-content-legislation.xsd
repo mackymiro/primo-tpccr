@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for legislation content mark up -->
+<!-- $Date: 2010/08/13 13:30:03 $ -->
+<!-- $Revision: 1.28 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.2">
+	<xs:include schemaLocation="mathml2/mathml2.xsd"/>
+	<xs:redefine schemaLocation="carswell-content-common.xsd">
+		<xs:complexType name="PrologDisplayType">
+			<xs:complexContent>
+				<xs:extension base="PrologDisplayType">
+					<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup" minOccurs="0"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="PrologDesignatorDisplayType">
+			<xs:complexContent>
+				<xs:extension base="PrologDesignatorDisplayType">
+					<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup" minOccurs="0"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="PrologTitleDisplayType">
+			<xs:complexContent>
+				<xs:extension base="PrologTitleDisplayType">
+					<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup" minOccurs="0"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="PrologDesignatorTitleDisplayType">
+			<xs:complexContent>
+				<xs:extension base="PrologDesignatorTitleDisplayType">
+					<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup" minOccurs="0"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="PrologLabelTitleDisplayType">
+			<xs:complexContent>
+				<xs:extension base="PrologLabelTitleDisplayType">
+					<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup" minOccurs="0"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="TermAndDefinitionsBodyType">
+			<xs:complexContent>
+				<xs:extension base="TermAndDefinitionsBodyType">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:sequence>
+							<xs:element ref="definition.legis"/>
+							<xs:group ref="TermAndDefinitionsBodyGroup" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="EpilogDisplayType">
+			<xs:complexContent>
+				<xs:extension base="EpilogDisplayType">
+					<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup" minOccurs="0"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="QuoteLongBodyType">
+			<xs:complexContent>
+				<xs:extension base="QuoteLongBodyType">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:group ref="QuoteLegisUnitGroup"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="GlossaryBodyType">
+			<xs:complexContent>
+				<xs:extension base="GlossaryBodyType">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:group ref="GlossaryProposedGroup"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+		<xs:complexType name="InlineType" mixed="true">
+			<xs:complexContent mixed="true">
+				<xs:extension base="InlineType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:redefine>
+	<xs:complexType name="LegislationDivisionBodyType"/>
+	<xs:complexType name="LegislationDivisionType">
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+		<xs:attributeGroup ref="LegislationVersionAttributes"/>
+	</xs:complexType>
+	<xs:complexType name="LegislationDivisionDesignatorType">
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologDesignatorType"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+		<xs:attributeGroup ref="LegislationVersionAttributes"/>
+	</xs:complexType>
+	<xs:complexType name="LegislationDivisionTitleType">
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologTitleType"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+		<xs:attributeGroup ref="LegislationVersionAttributes"/>
+	</xs:complexType>
+	<xs:complexType name="LegislationDivisionDesignatorTitleType">
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologDesignatorTitleType"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="Base.Attributes"/>
+		<xs:attributeGroup ref="LegislationVersionAttributes"/>
+	</xs:complexType>
+	<xs:attributeGroup name="BaseAttributesLangRequiredGroup">
+		<xs:attribute name="id" type="xs:string"/>
+		<xs:attribute name="content.type" type="xs:string"/>
+		<xs:attribute name="filter" type="xs:string"/>
+		<xs:attribute name="tag.context" type="xs:string"/>
+		<xs:attribute name="tag.was" type="xs:string"/>
+		<xs:attribute name="lang" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="EN"/>
+					<xs:enumeration value="FR"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="HistoricalRetentionAttributes">
+		<xs:attribute name="historical" default="hide">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="show"/>
+					<xs:enumeration value="hide"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="LegislationVersionAttributes">
+		<xs:annotation>
+			<xs:documentation>Attributes that control versionable elements</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="start.date" type="xs:date"/>
+		<xs:attribute name="end.date" type="xs:date"/>
+	</xs:attributeGroup>
+	<xs:group name="QuoteLegisUnitGroup">
+		<xs:sequence>
+			<xs:choice>
+				<xs:element ref="legis.unit"/>
+				<xs:group ref="LegislationDivisionAdditionalsGroup"/>
+			</xs:choice>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="DivisionCommonGroup"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="GlossaryProposedGroup">
+		<xs:sequence>
+			<xs:element ref="proposed.legis"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="GlossaryContentGroup"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="LegislationDivisionAdditionalsGroup">
+		<xs:choice>
+			<xs:element ref="proposed.legis"/>
+			<xs:element ref="application.legis"/>
+			<xs:element ref="div.editorial.legis"/>
+			<xs:element ref="div.generic.legis"/>
+			<xs:element ref="technical.note"/>
+			<xs:element ref="government.letter"/>
+			<xs:element ref="comment"/>
+			<xs:element ref="category.cross.reference"/>
+			<xs:element ref="div.cross.reference"/>
+			<xs:element ref="legis.quote"/>
+			<xs:element ref="definition.legis"/>
+			<xs:element ref="statute.history"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="LegislationDivisionCommonGroup">
+		<xs:annotation>
+			<xs:documentation>Grouping of common elements inside Legislative Divisions</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:group ref="DivisionCommonGroup"/>
+			<xs:group ref="LegislationDivisionAdditionalsGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="CitationStatuteReferenceStatuteHistoryGroup">
+		<xs:annotation>
+			<xs:documentation>Pairing of StatureReference and StatueHistory</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="citation" minOccurs="0"/>
+			<xs:element ref="status.text" minOccurs="0"/>
+			<xs:element ref="reference.statute" minOccurs="0"/>
+			<xs:element ref="statute.history" minOccurs="0"/>
+			<xs:element ref="scope" minOccurs="0"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:element name="act">
+		<xs:annotation>
+			<xs:documentation>Legislative Act</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PrologType">
+								<xs:sequence minOccurs="0">
+									<xs:element ref="parent.act" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="LegislationDivisionBodyType">
+								<xs:sequence>
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:group ref="LegislationDivisionCommonGroup"/>
+										<xs:element ref="preamble"/>
+										<xs:element ref="section"/>
+										<xs:element ref="div.misc.legis"/>
+										<xs:element ref="subdiv.legis"/>
+										<xs:element ref="div.legis"/>
+										<xs:element ref="part"/>
+										<xs:element ref="chapter"/>
+										<xs:element ref="title.legis"/>
+										<xs:element ref="book"/>
+										<xs:element ref="schedule"/>
+										<xs:element ref="appendix"/>
+										<xs:element ref="form"/>
+									</xs:choice>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+			<xs:attributeGroup ref="LegislationVersionAttributes"/>
+			<xs:attribute name="abbrev" type="xs:string"/>
+			<xs:attribute name="legis.stage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="bill"/>
+						<xs:enumeration value="assent"/>
+						<xs:enumeration value="proclaimed"/>
+						<xs:enumeration value="not.proclaimed"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="regulation">
+		<xs:annotation>
+			<xs:documentation>Legislative Regulation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PrologTitleType">
+								<xs:sequence minOccurs="0">
+									<xs:element ref="parent.act" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="LegislationDivisionBodyType">
+								<xs:sequence>
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:group ref="LegislationDivisionCommonGroup"/>
+										<xs:element ref="preamble"/>
+										<xs:element ref="section"/>
+										<xs:element ref="rule"/>
+										<xs:element ref="div.misc.legis"/>
+										<xs:element ref="subdiv.legis"/>
+										<xs:element ref="div.legis"/>
+										<xs:element ref="part"/>
+										<xs:element ref="chapter"/>
+										<xs:element ref="title.legis"/>
+										<xs:element ref="schedule"/>
+										<xs:element ref="appendix"/>
+										<xs:element ref="form"/>
+									</xs:choice>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+			<xs:attributeGroup ref="LegislationVersionAttributes"/>
+			<xs:attribute name="abbrev" type="xs:string"/>
+			<xs:attribute name="legis.stage">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="bill"/>
+						<xs:enumeration value="assent"/>
+						<xs:enumeration value="proclaimed"/>
+						<xs:enumeration value="not.proclaimed"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="regulation.type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="RULES"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="remission.order">
+		<xs:annotation>
+			<xs:documentation>Remission Order</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PrologTitleType">
+								<xs:sequence minOccurs="0">
+									<xs:element ref="parent.act" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:group ref="LegislationDivisionCommonGroup"/>
+								<xs:element ref="preamble"/>
+								<xs:element ref="section"/>
+								<xs:element ref="div.misc.legis"/>
+								<xs:element ref="subdiv.legis"/>
+								<xs:element ref="div.legis"/>
+								<xs:element ref="part"/>
+								<xs:element ref="schedule"/>
+								<xs:element ref="appendix"/>
+								<xs:element ref="form"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="misc.law">
+		<xs:annotation>
+			<xs:documentation>Miscellaneous Law</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PrologLabelTitleType">
+								<xs:sequence minOccurs="0">
+									<xs:element ref="parent.act" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:group ref="LegislationDivisionCommonGroup"/>
+								<xs:element ref="preamble"/>
+								<xs:element ref="section"/>
+								<xs:element ref="div.misc.legis"/>
+								<xs:element ref="article"/>
+								<xs:element ref="rule"/>
+								<xs:element ref="part"/>
+								<xs:element ref="chapter"/>
+								<xs:element ref="schedule"/>
+								<xs:element ref="appendix"/>
+								<xs:element ref="form"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+			<xs:attribute name="abbrev" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="convention">
+		<xs:annotation>
+			<xs:documentation>Convention or Treaty</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="PrologTitleType">
+								<xs:sequence minOccurs="0">
+									<xs:element ref="parent.act" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:group ref="LegislationDivisionCommonGroup"/>
+								<xs:element ref="preamble"/>
+								<xs:element ref="appendix"/>
+								<xs:element ref="article"/>
+								<xs:element ref="chapter"/>
+								<xs:element ref="div.misc.legis"/>
+								<xs:element ref="para"/>
+								<xs:element ref="part"/>
+								<xs:element ref="schedule"/>
+								<xs:element ref="section"/>
+								<xs:element ref="subsection"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+			<xs:attribute name="abbrev" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="schedule">
+		<xs:annotation>
+			<xs:documentation>Legislative Schedule</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="subdiv.legis"/>
+											<xs:element ref="div.legis"/>
+											<xs:element ref="part"/>
+											<xs:element ref="convention"/>
+											<xs:element ref="form"/>
+											<xs:element ref="class"/>
+											<xs:element ref="para"/>
+											<xs:element ref="subsection"/>
+											<xs:element ref="appendix"/>
+											<xs:element ref="article"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="appendix">
+		<xs:annotation>
+			<xs:documentation>Legislative Appendix</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="class"/>
+											<xs:element ref="section"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="subdiv.legis"/>
+											<xs:element ref="div.legis"/>
+											<xs:element ref="part"/>
+											<xs:element ref="convention"/>
+											<xs:element ref="form"/>
+											<xs:element ref="appendix"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="form">
+		<xs:annotation>
+			<xs:documentation>Legacy Form</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="schedule"/>
+											<xs:element ref="appendix"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="part">
+		<xs:annotation>
+			<xs:documentation>Legislative Part</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="rule"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="article"/>
+											<xs:element ref="subdiv.legis"/>
+											<xs:element ref="div.legis"/>
+											<xs:element ref="book"/>
+											<xs:element ref="chapter"/>
+											<xs:element ref="title.legis"/>
+											<xs:element ref="form"/>
+											<xs:element ref="schedule"/>
+											<xs:element ref="appendix"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="book">
+		<xs:annotation>
+			<xs:documentation>Legislative Book Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="chapter"/>
+											<xs:element ref="title.legis"/>
+											<xs:element ref="div.misc.legis"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="title.legis">
+		<xs:annotation>
+			<xs:documentation>Legislative Title Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="div.legis"/>
+											<xs:element ref="chapter"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="chapter">
+		<xs:annotation>
+			<xs:documentation>Legislative Chapter</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="article"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="div.legis"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.misc.legis">
+		<xs:annotation>
+			<xs:documentation>Miscellaneous Legislative Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionTitleType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="rule"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="article"/>
+											<xs:element ref="schedule"/>
+											<xs:element ref="appendix"/>
+											<xs:element ref="form"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rule">
+		<xs:annotation>
+			<xs:documentation>Legislative Rule</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="schedule"/>
+											<xs:element ref="subsection"/>
+											<xs:element ref="para"/>
+											<xs:element name="rule.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:choice>
+																						<xs:element ref="subsection"/>
+																						<xs:element ref="para"/>
+																					</xs:choice>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="class">
+		<xs:annotation>
+			<xs:documentation>Legislative Class</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="subsection"/>
+											<xs:element ref="para"/>
+											<xs:element name="class.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:choice>
+																						<xs:element ref="subsection"/>
+																						<xs:element ref="para"/>
+																					</xs:choice>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="article">
+		<xs:annotation>
+			<xs:documentation>Legislative Article</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="para"/>
+											<xs:element ref="subsection"/>
+											<xs:element name="article.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:choice>
+																						<xs:element ref="subsection"/>
+																						<xs:element ref="para"/>
+																					</xs:choice>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.legis">
+		<xs:annotation>
+			<xs:documentation>Legislative Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="article"/>
+											<xs:element ref="rule"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="subdiv.legis"/>
+											<xs:element ref="schedule"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subdiv.legis">
+		<xs:annotation>
+			<xs:documentation>Legislative SubDivision</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="div.misc.legis"/>
+											<xs:element ref="subsubdiv.legis"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subsubdiv.legis">
+		<xs:annotation>
+			<xs:documentation>Legislative SubSubDivision</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+											<xs:element ref="subsubsubdiv.legis"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subsubsubdiv.legis">
+		<xs:annotation>
+			<xs:documentation>Legislative SubSubSubDivision</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="section"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="section">
+		<xs:annotation>
+			<xs:documentation>Section</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:choice>
+												<xs:element ref="subsection"/>
+												<xs:element ref="para"/>
+												<xs:element ref="schedule"/>
+												<xs:element ref="appendix"/>
+												<xs:element ref="form"/>
+												<xs:element ref="section.div"/>
+											</xs:choice>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attribute name="id.sgml" type="xs:string"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subsection">
+		<xs:annotation>
+			<xs:documentation>SubSection</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:choice>
+												<xs:element ref="para"/>
+												<xs:element ref="subsection.div"/>
+											</xs:choice>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="para">
+		<xs:annotation>
+			<xs:documentation>Legislative "Paragraph" Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionDesignatorType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="subpara"/>
+											<xs:element name="para.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:element ref="subpara"/>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subpara">
+		<xs:annotation>
+			<xs:documentation>Legislative "SubParagraph" Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="clause"/>
+											<xs:element name="subpara.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:element ref="clause"/>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="clause">
+		<xs:annotation>
+			<xs:documentation>Clause</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="subclause"/>
+											<xs:element name="clause.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:element ref="subclause"/>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subclause">
+		<xs:annotation>
+			<xs:documentation>SubClause</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="subsubclause"/>
+											<xs:element name="subclause.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:element ref="subsubclause"/>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subsubclause">
+		<xs:annotation>
+			<xs:documentation>SubSubClause</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="subsubsubclause"/>
+											<xs:element name="subsubclause.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:element ref="subsubsubclause"/>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subsubsubclause">
+		<xs:annotation>
+			<xs:documentation>SubSubSubClause</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element name="subsubsubclause.div">
+												<xs:complexType>
+													<xs:complexContent>
+														<xs:extension base="LegislationDivisionType">
+															<xs:sequence>
+																<xs:element name="body">
+																	<xs:complexType>
+																		<xs:complexContent>
+																			<xs:extension base="LegislationDivisionBodyType">
+																				<xs:choice minOccurs="0" maxOccurs="unbounded">
+																					<xs:group ref="LegislationDivisionCommonGroup"/>
+																					<xs:element ref="subsubsubclause"/>
+																				</xs:choice>
+																			</xs:extension>
+																		</xs:complexContent>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+															</xs:sequence>
+														</xs:extension>
+													</xs:complexContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="statute.history">
+		<xs:annotation>
+			<xs:documentation>History of Ammendments through Citations</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:choice maxOccurs="unbounded">
+					<xs:element ref="reference.statute"/>
+					<xs:element ref="qualifier"/>
+				</xs:choice>
+				<xs:element name="statute.history.block" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="Complex.Type">
+								<xs:choice maxOccurs="unbounded">
+									<xs:element ref="reference.statute"/>
+									<xs:element ref="qualifier"/>
+								</xs:choice>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="parent.act">
+		<xs:annotation>
+			<xs:documentation>Act under which the legislation is declared</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="false">
+			<xs:sequence minOccurs="0">
+				<xs:element name="label" type="InlineType" minOccurs="0"/>
+				<xs:element ref="text.block" minOccurs="0"/>
+				<xs:element ref="parent.act" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="preamble">
+		<xs:annotation>
+			<xs:documentation>Preamble of legislation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="technical.note">
+		<xs:annotation>
+			<xs:documentation>Government Technical Note</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:choice>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+					<xs:attribute name="rank" type="xs:string"/>
+					<xs:attributeGroup ref="HistoricalRetentionAttributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="government.letter">
+		<xs:annotation>
+			<xs:documentation>Letter from Government or Department</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:choice>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+					<xs:attributeGroup ref="HistoricalRetentionAttributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="application.legis">
+		<xs:annotation>
+			<xs:documentation>Application of Legislation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionTitleType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="comment">
+		<xs:annotation>
+			<xs:documentation>Commentary</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+						<xs:element name="body" type="QuoteLongBodyType" minOccurs="0"/>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attributeGroup ref="HistoricalRetentionAttributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="proposed.legis">
+		<xs:annotation>
+			<xs:documentation>Proposed Legislation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionTitleType">
+					<xs:sequence>
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup" minOccurs="0"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attributeGroup ref="HistoricalRetentionAttributes"/>
+					<xs:attribute name="effect" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="ADD"/>
+								<xs:enumeration value="AMEND"/>
+								<xs:enumeration value="OTHER"/>
+								<xs:enumeration value="REPEAL"/>
+								<xs:enumeration value="AUTO"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="legis.stage">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="bill"/>
+								<xs:enumeration value="assent"/>
+								<xs:enumeration value="proclaimed"/>
+								<xs:enumeration value="not.proclaimed"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="legis.unit">
+		<xs:annotation>
+			<xs:documentation>Container for any type of Legislative division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:choice minOccurs="0">
+						<xs:element ref="act"/>
+						<xs:element ref="convention"/>
+						<xs:element ref="misc.law"/>
+						<xs:element ref="regulation"/>
+						<xs:element ref="remission.order"/>
+						<xs:element ref="appendix"/>
+						<xs:element ref="article"/>
+						<xs:element ref="chapter"/>
+						<xs:element ref="class"/>
+						<xs:element ref="book"/>
+						<xs:element ref="form"/>
+						<xs:element ref="part"/>
+						<xs:element ref="preamble"/>
+						<xs:element ref="div.legis"/>
+						<xs:element ref="subdiv.legis"/>
+						<xs:element ref="subsubdiv.legis"/>
+						<xs:element ref="subsubsubdiv.legis"/>
+						<xs:element ref="title.legis"/>
+						<xs:element ref="div.misc.legis"/>
+						<xs:element ref="schedule"/>
+						<xs:element ref="rule"/>
+						<xs:element ref="section"/>
+						<xs:element ref="section.div"/>
+						<xs:element ref="subsection"/>
+						<xs:element ref="subsection.div"/>
+						<xs:element ref="para"/>
+						<xs:element ref="subpara"/>
+						<xs:element ref="clause"/>
+						<xs:element ref="subclause"/>
+						<xs:element ref="subsubclause"/>
+						<xs:element ref="subsubsubclause"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.generic.legis">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence minOccurs="0">
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="legis.unit"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.editorial.legis">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence minOccurs="0">
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="legis.unit"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="div.cross.reference">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="PrologType">
+										<xs:sequence>
+											<xs:element ref="reference.case" minOccurs="0"/>
+											<xs:element ref="see" minOccurs="0"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:group ref="ListGroup"/>
+									<xs:element name="list.cross.reference" type="ListType"/>
+									<xs:element ref="category.cross.reference"/>
+								</xs:choice>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attributeGroup ref="HistoricalRetentionAttributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="category.cross.reference">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="PrologType"/>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:group ref="ListGroup"/>
+									<xs:element ref="p"/>
+									<xs:element name="subcategory.cross.reference">
+										<xs:complexType>
+											<xs:complexContent>
+												<xs:extension base="LegislationDivisionType">
+													<xs:sequence>
+														<xs:element name="body" minOccurs="0">
+															<xs:complexType>
+																<xs:choice minOccurs="0" maxOccurs="unbounded">
+																	<xs:group ref="ListGroup"/>
+																	<xs:element ref="p"/>
+																	<xs:element name="list.cross.reference" type="ListType"/>
+																</xs:choice>
+															</xs:complexType>
+														</xs:element>
+														<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+													</xs:sequence>
+												</xs:extension>
+											</xs:complexContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="list.cross.reference" type="ListType"/>
+								</xs:choice>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attributeGroup ref="HistoricalRetentionAttributes"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="legis.quote">
+		<xs:annotation>
+			<xs:documentation>div.quote specifically for Legislative content</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+						<xs:element name="body" type="QuoteLongBodyType" minOccurs="0"/>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attribute name="ref.abbrev" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scope" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Scope of annotation or commentary</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="status.text" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Raw text about whether a statute is in force</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="definition.legis">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element name="prolog" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="PrologType">
+										<xs:sequence minOccurs="0">
+											<xs:element ref="term"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:group ref="LegislationDivisionCommonGroup"/>
+									<xs:element ref="subsection"/>
+									<xs:element ref="para"/>
+								</xs:choice>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" minOccurs="0">
+							<xs:complexType>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:element ref="term.alternate"/>
+									<xs:element ref="term.other.language"/>
+									<xs:group ref="CitationStatuteReferenceStatuteHistoryGroup"/>
+									<xs:element ref="reference"/>
+									<xs:element ref="qualifier"/>
+								</xs:choice>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="section.div">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:choice>
+												<xs:element ref="subsection"/>
+												<xs:element ref="para"/>
+												<xs:element ref="section.div"/>
+											</xs:choice>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="subsection.div">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="LegislationDivisionBodyType">
+										<xs:choice minOccurs="0" maxOccurs="unbounded">
+											<xs:group ref="LegislationDivisionCommonGroup"/>
+											<xs:element ref="para"/>
+											<xs:element ref="subsection.div"/>
+										</xs:choice>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for common content mark up -->
+<!-- $Date: 2010/05/18 15:33:26 $ -->
+<!-- $Revision: 1.4 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.1">
+	<xs:redefine schemaLocation="carswell-content-legislation.xsd">
+		<xs:complexType name="InlineType" mixed="true">
+			<xs:annotation>
+				<xs:documentation>Inline nestable elements</xs:documentation>
+			</xs:annotation>
+			<xs:complexContent mixed="true">
+				<xs:extension base="InlineType">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:sequence>
+							<xs:element name="reference.decider">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="InlineType">
+											<xs:attribute name="refid">
+												<xs:annotation>
+													<xs:documentation>This attribute is used to link to a decider defined in </xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:group ref="InlineCommonGroup"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:redefine>
+	<xs:simpleType name="party.typeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="unknown"/>
+			<xs:enumeration value="anonymous"/>
+			<xs:enumeration value="estate"/>
+			<xs:enumeration value="official.Capacity"/>
+			<xs:enumeration value="in.Rem"/>
+			<xs:enumeration value="person"/>
+			<xs:enumeration value="organization"/>
+			<xs:enumeration value="government.body"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:attribute name="date.iso" type="xs:date">
+		<xs:annotation>
+			<xs:documentation>Defines the standard model for iso date attributes</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:complexType name="CaselawDivisionBodyType">
+		<xs:annotation>
+			<xs:documentation>Standard Division Body</xs:documentation>
+		</xs:annotation>
+		<xs:group ref="CaseLawDivisionCommonGroup" maxOccurs="unbounded"/>
+	</xs:complexType>
+	<xs:complexType name="CaselawDivisionType">
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+			<xs:element name="body" type="CaselawDivisionBodyType"/>
+			<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CaseLawParaType">
+		<xs:sequence>
+			<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+			<xs:element name="body">
+				<xs:complexType>
+					<xs:group ref="CaselawParaCommonGroup" maxOccurs="unbounded"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CaseLawDivBlockType">
+		<xs:group ref="CaseLawDivisionCommonGroup"/>
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="date">
+		<xs:annotation>
+			<xs:documentation>Defines the standard model for date elements</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute ref="status"/>
+				<xs:attribute ref="date.iso"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="decision">
+		<xs:annotation>
+			<xs:documentation>This element is the root for a decision document. It can also be found in decisions if we want to group decisions in a single file or can also be found in the in decisions child of ligation.procedure which group all files related to a trial.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="decision.information" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Wrapper element for decision informations and Identification.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="summary" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Container for the value add summary. need to be defined as a division</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="body" minOccurs="0"/>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute ref="release.classification" use="required"/>
+			<xs:attribute name="content.type" type="xs:string" use="required" fixed="caselaw">
+				<xs:annotation>
+					<xs:documentation>This element describes the content type.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="content.sub-type" use="required" fixed="decision">
+				<xs:annotation>
+					<xs:documentation>This element describes the content sub-type.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute ref="lang"/>
+			<xs:attribute name="lang.other" type="xs:IDREF" use="optional">
+				<xs:annotation>
+					<xs:documentation>points to the attibute content.reference.number of the decision in the other language if it exists.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="CaseLawDivisionCommonGroup">
+		<xs:annotation>
+			<xs:documentation>Content that can appear in any Divison-like elements</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="div" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>Standard Division</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.block" type="CaseLawDivBlockType">
+				<xs:annotation>
+					<xs:documentation>Block element for filtering at division level</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.editorial" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>Division for editorial additions</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.numbered" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>"Numbered Paragraph" Division</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.quote" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>Traditional long quotation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="figure"/>
+			<xs:element ref="glossary"/>
+			<xs:element ref="term.and.definitions"/>
+			<xs:element ref="p"/>
+			<xs:element ref="p.editorial"/>
+			<xs:element ref="p.quote"/>
+			<xs:group ref="ListGroup"/>
+			<xs:element ref="table"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+			<xs:element name="para" type="CaseLawParaType"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="CaseLawOpinionGroup">
+		<xs:annotation>
+			<xs:documentation>Grouping of common elements inside Legislative Divisions</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="div" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>Standard Division</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.block" type="CaseLawDivBlockType">
+				<xs:annotation>
+					<xs:documentation>Block element for filtering at division level</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.editorial" type="DivisionType">
+				<xs:annotation>
+					<xs:documentation>Division for editorial additions</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="para">
+				<xs:annotation>
+					<xs:documentation>Paragraphs that are not from the original decision's document.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:choice minOccurs="0">
+							<xs:element name="prolog" type="PrologType"/>
+							<xs:group ref="DesignatorGroup"/>
+						</xs:choice>
+						<xs:choice maxOccurs="unbounded">
+							<xs:group ref="CaselawParaCommonGroup"/>
+						</xs:choice>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="p" type="ParagraphType">
+				<xs:annotation>
+					<xs:documentation>Paragraphs that are not from the original decision's document.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="p.editorial"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="counsels.group">
+		<xs:annotation>
+			<xs:documentation>This group defines the model for counsels used in both defendants and plaintiffs</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="counsel">
+				<xs:annotation>
+					<xs:documentation>This element represents one counsel. The advocate or advocates engaged in the direction of a cause in court; A legal advisor (e.g. lawyer) or group of legal advisors giving legal advice and especially conducting a case in court.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="PersonName"/>
+						<xs:element ref="OrganisationNameDetails" minOccurs="0"/>
+						<xs:element name="counsel.for" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>This element specify for who a counsel is working</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="party.ref" type="xs:IDREF">
+											<xs:annotation>
+												<xs:documentation>This attribute is used to point to the id of a party.</xs:documentation>
+											</xs:annotation>
+										</xs:attribute>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute ref="status"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="party.self-represented" nillable="1" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This empty element refers to a party that is self-reprensented</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="party.reference" use="required"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:group>
+	<xs:group name="CaselawParaCommonGroup">
+		<xs:annotation>
+			<xs:documentation>Content that can appear in any Divison-like elements</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element name="div" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>Standard Division</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.block" type="CaseLawDivBlockType">
+				<xs:annotation>
+					<xs:documentation>Block element for filtering at division level</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.editorial" type="DivisionType">
+				<xs:annotation>
+					<xs:documentation>Division for editorial additions</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.numbered" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>"Numbered Paragraph" Division</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="div.quote" type="CaselawDivisionType">
+				<xs:annotation>
+					<xs:documentation>Traditional long quotation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element ref="figure"/>
+			<xs:element ref="glossary"/>
+			<xs:element ref="legis.quote"/>
+			<xs:element ref="term.and.definitions"/>
+			<xs:element ref="p"/>
+			<xs:element ref="p.editorial"/>
+			<xs:element ref="p.quote"/>
+			<xs:group ref="ListGroup"/>
+			<xs:element ref="table"/>
+			<xs:group ref="CloneReferenceCommentGroup"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="cite.carswell">
+		<xs:annotation>
+			<xs:documentation>This element contains the structured version of the carswell cite.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="year" type="FreeTextType">
+					<xs:annotation>
+						<xs:documentation>Contains a year</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="reporter">
+					<xs:annotation>
+						<xs:documentation>Ex: BC</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="case.number" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>This elemetn contain a sequencial number given when the case is put in the system.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="type">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="reported"/>
+						<xs:enumeration value="unreported"/>
+						<xs:enumeration value="electronic"/>
+						<xs:enumeration value="digest"/>
+						<xs:enumeration value="issue"/>
+						<xs:enumeration value="tracking"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cite.correlative">
+		<xs:annotation>
+			<xs:documentation>A Correlative Citation is an indication of where else some particular Content was published. These citations indicate where the decision was published. If the decision was reported under another name, that name is included in the [cite.correlative] as [soc.simple]. This type of [soc.simple] is known as a "sub nom." and generates that text in oputput.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="free.text">
+					</xs:element>
+					<xs:element ref="cite.carswell">
+						<xs:annotation>
+							<xs:documentation>This element contains the structured version of the carswell cite. Ex: 2008 CarswellBC 147</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="soc.simple" type="soc.simpleType"/>
+				</xs:choice>
+				<xs:element name="page.number" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Number of a page, a pointer to a page.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="paragraph.number" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>A paragraph number, a pointer to a paragraph.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="sub.nomine" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cite.correlatives">
+		<xs:annotation>
+			<xs:documentation>This element is used to group all correlative cites together.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cite.correlative" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cite.digest">
+		<xs:annotation>
+			<xs:documentation>A pointer to a digest. The attribute must be used when the id of the cited digest is known; the string content must be used for legacy content.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="ref" type="xs:IDREF" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cite.digests">
+		<xs:annotation>
+			<xs:documentation>This is a wrapper elemetn for digest cites</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="cite.digest"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cites">
+		<xs:annotation>
+			<xs:documentation>The citation is used to identify a case in various systems. Case law citation used to rely essentially on the reference to judicial decisions in paper format. Therefore the citation was the main tool to allow lawyers to find the case reproduction in the reports or any other source. This situation ended up in various implementation citation syntaxes. Carswell have its own structure but in cases we can find references to other cases sources and thus [cite] with structure which do not conforms to the Carswell cite.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="free.text">
+					<xs:annotation>
+						<xs:documentation>This element is provided for backward compatibility. This contains the citation as free text. i.e. unstructured. Deprecated.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="FreeTextType">
+								<xs:attribute ref="type"/>
+								<xs:attribute ref="status"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="cite.carswell"/>
+				<xs:element name="cite.neutral">
+					<xs:complexType>
+						<xs:choice>
+							<xs:sequence>
+								<xs:element name="year" type="FreeTextType">
+									<xs:annotation>
+										<xs:documentation>Contains a year</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="reporter">
+									<xs:annotation>
+										<xs:documentation>Ex: BCSC</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element name="case.number" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>This elemetn contain a number </xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:sequence>
+							<xs:element name="free.text">
+								<xs:annotation>
+									<xs:documentation>This element is provided for backward compatibility. This contains the citation as free text. i.e. unstructured. Deprecated.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="FreeTextType">
+											<xs:attribute ref="status"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="decision.information">
+		<xs:annotation>
+			<xs:documentation>Wrapper element for decision Identification elements.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="decision.information.identification"/>
+				<xs:element ref="cites" minOccurs="0"/>
+				<xs:element ref="cite.correlatives" minOccurs="0"/>
+				<xs:element ref="cite.digests" minOccurs="0"/>
+				<xs:element ref="forum.identification"/>
+				<xs:element ref="decision.dates"/>
+				<xs:element name="parties" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>This element groups all party involved in the decision.These informations can also be found in the SOC</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="plaintiffs" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>This element groups all plantiff toghter.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="party" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="defendants" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>This element groups all defandants toghter.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="party" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="third.parties" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>This element is used to include parties that are not directly part of the action. They are neither plaintiffs or defendants.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="party" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="generic.parties" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Container for parties that can't be categorized as plaintiffs, defendant or third parties</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="party" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="docket" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="deciders">
+					<xs:annotation>
+						<xs:documentation>This element groups all deciders togehter.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="decider">
+								<xs:annotation>
+									<xs:documentation>This element contains the name of one decider.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="PersonName">
+											<xs:sequence>
+												<xs:element ref="FormerName" minOccurs="0" maxOccurs="unbounded"/>
+												<xs:element ref="KnownAs" minOccurs="0" maxOccurs="unbounded"/>
+											</xs:sequence>
+											<xs:attribute ref="id"/>
+											<xs:attribute ref="status"/>
+											<xs:attribute name="role">
+												<xs:annotation>
+													<xs:documentation>Indicate the role ex: juge, greffier, etc</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+											<xs:attribute name="opinion.type">
+												<xs:annotation>
+													<xs:documentation>Indicates if the decider concurs, is a dissident or is partially dissident</xs:documentation>
+												</xs:annotation>
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="majority"/>
+														<xs:enumeration value="dissenting"/>
+														<xs:enumeration value="partially.dissenting"/>
+														<xs:enumeration value="partially.concurring"/>
+														<xs:enumeration value="unanimous"/>
+														<xs:enumeration value="joint.dissenting"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+											<xs:attribute name="opinion.id" type="xs:string">
+												<xs:annotation>
+													<xs:documentation>This attribute allows grouping of deciders when multiple oinions are found in a decision. This id must also be used in the paragraphs' @opinion.ref associate them to the group of deciders involved in the disenting opinion's paragraphs.</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+											<xs:attribute name="decider.code" type="xs:string" use="optional">
+												<xs:annotation>
+													<xs:documentation>Quebec's decider have an id number. This attribute could also contain unique decider id from other jurisdiction</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+											<xs:attribute name="paragraph.start" type="xs:string" use="optional">
+												<xs:annotation>
+													<xs:documentation>When a decider is not part of the majority this attribute indicate what is the first paragraph of the decider</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+											<xs:attribute name="paragraph.end" type="xs:string" use="optional">
+												<xs:annotation>
+													<xs:documentation>When a decider is not part of the majority this attribute indicate what is the last paragraph of the decider</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+											<xs:attribute name="redactor" type="xs:boolean">
+												<xs:annotation>
+													<xs:documentation>If the decider is the redactor of an opinion found in the decision this attribute must be set to true</xs:documentation>
+												</xs:annotation>
+											</xs:attribute>
+											<xs:attribute ref="external.key"/>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="counsels" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This element is a container for both the counsels of plantiffs and defendants.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="counsels.plaintiffs" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>This element groups together all councels for the plantiffs.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:group ref="counsels.group" maxOccurs="unbounded"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="counsels.defendants" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>This element groups together all councels for the defendants.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:group ref="counsels.group" maxOccurs="unbounded"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="counsels.third.parties" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>This element groups together all councels for the third parties.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:group ref="counsels.group" maxOccurs="unbounded"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="counsels.generic" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Counselors that can't be associated a party type (plaintiff, defendant or third party)</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:group ref="counsels.group" maxOccurs="unbounded"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="historical.records" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This element groups all the history case references. History may be prior or later. Subsequent levels of history should be nested inside case.reference.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="decision.history" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>This element containsone historic record related to the decision. [Revisit to consider using attribute or external key]</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="captions" minOccurs="0"/>
+				<xs:element name="miscellaneous.information" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This container is used to add miscellaneous information in specialized containers. </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="DivisionCommonGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="decision.information.identification">
+		<xs:annotation>
+			<xs:documentation>This element group all informations pertaining to the decision itself that is used to define valuable informations such as dates, docket number, Caswell number, jurisdiction, etc. Some of the informations found in this element could be duplicate in CITES or SOC</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="jurisdictions"/>
+				<xs:element name="year">
+					<xs:annotation>
+						<xs:documentation>Contains a year</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="FreeTextType">
+								<xs:attribute ref="status"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="dockets" minOccurs="0"/>
+				<xs:element ref="socs"/>
+				<xs:element ref="repertories" minOccurs="0"/>
+				<xs:element name="appeal.origin" type="FreeTextType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains the information from where the appeal originate. This information is found in Supreme Court of Canada. Ex: on appeal from the federal court of appeal.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="miscellaneous.informations" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This container is used to add miscellaneous information in specialized containers. </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<xs:element ref="p"/>
+							<xs:element ref="text.block"/>
+							<xs:element ref="footnote"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="decision.history">
+		<xs:annotation>
+			<xs:documentation>This element containsone historic record related to the decision</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="disposition"/>
+				<xs:element ref="reference.case" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="disposition">
+		<xs:annotation>
+			<xs:documentation>Disposition of the decision</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="Complex.Type">
+					<xs:sequence>
+						<xs:element ref="clone"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="summary">
+		<xs:annotation>
+			<xs:documentation>Container for </xs:documentation>
+		</xs:annotation>
+		<xs:complexType/>
+	</xs:element>
+	<xs:element name="subjects">
+		<xs:complexType>
+			<xs:sequence/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="caption">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element name="subject" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>One of 27 words or phrases that describes the overall topic of the decision. Also known as the "Canada Reporter subject". Assigned in acquisition and keyed by Conversion. Legal writers may add subjects but should not remove existing subjects. </xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:attribute name="refid" type="xs:string"/>
+							<xs:attribute name="index" type="xs:string"/>
+							<xs:attribute name="type">
+								<xs:annotation>
+									<xs:documentation>(canrep | abr | pid | crim)</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:NMTOKEN">
+										<xs:enumeration value="canrep"/>
+										<xs:enumeration value="abr"/>
+										<xs:enumeration value="pid"/>
+										<xs:enumeration value="crim"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="classification.subject.title" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>A classification subject title under which the decision is classified. By default, the subject title is assumed to a Canadian Abridgment Subject Title. See the "type" attribute for other classifications. Subject titles are assigned in acquisition and keyed by Conversion. </xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:attribute name="refid" type="xs:string"/>
+							<xs:attribute name="index" type="xs:string"/>
+							<xs:attribute name="type">
+								<xs:annotation>
+									<xs:documentation>(abr | pid | crim)</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:token">
+										<xs:enumeration value="abr"/>
+										<xs:enumeration value="pid"/>
+										<xs:enumeration value="crim"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="classification.entry" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>A word or phrase used to classify a decision, taken from a classification system. These classification phrases should be programmatically generated from the corresponding classification number attribute of caption.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="index" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="classification.phrase" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>A word or phrase following the classification phrases that is used to further summarize the issue at hand. These caption phrases are authored by legal writers</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="label" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="classification.number" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation>This number is used to chose the classification phrases or words related to the decision.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="classification.subject.titles">
+		<xs:complexType>
+			<xs:sequence/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="captions">
+		<xs:annotation>
+			<xs:documentation>wrapper element for captions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="caption" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="free.text">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="FreeTextType">
+					<xs:attribute ref="status"/>
+					<xs:attribute ref="date.iso"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="body">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="opinion" maxOccurs="unbounded"/>
+				<xs:element name="statement.disposition" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Lier au paragraph ... </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="p.text">
+								<xs:complexType mixed="true">
+									<xs:choice minOccurs="0" maxOccurs="unbounded">
+										<xs:group ref="InlineCommonGroup"/>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attributeGroup ref="Base.Attributes"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="appendix" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Case law appendix</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="prolog" type="PrologType"/>
+							<xs:choice maxOccurs="unbounded">
+								<xs:group ref="DivisionCommonGroup"/>
+							</xs:choice>
+							<xs:element name="epilog" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="opinion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="opinion.intros" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="opinion.intro" type="InlineType" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Opinion introduction's, which usually consists of the judge's name, along with other text.</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element ref="reference.collection" minOccurs="0"/>
+							<xs:group ref="CloneReferenceCommentGroup" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<xs:group ref="CaseLawOpinionGroup"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="opinion.id.reference"/>
+			<xs:attribute ref="type"/>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<!--from common-->
+	<xs:attribute name="ex.parte" type="xs:boolean">
+		<xs:annotation>
+			<xs:documentation>"In Australian, Canadian, U.K., and U.S. legal doctrines, ex parte means a legal proceeding brought by one person in the absence of and without representation or notification of other parties. It is also used more loosely to refer to improper unilateral contacts with a court, arbitrator or represented party without notice to the other party or counsel for that party."  http://en.wikipedia.org/wiki/Ex_parte (as of September 17, 2008)</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:element name="party">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="partyType">
+					<xs:attribute ref="status"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="soc.simpleType">
+		<xs:annotation>
+			<xs:documentation>Defines the soc basic stucture</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="references.docket" minOccurs="0"/>
+				<xs:element ref="statutory.enactments" minOccurs="0"/>
+				<xs:sequence minOccurs="0">
+					<xs:element name="plaintiff" type="partyType" maxOccurs="unbounded">
+						<xs:annotation>
+							<xs:documentation>A plaintiff, also known as a claimant or complainant, is the party who initiates a lawsuit (also known as an action) before a court. By doing so, the plaintiff seeks a legal remedy, and if successful, the court will issue judgment in favor of the plaintiff and make the appropriate court order (eg. an order for damages).</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:choice minOccurs="0">
+						<xs:element name="third.party" type="partyType" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>Contains informations about third party involved in an action.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:sequence>
+							<xs:element name="connector" nillable="true">
+								<xs:annotation>
+									<xs:documentation>This element has no content. The attribute label lists values from which a choice can be made. The @label value "other" alows a custom value to be taken from attribute "custom"</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="label" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="vs."/>
+												<xs:enumeration value="v."/>
+												<xs:enumeration value="c."/>
+												<xs:enumeration value="other"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="custom" type="xs:string" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="defendant" type="partyType" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>A defendant is any party who is required to answer the complaint of a plaintiff or pursuer in a civil lawsuit before a court, or any party who has been formally charged or accused of violating a criminal statute.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="third.party" type="partyType" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Contains informations about third party involved in an action.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:choice>
+				</xs:sequence>
+			</xs:sequence>
+			<xs:element name="free.text">
+				<xs:annotation>
+					<xs:documentation>This element is used to define generic Style of Cause that are unstructured and expressed as a simple line of text.</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="FreeTextType">
+							<xs:attribute ref="status"/>
+							<xs:attribute ref="type"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+		<xs:attribute ref="ex.parte" use="optional"/>
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:element name="references.docket">
+		<xs:annotation>
+			<xs:documentation>This element contains docket number reference(s) it's parent element rerelates to.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="reference" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="statutory.enactment">
+		<xs:annotation>
+			<xs:documentation>Contains the title of a statutory enactments. Ex: In the Matter of the Insurance Act, R.S.B.C. 1996, c. 266. When the action is an application or a reference, the style of cause begins with the label "In the matter of" in English and "Dans l'affaire de" in French.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attributeGroup ref="Base.Attributes"/>
+					<xs:attribute name="ref" type="xs:string"/>
+					<xs:attribute ref="status"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="statutory.enactments">
+		<xs:annotation>
+			<xs:documentation>Group all statutory.enactment together</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element ref="statutory.enactment"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="reference.statuteType">
+		<xs:annotation>
+			<xs:documentation>Created to allow reuse in statutory.enactment</xs:documentation>
+		</xs:annotation>
+		<xs:attributeGroup ref="Base.Attributes"/>
+	</xs:complexType>
+	<xs:complexType name="partyType">
+		<xs:group ref="party.definition.group">
+			<xs:annotation>
+				<xs:documentation>This is the model for both plantiff and defendant Add contact language, email .. etc...</xs:documentation>
+			</xs:annotation>
+		</xs:group>
+		<xs:attributeGroup ref="Base.Attributes"/>
+		<xs:attribute name="type">
+			<xs:annotation>
+				<xs:documentation>Defines the type of party</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:group name="party.definition.group">
+		<xs:annotation>
+			<xs:documentation>This is the model for both plantiff and defendant</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:sequence>
+				<xs:element name="prefix.label" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This generic element contains any prefix label text.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice>
+					<xs:element ref="PersonName"/>
+					<xs:element ref="OrganisationNameDetails"/>
+					<xs:element name="the.crown">
+						<xs:annotation>
+							<xs:documentation>The element represents the Crown as the party in an action</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:simpleContent>
+								<xs:extension base="xs:string">
+									<xs:attribute name="regnant">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="Victoria"/>
+												<xs:enumeration value="Edward VII"/>
+												<xs:enumeration value="George V"/>
+												<xs:enumeration value="Edward VIII"/>
+												<xs:enumeration value="George VI"/>
+												<xs:enumeration value="Elizabeth II"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:extension>
+							</xs:simpleContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="government.name">
+						<xs:annotation>
+							<xs:documentation>Container for Government's name</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="NameLine"/>
+							</xs:sequence>
+							<xs:attribute name="Government.level">
+								<xs:annotation>
+									<xs:documentation>This attribute is use to specify of which government level is involved</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="appointed.officer"/>
+										<xs:enumeration value="court"/>
+										<xs:enumeration value="administrative.tribunal"/>
+										<xs:enumeration value="commission"/>
+										<xs:enumeration value="public.school.board"/>
+										<xs:enumeration value="municipal"/>
+										<xs:enumeration value="aboriginal.community"/>
+										<xs:enumeration value="provincial"/>
+										<xs:enumeration value="federal"/>
+										<xs:enumeration value="foreign.country"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="party.other">
+						<xs:annotation>
+							<xs:documentation>This element is containing a party which is not a person, an organisation, a government body or the crown. ref: Uniform Case Naming Guidelines of the Canadian Citation Committee  (http://www.lexum.umontreal.ca/ccc-ccr/index_en.html) When a party listed in the decision's heading is a thing and no owner is named as a party, this party is referred to by this thing's name or other identifier ? e.g. trademark, model and serial number ?, followed between parentheses by a descriptive term such as "Ship" or "Aircraft", as it appears in the decision's heading. The name of a ship or vessel should be reproduced as presented in the decision's heading, including definite articles such as "The" and "Le" if they are part of the name. Ref: http://www.lexum.umontreal.ca/ccc-ccr/neutr/cn.guide_en.html</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:simpleContent>
+								<xs:extension base="xs:string">
+									<xs:attribute ref="type"/>
+								</xs:extension>
+							</xs:simpleContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="party.designator" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This element is used to add information about the party role in the dispute</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="suffix.label" type="xs:string" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This generic element conatins any suffix label text</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:element ref="party.generic"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="party.generic">
+		<xs:annotation>
+			<xs:documentation>This Element contains the party's details that can't be assing to any specific type such as a person or an organisation. This element is typically used by Data Capture.  </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="date.rangeType">
+		<xs:choice>
+			<xs:element ref="free.text"/>
+			<xs:element name="date" type="date" maxOccurs="unbounded"/>
+			<xs:sequence>
+				<xs:element name="date.start" type="date">
+					<xs:annotation>
+						<xs:documentation>Defines a start date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="date.end" type="date">
+					<xs:annotation>
+						<xs:documentation>Defines an end date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:choice>
+		<xs:attribute ref="type"/>
+	</xs:complexType>
+	<xs:element name="forum.identification">
+		<xs:annotation>
+			<xs:documentation>This element contains the information pertaining to the court identification. The information found in this element are court's name, divinsion and district.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="free.text"/>
+				<xs:sequence minOccurs="0">
+					<xs:element name="key.forum.name">
+						<xs:annotation>
+							<xs:documentation>This element containd the name of the court.</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:simpleContent>
+								<xs:extension base="FreeTextType">
+									<xs:attribute ref="status"/>
+								</xs:extension>
+							</xs:simpleContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="key.forum.division" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>This element contain the name of the court's division. Ex:La Cour du Québec division de "La chambre civile", "La chambre de la jeunesse", "La chambre criminelle et pénale", etc</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:simpleContent>
+								<xs:extension base="FreeTextType">
+									<xs:attribute ref="status"/>
+								</xs:extension>
+							</xs:simpleContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="key.forum.district" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Contains the district name. Ex: [district name="Milestone"] of the District of Milestone[/district.name].</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:simpleContent>
+								<xs:extension base="FreeTextType">
+									<xs:attribute ref="status"/>
+								</xs:extension>
+							</xs:simpleContent>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute ref="type"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dockets">
+		<xs:annotation>
+			<xs:documentation>This element is a wrapper for multiple dockets</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="docket" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>The docket registry where the decision was heard and the docket number assigned to the decision by the court</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="FreeTextType">
+								<xs:attribute ref="status"/>
+								<xs:attribute ref="type"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="repertories">
+		<xs:annotation>
+			<xs:documentation>This element group all old [citation] from jurisprudence DTD.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="repertorie" type="FreeTextType">
+					<xs:annotation>
+						<xs:documentation>The Quebec-specifc handling of Indexed As. Applies to English and French language Cases originating in Quebec (Jurisdiction: Territory: QC).  Strongly recommended to be defined for QC content - a warning should appear if not defined. Optional for all other Jurisdiction: Territories. SCC uses "répertorié" as the translation for "indexed as" which is a reference to the case, e.g.:Indexed as: Canada (Justice) v. name of party; Répertorié: Canada (Justice) c. nom de l'appelant.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="socs">
+		<xs:annotation>
+			<xs:documentation>[socs] is a required element used to contain one or more soc elements. soc within socs is the "style of cause" or name of a decision as it appears on the face of the judgment. Upper case styles of cause should be keyed in upper and lower case: we require specifications for keying upper and lower case French language styles of cause.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="clicsoc" block="extension">
+					<xs:annotation>
+						<xs:documentation>The short style of cause, arrived at by applying standards of the Canadian Law Information Council (therefore the name "clicsoc"). Also known as the "Indexed as" style of cause, because it follows this generated text in many Law Reports.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="soc.simpleType">
+								<xs:attribute ref="status"/>
+								<xs:attribute name="fake.clic" type="xs:boolean" use="optional">
+									<xs:annotation>
+										<xs:documentation>Indicate if the soc is a simulated clic's style</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="soc.simple" type="soc.simpleType">
+					<xs:annotation>
+						<xs:documentation>Simple representation for the style of cause.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="free.text">
+					<xs:annotation>
+						<xs:documentation>This element is provided for backward compatibility. This contains the Style of cause as free text. i.e. unstructured. Deprecated. Ex: [SOC] Audrey Deneiko, of the City of North Battleford, in the Province of Saskatchewan, Applicant and Daniel Deneiko, of the District of Glaslyn, in the Province of Saskatchewan, Respondent [/SOC]</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="FreeTextType">
+								<xs:attribute ref="type"/>
+								<xs:attribute ref="status"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="decision.dates">
+		<xs:annotation>
+			<xs:documentation>This element group all type of dates related to the decision.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="date.decision" type="date">
+					<xs:annotation>
+						<xs:documentation>Contains the decision date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="date.oral.decision" type="date.rangeType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains an oral decision date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="date.written.submissions.to.court" type="date" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>This element contains the  written submission to court date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="date.written.decision" type="date" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains the written decision date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="date.court.issue" type="date" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Contains the court issue date</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="dates.hearing" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Group all hearing dates together</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="date.hearing" type="date.rangeType" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Holds one hearing date information</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="date.other" type="date.rangeType" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:attribute name="release.classification">
+		<xs:annotation>
+			<xs:documentation>This attribute defines how the decision can be published. banned = the publication is forbidden. redacted = the nominative information must be removed. clear = published as is.</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="banned"/>
+				<xs:enumeration value="redacted"/>
+				<xs:enumeration value="clear"/>
+				<xs:enumeration value="unknown"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>

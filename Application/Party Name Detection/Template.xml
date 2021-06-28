@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<judgment>
+    <case_metadata>
+        <subject_area/>
+        <note/>
+        <court/>
+        <case_name/>
+        <docket_number/>
+        <date type="submitted"/>
+        <date type="decided"/>
+        <prior_history/>
+        <counsel/>
+        <judge/>
+    </case_metadata>
+    <case_body>
+        <section/>
+    </case_body>
+</judgment>

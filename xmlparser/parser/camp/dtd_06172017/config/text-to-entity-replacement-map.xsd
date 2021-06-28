@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="entities">
+		<xs:annotation>
+			<xs:documentation>root element for text to entity replacements</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="entity">
+					<xs:annotation>
+						<xs:documentation>A text to entity pairing</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="key" type="xs:string" use="required">
+							<xs:annotation>
+								<xs:documentation>the entity's name</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="type" use="required">
+							<xs:annotation>
+								<xs:documentation>the type of entiity</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="characterEntity"/>
+									<xs:enumeration value="piEntity"/>
+									<xs:enumeration value="stringEntity"/>
+									<xs:enumeration value="tagEntity"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="value" type="xs:string" use="required">
+							<xs:annotation>
+								<xs:documentation>the entity's replacement value</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

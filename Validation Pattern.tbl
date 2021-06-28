@@ -1,0 +1,11 @@
+﻿Validation Pattern	Error Description	Error Type
+</Indexes>[HRT]</Index>[HRT]</Content>|||Wrong placement of closed Indexes tag, this should be placed before Content tag.|||Error
+<ShortName>N.J.A.C|||Incorrect court code in ShortName it should be "NJ Admin Code"|||Error
+<font color="#f00"><b>|||Excess "font color="#f00"" tag in bold|||Error
+<font color="#f00"><i>|||Excess "font color="#f00"" tag in italic|||Error
+</p>\.|||Misplaced unclosed p tag|||Error
+<EffectiveDate>See note</EffectiveDate>|||Letter "n" should be captured in captital letter "N" in the "EffectiveDate"|||Error
+<ExpirationDate>See note</ExpirationDate>|||Letter "n" should be captured in captital letter "N" in the "EffectiveDate"|||Error
+<Update></Update>|||Missing action type in the "Update" tag|||Error
+<EffectiveDate></EffectiveDate>|||No content in "EffectiveDate" tag|||Error
+<ActNumber></ActNumber>|||No content in "ActNumber"|||Error

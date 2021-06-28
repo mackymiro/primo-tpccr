@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><inno:dom xmlns:inno="http://innodatalabs.com/innodom">
+  <inno:meta><inno:datapoint key="case_citation.1.cite.1" confidence="0.004" idref="text-6">Nous vous recommandons d’utiliser les</inno:datapoint><inno:datapoint key="case_citation.2.cite.1" confidence="0.009" idref="text-17">L’ARC offre un service numérique qui nous permet de vous communiquer immédiatement et gratuitement tous les nouveaux changements aux retenues</inno:datapoint></inno:meta>
+  <inno:content><inno:text id="text-1" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="299.0" x-min="95.0" y-max="169.0" y-min="126.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="27.96pt">Tables supplémentaires<inno:br/>de retenues sur la paie</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-2" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="351.0" x-min="44.0" y-max="239.0" y-min="202.0">
+        <inno:b>
+          <inno:color rgb="#808000">
+            <inno:font font-name="Arial-BoldMT" font-size="21.96pt">Au Canada au-delà des limites d’une<inno:br/>province/territoire ou à l’extérieur du Canada</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-3" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="246.77" x-min="157.3" y-max="286.97" y-min="255.93">
+        <inno:b><inno:font font-name="Arial-BoldMT" font-size="14.04pt">En vigueur<inno:br/>le 1</inno:font><inno:font font-name="Arial-BoldMT" font-size="9.00pt"><inno:sup>er</inno:sup></inno:font> <inno:font font-name="Arial-BoldMT" font-size="14.04pt">janvier 2021</inno:font></inno:b>
+      </inno:block></inno:text><inno:text id="text-4" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="233.0" x-min="24.0" y-max="36.0" y-min="21.0">
+        <inno:b>
+          <inno:color rgb="#988942"><inno:font font-name="Arial-BoldMT" font-size="15.96pt">Du nouveau à compter du 1</inno:font><inno:font font-name="Arial-BoldMT" font-size="10.56pt"><inno:sup>er</inno:sup></inno:font> <inno:font font-name="Arial-BoldMT" font-size="15.96pt">janvier 2021</inno:font></inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-5" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="265.0" x-min="24.0" y-max="47.0" y-min="36.1">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Dans ce guide, vous trouverez les principaux changements survenus depuis la dernière édition.</inno:font>
+      </inno:block></inno:text><inno:text id="text-6" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="366.0" x-min="24.0" y-max="82.0" y-min="50.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ce guide tient compte de quelques changements à l’impôt sur le revenu annoncés récemment et qui entreront en vigueur<inno:br/>le 1</inno:font><inno:font font-name="TimesNewRomanPSMT" font-size="6.00pt"><inno:sup>er</inno:sup></inno:font> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">janvier 2021. Au moment de l’impression, certaines modifications proposées à la loi n'étaient pas encore entrés en vigueur. Nous<inno:br/>vous recommandons d’utiliser les nouvelles tables de retenues de cette édition afin d’effectuer vos retenues sur la paie à partir de la<inno:br/>première paie de janvier 2021.</inno:font></inno:block></inno:text><inno:text id="text-7" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="291.0" x-min="24.0" y-max="95.0" y-min="84.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Le Montant personnel de base fédéral a été modifié et nous avons retenu seulement la formule simplifiée.</inno:font>
+      </inno:block></inno:text><inno:table id="table-1" type="number / bullet list"><inno:block page="2" page-height="512" page-width="396" x-max="294.0" x-min="37.0" y-max="129.0" y-min="97.0">
+        <inno:tr row="1">
+          <inno:td col="1" id="table-1-1-1" x-max="294.0" x-min="37.0" y-max="108.05" y-min="97.0"><inno:nec bbox="63.0 629.74 66.76 632.66" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ou le RN ≤ 151 978 $,</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">MPBF</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">= 13 808 $;</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="2">
+          <inno:td col="1" id="table-1-2-1" x-max="294.0" x-min="37.0" y-max="118.95" y-min="108.05"><inno:nec bbox="63.0 612.82 66.76 615.74" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ou 151 978 $ &lt; RN &lt; 216 511 $,</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">MPBF</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">= 13 808 $ - (RN</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">-</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">151 978 $) × (1 387 $ / 64 533 $); et</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="3">
+          <inno:td col="1" id="table-1-3-1" x-max="294.0" x-min="37.0" y-max="129.0" y-min="118.95"><inno:nec bbox="63.0 595.9 66.76 598.82" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ou le RN ≥ 216 511 $,</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">MPBF</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">= 12 421 $.</inno:font></inno:td>
+        </inno:tr>
+      </inno:block></inno:table><inno:text id="text-8" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="347.0" x-min="24.0" y-max="148.0" y-min="130.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Pour l’année 2021, les employeurs et payeurs peuvent se servir de 13 808 $ comme la valeur du</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">MPBF</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">pour leurs employés en<inno:br/>attendant que leurs systèmes de retenues sur la paie soient mis à jour.</inno:font></inno:block></inno:text><inno:text id="text-9" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="357.0" x-min="24.0" y-max="167.0" y-min="149.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Si l’employeur ou le payeur se sert du</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">MPBF</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">de 13 808 $ pour tous leurs employés, les employés avec des revenus nets au-delà de<inno:br/>151 978 $ peuvent demander que plus de taxe soit déduit en complétant le formulaire TD1.</inno:font></inno:block></inno:text><inno:text id="text-10" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="193.0" x-min="24.0" y-max="180.9" y-min="170.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Les seuils de revenu de l’impôt fédéral ont été indexés pour 2021.</inno:font>
+      </inno:block></inno:text><inno:text id="text-11" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="211.0" x-min="24.0" y-max="195.0" y-min="181.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Le montant canadien fédéral de l’emploi pour 2021 est indexé à 1 257 $.</inno:font>
+      </inno:block></inno:text><inno:text id="text-12" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="136.0" x-min="24.0" y-max="208.0" y-min="197.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="11.52pt">Tables de retenues sur la paie</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-13" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="366.0" x-min="24.0" y-max="231.0" y-min="209.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Vous pouvez télécharger les guides T4008, Tables supplémentaires de retenues sur la paie</inno:font><inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="9.48pt"><inno:i>,</inno:i></inno:font> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">et T4032, Tables de retenues sur la paie, à<inno:br/>partir de notre page Web à</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">canada.ca/retenues-paie</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">. Vous pouvez aussi choisir d’imprimer seulement les pages ou l’information dont<inno:br/>vous avez besoin.</inno:font></inno:block></inno:text><inno:text id="text-14" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="190.0" x-min="24.0" y-max="246.9" y-min="237.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="11.52pt">Calculateur en direct des retenues sur la paie</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-15" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="366.0" x-min="24.0" y-max="267.0" y-min="247.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Pour vos retenues sur la paie de 2021, vous pouvez utiliser notre Calculateur en direct des retenues sur la paie (CDRP). En utilisant le<inno:br/>calculateur en direct, les retenues sur la paie seront plus faciles à déterminer. Le CDRP est disponible à</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">canada.ca/cdrp</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">.</inno:font></inno:block></inno:text><inno:text id="text-16" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="120.0" x-min="24.0" y-max="280.0" y-min="271.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="11.52pt">Laissez-nous vous aviser</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-17" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="340.0" x-min="24.0" y-max="296.9" y-min="280.1"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">L’ARC offre un service numérique qui nous permet de vous communiquer immédiatement et</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">gratuitement</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">tous les nouveaux<inno:br/>changements aux retenues sur la paie.</inno:font></inno:block></inno:text><inno:text id="text-18" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="357.0" x-min="24.0" y-max="315.0" y-min="297.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Pour vous inscrire, allez à la page Web de l’ARC à</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">canada.ca/arc-listes-envois-electroniques</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">et fournissez l’adresse numérique de<inno:br/>votre entreprise pour chacune des listes d’envois qui vous intéressent.</inno:font></inno:block></inno:text><inno:text id="text-19" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="92.0" x-min="24.0" y-max="338.0" y-min="324.0">
+        <inno:b>
+          <inno:color rgb="#988942">
+            <inno:font font-name="Arial-BoldMT" font-size="15.96pt">Avis Spécial</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-20" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="163.0" x-min="24.0" y-max="351.0" y-min="338.1">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="11.52pt">Tables de retenues sur la paie (T4032)</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-21" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="366.0" x-min="24.0" y-max="372.0" y-min="352.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Dès le 1</inno:font><inno:font font-name="TimesNewRomanPSMT" font-size="6.00pt"><inno:sup>er</inno:sup></inno:font> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">janvier 2017, l’Agence du revenu du Canada ne produit plus les versions papiers et CD du guide T4032, Tables de retenues<inno:br/>sur la paie. Les versions numériques du guide continuent d’être disponibles sur notre site Web à</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">canada.ca/retenues-paie</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">.</inno:font></inno:block></inno:text><inno:text id="text-22" type="text"><inno:block page="3" page-height="512" page-width="396" x-max="360.0" x-min="32.0" y-max="39.0" y-min="22.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ce guide sert de supplément au guide T4032, Tables de retenues sur la paie. Consultez les Tables de retenues sur la paie de votre<inno:br/>province ou de votre territoire pour obtenir plus de renseignements.</inno:font>
+      </inno:block></inno:text><inno:text id="text-23" type="text"><inno:block page="3" page-height="512" page-width="396" x-max="366.0" x-min="26.0" y-max="251.0" y-min="233.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ce guide explique des situations fiscales courantes dans un langage accessible. Pour obtenir plus de renseignements, communiquez avec<inno:br/>votre bureau des services fiscaux.</inno:font>
+      </inno:block></inno:text><inno:text id="text-24" type="title / subtitle"><inno:block page="3" page-height="512" page-width="396" x-max="66.0" x-min="36.0" y-max="260.7" y-min="251.1">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">Remarque</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-25" type="text"><inno:block page="3" page-height="512" page-width="396" x-max="296.0" x-min="33.0" y-max="270.0" y-min="260.8">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Dans ce guide, toutes les expressions désignant des personnes visent à la fois les hommes et les femmes.</inno:font>
+      </inno:block></inno:text><inno:text id="text-26" type="title / subtitle"><inno:block page="4" page-height="512" page-width="396" x-max="162.0" x-min="26.0" y-max="35.0" y-min="21.0">
+        <inno:b>
+          <inno:color rgb="#988942">
+            <inno:font font-name="Arial-BoldMT" font-size="15.96pt">Renseignements généraux</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-27" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="349.0" x-min="26.0" y-max="52.0" y-min="36.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ce guide sert de supplément au guide T4032, Tables de retenues sur la paie. Consultez les Tables de retenues sur la paie de votre<inno:br/>province ou de votre territoire pour obtenir plus de renseignements sur :</inno:font>
+      </inno:block></inno:text><inno:table id="table-2" type="number / bullet list"><inno:block page="4" page-height="512" page-width="396" x-max="350.0" x-min="26.0" y-max="104.0" y-min="54.0">
+        <inno:tr row="1">
+          <inno:td col="1" id="table-2-1-1" x-max="350.0" x-min="26.0" y-max="66.0" y-min="54.0"><inno:nec bbox="45.0 697.42 48.76 700.34" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">ce qu’il y a de nouveau à compter du 1</inno:font><inno:font font-name="TimesNewRomanPSMT" font-size="6.00pt"><inno:sup>er</inno:sup></inno:font> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">janvier 2021</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="2">
+          <inno:td col="1" id="table-2-2-1" x-max="350.0" x-min="26.0" y-max="78.0" y-min="66.0"><inno:nec bbox="45.0 680.5 48.76 683.42" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">la façon de calculer les retenues d’impôt lorsque vous ne pouvez pas utiliser les tables</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="3">
+          <inno:td col="1" id="table-2-3-1" x-max="350.0" x-min="26.0" y-max="93.46" y-min="78.0"><inno:nec bbox="45.0 663.58 48.76 666.5" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">la façon de retenir l’impôt sur le revenu, les cotisations au Régime de pensions du Canada (RPC), et les cotisations d’assurance-<inno:br/>emploi (AE)</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="4">
+          <inno:td col="1" id="table-2-4-1" x-max="350.0" x-min="26.0" y-max="104.0" y-min="93.46"><inno:nec bbox="45.0 635.74 48.76 638.66" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">les retenues sur la paie requises pour des périodes de paie autres que celles comprises dans ce guide</inno:font></inno:td>
+        </inno:tr>
+      </inno:block></inno:table><inno:text id="text-28" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="365.0" x-min="26.0" y-max="122.0" y-min="104.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Pour obtenir des renseignements sur les retenues, les versements et la production de déclarations sur les retenues sur la paie, consultez<inno:br/>les guides de l’employeur suivants :</inno:font>
+      </inno:block></inno:text><inno:table id="table-3" type="number / bullet list"><inno:block page="4" page-height="512" page-width="396" x-max="341.0" x-min="26.0" y-max="176.0" y-min="122.0">
+        <inno:tr row="1">
+          <inno:td col="1" id="table-3-1-1" x-max="341.0" x-min="26.0" y-max="133.5" y-min="122.0"><inno:nec bbox="45.0 590.98 48.76 593.9" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">T4001, Guide de l’employeur – Les retenues sur la paie et les versements</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="2">
+          <inno:td col="1" id="table-3-2-1" x-max="341.0" x-min="26.0" y-max="144.5" y-min="133.5"><inno:nec bbox="45.0 574.06 48.76 576.98" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">T4130, Guide de l’employeur – Avantages et allocations imposables</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="3">
+          <inno:td col="1" id="table-3-3-1" x-max="341.0" x-min="26.0" y-max="155.7" y-min="144.5"><inno:nec bbox="45.0 557.14 48.76 560.06" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">RC4110, Employé ou travailleur indépendant?</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="4">
+          <inno:td col="1" id="table-3-4-1" x-max="341.0" x-min="26.0" y-max="166.21" y-min="155.7"><inno:nec bbox="45.0 540.22 48.76 543.14" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">RC4120, Guide de l’employeur – Comment établir le feuillet T4 et le Sommaire</inno:font></inno:td>
+        </inno:tr>
+        <inno:tr row="5">
+          <inno:td col="1" id="table-3-5-1" x-max="341.0" x-min="26.0" y-max="176.0" y-min="166.21"><inno:nec bbox="45.0 523.27 48.76 526.19" cid="132" code="0xf06e" fid="126:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">RC4157, Comment retenir l’impôt sur les revenus de pension ou d’autres sources et établir le feuillet T4A et le Sommaire</inno:font></inno:td>
+        </inno:tr>
+      </inno:block></inno:table><inno:text id="text-29" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="335.0" x-min="26.0" y-max="194.0" y-min="178.0"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Vous pouvez télécharger et imprimer une copie des guides ci-dessus. Nos guides sont accessibles sur notre page Web à</inno:font><inno:br/><inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">canada.ca/retenues-paie</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">. Vous pouvez également utiliser gratuitement le</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">Calculateur en direct des retenues sur la paie</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">.</inno:font></inno:block></inno:text><inno:text id="text-30" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="67.27" x-min="33.0" y-max="203.6" y-min="196.0">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">Remarque</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-31" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="365.0" x-min="26.0" y-max="226.0" y-min="203.7">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Vous pouvez aussi référer à l’édition de 2020 de ce guide jusqu’à la fin de 2021 pour résoudre les problèmes d’insuffisance qui<inno:br/>pourraient se poser après le traitement de votre déclaration T4 de 2020, par suite de la Revue des gains assurables et ouvrant droit à<inno:br/>pension (RGAP).</inno:font>
+      </inno:block></inno:text><inno:text id="text-32" type="title / subtitle"><inno:block page="4" page-height="512" page-width="396" x-max="120.0" x-min="26.0" y-max="249.0" y-min="235.0">
+        <inno:b>
+          <inno:color rgb="#988942">
+            <inno:font font-name="Arial-BoldMT" font-size="15.96pt">Code de demande</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-33" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="356.0" x-min="26.0" y-max="265.7" y-min="249.1">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Le total du montant personnel qu’un employé demande déterminera le code de demande que vous utiliserez. Consultez le Tableau 1<inno:br/>ci-dessous.</inno:font>
+      </inno:block></inno:text><inno:text id="text-34" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="265.0" x-min="26.0" y-max="279.0" y-min="267.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Les codes de demande et les montants qui correspondent ne figurent pas sur le formulaire TD1.</inno:font>
+      </inno:block></inno:text><inno:text id="text-35" type="title / subtitle"><inno:block page="4" page-height="512" page-width="396" x-max="154.0" x-min="26.0" y-max="292.73" y-min="282.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="11.52pt">Explication des codes de demande</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-36" type="title / subtitle"><inno:block page="4" page-height="512" page-width="396" x-max="90.0" x-min="27.0" y-max="303.0" y-min="294.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="9.48pt">Code de demande 0</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-37" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="159.57" x-min="26.57" y-max="313.7" y-min="302.67"><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Ce code signifie</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">qu’aucun montant n’est demandé</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">.</inno:font></inno:block></inno:text><inno:text id="text-38" type="title / subtitle"><inno:block page="4" page-height="512" page-width="396" x-max="108.54" x-min="26.0" y-max="325.3" y-min="315.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="9.48pt">Codes de demande 1 à 10</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-39" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="367.0" x-min="26.0" y-max="347.0" y-min="325.4">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Vous faites le rapprochement entre le montant total de la demande déclaré selon le formulaire TD1 de votre employé ou pensionné et les<inno:br/>codes de demande correspondants. Vous regardez ensuite l’impôt pour la paie de l’employé selon le code de demande dans les tables<inno:br/>d’impôt fédéral pour la période de paie.</inno:font>
+      </inno:block></inno:text><inno:text id="text-40" type="title / subtitle"><inno:block page="4" page-height="512" page-width="396" x-max="199.0" x-min="26.0" y-max="362.0" y-min="351.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="9.48pt">Indexation des montants des codes de demande fédéraux</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-41" type="text"><inno:block page="4" page-height="512" page-width="396" x-max="358.0" x-min="26.0" y-max="382.0" y-min="364.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Les crédits applicables à chaque code de demande fédéral ont été automatiquement augmentés dans les tables d’impôt par le facteur<inno:br/>d’indexation de l’année courante.</inno:font>
+      </inno:block></inno:text><inno:text id="text-42" type="title / subtitle"><inno:block page="5" page-height="512" page-width="396" x-max="275.0" x-min="120.0" y-max="32.0" y-min="20.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="9.48pt">Tableau 1 − Codes de demande fédéraux pour 2021</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-43" type="text"><inno:block page="5" page-height="512" page-width="396" x-max="70.0" x-min="34.0" y-max="38.3" y-min="31.0">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="9.48pt">Remarque :</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-44" type="text"><inno:block page="5" page-height="512" page-width="396" x-max="350.0" x-min="34.0" y-max="60.0" y-min="38.4">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">En raison des changements législatifs au montant personnel de base fédéral, le tableau de Codes de demande ne pourra pas être<inno:br/>produit avec des tranches de salaires comme auparavant. Par conséquence, le tableau de Codes de demande fédéral ne sera pas<inno:br/>produit dans cette édition.</inno:font>
+      </inno:block></inno:text><inno:text id="text-45" type="title / subtitle"><inno:block page="5" page-height="512" page-width="396" x-max="177.0" x-min="26.0" y-max="76.0" y-min="63.0">
+        <inno:b>
+          <inno:font font-name="Arial-BoldMT" font-size="11.52pt">Revenus d’emploi de toutes provenances</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-46" type="text"><inno:block page="5" page-height="512" page-width="396" x-max="359.0" x-min="26.0" y-max="106.0" y-min="76.1">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Les employés peuvent indiquer, à la rubrique « Revenu provenant d’autres employeurs ou payeurs » des formulaires TD1 fédéral et<inno:br/>provincial, que leurs revenus d’emploi de toutes provenances seront inférieurs au montant total de la demande. Si un employé indique<inno:br/>que son revenu total prévu sera inférieur au « Montant total de la demande » des formulaires TD1, il n’y a pas lieu d’effectuer des<inno:br/>retenues d’impôt fédéral ou provincial.</inno:font>
+      </inno:block></inno:text><inno:text id="text-47" type="text"><inno:block page="5" page-height="512" page-width="396" x-max="358.0" x-min="26.0" y-max="124.9" y-min="107.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Cependant, en tant qu’employeur, si vous savez que cette déclaration est fausse, vous devez effectuer des retenues au titre de l’impôt<inno:br/>fédéral et provincial, en fonction du code de demande applicable au « Montant total de la demande » des formulaires TD1.</inno:font>
+      </inno:block></inno:text><inno:text id="text-48" type="text"><inno:block page="5" page-height="512" page-width="396" x-max="368.0" x-min="26.0" y-max="143.0" y-min="125.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="9.48pt">Le fait d’accepter sciemment un formulaire TD1 renfermant des données fausses ou trompeuses constitue une infraction grave. En cas de<inno:br/>doute, demandez conseil à votre bureau des services fiscaux.</inno:font>
+      </inno:block></inno:text></inno:content>
+</inno:dom>

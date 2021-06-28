@@ -1,0 +1,16 @@
+*.DS_Store
+*.log
+*.zip
+.idea
+.sass-cache/
+/nbproject/
+/nbproject/private/
+/node_modules/
+ad.js
+TODO
+test.html
+ZoneDetection
+ZoneDetection.vshost
+mutool.exe
+primoValidate
+primoValidate.vshost.exe.manifest

@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>File Expired Details</title>
+
+	<style>
+		#contentSection { position:absolute; left: 0; top: 0; z-index: 100 }
+		#resultTable { position:absolute; left: 0; top: 0; z-index: 10 }
+
+		body {
+		    background: white;
+		    text-align: center; 
+		    font-family:arial,helvetica,"Nimbus Sans L",sans-serif;
+		    color: black;
+		}		
+	</style>
+    <!-- STF:expired: -->
+    <style type=text/css>
+   .label { font-family: verdana, arial; font-size: 10px; color: black; }
+   .whitelabel { font-family: verdana, arial; font-size: 10px; color: white; }
+   .input { font-family: verdana, arial; font-size: 9px }
+   body {
+       background-image: url();
+   }
+   #footerSection { position: absolute; left: 0; top: 425; z-index: 99; }
+   #poweredBySection { position: absolute; left: 0; top: 430; z-index: 100; }
+</style>
+
+
+</head>
+<body>
+
+<div id="contentSection">
+	<table cellpadding=0 cellspacing=0 width=100% class=label>
+<tr bgcolor=white><td width=100%><a href="http://www.thomson.com/common/view_brand_overview.jsp?section=financial&body_include=/financial/brand_overviews/Thomson_Corporate_Communications_Services&page_mode=full&subsection=pressroom&secondary=pr_market_group&subnav=corp&tertiary=financial&product_name=%0A%0AThomson_Corporate_Communications_Services%0A%0A" target="_blank"><img src="https://www.sendthisfile.com/images/marketing/thomson_banner_logo.gif" border=0></a></td></tr>
+</table>
+
+</div>
+
+    <table width="750" height="750" cellspacing=3 cellpadding=5>
+
+	<tr>
+	<td>
+
+	    <h2>File Expired Details . . .</h2>
+
+	    
+
+	        <h3><img src="/images/silk/shield_add.png"> This file has reached its maximum allowable downloads.</h3>
+	
+	        <ul>
+	            <li>				
+	            
+
+
+
+
+
+
+	
+
+The number of downloads set by the sender has been reached.  The sender can reset the number of downloads.
+<br><br>
+Contact the sender and ask if he/she can assist you.
+				</li>
+	        </ul>
+
+		
+
+	</td>
+	</tr>
+    </table>
+
+</body>
+</html>	

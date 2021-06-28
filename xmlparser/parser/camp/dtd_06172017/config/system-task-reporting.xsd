@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 (http://www.altova.com) by Csaba (CARSWELL-1 CORPORATE PLAZA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:attribute name="context" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Element context in XPath form.  eg: /root/act/sec</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="context.sequence" type="xs:nonNegativeInteger">
+		<xs:annotation>
+			<xs:documentation>Number of the context.  eg: 3 (of 24 /root/act/sec)</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="line.number" type="xs:nonNegativeInteger">
+		<xs:annotation>
+			<xs:documentation>Line number location in whitespace normalized file.</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="name">
+		<xs:annotation>
+			<xs:documentation>Name or label, such as for an element.  eg: act, section, emphasis</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="return.code" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Return code of component that has run</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+	<xs:attribute name="severity">
+		<xs:annotation>
+			<xs:documentation>Info, Warn, Error, Fatal classifications</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Info"/>
+				<xs:enumeration value="Warn"/>
+				<xs:enumeration value="Error"/>
+				<xs:enumeration value="Fatal"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attributeGroup name="common.attributes">
+		<xs:attribute name="id">
+			<xs:annotation>
+				<xs:documentation>Unique identifier for a task.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="parent.id">
+			<xs:annotation>
+				<xs:documentation>Unique identifier of task that spawned this one.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:complexType name="comparison.type">
+		<xs:sequence>
+			<xs:element ref="event" minOccurs="0"/>
+			<xs:element name="source.compare" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute ref="context"/>
+							<xs:attribute ref="context.sequence"/>
+							<xs:attribute ref="line.number"/>
+							<xs:attribute ref="name"/>
+							<xs:attribute name="source.name">
+								<xs:annotation>
+									<xs:documentation>Name of source file.</xs:documentation>
+								</xs:annotation>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="compare.type"/>
+	</xs:complexType>
+	<xs:complexType name="content.file.type">
+		<xs:sequence minOccurs="0">
+			<xs:element name="properties" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="content.type" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Type of content (eg: XML or SGML).</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string"/>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="file.extension" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>File's extension.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="file.name" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>File's name without extension.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="file.permissions" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>File's CRUD permissions.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="file.timestamp" type="xs:dateTime" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>File's system time stamp.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element ref="filename" minOccurs="0"/>
+						<xs:element ref="path" minOccurs="0"/>
+						<xs:element name="path.enacting.body" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Jurisdiction associated with file (eg: Ontario).</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="path.environment" type="xs:string" minOccurs="0"/>
+						<xs:element name="path.legis.type" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Legislation type associated with file (eg: Act, Regulation).</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="path.repository" type="xs:string" minOccurs="0"/>
+						<xs:element name="path.server" type="xs:string" minOccurs="0"/>
+						<xs:element name="schema.name" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Name of file's associated schema (if any).</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="schema.path" type="xs:string" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>Location of file's schema as defined in file or by system if not in file.</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element ref="size.kbytes" minOccurs="0"/>
+						<xs:element ref="size.lines" minOccurs="0"/>
+						<xs:element name="validation.status" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>XML, SGML or other content validation status.</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute ref="severity"/>
+										<xs:attribute ref="return.code"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="count.type">
+		<xs:sequence>
+			<xs:element ref="count.total" minOccurs="0"/>
+			<xs:element ref="count.by.name" minOccurs="0"/>
+			<xs:element ref="count.by.context" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="count.file.type">
+		<xs:complexContent>
+			<xs:extension base="content.file.type">
+				<xs:sequence minOccurs="0">
+					<xs:element name="statistics" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="attributes" type="count.type" minOccurs="0"/>
+								<xs:element name="comments" minOccurs="0">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="count.total" minOccurs="0"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="elements" type="count.type" minOccurs="0"/>
+								<xs:element name="entities" type="count.type" minOccurs="0"/>
+								<xs:element name="processing.instructions" type="count.type" minOccurs="0"/>
+								<xs:element name="text.nodes" type="count.type" minOccurs="0"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="system.tasks">
+		<xs:annotation>
+			<xs:documentation>Root element. One per report file.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="task.job.process"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="filename" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>File name and extension.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="path" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Whole path to filename.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="size.kbytes" type="xs:nonNegativeInteger">
+		<xs:annotation>
+			<xs:documentation>File size in kilobytes.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="size.lines" type="xs:nonNegativeInteger">
+		<xs:annotation>
+			<xs:documentation>File size in standard lines.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="count.total" type="xs:nonNegativeInteger">
+		<xs:annotation>
+			<xs:documentation>Count of all of this general type (eg: elements).</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="count.by.name">
+		<xs:annotation>
+			<xs:documentation>Count of all instances of a type (eg: section elements).</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Count of instances of this type.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:nonNegativeInteger">
+								<xs:attribute ref="name"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="count.by.context">
+		<xs:annotation>
+			<xs:documentation>Count of all instances of a type within an element nesting (eg: /root/act/sec).</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="context" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Count of all instances of this nesting.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:nonNegativeInteger">
+								<xs:attribute ref="context"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="events">
+		<xs:annotation>
+			<xs:documentation>Container for task events.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="event" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="event">
+		<xs:annotation>
+			<xs:documentation>The text of a logged event.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute ref="context"/>
+					<xs:attribute ref="context.sequence"/>
+					<xs:attribute ref="line.number"/>
+					<xs:attribute ref="return.code"/>
+					<xs:attribute ref="severity"/>
+					<xs:attribute name="time" type="xs:dateTime">
+						<xs:annotation>
+							<xs:documentation>When the event took place.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="comparison">
+		<xs:annotation>
+			<xs:documentation>A comparison between two or more units.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="comment" type="comparison.type" minOccurs="0"/>
+				<xs:element name="element" type="comparison.type" minOccurs="0"/>
+				<xs:element name="element.with.attributes" type="comparison.type" minOccurs="0"/>
+				<xs:element name="element.and.text" type="comparison.type" minOccurs="0"/>
+				<xs:element name="element.with.attributes.and.text" type="comparison.type" minOccurs="0"/>
+				<xs:element name="entity" type="comparison.type" minOccurs="0"/>
+				<xs:element name="processing.instruction" type="comparison.type" minOccurs="0"/>
+				<xs:element name="text" type="comparison.type" minOccurs="0"/>
+				<xs:element name="text.with.markup" type="comparison.type" minOccurs="0"/>
+			</xs:choice>
+			<xs:attribute name="dimension">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="historical"/>
+						<xs:enumeration value="horizontal"/>
+						<xs:enumeration value="vertical"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="task.job.process">
+		<xs:annotation>
+			<xs:documentation>General processing job.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="properties" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Static properties of the component.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="filename" minOccurs="0"/>
+							<xs:element name="name" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Name of component (eg: converter).</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="outcome" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Outcome of the processing</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element ref="path" minOccurs="0"/>
+							<xs:element ref="size.kbytes" minOccurs="0"/>
+							<xs:element name="version" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Build/release of component.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="statistics" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Information about process run.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cpu.maximum" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Highest CPU usage during processing.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="cpu.minimum" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Lowest CPU usage during processing.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="memory.maximum" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Highest memory usage during processing.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="memory.minimum" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Lowest memory usage during processing.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="tasks.attempted" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of files for which processing was started.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="tasks.failed" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of files with fatal errors when processed.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="tasks.not.processed" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of files left unprocessed after process ended.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="tasks.success" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of files processed without fatal errors.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="tasks.total" type="xs:nonNegativeInteger" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of files to be processed.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="time.duration" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Time between process start and end.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="time.end" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>When process ended.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="time.start" type="xs:dateTime" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>When process began.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="input" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="count.file.type">
+								<xs:attributeGroup ref="common.attributes"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="output" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="count.file.type">
+								<xs:attributeGroup ref="common.attributes"/>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="events" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Container for task events.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="task.job.process"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attributeGroup ref="common.attributes"/>
+			<xs:attribute name="type" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Kind of process, such as converter, XMLizer, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for import mark up -->
+<!-- $Date: 2007/05/03 13:35:05 $ -->
+<!-- $Revision: 1.1 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:attributeGroup name="CommonAttributes">
+		<xs:attribute name="id" type="xs:string"/>
+		<xs:attribute name="tagwas" type="xs:string"/>
+		<xs:attribute name="tagcontext" type="xs:string"/>
+		<xs:attribute name="mappingrule" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:complexType name="ParagraphType">
+		<xs:sequence>
+			<xs:element ref="prolog" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="paragraphbody" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:group ref="ParagraphBodyGroup"/>
+					</xs:sequence>
+					<xs:attributeGroup ref="CommonAttributes"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attributeGroup ref="CommonAttributes"/>
+	</xs:complexType>
+	<xs:complexType name="InlineType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="inline" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="footnote" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="term" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attributeGroup ref="CommonAttributes"/>
+	</xs:complexType>
+	<xs:group name="DivisionBodyGroup">
+		<xs:sequence>
+			<xs:element ref="prolog" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="paragraph" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="list" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="glossarylist" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="table" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="example" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="inline" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="footnote" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="division" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:group ref="NullGroup" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:element ref="epilog" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="ParagraphBodyGroup">
+		<xs:sequence>
+			<xs:element ref="prolog" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="paragraph" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="list" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="glossarylist" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="table" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="inline" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="footnote" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="term" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:group ref="NullGroup" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="NullGroup">
+		<xs:choice>
+			<xs:element ref="nullelement"/>
+			<xs:element ref="nulltag"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="root">
+		<xs:annotation>
+			<xs:documentation>Document Root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="division" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:group ref="NullGroup" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="division">
+		<xs:annotation>
+			<xs:documentation>Division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="prolog" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="divisionbody" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:group ref="DivisionBodyGroup"/>
+						</xs:sequence>
+						<xs:attributeGroup ref="CommonAttributes"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="epilog" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="list">
+		<xs:annotation>
+			<xs:documentation>List-like structures</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="item"/>
+			</xs:choice>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="item">
+		<xs:annotation>
+			<xs:documentation>Items appear only in Lists</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ParagraphType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="glossarylist">
+		<xs:annotation>
+			<xs:documentation>Glossary is a special list of terms and their definitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="termanddefinitions"/>
+			</xs:choice>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="termanddefinitions">
+		<xs:annotation>
+			<xs:documentation>One term and its one or more definitions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="term" minOccurs="0"/>
+				<xs:element name="definition" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType mixed="true">
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:group ref="DivisionBodyGroup"/>
+							<xs:element ref="term" minOccurs="0"/>
+						</xs:choice>
+						<xs:attributeGroup ref="CommonAttributes"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="term" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>A definable term</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="table">
+		<xs:annotation>
+			<xs:documentation>Simple table</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="tablebranch"/>
+			</xs:choice>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tablebranch">
+		<xs:annotation>
+			<xs:documentation>Sub set of a table, such as a row</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="tablebranch"/>
+				<xs:element name="tableleaf" type="ParagraphType"/>
+			</xs:choice>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="footnote" type="ParagraphType">
+		<xs:annotation>
+			<xs:documentation>Embeddable note</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="paragraph" type="ParagraphType">
+		<xs:annotation>
+			<xs:documentation>Paragraph</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="inline" type="InlineType">
+		<xs:annotation>
+			<xs:documentation>Embeddable, non line breaking elements</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="prolog">
+		<xs:annotation>
+			<xs:documentation>Container for meta data</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="identifier" type="InlineType" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="title" type="InlineType" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="metadata" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="epilog">
+		<xs:annotation>
+			<xs:documentation>Container for meta data at end of division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="metadata"/>
+				<xs:element ref="inline"/>
+			</xs:choice>
+			<xs:attributeGroup ref="CommonAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="metadata">
+		<xs:annotation>
+			<xs:documentation>Any generic meta data</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:complexContent mixed="true">
+				<xs:extension base="InlineType">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="metadata" minOccurs="0" maxOccurs="unbounded"/>
+					</xs:choice>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="example">
+		<xs:annotation>
+			<xs:documentation>Whitespace preserving element</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:whiteSpace value="preserve"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="nullelement">
+		<xs:annotation>
+			<xs:documentation>Element that will be completely removed on processing</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="nulltag">
+		<xs:annotation>
+			<xs:documentation>Element that will have its tags and attributes removed, but its content will remain</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

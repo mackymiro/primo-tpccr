@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for legislation content mark up -->
+<!-- $Date: 2010/02/02 18:58:37 $ -->
+<!-- $Revision: 1.10 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.1">
+	<xs:include schemaLocation="carswell-content-caselaw.xsd"/>
+	<xs:element name="backmatter">
+		<xs:annotation>
+			<xs:documentation>Back of document content</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="glossary" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="index" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="index">
+		<xs:annotation>
+			<xs:documentation>Index</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="LegislationDivisionType">
+					<xs:sequence>
+						<xs:element name="body" minOccurs="0">
+							<xs:complexType>
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:group ref="LegislationDivisionCommonGroup"/>
+									<xs:choice>
+										<xs:element ref="index.div"/>
+										<xs:element ref="index.entry"/>
+									</xs:choice>
+								</xs:choice>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="epilog" type="EpilogType" minOccurs="0"/>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="index.div">
+		<xs:annotation>
+			<xs:documentation>Division inside Index</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologTitleType" minOccurs="0"/>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="index.entry" maxOccurs="unbounded"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="index.entry">
+		<xs:annotation>
+			<xs:documentation>Regular Index entry</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element name="indexentrybody" type="ParagraphType">
+						<xs:annotation>
+							<xs:documentation>Text body of Index entry</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element ref="clone"/>
+				</xs:choice>
+				<xs:element ref="see" minOccurs="0"/>
+				<xs:element ref="see.also" minOccurs="0"/>
+				<xs:element ref="index.entry" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="frontmatter">
+		<xs:annotation>
+			<xs:documentation>Front of document content</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologType" minOccurs="0"/>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="book.identification" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="copyright" minOccurs="0"/>
+							<xs:choice minOccurs="0" maxOccurs="unbounded">
+								<xs:element ref="table.of.contents"/>
+								<xs:element ref="div"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="book.identification">
+		<xs:annotation>
+			<xs:documentation>Book identification information</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="DivisionType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="copyright">
+		<xs:annotation>
+			<xs:documentation>Copyright information</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="DivisionType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="table.of.contents">
+		<xs:annotation>
+			<xs:documentation>Table of Contents division</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="prolog" type="PrologType"/>
+				<xs:element name="body">
+					<xs:complexType>
+						<xs:complexContent>
+							<xs:extension base="DivisionBodyType">
+								<xs:choice minOccurs="0" maxOccurs="unbounded">
+									<xs:element ref="act"/>
+									<xs:element ref="regulation"/>
+									<xs:element ref="misc.law"/>
+									<xs:element ref="convention"/>
+								</xs:choice>
+							</xs:extension>
+						</xs:complexContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="format.sgml">
+		<xs:annotation>
+			<xs:documentation>Legacy Format tag</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="verso" type="InlineType" minOccurs="0"/>
+				<xs:element name="recto" type="InlineType" minOccurs="0"/>
+				<xs:element name="prepage" type="xs:string" minOccurs="0"/>
+				<xs:element name="startpage" type="xs:string" minOccurs="0"/>
+				<xs:element name="nextpage" type="xs:string" minOccurs="0"/>
+				<xs:element name="rectfoot" type="InlineType" minOccurs="0"/>
+				<xs:element name="relname" type="xs:string" minOccurs="0"/>
+				<xs:choice minOccurs="0">
+					<xs:element ref="date"/>
+					<xs:element ref="preserve.date"/>
+				</xs:choice>
+				<xs:element name="preear" type="xs:string" minOccurs="0"/>
+				<xs:element name="spine" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="cover" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="running" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

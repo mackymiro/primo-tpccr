@@ -1,0 +1,5 @@
+.myclass:link { color: red; }
+.myclass:visited { color: blue;}
+.myclass:hover { color: #FFA500; }
+.myclass:active { color: #0000FF; }
+.myclass:focus { color: green; }

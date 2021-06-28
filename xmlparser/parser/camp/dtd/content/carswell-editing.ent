@@ -1,0 +1,502 @@
+<!-- PUBLIC "-//Carswell//ENTITIES Carswell//EN" -->
+<!--=======================================================================
+    rev. 4.6      C A R S W E L L   X M L    E N T I T I E S
+    =======================================================================-->
+
+<!-- Entity names are chosen from the ISO SGML entity sets.
+     Four-digit hex codes are UCS-2 codes.
+     Codes and names taken from ISO/IEC DIS 10646-1.2 dated
+     1991 December 26.  -->
+ 
+<!ENTITY aacute	"&#x00E1;"> <!-- LATIN SMALL LETTER A WITH ACUTE -->
+<!ENTITY Aacute	"&#x00C1;"> <!-- LATIN CAPITAL LETTER A WITH ACUTE -->
+<!ENTITY acirc	"&#x00E2;"> <!-- LATIN SMALL LETTER A WITH CIRCUMFLEX -->
+<!ENTITY Acirc	"&#x00C2;"> <!-- LATIN CAPITAL LETTER A WITH CIRCUMFLEX -->
+<!ENTITY aelig	"&#x00E6;"> <!-- LATIN SMALL LETTER AE -->
+<!ENTITY AElig	"&#x00C6;"> <!-- LATIN CAPITAL LETTER AE -->
+<!ENTITY agrave	"&#x00E0;"> <!-- LATIN SMALL LETTER A WITH GRAVE -->
+<!ENTITY Agrave	"&#x00C0;"> <!-- LATIN CAPITAL LETTER A WITH GRAVE -->
+<!ENTITY alpha	"&#x03B1;"> <!--GREEK SMALL ALPHA-->
+<!ENTITY amacr	"&#x0101;"> <!-- LATIN SMALL LETTER A WITH MACRON -->
+<!ENTITY Amacr	"&#x0100;"> <!-- LATIN CAPITAL LETTER A WITH MACRON -->
+<!ENTITY Aogon "&#x0104;"  > <!--LATIN CAPITAL LETTER A WITH OGONEK-->
+<!ENTITY aogon  "&#x0105;"  > <!--LATIN SMALL LETTER A WITH OGONEK-->
+<!ENTITY ape	"&#x224A;"> <!--APPROXIMATE, EQUALS-->
+<!ENTITY aring	"&#x00E5;"> <!-- LATIN SMALL LETTER A WITH RING ABOVE -->
+<!ENTITY Aring	"&#x00C5;"> <!-- LATIN CAPITAL LETTER A WITH RING ABOVE -->
+<!ENTITY atilde	"&#x00E3;"> <!-- LATIN SMALL LETTER A WITH TILDE -->
+<!ENTITY Atilde	"&#x00C3;"> <!-- LATIN CAPITAL LETTER A WITH TILDE -->
+<!ENTITY auml	"&#x00E4;"> <!-- LATIN SMALL LETTER A WITH DIAERESIS -->
+<!ENTITY Auml	"&#x00C4;"> <!-- LATIN CAPITAL LETTER A WITH DIAERESIS -->
+<!ENTITY beta	"&#x03B2;"> <!-- GREEK SMALL LETTER BETA -->
+<!ENTITY block	"&#x2588;"> <!-- FULL BLOCK -->
+<!ENTITY bull	"&#x2022;"> <!-- BULLET -->
+<!ENTITY cacute	"&#x0107;"> <!-- LATIN SMALL LETTER C WITH ACUTE -->
+<!ENTITY Cacute	"&#x0106;"> <!-- LATIN CAPITAL LETTER C WITH ACUTE -->
+<!ENTITY cap     "&#x2229;"    > <!--Upper case C, tipped over forward, intersection-->
+<!ENTITY caret	"&#x2041;"> <!-- CARET -->
+<!ENTITY Ccaron "&#x010C;" > <!--LATIN CAPITAL LETTER C WITH CARON-->
+<!ENTITY ccaron "&#x010D;" > <!--LATIN SMALL LETTER C WITH CARON-->
+<!ENTITY ccedil	"&#x00E7;"> <!-- LATIN SMALL LETTER C WITH CEDILLA -->
+<!ENTITY Ccedil	"&#x00C7;"> <!-- LATIN CAPITAL LETTER C WITH CEDILLA -->
+<!ENTITY cents	"&#x00A2;"> <!-- CENT SIGN -->
+<!ENTITY check	"&#x2713;"> <!-- CHECK MARK -->
+<!ENTITY cir	"&#x25CB;"> <!-- WHITE CIRCLE -->
+<!ENTITY cirf "&#x25CF;"> <!--circle, filled-->
+<!ENTITY clubs	"&#x2663;"> <!-- BLACK CLUB SUIT -->
+<!ENTITY cmacr "c&#x0304;"> <!--small c, macron (bar above letter)-->
+<!ENTITY copy	"&#x00A9;"> <!-- COPYRIGHT SIGN -->
+<!ENTITY dagger  "&#x2020;" > <!--DAGGER-->
+<!ENTITY Dagger	"&#x2021;"> <!-- DOUBLE DAGGER -->
+<!ENTITY darr    "&#x2193;"   > <!--down arrow-->
+<!ENTITY deg     "&#x00B0;"    > <!--DEGREE SIGN--> 
+<!ENTITY Delta   "&#x0394;"  > <!--GREEK CAPITAL DELTA-->
+<!ENTITY delta   "&#x03B4;"  > <!--GREEK SMALL DELTA-->
+<!ENTITY diams   "&#x2666;"  > <!--diamond suit (solid)-->
+<!ENTITY divide  "&#x00F7;" > <!--DIVISION SIGN-->
+<!ENTITY Dmacr   "D&#x0304;"  > <!--LATIN CAPITAL D WITH BAR-->
+<!ENTITY dtrif   "&#x25BE;"  > <!--down triangle, filled -->
+<!ENTITY dtris   "&#x25BD;"  > <!--down triangle, shaded or hatched-->
+<!ENTITY Eacute  "&#x00C9;" > <!--LATIN CAPITAL LETTER E WITH ACUTE-->
+<!ENTITY eacute  "&#x00E9;" > <!--LATIN SMALL LETTER E WITH ACUTE-->
+<!ENTITY Eacuto  "&#x00C9;&#x0328;" > <!--LATIN CAPITAL LETTER E WITH ACUTE AND OGONEK-->
+<!ENTITY eacuto  "&#x00E9;&#x0328;" > <!--LATIN SMALL LETTER E WITH ACUTE AND OGONEK-->
+<!ENTITY Ecaron  "&#x011A;" > <!--LATIN CAPITAL LETTER E WITH CARON-->
+<!ENTITY ecaron  "&#x011B;" > <!--LATIN SMALL LETTER E WITH CARON-->
+<!ENTITY Ecirc   "&#x00CA;"  > <!--LATIN CAPITAL LETTER E WITH CIRCUMFLEX-->
+<!ENTITY ecirc   "&#x00EA;"  > <!--LATIN SMALL LETTER E WITH CIRCUMFLEX-->
+<!ENTITY Edot  "&#x0116;"  > <!--capital e, dot above -->
+<!ENTITY edot  "&#x0117;"  > <!--small e, dot above -->
+<!ENTITY ee      "&#x2147;"     > <!--exponential base of the natural logarithm-->
+<!ENTITY Egrave  "&#x00C8;" > <!--LATIN CAPITAL LETTER E WITH GRAVE-->
+<!ENTITY egrave  "&#x00E8;" > <!--LATIN SMALL LETTER E WITH GRAVE-->
+<!ENTITY Egravo  "&#x00C8;&#x0328;" > <!--LATIN CAPITAL LETTER E WITH GRAVE AND OGONEK-->
+<!ENTITY egravo  "&#x00E8;&#x0328;" > <!--LATIN SMALL LETTER E WITH GRAVE AND OGONEK-->
+<!ENTITY Emacr   "&#x0112;"  > <!--capital e, macron -->
+<!ENTITY emacr   "&#x0113;"  > <!--small e, macron -->
+<!ENTITY epsiv   "&#x03B5;"  > <!--varepsilon (variation on epsilon: more script-like)-->
+<!ENTITY equiv	 "&#x2261;"	 > <!--triple bar-->
+<!ENTITY erever  "&#x258;"  > <!--Latin small letter e reversed--> 
+<!ENTITY esh     "&#x0283;"    > <!--Latin small s integral operator-->
+<!ENTITY eta     "&#x03B7;"    > <!--GREEK SMALL LETTER ETA-->
+<!ENTITY Eth     "&#x00D0;"    > <!--LATIN CAPITAL LETTER ETH-->
+<!ENTITY eth     "&#x00F0;"    > <!--LATIN SMALL LETTER ETH-->
+<!ENTITY eturn   "&#x259;"  > <!--Latin small letter e turned, like schwa--> 
+<!ENTITY Euml    "&#x00CB;"   > <!--LATIN CAPITAL LETTER E WITH DIAERESIS-->
+<!ENTITY euml    "&#x00EB;"   > <!--LATIN SMALL LETTER E WITH DIAERESIS-->
+<!ENTITY euro    "&#x20ac;"   > <!--Euro currency symbol-->
+<!ENTITY female  "&#x2640;" > <!--circle with a crossed line underneath-->
+<!ENTITY fnof    "&#x0192;"   > <!--FUNCTION OF italic small f-->
+<!ENTITY forall  "&#x2200;" > <!--FOR ALL (upside down capital A)-->
+<!ENTITY gamma   "&#x03B3;"  > <!--small gamma, Greek-->
+<!ENTITY Gback   "G&#x0332;"  > <!--back g in Nisga'a language upper case g with underline-->
+<!ENTITY gback   "g&#x0332;"  > <!--back g in Nisga'a language lower case g with underline-->
+<!ENTITY Gcaron  "&#x16aa;" > <!--LATIN CAPITAL LETTER G WITH CARON-->
+<!ENTITY gcaron  "&#x16ba;" > <!--LATIN SMALL LETTER g WITH CARON-->
+<!ENTITY ge      "&#x2265;"     > <!--GREATER-THAN-OR-EQUAL-->
+<!ENTITY Glotta  "&#x0241;" > <!--CAPITAL LETTER GLOTTAL STOP--> 
+<!ENTITY glotta  "&#x0242;" > <!--SMALL LETTER GLOTTAL STOP--> 
+<!ENTITY hellip  "&#x2026;" > <!--HORIZONTAL ELLIPSIS-->
+<!ENTITY heart   "&#x2665;"  > <!--HEART SUIT SYMBOL-->
+<!ENTITY Iacute  "&#x00CD;" > <!--LATIN CAPITAL LETTER I WITH ACUTE-->
+<!ENTITY iacute  "&#x00ED;" > <!--LATIN SMALL LETTER I WITH ACUTE-->
+<!ENTITY Iacuto  "&#x00CD;&#x0328;" > <!--LATIN CAPITAL LETTER I WITH ACUTE AND OGONEK-->
+<!ENTITY iacuto  "&#x00ED;&#x0328;" > <!--LATIN SMALL LETTER I WITH ACUTE AND OGONEK-->
+<!ENTITY ibreve  "i&#x0306;" > <!--LATIN SMALL LETTER I WITH BREVE-->
+<!ENTITY Icirc   "&#x00CE;"  > <!--LATIN CAPITAL LETTER I WITH CIRCUMFLEX-->
+<!ENTITY icirc   "&#x00EE;"  > <!--LATIN SMALL LETTER I WITH CIRCUMFLEX-->
+<!ENTITY Igrave  "&#x00CC;" > <!--LATIN CAPITAL LETTER I WITH GRAVE-->
+<!ENTITY igrave  "&#x00EC;" > <!--LATIN SMALL LETTER I WITH GRAVE-->
+<!ENTITY imacr   "&#x012A;"  > <!--small i, macron -->
+<!ENTITY Iogon   "&#x012E;"  > <!--LATIN CAPITAL LETTER I WITH OGONEK-->
+<!ENTITY iogon   "&#x012F;"  > <!--LATIN SMALL LETTER I WITH OGONEK-->
+<!ENTITY iquest  "&#x00BF;" > <!--inverted question mark-->
+<!ENTITY Itilde  "&#x0128;" > <!--LATIN CAPITAL LETTER I WITH TILDE-->
+<!ENTITY itilde  "&#x0129;" > <!--LATIN SMALL LETTER I WITH TILDE-->
+<!ENTITY Iuml    "&#x00CF;"   > <!--LATIN CAPITAL LETTER I WITH DIAERESIS-->
+<!ENTITY iuml    "&#x00EF;"   > <!--LATIN SMALL LETTER I WITH DIAERESIS-->
+<!ENTITY Kacute  "K&#x00B4;" > <!--LATIN CAPITAL K WITH ACUTE-->
+<!ENTITY kacute  "k&#x00B4;" > <!--LATIN SMALL K WITH ACUTE-->
+<!ENTITY Kback   "K&#x0332;"  > <!--back k in Nisga'a language upper case k with underline-->
+<!ENTITY kback   "k&#x0332;"  > <!--back k in Nisga'a language lower case k with underline-->
+<!ENTITY Lambda  "&#x039B;" > <!--GREEK CAPITAL LETTER LAMBDA-->
+<!ENTITY lambda  "&#x03BB;" > <!--GREEK SMALL LETTER LAMBDA-->
+<!ENTITY laquo   "&#x00AB;"  > <!--LEFT ANGLE QUOTATION MARK-->
+<!ENTITY larr	 "&#x2190;"   > <!--LEFTWARD AROW-->
+<!ENTITY Lcedil  "&#x013B;" > <!--LATIN CAPITAL LETTER L WITH CEDILLA-->
+<!ENTITY lcedil  "&#x013C;" > <!--LATIN SMALL LETTER L WITH CEDILLA-->
+<!ENTITY ldquo   "&#x201C;"  > <!--LEFT DOUBLE QUOTATION MARK-->
+<!ENTITY le      "&#x2264;"     > <!--LESS THAN OR EQUAL-->
+<!ENTITY lsqb    "&#x005B;"   > <!--LEFT SQUARE BRACKET-->
+<!ENTITY lsquo   "&#x2018;"  > <!--LEFT SINGLE QUOTATION MARK-->
+<!ENTITY Lstrok  "&#x0141;" > <!--CAPITAL L, STROKE-->
+<!ENTITY lstrok  "&#x0142;" > <!--SMALL L, STROKE-->
+<!ENTITY male    "&#x2642;"   > <!--circle with a crossed line top sideways-->
+<!ENTITY mdash   "&#x2014;"  > <!--EM DASH-->
+<!ENTITY minute   "&#x2032;" >
+<!ENTITY mspace  "&#x2003;" > <!--EMSPACE used in page.xom-->
+<!ENTITY mu      "&#x03BC;"     > <!--GREEK SMALL LETTER MU-->
+<!ENTITY nbsp    "&#x00A0;"   > <!--NO-BREAK SPACE-->
+<!ENTITY ncedil  "&#x0146;" > <!--LATIN SMALL LETTER N WITH CEDILLA-->
+<!ENTITY ndash   "&#x2013;"  > <!--EN DASH-->
+<!ENTITY ne      "&#x2260;"     > <!--not equal to sign-->
+<!ENTITY Nmacr   "N&#x0304;"  > <!--LATIN CAPITAL N WITH BAR-->
+<!ENTITY nmacr   "n&#x0304;"  > <!--LATIN SMALL N WITH BAR-->
+<!ENTITY Ntilde  "&#x00D1;" > <!--LATIN CAPITAL LETTER N WITH TILDE-->
+<!ENTITY ntilde  "&#x00F1;" > <!--LATIN SMALL LETTER N WITH TILDE-->
+<!ENTITY nu      "&#x03BD;"     > <!--GREEK SMALL LETTER NU--> 
+<!ENTITY Oacute  "&#x00D3;" > <!--LATIN CAPITAL LETTER O WITH ACUTE-->
+<!ENTITY oacute  "&#x00F3;" > <!--LATIN SMALL LETTER O WITH ACUTE-->
+<!ENTITY Oacuto  "&#x00D3;&#x0328;" > <!--LATIN CAPITAL LETTER O WITH ACUTE AND OGONEK-->
+<!ENTITY oacuto  "&#x00F3;&#x0328;" > <!--LATIN SMALL LETTER O WITH ACUTE AND OGONEK-->
+<!ENTITY obreve  "o&#x0306;" > <!--LATIN SMALL LETTER O WITH BREVE-->
+<!ENTITY Ocirc   "&#x00D4;"  > <!--LATIN CAPITAL LETTER O WITH CIRCUMFLEX-->
+<!ENTITY ocirc   "&#x00F4;"  > <!--LATIN SMALL LETTER O WITH CIRCUMFLEX-->
+<!ENTITY Odblac  "&#x0150;" > <!--latin capital letter O with double acute-->
+<!ENTITY odblac  "&#x0151;" > <!--latin small letter o with double acute-->
+<!ENTITY OElig   "&#x0152;"  > <!--LATIN CAPITAL LETTER OE DIPTHONG (LIGATURE)-->
+<!ENTITY oelig   "&#x0153;"  > <!--LATIN OE DIPTHONG (LIGATURE)-->
+<!ENTITY Ograve  "&#x00D2;" > <!--LATIN CAPITAL LETTER O WITH GRAVE-->
+<!ENTITY ograve  "&#x00F2;" > <!--LATIN SMALL LETTER O WITH GRAVE-->
+<!ENTITY Ogravo  "&#x00D2;&#x0328;" > <!--LATIN CAPITAL LETTER O WITH GRAVE AND OGONEK-->
+<!ENTITY ogravo  "&#x00F2;;&#x0328;" > <!--LATIN SMALL LETTER O WITH GRAVE AND OGONEK-->
+<!ENTITY oinfin  "&#x221E;&#x20DD;" > <!--infinity symbol in circle-->
+<!ENTITY omacr   "&#x014D;"  > <!--SMALL O WITH MACRON-->
+<!ENTITY Omacr	"&#x014C;"> <!-- LATIN CAPITAL LETTER O WITH MACRON -->
+<!ENTITY Omega   "&#x03A9;"  > <!--GREEK CAPITAL LETTER OMEGA-->
+<!ENTITY omega   "&#x03C9;"  > <!--GREEK SMALL LETTER OMEGA-->
+<!ENTITY Oogon   "&#x01EA;"  > <!--LATIN CAPITAL LETTER O WITH OGONEK-->
+<!ENTITY oogon   "&#x01EB;"  > <!--LATIN SMALL LETTER O WITH OGONEK-->
+<!ENTITY oplus   "&#x2295;"  > <!--PLUS SIGN IN CIRCLE-->
+<!ENTITY ordm    "&#x00BA;"   > <!--MASCULINE ORDINAL INDICATOR-->
+<!ENTITY Oslash  "&#x00D8;" > <!--LATIN CAPITAL LETTER O WITH SLASH-->
+<!ENTITY oslash  "&#x00F8;" > <!--LATIN SMALL LETTER O WITH SLASH-->
+<!ENTITY Otilde  "&#x00D5;" > <!--LATIN CAPITAL LETTER O WITH TILDE-->
+<!ENTITY otilde  "&#x00F5;" > <!--LATIN SMALL LETTER O WITH TILDE-->
+<!ENTITY Ouml    "&#x00D6;"   > <!--LATIN CAPITAL LETTER O WITH DIAERESIS-->
+<!ENTITY ouml    "&#x00F6;"   > <!--LATIN SMALL LETTER O WITH DIAERESIS-->
+<!ENTITY para    "&#x00B6;"   > <!--PILCROW SIGN-->
+<!ENTITY part    "&#x2202;"   > <!--PARTIAL DIFFERENTIAL-->
+<!ENTITY Phi     "&#x03A6;"    > <!--GREEK CAPITAL LETTER PHI-->
+<!ENTITY pi      "&#x03C0;"     > <!--GREEK SMALL LETTER PI-->
+<!ENTITY plusmn  "&#x00B1;" > <!--PLUS-OR-MINUS SIGN-->
+<!ENTITY Pmacr   "P&#x0304;"  > <!--capital P, macron-->
+<!ENTITY Ppeso   "&#x20B1;"  > <!--Philippine peso-->
+<!ENTITY pound	 "&#x00A3;"  > <!--POUND SIGN-->
+<!ENTITY prime   "&#x2032;"  > <!--FOOT/MINUTE SIGN-->
+<!ENTITY Prime   "&#x2033;"  > <!--INCHES SIGN-->
+<!ENTITY Psi     "&#x03A8;"    > <!--GREEK CAPITAL LETTER PSI-->
+<!ENTITY psi     "&#x03C8;"    > <!--GREEK SMALL LETTER PSI-->
+<!ENTITY radic	 "&#x221A;"  > <!--RADICAL (square root symbol)-->
+<!ENTITY rarr	 "&#x2192;"   > <!--RIGHTWARD ARROW-->
+<!ENTITY raquo   "&#x00BB;"  > <!--RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK-->
+<!ENTITY Rcaron  "&#x0158;" > <!--LATIN CAPITAL LETTER R WITH CARON-->
+<!ENTITY rcaron  "&#x0159;" > <!--LATIN SMALL LETTER R WITH CARON-->
+<!ENTITY rdquo   "&#x201D;"  > <!--RIGHT DOUBLE QUOTATION MARK-->
+<!ENTITY reg	 "&#x00AE;"    > <!--CIRCLEDR =REGISTERED SIGN-->
+<!ENTITY rsqb    "&#x005D;"   > <!--RIGHT SQUARE BRACKET-->
+<!ENTITY rsquo   "&#x2019;"  > <!--RIGHT SINGLE QUOTATION MARK-->
+<!ENTITY rx      "&#x211E;"     > <!--pharmaceutical prescription (Rx)-->
+<!ENTITY Scaron  "&#x0160;" > <!--upper case s with caron-->
+<!ENTITY scaron  "&#x0161;" > <!--lower case s with caron-->
+<!ENTITY Scedil  "&#x015E;" > <!--LATIN CAPITAL LETTER S WITH CEDILLA-->
+<!ENTITY scedil  "&#x015F;" > <!--LATIN SMALL LETTER s WITH CEDILLA-->
+<!ENTITY schwa   "&#x18F;"  > <!--UPSIDE DOWN SMALL E-->
+<!ENTITY Scirc   "&#x015C;"   > <!--upper case S with circumflex-->
+<!ENTITY scirc   "&#x015D;"   > <!--lower case s with circumflex-->
+<!ENTITY sect    "&#x00A7;"   > <!--SECTION SIGN-->
+<!ENTITY Sigma   "&#x03A3;"  > <!--GREEK CAPITAL LETTER SIGMA-->
+<!ENTITY smile   "&#x2323;"  > <!--UP CURVE-->
+<!ENTITY spades  "&#x2660;" > <!--spade suit (solid)-->
+<!ENTITY square  "&#x25A1;" > <!--WHITE SQUARE FOR CHECKBOX-->
+<!ENTITY sum	 "&#x2211;"    > <!--summation operator-->
+
+<!ENTITY sup-e    "sup-e"   > <!--superscript e-->
+<!ENTITY sup-egre  "sup-egre" > <!--superscript egre-->
+<!ENTITY sup-er   "sup-er"  > <!--superscript er-->
+<!ENTITY sup-ere  "sup-ere" > <!--superscript ere-->
+<!ENTITY sup-ers  "sup-ers" > <!--superscript ers-->
+<!ENTITY sup-r    "sup-r"   > <!--superscript r-->
+<!ENTITY sup-rs   "sup-rs"  > <!--superscript rs-->
+<!ENTITY sup-re   "sup-re"  > <!--superscript re-->
+<!ENTITY sup-res  "sup-res" > <!--superscript res-->
+<!ENTITY sup-lle  "sup-lle" > <!--superscript lle-->
+<!ENTITY sup-me   "sup-me"  > <!--superscript me-->
+<!ENTITY sup-os   "sup-os"  > <!--superscript os-->
+
+<!ENTITY Tacute   "T&#x00B4;">   <!--LATIN CAPITAL T WITH ACUTE-->
+<!ENTITY tacute   "t&#x00B4;">   <!--LATIN SMALL t WITH ACUTE-->
+<!ENTITY tau      "&#x03C4;">      <!--GREEK SMALL LETTER TAU-->
+<!ENTITY there4   "&#x2234;" > <!--therefore symbol-->
+<!ENTITY Theta    "&#x0398;"> <!--CAPITAL THETA, GREEK-->
+<!ENTITY thetas   "&#x03B8;" > <!--STRAIGHT THETA, GREEK-->
+<!ENTITY Thorn    "&#x00DE;"  > <!--upper case Icelandic Thorn-->
+<!ENTITY thorn    "&#x00FE;"  > <!--lower case Icelandic thorn-->
+<!ENTITY tilde    "&#x02DC;"  > <!--TILDE-->
+<!ENTITY times    "&#x00D7;"  > <!--MULTIPLICATION SIGN-->
+<!ENTITY timesb   "&#x22A0;" > <!--MULTIPLICATION SIGN IN BOX-->
+<!ENTITY trade    "&#x2122;"  > <!--TRADE MARK SIGN-->
+<!ENTITY Uacute   "&#x00DA;" > <!--LATIN CAPITAL LETTER U WITH ACUTE-->
+<!ENTITY uacute   "&#x00FA;" > <!--LATIN SMALL LETTER U WITH ACUTE-->
+<!ENTITY Uacuto   "&#x00DA;&#x0328;" > <!--LATIN CAPITAL LETTER U WITH ACUTE AND OGONEK-->
+<!ENTITY uacuto   "&#x00FA;&#x0328;" > <!--LATIN SMALL LETTER U WITH ACUTE AND OGONEK-->
+<!ENTITY uarr     "&#x2191;"   > <!--UPWARD ARROW-->
+<!ENTITY Ucirc    "&#x00DB;"  > <!--LATIN CAPITAL LETTER U WITH CIRCUMFLEX-->
+<!ENTITY ucirc    "&#x00FB;"  > <!--LATIN SMALL LETTER U WITH CIRCUMFLEX-->
+<!ENTITY Ugrave   "&#x00D9;" > <!--LATIN CAPITAL LETTER U WITH GRAVE-->
+<!ENTITY ugrave   "&#x00F9;" > <!--LATIN SMALL LETTER U WITH GRAVE-->
+<!ENTITY umacr	"&#x016B;"> <!-- LATIN SMALL LETTER U WITH MACRON -->
+<!ENTITY Umacr	"&#x016A;"> <!-- LATIN CAPITAL LETTER U WITH MACRON -->
+<!ENTITY utri     "&#x25B5;"   > <!--upward triangle, open-->
+<!ENTITY utrif    "&#x25B4;"  > <!--upward triangle, filled-->
+<!ENTITY Uuml     "&#x00DC;"   > <!--LATIN CAPITAL LETTER U WITH DIAERESIS-->
+<!ENTITY uuml     "&#x00FC;"   > <!--LATIN SMALL LETTER U WITH DIAERESIS-->
+<!ENTITY verbar   "&#x007C;" > <!--VERTICAL BAR-->
+<!ENTITY Vmacr    "V&#x0304;"  > <!--LATIN CAPITAL V WITH BAR-->
+<!ENTITY vmacr    "v&#x0304;"  > <!--LATIN SMALL V WITH BAR-->
+<!ENTITY wdash    "&#x301C;"  > <!--double-u dash used by insert.xom-->
+<!ENTITY Xback    "X&#x0332;"  > <!--back x in Gitxsan language upper case x with underline-->
+<!ENTITY xback    "x&#x0332;"  > <!--back x in Gitxsan language lower case x with underline-->
+<!ENTITY Xmacr    "X&#x0304;"  > <!--LATIN CAPITAL X WITH BAR-->
+<!ENTITY xmacr    "x&#x0304;"  > <!--LATIN SMALL x WITH BAR-->
+<!ENTITY Yacute   "&#x00DD;" > <!--LATIN CAPITAL LETTER Y WITH ACUTE-->
+<!ENTITY yacute   "&#x00FD;" > <!--LATIN SMALL LETTER Y WITH ACUTE-->
+<!ENTITY yen	  "&#x00A5;"	 > <!--YEN CHARACTER-->
+<!ENTITY yuml     "&#x00FF;"   > <!--LATIN SMALL LETTER Y WITH DIAERESIS-->
+<!ENTITY Zcaron   "&#x017D;" > <!--upper case Z with caron-->
+<!ENTITY zcaron   "&#x017E;" > <!--lower case z with caron-->
+
+
+<!ENTITY logo     "logo"   > <!--Carswell feather and name -->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY TCEr    "TCEr"   > <!--Treat.  Case   Eng.  "referred to"-->
+<!ENTITY TCFr    "TCFr"   > <!--Treat.  Case   Fr.   "referred to"-->
+<!ENTITY TCEc    "TCEc"   > <!--Treat.  Case   Eng.  "considered"-->
+<!ENTITY TCFc    "TCFc"   > <!--Treat.  Case   Fre.  "considered"-->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY TSEu    "TSEu"   > <!--Treat.  Stat.  Eng.  "unconstitutional"-->
+<!ENTITY TSFu    "TSFu"   > <!--Treat.  Stat.  Fre.  "unconstitutional"-->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY CT-R    "CT-R"   > <!--Case Treatment     "referred to"-->
+ <!--Change 9701219936 lsulky 970121>new entities for standard text...earlier 'TCE' things are dead ducks-->
+<!ENTITY CT-C    "CT-C"     > <!--Case Treatment     "considered"-->
+<!ENTITY CT-F    "CT-F"     > <!--Case Treatment     "followed"-->
+<!ENTITY CT-A    "CT-A"     > <!--Case Treatment     "applied"-->
+<!ENTITY CT-D    "CT-D"     > <!--Case Treatment     "distinguished"-->
+<!ENTITY CT-N    "CT-N"     > <!--Case Treatment     "not followed"-->
+<!ENTITY CT-T    "CT-T"     > <!--Case Treatment     "[temporary]"-->
+
+<!-- Additions July 2011 for CLEAR -->
+<!ENTITY CT-O   "CT-O"     > <!--Case Treatment     "overruled"-->
+<!ENTITY CT-M   "CT-M"     > <!--Case Treatment     "considered in minority/dissenting opinion"-->
+<!ENTITY CT-P   "CT-P"     > <!--Case Treatment     "referred to in minority/dissenting opinion"-->
+<!ENTITY CT-Q   "CT-Q"     > <!--Case Treatment     "related proceedings"-->
+
+<!--These have been declared obsolete October 19, 1999-->
+<!-- Brought back to use for Regs JC project, August 8, 2005.  Need entities for use by Pager.-->
+<!ENTITY ST-U    "ST-U"     > <!--Statute Treatment  "unconstitutional"-->
+<!ENTITY ST-C    "ST-C"     > <!--Statute Treatment  "considered"-->
+<!ENTITY ST-P    "ST-P"     > <!--Statute Treatment  "pursuant to"-->
+<!ENTITY ST-R    "ST-R"     > <!--Statute Treatment  "referred to"-->
+<!ENTITY ST-0    "ST-0"     > <!--no Treatment map to stattrmt attribute values 0 is used for CTC Citator as a default treatment, meaning no treatment-->
+
+<!--English forward dispositions, first level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with 2nd-5th level...they are identical-->
+<!ENTITY CD-AFD   "CD-AFD"   > <!--Case Disposition   "affirmed"-->
+<!ENTITY CD-AMD   "CD-AMD"   > <!--Case Disposition   "amended"-->
+<!ENTITY CD-ARD   "CD-ARD"   > <!--Case Disposition   "additional reasons at"-->
+<!--CD-ARA was not implemented-->
+<!ENTITY CD-ARA   "CD-ARA"   > <!--Case Disposition   "additional reasons at"-->
+<!ENTITY CD-LAD   "CD-LAD"   > <!--Case Disposition   "allowed leave to appeal"-->
+<!ENTITY CD-LRD   "CD-LRD"   > <!--Case Disposition   "refused leave to appeal"-->
+<!ENTITY CD-RFD   "CD-RFD"   > <!--Case Disposition   "referred for further consideration or clarification"-->
+<!ENTITY CD-RGD   "CD-RGD"   > <!--Case Disposition   "granted reconsideration or rehearing"-->
+<!ENTITY CD-RRD   "CD-RRD"   > <!--Case Disposition   "refused reconsideration or rehearing"-->
+<!ENTITY CD-RVD   "CD-RVD"   > <!--Case Disposition   "reversed"-->
+<!ENTITY CD-STD   "CD-STD"   > <!--Case Disposition   "set aside or quashed"-->
+<!ENTITY CD-VRD   "CD-VRD"   > <!--Case Disposition   "varied"-->
+ 
+<!-- Additions July 2011 for CLEAR english forward dispositions -->
+<!ENTITY CD-DAD   "CD-DAD"   > <!--Case Disposition   "appeal dismissed as abandoned"-->
+<!ENTITY CD-DMD   "CD-DMD"   > <!--Case Disposition   "appeal dismissed as moot"-->
+<!ENTITY CD-JRD  "CD-JRD"   > <!--Case Disposition   "appeal for judicial review refused"--> 
+<!ENTITY CD-JAD   "CD-JAD"   > <!--Case Disposition   "appeal for judicial review allowed"-->
+<!ENTITY CD-FRD   "CD-FRD"   > <!--Case Disposition   "reasons in full"--> 
+ 
+<!--English backward dispositions, first level-->
+<!--These have NOT been verified as of 13 July 1998-->
+<!ENTITY CD-AFG   "CD-AFG"   > <!--Case Disposition "affirming"-->
+<!ENTITY CD-AMG   "CD-AMG"   > <!--Case Disposition "amending"-->
+<!ENTITY CD-ARG   "CD-ARG"   > <!--Case Disposition "adding reasons to"-->
+<!--CD-ART was not implemented-->
+<!ENTITY CD-ART   "CD-ART"   > <!--Case Disposition "additional reasons to"-->
+<!ENTITY CD-FRG   "CD-FRG"    > <!--Case Disposition "additional reasons [full reasons] to"-->
+<!ENTITY CD-LAG   "CD-LAG"   > <!--Case Disposition "allowing leave to appeal"-->
+<!ENTITY CD-LRG   "CD-LRG"   > <!--Case Disposition "refusing leave to appeal"-->
+<!ENTITY CD-RFG   "CD-RFG"   > <!--Case Disposition "referring for clarification"-->
+<!ENTITY CD-RGG   "CD-RGG"   > <!--Case Disposition "granting reconsideration"-->
+<!ENTITY CD-RRG   "CD-RRG"   > <!--Case Disposition "refusing reconsideration"-->
+<!ENTITY CD-RVG   "CD-RVG"   > <!--Case Disposition "reversing"-->
+<!ENTITY CD-STG   "CD-STG"   > <!--Case Disposition "setting aside or quashing"-->
+<!ENTITY CD-VRG   "CD-VRG"   > <!--Case Disposition "varying"-->
+
+<!-- Additions July 2011 for CLEAR english backward dispositions -->
+<!ENTITY CD-DAG  "CD-DAG"   > <!--Case Disposition   "dismissing appeal as abandoned"-->
+<!ENTITY CD-DMG  "CD-DMG"   > <!--Case Disposition   "dismissing appeal as moot"-->
+<!ENTITY CD-JRG   "CD-JRG"   > <!--Case Disposition   "refusing application for judicial review"--> 
+<!ENTITY CD-JAG  "CD-JAG"   > <!--Case Disposition   "allowing application for judicial review"-->
+<!ENTITY CD-FLG  "CD-FLG"   > <!--Case Disposition   "full reasons to"-->
+
+<!--English disposition extensions-->
+<!--These have been verified as of July 13, 1998-->
+<!ENTITY CD-OG    "CD-OG"    > <!--Case Disposition "on other grounds"-->
+<!ENTITY CD-IP    "CD-IP"    > <!--Case Disposition "in part"-->
+<!ENTITY CD-OP    "CD-OP"    > <!--Case Disposition "other proceedings"-->
+
+<!--English forward dispositions, second through fifth level prefixes-->
+<!--These have been verified as of July 13, 1998-->
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY CD2   "CD2"   > <!--Case Disposition "which was"-->
+<!ENTITY CD3   "CD3"   > <!--Case Disposition "which was"-->
+<!ENTITY CD4   "CD4"   > <!--Case Disposition "which was"-->
+<!ENTITY CD5   "CD5"   > <!--Case Disposition "which was"-->
+
+<!--English forward dispositions, second through fifth level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with first level...they are identical-->
+<!--Kelly added "which was" 23 October 1998-->
+<!ENTITY CDXAFD   "CDXAFD"   > <!--Case Disposition "which was affirmed"-->
+<!ENTITY CDXAMD   "CDXAMD"   > <!--Case Disposition "which was amended"-->
+<!ENTITY CDXARD   "CDXARD"   > <!--Case Disposition "additional reasons at"-->
+<!ENTITY CDXLAD   "CDXLAD"   > <!--Case Disposition "which was allowed leave to appeal"-->
+<!ENTITY CDXLRD   "CDXLRD"   > <!--Case Disposition "which was refused leave to appeal"-->
+<!ENTITY CDXRFD   "CDXRFD"   > <!--Case Disposition "which was referred for further consideration or clarification"-->
+<!ENTITY CDXRGD   "CDXRGD"   > <!--Case Disposition "which was granted reconsideration or rehearing"-->
+<!ENTITY CDXRRD   "CDXRRD"   > <!--Case Disposition "which was refused reconsideration or rehearing"-->
+<!ENTITY CDXRVD   "CDXRVD"   > <!--Case Disposition "which was reversed"-->
+<!ENTITY CDXSTD   "CDXSTD"   > <!--Case Disposition "which was set aside or quashed"-->
+<!ENTITY CDXVRD   "CDXVRD"   > <!--Case Disposition "which was varied"-->
+
+<!-- Additions July 2011 for CLEAR -->
+<!ENTITY CDXDAD  "CDXDAD"   > <!--Case Disposition   "which was dismissed as abandoned"-->
+<!ENTITY CDXDMD  "CDXDMD"   > <!--Case Disposition   "which was dismissed as moot"-->
+<!ENTITY CDXJRD  "CDXJRD"   > <!--Case Disposition   "which was refused judicial review"--> 
+<!ENTITY CDXJAD  "CDXJAD"   > <!--Case Disposition   "which was allowed judicial review"-->
+<!ENTITY CDXFLD  "CDXFLD"   > <!--Case Disposition   "reasons in full at"-->
+
+<!--French forward dispositions, first level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with 2nd-5th level...they are identical-->
+<!ENTITY CD-AFDf  "CD-AFDf"  > <!--Case Disposition "confirmeacute"e-->
+<!ENTITY CD-AMDf  "CD-AMDf"  > <!--Case Disposition "corrigeacutee"-->
+<!ENTITY CD-ARDf  "CD-ARDf"  > <!--Case Disposition "motifs suppleacutementaires agrave"-->
+<!--CD-ARAf was never implemented-->
+<!ENTITY CD-ARAf  "CD-ARAf"  > <!--Case Disposition "motifs suppleacutementaires agrave"-->
+<!ENTITY CD-LADf  "CD-LADf"  > <!--Case Disposition "demande d'autorisation d'en appeler accordeacutee"-->
+<!ENTITY CD-LRDf  "CD-LRDf"  > <!--Case Disposition "demande d'autorisation d'en appeler refuseacutee"-->
+<!ENTITY CD-RFDf  "CD-RFDf"  > <!--Case Disposition "renvoyeacute pour reacuteexamen ou mise au point suppleacutementaire"-->
+<!ENTITY CD-RGDf  "CD-RGDf"  > <!--Case Disposition "nouvelle audition accordeacutee"-->
+<!ENTITY CD-RRDf  "CD-RRDf"  > <!--Case Disposition "nouvelle audition refuseacutee"-->
+<!ENTITY CD-RVDf  "CD-RVDf"  > <!--Case Disposition "infirmeacute"-->
+<!ENTITY CD-STDf  "CD-STDf"  > <!--Case Disposition "annuleacute ou rejeteacute"-->
+<!ENTITY CD-VRDf  "CD-VRDf"  > <!--Case Disposition "modifieacutee"-->
+
+<!-- Additions July 2011 for CLEAR french forward dispositions-->
+<!ENTITY CD-DADf  "CD-DADf"   > <!--Case Disposition   "appel d&eacute;clar&eacute; abandonn&eacute;"-->
+<!ENTITY CD-DMDf  "CD-DMDf"   > <!--Case Disposition   "appel sans objet"-->
+<!ENTITY CD-JRDf  "CD-JRDf"   > <!--Case Disposition   "requ&ecirc;te en r&eacute;vision judiciaire rejet&eacute;e"--> 
+<!ENTITY CD-JADf  "CD-JADf"   > <!--Case Disposition   "requ&ecirc;te en r&eacute;vision judiciaire accueillie"-->
+<!ENTITY CD-FLDf  "CD-FLDf"   > <!--Case Disposition   "motifs complets"-->
+
+<!--French backward dispositions, first level-->
+<!--These have NOT been verified as of 13 July 1998-->
+<!ENTITY CD-AFGf  "CD-AFGf"  > <!--Case Disposition "confirmant"-->
+<!ENTITY CD-AMGf  "CD-AMGf"  > <!--Case Disposition "changeant"-->
+<!ENTITY CD-ARGf  "CD-ARGf"  > <!--Case Disposition "motifs suppleacutementaires de"-->
+<!--CD-ARTf was never implemented-->
+<!ENTITY CD-ARTf  "CD-ARTf"  > <!--Case Disposition "motifs suppleacutementaires de"-->
+<!ENTITY CD-FRGf  "CD-FRGf"   > <!--Case Disposition "motifs suppleacutementaires [motifs entiers] de"-->
+<!ENTITY CD-LAGf  "CD-LAGf"  > <!--Case Disposition "accordant permission d'interjeter appel"-->
+<!ENTITY CD-LRGf  "CD-LRGf"  > <!--Case Disposition "refusant nouvelle audition"-->
+<!ENTITY CD-RFGf  "CD-RFGf"  > <!--Case Disposition "renvoyant nouvelle audition"-->
+<!ENTITY CD-RGGf  "CD-RGGf"  > <!--Case Disposition "accordant nouvelle audition"-->
+<!ENTITY CD-RRGf  "CD-RRGf"  > <!--Case Disposition "refusant nouvelle audition"-->
+<!ENTITY CD-RVGf  "CD-RVGf"  > <!--Case Disposition "infirmant"-->
+<!ENTITY CD-STGf  "CD-STGf"  > <!--Case Disposition "annulant"-->
+<!ENTITY CD-VRGf  "CD-VRGf"  > <!--Case Disposition "modifiant"-->
+
+<!-- Additions July 2011 for CLEAR french backward dispositions -->
+<!ENTITY CD-DAGf  "CD-DAGf"   > <!--Case Disposition   "d&eacute;clarant l'appel abandonn&eacute;"-->
+<!ENTITY CD-DMGf  "CD-DMGf"   > <!--Case Disposition   "d&eacute;clarant l'appel sans objet"-->
+<!ENTITY CD-JRGf  "CD-JRGf"   > <!--Case Disposition   "rejetant la requ&ecirc;te en r&eacute;vision judiciaire"--> 
+<!ENTITY CD-JAGf  "CD-JAGf"   > <!--Case Disposition   "accueillant la requ&ecirc;te en r&eacute;vision judiciaire"-->
+<!ENTITY CD-FLGf  "CD-FLGf"   > <!--Case Disposition   "motifs complets de"-->
+
+<!--French disposition extensions-->
+<!--These have NOT been verified as of 13 July 1998-->
+<!ENTITY CD-OGf  "CD-OGf"   > <!--Case Disposition "pour autres"-->
+<!ENTITY CD-IPf  "CD-IPf"   > <!--Case Disposition "en partie"-->
+<!ENTITY CD-OPf  "CD-OPf"   > <!--Case Disposition "autres proceacutedures"-->
+
+<!--French forward dispositions, second through fifth level prefixes-->
+<!--These have been verified as of 13 July 1998-->
+<!--These have been declared obsolete October 19, 1999-->
+<!ENTITY CD2f  "CD2f"  > <!--Case Disposition "qui a eacuteteacute"-->
+<!ENTITY CD3f  "CD3f"  > <!--Case Disposition "qui a eacuteteacute"-->
+<!ENTITY CD4f  "CD4f"  > <!--Case Disposition "qui a eacuteteacute"-->
+<!ENTITY CD5f  "CD5f"  > <!--Case Disposition "qui a eacuteteacute"-->
+
+<!--French forward dispositions, second through fifth level standard text-->
+<!--These have been verified as of 13 July 1998-->
+<!--These are slated to be combined with first level...they are identical-->
+<!--Kelly added "qui a eacuteteacute" etc. 23 October 1998-->
+<!ENTITY CDXAFDf  "CDXAFDf"  > <!--Case Disposition "qui a eacuteteacute confirmeacute"-->
+<!ENTITY CDXAMDf  "CDXAMDf"  > <!--Case Disposition "qui a eacuteteacute corrigeacutee"-->
+<!ENTITY CDXARDf  "CDXARDf"  > <!--Case Disposition "motifs suppleacutementaires agrave"-->
+<!--CDXARAF was never implemented-->
+<!ENTITY CDXARAf  "CDXARAf"  > <!--Case Disposition "motifs supplementaires agrave"-->
+<!ENTITY CDXLADf  "CDXLADf"  > <!--Case Disposition "dont la demande d'autorisation d'en appeler a eacuteteacute accordeacutee"-->
+<!ENTITY CDXLRDf  "CDXLRDf"  > <!--Case Disposition "dont la demande d'autorisation d'en appeler a eacuteteacute refuseacutee"-->
+<!ENTITY CDXRFDf  "CDXRFDf"  > <!--Case Disposition "qui a eacuteteacute renvoyeacute pour reacuteexamen ou mise au point suppleacutementaire"-->
+<!ENTITY CDXRGDf  "CDXRGDf"  > <!--Case Disposition "dont une nouvelle audition a eacuteteacute accordeacutee"-->
+<!ENTITY CDXRRDf  "CDXRRDf"  > <!--Case Disposition "dont une nouvelle audition a eacuteteacute refuseacutee"-->
+<!ENTITY CDXRVDf  "CDXRVDf"  > <!--Case Disposition "qui a eacuteteacute infirmeacute"-->
+<!ENTITY CDXSTDf  "CDXSTDf"  > <!--Case Disposition "qui a eacuteteacute annuleacute ou rejeteacute"-->
+<!ENTITY CDXVRDf  "CDXVRDf"  > <!--Case Disposition "qui a eacuteteacute modifieacutee"-->
+
+
+<!-- Additions July 2011 for CLEAR -->
+<!ENTITY CDXDADf  "CDXDADf"   > <!--Case Disposition   "qui a &eacute;t&eacute; abandonn&eacute;"-->
+<!ENTITY CDXDMDf  "CDXDMDf"   > <!--Case Disposition   "qui a &eacute;t&eacute; d&eacute;clar&eacute; sans objet"-->
+<!ENTITY CDXJRDf  "CDXJRDf"   > <!--Case Disposition   "qui a rejet&eacute; la r&eacute;vision judiciaire"--> 
+<!ENTITY CDXJADf  "CDXJADf"   > <!--Case Disposition   "qui a accueilli la requ&ecirc;te en r&eacute;vision judiciaire"-->
+<!ENTITY CDXFLDf  "CDXFLDf"   > <!--Case Disposition   "motifs complets dans"-->
+
+<!-- A dash (-) between two letters will be interpreted as a hyphen.
+     A dash in a display formula, when surrounded by spaces, will be
+     interpreted as a minus sign.
+     Other dashes will be interpreted as ndashes? but should probably
+     be changed to the word "to". -->
+
+<!ENTITY editmark "<?sgml editmark?>"> <!-- mark changes for proofreaders -->
+<!ENTITY ellipsis "<?sgml ellipsis?>"> <!-- centered ellipsis -->
+<!ENTITY feather "<?sgml feather?>"> <!--Carswell feather -->
+<!ENTITY goodpage "<?sgml goodpage?>"> <!-- good place for new page -->
+<!ENTITY newline "<?sgml newline?>"> <!-- new line -->
+<!ENTITY newpage "<?sgml newpage?>"> <!-- new page -->
+<!ENTITY recto "<?sgml recto?>"> <!-- new recto page -->
+<!ENTITY t "<?sgml t?>"> <!-- align left parenthesis in table -->
+<!ENTITY takeback "<?sgml takeback?>"> <!-- squeeze one more line on page -->
+<!ENTITY verso "<?sgml verso?>"> <!-- new verso page -->
+<!ENTITY irm "<?sgml irm?>"> <!-- indent right margin -->
+<!ENTITY eirm "<?sgml eirm?>"> <!-- normal right margin -->
+<!ENTITY dottab "<?sgml dottab?>"> <!-- ................... -->
+
+<!--Shortcuts-->
+
+<!ENTITY ellip10     ".........."  > <!--10 dot ellipsis-->
+<!ENTITY ellip35     "..................................." > <!--35 dot ellipsis-->

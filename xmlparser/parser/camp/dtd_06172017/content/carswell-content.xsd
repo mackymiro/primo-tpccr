@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for content mark up -->
+<!-- $Date: 2010/02/02 18:58:37 $ -->
+<!-- $Revision: 1.13 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.1">
+	<xs:include schemaLocation="carswell-content-publishing.xsd"/>
+	<xs:element name="document">
+		<xs:annotation>
+			<xs:documentation>highest level element, only one per document</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="frontmatter" minOccurs="0"/>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element ref="decision"/>
+					<xs:element ref="act"/>
+					<xs:element ref="convention"/>
+					<xs:element ref="misc.law"/>
+					<xs:element ref="regulation"/>
+					<xs:element ref="remission.order"/>
+					<xs:element ref="appendix"/>
+					<xs:element ref="article"/>
+					<xs:element ref="chapter"/>
+					<xs:element ref="class"/>
+					<xs:element ref="book"/>
+					<xs:element ref="form"/>
+					<xs:element ref="part"/>
+					<xs:element ref="div.legis"/>
+					<xs:element ref="subdiv.legis"/>
+					<xs:element ref="subsubdiv.legis"/>
+					<xs:element ref="subsubsubdiv.legis"/>
+					<xs:element ref="title.legis"/>
+					<xs:element ref="div.misc.legis"/>
+					<xs:element ref="schedule"/>
+					<xs:element ref="rule"/>
+					<xs:element ref="section"/>
+					<xs:element ref="subsection"/>
+					<xs:element ref="para"/>
+					<xs:element ref="subpara"/>
+					<xs:element ref="clause"/>
+					<xs:element ref="subclause"/>
+					<xs:element ref="subsubclause"/>
+					<xs:element ref="subsubsubclause"/>
+					<xs:group ref="LegislationDivisionAdditionalsGroup"/>
+					<xs:element ref="div"/>
+					<xs:element ref="div.numbered"/>
+					<xs:element ref="clone"/>
+				</xs:choice>
+				<xs:element ref="backmatter" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="Base.Attributes"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

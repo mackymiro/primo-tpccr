@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 rel. 3 sp2 (http://www.altova.com) by Terry Wessner (CARSWELL-1 CORPORATE PLAZA) -->
+<!-- Tag and Attribute declarations for XML mapping rules -->
+<!-- $Date: 2008/03/12 18:24:38 $ -->
+<!-- $Revision: 1.3 $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="MappingRules">
+		<xs:annotation>
+			<xs:documentation>Root element for mapping rules</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="false">
+			<xs:sequence>
+				<xs:element name="Title" type="xs:string"/>
+				<xs:element ref="Comment" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Parameter" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="Rule" maxOccurs="unbounded">
+					<xs:complexType mixed="false">
+						<xs:sequence>
+							<xs:element name="Trigger" type="xs:string"/>
+							<xs:element name="Pattern" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="Parameter" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+									<xs:attribute name="Type" type="xs:string" use="required"/>
+									<xs:attribute name="Step" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Breadcrumb" minOccurs="0"/>
+							<xs:element ref="Comment" minOccurs="0"/>
+						</xs:sequence>
+						<xs:attribute name="ID" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Comment" type="xs:string"/>
+	<xs:element name="Parameter">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="Name" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

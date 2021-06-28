@@ -1,0 +1,19 @@
+Start Tag 1       |End Tag 1 |End 1         |Keyword1  |Keyword2 |Citation Format 1                      |Start Tag 2       |End Tag 2 |End 2   |Citation Format 2         |Error Message
+<foot.ref<space>  |>         |</foot.ref>   | fid="    |"        |[text]<keyword1>[0-9]+<keyword2>[text] |<footnote<space>  |<fnr>     |</fnr>  |[text]fid="<value>"[text] |E / Mismatch
+
+::LEGEND::
+--- Start Tag, End Tag Columns ---
+<space> - space character
+
+--- Citation Format Column ---
+[0-9] - single numeric character
+[0-9]+ - one or more numeric character
+[A-Z] - single alpha character
+[A-Z]+ - one or more alpha character
+[text] - ignore succeeding characters 
+[space] - space character
+Additional + for [0-9],[A-Z],[space] - means one or many
+Additional * for [0-9],[A-Z],[space] - means none or many
+<keyword1> - equivalent Keyword1 value
+<keyword2> - equivalent Keyword2 value
+<value>    - value found between <keyword1> and <keyword2>

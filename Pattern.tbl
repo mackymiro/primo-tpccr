@@ -1,0 +1,29 @@
+﻿<!--	
+-->	
+<link [^>]*>	
+<hr [^>]*>	
+<meta [^>]*>	
+<style [^>]*>	
+</style>	
+<div class="WordSection1">	
+&nbsp;	 
+<p [^>]*>	<p>
+<p> 	<p>
+<p> </p>	
+<sup> </sup>	
+<sub> </sub>	
+<p><b> </b></p>	
+&sect;	§
+&rsquo;	’
+&rdquo;	”
+&ldquo;	“
+<i>	<ital>
+</i>	</ital>
+<b>	<bold>
+</b>	</bold>
+<p>	<para>
+</p>	</para>
+<para><span 	<span 
+</span></para>	</span>
+<para><bold> </bold></para>	
+<bold> </bold>	
