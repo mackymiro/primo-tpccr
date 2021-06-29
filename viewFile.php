@@ -207,7 +207,7 @@
 				
 				<fieldset>
 					<div style="width:100%; height:40vw;">					
-						<iframe  src="<?= "/".$ProjectName."/".$folderName."/".$data['Ref']."/".pathinfo($data['DocFilename'],PATHINFO_FILENAME).".pdf" ?>" width="100%" height="100%"  style="border:none;" ></iframe>
+						<embed  src="<?= "/".$ProjectName."/".$folderName."/".$data['Ref']."/".pathinfo($data['DocFilename'],PATHINFO_FILENAME).".pdf" ?>" width="100%" height="100%"  style="border:none;" ></embed>
 					</div>
 				</fieldset>
 				
