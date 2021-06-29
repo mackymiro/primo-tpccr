@@ -438,7 +438,7 @@
                              
                               <?php while(odbc_fetch_row($inventoryInside)): ?>
                               <tr>
-                                  <td><a href="https://docs.google.com/viewerng/viewer?url=http://projects.cebucodesolutions.com/TPCCR-Inventory/<?= odbc_result($inventoryInside, "flag")?>/<?= odbc_result($inventoryInside, "DocFilename")?>" target="_blank"><?= odbc_result($inventoryInside, "DocFilename")?></a></td>
+                                  <td><a href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= odbc_result($inventoryInside, "flag")?>/<?= odbc_result($inventoryInside, "DocFilename")?>" target="_blank"><?= odbc_result($inventoryInside, "DocFilename")?></a></td>
                                   
                               </tr>
                              
