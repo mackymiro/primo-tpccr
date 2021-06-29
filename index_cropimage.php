@@ -65,7 +65,7 @@
 								<td><img src="<?= "uploadfiles/".$RefId_primo."/images/".$image ?>" alt="image" style="width:10%"></td>
                                 <td><?= $image ?></td>
                                 <td>
-                                  <a href="<?= "uploadfiles\\".$RefId_primo."\\".$image ?>"  download  class="btn btn-success">Download Image</a> 
+                                  <a href="<?= "uploadfiles\\".$RefId_primo."\\images\\".$image ?>"  download class="btn btn-success">Download Image</a> 
                                 </td>
                                 
                                 
