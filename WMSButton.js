@@ -1,5 +1,6 @@
- const uploadSGM = document.querySelector('#uploadSGM');
- uploadSGM.addEventListener('click', ()=>{
+ const el = document.querySelector('#uploadSGM');
+ 
+ el.addEventListener('click', ()=>{
       let filename = document.getElementById("filename").value;
       let response=document.getElementById("saveStatus");
       response.innerHTML="<b><font color='red'>Updating file. please wait...</font></b>";
@@ -203,12 +204,15 @@ function DownloadXMLAndComplete(){
 
 }
 
-function saveXMLAndComplete(){
+const saveAndCompleteImage = () =>{
+    JobCompleted();
+};
 
+function saveXMLAndComplete(){
     // var ValidateTrigger = document.getElementById("ValidateTrigger").value;
     // // ValidateTrigger='';
     // if (ValidateTrigger==''){
-      saveXML();
+      //saveXML(); gi comment out ni nko kay ang line sa image cropping para mo work 
       JobCompleted();
     // }
     // else{

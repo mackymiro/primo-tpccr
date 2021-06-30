@@ -1,3 +1,4 @@
+<body>
  <div class="box box-primary">	
 	<div class="box-body">
 	<form></form>
@@ -83,7 +84,7 @@
 
 </div>
 
-
+</body>
 <script>
   $(function () {
 	$('table.display').DataTable( {} );
@@ -129,20 +130,17 @@ e.preventDefault();
 		cache: false,
 		processData:false,
 		beforeSend:function(){
-
 				
 		},
 		success: function(data){
-	
-			
-					swal({
-						type:'success',
-						title:"Uploaded!",
-						text:""
-					}).then(function(){
-							
-						location.reload();
-					});	
+				swal({
+					type:'success',
+					title:"Uploaded!",
+					text:""
+				}).then(function(){
+						
+					location.reload();
+				});	
 		
 		},
 		error: function(){} 	        
