@@ -364,6 +364,7 @@ function check() {
 	}
 ?>
 
+
 	 <!-- onload="start()" -->
 <div class="wrapper">
 
@@ -589,7 +590,9 @@ function LoadStyles(){
 			    <!-- <li><a href="#"><i class="fa fa-folder"></i>Priority Number: <u><?= $PrioNumber;?></u></a></li> -->
 			     <li><a href="#"><i class="fa fa-folder"></i>Document Type: <u><span id="DocType"><?= $DocumentType;?></span></u></a></li>
 
+				 <?php if($_GET['Task'] != "Validation"): ?>
 			     <li><a href="#"><i class="fa fa-folder"></i>PageNo: <u><span id="PageNo"><?= $PageNo;?></span></u></a></li>
+				<?php endif;  ?>
 				<li><a href="#"><i class="fa fa-line-chart"></i>Status: <u><span id="Status"><?= $StatusString;?></span></u></a></li>
                 <li><a href="#"><i class="fa fa-clock-o"></i>Last Updated: <u><?= $LastUpdate;?></u></a></li>
                 <?php
@@ -1287,9 +1290,7 @@ function LoadStyles(){
 	 
 	 
 <?php if($_GET['Task'] != "CropImageEdit" )	 :  ?>
-	 
-		 
-	 
+	
 <div class="col-md-9">
 	     <div class="nav-tabs-custom">
             <ul class="nav nav-tabs pull-right">
@@ -1767,13 +1768,14 @@ function LoadStyles(){
 
 						<span id="saveStatus" ></span>
 						<!--<input type="button" class="btn btn-info .btn-sm" onclick="SpellCheck()" value="SpellCheck" id="SpellCheck">-->
-						<?php if($_GET['Task'] ): ?>
+						<?php if($_GET['Task'] != "ContentStructure" ): ?>
 							<a href="updateSGML.php?BatchID=<?= $BatchID; ?>" target="_blank" class="btn btn-success ">Update SGML</a>
 						<?php endif; ?>
 						
 						<button type="button" class="btn btn-danger " id="Validate" onclick="ValidateXML()">Validate</button>
+						<?php if($_GET['Task'] != "Validation"): ?>
 						<button type="button" class="btn btn-success " id="btnSave" onclick="saveXML()">Save</button>
-						 
+						 <?php endif; ?>
 					</div>
 										
 					</div>
@@ -1838,17 +1840,17 @@ function LoadStyles(){
 					?>
 					
 				</tr>
-   <?php
-					  }
-				  }
-				 
-				  ?>
-  </table>
-</div>
-<br>
-<?php
-	}
-  }
+				<?php
+									}
+								}
+								
+								?>
+				</table>
+				</div>
+				<br>
+				<?php
+					}
+				}
 	  ?>
               </div>
               <!-- /.tab-pane -->
@@ -2356,18 +2358,92 @@ function LoadStyles(){
 			</div>
 		</form>
  </div>
- <!-- #################################### END OF COLUMN 9 ##################################################### -->
-<?php else :  ?>
- 
-<div class="col-md-9">
- 
-<?php require('index_cropimage.php'); ?>
+ 	<!-- #################################### END OF COLUMN 9 ##################################################### -->
+	<?php else :  ?>
+	
+	<div class="col-md-9">
+	
+		<?php require('index_cropimage.php'); ?>
 
-</div>
+		<form method="post" action="SetAsCompleted.php">
+			<div class="modal modal-primary fade" id="modal-success">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Set As Completed</h4>
+				  </div>
+				  <div class="modal-body">
+				   <input type="hidden" name="BatchID" id="BatchID" value="<?= $BatchID;?>">
+				   <input type="hidden" id="RelevantValue" name="RelevantValue" value="">
+					<p>Are you sure you want to set this batch as completed?</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+				   
+					<button type="button" class="btn btn-outline" onclick="saveXMLAndComplete()" data-dismiss="modal">Complete</button>
+				 
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+			</div>
+		</form>
 
+		<form method="post" action="StartJob.php">
+			<div class="modal modal-primary fade" id="modal-Start">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Job Started</h4>
+				  </div>
+				  <div class="modal-body">
+				   <input type="hidden" name="BatchID1"  id="BatchID1"  value="<?php echo "$BatchID";?>">
+				   <input type="hidden" name="Task"  id="Task"  value="<?php echo "$Task";?>">
+					<p>Are you sure you want to start this batch?</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+					<button type="button" data-dismiss="modal" class="btn btn-outline" onclick="StartJob()">Start</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+			</div>
+		</form>
 
+		<form method="post" action="PendingJob.php">
+			<div class="modal modal-warning fade" id="modal-Pending">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Job Pending</h4>
+				  </div>
+				  <div class="modal-body">
+				   <input type="hidden" name="BatchID2" id="BatchID2" value="<?php echo "$BatchID";?>">
+					<p>Are you sure you want to set this batch as Pending?</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-outline" data-dismiss="modal" onclick="PendingJob()">Pending</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+			</div>
+		</form>
 
- <?php endif;  ?>
+	</div>
+
+	<?php endif;  ?>
 
 
  
