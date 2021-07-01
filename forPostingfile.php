@@ -217,13 +217,13 @@
                 <table class="display table table-bordered table-striped">
                     <thead>
                           <tr>
-							<th>RefName</th>
-							<th>FileName</th>
-							<th>No.of Pages</th>
-							<th>FinalName</th>
-							<th>ProcessType</th>
-							<th>withImageEdit</th>
-							<th>Action</th>							
+                              <th>RefName</th>
+                              <th>FileName</th>
+                              <!--<th>No.of Pages</th>-->
+                              <th>FinalName</th>
+                              <th>ProcessType</th>
+                              <th>withImageEdit</th>
+                              <th>Action</th>							
                           </tr>
                     </thead>
                     <tbody>
@@ -233,10 +233,10 @@
 
                                 <td><?= odbc_result($FilesData, "Ref")?></td>
                                 <td><?= odbc_result($FilesData, "DocFilename")?></td>
-                                <td><?= odbc_result($FilesData, "NumberOfPages")?></td>
+                                <!--<td><?php //odbc_result($FilesData, "NumberOfPages")?></td>-->
                                 <td><?= odbc_result($FilesData, "FinalFilename")?></td>
                                 <td><?= odbc_result($FilesData, "ProcessType")?></td>
-								<td><?= ( odbc_result($FilesData, "WithImageEdit") == 1 ? "Yes" : "") ?></td>
+								                <td><?= ( odbc_result($FilesData, "WithImageEdit") == 1 ? "Yes" : "") ?></td>
                                 <td>
                                   <a href="javascript:void(0)" id="postFilewithGG"  data-RefId="<?= odbc_result($FilesData, "RefId")?>" data-Id="<?= odbc_result($FilesData, "Id")?>"  data-ProcessType="<?= odbc_result($FilesData, "ProcessType")?>"  data-WithImageEdit="<?= odbc_result($FilesData, "WithImageEdit")?>"  class="btn btn-success">Post File</a>
                                   
