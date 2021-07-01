@@ -246,11 +246,13 @@
                             <?php while(odbc_fetch_row($inventory)): ?>
 							
                                 <?php if(odbc_result($inventory, "status") == "forsegregate"): ?>
-                                  <tr>
+                                    <?php if(odbc_result($inventory, "ProductType") != "Inventory"): ?>
+                                    <tr>
                                       <td><?= odbc_result($inventory, "DocFilename")?></td>
-									   <td><a href="viewFile.php?path=<?= odbc_result($inventory, "Id") ?>" class="btn btn-success">Process File</a></td>
+									                   <td><a href="viewFile.php?path=<?= odbc_result($inventory, "Id") ?>" class="btn btn-success">Process File</a></td>
 									   
-                                  </tr>
+                                    </tr>
+                                  <?php endif;  ?>
                                   <?php endif; ?>
                               <?php endwhile;?>
 
