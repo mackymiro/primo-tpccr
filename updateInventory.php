@@ -29,9 +29,9 @@
         $wuthDocSegregate =  $value['withDocSegregate'];
         $fileType =  $value['fileType'];
         $byteSize =  $value['byteSize'];
-        $jobName  = $value['jobName'];
-        $jobId =  $value['jobId'];
-        $priorityNo =  $value['priorityNo'];
+        //$jobName  = $value['jobName'];
+        //$jobId =  $value['jobId'];
+        //$priorityNo =  $value['priorityNo'];
 
 
         $sqlUpdate = "UPDATE TPCCR_INVENTORY SET 
@@ -51,10 +51,7 @@
                 WithImageEdit='$withImageEdit',
                 WithDocSegregate='$wuthDocSegregate',
                 FileType='$fileType',
-                ByteSize='$byteSize',
-                Jobname='$jobName',
-                JobId='$jobId',
-                PriorityNo='$priorityNo'
+                ByteSize='$byteSize'
                 WHERE Id='$ids'";
         $res = ExecuteQuerySQLSERVER($sqlUpdate,$conWMS);
 
@@ -67,5 +64,5 @@
 <img src="images/Loader.gif" style="width:230px; height:200px;" />
 
 <script language="javascript">
-    window.location = "inventory.php?path=<?= $getUrl; ?>";
+    window.location = "viewInventory.php?path=<?= $getUrl; ?>";
 </script>

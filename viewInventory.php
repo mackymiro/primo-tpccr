@@ -1,11 +1,11 @@
 <?php
-  require_once "conn.php";
-  session_start();
-	if ($_SESSION['login_user']==''){
-		 header("location: login.php");
-	}
-	
-?>
+include "conn.php";
+error_reporting(0);
+session_start();
+  if ($_SESSION['login_user']==''){
+     header("location: login.php");
+  }
+  ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="../../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,10 +43,9 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-	
-	 
-	<!-- jQuery 2.2.3 -->
-   <!--<script src="assets/jQuery/jquery-2.2.3.min.js"></script>-->
+
+    <!-- jQuery 2.2.3 -->
+   <script src="assets/jQuery/jquery-2.2.3.min.js"></script>
    <!-- jQuery UI 1.11.4 -->
    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
    <!-- Bootstrap 3.3.6 -->
@@ -61,6 +60,8 @@
 	<!-- sweet Alert -->	
 	<link rel="stylesheet" type="text/css" href="assets/sweetalert/sweetalert2.css">
 	<script src="assets/sweetalert/sweetalert2.js"></script>
+
+
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -79,9 +80,7 @@
         }  
     }
 </script>
-
-
-<style style="text/css">
+  <style style="text/css">
   	.hoverTable{
 		width:100%; 
 		border-collapse:collapse; 
@@ -99,28 +98,41 @@
     .hoverTable tr:hover {
           background-color: #ffff99;
     }
+
+    .ScrollStyle{
+    max-height:850px;
+    overflow-y: scroll;
+    }
    
 </style>
 
-
-
+ 
 </head>
 <body class="hold-transition fixed skin-blue sidebar-mini">
-
 <div class="wrapper">
-
-  <header class="main-header">
-
+<header class="main-header">
     <!-- Logo -->
-    
-     <a href="index.php" class="logo">
+  
+          
+      <?php
+      if ($_SESSION['UserType']=='Admin'){
+      ?>
+          <a href="index.php" class="logo">
+      <?php
+            }
+            else{
+      ?>
+      <a href="Dashboard.php" class="logo">
+      <?php
+      }
+      ?>
       <!-- mini logo for sidebar mini 50x50 pixels -->
      <span class="logo-mini"><img src="innodata.png" class="img-circle"></span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg pull-left"><img src="innodata.png" class="img-circle" alt="User Image">&nbsp;<b>T</b>pccr</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
+     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
@@ -128,7 +140,7 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-         
+         <?php include ("Notifications.php");?>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -139,18 +151,18 @@
               <!-- User image -->
               <li class="user-header">
                 <?php
-                      $UserId = $_SESSION['login_user'];
-                  if (file_exists("images/user/".$UserId.".jpg")) {  
-                    ?>
-                    <img src="images/user/<?=$UserId;?>.jpg"  class="img-circle" alt="">
-                    <?php
-                  }
-                  else{
-                    ?>
+            $UserId = $_SESSION['login_user'];
+             if (file_exists("images/user/".$UserId.".jpg")) {  
+              ?>
+              <img src="images/user/<?=$UserId;?>.jpg"  class="img-circle" alt="">
+              <?php
+             }
+             else{
+              ?>
                
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                <?php
-              }
+               <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <?php
+             }
               ?>
 
                 <p>
@@ -181,43 +193,52 @@
       </div>
     </nav>
   </header>
-  <!-- Left side column. contains the logo and sidebar -->
-    <?php include "sideBar.php"; ?>
-
-  <!-- Content Wrapper. Contains page content -->
- 
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <!-- Left side column. contains the logo and sidebar -->
+<?php
+include ("sideBar.php");
+?>
+ <div class="content-wrapper">
+     <!-- Content Header (Page header) -->
+     <section class="content-header">
        <h1>
-         Inventory
+         View Inventory
         
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Inventory</li>
+        <li class="active">View Inventory</li>
       </ol>
     </section>
-
-    <!-- Main content -->
-    <section class="content">
-      <div class="row">
-         <div class="col-md-8">
-          <div class="box box-primary">
-             <div class="box-header with-border">
-            <div style="overflow-y:auto;" class="box-header with-border ">
+     <!-- Main content -->
+     <section class="content">
+         <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                    <div style="overflow-x:auto; overflow-y:auto;" class="box-header with-border ScrollStyle">
+                    <a href="inventory.php">Back to main directory</a>
                     <?php 
                       require_once "conn.php";
                       $getFilePath = $_GET['path'];
+                      $mydir = 'TPCCR-Inventory'; 
 
                       $getFilePaths = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$getFilePath'";
                       $getResults = odbc_exec($conWMS, $getFilePaths);
 
+                      $sql = "SELECT Ref FROM tbl_tpccr_outlook_files where Id =".$getFilePath;
+                      $res=odbc_exec($conWMS,$sql);	
+                      $data = odbc_fetch_array($res);
+
+                      $getInventoryFlag = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$getFilePath' AND ProductType='Inventory'";
+                      $getInventory = odbc_exec($conWMS, $getInventoryFlag);
+
+                      $dataI = odbc_fetch_array($getInventory);
                     ?>
-                    <h3>Inventory Table</h3>
                     <br />
+                    <br />
+
 					
-			            <form id="InventoryFiles" name="InventoryFiles" action="updateInventory.php" method="post">
+                    <form id="InventoryFiles" name="InventoryFiles" action="updateInventory.php" method="post">
 					
                     <table width="30%" id='table' border=0 >
                       <tr>
@@ -233,8 +254,12 @@
                         </td>
                       </tr>
                     </table>
-                  
+                    <br/> 
+                    <h4>Ref Source Path: <?= $mydir ; ?>/<?= $data['Ref']?></h4>  
                     <br />
+                    <p style="font-size:15px;">Open this inventory sheet here.</p>
+                    
+                    <a target="_blank" style="font-size:20px;"href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= $dataI['flag']?>/<?= $dataI['DocFilename'];?>"><?= $dataI['DocFilename'];?></a>
                     <br />
                     <?php if(isset($_SESSION['updateInventory'])): ?>
                     <div class="alert alert-success " role="alert">
@@ -266,24 +291,26 @@
                               <td class="bg bg-success">WithDocSegregate</td>
                               <td class="bg bg-success">FileType</td>
                               <td class="bg bg-success">ByteSize</td>
-                              <td class="bg bg-success">Jobname</td>
+                              <!--<td class="bg bg-success">Jobname</td>
                               <td class="bg bg-success">JobId</td>
-                              <td class="bg bg-success">PriorityNo</td>
-                              <td  style="width:70%;" class="bg bg-success">DateRegistered</td>
+                              <td class="bg bg-success">PriorityNo</td>-->
+                             
                             </tr>
                         </thead>
                         <tbody>
                             <?php while(odbc_fetch_row($getResults)): ?>  
                             <?php if(!empty(odbc_result($getResults, "DocFilename"))): ?>
                             <tr id="<?= odbc_result($getResults, "Id"); ?>">
-                                <td><?= odbc_result($getResults, "DocFilename"); ?></td>
+                                <td><a href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= odbc_result($getResults, "flag")?>/<?= odbc_result($getResults, "DocFilename")?>"  target="_blank"><?= odbc_result($getResults, "DocFilename"); ?></a></td>
                                 <td><textarea placeholder="Data" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][data]"><?= odbc_result($getResults, "Data"); ?></textarea></td>
                                
-                                <td><input type="number" placeholder="Pages" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][pages]" value="<?= odbc_result($getResults, "Pages"); ?>" /> </td>
-                                <td><input type="number" placeholder="Number Of Pages" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][numberOfPages]" value="<?= odbc_result($getResults, "NumberOfPages"); ?>" ></td>
+                                <td><input type="text" placeholder="Pages" onkeyup="getPages(<?= odbc_result($getResults, 'Id'); ?>)" class="form-control" id="pages<?= odbc_result($getResults, "Id"); ?>" name="data[<?= odbc_result($getResults, "Id"); ?>][pages]" value="<?= odbc_result($getResults, "Pages"); ?>" /> </td>
+                                <td><input type="text" readonly="readonly" placeholder="Number Of Pages" class="form-control" id="numberOfPages<?= odbc_result($getResults, "Id"); ?>" name="data[<?= odbc_result($getResults, "Id"); ?>][numberOfPages]" value="<?= odbc_result($getResults, "NumberOfPages"); ?>" ></td>
                                 <td>
                                     <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
-										                  <option value="">-- SELECT PRODUCT TYPE --</option>
+                                        <option value="">-- SELECT PRODUCT TYPE --</option>
+                                        <option value="Specs" <?= (odbc_result($getResults, "ProductType") ==  "Specs") ? ' selected="selected"' : '';?>>Specs</option>
+                                        <option value="Inventory" <?= (odbc_result($getResults, "ProductType") ==  "Inventory") ? ' selected="selected"' : '';?>>Inventory</option>                           
                                         <option value="INSOLVENCY"<?= (odbc_result($getResults, "ProductType") ==  "INSOLVENCY") ? ' selected="selected"' : '';?>>INSOLVENCY</option>
                                         <option value="BCSC"<?= (odbc_result($getResults, "ProductType") ==  "BCSC") ? ' selected="selected"' : '';?>>BCSC</option>
                                         <option value="CDROM"<?= (odbc_result($getResults, "ProductType") ==  "CDROM") ? ' selected="selected"' : '';?>>CDROM</option>
@@ -322,8 +349,6 @@
                                         <option value="REMISSIONS/REMISSION ORDERS" <?= (odbc_result($getResults, "ProductType") ==  "REMISSIONS/REMISSION ORDERS") ? ' selected="selected"' : '';?>>REMISSIONS/REMISSION ORDERS</option> 
                                         <option value="PRIVATE LETTER RULINGS" <?= (odbc_result($getResults, "ProductType") ==  "PRIVATE LETTER RULINGS") ? ' selected="selected"' : '';?>>PRIVATE LETTER RULINGS</option>
                                         <option value="PRACTICAL INSIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "PRACTICAL INSIGHTS") ? ' selected="selected"' : '';?>>PRACTICAL INSIGHTS</option>
-                                        <option value="Specs" <?= (odbc_result($getResults, "ProductType") ==  "Specs") ? ' selected="selected"' : '';?>>Specs</option>
-                                        <option value="Inventory" <?= (odbc_result($getResults, "ProductType") ==  "Inventory") ? ' selected="selected"' : '';?>>Inventory</option>                           
                                     </select>
                                 </td>
                                 <td><textarea placeholder="INIT ID"class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][initId]"><?= odbc_result($getResults, "INITID"); ?></textarea></td>
@@ -361,10 +386,10 @@
                                 </td>
                                 <td><textarea placeholder="FileType" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][fileType]"><?= odbc_result($getResults, "FileType"); ?></textarea></td>
                                 <td><textarea placeholder="ByteSize" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][byteSize]"><?= odbc_result($getResults, "ByteSize"); ?></textarea></td>
-                                <td><textarea placeholder="Jobname" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][jobName]"><?= odbc_result($getResults, "Jobname"); ?></textarea></td>
+                               <!-- <td><textarea placeholder="Jobname" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][jobName]"><?= odbc_result($getResults, "Jobname"); ?></textarea></td>
                                 <td><textarea placeholder="JobId" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][jobId]"><?= odbc_result($getResults, "JobId"); ?></textarea></td>
                                 <td><textarea placeholder="PriorityNo" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][priorityNo]"><?= odbc_result($getResults, "PriorityNo"); ?></textarea></td>
-                                <td><?= odbc_result($getResults, "DateRegistered"); ?></td>
+                                -->
                             </tr>
                             <?php endif; ?>
                            
@@ -391,116 +416,15 @@
                     <?php endif; ?>
                     <?php unset($_SESSION['updateInventory']); ?>
                 </div>
+                    </div>
+                </div>
             </div>
-          
-           
-            <!-- /.box-footer -->
-          </div>
-        
-        </div>
-      
-        <!-- /.col -->
-        <div class="col-md-4">
-            <div class="box box-primary">
-              <div class="box-header with-border">
-                  
-                   <a href="inventory.php" >Back to main directory</a>
-                  <?php
-                    $path = $_GET['path'];
-                    $mydir = 'TPCCR-Inventory'; 
-					
-                      if($path == ""){
-                          $insideFile = "SELECT * FROM tbl_tpccr_outlook_files";
-                          $inventory=odbc_exec($conWMS,$insideFile);
-                      }else{
-                          
-                          $getTpccrInv = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$path'";
-                          $inventoryInside=odbc_exec($conWMS,$getTpccrInv);
-                      }
-						
-						
-                    $sql = "SELECT Ref FROM tbl_tpccr_outlook_files where Id =".$path;
-                    $res=odbc_exec($conWMS,$sql);	
-                    $data = odbc_fetch_array($res);
-					 
+         </div>
+     </section>
+ </div>
 
-                             
-                  ?>
-                  <h3>Ref Source Path: <?= $mydir ; ?>/<?= $data['Ref']?></h3>  
-                  
-                  <table id="example1" class="table table-bordered table-striped">
-                      <thead>
-                          <tr>
-                            <th width="35%">Ref name</th>
-                           
-                          </tr>
-                      </thead>
-                      <tbody>
-                         
-                            <?php while(odbc_fetch_row($inventory)): ?>
-                                <?php if(odbc_result($inventory, "status") != "Approved"): ?>
-                                  <tr>
-                                      <td><a href="viewInventory.php?path=<?= odbc_result($inventory, "Id") ?>"><?= odbc_result($inventory, "Ref")?></a></td>
-                                      
-                                  </tr>
-                                  <?php endif; ?>
-                              <?php endwhile;?>
-                             
-                              <?php while(odbc_fetch_row($inventoryInside)): ?>
-                              <tr>
-                                  <td><a href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= odbc_result($inventoryInside, "flag")?>/<?= odbc_result($inventoryInside, "DocFilename")?>" target="_blank"><?= odbc_result($inventoryInside, "DocFilename")?></a></td>
-                                  
-                              </tr>
-                             
-                              <?php endwhile;?>
-                         
-                      </tbody>
-                  </table>
-              </div>
-            
-            
-              <!-- /.box-footer -->
-            </div>
-			
-        </div>
-         
-      </div>
-      <!-- /.row -->
-     
-    </section>
-  
-    <!-- /.content -->
-  </div>
- 
- 
-  <!-- /.content-wrapper -->
-  
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-       
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <!-- Home tab content -->
-      <div class="tab-pane" id="control-sidebar-home-tab">
-         
-
-      </div>
-      <!-- /.tab-pane -->
-      <!-- Stats tab content -->
-       
-  </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
-            
+
 
     <!-- Bootstrap 3.3.7 -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -515,9 +439,8 @@
     <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
-	
-    <script>
-      $(function () {
+ <script>
+  $(function () {
         $('table.display').DataTable( {} );
         $('#example1').DataTable()
           $('#example2').DataTable({
@@ -545,34 +468,31 @@
             'autoWidth'   : false
           })
       })
-    </script>
-	
-	<script type="text/javascript">
+
+
+</script>
+<script type="text/javascript">
 	$(document).on('click', '#approvedfiles', function(e){
 	e.preventDefault(); 
-		
 		$.ajax({
 			url: 'Controller/ApprovedFilesInventory.php',
 			type: "post",
-			data: {Ref:"<?= $data['Ref'] ?>",RefId:"<?= $path ?>"},
+			data: {
+                Ref:"<?= $data['Ref'] ?>",
+                RefId:"<?= $getFilePath ?>"
+            },
 			beforeSend:function(){
-			
-				$("body").waitMe({
+			    $("body").waitMe({
 					effect: 'roundBounce',
 					text: 'Please Wait ........ ',
 					bg: 'rgba(255,255,255,0.90)',
 					color: '#555'
-				});
-				
-				
+				});		
 			},
 			success: function (response) {
-				
 				$('body').waitMe('hide');
-				
 				if(response === "EMPTY" ){
-				
-					swal({
+				    swal({
 						type:'warning',
 						title:"Please Update All Product Type",
 						text:""
@@ -581,8 +501,7 @@
 							
 					});	
 					
-				}
-				else if(response === "DONE" ){
+				}else if(response === "DONE" ){
 					
 					swal({
 						type:'success',
@@ -594,7 +513,6 @@
 					});	
 					
 				}
-			
 				
 			},
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -605,6 +523,23 @@
 
 	}); 
 	</script>
-    
+    <script>
+        const getPages = (id) =>{
+        const pages = $(`#pages${id}`).val();
+        console.log(pages);
+        let res = pages.split("-");
+            console.log(res[0]);
+            console.log(res[1]);
+            //calculate
+            let comp = parseInt(res[1]) - parseInt(res[0]);
+            let calc = comp + 1; 
+            console.log(calc);
+
+            let tt = document.getElementById(`numberOfPages${id}`).value = calc;
+            console.log(tt);
+        };
+    </script>
+
 </body>
 </html>
+
