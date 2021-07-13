@@ -140,7 +140,8 @@
     </section>
     <?php
         // Establishing ftp connection 
-        $ftp_connection = ftp_ssl_connect($ftp_server); 
+       // $ftp_connection = ftp_ssl_connect($ftp_server, $port); 
+    
     ?>
     <!-- Main content -->
     <section class="content">
@@ -155,47 +156,114 @@
                  <?= "<p style='color:green; font-size:18px; font-weight:bold;'>".$_SESSION['succSave']."</p>"; ?>
                       
                  <?php $path = $_GET['path']; ?>
+                 <?php $getFullPath = $_GET['getFullPath']; ?>
                  <br />
                  <br />
-                 <p style="font-size:18px;">File path:<a href="ftpfile.php"> <?= $ftp_path; ?></a></p> 
-                 <?php if($ftp_connection): ?>
-                    <?php 
-                        $login = ftp_login($ftp_connection, $ftp_username, $ftp_userpass);
-                        ftp_pasv($ftp_connection, true);   
+                 <?php if($path ): ?>
+                  <p style="font-size:18px;">File path: /TO_INNO/CONVERSION/<?= $path?></p> 
+                 <?php endif;  ?>
+
+                 <?php if($getFullPath ): ?>
+                  <p style="font-size:18px;">File path: <?= $getFullPath; ?></p> 
+                 <?php endif;  ?>
+                 
+                    <?php
+                        if($path == ""){
+                            $files = $sftp->nlist('/TO_INNO/CONVERSION/');
+                        }else{
+                            $files = $sftp->nlist('/TO_INNO/CONVERSION/'.$path);
+                        }
+
+                        if($getFullPath){
+                            $getFullFiles =  $sftp->nlist($getFullPath);
+                        }
+                    
                     ?>
-                    <?php if($login): ?>
-                        <?php 
-                            if($path == ""){
-                              $file_list = ftp_nlist($ftp_connection, $ftp_path); 
-                            }else{
-                              $file_list = ftp_nlist($ftp_connection, $path);
-                            }
-                        ?>
+                  
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                            <th width="35%">Name of File</th>
+                            <th width="45%">Name of File</th>
                             <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($file_list as $dat): ?>
-                            <?php
-                                $datExp = explode("/", $dat);
-                                //echo $datExp[4];    
-                            ?>
-                            <tr>
-                                <td><a href="ftpfile.php?path=<?= $dat; ?>"><?= $dat; ?></a></td>
-                                <td><a href="dowloadfile.php?file=<?= $dat; ?>"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <?php endforeach;?>
+                            <?php if($getFullPath == ""):?>
+                              <?php if($path == ""): ?>
+                                <?php foreach($files as $dat): ?>
+                                  <?php
+                                    
+                                      $datExp = explode("/", $dat);
+                                      //echo $datExp[4];    
+                                  ?>
+                                  <tr>
+                                      <td><a href="ftpfile.php?path=<?= $dat; ?>"><?= $dat; ?></a></td>
+                                      <td></td>
+                                  </tr>
+                              <?php endforeach;?>
+                            <?php else: ?>
+                                <?php foreach($files as $dat): ?>
+                                    <?php
+                                      
+                                        $datExp = explode("/", $dat);
+                                        //echo $datExp[4];    
+                                    ?>
+                                    <tr>
+                                        <td><a href="ftpfile.php?getFullPath=/TO_INNO/CONVERSION/<?= $path?>/<?= $dat; ?>"><?= $dat; ?></a></td>
+                                        <td></td>
+                                    </tr>
+                                <?php endforeach;?>
+                              <?php endif; ?>
+                            <?php else:?>
+                              
+                              <?php 
+                                  if(isset($_POST['submit'])){
+                                      $filename = $_POST['fileHidden'];
+
+                                      $content = stream_get_contents($filename);
+                                      $local_file_path = "TPCCR-Inventory";
+                                     //$sftp->get($filename, $local_file_path);
+ 
+                                      file_put_contents($local_file_path . '/' . $filename, $sftp->get($filename));
+                                      $sftp->put($filename, 'hello');
+
+                                  } 
+                              
+                              ?>
+                              <?php foreach($getFullFiles as $key=> $fullFile): ?>
+                                     
+                                      <?php
+                                        
+                                          $datExp = explode("/", $fullFile);
+                                          //echo $datExp[4];    
+                                      ?>
+                                      <tr>  
+                                          <?php if($fullFile != "." && $fullFile != ".."):?>
+                                          <td><?= $fullFile; ?></td>
+                                          <td>  
+   
+                                            <form action="" method="post">
+
+                                               <input type="hidden" name="fileHidden" value="<?= $fullFile; ?>"  />
+                                               <button type="submit" name="submit"><i class="fa fa-download fa-2x" aria-hidden="true"></i></button>
+                                            </form>    
+                                            
+                                          </td>
+                                          <?php endif;?>
+                                      </tr>
+                                     
+                                   
+                                       
+                                <?php endforeach;?>
+                               
+                            <?php endif; ?>
+                           
+                             
+                          
+                           
                         </tbody>
                     </table>
-                    <?php else:?>
-                        <h1>Login Failed;</h1>
-                    <?php endif;?>
-
-                  <?php endif; ?>
+                  
                   <?php unset($_SESSION['succSave']); ?>
             </div>
            
