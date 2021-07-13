@@ -187,7 +187,6 @@
                       </tr>
                   </thead>
                   <tbody >
-                     
                       <?php foreach($emailData as $emailIdent): ?>
                       <?php
                             $overview = imap_fetch_overview($connection, $emailIdent, 0);
@@ -200,7 +199,7 @@
 
                             $header = imap_header($connection, $emailIdent);
 
-
+                            
                             $toAddress = $header->toaddress;
                             $toPersonal  = $header->to[0]->personal;
                             $toMailBox = $header->to[0]->mailbox;
@@ -276,7 +275,7 @@
                                   || $mainSubjectCode == "BN" || $mainSubjectCode == "CA" || $mainSubjectCode == "CP" 
                                   || $mainSubjectCode == "CV" || $mainSubjectCode == "DK" || $mainSubjectCode == "HB"
                                   || $mainSubjectCode == "JC" || $mainSubjectCode == "MB" || $mainSubjectCode == "SL"
-                                  || $mainSubjectCode == "SM" ){
+                                  || $mainSubjectCode == "SM" || $mainSubjectCode == "RN" || $mainSubjectCode == "LH"){
                                   $sourceType = "CandyCane";
                                 }else{
                                   $sourceType = "";
@@ -403,8 +402,11 @@
             <?php if(!empty($emailDataSendThisFile)): ?>
               <?php foreach($emailDataSendThisFile as $emailDataIdent): ?>
                     <?php
+                    
                       $overview1 = imap_fetch_overview($connection, $emailDataIdent, 0);
+                  
                       $message1 = imap_fetchbody($connection, $emailDataIdent, "1");
+
                       $messageExcerpt1 = substr($message1, 0, 500);
                       $partialMessage1 = trim(quoted_printable_decode($messageExcerpt1)); 
                       $date = date("d F, Y", strtotime($overview1[0]->date));
@@ -417,167 +419,158 @@
 
                       $created_at = date('Y-m-d H:i:s');
                       $updated_at = date('Y-m-d H:i:s');
-
-
-                      $pattern = '~[a-z]+://\S+~';
-                      $str = $message1;
-                      if(preg_match_all($pattern, $str, $out)){
-                          foreach($out[0] as $url){
-                                //echo $url;
-                                $page = file_get_contents($url);
-                                //$rawHtml =  htmlspecialchars($page);
-                                //$testing = str_replace('<','&lt;',$rawHtml);
-                                preg_match_all('/href=["\']?([^"\'>]+)["\']?/',$page, $matches);
-                                        
-                                $exp = explode('="', $matches[0][4]);
-            
-                                $cleanUrl = explode('"', $exp[1]);
-
-        
-                                $zipUrl = $cleanUrl[0];
-
-                                $fileName = date().".zip"; //create a random name or certain kind of name here
-            
-                                $fh = fopen($filename, 'w');
-                                $ch = curl_init();
-                                curl_setopt($ch, CURLOPT_URL, $zipUrl);
-                                curl_setopt($ch, CURLOPT_FILE, $fh); 
-                                curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // this will follow redirects
-                                curl_exec($ch);
-                                curl_close($ch);
-                                fclose($fh); 
-
-                                $query1 = "SELECT * FROM tbl_tpccr_outlook_files WHERE Ref='$mainSubject'";
-                                //$queryResult = odbc_exec($conWMS, $query1);
-
-                                $queryResult1 = odbc_exec($conWMS, $query1);
-                                if(odbc_num_rows($queryResult1) > 0){
-                                    //
-                                }else{
-
-                                    $mainSubjectSplitSF = explode("-", $mainSubject);
-                                    $mainSubjectCodeSendFile = $mainSubjectSplitSF[0];
-
-                                     //candy cane
-                                    if($mainSubjectCodeSendFile == "AB" || $mainSubjectCodeSendFile == "AW" 
-                                      || $mainSubjectCodeSendFile == "BN" || $mainSubjectCodeSendFile == "CA" || $mainSubjectCodeSendFile == "CP" 
-                                      || $mainSubjectCodeSendFile == "CV" || $mainSubjectCodeSendFile == "DK" || $mainSubjectCodeSendFile == "HB"
-                                      || $mainSubjectCodeSendFile == "JC" || $mainSubjectCodeSendFile == "MB" || $mainSubjectCodeSendFile == "SL"
-                                      || $mainSubjectCodeSendFile == "SM" ){
-                                      $sourceType = "CandyCane";
-                                      $processType = "New";
-                                    }else{
-                                      $sourceType = "";
-                                      $processType = "New";
-                                    }
-
-                                    //proofs
-                                    if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford"){
-                                      $sourceType = "Proofs";
-                                    }else{
-                                      $sourceType = "";
-                                      $processType = "Updating";
-                                    }
-
-                                    //GenCon
-                                    if($mainSubjectCodeSendFile == "BCSEC" || $mainSubjectCodeSendFile == "ONSEC" || $mainSubjectCodeSendFile == "CD-ROM" 
-                                      || $mainSubjectCodeSendFile == "CED" || $mainSubjectCodeSendFile == "CIVIL" || $mainSubjectCodeSendFile == "CoA" 
-                                      || $mainSubjectCodeSendFile == "CRIM" || $mainSubjectCodeSendFile == "EMP" || $mainSubjectCodeSendFile == "SAFE" 
-                                      || $mainSubjectCodeSendFile == "SOL" || $mainSubjectCodeSendFile == "EREF" || $mainSubjectCodeSendFile == "ESTRUST"
-                                      || $mainSubjectCodeSendFile == "FAM" || $mainSubjectCodeSendFile == "GST" || $mainSubjectCodeSendFile == "HUM"
-                                      || $mainSubjectCodeSendFile == "LABOUR" || $mainSubjectCodeSendFile == "LA" || $mainSubjectCodeSendFile == "IP" 
-                                      || $mainSubjectCodeSendFile == "SA" || $mainSubjectCodeSendFile == "TAXPRO" || $mainSubjectCodeSendFile == "LAB"
-                                      || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
-                                      || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
-                                      || $mainSubjectCodeSendFile == "SEC"){
-                                      $sourceType = "GenCon";
-                                    }else{
-                                      $sourceType = "";
-                                    }
-
-                                    $shipmentNamePlusRef1 = $mainSubjectCode . $created_at;
-
-                                    $insertSql1 ="INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, Delivery_Date, No_of_files, Source_Type, Source_Path, created_at, updated_at)
-                                    VALUES('$mainSubject', '$mainSubject', '$mainSubject', '1', '$created_at', '1', '$sourceType', '0', '$created_at', '$updated_at')";
-                                    $res = ExecuteQuerySQLSERVER($insertSql1, $conWMS);  
-
-                                    //$getId = "SELECT Id FROM tbl_tpccr_outlook_files WHERE Ref='$mainSubject'";
-                                    //$resultIds = odbc_exec($conWMS, $getId);
-
-                                    $getIds9 = "SELECT Id FROM tbl_tpccr_outlook_files where Ref='$mainSubject'";
-                                    $res90= odbc_exec($conWMS, $getIds9);   
-                                    $data1s = odbc_fetch_array($res90);
-                                    $dataId1 = $data1s['Id']; 
-
-  
-                                    
-                                }
-                                
-                                //$getInsertedId = "SELECT @@IDENTITY AS Id";
-                                //$resultId = odbc_exec($getInsertedId, $conWMS);
-                                //$rowAddId = odbc_fetch_array($resultId);
-                                //$idInventory = $rowaddid['Id'];
-
-                                //$insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                //VALUES('1', 'test.pdf', '0', '$mainSubject', '1', '1', 'CED', '0', '0', '0', '2021-06-02 02:49:12.000', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '2021-06-02 02:49:12.000')";
-                                //$res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
-
                     
-                                $path = "TPCCR-Inventory/";
-                                
-                                $zip = new ZipArchive;
-                                $res = $zip->open($filename);
-                                $file_count = $zip->count();
-                                if($res === TRUE) {
-                                    
-                                    $zip->extractTo($path);
-                                    for($i = 0; $i < $file_count; $i++) {
-                                        $file_name = $zip->getNameIndex($i);
-                                        $fileExp = explode("/", $file_name);
-                                        $fileZ = $fileExp[1];
+                    ?>
+                     <?php
+                        $pattern = '~[a-z]+://\S+~';
+                        $str = $message1;
 
-                                        //$querySql = "SELECT * FROM TPCCR_INVENTORY WHERE flag='$mainSubject'";
-                                        //$queryResult2 = odbc_exec($conWMS, $querySql);
+                        if(preg_match_all($pattern, $str, $out)){
+                            foreach($out[0] as $url){
+                              $page = file_get_contents($url);
+                            
+                              //$rawHtml =  htmlspecialchars($page);
+                              //$testing = str_replace('<','&lt;',$rawHtml);
+                              preg_match_all('/href=["\']?([^"\'>]+)["\']?/',$page, $matches);
+                                      
+                              $exp = explode('="', $matches[0][4]);
+          
+                              $cleanUrl = explode('"', $exp[1]);
 
-                                        //if(odbc_num_rows($queryResult2) > 0){
-                                          //
-                                        //}else{
-                                        //    $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                        //    VALUES('1', '$fileZ', '0', '$mainSubject', '1', '1', '0', '0', '0', '0', '$created_at', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '$created_at')";
-                                        //    $res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
-                                       // }
-                                       
+                              $zipUrl = $cleanUrl[0];
+                         
+                              $fileName = date().".zip"; //create a random name or certain kind of name here
+            
+                              $fh = fopen($filename, 'w');
+                              $ch = curl_init();
+                              curl_setopt($ch, CURLOPT_URL, $zipUrl);
+                              curl_setopt($ch, CURLOPT_FILE, $fh); 
+                              curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // this will follow redirects
+                              curl_exec($ch);
+                              curl_close($ch);
+                              fclose($fh); 
 
-                                       // $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                        //VALUES('1', '$fileZ', '0', '$mainSubject', '1', '1', '0', '0', '0', '0', '$created_at', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '$created_at')";
-                                        //$res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
+                              $query1 = "SELECT * FROM tbl_tpccr_outlook_files WHERE Ref='$mainSubject'";
+                              
+                              $queryResult1 = odbc_exec($conWMS, $query1);
+                              
+                              $mainSubjectSplitSF = explode("-", $mainSubject);
+                              $mainSubjectCodeSendFile = $mainSubjectSplitSF[0];
 
-                                        $querySql = "SELECT * FROM TPCCR_INVENTORY WHERE flag='$mainSubject'";
-                                        $queryResult2 = odbc_exec($conWMS, $querySql);
+                      
+                              if(odbc_num_rows($queryResult1) > 0){
+                                //
+                              }else{
+                                  
+                                    //candy cane
+                                  if($mainSubjectCodeSendFile == "AB" || $mainSubjectCodeSendFile == "AW" || $mainSubjectCodeSendFile == "BN" || $mainSubjectCodeSendFile == "CA" || $mainSubjectCodeSendFile == "CP" || $mainSubjectCodeSendFile == "CV" || $mainSubjectCodeSendFile == "DK" || $mainSubjectCodeSendFile == "HB" || $mainSubjectCodeSendFile == "JC" || $mainSubjectCodeSendFile == "MB" || $mainSubjectCodeSendFile == "SL" || $mainSubjectCodeSendFile == "SM" || $mainSubjectCodeSendFile == "RN" || $mainSubjectCodeSendFile == "LH"){
+                                     $sourceType = "CandyCane";
+                                  }
 
-                                        if(odbc_num_rows($queryResult2) > 0){
-                                          //
-                                        }else{
-                                            $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, WithCropSource, ShipmentName, Source_Type, TAT, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                            VALUES('$dataId1', '$fileZ', '0', '$mainSubject', '1', '1', '0', '0', '0', '0', '$created_at', '1', '1', '1', '1', '1', '1', '1', '0', '$shipmentNamePlusRef1',  '$sourceType' '1','1', '1', '1', '1', '1', '$created_at')";
-                                            $res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
+                                  //proofs
+                                  if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford"){
+                                      $sourceType = "Proofs";
+                                  }
+
+                                  //GenCon
+                                  if($mainSubjectCodeSendFile == "BCSEC" || $mainSubjectCodeSendFile == "ONSEC" || $mainSubjectCodeSendFile == "CD-ROM" 
+                                    || $mainSubjectCodeSendFile == "CED" || $mainSubjectCodeSendFile == "CIVIL" || $mainSubjectCodeSendFile == "CoA" 
+                                    || $mainSubjectCodeSendFile == "CRIM" || $mainSubjectCodeSendFile == "EMP" || $mainSubjectCodeSendFile == "SAFE" 
+                                    || $mainSubjectCodeSendFile == "SOL" || $mainSubjectCodeSendFile == "EREF" || $mainSubjectCodeSendFile == "ESTRUST"
+                                    || $mainSubjectCodeSendFile == "FAM" || $mainSubjectCodeSendFile == "GST" || $mainSubjectCodeSendFile == "HUM"
+                                    || $mainSubjectCodeSendFile == "LABOUR" || $mainSubjectCodeSendFile == "LA" || $mainSubjectCodeSendFile == "IP" 
+                                    || $mainSubjectCodeSendFile == "SA" || $mainSubjectCodeSendFile == "TAXPRO" || $mainSubjectCodeSendFile == "LAB"
+                                    || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
+                                    || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
+                                    || $mainSubjectCodeSendFile == "SEC"){
+                                    $sourceType = "GenCon";
+                                  }
+
+                                //$shipmentNamePlusRef1 = $mainSubjectCode . $created_at;
+
+                                $insertSql1 ="INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, Delivery_Date, No_of_files, Source_Type, Source_Path, created_at, updated_at)
+                                VALUES('$mainSubject', '$mainSubject', '$mainSubject', '1', '$created_at', '1', '$sourceType', '0', '$created_at', '$updated_at')";
+                                $res = ExecuteQuerySQLSERVER($insertSql1, $conWMS);  
+
+
+                                $getIds9 = "SELECT Id FROM tbl_tpccr_outlook_files where Ref='$mainSubject'";
+                                $res90= odbc_exec($conWMS, $getIds9);   
+                                $data1s = odbc_fetch_array($res90);
+                                $dataId1 = $data1s['Id']; 
+
+                              }      
+                              
+                              
+                              $path = "TPCCR-Inventory/";
+                              $zip = new ZipArchive;
+                              $res = $zip->open($filename);
+                              $file_count = $zip->count();
+                              if($res === TRUE) {
+                                $zip->extractTo($path);
+                                for($i = 0; $i < $file_count; $i++) {
+                                    $file_name = $zip->getNameIndex($i);
+                                    $fileExp = explode("/", $file_name);
+                                    $fileZ = $fileExp[1];
+
+                                    $explodeFileExt = explode(".", $fileZ);
+                                    $fileExt = $explodeFileExt[1];
+
+                                    if($fileExt == "xls"){
+                                        $productTypeInv = "Inventory";
+                                    }else{
+                                        $productTypeInv = "null";
+                                    }
+
+                                          
+                                    $querySql = "SELECT * FROM TPCCR_INVENTORY WHERE DocFilename='$fileZ'";
+                                    $queryResult2 = odbc_exec($conWMS, $querySql);
+
+                                    if(odbc_num_rows($queryResult2) > 0){
+                                      //
+                                    }else{
+
+                                          //candy cane
+                                        if($mainSubjectCodeSendFile == "AB" || $mainSubjectCodeSendFile == "AW" || $mainSubjectCodeSendFile == "BN" || $mainSubjectCodeSendFile == "CA" || $mainSubjectCodeSendFile == "CP" || $mainSubjectCodeSendFile == "CV" || $mainSubjectCodeSendFile == "DK" || $mainSubjectCodeSendFile == "HB" || $mainSubjectCodeSendFile == "JC" || $mainSubjectCodeSendFile == "MB" || $mainSubjectCodeSendFile == "SL" || $mainSubjectCodeSendFile == "SM" || $mainSubjectCodeSendFile == "RN" || $mainSubjectCodeSendFile == "LH"){
+                                            $processType = "New";
                                         }
 
-                                   
+                                        //proofs
+                                        if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford"){
+                                            $processType = "Updating";
+                                        }
 
-                                     }
-                                    $zip->close(); 
+                                         //GenCon
+                                        if($mainSubjectCodeSendFile == "BCSEC" || $mainSubjectCodeSendFile == "ONSEC" || $mainSubjectCodeSendFile == "CD-ROM" 
+                                          || $mainSubjectCodeSendFile == "CED" || $mainSubjectCodeSendFile == "CIVIL" || $mainSubjectCodeSendFile == "CoA" 
+                                          || $mainSubjectCodeSendFile == "CRIM" || $mainSubjectCodeSendFile == "EMP" || $mainSubjectCodeSendFile == "SAFE" 
+                                          || $mainSubjectCodeSendFile == "SOL" || $mainSubjectCodeSendFile == "EREF" || $mainSubjectCodeSendFile == "ESTRUST"
+                                          || $mainSubjectCodeSendFile == "FAM" || $mainSubjectCodeSendFile == "GST" || $mainSubjectCodeSendFile == "HUM"
+                                          || $mainSubjectCodeSendFile == "LABOUR" || $mainSubjectCodeSendFile == "LA" || $mainSubjectCodeSendFile == "IP" 
+                                          || $mainSubjectCodeSendFile == "SA" || $mainSubjectCodeSendFile == "TAXPRO" || $mainSubjectCodeSendFile == "LAB"
+                                          || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
+                                          || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
+                                          || $mainSubjectCodeSendFile == "SEC"){
+                                            $processType = "New";
+                                        }
 
-                                    //echo "WOOT! $filename extracted to $path";     
-                                }else{
-                                    //echo "Error opening the file $filename";
-                                }              
-            
+
+                                        $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                        VALUES('$dataId1', '$fileZ', '0', '$mainSubject', '0', '0', '$productTypeInv', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                        $res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
+                                    }
+
+                                 }
+                                
+                                 $zip->close(); 
+                              }else{
+                                   //echo "Error opening the file $filename";
+                              }
+
+
                             }
-                      }
-
-                    ?>
-
+                        }
+                       
+                     ?>
                <?php endforeach; ?>
             <?php endif; ?>
             <?php 
