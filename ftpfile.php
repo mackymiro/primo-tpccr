@@ -162,7 +162,7 @@
                  <?php if($path ): ?>
                   <p style="font-size:18px;">File path: /TO_INNO/CONVERSION/<?= $path?></p> 
                  <?php endif;  ?>
-
+                
                  <?php if($getFullPath ): ?>
                   <p style="font-size:18px;">File path: <?= $getFullPath; ?></p> 
                  <?php endif;  ?>
@@ -176,8 +176,10 @@
 
                         if($getFullPath){
                             $getFullFiles =  $sftp->nlist($getFullPath);
+
+                           
                         }
-                    
+                        
                     ?>
                   
                     <table id="example1" class="table table-bordered table-striped">
@@ -191,6 +193,7 @@
                             <?php if($getFullPath == ""):?>
                               <?php if($path == ""): ?>
                                 <?php foreach($files as $dat): ?>
+                                  <?php if($dat != "." && $dat != ".."):?>
                                   <?php
                                     
                                       $datExp = explode("/", $dat);
@@ -200,9 +203,11 @@
                                       <td><a href="ftpfile.php?path=<?= $dat; ?>"><?= $dat; ?></a></td>
                                       <td></td>
                                   </tr>
+                                  <?php endif; ?>
                               <?php endforeach;?>
                             <?php else: ?>
                                 <?php foreach($files as $dat): ?>
+                                    <?php if($dat != "." && $dat != ".."):?>
                                     <?php
                                       
                                         $datExp = explode("/", $dat);
@@ -212,25 +217,77 @@
                                         <td><a href="ftpfile.php?getFullPath=/TO_INNO/CONVERSION/<?= $path?>/<?= $dat; ?>"><?= $dat; ?></a></td>
                                         <td></td>
                                     </tr>
+                                    <?php endif;?>
                                 <?php endforeach;?>
                               <?php endif; ?>
                             <?php else:?>
-                              
+
                               <?php 
                                   if(isset($_POST['submit'])){
-                                      $filename = $_POST['fileHidden'];
+                                      $file = $_POST['fileHidden'];
+                                      $filename = $getFullPath."/".$_POST['fileHidden'];
 
-                                      $content = stream_get_contents($filename);
-                                      $local_file_path = "TPCCR-Inventory";
-                                     //$sftp->get($filename, $local_file_path);
- 
-                                      file_put_contents($local_file_path . '/' . $filename, $sftp->get($filename));
-                                      $sftp->put($filename, 'hello');
+                                      $fExp = explode('/', $getFullPath);
+                                      $fExp3 = $fExp[3];
+                                      $fExp4 = $fExp[4];
+                                      
+                                      $created_at = date('Y-m-d H:i:s');
+                                      $updated_at = date('Y-m-d H:i:s');
 
+                                      $fileConCat = $fExp3."-".$fExp4;
+
+                                      mkdir("TPCCR-Inventory/".$fileConCat."/");
+                                       
+                                      $local_file_path = "TPCCR-Inventory/".$fileConCat."/".$_POST['fileHidden'];
+                                        
+                                      $sftp->get($filename, $local_file_path);
+
+                                      $querySql = "SELECT * FROM tbl_tpccr_outlook_files WHERE Ref='$fileConCat'";
+                                      $queryResult2 = odbc_exec($conWMS, $querySql);
+                                      $dataGet = odbc_fetch_array($queryResult2);
+                                      $getDataId = $dataGet['Id']; 
+
+                                      if(odbc_num_rows($queryResult2) > 0){
+                                          //
+                                      }else{
+                                          //insert data to tpccr_outlook_files
+                                          $sqlInsert = "INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, Delivery_Date, No_of_files, Source_Type, Source_path, created_at, updated_at)
+                                          VALUES('$fileConCat', '$fileConCat', '$fileConCat', '1', '$created_at', '1', 'FTP', '0', '$created_at', '$updated_at')";
+                                          $res = ExecuteQuerySQLSERVER($sqlInsert,$conWMS);
+                                          
+                                          $getIds = "SELECT Id FROM tbl_tpccr_outlook_files where Ref='$fileConCat'";
+                                          $res9= odbc_exec($conWMS, $getIds);   
+                                          $data = odbc_fetch_array($res9);
+                                          $dataId = $data['Id']; 
+
+                                          $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                          VALUES('$dataId', '$file', '0', '$fileConCat', '0', '0', 'null', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', 'null',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                          $res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
+
+                                      }
+
+
+                                      if(odbc_num_rows($queryResult2)){
+                                          $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                          VALUES('$getDataId', '$file', '0', '$fileConCat', '0', '0', 'null', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', 'null',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                          $res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
+                                      }
+                                     
+
+                                      $_SESSION['message'] = "File Successfully Downloaded Please go to Inventory Page now.";
                                   } 
                               
                               ?>
-                              <?php foreach($getFullFiles as $key=> $fullFile): ?>
+                               <?php if(isset($_SESSION['message'])): ?>
+                                <div class="alert alert-success " role="alert">
+                                    <strong><?= $_SESSION['message']; ?></strong>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                <?php endif;  ?>
+                                <?php unset($_SESSION['message']); ?>
+                              <?php foreach($getFullFiles as  $fullFile): ?>
                                      
                                       <?php
                                         
