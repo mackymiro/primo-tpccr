@@ -155,8 +155,7 @@
         $emailData = imap_search($connection, 'FROM "@wecode-x.com" ');
 
         //fetch email from @sendthisfile
-        $emailDataSendThisFile = imap_search($connection, 'FROM "@sendthisfile.com" ');
-
+        $emailDataSendThisFile = imap_search($connection, 'UNSEEN FROM "@sendthisfile.com" ');
 
     ?>  
 
@@ -423,8 +422,7 @@
                     ?>
                      <?php
                         $pattern = '~[a-z]+://\S+~';
-                        $str = $message1;
-
+                        $str = $message1;         
                         if(preg_match_all($pattern, $str, $out)){
                             foreach($out[0] as $url){
                               $page = file_get_contents($url);
@@ -438,9 +436,10 @@
                               $cleanUrl = explode('"', $exp[1]);
 
                               $zipUrl = $cleanUrl[0];
-                         
-                              $fileName = date().".zip"; //create a random name or certain kind of name here
-            
+
+      
+                              $filename = rand().".zip"; //create a random name or certain kind of name here
+                          
                               $fh = fopen($filename, 'w');
                               $ch = curl_init();
                               curl_setopt($ch, CURLOPT_URL, $zipUrl);
@@ -448,8 +447,9 @@
                               curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // this will follow redirects
                               curl_exec($ch);
                               curl_close($ch);
-                              fclose($fh); 
+                              fclose($fh);  
 
+                              
                               $query1 = "SELECT * FROM tbl_tpccr_outlook_files WHERE Ref='$mainSubject'";
                               
                               $queryResult1 = odbc_exec($conWMS, $query1);
@@ -457,7 +457,6 @@
                               $mainSubjectSplitSF = explode("-", $mainSubject);
                               $mainSubjectCodeSendFile = $mainSubjectSplitSF[0];
 
-                      
                               if(odbc_num_rows($queryResult1) > 0){
                                 //
                               }else{
@@ -468,7 +467,7 @@
                                   }
 
                                   //proofs
-                                  if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford"){
+                                  if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford" || $mainSubjectCodeSendFile == "AIreland" || $mainSubjectCodeSendFile == "sec"){
                                       $sourceType = "Proofs";
                                   }
 
@@ -482,7 +481,7 @@
                                     || $mainSubjectCodeSendFile == "SA" || $mainSubjectCodeSendFile == "TAXPRO" || $mainSubjectCodeSendFile == "LAB"
                                     || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
                                     || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
-                                    || $mainSubjectCodeSendFile == "SEC"){
+                                    || $mainSubjectCodeSendFile == "SEC" || $mainSubjectCodeSendFile == "lab"){
                                     $sourceType = "GenCon";
                                   }
 
@@ -498,20 +497,31 @@
                                 $data1s = odbc_fetch_array($res90);
                                 $dataId1 = $data1s['Id']; 
 
-                              }      
-                              
-                              
+                              } 
+
                               $path = "TPCCR-Inventory/";
                               $zip = new ZipArchive;
-                              $res = $zip->open($filename);
+                              $resFile = $zip->open($filename);
                               $file_count = $zip->count();
-                              if($res === TRUE) {
+
+                              if($resFile === TRUE) {
                                 $zip->extractTo($path);
+                                
                                 for($i = 0; $i < $file_count; $i++) {
                                     $file_name = $zip->getNameIndex($i);
                                     $fileExp = explode("/", $file_name);
                                     $fileZ = $fileExp[1];
-
+                                    
+                                    //if the filename has a word inventory
+                                    /*$patternInv = '\b(inventory)\b';
+                                    echo $fileZ; 
+                                    echo "<br />";
+                                    echo $patternInv;
+                                    if(preg_match_all($patternInv, $fileZ, $resultOut)){
+                                         
+                                      
+                                    }*/
+                                    
                                     $explodeFileExt = explode(".", $fileZ);
                                     $fileExt = $explodeFileExt[1];
 
@@ -520,7 +530,7 @@
                                     }else{
                                         $productTypeInv = "null";
                                     }
-
+                                    
                                           
                                     $querySql = "SELECT * FROM TPCCR_INVENTORY WHERE DocFilename='$fileZ'";
                                     $queryResult2 = odbc_exec($conWMS, $querySql);
@@ -535,7 +545,7 @@
                                         }
 
                                         //proofs
-                                        if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford"){
+                                        if($mainSubjectCodeSendFile == "ADavison" || $mainSubjectCodeSendFile == "LChong" || $mainSubjectCodeSendFile == "MAppleford" || $mainSubjectCodeSendFile == "sec" || $mainSubjectCodeSendFile == "AIreland"){
                                             $processType = "Updating";
                                         }
 
@@ -549,7 +559,7 @@
                                           || $mainSubjectCodeSendFile == "SA" || $mainSubjectCodeSendFile == "TAXPRO" || $mainSubjectCodeSendFile == "LAB"
                                           || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
                                           || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
-                                          || $mainSubjectCodeSendFile == "SEC"){
+                                          || $mainSubjectCodeSendFile == "SEC" || $mainSubjectCodeSendFile == "lab"){
                                             $processType = "New";
                                         }
 
@@ -561,16 +571,19 @@
 
                                  }
                                 
-                                 $zip->close(); 
+                                $zip->close(); 
+                                
                               }else{
-                                   //echo "Error opening the file $filename";
+                                   echo "Error opening the file $filename";
+                                 
                               }
+                            
 
-
-                            }
-                        }
-                       
+                            }// end foreach in $out[0]
+                        }// if end in preg_match_all          
                      ?>
+                  
+                     
                <?php endforeach; ?>
             <?php endif; ?>
             <?php 
