@@ -444,6 +444,7 @@
                               $ch = curl_init();
                               curl_setopt($ch, CURLOPT_URL, $zipUrl);
                               curl_setopt($ch, CURLOPT_FILE, $fh); 
+                              curl_setopt($ch, CURLOPT_TIMEOUT, 0);
                               curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // this will follow redirects
                               curl_exec($ch);
                               curl_close($ch);
@@ -519,7 +520,6 @@
                                     echo $patternInv;
                                     if(preg_match_all($patternInv, $fileZ, $resultOut)){
                                          
-                                      
                                     }*/
                                     
                                     $explodeFileExt = explode(".", $fileZ);
@@ -559,7 +559,7 @@
                                           || $mainSubjectCodeSendFile == "SA" || $mainSubjectCodeSendFile == "TAXPRO" || $mainSubjectCodeSendFile == "LAB"
                                           || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
                                           || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
-                                          || $mainSubjectCodeSendFile == "SEC" || $mainSubjectCodeSendFile == "lab"){
+                                          || $mainSubjectCodeSendFile == "SEC" || $mainSubjectCodeSendFile == "lab" || $mainSubjectCodeSendFile == "FedPress" || $mainSubjectCodeSendFile == "OECD"){
                                             $processType = "New";
                                         }
 
@@ -572,6 +572,8 @@
                                  }
                                 
                                 $zip->close(); 
+                                echo "Woot successfully extract $filename to $path";
+                                echo "<br />";
                                 
                               }else{
                                    echo "Error opening the file $filename";
