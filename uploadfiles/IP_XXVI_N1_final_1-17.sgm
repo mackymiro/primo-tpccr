@@ -1,0 +1,2250 @@
+﻿<ROOT>
+  <POLIDOC LABEL="CSA Staff Notice">
+    <POLIDENT>
+      <N></N>
+      <TI>Insurance Planning A journal devoted to the financial actuarial and tax aspects of insurance</TI>
+      <DATE></DATE>
+    </POLIDENT>
+    <FREEFORM>
+      <BLOCK1>
+        <TI>Insurance Planning A journal devoted to the financial actuarial and tax aspects of insurance</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">Volume XXVI, No.1</FONT>
+          </BOLD>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">2021</FONT>
+          </BOLD>
+        </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-BoldItalic" font-size="16.02pt">
+                          <EM>Board</EM>
+                        </FONT>
+                      </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-Bold" font-size="10.98pt">Florence Marino</FONT>
+                        <FONT font-name="Calibri-BoldItalic" font-size="10.98pt">
+                          <EM>Editor-in-Chief</EM>
+                        </FONT>
+                      </BOLD>
+                      <FONT font-name="Calibri-Italic" font-size="10.98pt">
+                        <EM>Manulife,
+Waterloo</EM>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-Bold" font-size="10.98pt">Stuart Dollar</FONT>
+                      </BOLD>
+                      <FONT font-name="Calibri-Italic" font-size="10.98pt">
+                        <EM>Sun Life Financial,
+Waterloo</EM>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-Bold" font-size="10.98pt">Joel Cuperfain</FONT>
+                      </BOLD>
+                      <FONT font-name="Calibri-Italic" font-size="10.98pt">
+                        <EM>RBC,
+Toronto</EM>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-Bold" font-size="10.98pt">Rachel Blumenfeld</FONT>
+                      </BOLD>
+                      <FONT font-name="Calibri-Italic" font-size="10.98pt">
+                        <EM>Aird &amp; Berlis LLP,
+Toronto</EM>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-Bold" font-size="10.98pt">Kim G.C. Moody</FONT>
+                      </BOLD>
+                      <FONT font-name="Calibri-Italic" font-size="10.98pt">
+                        <EM>Moodys Gartner Tax Law LLP,
+Calgary</EM>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+                        <FONT font-name="Calibri-Bold" font-size="10.98pt">Glenn R. Stephens</FONT>
+                      </BOLD>
+                      <FONT font-name="Calibri-Italic" font-size="10.98pt">
+                        <EM>PPI Advisory,
+Toronto</EM>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-BoldItalic" font-size="12.00pt">
+              <EM>Corporate-Owned Life Insurance</EM>
+            </FONT>
+          </BOLD>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>ROGERS ENTERPRISES (2015) INC. - TAX COURT FINDS THAT AN INCREASE IN A
+CAPITAL DIVIDEND ACCOUNT BALANCE IS NOT A TAX BENEFIT UNDER THE GAAR</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="10.98pt">Sanjana Bhatia,</FONT>
+            <FONT font-name="Calibri-BoldItalic" font-size="10.98pt">
+              <EM>Sun Life Financial</EM>
+            </FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.02pt">Since the General-Anti Avoidance Rule (GAAR) was enacted in 1988, only a few cases have dealt
+with the issue of whether there has been a “tax benefit”. Rogers Enterprises (2015) Inc. (Rogers) is
+a recent example of where the Court has held that the series of transactions the taxpayer entered
+into did not result in a tax benefit. As such, Rogers is a significant and important decision because
+it adds to the GAAR jurisprudence that an increase in a tax attribute is not a tax benefit under the
+GAAR. In this article Sanjana Bhatia discusses Rogers, which was decided in favour of the taxpayer.</FONT>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-BoldItalic" font-size="12.00pt">
+              <EM>Creditor Protection</EM>
+            </FONT>
+          </BOLD>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>DOES THE CANADA REVENUE AGENCY HAVE THE POWER TO SEIZE LIFE INSURANCE
+PROCEEDS TO SATISFY THE DECEASED’S TAX LIABILITY?</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="10.98pt">Glenn R. Stephens</FONT>
+            <FONT font-name="Calibri-BoldItalic" font-size="10.98pt">
+              <EM>, PPI Advisory</EM>
+            </FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.02pt">It is well understood that life insurance policies provide a level of creditor protection, primarily
+under each province’s</FONT>
+          <FONT font-name="Calibri-Italic" font-size="10.02pt">
+            <EM>Insurance Act</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">, that is not available to other financial products. In this article
+Glenn Stephens considers whether life insurance also enjoys protection from the broad collection
+powers provided to the Canada Revenue Agency (“CRA”) under section 160 of the Income Tax Act
+(Canada) .This section provides the CRA with the ability to seize funds or other property transferred
+by a tax debtor to a non-arm’s length party. Where this section applies, the transferee becomes
+jointly and severally liable with the tax debtor for the latter’s tax liability. The particular focus of
+this article is whether the powers granted under this section allow the CRA to seize insurance death
+benefit proceeds paid to a non-arm’s length party under a policy insuring the life of the tax debtor.
+There are strong arguments to suggest that the CRA may be unable to do so.</FONT>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-BoldItalic" font-size="12.00pt">
+              <EM>Estate Planning</EM>
+            </FONT>
+          </BOLD>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>STEP CANADA CRA 2020 ROUNDTABLE – QUESTIONS OF INTEREST FOR INSURANCE
+PLANNING</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="10.98pt">Kim G.C. Moody,</FONT>
+            <FONT font-name="Calibri-BoldItalic" font-size="10.98pt">
+              <EM>Moodys Tax Law LLP</EM>
+            </FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.02pt">STEP Canada’s annual conference was cancelled during 2020 in favor of a series of pre-recorded
+webinars on various relevant topics. This year, the CRA Roundtable was part of the pre-recorded
+webinars and was released in mid-November 2020. For insurance and estate practitioners, there
+were a number of questions and answers that should be of interest. Kim Moody, points out these
+questions and provides brief comments regarding their relevance to estate planning.</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>ROGERS ENTERPRISES (2015) INC. - TAX COURT FINDS THAT AN
+INCREASE IN A CAPITAL DIVIDEND ACCOUNT BALANCE IS NOT A TAX
+BENEFIT UNDER THE GAAR</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="13.98pt">Sanjana Bhatia,</FONT>
+            <FONT font-name="Calibri-BoldItalic" font-size="13.98pt">
+              <EM>Sun Life Financial</EM>
+            </FONT>
+          </BOLD>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Introduction</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Since the General-Anti Avoidance Rule (GAAR) was enacted in 1988, only a few cases have dealt with the issue
+of whether there has been a “tax benefit”.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See, for example,</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Copthorne Holdings Ltd. v. Canada,</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2011 SCC 63</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(“</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Copthorne</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">”);</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>1245989 Alberta Ltd. v. Canada (Attorney
+General)</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2018 FCA 114</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Perry Wild</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">);</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Gladwin Realty Corporation v. Canada</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2020 FCA 142</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Gladwin Realty</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">);</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. 594710
+British Columbia Ltd</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">., 2018 FCA 166</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Univar Canada Ltd. v. The Queen</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2005 TCC 723</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">GAAR disputes have focused more often on the third part of the
+test where the Crown must show misuse or abuse of the provisions of the</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Income Tax Act</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">(the Act).</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Income Tax Act</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, (R.S.C., 1985, c. 1 (5th Supp.) as amended) (the Act). Unless otherwise stated, all statutory references in this article
+are to the Act.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">This is
+because the taxpayer usually concedes that the transactions resulted in a tax benefit.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See, for example,</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. MIL (Investments) S.A.</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2007 FCA 236</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. Mackay</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2008 FCA 105</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. Landrus</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2009 FCA
+113</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Swirsky v. Canada</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2014 FCA 36</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. Spruce Credit Union</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2014 FCA 143</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. Alta Energy Luxembourg S.A.R.L</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.,
+2020 FCA 43</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(leave to appeal to the Supreme Court of Canada granted August 6, 2020);</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>McMullen v. The Queen</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2007 TCC 16</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>McClarty Family Trust v. The Queen</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2012 TCC 80</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">;</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Golini v. The Queen</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2016 TCC 174</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers Enterprises (2015) Inc.</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2020 TCC 92</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">(</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">) is a recent example of where the Court has held that the series of
+transactions the taxpayer entered into did not result in a tax benefit. As such,</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">is a significant and
+important decision because it adds to the GAAR jurisprudence that an increase in a tax attribute is not a tax
+benefit under the GAAR. This article discusses</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers,</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">which was decided in favour of the taxpayer.</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Statutory Context and Background</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Before discussing</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, it is helpful to outline briefly the relevant legislation, including the GAAR, as well as
+the 2016 changes to the capital dividend account (CDA) rules.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.98pt">(a)</FONT>
+          <FONT font-name="Calibri-Italic" font-size="10.98pt">
+            <EM>The GAAR Test</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The GAAR scheme is set out in</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsections 245(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">to</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">(5)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">of the Act and requires that three questions be decided:</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.98pt">(1) Was there a tax benefit?</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.98pt">(2) Was there an “avoidance transaction” or a “series of transactions”?</FONT>
+          <FONT font-name="Calibri" font-size="7.02pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Under</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 245(3)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the Act, a transaction will be an avoidance transaction if it results in a tax benefit, and is not
+undertaken primarily for a</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>bona fide</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">non</FONT>
+                  <FONT font-name="CambriaMath" font-size="10.02pt">‑</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">tax purpose. An avoidance transaction may operate alone to produce a tax benefit, or may
+operate as part of a series of transactions to produce a tax benefit.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Subsection 248(10)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the Act extends the meaning of “series of
+transactions” to include any related transactions or events completed “in contemplation of” the series.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.98pt">(3) Was there misuse or abuse?</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The burden is on the taxpayer to refute (1)-(2), and on the Minister of National Revenue (Minister) to establish
+(3).</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada Trustco Mortgage Co. v. Canada</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2005 SCC 54</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada Trustco</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">) at paragraphs 66-67.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">If a Court concludes there is no tax benefit resulting from a transaction or part of a series of transactions, then
+the GAAR will not apply. If there is a tax benefit, a Court will have to determine whether the transaction or series
+of transactions were abusive. If the Court determines that there is a misuse or an abuse of the Act’s provisions,
+then the GAAR will apply. If the GAAR applies, the Minister substitutes the tax result that she determines should
+have occurred for the one the taxpayer asserted.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="10.98pt">(b)</FONT>
+          <FONT font-name="Calibri-Italic" font-size="10.98pt">
+            <EM>The CDA and the 2016 Changes to the CDA</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The CDA, defined in</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 89(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, is a notional account available for private corporations that is used to pay
+out tax-free capital dividends under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 83(2)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">of the Act.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">The concept of the capital dividend was introduced in 1972 as part of the system to ensure the integration of corporate and
+personal tax on capital gains realized by Canadian private corporations.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">Although the CDA definition is exceedingly
+complex, it includes, among other things, most or all of the life insurance death benefit proceeds that a</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">corporation receives as a beneficiary of the policy. Prior to 2016, if a corporation was the owner and the
+beneficiary of the policy, the corporation was required to deduct the policy’s adjusted cost basis (ACB) from the
+life insurance proceeds before the corporation could add those proceeds to its CDA.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Before the 2016 legislative changes, subparagraph(d)(iii) in the definition of “capital dividend account” under</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 89(1)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">read
+as follows: “(d)(iiii) the adjusted cost basis (within the meaning assigned by</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 148(9)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">) of a policy referred to in
+subparagraph (i) or (ii)</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>to the corporation</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">immediately before the death…” (Emphasis added).</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The federal government amended the CDA definition (effective for deaths occurring after March 21, 2016) to
+ensure that the ACB of the insurance policy would reduce the CDA credit of a corporate beneficiary, even where
+that beneficiary was not the owner of the policy.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Subparagraph (d)(iii) in the definition of “capital dividend account” under</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 89(1)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">was amended by the 2016 Budget
+second bill, effective December 15, 2016 to read as follows: “(d)(iii) the “adjusted cost basis” (in this paragraph as defined in</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 148(9)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">), immediately before the death, of</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">Before this legislative change, the Canada Revenue Agency
+(CRA) consistently took the view that, if the purpose of separating the ownership and beneficiary of a policy was
+to maximize the CDA, it would seek to invoke the GAAR. In fact, the CRA's position was that it would review any
+situation involving a corporate group where life insurance proceeds included in a corporation's CDA were not
+reduced by the ACB of the policy.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See, for example, CRA Document No.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2010-0371901C6</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, “Avantage à l'actionnaire, assurance-vie,” October 8, 2010; CRA Document
+No.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">9824645</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, “Capital Dividend Account, December 15, 1998; CRA Document No.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">9908430</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, “CALU Conference May 1999,” Question
+3, May 1, 1999; CRA Document No.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2004-0065461C6</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, “Corporate-Owned Life Insurance,” May 4, 2004.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Facts in Rogers</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The late Mr. Edward Samuel (Ted) Rogers was the President and Chief Executive Officer of Rogers
+Communications Inc., a Canadian public company in the Rogers corporate group (the RPC Group). From 1982 to
+1991, private corporations in the RPC group and a family trust purchased twelve life insurance policies on the
+life of Mr. Rogers. More specifically, E.S.R. Limited (ESRL) was the owner (that is, the policyholder) and
+beneficiary of ten of the policies, and the 1984 Rogers Ownership Trust (1984 Trust) was the policyholder of the
+other two policies.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">In 2005, in the course of a significant corporate reorganization of the RPC Group, CGESR Limited (CGESR) became
+the beneficiary of the policies. ESRL and the 1984 Trust remained the policyholders and continued to pay the
+premiums on their respective policies.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Mr. Rogers passed away in December 2008. CGESR credited the full amount of the insurance death benefit
+proceeds to its CDA (~ $102 million) and did not deduct the ACB of the policies (</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">~</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">$42 million). CGESR relied on
+its understanding of the law as per the pre-2016 rules.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">In 2009, CGESR paid capital dividends to two companies (ESRIL 98 and CGESR 2009) who were CGESR’s
+shareholders. Each of these companies added the capital dividends they received from CGESR to their CDAs.
+CGESR 2009 paid a capital dividend to the 1995 Trust (another family trust in the RPC group). The total capital
+dividends paid up to this point were</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">~</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">$10 million.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Later in 2009, CGESR redeemed ESRIL 98’s shares for ~ $92 million and elected the dividend on the redemption
+to be a capital dividend under subsection 83(2) of the Act. ESRIL 98 added the capital dividend it received to its
+CDA. ESRIL 98 paid</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">~</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">$50 million in capital dividends to its shareholder, ESRIL (the policyholder of ten of the
+twelve policies). ESRIL 98 did not pay out any further capital dividends and thus its CDA balance remained at ~
+$42 million. The taxpayer, Rogers Enterprises (2015) Inc., became the successor by amalgamation of CGESR and
+ESRIL 98.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">In 2015, the CRA issued the taxpayer a notice of determination</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Under</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 152(1.11)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the Act.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">on the basis that the GAAR applied to the series
+of transactions, and reduced the taxpayer’s CDA by the ACB of the policies. The taxpayer appealed the CRA’s
+decision to the Tax Court of Canada (TCC).</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>The TCC’s Decision</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The taxpayer conceded that there was a series of transactions. However, it maintained that there was no tax
+benefit. In addition, even if the series had resulted in a tax benefit, none of the transactions in the series were
+abusive. The taxpayer also conceded that, if the series resulted in a tax benefit, the primary purpose of the
+transactions making up the series was to obtain the tax benefit. However, the taxpayer disputed that there was
+a tax benefit, and also disputed that the transactions were abusive.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Therefore, the remaining issues were: 1) was there a tax benefit and, 2) was there misuse and abuse of the Act?</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="10.98pt">
+            <EM>(a) Was There a Tax Benefit?</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The Crown argued that there were four tax benefits in this case:</FONT>
+        </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The increase in the CDAs of CGESR and ESRIL 98;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The reduction in income as a result of the election under</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">subsection 83(2)</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">to pay the dividends as capital dividends;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The avoidance of Part III tax with respect to the dividends; and,</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The avoidance of Part I tax by ESRIL 98’s ultimate shareholders.</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Subsection 245(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">defines a “tax benefit” as “a reduction, avoidance, or deferral of tax or other amount payable
+under this Act or an increase in a refund of tax or other amount under this Act…”</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The CDA Increases
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Justice Sommerfeldt rejected the Crown’s first argument, that the increase in the taxpayer’s CDA was a tax
+benefit, for five main reasons. First, he disagreed with the Crown’s interpretation that the increase in the CDA
+balance fell within the phrase “an increase in… [an] other amount under this Act.” Instead, he held that the
+correct grammatical interpretation of a tax benefit is an increase in a refund of tax or a refund of another
+amount.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Second, Justice Sommerfeldt held that the</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Explanatory Notes</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Michael H. Wilson (Minister of Finance),</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Explanatory Notes to Legislation Relating to Income Tax</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(Department of Finance: Ottawa,
+June 1988), p. 462.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">suggest that a tax benefit is intended to refer to
+amounts that are payable or refundable under the Act, such as interest, penalties and source deductions. The</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Explanatory Notes</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">did not mean to capture an increase in a tax attribute like a CDA balance.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Third, a tax benefit is limited to refunds of tax or other amounts payable under the Act. The CDA is not an
+amount payable.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Fourth, Justice Sommerfeldt held that it does not seem reasonable to view increases in all amounts under the
+Act as tax benefits. For example, it does not make sense that an increase in amounts such as income or profits
+would constitute a tax benefit.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Fifth, the phrase, “other amount under this Act” in the definition of tax benefit refers to an amount that could
+be refunded, such as refundable credits. An increase in a CDA is not a refundable amount.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Reduction in Income
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Justice Sommerfeldt held that the taxpayer treating the dividends as capital dividends did not result in any
+change in tax. This is because the taxpayer paid the dividends to corporate shareholders who could have
+deducted them in any event under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 112(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">. (Subsection 112(1) allows inter-corporate dividends to be
+received tax-free. The dividend is not taxed until it reaches the individual shareholder). As such, the capital
+dividend treatment did not result in any reduction of tax, and therefore could not be a tax benefit.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Avoidance of Part III Tax
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Justice Sommerfeldt dealt with the issue of whether a tax benefit existed by comparison with an alternative
+arrangement.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">The existence of a tax benefit can be established by comparing the taxpayer’s situation with an alternative arrangement that could
+reasonably have been carried out but for the existence of the tax benefit. (</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada Trustco</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">,</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 6 at paragraph 20).</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">The comparison in this case would be whether ESRIL 98 avoided Part III tax that would have
+applied to an excess capital dividend election in relation to its capital dividend of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">~</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">$50 million. He concluded
+that there was no tax benefit because ESRIL 98 had a sufficient balance in its CDA to cover the amount of the
+dividend (even if the CRA’s position that the CDA was only</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">~</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">$50 million, not</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">~</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">$92 million, was correct).</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Avoidance of Part I Tax
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Finally, Justice Sommerfeldt concluded that an increase in a tax attribute (the CDA in this case) does not result
+in a reduction, avoidance or deferral of tax. He concluded that, “…the future reduction of tax under Part I of the</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>ITA</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">by the ultimate shareholders at ESRIL 98, as suggested by the Crown, is not a tax benefit at this time.”</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 4 at paragraph 49.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">In
+other words, there is no tax benefit until the taxpayer pays capital dividends out of the increased CDA to its
+ultimate shareholders.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          Observations
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">confirms that there is no tax benefit merely when a tax attribute is increased, or income is reduced.
+There must be an actual reduction in tax payable or an increase in a refund of an amount that was payable under
+the Act. This finding is consistent with other case law. For example, in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Perry Wild</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 1.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">(and relied on by Justice
+Sommerfeldt in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">), the Federal Court of Appeal (FCA) concluded that the transaction that resulted in the
+increased paid-up capital (PUC) in respect of certain shares did not result in a tax benefit and that</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 84.1</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">was not abused. Also, in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Copthorne</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">the Court recognized that the mere preservation of PUC did not result in a
+tax benefit.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Copthorne, supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 1.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">The tax benefit was realized only when the shares were redeemed and the PUC was used to
+reduce the Canadian withholding tax on the deemed dividend on the redemption transaction.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See also</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Fiducie financière Satoma v. Canada</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2018 FCA 74</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, a case involving the application of the attribution rules under</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">s. 75(2)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">,
+where the taxpayer (a trust) unsuccessfully argued that there was no tax benefit until a tax-free distribution was made by the trust.
+And,</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>2763478 Canada Inc. v. Canada</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, 2018 FCA 209</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">where the Court rejected the taxpayer’s argument that a future transaction or
+event and its tax consequence must be considered in determining whether a tax benefit had been realized.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Similarly, in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Gladwin Realty</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">,</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 1.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">the FCA recently held that an increase in a tax attribute like the CDA balance
+cannot be a tax benefit by itself. The tax benefit does not arise until tax is actually paid out to a recipient capable
+of benefiting from its tax-free character. Although some capital dividends were paid, they were paid to
+corporate shareholders who could have deducted regular taxable dividends under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 112(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">in any
+event. The Court’s conclusion in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Gladwin Realty</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, that an increase in the taxpayer’s CDA balance alone cannot be
+a tax benefit until an amount is paid out to a shareholder who benefits from the tax-free nature of the capital
+dividend, is consistent with its prior decision in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Perry Wild</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">. Also, in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>OSFC Holdings Ltd. v. Canada,</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2001 FCA 260</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">(OSFC) the
+FCA concluded that the pre-packaging of tax losses did not result in a tax benefit. Rather, the tax benefit accrued
+only when the taxpayer acquired its partnership interest and became entitled to share in the partnership’s loss.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Copthorne, Gladwin Realty, OSFC</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">and</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Perry Wild</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">are all solid authorities supporting the proposition that an
+increase to a tax balance alone cannot be a tax benefit within the meaning of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 245(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">. These cases,
+with the addition of</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, appear to settle the issue that an increase to a tax attribute (such as a CDA) alone
+cannot be a tax benefit within the meaning of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 245(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada v. Bank of Montreal</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(2020 FCA 82)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">is also instructive. In this case, the FCA affirmed the TCC’s decision that the GAAR did
+not apply because the transactions did not result in any tax benefit. More specifically on the facts,</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 112(3.1)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">would not
+have applied in the taxpayer’s double dip financing tower structure even if the Nova Scotia Unlimited Liability Company had not
+created two classes of shares and paid dividends only on the preferred shares.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="10.98pt">
+            <EM>(b) Was There Misuse and Abuse of the ITA?</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Justice Sommerfeldt’s conclusion that there was no tax benefit was sufficient to allow the taxpayer’s appeal and
+dispose of the case. However, he proceeded to analyze whether the series of transactions was abusive. For this
+purpose, he analyzed the underlying rationale (the object, spirit and purpose) of the key provisions in the CDA
+regime. He also conducted a textual, contextual, and purposive analysis of those provisions that would reduce
+the proceeds of a life insurance policy by the ACB of the policy.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">With respect to the abuse test, the onus is on the Crown to show that there has been an abuse of the object, spirit, or purpose of
+the provisions relied upon by the taxpayer. The Courts must then conduct a “textual, contextual and purposive analysis of the
+provisions giving rise to tax benefit, in order to determine why they were put in place and why the benefit was conferred”. (</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada
+Trustco</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">,</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 6).</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Rationale
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">After reviewing the legislative history of the treatment of life insurance policy proceeds, Justice Sommerfeldt
+concluded that there is no broader “underlying rationale” to the provisions. He rejected the Crown’s argument
+that the rationale required a CDA reduction where the recipient of the life insurance proceeds is not the
+policyholder.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The Crown also submitted that the</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Explanatory Notes</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">released by the Department of Finance on October 21,
+2016 support its argument that the amendments were made to make an existing legislative purpose more
+explicit. Justice Sommerfeldt dismissed the Crown’s evidence of the Explanatory Notes as self-serving and
+ambiguous.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Text
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Justice Sommerfeldt then examined the text of the CDA provision. He noted that the provision initially used the
+phrase, “the adjusted cost basis of the policy…to the corporation” in the CDA definition from 1977 to 1986, and
+then subsequently used the phrase, “the adjusted cost basis…of a policy…to the corporation” from 1986 to
+2016. He concluded that the relevant words must mean the ACB of the policy to the corporation, which
+supported the taxpayer’s position. In affirming the textual approach, Justice Sommerfeldt stated that
+“…Parliament said what it meant to say.”</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 4 at paragraph 117.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Context
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">With respect to the context, Justice Sommerfeldt concluded that Parliament was deliberate and intentional in
+describing the ACB of a life insurance policy by reference to a particular person. For example, he refers to other
+provisions of the Act dealing with life insurance, and ascertains that they sometimes refer to the ACB to the
+corporation, sometimes to the ACB to the taxpayer, and sometimes to the ACB to the policyholder. Therefore,
+the contextual analysis indicates that in 2008, we were to use the ACB to the corporation that received the
+policy proceeds. In other words, the context of the Act supports the textual meaning.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          The Purpose
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Justice Sommerfeldt found that the Crown was inconsistent as to the purpose of subparagraph (d)(iii) in the
+definition of “capital dividend account” under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 89(1)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, as it read in 2008 and 2009. The Crown’s reasons</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">as to why the ACB needed to be deducted from the policy proceeds in order for a corporate beneficiary to credit
+its CDA was also unclear. For example, the Crown agreed in its written examination for discovery that the
+purpose behind excluding the ACB from the capital dividend account was “to limit the amount of retained
+earnings that a corporation can distribute to a shareholder on a tax-free basis through the purchase of a life
+insurance contact and the use of CDA account.”</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">An examination for discovery is a pre-trial procedure meant to narrow the scope of the issues between litigants, clarify their
+positions, and obtain admissions. Overall, its purpose is to help the parties settle their dispute, if possible, or reduce the length and
+expense of a trial if a settlement is not possible. Written or oral answers given at an examination for discovery are made under oath,
+just as if they were made at trial, and are binding on the party making them.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">However, in a written statement during the trial, the Crown
+stated that, “if amounts had been distributed by the corporation to the shareholder personally to personally
+pay for the life insurance policy, such amounts would have been taxable to the shareholders”.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 4 at paragraph 127.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Because of the Crown’s lack of clarity, Justice Sommerfeldt was not satisfied that the Crown had adequately
+explained the provision, and concluded that the Crown had not met its onus under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 245(4)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">to establish
+clearly the object, spirit and purpose of the relevant provisions. Accordingly, the series of transactions that
+resulted in the addition of the full amount of the death benefit proceeds of the policy (not reduced by the
+premiums paid under the policy) was not abusive.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Justice Sommerfeldt’s finding is consistent with</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Canada Trustco</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 6), that if the abusive tax avoidance is unclear, the
+benefit of the doubt goes to the taxpayer.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">Citing</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Copthorne</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, Justice Sommerfeldt also concluded that
+“…this is one of those, perhaps rare, situations where the underlying rationale of the Reduction Provision in
+2008 and 2009 was no broader than the text itself.”</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 4 at paragraph 131.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">
+          Observations
+        </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The separation of the policyholder (ESRL or the 1984 Trust) and the beneficiary (CGESR) of the policies was
+entirely consistent with the longstanding practice, the terms of the life insurance policies and the scheme of the
+Act, both as it existed at the time of Mr. Rogers’ death and at present. Both the previous and amended definition
+of the CDA reflect that a corporate recipient of a life insurance policy may not be the beneficiary.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">notes 8 and 9.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">Because the
+life insurance proceeds received by CGESR were received tax free, it was entirely consistent with the policy
+underlying the CDA that the full amount of the proceeds was added to CGESR's CDA so that CGESR could
+distribute those amounts to its shareholders as a capital dividend. This maintained the tax-free status of the life
+insurance proceeds,</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">Life insurance proceeds are tax-free, whether they are received by an individual, corporation, trust or other entity (</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subparagraph
+39(1)(a)(iii)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the Act).</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">consistent with the purpose of the CDA scheme. Adding the full amount of the life
+insurance proceeds to CGESR’s CDA (without any ACB deduction) was in accordance with the clear text, context
+and purpose of the CDA provisions. Justice Sommerfeldt correctly concluded that it was not abusive.</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>The CRA’s Interpretation of ACB and No Pro-Rating of the ACB</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Beyond</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers,</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">it is also important to note that the CRA’s views regarding the ACB of the policy under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subparagraph 89(1)(d)(iii)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">leads to an unfair result. For example, the CRA’s interpretation is that where there
+are multiple beneficiaries, the CDA will be reduced by the</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>full</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">ACB of the policyholder's interest in the policy for
+each beneficiary and cannot be prorated.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">CRA Document No.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2018-0745811C6</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, “CALU 2018 Q2 – CDA credit-joint ownership,” May 8, 2018 and CRA Document No.</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">2017-
+0690311C6</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, “CLHIA 2017 – Q1 CDA,” May 18, 2017.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">The insurance industry has brought this issue of double counting the
+ACB to the attention of Finance.</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Conclusion</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The Minister has decided not to appeal</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">. The Minister could challenge this transaction in the future,
+however, if the taxpayer pays out the ~ $42 million of capital dividends to its individual shareholders on the
+basis that there is now a tax benefit resulting from a series of transactions. However, the abuse test will remain
+a difficult obstacle for the Minister because another Tax Court judge could agree with Justice Sommerfeldt’s
+findings (even though his comments on abuse were</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>obiter dicta</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">).</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">In any event,</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">is an important decision because it adds to the GAAR jurisprudence that an increase in a
+tax attribute (the CDA in this case) is not a tax benefit. As well, from a GAAR perspective, it is also recognition</FONT>
+        </P>
+        <IMAGE></IMAGE>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">that the text of a provision is sometimes conclusive.</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Rogers</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">is also a unique case because it is rare that the TCC
+rules on issues involving policyholder insurance taxation and the GAAR.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See also</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Golini</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">,</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>supra</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">note 3 where the TCC held that the GAAR applied to a life insurance leveraging transaction.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <FOOTNOTE>
+          <FREEFORM>
+            <P>
+              <FONT font-name="Calibri" font-size="10.02pt">(A) if the death occurs before March 22, 2016, a policy referred to in subparagraph (i) or (ii)</FONT>
+              <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                <EM>to the corporation</EM>
+              </FONT>
+              <FONT font-name="Calibri" font-size="10.02pt">,
+and</FONT>
+            </P>
+          </FREEFORM>
+        </FOOTNOTE>
+        <FOOTNOTE>
+          <FREEFORM>
+            <P>
+              <FONT font-name="Calibri" font-size="10.02pt">(B) if the death occurs after March 21, 2016, a</FONT>
+              <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                <EM>policyholder’s interest</EM>
+              </FONT>
+              <FONT font-name="Calibri" font-size="10.02pt">in a policy referred to in subparagraph (i) or (ii)
+(Emphasis added).</FONT>
+            </P>
+          </FREEFORM>
+        </FOOTNOTE>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>DOES THE CANADA REVENUE AGENCY HAVE THE POWER TO SEIZE LIFE
+INSURANCE PROCEEDS TO SATISFY THE DECEASED’S TAX LIABILITY?</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="13.98pt">Glenn R. Stephens,</FONT>
+            <FONT font-name="Calibri-BoldItalic" font-size="13.98pt">
+              <EM>PPI Advisory</EM>
+            </FONT>
+          </BOLD>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">1. Introduction</FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">It is well understood that life insurance policies provide a level of creditor protection, primarily under each
+province’s</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Insurance Act</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, that is not available to other financial products. Creditor protection is available in the
+common law provinces where there is a defined family relationship between the insured person and the
+beneficiary (in Quebec the applicable relationship is that between the policy owner and beneficiary).</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See for example</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 196(2)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Insurance Act</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">(Ontario), R.S.O. 1990. C 1.8, (hereafter the “</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Insurance Act</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">”).</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">Protection
+is also available where a beneficiary is designated irrevocably.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 191(1)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Insurance Act</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">When paid to a designated beneficiary, the death
+benefit proceeds themselves will not be subject to the deceased’s creditors.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">See</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">subsection 196(1)</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">of the</FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Insurance Act</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">This article will consider whether life insurance also enjoys protection from the broad collection powers
+provided to the Canada Revenue Agency (“CRA”) under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">of the</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Income Tax Act</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">(Canada) (the “Act”)</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                    <EM>Income Tax Act</EM>
+                  </FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">, (R.S.C., 1985, c. 1 (5th Supp.) as amended) (the Act). Unless otherwise stated, all statutory references in this article
+are to the Act.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">.
+This section provides the CRA with the ability to seize funds or other property transferred by a tax debtor to a
+non-arm’s length party. Where this section applies, the transferee becomes jointly and severally liable with the
+tax debtor for the latter’s tax liability. The intent of this provision is clear: to prevent a taxpayer from avoiding
+the payment of tax liability through the transfer of property, which would otherwise be subject to CRA claims,
+to a non-arm’s length person.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The applicability of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">has been considered in a number of cases that will be addressed below. The
+particular focus of this article is whether the powers granted under this section allow the CRA to seize insurance
+death benefit proceeds paid to a non-arm’s length party under a policy insuring the life of the tax debtor.
+Fortunately for the insurance industry and its clients, and as discussed below, there are strong arguments to
+suggest that the CRA may be unable to do so.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <FOOTNOTE>
+              <FREEFORM>
+                <P>
+                  <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">For an in-depth discussion of</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">section 160</FONT>
+                  <FONT font-name="Calibri" font-size="10.02pt">and its potential impact on life insurance proceeds see March 2020 CALU Report, “Can
+the CRA Pursue a Beneficiary of a Life Insurance Policy?” by David Rotfleisch, CPA, CA, JD.</FONT>
+                </P>
+              </FREEFORM>
+            </FOOTNOTE>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">This further reinforces the position of life insurance as financial
+tool with unique creditor protection features.</FONT>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">2. The Legislative Language and Scope</FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">applies where an individual has “transferred property, either directly or indirectly, by means of a
+trust or by any means whatever” to any one of the following:</FONT>
+        </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">The person’s spouse or common-law partner, or to someone who has since become the person’s spouse
+or common-law partner;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">A person who was under the age of eighteen; or</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">A person with whom the individual did not deal at arm’s length.</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Where such a transfer occurs, the transferor and transferee are jointly and severally liable for the outstanding
+income tax obligations of the transferor. The following are some key aspects that define the scope of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section
+160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">:</FONT>
+        </P>
+        <P>
+          <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">The transferee’s liability is limited to the fair market value of the property transferred less any
+consideration paid by the transferee.</FONT>
+        </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">The section applies whether or not the transferor was intending to avoid payment of the tax and whether
+or not the transferee was aware of the debt.</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">Section 160 applies to transfers taking place on or after May 1, 1951 and contains no limitation period.</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">3. Overview of Case Law</FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">It is well beyond the scope of this article to thoroughly review the extensive list of cases that have been decided
+under section 160. The following are some brief examples:</FONT>
+        </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">The rule applies where a debtor corporation pays a dividend to a non-arm’s length shareholder.</FONT>
+                      <FONT font-name="Calibri" font-size="7.98pt">
+                        <SUP>6</SUP>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">It also applies where a debtor corporation confers a benefit on a shareholder under</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">subsection 15(1)</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">of
+the Act.</FONT>
+                      <FONT font-name="Calibri" font-size="7.98pt">
+                        <SUP>7</SUP>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="12.00pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="12.00pt">In one case, the rule applied when a tax debtor paid expenses towards her child’s wedding. This was
+considered to be a transfer as the child personally benefited from the transferred funds.</FONT>
+                      <FONT font-name="Calibri" font-size="7.98pt">
+                        <FOOTNOTE>
+                          <FREEFORM>
+                            <P>
+                              <FONT font-name="Calibri" font-size="6.48pt"></FONT>
+                              <FONT font-name="Calibri-Italic" font-size="10.02pt">
+                                <EM>Gitelman v. The Queen</EM>
+                              </FONT>
+                              <FONT font-name="Calibri" font-size="10.02pt">,</FONT>
+                              <FONT font-name="Calibri" font-size="10.02pt">2007 TCC 544</FONT>
+                              <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+                            </P>
+                          </FREEFORM>
+                        </FOOTNOTE>
+                      </FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The list of decided cases is extremely long, and the decisions clearly indicate the wide reach of section 160.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">There have been many cases where the CRA was successful in using</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">to pursue named beneficiaries
+under RRSPs and other registered plans held by deceased tax debtors. For example, in the 2015 Tax Court of
+Canada decision in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Kuchta v. The Queen</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>9</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, the deceased had named his wife as beneficiary of his $300,000 RRSP.
+The CRA was successful in arguing that the RRSP funds otherwise payable to the beneficiary were available to
+satisfy the deceased’s tax liability.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">A similar finding was made by the Tax Court in the 2020 case of</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Dreger v. The Queen</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>10</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, where amounts paid to
+the deceased’s daughters as beneficiaries of his Life Income Fund (purchased through the deceased’s RRIF) were
+found to be accessible to the CRA to pay his tax debt. The daughters were unsuccessful despite their creative
+argument that they were no longer in a non-arm’s length relationship with their father due to his death.</FONT>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">4. Potential Impact on Life Insurance Payments</FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The above commentary reflects the fact that</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">can apply in a wide range of circumstances, but will it
+apply to the payment of life insurance proceeds? Fortunately for the life insurance industry and its clients, there
+appear to be many good arguments that insurance proceeds may not be similarly exposed.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>1. Does the Payment of Life Insurance Death Benefit Proceeds Constitute a “Transfer”?</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Support for the exclusion of life insurance death benefit proceeds from these rules begins with an examination
+of the relevant wording in section 160, which presupposes a “transfer” of property from one person to another.
+If there is no transfer, the rules do not apply. The payment of life insurance death benefit proceeds by an
+intermediary (the insurance company) does not constitute a transfer of property directly from the deceased to
+the beneficiary. It is distinguishable from cases where, for example, pre-existing funds in a registered plan are
+paid to a named beneficiary on the plan holder’s death.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">One potential caveat relates to cash values that may form part of the death benefit proceeds in excess of the
+policy’s face amount. This is seen, for example, in certain “face plus” universal life policies. Could the CRA argue
+that the portion of the proceeds representing the cash value existing prior to death, as distinct from the actual</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">insurance portion of the proceeds, is in a separate category and more likely to be subject to section 160? There
+appear to be no decided cases or CRA statements dealing with this issue, but it is worth bearing in mind.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>2. Insurance-related Case Law</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">There is also some helpful case law in support of the proposition that section 160 does not apply to life insurance
+proceeds. In the 2010 Tax Court decision in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Nguyen v. The Queen</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">,</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <SUP>11</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">the deceased’s wife was named beneficiary
+of her husband’s insurance policy, but her daughter mistakenly arranged for the funds to be deposited to the
+estate’s bank account. The CRA argued that the use of the funds by the widow constituted a transfer to her
+within the meaning of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">, and that the money was therefore available to satisfy the deceased’s tax
+debts. The Court did not agree, finding that the deposit of the funds into an estate bank account was an error
+and that the funds belonged to the widow in their entirety.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">A 2013 decision of the Tax Court in</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Higgins v. The Queen</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <SUP>12</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">lends even more support to the argument that section
+160 does not apply to insurance death benefit proceeds. This case involved a registered segregated fund, the
+proceeds of which were paid to the two daughters of the deceased. The CRA argued that the section applied
+because the beneficiary designation was revocable, i.e. Mr. Higgins had complete control over the funds and
+could have withdrawn them during his lifetime and paid them to his daughters. This would have constituted a
+direct transfer within the meaning of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">. In the CRA’s mind, the payment of the death benefit to the
+daughters was an indirect transfer of the kind also contemplated in the section.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The Court did not agree with the CRA’s position. In its decision, the Court noted that a segregated fund is a
+hybrid investment/insurance product, but that its “overarching” feature was the life insurance component. The
+Court also stated that the CRA’s argument regarding the revocability of the designation was a “red herring” that
+had no bearing on whether or not a transfer had taken place. The funds payable to the beneficiaries were
+therefore outside of the reach of the CRA.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>3. Payment of Insurance Death Benefit Proceeds where the Estate is Beneficiary</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">As the above discussion indicates, the requirement that there be a transfer of property for</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">to apply
+should relieve the beneficiary of insurance death benefit proceeds from any obligations under these rules. The
+same cannot be said, however, where the tax debtor’s estate is named beneficiary of the insurance policy, and
+where the funds are subsequently gifted to a beneficiary of the estate. It is likely that the beneficiary in that
+case would be liable under section 160, as the estate would be indebted to the CRA and the estate beneficiary
+would be considered a non-arm’s length transferee of the funds.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>4. Applicability of Section 160 where Insurance Death Benefit Proceeds are paid to a Corporation</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">There do not appear to have been any court decisions dealing with applicability of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">in situations
+involving the payment of insurance death benefit proceeds in a corporate setting. It seems clear that if a
+corporation is the owner and beneficiary of a policy on the life of a key shareholder, for example, the proceeds
+will be subject to the corporation’s creditors, including the CRA. There are however situations where a policy is
+owned by one corporation, and a second corporation is the beneficiary. Pursuant to the above commentary,
+and subject to the comments that follow under the next heading, it seems unlikely that the CRA will be able to
+use section 160 to seize proceeds paid to the beneficiary corporation in this example.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Careful planning is required when decisions must be paid regarding policy ownership and beneficiary
+designations in a corporate group. Income tax considerations, which are not being addressed in this article, are
+often the key factors, with creditor protection a secondary consideration.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>5. “Deathbed” Change of Beneficiary Designation</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Consider the example of a terminally ill individual tax debtor who changes the beneficiary designation on his or
+her insurance policy from the estate to a named beneficiary. Similarly, a debtor corporation that is the owner
+and beneficiary of policy on the life of its shareholder might change the designation to a family member of the
+shareholder immediately before the shareholder’s death. Would the payment of proceeds in these
+circumstances more likely constitute a transfer within the meaning of section 160 and potentially subject the
+proceeds to seizure by the CRA?</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">There are no cases or CRA statements dealing with this issue, but it is easy to imagine the CRA attempting to
+apply</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">in circumstances such as this. It is difficult to speculate, but the likelihood of the CRA
+succeeding may be greater in a case where there is a “deathbed” change in a beneficiary designation, than in
+one where a beneficiary designation is simply part of longer term, prudent planning.</FONT>
+        </P>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="12.00pt">6. Conclusion</FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Section 160</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">is a longstanding and powerful tool in the hands of the CRA that prevents taxpayers from avoiding
+their obligations through non-arm’s length transfers and similar transactions. The actual wording of the section,
+however, provides a strong argument that insurance death benefit proceeds paid to a named beneficiary are
+excluded from this rule. This argument is fortified by the (admittedly small) number of cases that have dealt
+with the section’s applicability to insurance payments.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">This is consistent with the underlying purpose of these provisions, which is to preserve the estate of a tax debtor
+for the purposes of tax collection by the CRA. Death benefit proceeds paid to a named beneficiary would not
+have been part of the estate in any case, so in that sense the CRA is not deprived by being unable to apply the
+proceeds towards the deceased’s tax debts.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">As stated at the beginning of this article, life insurance products enjoy a degree of creditor protection that is
+unavailable to other types of financial instruments. As the above discussion indicates, there are strong
+arguments that this protection may extend beyond the usual commercial creditors to include tax debts owing
+to the CRA.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="6.48pt">
+            <SUP>6</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">See for example</FONT>
+          <FONT font-name="Calibri-Italic" font-size="10.02pt">
+            <EM>2753-1359 Quebec (Larouche)</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">,</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">2010 FCA 32</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="6.48pt">
+            <SUP>7</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">See</FONT>
+          <FONT font-name="Calibri-Italic" font-size="10.02pt">
+            <EM>Parihar</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">,</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">2015 CarswellNat 430</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">(TCC).</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="6.48pt">
+            <SUP>9</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">2015 TCC 289</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="6.48pt">
+            <SUP>10</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">2020 TCC 25</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="6.48pt">
+            <SUP>11</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">2010 TCC 503</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="6.48pt">
+            <SUP>12</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">2013 TCC 194</FONT>
+          <FONT font-name="Calibri" font-size="10.02pt">.</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>STEP CANADA: CANADA REVENUE AGENCY 2020 ROUNDTABLE –
+QUESTIONS OF INTEREST FOR INSURANCE PLANNING</TI>
+        <P>
+          <BOLD>
+            <FONT font-name="Calibri-Bold" font-size="13.98pt">Kim G.C. Moody,</FONT>
+            <FONT font-name="Calibri-BoldItalic" font-size="13.98pt">
+              <EM>Moodys Tax Law LLP</EM>
+            </FONT>
+          </BOLD>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">STEP Canada’s annual conference was cancelled during 2020 in favour of a series of pre-recorded webinars on
+various relevant topics. One of the highlights of the annual conference is its Canada Revenue Agency (“CRA”)
+Roundtable. This year, it was part of the pre-recorded webinars and was released in mid-November 2020. For
+insurance and estate practitioners, there were a number of questions and answers that should be of interest.
+Accordingly, the purpose of this article is to point out these questions and provide brief comments. The
+complete questions and answers can be accessed</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">here</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Question #5</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>1</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>– Application of</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Subsection 40(3.61)</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>2</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>and</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>subsection 164(6)</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Although somewhat technical, this question asked the CRA for clarification regarding a question asked during
+the 2012 STEP Canada CRA Roundtable</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <SUP>3</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">which discussed a situation where an estate elects under</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection
+164(6)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">of the Act to apply a capital loss resulting from the disposition of shares of the capital stock of a
+corporation to the terminal T1 return of the deceased individual. The CRA noted that based on a technical
+reading of the provisions it is possible for a circularity issue to arise:</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">“</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>If the estate realizes capital gains during its first taxation year, those gains must be applied against the
+loss on the share disposition, in accordance with the requirements of subsection 164(6), in order to
+determine the amount that can be carried back. Where this occurs, the application of subsection</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>40(3.61)</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>will result in an amount of loss stopped pursuant to subsection</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>40(3.6)</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>, which in turn will reduce the
+amount available for the subsection 164(6) election, and the circular nature of these provisions becomes
+an issue.”</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>4</SUP>
+            </EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">CRA also noted that they had not seen an actual situation and that they would review the issue further on a
+case-by-case basis. Accordingly, the purpose of the 2020 follow-up question was to provide an example set of
+facts where the circularity could apply and possibly deny the entire loss for carry-back. After setting out the
+example facts where the circularity could possibly apply, the CRA analyzed the law surrounding this issue and
+stated that it has reconsidered its previous positions on this topic and noted “…</FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>that an iterative grind of the
+estate’s capital loss would yield a result which is contrary to the purpose of the relief provided by subsection
+40(3.61)</EM>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">.”</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <SUP>5</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">The CRA further stated that it would not apply the law to grind available losses to nil as could have
+been the case with the interpretation of the law that CRA previously held. This is good news and insurance and
+estate planners should consider this in developing estate plans for shareholders of private corporations.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Question #7</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>6</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>– Tax on Split Income and Co-Tenancy Interests</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The Tax on split income (“TOSI”) rules were introduced into law effective January 1, 2018. As many estate and
+insurance practitioners likely realize, these rules are extremely complex and, if applicable, can have a material
+impact on developing an effective estate plan for individuals. TOSI applies to “split income” which, overly
+simplified, can include a variety of income such as dividend income, trust income, partnership income and
+interest income. This question posed the situation where there was a co-tenancy interest in a rental property</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">and the relationship was not a partnership. STEP Canada wanted to know in that situation whether the rental
+income realized by each co-tenant might be subject to the TOSI rules. Further, would a subsequent capital gain
+on the disposition of the property be subject to TOSI? The CRA stated that in both situations, the rental income
+and the capital gain would not be split income and thus such amounts would not be subject to the TOSI regime.
+This answer was not unexpected since a careful reader of the law would come to the same conclusion but
+ultimately it is always good to get the CRA onside with positive interpretations. However, the experienced
+practitioner would also know that the factual and legal distinctions of a partnership relationship vs. a co-tenancy
+arrangement are not easily distinguishable in many cases. Should practitioners wish to plan to avoid the TOSI
+regime using co-tenancy arrangements vs partnerships, tread carefully and seek good legal advice.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Question #15</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>7</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>–</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Subsection 164(6)</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Limitations</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">As many insurance, tax and estate practitioners know, one of the core planning tools in planners’ tool kits when
+dealing with shares of a private corporation held by a deceased shareholder’s estate is the use of</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection
+164(6)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">of the Act so as to mitigate potential double taxation issues when planning for the succession of those
+assets. However,</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">subsection 164(6)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">is rather technical and is filled with restrictions and conditions that must be
+met in order to be effective. Given that, STEP Canada asked the following question:</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>The conditions to be eligible to utilize the double tax relieving provisions of subsection 164(6) are very restrictive.
+For example, there must be a disposition that occurs within the first taxation year of the graduated rate estate.
+Because of these strict requirements, practitioners have for years been concerned – and experienced the results
+of such concerns – that many estates may not be eligible for such planning because of the tight timelines and
+requirements for an actual disposition.</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Would the CRA be prepared to recommend and work with the Department of Finance to offer affected taxpayers
+more relieving conditions to utilize subsection 164(6)? For example, perhaps an expanded 3 year limitation could
+be introduced along with an elective disposition rather than an actual disposition?</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The CRA’s answer was a bit disappointing since it stated the obvious by reminding the audience that CRA is
+responsible for administering the law and not developing policy or making amendments to the income tax law.
+Most practitioners are well aware of that. However, most practitioners are also well aware that many of the
+income tax amendments that are made in any given year are as a result of the CRA giving advice or pointing out
+technical issues to the Department of Finance. Accordingly, the spirit of the question was to see if the CRA
+agreed, in principle, with the fact that subsection</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">164(6)</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">could be improved and expanded to provide relief.
+While the CRA did not explicitly provide its views on that, it did close its answer to the question by saying that
+it would be prepared to work with the Department of Finance should they seek their views on this issue.
+Practitioners should know that this issue remains a live issue and hopefully – one day – we will see extended
+relief in this area to provide better estate plans to be developed for shareholders of private corporations.</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Question 16</EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="7.98pt">
+            <EM>
+              <SUP>8</SUP>
+            </EM>
+          </FONT>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>– Offshore Tax Informant Update</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">In January 2014, the CRA introduced the Offshore Tax Informant Program (“OTIP” – program information can
+be accessed</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">here</FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">) whereby people could receive financial rewards for providing tips to the CRA for possible non-
+compliance. In many recent federal budgets, the CRA has received significant funding increases to pursue
+offshore non-compliance issues by Canadians. Given the significant funding increases, numerous public
+statements by the CRA about such non-compliance and many think-tanks and political parties that believe</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">offshore non-compliance is rampant, STEP Canada wanted to see if the CRA would share its success or non-
+success of the OTIP program. Accordingly, the following question was asked:</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="10.98pt">
+            <EM>While the CRA provided updated statistics on this program in 2019, can the CRA provide any further updated statistics in
+respect of how effective this program is?</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The CRA’s answer was short but interesting. It stated the following:</FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>Since the OTIP launch, there has been sustained interest in the program by potential informants. As of December
+31, 2019, the OTIP has received nearly 5,500 calls of which over 1,600 have been from potential informants,
+received over 750 written submissions and has entered into nearly 50 contracts with informants.</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri-Italic" font-size="12.00pt">
+            <EM>In addition to what was provided previously, over 150 audits of taxpayers have been completed, nearly $60
+million has been assessed of which approximately $20 million has been collected and over 300 audits of
+taxpayers are in progress.</EM>
+          </FONT>
+        </P>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Given the above, the following basic information can be gleaned:</FONT>
+        </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The OTIP program has been around 6 full years as of December 31, 2019 (the date of the above statistical
+reporting);</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">Using basic averages, that means that the OTIP program has received on average 917 phone calls per year;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The program has received on average 267 potential informants per year;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The program has received on average 125 written submissions per year;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">With 150 completed audits and 300 active audits, there has been on average 75 audits per year;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <FONT font-name="SymbolMT" font-size="10.98pt">•</FONT>
+                      <FONT font-name="Calibri" font-size="10.98pt">The amount of reassessed tax dollars has been $10 million per year with only $3.33 million collected on average
+per year;</FONT>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">The above basic analysis is obviously simplistic and doesn’t consider possible growth and momentum in the
+program. However, the program has obviously yielded – so far – even less results than many practitioners
+predicted. What would be interesting to know is how much the program has cost to administer and how
+much has been paid out to informants (thus adding to the cost of the overall program). Notwithstanding,
+practitioners and taxpayers need to be aware of the CRA’s continued interest in this space and ensure that
+their non-Canadian assets and income sources are properly reported and disclosed. In recent years, the CRA
+has shown interest in “tax promoter schemes” involving offshore insurance programs.</FONT>
+          <FONT font-name="Calibri" font-size="7.98pt">
+            <SUP>9</SUP>
+          </FONT>
+          <FONT font-name="Calibri" font-size="12.00pt">This continued
+interest in offshore compliance appears to suggest there will be continued interest in these insurance-based
+tax promoter schemes as well.</FONT>
+        </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Conclusion</TI>
+        <P>
+          <FONT font-name="Calibri" font-size="12.00pt">Although the questions highlighted are not specific to insurance related planning, they clarify issues relevant
+to the overall estate plan. Insurance is a useful tool in a well-crafted estate plan which considers these
+specific issues. STEP Canada is already well on its way to planning its 2021 CRA Roundtable. Stay tuned for
+more goodies later this year!</FONT>
+        </P>
+      </BLOCK1>
+    </FREEFORM>
+  </POLIDOC>
+</ROOT>

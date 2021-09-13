@@ -1,0 +1,923 @@
+<ROOT>
+<POLIDOC LABEL="CSA Staff Notice">
+<POLIDENT>
+<N>
+</N>
+<TI>CSA Staff Notice 51-362
+ Staff Review of COVID-19 Disclosures and Guide for Disclosure
+Improvements</TI>
+<DATE>
+</DATE>
+</POLIDENT>
+<FREEFORM>
+<BLOCK1>
+<TI>
+</TI>
+<IMAGE>
+</IMAGE>
+</BLOCK1>
+<BLOCK1>
+<TI>CSA Staff Notice 51-362
+ Staff Review of COVID-19 Disclosures and Guide for Disclosure
+Improvements</TI>
+<BLOCK2>
+<TI>February 25, 2021</TI>
+</BLOCK2>
+</BLOCK1>
+<BLOCK1>
+<TI>Introduction</TI>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The Canadian Securities Administrators (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">CSA</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) have prepared this Staff Notice (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Notice</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) to report the
+results of recently completed continuous disclosure reviews (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">reviews</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) conducted by CSA staff (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">staff or
+we</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) of the disclosures provided by reporting issuers</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="6.40pt">
+<SUP>1</SUP>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">on the impact of COVID-19 to their business. Since
+the World Health Organization declared COVID-19 as a pandemic on March 11, 2020, COVID-19 has
+had a material adverse impact on the economy and is posing widespread business challenges for many
+issuers, including reporting on and disclosing the business impact of COVID-19.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">This issue-oriented review assessed compliance of issuers’ disclosures of the current and anticipated
+impacts related to COVID-19 on their respective operations, financial condition, liquidity and future
+prospects. The reviews also assessed key financial reporting areas applicable to issuers that may be
+subject to significant judgement and measurement uncertainty in the current environment.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">We recognize that issuers are preparing disclosure in a rapidly changing environment. However,
+meaningful disclosures about the business impacts and potential uncertainties regarding COVID-19 are
+needed for investors to make informed investment decisions. This Notice summarizes our key review
+findings and includes some disclosure examples and guidance to assist reporting issuers and their advisors
+with disclosing and reporting on the impact of COVID-19 to their business and operations.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">We will continue to closely monitor issuers’ continuous disclosure (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">CD</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) filings in relation to the impact
+of the COVID-19 pandemic as part of our ongoing CSA CD review program. For further details, see CSA
+Staff Notice 51-312 (revised)</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>Harmonized Continuous Disclosure Review Program</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="6.40pt">
+<SUP>2</SUP>
+</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>.</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">An issuer’s
+disclosure relating to the impacts and risk factors of the COVID-19 pandemic may also be assessed as
+part of staff’s review of prospectus filings in connection with public offerings.</FONT>
+</P>
+<FOOTNOTE>
+<FREEFORM>
+<P>
+<FONT font-name="Calibri" font-size="11.00pt">1</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="9.00pt">In this Notice “issuers” means those reporting issuers contemplated in National Instrument 51-102</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="9.00pt">
+<EM>Continuous Disclosure
+Obligations</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="9.00pt">(</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="9.00pt">NI 51-102</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="9.00pt">).</FONT>
+</P>
+</FREEFORM>
+</FOOTNOTE>
+<P>
+<FONT font-name="Calibri" font-size="11.00pt">2</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="9.00pt">Additional regulatory guidance on COVID-19 can be accessed at the CSA COVID-19 Information Hub at</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="9.00pt">https://www.securities-administrators.ca/aboutcsa.aspx?id=1885</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="9.00pt">.</FONT>
+</P>
+</BLOCK1>
+<BLOCK1>
+<TI>Contents of the Notice</TI>
+<BLOCK2 LABEL="Table">
+<TMPTABLE>
+<SGMLTBL>
+<TBLHEAD TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="16" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="9" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="67" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="8" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">Introduction....</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">...........................................................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">........1</FONT>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLHEAD>
+<TBLBODY TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="16" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="9" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="67" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="8" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">Part 1 - Executive Summary.....................................................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">........3</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">Part 2 - Scope and Methodology..............................................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">........3</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">Part 3 - Summary of Results and Key Themes.........................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">........5</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">Appendix A – Key Observations and Considerations..............................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">........8</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">A.1</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">MD&amp;A</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">Reporting</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">g..........................................................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">........8</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">A.2 Financial Statements......................................................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......13</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">A.3 Other Regulatory Matters..............................................................................................
+Appendix B – Disclosure Examples.........................................................................................
+B.1 MD&amp;A Disclosure Examples........................................................................................
+B.1.1 Discussion of Operations and the Impact of COVID-19.........................................
+B.1.2 Discussion of Strategies Related to COVID-19......................................................
+B.1.3 Liquidity and Capital Resources..............................................................................
+B.1.4 Risk Factor Disclosure.............................................................................................
+B.2 Financial Statements Examples.....................................................................................
+B.2.1 Impairment of Non-Financial Assets.......................................................................
+B.2.2 Going Concern.........................................................................................................
+B.2.3 Government Assistance...........................................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......18</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......21</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......21</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......21</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......22</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......22</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......23</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......24</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......24</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......25</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......26</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">B.3 Other Regulatory Matters Examples..............................................................................
+B.3.1 Non-GAAP Financial Measures..............................................................................</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......27</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="12.00pt">......27</FONT>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLBODY>
+</SGMLTBL>
+</TMPTABLE>
+</BLOCK2>
+</BLOCK1>
+<BLOCK1>
+<TI>Part 1 - Executive Summary</TI>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The COVID-19 pandemic has significantly impacted the financial condition, financial performance,
+operations and cash flows of reporting issuers of varying sizes and industries. This has specific financial
+reporting implications for issuers.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">We were encouraged by the quality of disclosures provided by many issuers significantly impacted by
+COVID-19. However, we noted certain areas where boiler-plate disclosure was provided regarding the
+current and expected impact of COVID-19 on an issuer’s business with insufficient detail of entity-
+specific COVID-19 related risks, including but not limited to, the nature and extent of credit risks and
+liquidity uncertainties. We also observed instances of unbalanced or overly promotional disclosure and
+isolated non-compliance for non-GAAP financial measures (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">NGM</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">s) and forward-looking information
+(</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">FLI</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">). It is important for issuers to tailor their disclosures to provide investors with an entity-specific
+level of insight to understand the operational challenges, financial impacts, risk profile and the issuer’s
+operational responses related to the COVID-19 pandemic. Such information is necessary to meet
+securities requirements and to help foster investor confidence in the current environment.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The reviews have resulted in outcomes where no action was required, requests for prospective disclosure
+enhancements were made, or communication is ongoing to resolve the identified issues.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">At a high level, we emphasize the following for issuers to consider in their upcoming CD filings:</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">no one size f
+ons of COVID-19</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Disclosures are ex ected to be trans arent and balanced</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Provide dis</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">on COVID-1</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">ansparen an a a
+19 that facilitates an</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The current and expected impact of COVID-19 on the issuer’s operations and financial
+condition, including liquidity and capital resources.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The key risks that the COVID-19 pandemic presents to the issuer.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Known trends, demands, events or uncertainties related to COVID-19 that management
+reasonably believes will materially affect the issuer’s future revenues, expenses or
+projects.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The operational changes and other measures taken by management in response to
+COVID-19.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">How COVID-19 has impacted the issuer’s capacity to meet working capital
+requirements, debt covenants, planned growth or funding of future development activities
+and capital expenditures.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">How the COVID-19 pandemic has impacted areas of financial reporting subject to
+significant judgement and measurement uncertainty in the current environment.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="11.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">How the issuer has assessed impairment of non-financial assets given the extended
+impact of the COVID-19 pandemic. Where applicable, sensitivity analysis and
+disclosures relating to key assumptions will be especially important and should be both
+realistic and supportable.</FONT>
+</P>
+<P>
+<FONT font-name="CourierNewPSMT" font-size="12.00pt">o</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">The accounting policy for, and nature and extent of government grants recognized in the
+financial statements.</FONT>
+</P>
+</BLOCK1>
+<BLOCK1>
+<TI>Part 2 - Scope and Methodology</TI>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Staff took a risk-based approach in the selection of issuers by considering both qualitative and
+quantitative criteria. Issuers selected for review included those identified as being materially impacted</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">(both positively and adversely) by the COVID-19 pandemic in terms of their operations and financial
+performance, as well as issuers that appeared to have a higher risk of impairment and/or financial distress.</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Staff examined the CD filings of approximately 90 issuers, focusing on the disclosures of the most recent
+interim reporting period ending September 30, 2020 for issuers with a calendar financial year end. The
+issuers selected for review varied by size and by industry as illustrated in the 
+s below:</FONT>
+</P>
+<TEXT>Figure #1
+</TEXT>
+<IMAGE>
+</IMAGE>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Our reviews primarily focused on issuers’ disclosure obligations under National Instrument 51-102</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>Continuous Disclosure Obligations</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">(</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">NI 51-102</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">). We also assessed compliance with certain recognition,
+measurement and disclosure requirements in International Financial Reporting Standards (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">IFRS</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) and
+compliance with CSA Staff Notice 52-306</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>(Revised) – Non-GAAP Financial Measures</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">(</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">SN 52-306</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">). The
+following outlines the focus areas of the reviews conducted:</FONT>
+</P>
+</BLOCK1>
+<BLOCK1>
+<TI>Part 3 - Summary of Results and Key Themes</TI>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Our reviews covered a variety of industries and highlighted the diverse impacts of the COVID-19
+pandemic on issuers’ operations and businesses. Some of these impacts included:</FONT>
+</P>
+<IMAGE>
+</IMAGE>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Issuers adjusted their operations in numerous ways to manage the impact of COVID-19 on their
+operations and liquidity. Various measures/operational responses disclosed by issuers included:</FONT>
+</P>
+<IMAGE>
+</IMAGE>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Most issuers reviewed were proactive in providing quality and detailed disclosures. For example, we
+observed several issuers significantly expand their MD&amp;A to provide detailed operational updates
+addressing the impact of COVID-19 as well as issuers providing additional disclosure addressing debt
+covenants and related compliance. We also noted most issuers adequately disclosed impairments of non-</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">financial assets due to a deterioration in their business since the onset of the pandemic. However, we
+identified several areas where disclosure could be improved for many issuers including the following:</FONT>
+</P>
+<BLOCK2 LABEL="Table">
+<TMPTABLE>
+<SGMLTBL>
+<TBLHEAD TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="26" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="74" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Area of Disclosure</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Key Observations</FONT>
+</BOLD>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLHEAD>
+<TBLBODY TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="26" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="74" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">MD&amp;A</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Discussion of measures taken to reduce COVID-19 impact</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">-
+Many issuers provided “lists” of measures employed to manage
+operational and liquidity risks but did not provide an adequate
+discussion to address the anticipated impact to the issuer.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Analysis of overall performance and operations</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Most issuers
+that quantitatively disclosed variances related to COVID-19 (e.g.,
+impact to sales) did not explain the methodology used by
+management in determining that fluctuations were isolated to
+COVID-19.
+ Several issuers provided limited disclosure of known trends or
+events related to COVID-19 that are likely to affect future
+performance.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Liquidity and capital resources</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Many issuers with material
+liquidity risks did not disclose in detail their ability to meet
+working capital requirements, planned growth initiatives or to fund
+developmental activities and capital expenditures. Lack of
+disclosure regarding trends or expected fluctuations in liquidity
+taking into account events or uncertainties related to COVID-19
+was commonly observed.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Risk factor disclosure</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Several issuers provided “lists” of risks
+without discussion or general disclosures that touched on general
+economic or societal impacts of COVID-19 and did not describe
+entity-specific COVID-19-related risks.</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Financial Statements</FONT>
+</BOLD>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">General</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Some issuers failed to adequately update their
+disclosures and assumptions impacted by COVID-19 in the context
+of testing impairments of goodwill and intangible assets,
+measuring fair value (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">FV</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) and estimating expected credit losses.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Significant judgements and measurement uncertainties</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">– Some
+issuers failed to include entity-specific disclosure for significant
+judgements or measurement uncertainties or only included this
+disclosure in their MD&amp;A but not in their financial statements.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Impairment of non-financial assets</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">– A few issuers did not
+identify reasons for impairments or just noted “negative economic
+impacts of COVID-19” as an impairment indicator for all cash
+generating units (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">CGU</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">s) but did not elaborate on those impacts.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Going concern</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Some issuers breached financial covenants
+during the reporting period but did not disclose the implications of
+breaches on the issuer's ability to continue as a going concern.
+Some issuers disclosed “close call” situations but did not disclose
+the mitigating actions that impacted their determination that there
+were no material uncertainties that cast significant doubt on the
+issuer’s ability to continue as a going concern (e.g. successful
+negotiation of credit facilities subsequent to period end).</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Government assistance</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Over half of the issuers we reviewed
+recognized, or disclosed in subsequent events, COVID-19 related
+government assistance in their financial statements since the
+outbreak of the COVID-19 pandemic. Some issuers did not
+disclose the nature and extent of the government assistance or the</FONT>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLBODY>
+</SGMLTBL>
+</TMPTABLE>
+</BLOCK2>
+<BLOCK2 LABEL="Table">
+<TMPTABLE>
+<SGMLTBL>
+<TBLHEAD TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="30" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="70" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Area of Disclosure</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Key Observations</FONT>
+</BOLD>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLHEAD>
+<TBLBODY TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="30" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="70" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">accounting policy adopted including the methods of presentation.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Expected credit losses (ECL)</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Only a few issuers disclosed the
+use of COVID-19-induced adjustments/overlays to their ECL
+models.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Financial Instrument Risk Disclosure -</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Some issuers that
+experienced material adverse impacts of COVID-19 did not
+provide an entity-specific update to their risk disclosure in the
+financial statements.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">COVID-19 related amendments to IFRS 16</FONT>
+<FONT font-name="TimesNewRomanPS-BoldItalicMT" font-size="11.00pt">
+<EM>Leases</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">for Lessees
+–</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Certain issuers did not sufficiently disclose whether they applied
+the practical expedient to either all or some of their rent
+concessions.</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">NGMs</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">NGMs adjusted for COVID-19</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Most issuers did not present
+NGMs that adjusted for the impact of COVID-19. However, our
+review found isolated instances of potentially misleading NGMs in
+relation to COVID-19 (e.g., adjusting for expenses attributable to
+COVID-19 without adjusting for government subsidies or
+“normalizing” revenue or expenses for the year-to-date period
+based on more positive results for one quarter).</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">FLI</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">FLI related to COVID-19</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- In certain cases, we observed
+insufficient disclosure of assumptions used to develop FLI and
+failure to adequately update the MD&amp;A for events and risks that
+could cause actual results for future periods to differ materially
+from previously disclosed FLI.</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Material Change Reporting</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">If COVID-19 has an equal effect throughout an issuer’s industry, a
+material change report may not be required. Only a few issuers
+reviewed filed material change reports in relation to COVID-19
+although in some instances changes to the issuer’s business, operations
+or capital were more unique or more significant to them than to others
+in their industry.</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Promotional Disclosures</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Potentially misleading disclosures</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">- Some issuers concentrated in
+the biotech/pharma industry provided disclosure in relation to
+COVID-19 that was overly promotional and/or lacked specificity
+to fully address the issuer’s business intentions and expected
+milestones.</FONT>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLBODY>
+</SGMLTBL>
+</TMPTABLE>
+</BLOCK2>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Please refer to</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Appendix A – Key Observations and Disclosure Considerations –</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">for more detail
+regarding the significant issues identified in our reviews and disclosure guidance. Please refer to</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Appendix B – Disclosure Examples</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">where we have included some examples of deficient disclosure
+contrasted against improved entity-specific disclosure. The observations and disclosure considerations
+presented do not represent an exhaustive list and do not represent all the requirements that could apply to
+a particular issuer’s situation. Issuers should consider their specific business and operations and provide
+clear and transparent disclosure of the impact of COVID-19.</FONT>
+</P>
+</BLOCK1>
+<BLOCK1>
+<TI>Appendix A – Key Observations and Disclosure Considerations</TI>
+</BLOCK1>
+<BLOCK1>
+<TI>A.1 MD&amp;A Reporting</TI>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">MD&amp;A is the cornerstone of a reporting issuer’s overall financial disclosure and should provide an
+analytical and balanced discussion of the issuer’s results of operations and financial condition through the
+eyes of management. MD&amp;A disclosure should be specific, useful and understandable. The MD&amp;A
+requirements are set out in Form 51-102F1</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>Management’s Discussion and Analysis</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">(</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Form 51-102F1</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">).</FONT>
+</P>
+<P>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">Some of the observations and considerations below may be relevant for issuers that prepare an annual
+information form (</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">AIF</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">) with reference to Form 51-102F2</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>Annual Information Form</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">(</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="11.00pt">Form 51-102F2</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">).
+Specifically, issuers should consider additional disclosure for COVID-19 under Item 4-</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>General
+Development of the Business</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">and Item 5-</FONT>
+<FONT font-name="TimesNewRomanPS-ItalicMT" font-size="11.00pt">
+<EM>Describe the Business</EM>
+</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="11.00pt">of Form 51-102F2.</FONT>
+</P>
+<BLOCK2 LABEL="Table">
+<TMPTABLE>
+<SGMLTBL>
+<TBLHEAD TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="19" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">Focus Area</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">Observations</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">Considerations</FONT>
+</BOLD>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLHEAD>
+<TBLBODY TBLWD="600">
+<TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+<TBLCDEF COLWD="19" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+<TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+</TBLCDEFS>
+<TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">General: Discussion
+of Operational
+Status</FONT>
+</BOLD>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Some issuers provided detailed
+operational updates in press
+releases but included limited
+disclosure in MD&amp;A filings.</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">Useful disclosure observed:</FONT>
+</BOLD>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Many affected issuers significantly
+expanded their MD&amp;A to explain
+the impact of COVID-19 to the
+issuer’s industry, operations,
+customers, suppliers etc. Several
+issuers disclosed industry and
+relevant operational information to
+help users frame and understand
+the effects on the issuer’s financial
+results.</FONT>
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Provide a detailed and transparent discussion
+on how COVID-19 has altered the issuer’s
+industry and day to day operations. Insight
+should be provided into the issuer’s current
+operating status and the operational challenges
+that management is monitoring. This will vary
+materially by issuer and by industry.
+ MD&amp;A is a standalone document. Material
+operational updates should be reflected in
+MD&amp;A filings to provide additional context for
+analyzing financial results. Having a separate
+“COVID-19” section in the MD&amp;A preceding
+the discussion of financial results may provide
+a useful framework in understanding the
+issuer’s analysis of financial performance,
+financial condition and liquidity.</FONT>
+</TBLCELL>
+</TBLROW>
+<TBLROW>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+</TBLCELL>
+<TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">Issuers should consider:</FONT>
+</BOLD>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Impact of health and safety guidelines on
+operations and on how the issuer conducts its
+business</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">How the current environment has altered
+demand or ability to provide products and
+services (both adversely and positively)</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Details of operational closures and restrictions</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Providing information to understand the impact
+of shutdowns and closures</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Disclosing relevant industry data that assists
+with understanding restrictions and other
+impacts to the issuer’s business</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Discussing how customers and suppliers have
+been impacted and the effect on the issuer</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Providing a discussion for each segment or
+geographic location to the extent operations are
+impacted differently</FONT>
+<FONT font-name="Calibri" font-size="10.00pt">•</FONT>
+<FONT font-name="TimesNewRomanPSMT" font-size="10.00pt">Explaining how industry and economic factors
+have uniquely impacted the issuer</FONT>
+<BOLD>
+<FONT font-name="TimesNewRomanPS-BoldMT" font-size="10.00pt">Reference: Part 1, Item 1.2, Item 1.4 of Form 51-</FONT>
+</BOLD>
+</TBLCELL>
+</TBLROW>
+</TBLROWS>
+</TBLBODY>
+</SGMLTBL>
+</TMPTABLE>
+</BLOCK2>
+</BLOCK1>
+</FREEFORM>
+</POLIDOC>
+</ROOT>

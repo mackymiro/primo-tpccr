@@ -1,29 +1,32 @@
-###WARNING DO NOT ATTEMPT TO UPDATE THIS TABLE|||###
-
-¥|||&tmp_yen;
+ï»¿###WARNING DO NOT ATTEMPT TO UPDATE THIS TABLE|||###
+Â¥|||&tmp_yen;
+<inno:nec[^>]*>|||
+<inno:font|||<FONT
+</inno:font>|||</FONT>
 <inno:br/>|||[hrt]
 <inno:block[^>]*/>|||
 <inno:image[^>]+>|||<IMAGE>
-</inno:image>|||¥
-<IMAGE>([^¥]*)¥|||<IMAGE>$1</IMAGE>
-¥|||</inno:image>
+</inno:image>|||Â¥
+<IMAGE>([^Â¥]*)Â¥|||<IMAGE>$1</IMAGE>
+Â¥|||</inno:image>
+<inno:text[^>]*type="bibliography"[^>]*>|||<TEXT>
 <inno:text[^>]*type="text"[^>]*>|||<TEXT>
 <inno:text[^>]*type="caption"[^>]*>|||<TEXT><CAPTION>
 <inno:text[^>]*type="page number"[^>]*>|||<TEXT><PG>
 <inno:text[^>]*type="header / footer"[^>]*>|||<TEXT><PG>
-</inno:text>|||¥
-<TEXT><PG>([^¥]*)¥|||
-(<TEXT><CAPTION>[^¥]*)¥|||$1</CAPTION>
-<TEXT>([^¥]*)¥|||<TEXT>$1</TEXT>
-¥|||</inno:text>
+</inno:text>|||Â¥
+<TEXT><PG>([^Â¥]*)Â¥|||
+(<TEXT><CAPTION>[^Â¥]*)Â¥|||$1</CAPTION>
+<TEXT>([^Â¥]*)Â¥|||<TEXT>$1</TEXT>
+Â¥|||</inno:text>
 <inno:text[^>]*type="title / subtitle"[^>]*>|||<TI>
-</inno:text>|||¥
-<TI>([^¥]*)¥|||<TI>$1</TI>
-¥|||</inno:text>
+</inno:text>|||Â¥
+<TI>([^Â¥]*)Â¥|||<TI>$1</TI>
+Â¥|||</inno:text>
 <inno:text[^>]*type="margin / footnote"[^>]*>|||<FOOTNOTE>
-</inno:text>|||¥
-<FOOTNOTE>([^¥]*)¥|||<FOOTNOTE>$1</FOOTNOTE>
-¥|||</inno:text>
+</inno:text>|||Â¥
+<FOOTNOTE>([^Â¥]*)Â¥|||<FOOTNOTE>$1</FOOTNOTE>
+Â¥|||</inno:text>
 <inno:block[^>]*>|||<P>
 </inno:block>|||</P>
 <inno:b>|||<BOLD>
@@ -39,21 +42,21 @@
 <inno:tr[^>]+>|||<TR>
 </inno:tr>|||</TR>
 inno:td|||TD
-</FOOTNOTE>|||¥
-<FOOTNOTE(>[^¥]+)<SUP>([^>]+)</SUP>([^¥]+¥)|||<FOOTNOTE ID="$2"$1$3
-(<FOOTNOTE[^¥]*>[^¥]*)<[^>]+:[^>]+>([^¥]*¥)|||$1$2|||1
-¥|||</FOOTNOTE>
-</TEXT>|||¥
-(<TEXT[^¥]*>[^¥]*)<[^>]+:[^>]+>([^¥]*¥)|||$1$2|||1
-¥|||</TEXT>
-</TABLE>|||¥
-(<TABLE[^¥]*>[^¥]*)<[^>]+:[^>]+>([^¥]*¥)|||$1$2|||1
-¥|||</TABLE>
-</TI>|||¥
-<TI(>[^¥]+font-size=")([^"]+)("[^¥]+¥)|||<TI SIZE="$2"$1$2$3
-###(<TI[^¥]*>[^¥]*)<[^>]+:[^>]+>([^¥]*¥)|||$1$2|||1
-(<TI[^¥]*>[^¥]*)<[^>]+>([^¥]*¥)|||$1$2|||1
-¥|||</TI>
+</FOOTNOTE>|||Â¥
+<FOOTNOTE(>[^Â¥]+)<SUP>([^>]+)</SUP>([^Â¥]+Â¥)|||<FOOTNOTE ID="$2"$1$3
+(<FOOTNOTE[^Â¥]*>[^Â¥]*)<[^>]+:[^>]+>([^Â¥]*Â¥)|||$1$2|||1
+Â¥|||</FOOTNOTE>
+</TEXT>|||Â¥
+(<TEXT[^Â¥]*>[^Â¥]*)<[^>]+:[^>]+>([^Â¥]*Â¥)|||$1$2|||1
+Â¥|||</TEXT>
+</TABLE>|||Â¥
+(<TABLE[^Â¥]*>[^Â¥]*)<[^>]+:[^>]+>([^Â¥]*Â¥)|||$1$2|||1
+Â¥|||</TABLE>
+</TI>|||Â¥
+<TI(>[^Â¥]+font-size=")([^"]+)("[^Â¥]+Â¥)|||<TI SIZE="$2"$1$2$3
+###(<TI[^Â¥]*>[^Â¥]*)<[^>]+:[^>]+>([^Â¥]*Â¥)|||$1$2|||1
+(<TI[^Â¥]*>[^Â¥]*)<[^>]+>([^Â¥]*Â¥)|||$1$2|||1
+Â¥|||</TI>
 <inno:dom[^>]*>|||<DOM>
 </inno:dom>|||</DOM>
 <inno:content>|||<CONTENT>
@@ -65,23 +68,23 @@ inno:td|||TD
 (</FOOTNOTE)|||</FREEFORM>$1
 <TEXT>|||
 </TEXT>|||
-</P>|||¥
-¥<P>(\([i|v|x]+\)[^¥]*)¥|||¥<P1>$1</P1>
-</P1><P>(\([i|v|x]+\)[^¥]*)¥|||</P1><P1>$1</P1>
+</P>|||Â¥
+Â¥<P>(\([i|v|x]+\)[^Â¥]*)Â¥|||Â¥<P1>$1</P1>
+</P1><P>(\([i|v|x]+\)[^Â¥]*)Â¥|||</P1><P1>$1</P1>
 
-###(¥<P>[^¥]*)[hrt]([^¥]*¥)|||$1</LINE><LINE>$2|||1
-###¥<P>([^¥]*<LINE>)|||<LINE>$1
-###(</LINE>[^¥]*)¥|||$1</LINE>¥
+###(Â¥<P>[^Â¥]*)[hrt]([^Â¥]*Â¥)|||$1</LINE><LINE>$2|||1
+###Â¥<P>([^Â¥]*<LINE>)|||<LINE>$1
+###(</LINE>[^Â¥]*)Â¥|||$1</LINE>Â¥
 
-¥|||</P>
-</CAPTION>|||¥
-(<CAPTION>[^¥]*¥)(<TABLE>)|||$2<TTI>$1</TTI>
-(<CAPTION>[^¥]*)<[^>]*>([^¥]*¥)|||$1$2|||1
-¥|||</CAPTION>
+Â¥|||</P>
+</CAPTION>|||Â¥
+(<CAPTION>[^Â¥]*Â¥)(<TABLE>)|||$2<TTI>$1</TTI>
+(<CAPTION>[^Â¥]*)<[^>]*>([^Â¥]*Â¥)|||$1$2|||1
+Â¥|||</CAPTION>
 <TTI><CAPTION>|||<TTI>
 </CAPTION></TTI>|||</TTI>
 <CAPTION>|||<TEXT>
 </CAPTION>|||</TEXT>
-<TTI>Table ([0-9]+) – |||<N>$1</N><TTI>
+<TTI>Table ([0-9]+) â€“ |||<N>$1</N><TTI>
 <TTI>Table ([0-9]+) - |||<N>$1</N><TTI>
-&tmp_yen;|||¥
+&tmp_yen;|||Â¥

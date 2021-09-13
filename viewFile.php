@@ -431,7 +431,6 @@
 				sgm = $("#input"+name).val();
 				//checkbox = $("#checkbox"+name).val();
 				
-		
 				checkbox =  $('#checkbox'+$(this).val()).is(":checked");
 				
 				form.push({

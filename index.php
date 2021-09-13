@@ -1678,12 +1678,14 @@ function LoadStyles(){
 			</script>
 
 			<?php
-			$sXML = file_get_contents($sXMLFile);
-			//echo "<pre>";
-			//print_r($sXML);
-			//echo "</pre>";
+				$sXML = file_get_contents($sXMLFile);
 			
-			// $sXML =formatXmlString(trim($sXML));
+				$sXML = preg_replace('/\h+/', ' ', $sXML); //multiple spaces
+				$sXML = preg_replace('/^[ \t]*[\r\n]+/m', '', $sXML);// remove multiple blank new line and tab
+				$sXML = preg_replace('/( <)/', "<", $sXML); //remove space before start tag
+				$sXML = preg_replace('/>\s+/', '>', $sXML); //multiple spaces
+				$sXML = preg_replace('/><+/', '>'.PHP_EOL.'<', $sXML); //set new line for new tags
+
 			?>
               <!-- /.tab-pane -->
               <div class="tab-pane " id="tab_1-1"  >

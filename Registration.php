@@ -56,19 +56,19 @@ session_start();
   <header class="main-header">
     <!-- Logo -->
   
-     
-<?php
-if ($_SESSION['UserType']=='Admin'){
-?>
-     <a href="index.php" class="logo">
-<?php
+          
+      <?php
+      if ($_SESSION['UserType']=='Admin'){
+      ?>
+          <a href="index.php" class="logo">
+      <?php
+            }
+            else{
+      ?>
+      <a href="Dashboard.php" class="logo">
+      <?php
       }
-      else{
-?>
-<a href="Dashboard.php" class="logo">
-<?php
-}
-?>
+      ?>
       <!-- mini logo for sidebar mini 50x50 pixels -->
      <span class="logo-mini"><img src="innodata.png" class="img-circle"></span>
       <!-- logo for regular state and mobile devices -->
@@ -118,9 +118,9 @@ if ($_SESSION['UserType']=='Admin'){
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
-          Change Password
-          </button>
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                  Change Password
+                  </button>
                 </div>
                 <div class="pull-right">
                   <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
@@ -173,8 +173,15 @@ include ("sideBar.php");
                   <div class="col-lg-6">
                       
                       <div class="form-group">
-                        <?= "<p style='color:green; font-size:18px; font-weight:bold;'>".$_SESSION['message']."</p>"; ?>
-                        <br/>
+                      <?php if(isset($_SESSION['message'])): ?>
+                        <div class="alert alert-success " role="alert">
+                          <strong><?= $_SESSION['message']; ?></strong>
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <?php endif; ?>
+                        <br />
                         <label>Source Files</label>
                         <input type="file" class="form-control" name="txtFiles[]" multiple="multiple" required >
                       </div>

@@ -1,0 +1,3390 @@
+﻿<ROOT>
+  <POLIDOC LABEL="CSA Staff Notice">
+    <POLIDENT>
+      <N></N>
+      <TI>A.2 Financial Statements</TI>
+      <DATE></DATE>
+    </POLIDENT>
+    <FREEFORM>
+      <BLOCK1>
+        <TI></TI>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="24" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="41" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="16" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="19" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focus Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              102F1
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="24" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="41" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="16" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="19" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              General: Discussion
+of Operational
+Responses
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> The majority of issuers included
+qualitative disclosure of the
+measures taken in response to
+COVID-19. However, some
+issuers only listed measures taken
+without providing sufficient detail
+to understand the impact to the
+issuer.
+<BOLD>Useful disclosure observed:</BOLD>
+ Discussion of the measures taken,
+the current and expected impact to
+revenue or expenses and the
+anticipated time period such
+measures will remain in effect.</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> It is impor
+operational
+COVID-19
+operations
+future perf
+sufficient d
+restructurin</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            tant for investors to u
+l measures taken in re
+that have had a mat
+and that may reasona
+ormance. This includ
+etail cost saving mea
+ng initiatives or realig
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+            understand
+esponse to
+erial impact on
+ably affect
+es disclosing in
+asures,
+gnments of
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">operational
+to COVID-
+<BOLD>Issuers should</BOLD>
+ Discuss the
+taken that</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            l and financial resour
+-19.
+            
+
+            <BOLD>
+              consider:
+            </BOLD>
+            
+
+            e impact of operation
+may increase costs (e
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            ces in response
+al measures
+.g., salary
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            premiums)
+ Describe h
+conditions
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            ow operational respo
+evolve
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            nses change as
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Analysis of Overall
+Performance and
+Operations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Approximately 20% of issuers
+disclosed COVID-19 as the reason
+for period over period variances
+without analyzing entity-specific
+factors.
+ It was unclear for some issuers
+how certain costs, in particular
+restructuring costs, were fully
+attributable to COVID-19 when
+the issuer had pre-existing
+operational issues.
+ Most issuers that quantitatively
+disclosed variances related to
+COVID-19 (e.g., impact to sales)
+did not explain the methodology
+used by management in
+determining that fluctuations were
+isolated to COVID-19.
+ Some issuers did not disclose the
+impacts that government assistance
+attributable to COVID-19 had on
+their performance, operations and
+cash flows.</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>Reference: Part 1, Item 1.2, Item 1.4 of Form 51-
+102F1</BOLD>
+ Avoid simply making statements attributing
+negative results to COVID-19. Instead,
+provide a meaningful discussion on the
+material impacts (both positive and negative)
+of COVID-19 on the issuer’s operations.
+Disclose issuer-specific impacts on both
+revenues and expenses and provide disclosure
+by segment.
+ Issuers must have a basis for attributing costs
+to COVID-19, especially when certain
+conditions existed prior to COVID-19. Other
+reasons for material fluctuations not related to
+COVID-19 should be disclosed with equal
+prominence.
+ Quantification of material factors, where
+practicable, can provide an understanding of an
+issuer’s performance. However, it may be
+difficult for an issuer to determine with
+accuracy the quantitative impact of COVID-19.
+In order to avoid misleading investors, issuers
+should explain the methodology used in their
+calculation and provide information about the
+judgements and estimations made by
+management when quantifying impacts.
+ An understanding of the amounts of government
+assistance received and where such funding is
+recorded in the financial statements may be
+necessary to understand historical results and
+future trends, when material. Issuers are reminded
+to provide balanced disclosure of both the positive
+and adverse impacts to operations, financial
+condition and cash flows. Also see “<EM>Appendix
+A.2– Key Observations and Considerations on
+Financial Statements.</EM>”</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <BLOCK1>
+          <TI></TI>
+          <BLOCK2 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="20" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="45" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Focus Area
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>
+              Observations
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              Considerations
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="20" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="45" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>Industry observations:</BOLD>
+ We observed additional
+disclosures to assist in
+understanding COVID-19 impacts.</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>Issuers should consider:</BOLD>
+ How decreases or increases in demand for
+products and services impacted financial results
+ Impact of operational closures
+ How costs, including changes in prices, influenced
+results
+ Effect of altered terms with customers / lessees /
+borrowers
+ Impact on customers’ supply chains or distribution
+channels
+ Changes to planned projects and development
+activities
+ Impact of government support
+ Reasons for fair value changes/impairment
+charges/credit losses
+ Details of restructuring plans and related costs
+ Material variations in other expenses related to
+COVID-19
+ A discussion of any breaches of material contracts
+ Explaining any changes in use of proceeds from
+financing as compared to prior disclosures and the
+impact on the issuer’s ability to achieve business</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">For example:
+o <BOLD>Retail/service industry</BOLD> –
+details of store closures, # of
+weeks operating, ecommerce
+sales vs in store sales
+o <BOLD>Real estate industry</BOLD> - an
+analysis of space leased by
+customers that were
+negatively
+affected/unaffected/
+positively affected by the
+pandemic and the proportion
+of tenants that have applied
+for government assistance</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Known Trends and
+Events that are
+Reasonably Likely
+to Affect Future
+Performance
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Approximately one third of issuers
+provided boilerplate disclosure in
+this area. Some issuers cited the
+degree of uncertainty related to
+COVID-19 making it too difficult
+to predict the overall impact of
+COVID-19 on the issuer’s future
+performance.
+<BOLD>Useful disclosure observed:</BOLD>
+ “Outlook” sections discussing the
+anticipated medium to longer term
+impact of a continuing pandemic
+to the issuer’s business and
+industry.
+ Disclosure of how operations may
+be impacted post-COVID-19 due
+to anticipated economic impacts or
+anticipated changes in consumer
+behaviour.</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">objectives/milestones
+<BOLD>Reference: Item 1.2, Item 1.4 of Form 51-102F1</BOLD>
+ In times of uncertainty, there may be less
+investor focus on historical information and
+more focus on known trends, and uncertainties
+that are likely to impact future performance. As
+the COVID-19 pandemic evolves, insightful
+disclosure how COVID-19 may impact future
+operations will be important to investors.
+<BOLD>Issuers should consider:</BOLD>
+ How future periods may be impacted differently
+in comparison to the current period
+ Impacts to the issuer’s business or industry that
+may continue post COVID-19
+ Whether the issuer anticipates material
+restructuring charges going forward
+ Future operating plans as issuers plan for recovery
+from the COVID-19 pandemic</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">Also see “Appendix A.3 – <EM>Key Observations and
+Considerations on Other Regulatory Matters - FLI</EM>”</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              Reference: Item 1.2, Item 1.4 of Form 51-102F1
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Liquidity and
+Capital Resources
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> The majority of issuers reviewed
+had indicators of liquidity risk.
+However, approximately 25% of
+issuers did not adequately disclose
+their ability to meet working
+capital requirements or planned</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> COVID-19 has had a significant impact on the
+liquidity and capital resources of many issuers
+creating unique challenges and the need for new
+financing resources. It is important for issuers
+to provide a comprehensive discussion of their
+initiatives to manage current and expected</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK2>
+          <BLOCK1>
+            <TI></TI>
+            <BLOCK2 LABEL="Table">
+              <TMPTABLE>
+                <SGMLTBL>
+                  <TBLHEAD TBLWD="600">
+                    <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                      <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                      <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                      <TBLCDEF COLWD="45" TBLUNITS="PERCENT" />
+                    </TBLCDEFS>
+                    <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                      <TBLROW>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                          <BOLD>
+              Focus Area
+            </BOLD>
+                        </TBLCELL>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                          <BOLD>
+              Observations
+            </BOLD>
+                        </TBLCELL>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                          <BOLD>
+              Considerations
+            </BOLD>
+                        </TBLCELL>
+                      </TBLROW>
+                    </TBLROWS>
+                  </TBLHEAD>
+                  <TBLBODY TBLWD="600">
+                    <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                      <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                      <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                      <TBLCDEF COLWD="45" TBLUNITS="PERCENT" />
+                    </TBLCDEFS>
+                    <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                      <TBLROW>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            growth initiatives, or to fund
+          </TBLCELL>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="3">liquidity and funding risks.
+ Issuers that have material liquidity risks might
+consider disclosing: their most current working
+capital amount, significant obligations that are
+maturing in the short term, their cash burn rate
+on a monthly or quarterly basis, the period of
+time that they expect to be able to fund
+operations and how they intend to prioritize
+expenditures in the short term.
+<BOLD>Issuers should:</BOLD>
+ Provide a clear picture of the issuers working
+capital, working capital needs and how those
+needs relate to business plans and milestones
+ Detail liquidity risks including risk of default or
+arrears on distributions, lease and debt
+payments
+ Discuss the impact of altered payment terms
+with customers and lessees
+ Discuss whether the issuer’s cost or access to
+capital has changed
+ Quantify the impact of remedies where possible
+ Discuss how financing sources (e.g.,
+public/private offerings, unused lines of credit)
+meet the issuers immediate and longer-term
+liquidity needs
+ Discuss how long other remedies to address
+liquidity concerns are anticipated to be in effect
+and the risks to the issuer when remedies expire
+ Consider what additional information
+management is monitoring in relation to
+liquidity that may be useful information to
+investors
+ Discuss known trends or events that may
+impact future liquidity and capital resources
+(e.g., what events or uncertainties may impact
+ability to service debt, meet other financial
+obligations or access financing?)
+ Update material factors impacting liquidity and
+capital resources up to the date of the MD&amp;A
+<BOLD>Reference: Item1.6 and Item 1.7 of Form 51-
+102F1</BOLD></TBLCELL>
+                      </TBLROW>
+                      <TBLROW>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="2">developmental activities and
+capital expenditures.
+ A common deficiency was the lack
+of disclosure regarding trends or
+expected fluctuations in an issuer’s
+liquidity and capital resources,
+taking into account events or
+uncertainties related to COVID-19.
+ Many issuers discussed a wide
+range of remedies to address
+liquidity uncertainties. However,
+some issuers did not quantify the
+impact or discuss how long certain
+remedies will remain in effect.
+<BOLD>Industry Observations</BOLD>:
+ We observed additional disclosure
+regarding customers/tenants to
+help understand the issuer’s
+liquidity risk and future trends.
+<BOLD>For example:</BOLD> some real estate
+issuers disclosed % of tenants
+undergoing restructuring, cash
+rents received during the period
+and categorized their tenant base
+based on management’s
+assessment of risk.</TBLCELL>
+                      </TBLROW>
+                      <TBLROW>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                          <BOLD>
+              Debt Covenants
+            </BOLD>
+                        </TBLCELL>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> While issuers generally disclosed
+compliance with debt covenants,
+disclosure varied in relation to
+providing the details of covenants
+applicable to the issuer.
+ Many issuers disclosed
+amendments to credit agreements
+including changes to covenants,
+covenant forgiveness for certain
+periods and additional restrictions
+placed on the issuer.</TBLCELL>
+                      </TBLROW>
+                      <TBLROW>
+                        <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> We encourage issuers with debt covenants to
+discuss the terms and conditions of the debt
+covenants, especially when a breach of the
+covenant could trigger a material funding
+requirement or early repayment.
+ If an issuer is close to breaching covenants or at
+risk of default in future periods, this is material
+information to be disclosed.
+ Discuss any additional requirements in
+agreements with lenders that may restrict the
+issuer’s business or access to other financing.</TBLCELL>
+                      </TBLROW>
+                    </TBLROWS>
+                  </TBLBODY>
+                </SGMLTBL>
+              </TMPTABLE>
+            </BLOCK2>
+            <BLOCK1>
+              <TI></TI>
+              <BLOCK2 LABEL="Table">
+                <TMPTABLE>
+                  <SGMLTBL>
+                    <TBLHEAD TBLWD="600">
+                      <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                        <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                        <TBLCDEF COLWD="38" TBLUNITS="PERCENT" />
+                        <TBLCDEF COLWD="44" TBLUNITS="PERCENT" />
+                      </TBLCDEFS>
+                      <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                            <BOLD>
+              Focus Area
+            </BOLD>
+                          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                            <BOLD>
+              Observations
+            </BOLD>
+                          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                            <BOLD>
+              Considerations
+            </BOLD>
+                          </TBLCELL>
+                        </TBLROW>
+                      </TBLROWS>
+                    </TBLHEAD>
+                    <TBLBODY TBLWD="600">
+                      <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                        <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                        <TBLCDEF COLWD="38" TBLUNITS="PERCENT" />
+                        <TBLCDEF COLWD="44" TBLUNITS="PERCENT" />
+                      </TBLCDEFS>
+                      <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                            <BOLD>Useful disclosure observed:</BOLD>
+ Additional disclosure to facilitate
+understanding of debt covenants
+including quantitative disclosure of
+covenant terms and related
+compliance.</TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                            <BOLD>Other considerations:</BOLD>
+ Amended credit agreements may be a material
+contract.</TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                            <BOLD>
+              Reference: Item 1.6 of Form 51-102F1, Item 12.2
+of NI 51-102
+            </BOLD>
+                          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                            <BOLD>
+              Risk Factor
+Disclosure
+            </BOLD>
+                          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Most issuers updated their risk
+factors in their MD&amp;A from
+disclosure provided in annual
+filings to include COVID-19
+related disclosure.
+ Over 30% of issuers provided
+“lists” of risks or disclosures that
+only touched on general economic
+or societal impacts of COVID-19
+and did not describe entity-specific
+COVID-19-related risks.
+<BOLD>Useful disclosure observed:</BOLD>
+ Some issuers provided useful
+disclosure by distinguishing
+between short term risks and
+anticipated longer term risks
+related to the pandemic.</TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> Provide entity specific risk factor disclosure
+related to COVID-19 in enough detail to
+understand the current and potential impact of
+COVID-19 on the issuer’s business.
+ Disclosure of risks in the order of seriousness from
+the most serious to least serious helps investors
+understand how management views the
+importance of such risks. (Note that this is a
+requirement for disclosure of risks in an issuer’s
+AIF).
+<BOLD>Issuers should consider the impacts of:</BOLD>
+ Disruptions to day-day operations resulting from
+health and safety measures and government-
+imposed closures
+ Human resource/staff constraints
+ Cybersecurity or information technology risks that
+may be heightened with the pandemic
+ Ability to sustain changes in
+revenues/expenses/negative cash flow from
+operations
+ Changes in consumer demand
+ Ability to access government funding
+ Requirements under lending agreements
+ Changes in commodity prices
+ Volatility in the capital markets and access to
+financing and capital on reasonable terms
+ Limitations on the ability of issuers’ customers to
+perform and make timely payments
+ Reliance on major customers that have decreased
+operations
+ Disruption to supply chains
+ Temporary or longer-term delays to projects and
+development plans
+ Financial statement impacts related to
+restructuring, impairment and measurement
+uncertainty
+ Change to consumer behaviour resulting from the
+pandemic and impact to future operations
+ Additional litigation risks resulting from the
+pandemic
+ The issuer’s ability to recover from the pandemic
+that may be unique to the issuer or its industry</TBLCELL>
+                        </TBLROW>
+                      </TBLROWS>
+                    </TBLBODY>
+                  </SGMLTBL>
+                </TMPTABLE>
+              </BLOCK2>
+              <BLOCK1>
+                <TI></TI>
+                <BLOCK2 LABEL="Table">
+                  <TMPTABLE>
+                    <SGMLTBL>
+                      <TBLHEAD TBLWD="600">
+                        <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                          <TBLCDEF COLWD="23" TBLUNITS="PERCENT" />
+                          <TBLCDEF COLWD="26" TBLUNITS="PERCENT" />
+                          <TBLCDEF COLWD="51" TBLUNITS="PERCENT" />
+                        </TBLCDEFS>
+                        <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                          <TBLROW>
+                            <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                              <BOLD>
+              Focus Area
+            </BOLD>
+                            </TBLCELL>
+                            <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                              <BOLD>
+              Observations
+            </BOLD>
+                            </TBLCELL>
+                            <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                              <BOLD>
+              Considerations
+            </BOLD>
+                            </TBLCELL>
+                          </TBLROW>
+                        </TBLROWS>
+                      </TBLHEAD>
+                      <TBLBODY TBLWD="600">
+                        <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                          <TBLCDEF COLWD="23" TBLUNITS="PERCENT" />
+                          <TBLCDEF COLWD="26" TBLUNITS="PERCENT" />
+                          <TBLCDEF COLWD="51" TBLUNITS="PERCENT" />
+                        </TBLCDEFS>
+                        <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                          <TBLROW>
+                            <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                            <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                            <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                              <BOLD>
+              Reference: Part 1, Item 1.4 of Form 51-102F1, Item
+5.2 of Form 51-102F2
+            </BOLD>
+                            </TBLCELL>
+                          </TBLROW>
+                        </TBLROWS>
+                      </TBLBODY>
+                    </SGMLTBL>
+                  </TMPTABLE>
+                </BLOCK2>
+              </BLOCK1>
+            </BLOCK1>
+          </BLOCK1>
+        </BLOCK1>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>A.2 Financial Statements</TI>
+        <P>
+        The impact of COVID-19 could be significant for many businesses. Given the continued impact of
+COVID-19, there is a higher degree of uncertainty in determining reasonable and supportable
+assumptions used in preparing financial statements. Management should carefully consider the impact of
+COVID-19 on each of the following key aspects in the financial statements.
+      </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="36" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focus Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="36" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Impairment of
+Non-financial
+Assets
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Events and</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            circumstances most
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4"> Disclose the key assumptions on which
+management based its determination of the
+recoverable amount.
+ Consider whether using probability weighted
+scenarios in making estimates of fair value or
+value in use is more appropriate than a single
+best estimate.
+<BOLD>For issuers with investments in associates or joint
+ventures accounted for using equity method</BOLD>
+ Issuers should carefully analyze the impact of
+COVID-19 on the operations and financial
+conditions of their associates and joint ventures
+to consider whether there is a ‘loss event’ that
+has an impact on the future cash flows of the
+investment.</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            commonly identified by issuers as
+indications of impairment and that
+led to the recognition of
+impairment losses in connection
+with COVID-19 included:
+decreased demand for the issuer’s
+products or services, significant
+customers experiencing financial
+difficulties and increased
+costs/business interruption due to
+supply chain issues.
+ A few issuers did not identify the
+events or circumstances that led to
+an impairment or simply noted
+“negative economic impacts of
+COVID-19” as an impairment
+indicator for all CGUs but did not
+elaborate on those impacts.
+ Approximately 10% of the issuers
+we reviewed did not disclose or
+update the disclosure of the key
+assumptions used in their
+impairment calculations.
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>Other considerations:</BOLD>
+ Whether there is any indication that an asset has
+been impaired in an interim period, which would
+then require the issuer to estimate the recoverable
+amount of the asset in the period (e.g., a significant
+decrease in an issuer’s share price during the
+reporting period such that market capitalization is
+lower than carrying value).
+ Disclosure may be required for changes in key
+assumptions used to determine recoverable amount
+of a CGU that contains goodwill or intangible assets
+with indefinite useful lives.</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+                      <BOLD>Reference: International Accounting Standards
+(IAS) 36 <EM>Impairment of assets,</EM> para. 41A of IAS 28
+<EM>Investments in Associates and Joint Ventures</EM></BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Going Concern
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> A few issuers identified material
+uncertainties that cast significant
+doubt on their ability to continue
+as a going concern in light of a
+deterioration in their business
+since the onset of the pandemic.
+ Some issuers disclosed “close
+call” situations but did not
+disclose the mitigating actions that</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> If issuers breach debt covenants prior to the
+financial statement date and the lender has the
+right to demand repayment, the issuer is required
+to reclassify the loan as current and should
+discuss the implications of such breach on their
+ability to continue as a going concern.
+ If an issuer is working with its lenders to change
+terms of existing debt agreements or to obtain
+waivers for debt covenants, it should closely</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="36" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="14" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="32" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focus Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="36" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="14" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="32" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            impacted their determination that
+there were no material
+uncertainties that cast significant
+doubt on the issuer’s ability to
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            examine ch
+whether the
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            anges to its debt agreements to assess
+ey are subject to modification or
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">extinguishment accounting, as required by IFRS
+9 <EM>Financial Instruments</EM>
+ When management is aware of material
+uncertainties in relation to COVID-19 that may
+cast significant doubt upon the issuer’s ability to
+continue as a going concern, those uncertainties
+are required to be disclosed.
+ If management determined there were no
+material uncertainties that cast significant doubt
+on the issuer’s ability to continue as a going
+concern, but there were significant doubts about
+going concern that were addressed by mitigating
+actions judged sufficient to conclude the going
+concern basis of accounting is appropriate, then
+such situations are commonly referred to as a
+“close call”. In these situations, issuers are
+required to disclose the significant judgments to
+support their determination that going concern is
+appropriate, including those mitigating actions
+that impacted their determination that material
+uncertainties have been addressed (i.e.,
+successful negotiations of credit facilities
+subsequent to period end or the identification of
+other feasible sources of financing).
+<BOLD>References: para. 25 and 122 of IAS 1 <EM>Presentation
+of Financial Statements,</EM> IFRS 9 <EM>Financial
+Instruments</EM></BOLD></TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            continue as a going concern.
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Some issue</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            ers breache
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            d financial
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            covenants during the reporting
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            periods but did not:
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">o disclose how the breaches
+will impact the company's
+ability to continue as a going
+concern, or
+o reclassify the loan as a
+current liability.</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Significant
+Judgements and
+Measurement
+Uncertainties
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> While many issuers updated their
+disclosure since March 2020
+regarding significant judgements
+and measurement uncertainties,
+notably with respect to the
+impairment of non-financial
+assets, going concern analysis and
+the estimate of credit losses and
+credit risks, a number of issuers
+only stated in their interim
+financial statements that the
+significant judgements and
+measurement uncertainties
+remained the same as those
+disclosed in the issuers’ most
+recent annual financial statements.
+ About 30% of the issuers we
+reviewed with material sources of
+measurement uncertainty related
+to COVID-19 did not disclose the
+expected resolutions of the
+uncertainty or the range of
+reasonably possible outcomes
+within the next financial year.
+ Some issuers only disclosed</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Issuers that operate in sectors that are
+significantly affected by COVID-19 are expected
+to update the following disclosure in their
+interim and annual financial statements:
+o timely and entity-specific disclosure of
+significant judgements and measurement
+uncertainties pertaining to the amounts
+recognized in the financial statements in
+light of the rapidly changing environment
+and the extended impact of COVID-19
+(e.g., estimate of credit loss and valuation
+of non-financial assets); and
+o explanation of the nature of estimation
+uncertainty and sensitivity analysis to help
+investors fully understand the potential
+impact of estimates made in the financial
+statements.</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> While issuers are expected to supplement their
+discussion of significant judgments and
+measurement uncertainty in the MD&amp;A (critical
+accounting estimates, risk factors, forward
+looking information) the discussion of significant
+judgements and measurement uncertainty is
+required in the notes to the annual financial
+statements.</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="47" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focus Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="47" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            significant judgements in their
+MD&amp;A but not in their financial
+statements.
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              References: para 122 and 125 of IAS 1
+              
+
+              
+                <EM>Presentation of Financial Statements</EM></BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">.
+<BOLD>Financial Institutions</BOLD>
+ Some issuers disclosed an elevated
+level of credit risk on their
+material financial assets by each
+asset class in light of the outbreak
+of COVID-19 and updated the key
+assumptions considered by
+management and their strategies to
+strengthen their risk profile (e.g.,
+through temporarily reducing risk
+appetite for certain asset classes or
+increasing loan-to-value ratios).</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Expected Credit
+Losses (ECL)
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Issuers are required to disclose the following:
+ An explanation of the inputs, assumptions and
+judgments made in estimating ECL
+ The quantitative and qualitative factors taken
+into account in determining what constitutes a
+SICR
+ An issuer’s definitions of default, including the
+reasons for selecting those definitions
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> An issuer’s write-off policy, including the
+indicators that there is no reasonable expectation
+of recovery</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>Some issuers disclosed increased
+ECL or provided an adequate
+explanation regarding their
+expectation that COVID-19 will
+not significantly impair their
+capital position and credit quality.</P>
+        <P>Many issuers that provided loan
+deferral programs/payment
+holidays to borrowers during
+COVID-19 pandemic also
+discussed the impact of these
+changes on risk of default and
+discussed the impact of these
+deferrals, including that the
+deferral of payments may not
+immediately or always result in a
+significant increase in credit risk
+(SICR).</P>
+        <P>Some issuers did not update their
+sensitivity analysis or disclose
+adjustments/overlays to the ECL
+model in their financial statements
+that may have been necessary due
+to COVID-19 pandemic.</P>
+        <BLOCK2>
+          <TI>Useful disclosure observed:</TI>
+          <P>Some issuers used sensitivity
+analysis with respect to the ECL
+model by providing multi-factor
+sensitivities to show the impact of
+possible changes in multiple
+assumptions affecting the ECL
+allowance.</P>
+          <P>How forward-looking information has been
+incorporated into the determination of ECL.
+Forward-looking information can include
+macroeconomic information, for example:
+unemployment rate, GDP growth rate, housing
+price index/home price index growth rate, and
+interest rate forecasts. Staff expect that forward-
+looking information should take COVID-19
+impacts into consideration.</P>
+          <P>Information about credit risk management
+practices and any significant changes to credit
+risk exposure, which may in part be due to the
+impact of COVID-19.</P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Other considerations:</TI>
+          <P>Relying solely on historic loss rates in determining
+ECL would not be appropriate if the entity has been,
+or is expected to be, impacted by the pandemic.</P>
+          <P>It may be difficult at this time to incorporate the
+specific effects of the pandemic (e.g. government
+support and customer relief measures) into the ECL
+models as systems may not be calibrated to address
+the impacts of COVID-19. When it is not possible
+to reflect such information in models, issuers should
+consider post-model overlays or adjustments, and
+provide adequate disclosure of those overlays and
+adjustments.</P>
+          <P>Other disclosure considerations include:
+o The values of the key macroeconomic inputs used in
+the multiple economic scenario analysis and the
+probability weights of these scenarios.</P>
+          <P>o The assumptions used to determine how the
+different challenges for specific sectors and regions
+have been taken into account.</P>
+          <P>o If material, issuers may consider disclosing further
+details about payment deferral programs such as the
+amount and nature of the total principal balance
+outstanding within payment deferral/payment
+holiday programs provided to borrowers as a result</P>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="47" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Focus Area
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>
+              Observations
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              Considerations
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="35" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="47" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">provided to borrowers in
+vulnerable sectors/geographic
+regions or of higher downgrade
+sensitivity)
+<BOLD>Issuers Applying the “simplified”
+ECL model</BOLD>
+ Over 20% of the issuers we
+reviewed did not disclose
+ECL/allowance for doubtful
+accounts for their significant
+accounts receivable balance, or
+did not provide sufficiently
+detailed updates to the
+measurement of ECL due to the
+COVID-19 outbreak (e.g., the
+adjustment for key assumptions
+and change in grouping of trade
+receivables).</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            of COVID-19. Issuers may also consider disclosing
+total mortgages previously included in payment
+deferral programs that are now included in total
+mortgage arrears to provide investors with timely
+and transparent disclosure of the impact of such
+programs.
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>Reference: para 5.5.11 of IFRS 9 <EM>Financial
+Instruments, IFRS 7</EM> Financial Instruments:
+Disclosure</BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              FV Changes for
+Real Estate
+Industry
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Some issuers did not disclose in
+sufficient detail the inputs used in
+determining FV or discuss the
+sensitivity of level 3 fair value
+measurements to changes in
+unobservable inputs.</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> Issuers are required to disclose the extent to
+which the FV of an investment property has been
+independently valued (or the fact that there has
+been no such independent valuation).
+ Issuers should consider disclosing qualitative
+factors impacting the fair values of commercial
+properties, including, for example:
+o Possible changes in consumer preferences
+between retail and online shopping
+o Changes in the financial condition of
+existing tenants
+o Restructuring of agreements with tenants.
+<BOLD>Issuers with material assets measured using level 3
+inputs</BOLD>
+ Issuers are required include a narrative
+description of the sensitivity of recurring fair
+value measurements to changes in unobservable
+level 3 inputs if a change in those inputs might
+result in a significantly higher or lower fair value
+measurement. Examples of unobservable inputs
+may include discount rates, interest rates on
+loans, and terminal capitalization rates.</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>Reference: para. 93(h)(i) of IFRS 13 <EM>Fair Value
+Measurement,</EM> IAS 40 <EM>Investment Property</EM></BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Financial
+Instrument Risk
+Disclosures
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> We noted issuers that disclosed
+material impacts of COVID-19 on
+their business operations in their
+MD&amp;A appeared to have
+increased their
+liquidity/market/credit risk but did
+not provide an entity-specific
+update to their risk disclosure in
+the financial statements.</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> Issuers should carefully consider whether there
+have been changes to their credit risk. The
+following factors may be taken into</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">consideration in assessing credit risk:
+o Risk concentrations</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">o Significant risk in ECL (i.e., financial</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">condition of specific lenders/clients)
+o Significant assumptions underlying ECL
+measurement</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            Issuers should also consider updating the
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="20" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="34" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Focus Area
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>
+              Observations
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              Considerations
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="20" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="34" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            disclosure of their credit risk management
+practices accordingly.
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>References: para. 35A of IFRS 7 <EM>Financial
+instruments: Disclosures</EM></BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              Government
+Assistance
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Over half of the issuers we
+reviewed recognized, or disclosed
+in subsequent events, COVID-19
+related government grants in their
+financial statements since the
+outbreak of COVID-19 pandemic,
+including but not limited to,
+CEWS, Canada Emergency
+Commercial Rent Assistance
+(CECRA), etc.
+ Only some issuers included
+separate note disclosure in their
+financial statements in connection
+with the COVID-19 related
+government grants.
+ Some issuers only disclosed that
+they have received government
+grants for pandemic expenses
+without identifying the amount
+received, naming the specific
+assistance program or disclosing
+the accounting policy for
+recognizing government grants.</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> Issuers are required to disclose the following in
+connection with the government assistance
+received during the period:
+o The accounting policy adopted for
+government grants, including the method of
+presentation adopted in the financial
+statements (e.g. offsetting against expenses
+or presenting as a separate financial
+statement line item)
+o The nature and extent of government grants
+recognized in the financial statements
+o Unfulfilled conditions and other
+contingencies attaching to government
+assistance that has been recognized
+ For issuers that received government loans with
+forgiveness options, issuers are required to
+disclose the terms and conditions of the
+government assistance.
+<BOLD>Reference: para. 39 of IAS 20 <EM>Accounting for
+Government Grants and Disclosure of Government
+Assistance</EM></BOLD></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              COVID-19 Related
+Amendments to
+IFRS 16 Leases for
+Lessees
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> When the practical expedient is elected and
+applied, a lessee is required to disclose:
+o it has applied the practical expedient to all its
+rent concessions that meet the conditions, or
+if not applied to all such rent concessions,
+information about the nature of the contracts
+to which it has applied the practical
+expedient.
+o the amount recognised in profit or loss for the
+reporting period to reflect changes in lease
+payments arising from such rent concessions
+to which the lessee has applied the practical
+expedient.</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">The IASB issued amendments to IFRS
+16 <EM>Leases</EM> to provide a practical
+expedient that allows lessees to elect
+not to assess whether a rent concession
+is a lease modification. The application
+of the practical expedient is permitted,
+but not required. In order to apply the
+practical expedient, certain conditions
+specified in IFRS 16 need to be met.
+ The vast majority of the issuers we
+reviewed with material rent
+concessions met the required
+conditions, but some did not
+sufficiently disclose whether they
+applied the practical expedient to
+all their rent concessions or only
+to some of them, or the amount
+recognised in profit or loss as a
+result of applying the practical
+expedient</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>
+              Reference: para 46A,46B and 60A of IFRS 16
+              
+
+              
+                <EM>Leases</EM></BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+        </BLOCK2>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>A.3 Other Regulatory Matters</TI>
+        <P>
+        Disclosure related to the COVID-19 pandemic may also result in consideration of other regulatory requirements
+including the requirements and/or guidance related to the following:
+      </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="8" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="9" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focu
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              s Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="8" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="9" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            NGMs
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Adjusted
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> Less than 5% of the issuers we
+reviewed disclosed NGMs adjusted
+for impacts related to COVID-19.
+ In certain cases where a NGM was
+disclosed, issuers did not adequately
+explain how adjustments were
+attributable to the pandemic and/or
+were non-recurring.
+ CSA staff found a few instances
+where the disclosure of NGMs was
+potentially misleading as the issuer:
+adjusted for expenses attributable to
+COVID-19 without adjusting for
+government subsidies or attempted to
+“normalize” revenue or expenses for
+the year-to-date period based on more
+positive results for one quarter.</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4"> Before presenting NGMs adjusted for COVID-
+19 impacts, consider how it assists investors,
+how management uses the measure and why
+management believes it is a useful and
+meaningful alternative to explain the impact of
+COVID-19.
+ Consider whether the adjustment matches the
+corresponding usefulness of the NGM and the
+disclosure is balanced (i.e., whether both
+positive and negative components are
+disclosed).
+ As the pandemic continues, there may be a
+limited basis for management to conclude that
+an adjustment is non-recurring, infrequent or
+unusual even if the item is directly related to
+COVID-19.
+ Be specific in describing adjustments (and not
+simply disclose, for instance, “other costs
+related to COVID”.
+ If disclosing NGMs adjusted for COVID-19,
+include balanced adjustments and consider the
+impacts of government subsidies, insurance
+recoveries and relief from landlords.
+ All adjustments should be based on actual
+results. Adjustments that attempt to estimate or
+forecast results as if the pandemic had not
+occurred are not appropriate.</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            for Impacts
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Related to
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            COVID-19
+            
+              <SUP>3</SUP></TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+                      <BOLD>
+              Reference: SN 52-306
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              FLI in Effect
+During COVID-
+19
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Most issuers that disclosed financial
+outlooks prior to COVID-19,
+withdrew their FLI.
+ Some issuers provided detailed and
+meaningful disclosure including
+“outlook” sections with FLI
+discussing the anticipated medium to
+longer term impact of COVID-19 to
+the issuer’s business and industry.
+ However, we also observed isolated
+instances of insufficient disclosure of
+assumptions and risks related to FLI</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> FLI can provide useful insight into how
+management anticipates how COVID-19 will
+impact the issuer’s future operations and liquidity
+positions. However, the issuer must have a
+reasonable basis for providing the FLI in the
+current environment and provide sufficient
+disclosure for investors to understand how the FLI
+was derived and the related risks.
+ With rapidly changing circumstances, it is
+essential that issuers update their MD&amp;A to
+discuss the events or circumstances that are
+reasonably likely to cause actual results to differ</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <FOOTNOTE>
+          <FREEFORM>
+            <P>3 To improve the disclosure surrounding non-GAAP financial measures and certain other financial measures, the CSA is
+intending to replace SN 52-306 with Proposed National Instrument 52-112 <EM>Non-GAAP and Other Financial Measures Disclosure</EM>
+and a related proposed Companion Policy (Proposed NI 52-112).</P>
+          </FREEFORM>
+        </FOOTNOTE>
+        <FOOTNOTE>
+          <FREEFORM>
+            <P>
+        Proposed NI 52-112 sets out disclosure requirements for non-GAAP financial measures and other financial measures (e.g.,
+segment measures, capital management measures, and supplementary financial measures as defined in Proposed NI 52-112). It
+was published on September 6, 2018 for a first comment period and, after making revisions for comments received during the
+first comment period, it was published on February 13, 2020 for a second comment period, which ended on June 29, 2020.
+      </P>
+          </FREEFORM>
+        </FOOTNOTE>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="17" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focus Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="17" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            and failure to update the MD&amp;A for
+events that are likely to cause actual
+results for future periods to differ
+materially from previously disclosed
+FLI
+            .
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">from previously disclosed FLI.
+<BOLD>Issuers should consider:</BOLD>
+ If internal processes are in place to monitor and
+update FLI as conditions change</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              References: Parts 4A, 4B and section 5.8 of NI
+51-102; and Part 4A of Companion Policy 51-
+102CP
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Material Change
+            
+
+            <BOLD>
+              Reporting
+            </BOLD></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Many issuers issued news releases in
+relation to changes to their business,
+operations or capital as a result of
+COVID-19.
+ A few issuers filed material change
+reports in relation to COVID-19
+although in some instances changes to
+the issuer’s business, operations or
+capital were unique or more significant
+to them than to others in their industry.</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> The term “material change” is generally defined in
+each jurisdiction’s securities legislation and is
+usually based on a market impact test. Issuers
+should refer to their principal regulator’s
+applicable securities legislation for the definition
+of “material change”.
+ If COVID-19 has an equal effect throughout an
+issuer’s industry, a material change report may not
+be required.
+ Issuers should be aware of the impact of COVID-
+19, or resulting governmental or regulatory
+policies, that may be unique or more significant to
+them than to others in their industry as the
+pandemic evolves.
+<BOLD>Examples of potentially material information
+includes:</BOLD>
+ Material changes in distributions or dividends
+ Changes in credit arrangements
+ Significant disruptions to an issuer’s workforce or
+operations
+ Negative changes in markets, economy or laws
+ Supply chain delays or disruptions that are critical
+to an issuer’s business
+ Increased cost of goods or services
+ Suspension of exports
+<BOLD>References: Part 7 of NI 51-102, Form 51- 102F3
+<EM>Material Change Report</EM>.</BOLD></TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Promotional
+Disclosure
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"> Some issuers concentrated in the
+biotech/pharma industry provided
+disclosure in relation to COVID-19
+that was overly promotional in nature
+and often lacked specificity necessary
+to enable a full understanding of the
+issuer’s business intentions and
+expected milestones.
+ In these instances, issuers filed
+numerous press releases that either
+overstated the positive impact on the
+business of the issuer or were at such
+an early stage that the true impact was
+unknown and/or dependent upon too
+many variables to realistically
+determine if COVID-19 would</TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3"> Issuers are prohibited from making false or
+misleading statements or omitting facts from a
+statement necessary to make that statement true
+or not misleading.
+ Disclosure should be complete, balanced and
+focused on material information. Both positive
+and negative news should be given equal
+prominence.
+ Establishing good disclosure practices can help
+avoid the above situations. We recommend that
+companies look to Part 6 of National Policy 51-
+201 <EM>Disclosure Standards</EM> to assist them in
+setting up practices that assist them in
+complying with the law and ensuring investors
+have the best disclosure about their company in</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="17" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                      <BOLD>
+              Focus Area
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>
+              Observations
+            </BOLD>
+                    </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                      <BOLD>
+              Considerations
+            </BOLD>
+                    </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="17" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="37" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="46" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            positively affect the issuer or its
+business.
+ In one instance, an issuer failed to
+disclose material facts that caused the
+issuer to have a misrepresentation in
+its public disclosure record.
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            a concise manner.
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                      <BOLD>References: National Policy 51-201 <EM>Disclosure
+Standards</EM></BOLD>
+            .
+          </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>B.1 MD&amp;A Disclosure Examples</TI>
+        <P>
+        Below are examples of useful disclosure focused on a few aspects of certain disclosure requirements.
+Issuers should determine how specific securities requirements may apply to them.
+      </P>
+        <BLOCK2>
+          <TI>B.1.1 Discussion of Operations and the Impact of COVID-19</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of deficient disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.1.1(a)
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="7"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="8"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="9"></TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Did not describe the specific op</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            erational factors c
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            ontributing to the decline in revenue and expe
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            enses
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Did not describe th</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            he judgements an
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            d estimations
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            made b
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+            y management i
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6">
+            n determining t
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="7">
+            he impact of
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            COVID-19
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="7"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="8"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="9"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Revenue decreased by 30% in Q3 2020 as compared to the prior period primarily due to the negative impact of
+the COVID-19 pandemic.
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Selling, general and administrative expenses decreased by $5M in Q3, 2020 due to management’s efforts to
+reduce costs due to COVID-19.
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of improved disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>EXAMPLE B.1.1(b)</BOLD>
+ Provides an entity-specific analysis to explain variances
+ Describes the methodology used to estimate the impact of COVID-19</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE"></TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>
+        As described above, we shut down 25 locations country-wide in mid-September, and these locations remain
+closed as at the date of this MD&amp;A. 14 locations remained open during the quarter for take-out only. In order
+to mitigate the impacts of store closures and reduced revenues, we have temporarily laid off certain staff. Our
+mitigating efforts are described in further detail in the Recent Developments section.
+      </P>
+          <P>Revenue decreased by 30% from Q3, 2019 due to an estimated loss of sales of $7M from restaurants
+negatively affected by COVID-19. The closures noted above were in effect for 2 weeks during the
+reporting period. Based on our estimate for each location, the loss in revenues due to store closures was
+approximately $3M for Q3, 2020 (based on a 2-week average sales at those stores in prior periods). A
+further reduction of revenue of $4M is estimated from locations that remained open as take-out only or
+were subject to reduced capacity limits for Q3, 2020 due to a reduction in revenue/hour from the loss of
+customers dining in and shorter operating times.</P>
+          <P>Selling, general and administrative (SG&amp;A) expenses decreased by $5M from Q3, 2019:</P>
+          <P>The decrease reflects an estimated $2M in rent savings and a decrease in $2M of wages based on
+management’s calculation of the impact of location closures and reduced capacity limits.</P>
+          <P>In Q3 2020, the Company also benefitted from $1.5M due to the Canadian Emergency Wage Subsidy
+Program, of which $1M was recorded as a reduction to SG&amp;A expenses, and $500K as a reduction to
+cost of sales which allows the Company to maintain a comparable gross margin to the prior period.</P>
+          <P>
+            <BOLD>
+          
+            Example of deficient disclosure
+          
+        </BOLD>
+          </P>
+          <P>
+            <BOLD>EXAMPLE B.1.2(a)</BOLD>
+ Did not explain the impact of measures taken to reduce the impact of COVID-19
+The Company has implemented a series of cost reduction measures in response to COVID-19. These measures
+include the following: suspension of the quarterly dividend, reduced compensation, reduction of discretionary
+spending, delayed capital projects, sales of assets and taking advantage of the Canadian Emergency Wage
+Subsidy Program. The Company is monitoring the situation and will adjust these measures as the situation
+evolves.</P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of improved disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.1.2(b)
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Discussed specific measures tak</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            en and
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            effect on the issuer
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            The Company has imp
+degree of uncertainty i
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            lement
+n futur
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            ed seve
+e sales.
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            eral ope
+. These
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+            rational responses to address the reduced current de
+strategies include an estimated annual reduction of
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6">
+            mand and the high
+$25M in expenses,
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            a reduction of capital s
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            pendin
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            g and g
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            generati
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+            ng $10M in cash from non-core asset sales. The Co
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6">
+            mpany has
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>Suspension of the quarterly dividend commencing in Q2, 2020 (anticipated to remain in effect until at least
+Q2 2021).</P>
+          <P>Reduced Board of Director compensation by 40% and executive compensation by 25% resulting in an
+estimated reduction in compensation costs of $3M for fiscal 2020.</P>
+          <P>Elimination of all non-essential travel, entertainment and other discretionary spending estimated to reduce
+annual costs by $8M</P>
+          <P>Reduction of purchases of property, plant and equipment to approximately $30.0 million over the next 12
+months</P>
+          <P>Sales of non-core assets of $5M in Q3, 2020 with additional sales of non-core assets of $5M anticipated to be
+completed in Q4, 2020.</P>
+          <P>Taking advantage of the Canadian Emergency Wage Subsidy Program (CEWS) to help offset the reduction in
+revenues. The Company realized $6M under this program for Q3, 2020 which is recorded as a reduction in
+SG&amp;A expenses. The Company expects it will continue to qualify for this program for the balance of 2020.</P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>B.1.3 Liquidity and Capital Resources</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of boilerplate disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.1.3(a)
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Did not discuss covenant terms or provide for an understanding of liquidity risk</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            The Company is currently in compliance with the financial covenants under its credit facility. The Company
+expects that the COVID-19 pandemic may impact covenant compliance in future periods and has entered into
+an amending agreement with lenders and will be subject to revised measures for Q4 2020
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>EXAMPLE B.1.3(b)</TI>
+          <P>Provided quantitative and qualitative disclosure to understand compliance with financial covenants an
+related liquidity risk</P>
+          <P>
+        The Company’s lending agreements require the Company to comply with the following covenants: maximum
+leverage ratio of 4.5 and minimum interest coverage ratio of 2.75. Calculation of financial covenants for Q3 2020
+is as follows:
+      </P>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="33" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="36" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="31" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            
+              September 30, 2020
+            
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            
+              September 30, 2019
+            
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="33" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="36" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="31" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Interest Coverage Ratio
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            3.0
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            5.0
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Total Leverage Ratio
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            4.0
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            3.0
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>
+        The Company now expects that the combination of lower expected EBITDA in 2020 combined with the
+Company’s current debt profile and the ongoing uncertainty created by the COVID-19 pandemic, may impact
+compliance with the total leverage ratio and interest coverage covenants at December 31, 2020. Management has
+been negotiating with its syndicate of lenders and has entered into an amended agreement under its credit facility.
+Under the amended agreement, the Company is subject to a maximum leverage ratio of 5.5 and minimum interest
+coverage ratio of 2.5 from Q4, 2020 to Q2, 2021. The Company has incurred fees and expenses of $1 million to
+date to implement these amendments and expects to incur another $0.5 million in Q4 2020.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>B.1.4 Risk Factor Disclosure</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of deficient disclosure</TI>
+          <P>
+        On March 11, 2020, the World Health Organization declared the outbreak of COVID-19 to be a pandemic.
+Governments have imposed measures to contain the outbreak, including business closures, travel restrictions,
+quarantines and social distancing measures. The spread of the COVID-19 virus has resulted in a sharp decline in
+global economic growth as well as causing increased volatility in financial markets. If the COVID-19 pandemic
+is prolonged, the adverse impact on the global economy could worsen. Accordingly, the full impact of the
+COVID-19 is uncertain and may have a material adverse effect on the Company.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Examples of improved disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="39" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="61" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.1.4(b)
+            </BOLD>
+            
+
+            Provided entit -s ecific disclosure of risks
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            and im acts to the issuer
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="39" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="61" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            y- p
+            
+
+            Based on events and circumstances know
+following risks beyond Q3 2020:
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            p
+            
+
+            n to us to date, we believe that the Company may be subject the
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>Consumer demand will continue to be the Company’s most significant risk due to the uncertainty in the
+global economy, negatively impacting our retail stores. Many of our stores are located in areas that
+historically have had higher densities of tourism and will experience a greater negative impact and slower
+recovery than perhaps other retailers. While eCommerce sales have increased, we expect to continue to incur
+significant sales losses as overall customer demand and consumer spending is expected to continue to</P>
+          <P>
+        decline, as compared to prior year, in response to COVID-19 and the related global economic impacts.
+      </P>
+          <P>Social distancing restrictions to protect the safety of our customers and employees may limit both the number
+of customers we can serve at our retail stores, and the volume of goods we are able to fulfill through our
+distribution centre. More severe government-imposed restrictions, including store capacity restrictions and
+lockdowns, could further restrict our ability to service our customers. See also “Subsequent Events” for
+further discussion on store closures in relation to COVID-19.</P>
+          <P>We may also face supply chain challenges if there are disruptions in service at our distribution centre,
+suppliers, or logistics providers. Increased market demand for logistic providers may continue to increase our
+operating costs and/or limit our ability to fulfill sales.</P>
+          <P>The costs of operating our stores and distribution centre may continue to increase due to enhanced health and
+safety measures taken to protect our employees, including the increased costs of personal protective
+equipment.</P>
+          <P>Access to government financial assistance programs may place restrictions on our business and operations,
+including our ability to deploy capital or return capital to our shareholders.</P>
+          <P>
+        While the full-extent of the impact of COVID-19 on the Company’s business remains uncertain, we believe that
+the cost reductions and liquidity management strategies employed will partially mitigate the above risks as further
+described under “Recent Developments”.
+      </P>
+        </BLOCK2>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>B.2 Financial Statements Examples</TI>
+        <P>
+        Below are examples of useful disclosure focused on a few aspects of certain IFRS requirements. Issuers should
+determine how specific IFRS requirements may apply to them.
+      </P>
+        <BLOCK2>
+          <TI>B.2.1 Impairment of Non-Financial Assets</TI>
+          <P>
+            <BOLD>
+          
+            Example of deficient disclosure
+          
+        </BOLD>
+          </P>
+          <P>
+        The Company recognized for the quarter ended September 30, 2020, costs related to the write‐down of assets
+totalling $XXX mainly due to the impairment of PP&amp;E.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of improved disclosure</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>EXAMPLE B.2.1(b)</TI>
+          <P>
+        The majority of the Company’s operations in segment XYZ were closed, and currently remain closed or are
+operating at a reduced occupancy as a result of mandatory closure orders from various government authorities. In
+light of this temporary closure and a material decrease in the Company’s market value due to a sharp decline in
+its share price, the Company concluded that this segment, which is a cash generating unit (“CGU”), should be
+tested for impairment at period end. The Company did not identify any further indicators of impairment or
+impairment reversals for its other CGU's.
+      </P>
+          <P>
+        The recoverable amount for the CGU has been estimated using a discounted cash flow (value in use) model. The
+Company calculates value in use using a five-year discounted cash flow method based on the most recent
+financial budget forecasts approved by management. The future cash flows are based on a range of
+estimates and assumptions, including growth in average sales from XX% to XX% for the period 2020-202X to
+reflect a staged reopening and other scenarios and a pre-tax discount rate of XX% (which represents the weighted
+average cost of capital). For the nine months ended September 30, 2020, the Company recorded a total
+impairment charge of $XXX million relating to the entire goodwill balance allocated to this CGU of $XX million
+and an impairment on the PP&amp;E in this CGU of $XXX million. The recoverable amount of the Company’s
+impaired CGU at September 30, 2020 was $XXX million.
+      </P>
+          <P>
+        The Company conducts sensitivity analyses by varying the pre-tax discount rate upward by X% and the growth
+rates down by X%. Such sensitivity analyses demonstrate that a reasonable change in assumptions would not
+result in the CGU’s carrying value exceeding its value in use.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>B.2.2 Going Concern</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of deficient disclosure</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>EXAMPLE B.2.2(a)</TI>
+          <P>
+        As at September 30, 2020, the Company is not able to finance day to day activities through operations. The
+continued operations of the Company are dependent on future profitable operations, management’s ability to
+manage costs, and the future availability of equity or debt financing. Whether and when the Company can
+generate sufficient operating cash flows to pay for its expenditures and settle its obligations as they fall due is
+uncertain.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of improved disclosure</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>EXAMPLE B.2.2(b)</TI>
+          <P>• Included disclosure indicating there was a “close call” situation where significant judgement was applied in
+concluding there were no material uncertainties that might cast significant doubt on the Issuer’s ability to
+continue as a going concern
+<BOLD>•</BOLD> Disclosed factors used in the decision to conclude the Issuer will continue as a going concern</P>
+          <P>
+        The spread of COVID-19 in all relevant jurisdictions has impacted the Company’s supply chain and consumer
+base and uncertainty regarding the extent, duration and severity of business disruptions are having a material
+impact on all aspects of the Company’s operations. Currently, the Company is not generating sufficient funds
+from operations to support its day-to-day activities. These conditions call into question the Company’s ability to
+continue as a going concern.
+      </P>
+          <P>
+        In response to the uncertainty caused by the COVID-19 global pandemic, the Company has taken or plans to take
+several actions including:
+      </P>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> announced that it will not be paying dividends in the foreseeable future until conditions improve</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> actively monitoring cash flow forecasts and results, which has resulted in significant cost savings in the</TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            ,
+short-term
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> subsequent to period end, the Company successfully negotiated an increase to its credit facility that
+included revised covenants</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>
+        Based on these actions, its diversified business and current backlog, the Company expects to generate sufficient
+cash flows to fund its operations, working capital requirements and capital program for the next 12 months.
+      </P>
+          <P>
+        As a result, after considering all relevant information, including its actions completed to date and its future plans,
+management has concluded that there are no material uncertainties related to events or conditions that may cast
+      </P>
+          <P>
+        significant doubt upon the Company’s ability to continue as a going concern for a period of 12 months from the
+consolidated balance sheet date.
+      </P>
+          <P>
+        The estimates used by management in reaching this conclusion are based on information available as of the date
+these financial statements were authorized for issuance and include internally generated cash flow forecasts.
+Accordingly, actual results could differ from these estimates and resulting variances may be material to
+management’s assessment.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>B.2.3 Government Assistance</TI>
+          <P>
+            <BOLD>
+          Example of deficient disclosure
+        </BOLD>
+          </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>EXAMPLE B.2.3(a)
+Did not disclose:</TI>
+          <P>
+        The Canada Emergency Wage Subsidy (“CEWS”) was put in place by government of Canada to provide a wage
+subsidy to eligible employers to help get Canadians hired back quickly as provincial and territorial economies
+began to reopen. The Company recognized $XXX and $XXX of CEWS during the three and six months ended
+Q3 2020 as subsidy.
+      </P>
+          <P>
+            <BOLD>
+          
+            Example of improved disclosure
+          
+        </BOLD>
+          </P>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.2.3(b)
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">• Provided all the required disclosure under IAS 20</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            In response to the negative economic impact of COVID-19, the Government of Canada announced the Canada
+Emergency Wage Subsidy (“CEWS”) program in April 2020, retroactive to March 15, 2020. CEWS provides a
+wage subsidy to eligible employers based on certain criteria, including demonstration of revenue declines as
+result of COVID-19.
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            The Company has determined that it has qualified for this subsidy from March 15, 2020 through Sep
+2020 and has, accordingly, applied for, and for certain periods received, the CEWS. The Company also
+apply for the CEWS in subsequent application periods it is available, subject to continuing to meet the
+qualification criteria.
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            tember 30,
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            ,
+o intends to
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            applicable
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            For the three and nine month ended September 30, 2020, the Company has recognized $XXX and $XXX from
+the CEWS program, respectively, and has recorded it as a reduction to the eligible remuneration expense in
+selling, general and administrative expenses. As of September 30, 2020, the Company has received $XXX from
+the CEWS program and expects to receive the remaining recognized subsidy in the following fiscal quarter.
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+        </BLOCK2>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>B.3 Other Regulatory Matters Examples</TI>
+        <P>
+        Below is an example that focuses on certain disclosure requirements relating to NGMs. Issuers should
+determine how specific securities requirements may apply to them.
+      </P>
+        <BLOCK2>
+          <TI>B.3.1 Non-GAAP Financial Measures</TI>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of deficient disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.3.1(a)
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="7"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="8"></TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">• Did not explain ho</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            w increased
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            costs are related to COVID-19 and the nature of such costs
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">• Did not explain why this measu</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            r
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            e provides useful information to
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            investors and the additiona
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+            l purposes, if any,
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            management uses the NGM.
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="7"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">• In this case, the Company also benefitted fr</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            om government a
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            ssistance which was not included as an
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            adjustment,
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            making the measure
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            potentially misleading
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            NGMs in a News Release
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="6"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="7"></TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>COMPANY ABC REPORTS NET EARNINGS OF $5 MILLION AND ADJUSTED EBITDA OF $14 M</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Net Earnings decreased 58% from the same period in the prior year to $5M</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Adjusted EBITDA decreased 12% from the same period in the prior year to $14M.</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>
+        *Adjusted EBITDA is a non-GAAP financial measure that is adjusted to exclude amounts that are outside the
+Company’s normal activities. For more information, refer to the section on Non-GAAP Financial Measures at the
+end of this news release, and below for a reconciliation of adjusted EBITDA to the most comparable GAAP
+measure.
+      </P>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="57" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="20" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="23" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            
+              XX, 2020
+            
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            
+              XX, 2019
+            
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="57" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="20" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="23" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Net earnings
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $5M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            $12M
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Interest
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $2M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            $1M
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Depreciation
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            
+              $3M
+            
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            
+              $3M
+            
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            EBITDA
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $10M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            $16M
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Increased costs due to COVID-19 (1)
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            
+              $4M
+            
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            -
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              ADJUSTED EBITDA
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>
+              $14M
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              $16M
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>
+        1. The increased costs are due to the COVID-19 pandemic.
+      </P>
+        </BLOCK2>
+        <BLOCK2>
+          <TI>Example of improved disclosure</TI>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              EXAMPLE B.3.1(b)
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5"></TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> The below</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            focuses on a few
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            aspects of the expectations f
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            or NGMs.
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Issuers</TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            should
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            refer to th
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="4">
+            e guidance in SN 52-306 in
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="5">
+            preparing disclosure documents
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            NGMs in a News Release
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              COMPANY ABC REPORTS NET EARNINGS OF $5 MILLION AND ADJUSTED EBITDA OF $14
+MILLION
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Net Earnings decreased 58% from the same period in the prior year to $5M
+ Adjusted EBITDA decreased 12% from the same period in the prior year to $14M.</TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>
+        * Adjusted EBITDA is a Non-GAAP Financial Measure adjusted to exclude amounts that are outside the
+Company’s normal activities. For more information, refer to the section on Non-GAAP Financial Measures at the
+end of this news release, and below for a reconciliation of adjusted EBITDA to the most comparable GAAP
+measure.
+      </P>
+          <BLOCK3 LABEL="Table">
+            <TMPTABLE>
+              <SGMLTBL>
+                <TBLHEAD TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="60" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="22" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1"></TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            
+              XX, 2020
+            
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            
+              XX, 2019
+            
+          </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLHEAD>
+                <TBLBODY TBLWD="600">
+                  <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                    <TBLCDEF COLWD="60" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="18" TBLUNITS="PERCENT" />
+                    <TBLCDEF COLWD="22" TBLUNITS="PERCENT" />
+                  </TBLCDEFS>
+                  <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Net earnings
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $5M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            $12M
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Interest
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $2M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            $1M
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Depreciation
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            
+              $3M
+            
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            
+              $3M
+            
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            EBITDA
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $10M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            $16M
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Restructuring costs related to COVID-19
+(1)
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $4M
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            -
+          </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Government subsidies (2)
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            $(2M)
+          </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              -
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                    <TBLROW>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                        <BOLD>
+              ADJUSTED EBITDA
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                        <BOLD>
+              $12M
+            </BOLD>
+                      </TBLCELL>
+                      <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+                        <BOLD>
+              $16M
+            </BOLD>
+                      </TBLCELL>
+                    </TBLROW>
+                  </TBLROWS>
+                </TBLBODY>
+              </SGMLTBL>
+            </TMPTABLE>
+          </BLOCK3>
+          <P>1. As a result of the COVID-19 pandemic, management expects decreased demand for our products for the
+remainder of 2020 and 2021. As a result, management has reorganized its operations to streamline
+production and reduce head office staff. These restructuring costs include the cost of laying off XX
+employees and the cost of shifting the majority of the production to manufacturing plant A. Additional
+restructuring costs are expected in Q1,2021, although the majority of the restructuring costs have already
+been incurred. Please refer to the COVID-19 impact section of the company’s MD&amp;A and the restructuring
+costs note in the financial statements, filed concurrently with this news release, for additional details on the
+impact of COVID-19 on the company’s operations.</P>
+          <P>2. The Company received government assistance from the Canada Emergency Wage Subsidy program
+(CEWS). During Q3, 2020, the Company recorded $2M of wage subsidies as a reduction of salary expenses.
+More information about government assistance is included in the MD&amp;A.</P>
+        </BLOCK2>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Questions</TI>
+        <P>
+        Please refer your questions to any of the following:
+      </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="44" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="56" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Jodie Hancock
+Senior Accountant, Corporate Finance
+Ontario Securities Commission
+416-593-2316
+            
+
+            
+              
+                j
+              
+              
+                hancock
+              
+              
+                @osc.gov.on.ca
+              
+            
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Stacy Cao
+Accountant, Corporate Finance
+Ontario Securities Commission
+416-597-7246
+            
+
+            
+              
+                scao@osc.gov.on.ca
+              
+            
+          </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="44" TBLUNITS="PERCENT" />
+                  <TBLCDEF COLWD="56" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Allan Lim
+Manager
+British Columbia Securities Commission
+604-899-6780
+            
+
+            
+              
+                alim@bcsc.bc.ca
+              
+            
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Anthony Potter
+Manager, Corporate Disclosure &amp; Financial Analysis
+Alberta Securities Commission
+403-297-7960
+            
+
+            
+              
+                Anthony.Potter@asc.ca
+              
+            
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Heather Kuchuran
+Director, Corporate Finance
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Wayne Bridgeman
+Deputy Director, Corporate Finance
+Manitoba Securities Commission
+204-945-4905
+            
+
+            
+              
+                wayne.bridgeman@gov.mb.ca
+              
+            
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Financial and Consumer Affairs Authority of
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Saskatchewan
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            306-787-1009
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            
+              heather.kuchuran@gov.sk.ca
+            
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Nadine Gamelin
+Senior Analyst, Financial Information
+Autorité des marchés financiers
+514-395-0337, ext. 4417
+            
+
+            
+              
+                nadine.gamelin@lautorite.qc.ca
+              
+            
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Geneviève Laporte
+Analyst, Financial Information
+Autorité des marchés financiers
+514-395-0337
+            
+
+            
+              
+                genevieve.laporte@lautorite.qc.ca
+              
+            
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Frank McBrearty
+Senior Legal Counsel
+          </TBLCELL>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+            Junjie (Jack) Jiang
+Securities Analyst, Corporate Finance
+Nova Scotia Securities Commission
+902-424-7059
+jack.jiang@novascotia.ca
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Financial and Consumer Services Commission
+          </TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            (New Brunswick)
+506-658-3119
+            
+
+            
+              
+                Frank.McBrearty@fcnb.ca
+              
+            
+          </TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+      </BLOCK1>
+    </FREEFORM>
+  </POLIDOC>
+</ROOT>

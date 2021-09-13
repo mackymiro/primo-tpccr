@@ -225,22 +225,33 @@ include ("sideBar.php");
                       $getFilePaths = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$getFilePath'";
                       $getResults = odbc_exec($conWMS, $getFilePaths);
 
-                      $sql = "SELECT Ref FROM tbl_tpccr_outlook_files where Id =".$getFilePath;
+                      $sql = "SELECT Ref, Source_Type FROM tbl_tpccr_outlook_files where Id =".$getFilePath;
                       $res=odbc_exec($conWMS,$sql);	
                       $data = odbc_fetch_array($res);
+
 
                       $getInventoryFlag = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$getFilePath' AND ProductType='Inventory'";
                       $getInventory = odbc_exec($conWMS, $getInventoryFlag);
 
                       $dataI = odbc_fetch_array($getInventory);
+
+                      $getEmailNotif = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$getFilePath' AND ProductType='null'";
+                      $getEmailN = odbc_exec($conWMS, $getEmailNotif);
+
+                      $dataN = odbc_fetch_array($getEmailN);
                     ?>
                     <br />
                     <br />
-
+                    <?php 
+                      $dataExplode = $data['Ref'];
+                      $dataExplode1 = explode('-', $dataExplode);
+                                       
+                    ?>
 					
                     <form id="InventoryFiles" name="InventoryFiles" action="updateInventory.php" method="post">
-					
-                    <table width="30%" id='table' border=0 >
+
+                   <?php if($dataExplode1[0] != "Ref"): ?>
+                    <table width="30%" id='table' border='0'>
                       <tr>
                         <td>
                           <?php if(!empty($getFilePath)): ?>
@@ -254,12 +265,21 @@ include ("sideBar.php");
                         </td>
                       </tr>
                     </table>
+                    <?php endif;  ?>
                     <br/> 
+                    <h3>Source Type: <?= $data['Source_Type']; ?></h3>
                     <h4>Ref Source Path: <?= $mydir ; ?>/<?= $data['Ref']?></h4>  
-                    <br />
-                    <p style="font-size:15px;">Open this inventory sheet here.</p>
-                    
-                    <a target="_blank" style="font-size:20px;"href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= $dataI['flag']?>/<?= $dataI['DocFilename'];?>"><?= $dataI['DocFilename'];?></a>
+                   
+                    <?php if($data['Source_Type'] != "FTP"): ?>
+                      <p style="font-size:15px;">Open this inventory sheet here.</p>
+                    <?php endif;?>
+                    <?php if($dataExplode1[0] == "Ref"): ?>
+                      <a target="_blank" style="font-size:20px;"href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= $dataN['flag']?>/<?= $dataN['DocFilename'];?>"><?= $dataN['DocFilename'];?></a>
+                   
+                    <?php else: ?>
+                      <a target="_blank" style="font-size:20px;"href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= $dataI['flag']?>/<?= $dataI['DocFilename'];?>"><?= $dataI['DocFilename'];?></a>
+                   
+                    <?php endif; ?>
                     <br />
                     <?php if(isset($_SESSION['updateInventory'])): ?>
                     <div class="alert alert-success " role="alert">
@@ -270,14 +290,21 @@ include ("sideBar.php");
                     </div>
                     <?php endif; ?>
                     <br />
+                    <?php if($dataExplode1[0] != "Ref"): ?>
                     <table id="example3" class="hoverTable table">
                         <thead>
                             <tr>
                               <td class="bg bg-success">DocFileName</td>
-                              <td class="bg bg-success">Data</td>
-                              <td class="bg bg-success">Pages</td>
+                              <?php if($data['Source_Type'] != "CandyCane"): ?>
+                                  <td class="bg bg-success">Data</td>
+                              <?php endif; ?>
+                              <td class="bg bg-success">Pages (input e.g 1-10)</td>
                               <td class="bg bg-success">Number Of Pages</td>
-                              <td class="bg bg-success">Product Type</td>
+                              <?php if($data['Source_Type'] == "CandyCane"): ?>
+                                <td class="bg bg-success">Document Type</td>
+                              <?php else:?>
+                                <td class="bg bg-success">Product Type</td>
+                              <?php endif; ?>
                               <td class="bg bg-success">INIT ID</td>
                               <td class="bg bg-success">TI_content</td>
                               <td class="bg bg-success">N_content</td>
@@ -300,14 +327,77 @@ include ("sideBar.php");
                         <tbody>
                             <?php while(odbc_fetch_row($getResults)): ?>  
                             <?php if(!empty(odbc_result($getResults, "DocFilename"))): ?>
+                            <?php if(odbc_result($getResults, "ProductType") != "Inventory"): ?>
                             <tr id="<?= odbc_result($getResults, "Id"); ?>">
                                 <td><a href="https://docs.google.com/viewerng/viewer?url=https://13.229.35.164/primotpccr/TPCCR-Inventory/<?= odbc_result($getResults, "flag")?>/<?= odbc_result($getResults, "DocFilename")?>"  target="_blank"><?= odbc_result($getResults, "DocFilename"); ?></a></td>
+                                <?php if($data['Source_Type'] != "CandyCane"): ?>
                                 <td><textarea placeholder="Data" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][data]"><?= odbc_result($getResults, "Data"); ?></textarea></td>
-                               
+                                <?php endif; ?>
                                 <td><input type="text" placeholder="Pages" onkeyup="getPages(<?= odbc_result($getResults, 'Id'); ?>)" class="form-control" id="pages<?= odbc_result($getResults, "Id"); ?>" name="data[<?= odbc_result($getResults, "Id"); ?>][pages]" value="<?= odbc_result($getResults, "Pages"); ?>" /> </td>
                                 <td><input type="text" readonly="readonly" placeholder="Number Of Pages" class="form-control" id="numberOfPages<?= odbc_result($getResults, "Id"); ?>" name="data[<?= odbc_result($getResults, "Id"); ?>][numberOfPages]" value="<?= odbc_result($getResults, "NumberOfPages"); ?>" ></td>
                                 <td>
-                                    <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
+                                    <?php if($data['Source_Type'] == "CandyCane"): ?>
+                                        <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
+                                            <option value="">-- SELECT PRODUCT TYPE --</option>
+                                            <option value="BUDGET DOCUMENTS" <?= (odbc_result($getResults, "ProductType") == "1") ? ' selected="selected"' : '';?>>BUDGET DOCUMENTS</option>
+                                            <option value="CANADA BORDER MEMORANDA" <?= (odbc_result($getResults, "ProductType") ==  "2") ? ' selected="selected"' : '';?>>CANADA BORDER MEMORANDA</option>
+                                            <option value="CANADIAN TAX HIGHLIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "3") ? ' selected="selected"' : '';?>>CANADIAN TAX HIGHLIGHTS</option>
+                                            <option value="COMMENTARY DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "4") ? ' selected="selected"' : '';?>>COMMENTARY DOCUMENTS</option>
+                                            <option value="CORPORATE TAX DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "5") ? ' selected="selected"' : '';?>>CORPORATE TAX DOCUMENTS</option>
+                                            <option value="CRA DOCUMENTS / POLICY DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "6") ? ' selected="selected"' : '';?>>CRA DOCUMENTS / POLICY DOCUMENTS</option>
+                                            <option value="FEDERAL DEPARTMENT OF FINANCE" <?= (odbc_result($getResults, "ProductType") ==  "7") ? ' selected="selected"' : '';?>>FEDERAL DEPARTMENT OF FINANCE</option>
+                                            <option value="GST CASE NOTES" <?= (odbc_result($getResults, "ProductType") ==  "8") ? ' selected="selected"' : '';?>>GST CASE NOTES</option>
+                                            <option value="GST TIMES" <?= (odbc_result($getResults, "ProductType") ==  "9") ? ' selected="selected"' : '';?>>GST TIMES</option>
+                                            <option value="NEWSLETTERS" <?= (odbc_result($getResults, "ProductType") ==  "10") ? ' selected="selected"' : '';?>>NEWSLETTERS</option>
+                                            <option value="POUNDS TAX CASE NOTES" <?= (odbc_result($getResults, "ProductType") ==  "11") ? ' selected="selected"' : '';?>>POUNDS TAX CASE NOTES</option> 
+                                            <option value="TAX HYPERION" <?= (odbc_result($getResults, "ProductType") ==  "12") ? ' selected="selected"' : '';?>>TAX HYPERION</option>
+                                            <option value="TAX TIMES" <?= (odbc_result($getResults, "ProductType") ==  "13") ? ' selected="selected"' : '';?>>TAX TIMES</option>
+                                            <option value="TEI (Tax Executives Institute, Inc.) COMMENTARY" <?= (odbc_result($getResults, "ProductType") ==  "14") ? ' selected="selected"' : '';?>>TEI (Tax Executives Institute, Inc.) COMMENTARY</option> 
+                                            <option value="PROVINCIAL DOCUMENTS"  <?= (odbc_result($getResults, "ProductType") ==  "15") ? ' selected="selected"' : '';?>>PROVINCIAL DOCUMENTS</option>
+                                            <option value="TREATIES/CONVENTIONS" <?= (odbc_result($getResults, "ProductType") ==  "16") ? ' selected="selected"' : '';?>>TREATIES/CONVENTIONS</option>
+                                            <option value="REMISSIONS/REMISSION ORDERS" <?= (odbc_result($getResults, "ProductType") ==  "17") ? ' selected="selected"' : '';?>>REMISSIONS/REMISSION ORDERS</option> 
+                                            <option value="PRIVATE LETTER RULINGS" <?= (odbc_result($getResults, "ProductType") ==  "18") ? ' selected="selected"' : '';?>>PRIVATE LETTER RULINGS</option>
+                                            <option value="PRACTICAL INSIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "19") ? ' selected="selected"' : '';?>>PRACTICAL INSIGHTS</option>
+                                        </select>
+
+                                    <?php elseif($data['Source_Type'] == "GenCon"): ?>
+                                      <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
+                                        <option value="">-- SELECT PRODUCT TYPE --</option>
+                                        <option value="Specs" <?= (odbc_result($getResults, "ProductType") ==  "Specs") ? ' selected="selected"' : '';?>>Specs</option>
+                                        <option value="Inventory" <?= (odbc_result($getResults, "ProductType") ==  "Inventory") ? ' selected="selected"' : '';?>>Inventory</option>                           
+                                      </select> 
+                                    <?php elseif($data['Source_Type'] == "Proofs"): ?>
+                                      <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
+                                        <option value="">-- SELECT PRODUCT TYPE --</option>
+                                        <option value="INSOLVENCY"<?= (odbc_result($getResults, "ProductType") ==  "INSOLVENCY") ? ' selected="selected"' : '';?>>INSOLVENCY</option>
+                                        <option value="CDROM"<?= (odbc_result($getResults, "ProductType") ==  "CDROM") ? ' selected="selected"' : '';?>>CDROM</option>
+                                        <option value="CED"<?= (odbc_result($getResults, "ProductType") ==  "CED") ? ' selected="selected"' : '';?>>CED</option>
+                                        <option value="CIVIL"<?= (odbc_result($getResults, "ProductType") ==  "CIVIL") ? ' selected="selected"' : '';?>>CIVIL</option>
+                                        <option value="CRIMINAL"<?= (odbc_result($getResults, "ProductType") ==  "CRIMINAL") ? ' selected="selected"' : '';?>>CRIMINAL</option>
+                                        <option value="ESTATES"<?= (odbc_result($getResults, "ProductType") ==  "ESTATES") ? ' selected="selected"' : '';?>>ESTATES</option>
+                                        <option value="FAMILY"<?= (odbc_result($getResults, "ProductType") ==  "FAMILY") ? ' selected="selected"' : '';?>>FAMILY</option>
+                                        <option value="FILELAW"<?= (odbc_result($getResults, "ProductType") ==  "FILELAW") ? ' selected="selected"' : '';?>>FILELAW</option>
+                                        <option value="GST" <?= (odbc_result($getResults, "ProductType") ==  "GST") ? ' selected="selected"' : '';?>>GST</option>
+                                        <option value="IPSOURCE" <?= (odbc_result($getResults, "ProductType") ==  "IPSOURCE") ? ' selected="selected"' : '';?>>IPSOURCE</option>
+                                        <option value="LAB-ONLINELEGALSMG" <?= (odbc_result($getResults, "ProductType") ==  "LAB-ONLINELEGALSMG") ? ' selected="selected"' : '';?>>LAB-ONLINELEGALSMG</option>
+                                        <option value="LAWREPORTS" <?= (odbc_result($getResults, "ProductType") ==  "LAWREPORTS") ? ' selected="selected"' : '';?>>LAWREPORTS</option>
+                                        <option value="LITIGATION" <?= (odbc_result($getResults, "ProductType") ==  "LITIGATION") ? ' selected="selected"' : '';?>>LITIGATION</option>
+                                        <option value="MONTREAL-LEGIS" <?= (odbc_result($getResults, "ProductType") ==  "MONTREAL-LEGIS") ? ' selected="selected"' : '';?>>MONTREAL-LEGIS</option>
+                                        <option value="PRINT" <?= (odbc_result($getResults, "ProductType") ==  "PRINT") ? ' selected="selected"' : '';?>>PRINT</option>
+                                        <option value="PROVIEW"<?= (odbc_result($getResults, "ProductType") ==  "PROVIEW") ? ' selected="selected"' : '';?>>PROVIEW</option>
+                                        <option value="SECURITIES" <?= (odbc_result($getResults, "ProductType") ==  "SECURITIES") ? ' selected="selected"' : '';?>>SECURITIES</option>
+                                        <option value="TAXPRO" <?= (odbc_result($getResults, "ProductType") ==  "TAXPRO") ? ' selected="selected"' : '';?>>TAXPRO</option>
+                                      </select> 
+                                    
+                                    <?php elseif($data['Source_Type'] == "FTP"): ?>
+                                      <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
+                                        <option value="">-- SELECT PRODUCT TYPE --</option>
+                                        <option value="BCSC"<?= (odbc_result($getResults, "ProductType") ==  "BCSC") ? ' selected="selected"' : '';?>>BCSC</option>
+                                        <option value="CDROM"<?= (odbc_result($getResults, "ProductType") ==  "OSCB") ? ' selected="selected"' : '';?>>OSCB</option>
+                                      </select>
+
+                                    <?php else:?>
+                                      <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
                                         <option value="">-- SELECT PRODUCT TYPE --</option>
                                         <option value="Specs" <?= (odbc_result($getResults, "ProductType") ==  "Specs") ? ' selected="selected"' : '';?>>Specs</option>
                                         <option value="Inventory" <?= (odbc_result($getResults, "ProductType") ==  "Inventory") ? ' selected="selected"' : '';?>>Inventory</option>                           
@@ -330,26 +420,10 @@ include ("sideBar.php");
                                         <option value="PROVIEW"<?= (odbc_result($getResults, "ProductType") ==  "PROVIEW") ? ' selected="selected"' : '';?>>PROVIEW</option>
                                         <option value="SECURITIES" <?= (odbc_result($getResults, "ProductType") ==  "SECURITIES") ? ' selected="selected"' : '';?>>SECURITIES</option>
                                         <option value="TAXPRO" <?= (odbc_result($getResults, "ProductType") ==  "TAXPRO") ? ' selected="selected"' : '';?>>TAXPRO</option>
-                                        <option value="BUDGET DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "BUDGET DOCUMENTS") ? ' selected="selected"' : '';?>>BUDGET DOCUMENTS</option>
-                                        <option value="CANADA BORDER MEMORANDA" <?= (odbc_result($getResults, "ProductType") ==  "CANADA BORDER MEMORANDA") ? ' selected="selected"' : '';?>>CANADA BORDER MEMORANDA</option>
-                                        <option value="CANADIAN TAX HIGHLIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "CANADIAN TAX HIGHLIGHTS") ? ' selected="selected"' : '';?>>CANADIAN TAX HIGHLIGHTS</option>
-                                        <option value="COMMENTARY DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "COMMENTARY DOCUMENTS") ? ' selected="selected"' : '';?>>COMMENTARY DOCUMENTS</option>
-                                        <option value="CORPORATE TAX DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "CORPORATE TAX DOCUMENTS") ? ' selected="selected"' : '';?>>CORPORATE TAX DOCUMENTS</option>
-                                        <option value="CRA DOCUMENTS / POLICY DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "CRA DOCUMENTS / POLICY DOCUMENTS") ? ' selected="selected"' : '';?>>CRA DOCUMENTS / POLICY DOCUMENTS</option>
-                                        <option value="FEDERAL DEPARTMENT OF FINANCE" <?= (odbc_result($getResults, "ProductType") ==  "FEDERAL DEPARTMENT OF FINANCE") ? ' selected="selected"' : '';?>>FEDERAL DEPARTMENT OF FINANCE</option>
-                                        <option value="GST CASE NOTES" <?= (odbc_result($getResults, "ProductType") ==  "GST CASE NOTES") ? ' selected="selected"' : '';?>>GST CASE NOTES</option>
-                                        <option value="GST TIMES" <?= (odbc_result($getResults, "ProductType") ==  "GST TIMES") ? ' selected="selected"' : '';?>>GST TIMES</option>
-                                        <option value="NEWSLETTERS" <?= (odbc_result($getResults, "ProductType") ==  "NEWSLETTERS") ? ' selected="selected"' : '';?>>NEWSLETTERS</option>
-                                        <option value="POUNDS TAX CASE NOTES" <?= (odbc_result($getResults, "ProductType") ==  "POUNDS TAX CASE NOTES") ? ' selected="selected"' : '';?>>POUNDS TAX CASE NOTES</option> 
-                                        <option value="TAX HYPERION" <?= (odbc_result($getResults, "ProductType") ==  "TAX HYPERION") ? ' selected="selected"' : '';?>>TAX HYPERION</option>
-                                        <option value="TAX TIMES" <?= (odbc_result($getResults, "ProductType") ==  "TAX TIMES") ? ' selected="selected"' : '';?>>TAX TIMES</option>
-                                        <option value="TEI (Tax Executives Institute, Inc.) COMMENTARY" <?= (odbc_result($getResults, "ProductType") ==  "TEI (Tax Executives Institute, Inc.) COMMENTARY") ? ' selected="selected"' : '';?>>TEI (Tax Executives Institute, Inc.) COMMENTARY</option> 
-                                        <option value="PROVINCIAL DOCUMENTS"  <?= (odbc_result($getResults, "ProductType") ==  "PROVINCIAL DOCUMENTS") ? ' selected="selected"' : '';?>>PROVINCIAL DOCUMENTS</option>
-                                        <option value="TREATIES/CONVENTIONS" <?= (odbc_result($getResults, "ProductType") ==  "TREATIES/CONVENTIONS") ? ' selected="selected"' : '';?>>TREATIES/CONVENTIONS</option>
-                                        <option value="REMISSIONS/REMISSION ORDERS" <?= (odbc_result($getResults, "ProductType") ==  "REMISSIONS/REMISSION ORDERS") ? ' selected="selected"' : '';?>>REMISSIONS/REMISSION ORDERS</option> 
-                                        <option value="PRIVATE LETTER RULINGS" <?= (odbc_result($getResults, "ProductType") ==  "PRIVATE LETTER RULINGS") ? ' selected="selected"' : '';?>>PRIVATE LETTER RULINGS</option>
-                                        <option value="PRACTICAL INSIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "PRACTICAL INSIGHTS") ? ' selected="selected"' : '';?>>PRACTICAL INSIGHTS</option>
-                                    </select>
+                                      </select>
+
+                                    <?php endif; ?>
+                                    
                                 </td>
                                 <td><textarea placeholder="INIT ID"class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][initId]"><?= odbc_result($getResults, "INITID"); ?></textarea></td>
                                 <td><textarea placeholder="TI Content"class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][tiContent]"><?= odbc_result($getResults, "TI_content"); ?></textarea></td>
@@ -392,10 +466,12 @@ include ("sideBar.php");
                                 -->
                             </tr>
                             <?php endif; ?>
+                            <?php endif; ?>
                            
                             <?php endwhile; ?>
                         </tbody>
                     </table>
+                    <?php endif; ?>
                     <input type="hidden" name="getUrl" value="<?= $getFilePath; ?>" />
                     </form>
                    

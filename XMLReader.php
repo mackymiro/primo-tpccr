@@ -40,8 +40,14 @@ $Filename=$_POST['data'];
 	//$XMLFile = str_replace("</para><para>", "</para>\r\n<para>", $XMLFile);
 	//$XMLFile = str_replace( "\r\n</para>","</para>", $XMLFile);
 
-	$string = str_replace("/<[^/>][^>]*><\/[^>]+>/", "", $XMLFile);
-	echo trim($string);
+	$reformatted_xml = preg_replace('/\h+/', ' ', $XMLFile); //multiple spaces
+    $reformatted_xml = preg_replace('/^[ \t]*[\r\n]+/m', '', $reformatted_xml);// remove multiple blank new line and tab
+    $reformatted_xml = preg_replace('/( <)/', "<", $reformatted_xml); //remove space before start tag
+    $reformatted_xml = preg_replace('/>\s+/', '>', $reformatted_xml); //multiple spaces
+    $reformatted_xml = preg_replace('/><+/', '>'.PHP_EOL.'<', $reformatted_xml); //set new line for new tags
+
+	//$string = str_replace("/<[^/>][^>]*><\/[^>]+>/", "", $XMLFile);
+	echo trim($reformatted_xml);
 // }
 
 

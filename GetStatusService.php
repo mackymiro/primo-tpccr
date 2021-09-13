@@ -4,6 +4,7 @@ include "conn.php";
 $JobID=$_POST['data'];
 $filename = $_POST['filename'];
 
+
 $batchIds = $_POST['BatchID']; 
 $sqlRef = "SELECT * FROM primo_view_Jobs WHERE BatchId=$batchIds";
 $getDataResult = odbc_exec($conWMS, $sqlRef);

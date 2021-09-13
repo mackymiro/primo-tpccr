@@ -221,6 +221,7 @@ include ("sideBar.php");
                   <th>Status</th>
                   <th>User</th>
                   <th>Last Update</th>
+                
                 </tr>
                 </thead>
                 <tbody>
@@ -259,23 +260,23 @@ include ("sideBar.php");
 				$objExec= odbc_exec($conWMS,$strSQL);
 				
 				 $Jobname='';
-				while ($row = odbc_fetch_array($objExec)) 
-				{
-				$filename="uploadFiles/".$row["Filename"];
-        $processCode = $row['ProcessCode'];
-				//$objResult=odbc_fetch_array($objExec,$i);   
-			 
-				?>
-                <tr>
+          while ($row = odbc_fetch_array($objExec)) 
+          {
+          $filename="uploadFiles/".$row["Filename"];
+          $processCode = $row['ProcessCode'];
+          //$objResult=odbc_fetch_array($objExec,$i);   
+        
+          ?>
+          <tr>
 
-				<?php
+          <?php
 
-				if ($_SESSION['UserType']=='Admin'){
-				?>
-					<td> <input type="Checkbox" id="chk" name="chk[]" value="<?php echo $row["BatchId"];?>"></td>
-				<?php
-				}
-        $Title=$row["Title"];
+          if ($_SESSION['UserType']=='Admin'){
+          ?>
+            <td> <input type="Checkbox" id="chk" name="chk[]" value="<?= $row["BatchId"];?>"></td>
+          <?php
+          }
+          $Title=$row["Title"];
         // $sTitle =iconv("UTF-8", "ISO-8859-1", $Title);
 
 
@@ -299,6 +300,7 @@ include ("sideBar.php");
                   <td><?= $processCode; ?></td>
                   <td><?= $row["AssignedTo"];?></td> 
 				          <td><?= $row["LastUpdate"];?></td> 
+                
 				  </tr>
 				<?php
 			 
@@ -308,17 +310,17 @@ include ("sideBar.php");
                 
               </table>
 			  
-			  <?php
-					if ($_SESSION['UserType']=='Admin'){
-						?>
-				 <p align="right">
-          <input type="checkbox" name="SubmitToSniffing"  checked> Submit to sniffing 
-				    <button type="submit" class="btn btn-warning"><i class="fa  fa-send"></i> Deliver</button></p>
-				  <?php
-					}
-					?>
-           <a href="ExportToexcel.php" onclick="return theFunction();" target="_blank" class="pull-right">Export To Excel</a> 
-            </div>
+              <?php
+                if ($_SESSION['UserType']=='Admin'){
+                  ?>
+              <p align="right">
+                <input type="checkbox" name="SubmitToSniffing"  checked> Submit to sniffing 
+                  <button type="submit" class="btn btn-warning"><i class="fa  fa-send"></i> Deliver</button></p>
+                <?php
+                }
+                ?>
+                <a href="ExportToexcel.php" onclick="return theFunction();" target="_blank" class="pull-right">Export To Excel</a> 
+              </div>
             </form>
             <!-- /.box-body -->
            

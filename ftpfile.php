@@ -153,10 +153,24 @@
             </div>
             <div class="box-body">
                  <h2>FTP files</h2>
+               
                  <?= "<p style='color:green; font-size:18px; font-weight:bold;'>".$_SESSION['succSave']."</p>"; ?>
                       
                  <?php $path = $_GET['path']; ?>
                  <?php $getFullPath = $_GET['getFullPath']; ?>
+                 <?php
+                      if($path == ""){
+                          $files = $sftp->nlist('/TO_INNO/CONVERSION/');
+                      }else{
+                          $files = $sftp->nlist('/TO_INNO/CONVERSION/'.$path);
+                      }
+
+                      if($getFullPath){
+                          $getFullFiles =  $sftp->nlist($getFullPath);
+       
+                      }
+                      
+                  ?>
                  <br />
                  <br />
                  <?php if($path ): ?>
@@ -165,22 +179,96 @@
                 
                  <?php if($getFullPath ): ?>
                   <p style="font-size:18px;">File path: <?= $getFullPath; ?></p> 
+                  <?php if(isset($_POST['submitDownload'])): ?>
+                    <?php
+                        $sftp->setTimeout(300);
+                        $fExpD = explode('/', $getFullPath);
+
+                        $fExp3d = $fExpD[3];
+                        $fExp4d = $fExpD[4];
+                        $fileConCatD = $fExp3d."-".$fExp4d;
+                      
+                        mkdir("TPCCR-Inventory/".$fileConCatD);
+                     
+                       foreach($_POST['fileHiddenDownload'] as $valueDownload){
+                            $fileNameDownload = $getFullPath."/".$valueDownload;
+                          
+                            $local_file_pathD = "TPCCR-Inventory/".$fileConCatD."/".$valueDownload;
+                          
+                            $sftp->get($fileNameDownload, $local_file_pathD);
+
+                            $created_at = date('Y-m-d H:i:s');
+                            $updated_at = date('Y-m-d H:i:s');
+
+                            $querySqlDownload = "SELECT * FROM tbl_tpccr_outlook_files WHERE Ref='$fileConCatD'";
+                            $queryResultDownload = odbc_exec($conWMS, $querySqlDownload);
+                            $dataGetDownload = odbc_fetch_array($queryResultDownload);
+                            $getDataIdDownload = $dataGetDownload['Id']; 
+                            
+
+                            if(odbc_num_rows($queryResultDownload) > 0){
+                              //
+                            }else{
+                                 //insert data to tpccr_outlook_files
+                                 $sqlInsertDownload = "INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, Delivery_Date, No_of_files, Source_Type, Source_path, created_at, updated_at)
+                                 VALUES('$fileConCatD', '$fileConCatD', '$fileConCatD', '1', '$created_at', '1', 'FTP', '0', '$created_at', '$updated_at')";
+                                 $resD = ExecuteQuerySQLSERVER($sqlInsertDownload,$conWMS);
+
+                                 $querySqlD = "SELECT * FROM tbl_tpccr_outlook_files WHERE Ref='$fileConCatD'";
+                                 $queryResultDownload1 = odbc_exec($conWMS, $querySqlD);
+                                 $dataGetDownload1 = odbc_fetch_array($queryResultDownload1);
+                                 $getDataIdDownload1 = $dataGetDownload1['Id']; 
+
+                                 $insertInventoryD = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                 VALUES('$getDataIdDownload1', '$valueDownload', '0', '$fileConCatD', '0', '0', 'null', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', 'null',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                 $res1D = ExecuteQuerySQLSERVER($insertInventoryD, $conWMS);
+
+
+
+                            }
+
+                            if(odbc_num_rows($queryResultDownload)){
+                                //
+                                $insertInventoryD = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate, FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                VALUES('$getDataIdDownload', '$valueDownload', '0', '$fileConCatD', '0', '0', 'null', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', 'null',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                $res1D = ExecuteQuerySQLSERVER($insertInventoryD, $conWMS);
+                            }
+
+
+                            $_SESSION['messageDonwload'] = "File Successfully Downloaded Please go to Inventory Page now.";
+                           
+                        }                        
+  
+                    ?>
+                  <?php endif; ?>
+                  <?php if(isset($_SESSION['messageDonwload'])): ?>
+                  <div class="alert alert-success " role="alert">
+                      <strong><?= $_SESSION['messageDonwload']; ?></strong>
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <?php endif;  ?>
+                  <?php unset($_SESSION['messageDonwload']); ?>
+
+                  <form action="" method="post">
+                      <?php foreach($getFullFiles as $fileDownload):  ?>
+
+                          <?php if($fileDownload != "." && $fileDownload != ".."):?>
+                            <?php 
+                                //echo  $fileDownload. '<br />';  
+                            ?>
+                          <input type="hidden" name="fileHiddenDownload[<?= $fileDownload; ?>]" value="<?= $fileDownload; ?>"  />
+                          <?php endif; ?>
+                         
+                      <?php endforeach; ?>
+                      <button type="submit" name="submitDownload" class="btn btn-success">Download All</button>
+                  </form>
+                  <br />
+                  <br />
                  <?php endif;  ?>
                  
-                    <?php
-                        if($path == ""){
-                            $files = $sftp->nlist('/TO_INNO/CONVERSION/');
-                        }else{
-                            $files = $sftp->nlist('/TO_INNO/CONVERSION/'.$path);
-                        }
-
-                        if($getFullPath){
-                            $getFullFiles =  $sftp->nlist($getFullPath);
-
-                           
-                        }
-                        
-                    ?>
+                   
                   
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
@@ -224,6 +312,8 @@
 
                               <?php 
                                   if(isset($_POST['submit'])){
+                                      
+                                      $sftp->setTimeout(300);
                                       $file = $_POST['fileHidden'];
                                       $filename = $getFullPath."/".$_POST['fileHidden'];
 

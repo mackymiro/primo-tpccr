@@ -145,7 +145,7 @@
           <div class="box box-primary">
             <div class="box-header with-border">
                 <h1>No Batch File Found</h1>
-                <a href="Registration.php?page=Acquire">Registration for file</a>
+                <a href="#">Registration for file</a>
             </div>
           
            

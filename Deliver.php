@@ -1,16 +1,17 @@
 <?php
-  include ("conn.php");
-   error_reporting(0);
-    session_start();
+include ("conn.php");
+session_start();
  
 
    if(!empty($_POST['chk'])) {
 		foreach($_POST['chk'] as $check) {
 			$BatchID=$check; 
 
-			// $sqls="Update primo_Integration SET Status='Submitted' Where RecordID='".$BatchID."'";
+			$sqls="Update primo_Integration SET Status='Submitted' Where RecordID='".$BatchID."'";
 			ExecuteQuerySQLSERVER ($sqls,$conWMS);
 			$sql="Select * from primo_view_Jobs Where BatchId='$BatchID'";
+
+
 			 
 			$sFilename= GetWMSValue($sql,'Filename',$conWMS);
 			$Filename= GetWMSValue($sql,'Filename',$conWMS);

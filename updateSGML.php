@@ -735,12 +735,12 @@ function check() {
             <div class="tab-content" >
 		
             <?php
-			$sXML = file_get_contents($sXMLFile);
-			//echo "<pre>";
-			//print_r($sXML);
-			//echo "</pre>";
-			
-			// $sXML =formatXmlString(trim($sXML));
+				$sXML = file_get_contents($sXMLFile);
+				$sXML = preg_replace('/\h+/', ' ', $sXML); //multiple spaces
+				$sXML = preg_replace('/^[ \t]*[\r\n]+/m', '', $sXML);// remove multiple blank new line and tab
+				$sXML = preg_replace('/( <)/', "<", $sXML); //remove space before start tag
+				$sXML = preg_replace('/>\s+/', '>', $sXML); //multiple spaces
+				$sXML = preg_replace('/><+/', '>'.PHP_EOL.'<', $sXML); //set new line for new tags
 			?>
               <!-- /.tab-pane -->
               <div class="tab-pane active" id="tab_1-1"  >

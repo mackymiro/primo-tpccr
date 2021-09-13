@@ -80,34 +80,34 @@ $Task=$_GET['Task'];
           </a>
 
 		  <?php
- 	$sqlInfo1 = "SELECT Count(RefID) as TotalCount From view_Collections ";
- 	//WHERE Isnull(IntegrationID,'')=''
-		
-	$rsInfo = odbc_exec($conWMS,$sqlInfo1);	
-	$ColCount = odbc_result($rsInfo,"TotalCount");
+				$sqlInfo1 = "SELECT Count(RefID) as TotalCount From view_Collections ";
+				//WHERE Isnull(IntegrationID,'')=''
+					
+				$rsInfo = odbc_exec($conWMS,$sqlInfo1);	
+				$ColCount = odbc_result($rsInfo,"TotalCount");
 
 
-	$sqlInfo1 = "SELECT Count(JobID) as TotalCount From primo_view_Jobs WHERE StatusString='NEW' and ProcessCode='Styling'";
-		
-	$rsInfo = odbc_exec($conWMS,$sqlInfo1);	
-	$NewCount = odbc_result($rsInfo,"TotalCount");
-	
+				$sqlInfo1 = "SELECT Count(JobID) as TotalCount From primo_view_Jobs WHERE StatusString='NEW' and ProcessCode='Styling'";
+					
+				$rsInfo = odbc_exec($conWMS,$sqlInfo1);	
+				$NewCount = odbc_result($rsInfo,"TotalCount");
+				
 
-	$sqlInfo2 = "SELECT Count(BatchID) as TotalCount From primo_view_NotRelevant";
-		
-	$rsInfo = odbc_exec($conWMS,$sqlInfo2);	
-	$NewCount1 = odbc_result($rsInfo,"TotalCount");
+				$sqlInfo2 = "SELECT Count(BatchID) as TotalCount From primo_view_NotRelevant";
+					
+				$rsInfo = odbc_exec($conWMS,$sqlInfo2);	
+				$NewCount1 = odbc_result($rsInfo,"TotalCount");
 	
 		  ?>
           <ul class="treeview-menu">
-          	<li class="active"><a href="AcquisitionReport.php?page=Acquire"><i class="fa fa-circle-o"></i>Collection Summary<small class="label pull-right bg-blue"></small></a></li>
+          	<!--<li class="active"><a href="AcquisitionReport.php?page=Acquire"><i class="fa fa-circle-o"></i>Collection Summary<small class="label pull-right bg-blue"></small></a></li>-->
           	 <!-- <li class="active"><a href="Collections.php?page=Acquire"><i class="fa fa-circle-o"></i>Collections <small class="label pull-right bg-blue"><?php echo $ColCount;?></small></a></li> -->
-          	 <li class="active"><a href="Prioritization.php"><i class="fa fa-circle-o"></i>Prioritization <small class="label pull-right bg-blue"></small></a></li>
+          	<!-- <li class="active"><a href="Prioritization.php"><i class="fa fa-circle-o"></i>Prioritization <small class="label pull-right bg-blue"></small></a></li>-->
              <!-- <li class="active"><a href="NewContent.php?page=Acquire"><i class="fa fa-circle-o"></i>New content <small class="label pull-right bg-green"><?php echo $NewCount;?></small></a></li>
               <li class="active"><a href="NotRelevant.php?page=Acquire"><i class="fa fa-question"></i>Not Relevant<small class="label pull-right bg-green"><?php echo $NewCount1;?></small></a></li>-->
               <li class="active"><a href="receiving.php"><i class="fa fa-file"></i>Receiving</a></li>
 			  <li class="active"><a href="ftpfile.php"><i class="fa fa-file"></i>FTP file</a></li>
-			  <li class="active"><a href="downloading.php"><i class="fa fa-file"></i>Downloaded</a></li>
+			  <!--<li class="active"><a href="downloading.php"><i class="fa fa-file"></i>Downloaded</a></li>-->
 			  <li class="active"><a href="inventory.php"><i class="fa fa-file"></i>Inventory</a> </li>
 			  <li class="active"><a href="forSegration.php"><i class="fa fa-file"></i>For Segration files </a></li>
 			  <li class="active"><a href="forPostingfile.php"><i class="fa fa-file"></i>For Posting files </a></li>
@@ -124,6 +124,8 @@ $Task=$_GET['Task'];
 		if ($ENRICH==1){
 			
 		?>
+
+	
 		<li class="<?php echo $ENRICHpage;?>">
           <a href="#" <?php echo $ENRICH;?>>
             <i class="fa fa-spinner"></i> <span>ENRICH</span>
@@ -144,7 +146,6 @@ $Task=$_GET['Task'];
 				{
 					$ProcessCode=$row[0];
 					
-					
 					if ($_SESSION['UserType']=='Admin'){
 						if ($lCode==""){
 							$sql="SELECT * FROM primo_view_Jobs Where ProcessCode='$ProcessCode' and statusstring<>'Done'";	
@@ -161,7 +162,7 @@ $Task=$_GET['Task'];
 				 
 					$rs=odbc_exec($conWMS,$sql);
 					$ctr = odbc_num_rows($rs);
-
+				
 
 				  if ($Task==$ProcessCode){
 				  	$pageActive='active treeview menu-open';
@@ -174,13 +175,23 @@ $Task=$_GET['Task'];
 				  }
 				
 				$ProcessDesc=GetWMSValue("Select Description from wms_Processes Where ProcessCode='".$ProcessCode."'","Description",$conWMS);
+					
 			?>
-					 
+
+			<?php 
+				$processCodeAllow = [
+					'ContentStructure',
+					'CropImageEdit',
+					'Validation'
+				];
+			?>
+			
+			<?php if(in_array($ProcessCode, $processCodeAllow)) :  ?>
 			<li class="<?=$pageActive;?>">
-              <a href="#"><i class="fa fa-book"></i><?php echo $ProcessDesc;?>
+              <a href="#"><i class="fa fa-book"></i><?= $ProcessDesc;?>
                 <span class="pull-right-container">
                   <i class="fa fa-angle-left pull-right"></i>
-				  <span class="label label-primary pull-right"><?php echo $ctr;?></span>
+				  <span class="label label-primary pull-right"><?= $ctr;?></span>
                 </span>
               </a>
               <ul class="treeview-menu">
@@ -206,7 +217,7 @@ $Task=$_GET['Task'];
 					?>
               </ul>
             </li>
-				 
+			<?php endif; ?>
 			<?php
 				  $lCode=$ProcessCode;	 
 				}

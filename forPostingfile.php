@@ -238,7 +238,7 @@
                                 <td><?= odbc_result($FilesData, "ProcessType")?></td>
 								                <td><?= ( odbc_result($FilesData, "WithImageEdit") == 1 ? "Yes" : "") ?></td>
                                 <td>
-                                  <a href="javascript:void(0)" id="postFilewithGG"  data-RefId="<?= odbc_result($FilesData, "RefId")?>" data-Id="<?= odbc_result($FilesData, "Id")?>"  data-ProcessType="<?= odbc_result($FilesData, "ProcessType")?>"  data-WithImageEdit="<?= odbc_result($FilesData, "WithImageEdit")?>"  class="btn btn-success">Post File</a>
+                                  <a href="javascript:void(0)" id="postFilewithGG"  data-RefId="<?= odbc_result($FilesData, "RefId")?>" data-Id="<?= odbc_result($FilesData, "Id")?>"  data-ProcessType="<?= odbc_result($FilesData, "ProcessType")?>"  data-WithImageEdit="<?= odbc_result($FilesData, "WithImageEdit")?>"  class="btn btn-success">Post Filess</a>
                                   
                                 </td>
                                 
@@ -374,8 +374,7 @@
 				
 			},
 			success: function (response) {
-				
-				$('body').waitMe('hide');
+		    $('body').waitMe('hide');
 				
 				if(response === "DONE" ){
 					

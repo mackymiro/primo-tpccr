@@ -3,6 +3,8 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/Config.php');
 require_once(__ROOT__.'/conn.php');
 
+    
+ini_set('max_execution_time', 0);
 
 
 $Ref =  $_POST['Ref'];
@@ -66,8 +68,6 @@ foreach($data as $val)
 }
 
 
-
-
 function withDocSegragete($val,$Ref,$RefId)
 {
 	include('../Config.php');
@@ -86,8 +86,6 @@ function forPosting($val,$Ref,$RefId)
 	$res=odbc_exec($conWMS,$sql);
 	
 }
-
-
 
 
 

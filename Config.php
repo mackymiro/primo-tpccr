@@ -1,4 +1,10 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
+
+use phpseclib3\Net\SFTP;
+
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\IOFactory;
 
 GLOBAL $conSearchnet,$conWMS;
 $Endpoint = "https://52.220.114.60/WMS.Services/WMS.Services.asmx";
@@ -7,8 +13,11 @@ $Mode="SQLDirect"; //API/SQLDirect
 $GGUserName = 'hj1@innodata.com';
 $GGPassword='test@1qaz';
 $GGProductionMode='OFF';//ON or OFF;
-$GGTaxonomyZoning = "legal-bu-zoning-taxonomy-test-v2.json";
-$GGTaxonomyMapping = "legal-bu-taxonomy-test-v2.json";
+//$GGTaxonomyZoning = "legal-bu-zoning-taxonomy-test-v2.json";
+//$GGTaxonomyMapping = "legal-bu-taxonomy-test-v2.json";
+
+$GGTaxonomyZoning = "19-zones-taxonomy.json";
+$GGTaxonomyMapping = "legal-citations-taxonomy.json";
 
 //job type: data-point-extraction or doc2xml
 $GGJobType = "data-point-extraction";
@@ -19,16 +28,26 @@ $mapping = 1.0;
 $zoning  = 1.0;
 $reading = 0;
 
+imap_timeout(IMAP_OPENTIMEOUT, 300);
+imap_timeout(IMAP_READTIMEOUT, 300);
 
 /* Connecting Gmail server with IMAP */
-$connection = imap_open('{imap.gmail.com:993/imap/ssl}INBOX', 'ask.macky.miro@gmail.com', 'gu3stadmintmp@abc') or die('Cannot connect to Gmail: ' . imap_last_error());
-
+$connection = imap_open('{40.100.54.2:993/imap/ssl/novalidate-cert}INBOX', 'hxn@innodata.com', 'Thankyouniverse1') or die('Cannot connect to Outlook: ' . imap_last_error());
 
 //connnection from FTP server
-$ftp_server = "staging.crm.dnogroup.ph";
-$ftp_username="testing"; //username
-$ftp_userpass="helloworld"; //password
-$ftp_path = "/TO_INNO/CONVERSION"; //file path
+//$ftp_server = "staging.crm.dnogroup.ph";
+//$ftp_username="testing"; //username
+//$ftp_userpass="helloworld"; //password
+//$ftp_path = "/TO_INNO/CONVERSION"; //file path
+
+// SFTP connection 
+$sftp = new SFTP('ftpmnl.innodata.com'); // Replace 'server' with your server ip address, or server name
+
+// Login with username and password
+if (!$sftp->login('TPC01', 'T9ZcoG6s')) { // Replace 'username' and 'password', with your credentials
+    exit('Login Failed');
+}
+
 
 $SourceFilePath = "C:\\XAMPP\\htdocs\\tpccr\\uploadfiles\\SourceFiles\\";
 

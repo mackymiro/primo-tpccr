@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inno:dom xmlns:inno="http://innodatalabs.com/innodom">
+<inno:meta/>
+<inno:content><inno:text id="text-1" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="261.0" x-min="137.0" y-max="57.0" y-min="45.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">Index to Alternative Dispute Resolution</inno:font>
+</inno:b>
+</inno:block></inno:text><inno:text id="text-2" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="261.0" x-min="135.0" y-max="72.0" y-min="59.0">
+<inno:font font-name="Calibri-Italic" font-size="11.00pt">
+<inno:i>(All references are to paragraph numbers.)</inno:i>
+</inno:font>
+</inno:block></inno:text><inno:text id="text-3" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="81.0" x-min="43.0" y-max="98.0" y-min="89.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">arbitration</inno:font>
+</inno:b>
+</inno:block></inno:text><inno:table id="table-1" type="number / bullet list"><inno:block page="1" page-height="512" page-width="396" x-max="215.0" x-min="53.0" y-max="212.0" y-min="103.0">
+<inno:tr row="1">
+<inno:td col="1" colspan="8" id="table-1-1-1" x-max="174.5" x-min="53.0" y-max="114.0" y-min="103.0"><inno:nec bbox="90.1 620.03 95.15 623.96" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">arbitration and conciliation, 14</inno:font></inno:td>
+<inno:td col="2" id="table-1-1-2" x-max="215.0" x-min="174.5" y-max="114.0" y-min="103.0"/>
+</inno:tr>
+<inno:tr row="2">
+<inno:td col="1" id="table-1-2-1" x-max="101.5" x-min="53.0" y-max="122.5" y-min="114.0"><inno:nec bbox="90.1 605.13 95.15 609.06" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">arbitration</inno:font></inno:td>
+<inno:td col="2" id="table-1-2-2" x-max="112.5" x-min="101.5" y-max="122.5" y-min="114.0">
+<inno:font font-name="Calibri" font-size="11.00pt">and</inno:font>
+</inno:td>
+<inno:td col="3" colspan="3" id="table-1-2-3" x-max="143.0" x-min="112.5" y-max="122.5" y-min="114.0">
+<inno:font font-name="Calibri" font-size="11.00pt">valuation,</inno:font>
+</inno:td>
+<inno:td col="4" colspan="2" id="table-1-2-4" x-max="158.05" x-min="143.0" y-max="122.5" y-min="114.0">
+<inno:font font-name="Calibri" font-size="11.00pt">, 5-13</inno:font>
+</inno:td>
+<inno:td col="5" id="table-1-2-5" x-max="174.5" x-min="158.05" y-max="122.5" y-min="114.0"/>
+<inno:td col="6" id="table-1-2-6" x-max="215.0" x-min="174.5" y-max="122.5" y-min="114.0"/>
+</inno:tr>
+<inno:tr row="3">
+<inno:td col="1" colspan="4" id="table-1-3-1" x-max="140.5" x-min="53.0" y-max="133.0" y-min="122.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">definitions, 6</inno:font></inno:td>
+<inno:td col="2" id="table-1-3-2" x-max="143.0" x-min="140.5" y-max="133.0" y-min="122.5"/>
+<inno:td col="3" id="table-1-3-3" x-max="146.95" x-min="143.0" y-max="133.0" y-min="122.5"/>
+<inno:td col="4" id="table-1-3-4" x-max="158.05" x-min="146.95" y-max="133.0" y-min="122.5"/>
+<inno:td col="5" id="table-1-3-5" x-max="174.5" x-min="158.05" y-max="133.0" y-min="122.5"/>
+<inno:td col="6" id="table-1-3-6" x-max="215.0" x-min="174.5" y-max="133.0" y-min="122.5"/>
+</inno:tr>
+<inno:tr row="4">
+<inno:td col="1" colspan="8" id="table-1-4-1" x-max="174.5" x-min="53.0" y-max="143.5" y-min="133.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">distinction between, 5</inno:font></inno:td>
+<inno:td col="2" id="table-1-4-2" x-max="215.0" x-min="174.5" y-max="143.5" y-min="133.0"/>
+</inno:tr>
+<inno:tr row="5">
+<inno:td col="1" colspan="7" id="table-1-5-1" x-max="158.05" x-min="53.0" y-max="152.5" y-min="143.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">factors considered, 8</inno:font></inno:td>
+<inno:td col="2" id="table-1-5-2" x-max="174.5" x-min="158.05" y-max="152.5" y-min="143.5"/>
+<inno:td col="3" id="table-1-5-3" x-max="215.0" x-min="174.5" y-max="152.5" y-min="143.5"/>
+</inno:tr>
+<inno:tr row="6">
+<inno:td col="1" colspan="9" id="table-1-6-1" x-max="215.0" x-min="53.0" y-max="162.5" y-min="152.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">factors indicating arbitration, 10</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="7">
+<inno:td col="1" colspan="9" id="table-1-7-1" x-max="215.0" x-min="53.0" y-max="172.5" y-min="162.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">intention expressed in document, 12</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="8">
+<inno:td col="1" colspan="8" id="table-1-8-1" x-max="174.5" x-min="53.0" y-max="182.5" y-min="172.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">valuation and arbitration, 7</inno:font></inno:td>
+<inno:td col="2" id="table-1-8-2" x-max="215.0" x-min="174.5" y-max="182.5" y-min="172.5"/>
+</inno:tr>
+<inno:tr row="9">
+<inno:td col="1" colspan="2" id="table-1-9-1" x-max="112.5" x-min="53.0" y-max="191.0" y-min="182.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">where</inno:font></inno:td>
+<inno:td col="2" colspan="2" id="table-1-9-2" x-max="140.5" x-min="112.5" y-max="191.0" y-min="182.5">
+<inno:font font-name="Calibri" font-size="11.00pt">valuators</inno:font>
+</inno:td>
+<inno:td col="3" colspan="4" id="table-1-9-3" x-max="174.5" x-min="140.5" y-max="191.0" y-min="182.5">
+<inno:font font-name="Calibri" font-size="11.00pt">considered</inno:font>
+</inno:td>
+<inno:td col="4" id="table-1-9-4" x-max="215.0" x-min="174.5" y-max="191.0" y-min="182.5">
+<inno:font font-name="Calibri" font-size="11.00pt">arbitrators, 9</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="10">
+<inno:td col="1" colspan="3" id="table-1-10-1" x-max="114.05" x-min="53.0" y-max="203.05" y-min="191.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">written</inno:font></inno:td>
+<inno:td col="2" colspan="3" id="table-1-10-2" x-max="146.95" x-min="114.05" y-max="203.05" y-min="191.0">
+<inno:font font-name="Calibri" font-size="11.00pt">agreement</inno:font>
+</inno:td>
+<inno:td col="3" id="table-1-10-3" x-max="158.05" x-min="146.95" y-max="203.05" y-min="191.0">
+<inno:font font-name="Calibri" font-size="11.00pt">not</inno:font>
+</inno:td>
+<inno:td col="4" colspan="2" id="table-1-10-4" x-max="215.0" x-min="158.05" y-max="203.05" y-min="191.0">
+<inno:font font-name="Calibri" font-size="11.00pt">t determinative, 11</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="11">
+<inno:td col="1" colspan="3" id="table-1-11-1" x-max="114.05" x-min="53.0" y-max="212.0" y-min="203.05"><inno:nec bbox="90.1 469.43 95.15 473.36" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">definition, 3, 4</inno:font></inno:td>
+<inno:td col="2" id="table-1-11-2" x-max="140.5" x-min="114.05" y-max="212.0" y-min="203.05"/>
+<inno:td col="3" id="table-1-11-3" x-max="143.0" x-min="140.5" y-max="212.0" y-min="203.05"/>
+<inno:td col="4" id="table-1-11-4" x-max="146.95" x-min="143.0" y-max="212.0" y-min="203.05"/>
+<inno:td col="5" id="table-1-11-5" x-max="158.05" x-min="146.95" y-max="212.0" y-min="203.05"/>
+<inno:td col="6" id="table-1-11-6" x-max="174.5" x-min="158.05" y-max="212.0" y-min="203.05"/>
+<inno:td col="7" id="table-1-11-7" x-max="215.0" x-min="174.5" y-max="212.0" y-min="203.05"/>
+</inno:tr>
+</inno:block></inno:table><inno:text id="text-4" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="104.0" x-min="45.0" y-max="224.0" y-min="215.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">arbitration awards</inno:font>
+</inno:b>
+</inno:block></inno:text><inno:table id="table-2" type="number / bullet list"><inno:block page="1" page-height="512" page-width="396" x-max="256.0" x-min="54.0" y-max="464.0" y-min="230.0">
+<inno:tr row="1">
+<inno:td col="1" colspan="4" id="table-2-1-1" x-max="256.0" x-min="54.0" y-max="251.0" y-min="230.0"><inno:nec bbox="90.1 424.03 95.15 427.96" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">declaration of invalidity, 583, 584<inno:br/><inno:nec bbox="90.1 409.13 95.15 413.06" cid="1" code="0xf0b7" fid="26:0"/> making the award, 361-475</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="2">
+<inno:td col="1" id="table-2-2-1" x-max="70.5" x-min="54.0" y-max="260.0" y-min="251.0"/>
+<inno:td col="2" colspan="3" id="table-2-2-2" x-max="256.0" x-min="70.5" y-max="260.0" y-min="251.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">absence of arbitrator, 390-393</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="3">
+<inno:td col="1" id="table-2-3-1" x-max="70.5" x-min="54.0" y-max="270.0" y-min="260.0"/>
+<inno:td col="2" colspan="3" id="table-2-3-2" x-max="256.0" x-min="70.5" y-max="270.0" y-min="260.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">appeals from decisions of arbitrator referee, 465-475</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="4">
+<inno:td col="1" id="table-2-4-1" x-max="70.5" x-min="54.0" y-max="280.0" y-min="270.0"/>
+<inno:td col="2" colspan="3" id="table-2-4-2" x-max="256.0" x-min="70.5" y-max="280.0" y-min="270.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">arbitrators exceeding powers, 406-416</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="5">
+<inno:td col="1" id="table-2-5-1" x-max="70.5" x-min="54.0" y-max="289.0" y-min="280.0"/>
+<inno:td col="2" id="table-2-5-2" x-max="88.0" x-min="70.5" y-max="289.0" y-min="280.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-5-3" x-max="256.0" x-min="88.0" y-max="289.0" y-min="280.0">
+<inno:font font-name="Calibri" font-size="11.00pt">correction of errors, 417-420</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="6">
+<inno:td col="1" id="table-2-6-1" x-max="70.5" x-min="54.0" y-max="299.0" y-min="289.0"/>
+<inno:td col="2" id="table-2-6-2" x-max="88.0" x-min="70.5" y-max="299.0" y-min="289.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-6-3" x-max="256.0" x-min="88.0" y-max="299.0" y-min="289.0">
+<inno:font font-name="Calibri" font-size="11.00pt">costs, 428-442</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="7">
+<inno:td col="1" id="table-2-7-1" x-max="70.5" x-min="54.0" y-max="308.5" y-min="299.0"/>
+<inno:td col="2" id="table-2-7-2" x-max="88.0" x-min="70.5" y-max="308.5" y-min="299.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-7-3" x-max="256.0" x-min="88.0" y-max="308.5" y-min="299.0">
+<inno:font font-name="Calibri" font-size="11.00pt">enforcement of award, 443-464</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="8">
+<inno:td col="1" id="table-2-8-1" x-max="70.5" x-min="54.0" y-max="318.0" y-min="308.5"/>
+<inno:td col="2" id="table-2-8-2" x-max="88.0" x-min="70.5" y-max="318.0" y-min="308.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-8-3" x-max="256.0" x-min="88.0" y-max="318.0" y-min="308.5">
+<inno:font font-name="Calibri" font-size="11.00pt">execution of award, 385-389</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="9">
+<inno:td col="1" id="table-2-9-1" x-max="70.5" x-min="54.0" y-max="328.5" y-min="318.0"/>
+<inno:td col="2" id="table-2-9-2" x-max="88.0" x-min="70.5" y-max="328.5" y-min="318.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-9-3" x-max="256.0" x-min="88.0" y-max="328.5" y-min="318.0">
+<inno:font font-name="Calibri" font-size="11.00pt">formalities of award, 421-427</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="10">
+<inno:td col="1" id="table-2-10-1" x-max="70.5" x-min="54.0" y-max="338.0" y-min="328.5"/>
+<inno:td col="2" id="table-2-10-2" x-max="88.0" x-min="70.5" y-max="338.0" y-min="328.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-10-3" x-max="256.0" x-min="88.0" y-max="338.0" y-min="328.5">
+<inno:font font-name="Calibri" font-size="11.00pt">interpretation, 394-405</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="11">
+<inno:td col="1" id="table-2-11-1" x-max="70.5" x-min="54.0" y-max="347.5" y-min="338.0"/>
+<inno:td col="2" id="table-2-11-2" x-max="88.0" x-min="70.5" y-max="347.5" y-min="338.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-11-3" x-max="256.0" x-min="88.0" y-max="347.5" y-min="338.0">
+<inno:font font-name="Calibri" font-size="11.00pt">publication, 378-384</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="12">
+<inno:td col="1" id="table-2-12-1" x-max="70.5" x-min="54.0" y-max="358.0" y-min="347.5"/>
+<inno:td col="2" id="table-2-12-2" x-max="88.0" x-min="70.5" y-max="358.0" y-min="347.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-12-3" x-max="256.0" x-min="88.0" y-max="358.0" y-min="347.5">
+<inno:font font-name="Calibri" font-size="11.00pt">scope and effect, 371-377</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="13">
+<inno:td col="1" id="table-2-13-1" x-max="70.5" x-min="54.0" y-max="367.5" y-min="358.0"/>
+<inno:td col="2" id="table-2-13-2" x-max="88.0" x-min="70.5" y-max="367.5" y-min="358.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="2" id="table-2-13-3" x-max="256.0" x-min="88.0" y-max="367.5" y-min="358.0">
+<inno:font font-name="Calibri" font-size="11.00pt">time for making, 361-370</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="14">
+<inno:td col="1" id="table-2-14-1" x-max="70.5" x-min="54.0" y-max="386.95" y-min="367.5"/>
+<inno:td col="2" colspan="3" id="table-2-14-2" x-max="256.0" x-min="70.5" y-max="386.95" y-min="367.5"><inno:font font-name="Calibri" font-size="11.00pt">remission or setting aside of award, 476-582</inno:font><inno:br/><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">costs, 582</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="15">
+<inno:td col="1" id="table-2-15-1" x-max="70.5" x-min="54.0" y-max="397.5" y-min="386.95"/>
+<inno:td col="2" colspan="3" id="table-2-15-2" x-max="256.0" x-min="70.5" y-max="397.5" y-min="386.95"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">grounds for setting aside award, 496-563</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="16">
+<inno:td col="1" id="table-2-16-1" x-max="70.5" x-min="54.0" y-max="406.5" y-min="397.5"/>
+<inno:td col="2" id="table-2-16-2" x-max="88.0" x-min="70.5" y-max="406.5" y-min="397.5"/>
+<inno:td col="3" colspan="2" id="table-2-16-3" x-max="256.0" x-min="88.0" y-max="406.5" y-min="397.5"><inno:nec bbox="162.1 169.58 167.13 172.76" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">admission of mistake by arbitrator, 560, 561</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="17">
+<inno:td col="1" id="table-2-17-1" x-max="70.5" x-min="54.0" y-max="416.5" y-min="406.5"/>
+<inno:td col="2" id="table-2-17-2" x-max="88.0" x-min="70.5" y-max="416.5" y-min="406.5"/>
+<inno:td col="3" colspan="2" id="table-2-17-3" x-max="256.0" x-min="88.0" y-max="416.5" y-min="406.5"><inno:nec bbox="162.1 155.08 167.13 158.26" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">arbitrator proceeding on wrong principle, 534-53</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="18">
+<inno:td col="1" id="table-2-18-1" x-max="70.5" x-min="54.0" y-max="425.0" y-min="416.5"/>
+<inno:td col="2" id="table-2-18-2" x-max="88.0" x-min="70.5" y-max="425.0" y-min="416.5"/>
+<inno:td col="3" id="table-2-18-3" x-max="108.05" x-min="88.0" y-max="425.0" y-min="416.5"/>
+<inno:td col="4" id="table-2-18-4" x-max="256.0" x-min="108.05" y-max="425.0" y-min="416.5">
+<inno:font font-name="Calibri" font-size="11.00pt">error in law, 514-533</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="19">
+<inno:td col="1" id="table-2-19-1" x-max="70.5" x-min="54.0" y-max="434.5" y-min="425.0"/>
+<inno:td col="2" id="table-2-19-2" x-max="88.0" x-min="70.5" y-max="434.5" y-min="425.0"/>
+<inno:td col="3" colspan="2" id="table-2-19-3" x-max="256.0" x-min="88.0" y-max="434.5" y-min="425.0"><inno:nec bbox="162.1 126.08 167.13 129.26" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">fresh evidence, 562, 563</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="20">
+<inno:td col="1" id="table-2-20-1" x-max="70.5" x-min="54.0" y-max="443.05" y-min="434.5"/>
+<inno:td col="2" id="table-2-20-2" x-max="88.0" x-min="70.5" y-max="443.05" y-min="434.5"/>
+<inno:td col="3" id="table-2-20-3" x-max="108.05" x-min="88.0" y-max="443.05" y-min="434.5"/>
+<inno:td col="4" id="table-2-20-4" x-max="256.0" x-min="108.05" y-max="443.05" y-min="434.5">
+<inno:font font-name="Calibri" font-size="11.00pt">general, 496-513</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="21">
+<inno:td col="1" id="table-2-21-1" x-max="70.5" x-min="54.0" y-max="464.0" y-min="443.05"/>
+<inno:td col="2" id="table-2-21-2" x-max="88.0" x-min="70.5" y-max="464.0" y-min="443.05"/>
+<inno:td col="3" colspan="2" id="table-2-21-3" x-max="256.0" x-min="88.0" y-max="464.0" y-min="443.05"><inno:nec bbox="162.1 97.08 167.13 100.26" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">misconduct of arbitrators, 537-555<inno:br/><inno:nec bbox="162.1 82.58 167.13 85.76" cid="1" code="0xf0a7" fid="14:0"/> not disposing of entire reference, 557-559</inno:font></inno:td>
+</inno:tr>
+</inno:block></inno:table><inno:table id="table-3" type="number / bullet list"><inno:block page="2" page-height="512" page-width="396" x-max="259.0" x-min="45.0" y-max="459.0" y-min="45.0">
+<inno:tr row="1">
+<inno:td col="1" colspan="3" id="table-3-1-1" x-max="88.0" x-min="45.0" y-max="65.0" y-min="45.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" colspan="8" id="table-3-1-2" x-max="127.5" x-min="88.0" y-max="65.0" y-min="45.0"><inno:nec bbox="162.1 711.68 167.13 714.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">not<inno:br/>jurisdiction</inno:font></inno:td>
+<inno:td col="3" id="table-3-1-3" x-max="131.0" x-min="127.5" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">t<inno:br/>o</inno:font>
+</inno:td>
+<inno:td col="4" colspan="3" id="table-3-1-4" x-max="149.5" x-min="131.0" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">aking e<inno:br/>f court</inno:font>
+</inno:td>
+<inno:td col="5" colspan="3" id="table-3-1-5" rowspan="2" x-max="167.0" x-min="149.5" y-max="66.5" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">viden<inno:br/>, 476-</inno:font>
+</inno:td>
+<inno:td col="6" id="table-3-1-6" x-max="168.95" x-min="167.0" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">c<inno:br/>4</inno:font>
+</inno:td>
+<inno:td col="7" id="table-3-1-7" x-max="169.95" x-min="168.95" y-max="65.0" y-min="45.0"/>
+<inno:td col="8" id="table-3-1-8" x-max="174.95" x-min="169.95" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">e<inno:br/>95</inno:font>
+</inno:td>
+<inno:td col="9" id="table-3-1-9" x-max="175.95" x-min="174.95" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">5</inno:font>
+</inno:td>
+<inno:td col="10" id="table-3-1-10" x-max="177.95" x-min="175.95" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-1-11" x-max="181.95" x-min="177.95" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">n</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-1-12" x-max="184.05" x-min="181.95" y-max="65.0" y-min="45.0"/>
+<inno:td col="13" id="table-3-1-13" x-max="186.05" x-min="184.05" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="14" id="table-3-1-14" x-max="192.5" x-min="186.05" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">oat</inno:font>
+</inno:td>
+<inno:td col="15" id="table-3-1-15" x-max="198.95" x-min="192.5" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">th,</inno:font>
+</inno:td>
+<inno:td col="16" id="table-3-1-16" x-max="203.05" x-min="198.95" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">5</inno:font>
+</inno:td>
+<inno:td col="17" id="table-3-1-17" x-max="205.05" x-min="203.05" y-max="65.0" y-min="45.0"/>
+<inno:td col="18" id="table-3-1-18" x-max="218.05" x-min="205.05" y-max="65.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">56</inno:font>
+</inno:td>
+<inno:td col="19" id="table-3-1-19" x-max="229.95" x-min="218.05" y-max="65.0" y-min="45.0"/>
+<inno:td col="20" id="table-3-1-20" x-max="238.5" x-min="229.95" y-max="65.0" y-min="45.0"/>
+<inno:td col="21" id="table-3-1-21" x-max="246.05" x-min="238.5" y-max="65.0" y-min="45.0"/>
+<inno:td col="22" id="table-3-1-22" x-max="259.0" x-min="246.05" y-max="65.0" y-min="45.0"/>
+</inno:tr>
+<inno:tr row="2">
+<inno:td col="1" colspan="2" id="table-3-2-1" rowspan="2" x-max="86.0" x-min="45.0" y-max="73.0" y-min="65.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-2-2" x-max="88.0" x-min="86.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="3" id="table-3-2-3" x-max="94.05" x-min="88.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="4" id="table-3-2-4" x-max="101.05" x-min="94.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="5" id="table-3-2-5" x-max="107.05" x-min="101.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="6" id="table-3-2-6" x-max="111.0" x-min="107.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="7" id="table-3-2-7" x-max="114.0" x-min="111.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="8" id="table-3-2-8" x-max="115.0" x-min="114.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="9" id="table-3-2-9" x-max="119.05" x-min="115.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="10" id="table-3-2-10" x-max="127.5" x-min="119.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="11" id="table-3-2-11" x-max="131.0" x-min="127.5" y-max="66.5" y-min="65.0"/>
+<inno:td col="12" id="table-3-2-12" x-max="143.0" x-min="131.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="13" id="table-3-2-13" x-max="145.0" x-min="143.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="14" id="table-3-2-14" x-max="149.5" x-min="145.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="15" id="table-3-2-15" x-max="168.95" x-min="167.0" y-max="66.5" y-min="65.0"/>
+<inno:td col="16" id="table-3-2-16" x-max="169.95" x-min="168.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="17" id="table-3-2-17" x-max="174.95" x-min="169.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="18" id="table-3-2-18" x-max="175.95" x-min="174.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="19" id="table-3-2-19" x-max="177.95" x-min="175.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="20" id="table-3-2-20" x-max="181.95" x-min="177.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="21" id="table-3-2-21" x-max="184.05" x-min="181.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="22" id="table-3-2-22" x-max="186.05" x-min="184.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="23" id="table-3-2-23" x-max="192.5" x-min="186.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="24" id="table-3-2-24" x-max="198.95" x-min="192.5" y-max="66.5" y-min="65.0"/>
+<inno:td col="25" id="table-3-2-25" x-max="203.05" x-min="198.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="26" id="table-3-2-26" x-max="205.05" x-min="203.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="27" id="table-3-2-27" x-max="218.05" x-min="205.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="28" id="table-3-2-28" x-max="229.95" x-min="218.05" y-max="66.5" y-min="65.0"/>
+<inno:td col="29" id="table-3-2-29" x-max="238.5" x-min="229.95" y-max="66.5" y-min="65.0"/>
+<inno:td col="30" id="table-3-2-30" x-max="246.05" x-min="238.5" y-max="66.5" y-min="65.0"/>
+<inno:td col="31" id="table-3-2-31" x-max="259.0" x-min="246.05" y-max="66.5" y-min="65.0"/>
+</inno:tr>
+<inno:tr row="3">
+<inno:td col="1" colspan="30" id="table-3-3-1" x-max="229.95" x-min="86.0" y-max="73.0" y-min="66.5">
+<inno:font font-name="Calibri" font-size="11.00pt">remitting award for reconsideration, 571-581</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-3-2" x-max="238.5" x-min="229.95" y-max="73.0" y-min="66.5"/>
+<inno:td col="3" id="table-3-3-3" x-max="246.05" x-min="238.5" y-max="73.0" y-min="66.5"/>
+<inno:td col="4" id="table-3-3-4" x-max="259.0" x-min="246.05" y-max="73.0" y-min="66.5"/>
+</inno:tr>
+<inno:tr row="4">
+<inno:td col="1" id="table-3-4-1" x-max="85.05" x-min="45.0" y-max="84.5" y-min="73.0"/>
+<inno:td col="2" id="table-3-4-2" x-max="86.0" x-min="85.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="3" id="table-3-4-3" x-max="88.0" x-min="86.0" y-max="84.5" y-min="73.0"/>
+<inno:td col="4" id="table-3-4-4" x-max="94.05" x-min="88.0" y-max="84.5" y-min="73.0"/>
+<inno:td col="5" id="table-3-4-5" x-max="101.05" x-min="94.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="6" id="table-3-4-6" x-max="107.05" x-min="101.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="7" id="table-3-4-7" x-max="111.0" x-min="107.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="8" id="table-3-4-8" x-max="114.0" x-min="111.0" y-max="84.5" y-min="73.0"/>
+<inno:td col="9" id="table-3-4-9" x-max="115.0" x-min="114.0" y-max="84.5" y-min="73.0"/>
+<inno:td col="10" colspan="6" id="table-3-4-10" x-max="149.5" x-min="115.0" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">discretion t</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-4-11" x-max="158.0" x-min="149.5" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">o r</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-4-12" x-max="158.95" x-min="158.0" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">e</inno:font>
+</inno:td>
+<inno:td col="13" id="table-3-4-13" x-max="167.0" x-min="158.95" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">emi</inno:font>
+</inno:td>
+<inno:td col="14" id="table-3-4-14" x-max="168.95" x-min="167.0" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">it</inno:font>
+</inno:td>
+<inno:td col="15" id="table-3-4-15" x-max="169.95" x-min="168.95" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">t</inno:font>
+</inno:td>
+<inno:td col="16" id="table-3-4-16" x-max="174.95" x-min="169.95" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">,</inno:font>
+</inno:td>
+<inno:td col="17" id="table-3-4-17" x-max="175.95" x-min="174.95" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">5</inno:font>
+</inno:td>
+<inno:td col="18" id="table-3-4-18" x-max="177.95" x-min="175.95" y-max="84.5" y-min="73.0"/>
+<inno:td col="19" id="table-3-4-19" x-max="181.95" x-min="177.95" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">8</inno:font>
+</inno:td>
+<inno:td col="20" id="table-3-4-20" x-max="184.05" x-min="181.95" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">0</inno:font>
+</inno:td>
+<inno:td col="21" id="table-3-4-21" x-max="186.05" x-min="184.05" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">,</inno:font>
+</inno:td>
+<inno:td col="22" id="table-3-4-22" x-max="192.5" x-min="186.05" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">5</inno:font>
+</inno:td>
+<inno:td col="23" id="table-3-4-23" x-max="198.95" x-min="192.5" y-max="84.5" y-min="73.0">
+<inno:font font-name="Calibri" font-size="11.00pt">,<inno:br/>81</inno:font>
+</inno:td>
+<inno:td col="24" id="table-3-4-24" x-max="203.05" x-min="198.95" y-max="84.5" y-min="73.0"/>
+<inno:td col="25" id="table-3-4-25" x-max="205.05" x-min="203.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="26" id="table-3-4-26" x-max="218.05" x-min="205.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="27" id="table-3-4-27" x-max="229.95" x-min="218.05" y-max="84.5" y-min="73.0"/>
+<inno:td col="28" id="table-3-4-28" x-max="238.5" x-min="229.95" y-max="84.5" y-min="73.0"/>
+<inno:td col="29" id="table-3-4-29" x-max="246.05" x-min="238.5" y-max="84.5" y-min="73.0"/>
+<inno:td col="30" id="table-3-4-30" x-max="259.0" x-min="246.05" y-max="84.5" y-min="73.0"/>
+</inno:tr>
+<inno:tr row="5">
+<inno:td col="1" id="table-3-5-1" x-max="85.05" x-min="45.0" y-max="93.5" y-min="84.5"/>
+<inno:td col="2" id="table-3-5-2" x-max="86.0" x-min="85.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="3" id="table-3-5-3" x-max="88.0" x-min="86.0" y-max="93.5" y-min="84.5"/>
+<inno:td col="4" id="table-3-5-4" x-max="94.05" x-min="88.0" y-max="93.5" y-min="84.5"/>
+<inno:td col="5" id="table-3-5-5" x-max="101.05" x-min="94.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="6" colspan="13" id="table-3-5-6" x-max="167.0" x-min="101.05" y-max="93.5" y-min="84.5"><inno:nec bbox="162.1 652.48 167.13 655.66" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">general, 571-579</inno:font></inno:td>
+<inno:td col="7" id="table-3-5-7" x-max="168.95" x-min="167.0" y-max="93.5" y-min="84.5"/>
+<inno:td col="8" id="table-3-5-8" x-max="169.95" x-min="168.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="9" id="table-3-5-9" x-max="174.95" x-min="169.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="10" id="table-3-5-10" x-max="175.95" x-min="174.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="11" id="table-3-5-11" x-max="177.95" x-min="175.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="12" id="table-3-5-12" x-max="181.95" x-min="177.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="13" id="table-3-5-13" x-max="184.05" x-min="181.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="14" id="table-3-5-14" x-max="186.05" x-min="184.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="15" id="table-3-5-15" x-max="192.5" x-min="186.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="16" id="table-3-5-16" x-max="198.95" x-min="192.5" y-max="93.5" y-min="84.5"/>
+<inno:td col="17" id="table-3-5-17" x-max="203.05" x-min="198.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="18" id="table-3-5-18" x-max="205.05" x-min="203.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="19" id="table-3-5-19" x-max="218.05" x-min="205.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="20" id="table-3-5-20" x-max="229.95" x-min="218.05" y-max="93.5" y-min="84.5"/>
+<inno:td col="21" id="table-3-5-21" x-max="238.5" x-min="229.95" y-max="93.5" y-min="84.5"/>
+<inno:td col="22" id="table-3-5-22" x-max="246.05" x-min="238.5" y-max="93.5" y-min="84.5"/>
+<inno:td col="23" id="table-3-5-23" x-max="259.0" x-min="246.05" y-max="93.5" y-min="84.5"/>
+</inno:tr>
+<inno:tr row="6">
+<inno:td col="1" colspan="2" id="table-3-6-1" x-max="86.0" x-min="45.0" y-max="103.5" y-min="93.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-6-2" x-max="88.0" x-min="86.0" y-max="103.5" y-min="93.5"/>
+<inno:td col="3" colspan="29" id="table-3-6-3" rowspan="2" x-max="229.95" x-min="88.0" y-max="117.0" y-min="93.5">
+<inno:font font-name="Calibri" font-size="11.00pt">time for moving to set aside award, 567-570<inno:br/>waiver of irregularities, 564-566</inno:font>
+</inno:td>
+<inno:td col="4" id="table-3-6-4" x-max="238.5" x-min="229.95" y-max="103.5" y-min="93.5"/>
+<inno:td col="5" id="table-3-6-5" x-max="246.05" x-min="238.5" y-max="103.5" y-min="93.5"/>
+<inno:td col="6" id="table-3-6-6" x-max="259.0" x-min="246.05" y-max="103.5" y-min="93.5"/>
+</inno:tr>
+<inno:tr row="7">
+<inno:td col="1" id="table-3-7-1" x-max="85.05" x-min="45.0" y-max="117.0" y-min="103.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-7-2" x-max="86.0" x-min="85.05" y-max="117.0" y-min="103.5"/>
+<inno:td col="3" id="table-3-7-3" x-max="88.0" x-min="86.0" y-max="117.0" y-min="103.5"/>
+<inno:td col="4" id="table-3-7-4" x-max="238.5" x-min="229.95" y-max="117.0" y-min="103.5"/>
+<inno:td col="5" id="table-3-7-5" x-max="246.05" x-min="238.5" y-max="117.0" y-min="103.5"/>
+<inno:td col="6" id="table-3-7-6" x-max="259.0" x-min="246.05" y-max="117.0" y-min="103.5"/>
+</inno:tr>
+<inno:tr row="8">
+<inno:td col="1" colspan="7" id="table-3-8-1" x-max="111.0" x-min="45.0" y-max="130.0" y-min="117.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">arbitration reference</inno:font>
+</inno:b>
+</inno:td>
+<inno:td col="2" id="table-3-8-2" x-max="114.0" x-min="111.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="3" id="table-3-8-3" x-max="115.0" x-min="114.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="4" id="table-3-8-4" x-max="119.05" x-min="115.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="5" id="table-3-8-5" x-max="127.5" x-min="119.05" y-max="130.0" y-min="117.0"/>
+<inno:td col="6" id="table-3-8-6" x-max="131.0" x-min="127.5" y-max="130.0" y-min="117.0"/>
+<inno:td col="7" id="table-3-8-7" x-max="143.0" x-min="131.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="8" id="table-3-8-8" x-max="145.0" x-min="143.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="9" id="table-3-8-9" x-max="149.5" x-min="145.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="10" id="table-3-8-10" x-max="158.0" x-min="149.5" y-max="130.0" y-min="117.0"/>
+<inno:td col="11" id="table-3-8-11" x-max="158.95" x-min="158.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="12" id="table-3-8-12" x-max="167.0" x-min="158.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="13" id="table-3-8-13" x-max="168.95" x-min="167.0" y-max="130.0" y-min="117.0"/>
+<inno:td col="14" id="table-3-8-14" x-max="169.95" x-min="168.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="15" id="table-3-8-15" x-max="174.95" x-min="169.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="16" id="table-3-8-16" x-max="175.95" x-min="174.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="17" id="table-3-8-17" x-max="177.95" x-min="175.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="18" id="table-3-8-18" x-max="181.95" x-min="177.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="19" id="table-3-8-19" x-max="184.05" x-min="181.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="20" id="table-3-8-20" x-max="186.05" x-min="184.05" y-max="130.0" y-min="117.0"/>
+<inno:td col="21" id="table-3-8-21" x-max="192.5" x-min="186.05" y-max="130.0" y-min="117.0"/>
+<inno:td col="22" id="table-3-8-22" x-max="198.95" x-min="192.5" y-max="130.0" y-min="117.0"/>
+<inno:td col="23" id="table-3-8-23" x-max="203.05" x-min="198.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="24" id="table-3-8-24" x-max="205.05" x-min="203.05" y-max="130.0" y-min="117.0"/>
+<inno:td col="25" id="table-3-8-25" x-max="218.05" x-min="205.05" y-max="130.0" y-min="117.0"/>
+<inno:td col="26" id="table-3-8-26" x-max="229.95" x-min="218.05" y-max="130.0" y-min="117.0"/>
+<inno:td col="27" id="table-3-8-27" x-max="238.5" x-min="229.95" y-max="130.0" y-min="117.0"/>
+<inno:td col="28" id="table-3-8-28" x-max="246.05" x-min="238.5" y-max="130.0" y-min="117.0"/>
+<inno:td col="29" id="table-3-8-29" x-max="259.0" x-min="246.05" y-max="130.0" y-min="117.0"/>
+</inno:tr>
+<inno:tr row="9">
+<inno:td col="1" colspan="16" id="table-3-9-1" x-max="158.0" x-min="45.0" y-max="151.05" y-min="130.0"><inno:nec bbox="90.1 575.63 95.15 579.56" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">arbitrator or umpire, 191-283</inno:font><inno:br/><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">appointment,</inno:font></inno:td>
+<inno:td col="2" id="table-3-9-2" x-max="158.95" x-min="158.0" y-max="151.05" y-min="130.0"/>
+<inno:td col="3" colspan="6" id="table-3-9-3" rowspan="3" x-max="177.95" x-min="158.95" y-max="162.05" y-min="130.0">
+<inno:font font-name="Calibri" font-size="11.00pt">y cour</inno:font>
+</inno:td>
+<inno:td col="4" colspan="5" id="table-3-9-4" rowspan="2" x-max="198.95" x-min="177.95" y-max="160.05" y-min="130.0">
+<inno:font font-name="Calibri" font-size="11.00pt">t, 220-2</inno:font>
+</inno:td>
+<inno:td col="5" id="table-3-9-5" x-max="203.05" x-min="198.95" y-max="151.05" y-min="130.0"/>
+<inno:td col="6" id="table-3-9-6" x-max="205.05" x-min="203.05" y-max="151.05" y-min="130.0"/>
+<inno:td col="7" id="table-3-9-7" x-max="218.05" x-min="205.05" y-max="151.05" y-min="130.0"/>
+<inno:td col="8" id="table-3-9-8" x-max="229.95" x-min="218.05" y-max="151.05" y-min="130.0"/>
+<inno:td col="9" id="table-3-9-9" x-max="238.5" x-min="229.95" y-max="151.05" y-min="130.0"/>
+<inno:td col="10" id="table-3-9-10" x-max="246.05" x-min="238.5" y-max="151.05" y-min="130.0"/>
+<inno:td col="11" id="table-3-9-11" x-max="259.0" x-min="246.05" y-max="151.05" y-min="130.0"/>
+</inno:tr>
+<inno:tr row="10">
+<inno:td col="1" id="table-3-10-1" x-max="85.05" x-min="45.0" y-max="160.05" y-min="151.05"/>
+<inno:td col="2" id="table-3-10-2" x-max="86.0" x-min="85.05" y-max="160.05" y-min="151.05"/>
+<inno:td col="3" id="table-3-10-3" x-max="88.0" x-min="86.0" y-max="160.05" y-min="151.05"/>
+<inno:td col="4" id="table-3-10-4" x-max="94.05" x-min="88.0" y-max="160.05" y-min="151.05"/>
+<inno:td col="5" id="table-3-10-5" x-max="101.05" x-min="94.05" y-max="160.05" y-min="151.05"/>
+<inno:td col="6" id="table-3-10-6" x-max="107.05" x-min="101.05" y-max="160.05" y-min="151.05"/>
+<inno:td col="7" id="table-3-10-7" x-max="111.0" x-min="107.05" y-max="160.05" y-min="151.05"/>
+<inno:td col="8" colspan="9" id="table-3-10-8" rowspan="2" x-max="158.0" x-min="111.0" y-max="162.05" y-min="151.05">
+<inno:font font-name="Calibri" font-size="11.00pt">appointment b</inno:font>
+</inno:td>
+<inno:td col="9" id="table-3-10-9" x-max="158.95" x-min="158.0" y-max="160.05" y-min="151.05">
+<inno:font font-name="Calibri" font-size="11.00pt">b</inno:font>
+</inno:td>
+<inno:td col="10" id="table-3-10-10" x-max="203.05" x-min="198.95" y-max="160.05" y-min="151.05">
+<inno:font font-name="Calibri" font-size="11.00pt">2</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-10-11" x-max="205.05" x-min="203.05" y-max="160.05" y-min="151.05">
+<inno:font font-name="Calibri" font-size="11.00pt">4</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-10-12" x-max="218.05" x-min="205.05" y-max="160.05" y-min="151.05">
+<inno:font font-name="Calibri" font-size="11.00pt">4</inno:font>
+</inno:td>
+<inno:td col="13" id="table-3-10-13" x-max="229.95" x-min="218.05" y-max="160.05" y-min="151.05"/>
+<inno:td col="14" id="table-3-10-14" x-max="238.5" x-min="229.95" y-max="160.05" y-min="151.05"/>
+<inno:td col="15" id="table-3-10-15" x-max="246.05" x-min="238.5" y-max="160.05" y-min="151.05"/>
+<inno:td col="16" id="table-3-10-16" x-max="259.0" x-min="246.05" y-max="160.05" y-min="151.05"/>
+</inno:tr>
+<inno:tr row="11">
+<inno:td col="1" id="table-3-11-1" x-max="85.05" x-min="45.0" y-max="162.05" y-min="160.05"/>
+<inno:td col="2" id="table-3-11-2" x-max="86.0" x-min="85.05" y-max="162.05" y-min="160.05"/>
+<inno:td col="3" id="table-3-11-3" x-max="88.0" x-min="86.0" y-max="162.05" y-min="160.05"/>
+<inno:td col="4" id="table-3-11-4" x-max="94.05" x-min="88.0" y-max="162.05" y-min="160.05"/>
+<inno:td col="5" id="table-3-11-5" x-max="101.05" x-min="94.05" y-max="162.05" y-min="160.05"/>
+<inno:td col="6" id="table-3-11-6" x-max="107.05" x-min="101.05" y-max="162.05" y-min="160.05"/>
+<inno:td col="7" id="table-3-11-7" x-max="111.0" x-min="107.05" y-max="162.05" y-min="160.05"/>
+<inno:td col="8" id="table-3-11-8" x-max="158.95" x-min="158.0" y-max="162.05" y-min="160.05"/>
+<inno:td col="9" id="table-3-11-9" x-max="181.95" x-min="177.95" y-max="162.05" y-min="160.05">
+<inno:font font-name="Calibri" font-size="11.00pt">,</inno:font>
+</inno:td>
+<inno:td col="10" colspan="7" id="table-3-11-10" rowspan="2" x-max="218.05" x-min="181.95" y-max="171.5" y-min="160.05">
+<inno:font font-name="Calibri" font-size="11.00pt">s, 213-219</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-11-11" x-max="229.95" x-min="218.05" y-max="162.05" y-min="160.05"/>
+<inno:td col="12" id="table-3-11-12" x-max="238.5" x-min="229.95" y-max="162.05" y-min="160.05"/>
+<inno:td col="13" id="table-3-11-13" x-max="246.05" x-min="238.5" y-max="162.05" y-min="160.05"/>
+<inno:td col="14" id="table-3-11-14" x-max="259.0" x-min="246.05" y-max="162.05" y-min="160.05"/>
+</inno:tr>
+<inno:tr row="12">
+<inno:td col="1" id="table-3-12-1" x-max="85.05" x-min="45.0" y-max="171.5" y-min="162.05"/>
+<inno:td col="2" id="table-3-12-2" x-max="86.0" x-min="85.05" y-max="171.5" y-min="162.05"/>
+<inno:td col="3" id="table-3-12-3" x-max="88.0" x-min="86.0" y-max="171.5" y-min="162.05"/>
+<inno:td col="4" id="table-3-12-4" x-max="94.05" x-min="88.0" y-max="171.5" y-min="162.05"/>
+<inno:td col="5" id="table-3-12-5" x-max="101.05" x-min="94.05" y-max="171.5" y-min="162.05"/>
+<inno:td col="6" id="table-3-12-6" x-max="107.05" x-min="101.05" y-max="171.5" y-min="162.05"/>
+<inno:td col="7" id="table-3-12-7" x-max="111.0" x-min="107.05" y-max="171.5" y-min="162.05"/>
+<inno:td col="8" id="table-3-12-8" x-max="114.0" x-min="111.0" y-max="171.5" y-min="162.05"/>
+<inno:td col="9" colspan="9" id="table-3-12-9" x-max="158.95" x-min="114.0" y-max="171.5" y-min="162.05">
+<inno:font font-name="Calibri" font-size="11.00pt">appointment b</inno:font>
+</inno:td>
+<inno:td col="10" colspan="7" id="table-3-12-10" x-max="181.95" x-min="158.95" y-max="171.5" y-min="162.05">
+<inno:font font-name="Calibri" font-size="11.00pt">y partie</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-12-11" x-max="229.95" x-min="218.05" y-max="171.5" y-min="162.05"/>
+<inno:td col="12" id="table-3-12-12" x-max="238.5" x-min="229.95" y-max="171.5" y-min="162.05"/>
+<inno:td col="13" id="table-3-12-13" x-max="246.05" x-min="238.5" y-max="171.5" y-min="162.05"/>
+<inno:td col="14" id="table-3-12-14" x-max="259.0" x-min="246.05" y-max="171.5" y-min="162.05"/>
+</inno:tr>
+<inno:tr row="13">
+<inno:td col="1" id="table-3-13-1" x-max="85.05" x-min="45.0" y-max="179.5" y-min="171.5"/>
+<inno:td col="2" id="table-3-13-2" x-max="86.0" x-min="85.05" y-max="179.5" y-min="171.5"/>
+<inno:td col="3" id="table-3-13-3" x-max="88.0" x-min="86.0" y-max="179.5" y-min="171.5"/>
+<inno:td col="4" id="table-3-13-4" x-max="94.05" x-min="88.0" y-max="179.5" y-min="171.5"/>
+<inno:td col="5" id="table-3-13-5" x-max="101.05" x-min="94.05" y-max="179.5" y-min="171.5"/>
+<inno:td col="6" id="table-3-13-6" x-max="107.05" x-min="101.05" y-max="179.5" y-min="171.5"/>
+<inno:td col="7" id="table-3-13-7" x-max="111.0" x-min="107.05" y-max="179.5" y-min="171.5"/>
+<inno:td col="8" colspan="26" id="table-3-13-8" x-max="238.5" x-min="111.0" y-max="179.5" y-min="171.5">
+<inno:font font-name="Calibri" font-size="11.00pt">appointment of expert or valuator, 225</inno:font>
+</inno:td>
+<inno:td col="9" id="table-3-13-9" x-max="246.05" x-min="238.5" y-max="179.5" y-min="171.5"/>
+<inno:td col="10" id="table-3-13-10" x-max="259.0" x-min="246.05" y-max="179.5" y-min="171.5"/>
+</inno:tr>
+<inno:tr row="14">
+<inno:td col="1" id="table-3-14-1" x-max="85.05" x-min="45.0" y-max="188.0" y-min="179.5"/>
+<inno:td col="2" id="table-3-14-2" x-max="86.0" x-min="85.05" y-max="188.0" y-min="179.5"/>
+<inno:td col="3" id="table-3-14-3" x-max="88.0" x-min="86.0" y-max="188.0" y-min="179.5"/>
+<inno:td col="4" id="table-3-14-4" x-max="94.05" x-min="88.0" y-max="188.0" y-min="179.5"/>
+<inno:td col="5" id="table-3-14-5" x-max="101.05" x-min="94.05" y-max="188.0" y-min="179.5"/>
+<inno:td col="6" id="table-3-14-6" x-max="107.05" x-min="101.05" y-max="188.0" y-min="179.5"/>
+<inno:td col="7" id="table-3-14-7" x-max="111.0" x-min="107.05" y-max="188.0" y-min="179.5"/>
+<inno:td col="8" id="table-3-14-8" x-max="114.0" x-min="111.0" y-max="188.0" y-min="179.5"/>
+<inno:td col="9" id="table-3-14-9" x-max="115.0" x-min="114.0" y-max="188.0" y-min="179.5"/>
+<inno:td col="10" colspan="24" id="table-3-14-10" x-max="238.5" x-min="115.0" y-max="188.0" y-min="179.5">
+<inno:font font-name="Calibri" font-size="11.00pt">disqualification for pecuniary interest, 206</inno:font>
+</inno:td>
+<inno:td col="11" colspan="2" id="table-3-14-11" x-max="259.0" x-min="238.5" y-max="188.0" y-min="179.5">
+<inno:font font-name="Calibri" font-size="11.00pt">, 207</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="15">
+<inno:td col="1" id="table-3-15-1" x-max="85.05" x-min="45.0" y-max="199.95" y-min="188.0"/>
+<inno:td col="2" id="table-3-15-2" x-max="86.0" x-min="85.05" y-max="199.95" y-min="188.0"/>
+<inno:td col="3" id="table-3-15-3" x-max="88.0" x-min="86.0" y-max="199.95" y-min="188.0"/>
+<inno:td col="4" id="table-3-15-4" x-max="94.05" x-min="88.0" y-max="199.95" y-min="188.0"/>
+<inno:td col="5" id="table-3-15-5" x-max="101.05" x-min="94.05" y-max="199.95" y-min="188.0"/>
+<inno:td col="6" id="table-3-15-6" x-max="107.05" x-min="101.05" y-max="199.95" y-min="188.0"/>
+<inno:td col="7" id="table-3-15-7" x-max="111.0" x-min="107.05" y-max="199.95" y-min="188.0"/>
+<inno:td col="8" id="table-3-15-8" x-max="114.0" x-min="111.0" y-max="199.95" y-min="188.0"/>
+<inno:td col="9" id="table-3-15-9" x-max="115.0" x-min="114.0" y-max="199.95" y-min="188.0"/>
+<inno:td col="10" id="table-3-15-10" x-max="119.05" x-min="115.0" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">d</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-15-11" x-max="127.5" x-min="119.05" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">ut</inno:font>
+</inno:td>
+<inno:td col="12" colspan="9" id="table-3-15-12" x-max="169.95" x-min="127.5" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">y of fairness an</inno:font>
+</inno:td>
+<inno:td col="13" colspan="11" id="table-3-15-13" x-max="218.05" x-min="169.95" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">d impartiality, 19</inno:font>
+</inno:td>
+<inno:td col="14" id="table-3-15-14" x-max="229.95" x-min="218.05" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">,<inno:br/>5-20</inno:font>
+</inno:td>
+<inno:td col="15" id="table-3-15-15" x-max="238.5" x-min="229.95" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">05</inno:font>
+</inno:td>
+<inno:td col="16" id="table-3-15-16" x-max="246.05" x-min="238.5" y-max="199.95" y-min="188.0">
+<inno:font font-name="Calibri" font-size="11.00pt">,</inno:font>
+</inno:td>
+<inno:td col="17" id="table-3-15-17" x-max="259.0" x-min="246.05" y-max="199.95" y-min="188.0"/>
+</inno:tr>
+<inno:tr row="16">
+<inno:td col="1" id="table-3-16-1" x-max="85.05" x-min="45.0" y-max="204.95" y-min="199.95"/>
+<inno:td col="2" id="table-3-16-2" x-max="86.0" x-min="85.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="3" id="table-3-16-3" x-max="88.0" x-min="86.0" y-max="204.95" y-min="199.95"/>
+<inno:td col="4" id="table-3-16-4" x-max="94.05" x-min="88.0" y-max="204.95" y-min="199.95"/>
+<inno:td col="5" id="table-3-16-5" x-max="101.05" x-min="94.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="6" id="table-3-16-6" x-max="107.05" x-min="101.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="7" id="table-3-16-7" x-max="111.0" x-min="107.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="8" id="table-3-16-8" x-max="114.0" x-min="111.0" y-max="204.95" y-min="199.95"/>
+<inno:td col="9" id="table-3-16-9" x-max="115.0" x-min="114.0" y-max="204.95" y-min="199.95"/>
+<inno:td col="10" colspan="9" id="table-3-16-10" x-max="167.0" x-min="115.0" y-max="204.95" y-min="199.95">
+<inno:font font-name="Calibri" font-size="11.00pt">eneral 191-194</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-16-11" x-max="168.95" x-min="167.0" y-max="204.95" y-min="199.95"/>
+<inno:td col="12" id="table-3-16-12" x-max="169.95" x-min="168.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="13" id="table-3-16-13" x-max="174.95" x-min="169.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="14" id="table-3-16-14" x-max="175.95" x-min="174.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="15" id="table-3-16-15" x-max="177.95" x-min="175.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="16" id="table-3-16-16" x-max="181.95" x-min="177.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="17" id="table-3-16-17" x-max="184.05" x-min="181.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="18" id="table-3-16-18" x-max="186.05" x-min="184.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="19" id="table-3-16-19" x-max="192.5" x-min="186.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="20" id="table-3-16-20" x-max="198.95" x-min="192.5" y-max="204.95" y-min="199.95"/>
+<inno:td col="21" id="table-3-16-21" x-max="203.05" x-min="198.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="22" id="table-3-16-22" x-max="205.05" x-min="203.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="23" id="table-3-16-23" x-max="218.05" x-min="205.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="24" id="table-3-16-24" x-max="229.95" x-min="218.05" y-max="204.95" y-min="199.95"/>
+<inno:td col="25" id="table-3-16-25" x-max="238.5" x-min="229.95" y-max="204.95" y-min="199.95"/>
+<inno:td col="26" id="table-3-16-26" x-max="246.05" x-min="238.5" y-max="204.95" y-min="199.95"/>
+<inno:td col="27" id="table-3-16-27" x-max="259.0" x-min="246.05" y-max="204.95" y-min="199.95"/>
+</inno:tr>
+<inno:tr row="17">
+<inno:td col="1" id="table-3-17-1" x-max="85.05" x-min="45.0" y-max="225.5" y-min="204.95"/>
+<inno:td col="2" id="table-3-17-2" x-max="86.0" x-min="85.05" y-max="225.5" y-min="204.95"/>
+<inno:td col="3" id="table-3-17-3" x-max="88.0" x-min="86.0" y-max="225.5" y-min="204.95"/>
+<inno:td col="4" id="table-3-17-4" x-max="94.05" x-min="88.0" y-max="225.5" y-min="204.95"/>
+<inno:td col="5" id="table-3-17-5" x-max="101.05" x-min="94.05" y-max="225.5" y-min="204.95"/>
+<inno:td col="6" id="table-3-17-6" x-max="107.05" x-min="101.05" y-max="225.5" y-min="204.95"/>
+<inno:td col="7" id="table-3-17-7" x-max="111.0" x-min="107.05" y-max="225.5" y-min="204.95"/>
+<inno:td col="8" id="table-3-17-8" x-max="114.0" x-min="111.0" y-max="225.5" y-min="204.95"/>
+<inno:td col="9" id="table-3-17-9" x-max="115.0" x-min="114.0" y-max="225.5" y-min="204.95"/>
+<inno:td col="10" colspan="4" id="table-3-17-10" x-max="143.0" x-min="115.0" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">genera ,<inno:br/>other gro<inno:br/>terminati</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-17-11" x-max="145.0" x-min="143.0" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-17-12" x-max="149.5" x-min="145.0" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">un<inno:br/>on</inno:font>
+</inno:td>
+<inno:td col="13" id="table-3-17-13" x-max="158.0" x-min="149.5" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">-<inno:br/>ds<inno:br/>of</inno:font>
+</inno:td>
+<inno:td col="14" id="table-3-17-14" x-max="158.95" x-min="158.0" y-max="225.5" y-min="204.95"/>
+<inno:td col="15" id="table-3-17-15" x-max="167.0" x-min="158.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">for<inno:br/>ar</inno:font>
+</inno:td>
+<inno:td col="16" id="table-3-17-16" x-max="168.95" x-min="167.0" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">b</inno:font>
+</inno:td>
+<inno:td col="17" id="table-3-17-17" x-max="169.95" x-min="168.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">i</inno:font>
+</inno:td>
+<inno:td col="18" id="table-3-17-18" x-max="174.95" x-min="169.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">di<inno:br/>itr</inno:font>
+</inno:td>
+<inno:td col="19" id="table-3-17-19" x-max="175.95" x-min="174.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">s<inno:br/>r</inno:font>
+</inno:td>
+<inno:td col="20" id="table-3-17-20" x-max="177.95" x-min="175.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">s<inno:br/>a</inno:font>
+</inno:td>
+<inno:td col="21" id="table-3-17-21" x-max="181.95" x-min="177.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">q<inno:br/>at</inno:font>
+</inno:td>
+<inno:td col="22" id="table-3-17-22" x-max="184.05" x-min="181.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">u<inno:br/>o</inno:font>
+</inno:td>
+<inno:td col="23" id="table-3-17-23" x-max="186.05" x-min="184.05" y-max="225.5" y-min="204.95"/>
+<inno:td col="24" colspan="5" id="table-3-17-24" x-max="218.05" x-min="186.05" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">alification, 2<inno:br/>r’s mandate</inno:font>
+</inno:td>
+<inno:td col="25" id="table-3-17-25" x-max="229.95" x-min="218.05" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">208-<inno:br/>e, 22</inno:font>
+</inno:td>
+<inno:td col="26" id="table-3-17-26" x-max="238.5" x-min="229.95" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">211<inno:br/>6-2</inno:font>
+</inno:td>
+<inno:td col="27" id="table-3-17-27" x-max="246.05" x-min="238.5" y-max="225.5" y-min="204.95">
+<inno:font font-name="Calibri" font-size="11.00pt">1<inno:br/>28</inno:font>
+</inno:td>
+<inno:td col="28" id="table-3-17-28" x-max="259.0" x-min="246.05" y-max="225.5" y-min="204.95"/>
+</inno:tr>
+<inno:tr row="18">
+<inno:td col="1" id="table-3-18-1" x-max="85.05" x-min="45.0" y-max="236.5" y-min="225.5"/>
+<inno:td col="2" id="table-3-18-2" x-max="86.0" x-min="85.05" y-max="236.5" y-min="225.5"/>
+<inno:td col="3" id="table-3-18-3" x-max="88.0" x-min="86.0" y-max="236.5" y-min="225.5"/>
+<inno:td col="4" id="table-3-18-4" x-max="94.05" x-min="88.0" y-max="236.5" y-min="225.5"/>
+<inno:td col="5" id="table-3-18-5" x-max="101.05" x-min="94.05" y-max="236.5" y-min="225.5"/>
+<inno:td col="6" id="table-3-18-6" x-max="107.05" x-min="101.05" y-max="236.5" y-min="225.5"/>
+<inno:td col="7" id="table-3-18-7" x-max="111.0" x-min="107.05" y-max="236.5" y-min="225.5"/>
+<inno:td col="8" id="table-3-18-8" x-max="114.0" x-min="111.0" y-max="236.5" y-min="225.5"/>
+<inno:td col="9" id="table-3-18-9" x-max="115.0" x-min="114.0" y-max="236.5" y-min="225.5"/>
+<inno:td col="10" colspan="22" id="table-3-18-10" x-max="218.05" x-min="115.0" y-max="236.5" y-min="225.5">
+<inno:font font-name="Calibri" font-size="11.00pt">third arbitrator or umpire, 229-231</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-18-11" x-max="229.95" x-min="218.05" y-max="236.5" y-min="225.5">
+<inno:font font-name="Calibri" font-size="11.00pt">,</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-18-12" x-max="238.5" x-min="229.95" y-max="236.5" y-min="225.5"/>
+<inno:td col="13" id="table-3-18-13" x-max="246.05" x-min="238.5" y-max="236.5" y-min="225.5"/>
+<inno:td col="14" id="table-3-18-14" x-max="259.0" x-min="246.05" y-max="236.5" y-min="225.5"/>
+</inno:tr>
+<inno:tr row="19">
+<inno:td col="1" id="table-3-19-1" x-max="85.05" x-min="45.0" y-max="243.0" y-min="236.5"/>
+<inno:td col="2" id="table-3-19-2" x-max="86.0" x-min="85.05" y-max="243.0" y-min="236.5"/>
+<inno:td col="3" id="table-3-19-3" x-max="88.0" x-min="86.0" y-max="243.0" y-min="236.5"/>
+<inno:td col="4" id="table-3-19-4" x-max="94.05" x-min="88.0" y-max="243.0" y-min="236.5"/>
+<inno:td col="5" id="table-3-19-5" x-max="101.05" x-min="94.05" y-max="243.0" y-min="236.5"/>
+<inno:td col="6" id="table-3-19-6" x-max="107.05" x-min="101.05" y-max="243.0" y-min="236.5"/>
+<inno:td col="7" id="table-3-19-7" x-max="111.0" x-min="107.05" y-max="243.0" y-min="236.5"/>
+<inno:td col="8" id="table-3-19-8" x-max="114.0" x-min="111.0" y-max="243.0" y-min="236.5"/>
+<inno:td col="9" id="table-3-19-9" x-max="115.0" x-min="114.0" y-max="243.0" y-min="236.5"/>
+<inno:td col="10" colspan="24" id="table-3-19-10" rowspan="2" x-max="238.5" x-min="115.0" y-max="246.0" y-min="236.5">
+<inno:font font-name="Calibri" font-size="11.00pt">waiver of right to demand arbitration, 212</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-19-11" x-max="246.05" x-min="238.5" y-max="243.0" y-min="236.5"/>
+<inno:td col="12" id="table-3-19-12" x-max="259.0" x-min="246.05" y-max="243.0" y-min="236.5"/>
+</inno:tr>
+<inno:tr row="20">
+<inno:td col="1" id="table-3-20-1" x-max="85.05" x-min="45.0" y-max="246.0" y-min="243.0"/>
+<inno:td col="2" id="table-3-20-2" x-max="86.0" x-min="85.05" y-max="246.0" y-min="243.0"/>
+<inno:td col="3" id="table-3-20-3" x-max="88.0" x-min="86.0" y-max="246.0" y-min="243.0"/>
+<inno:td col="4" colspan="6" id="table-3-20-4" rowspan="2" x-max="115.0" x-min="88.0" y-max="256.5" y-min="243.0">
+<inno:font font-name="Calibri" font-size="11.00pt">powers</inno:font>
+</inno:td>
+<inno:td col="5" id="table-3-20-5" x-max="246.05" x-min="238.5" y-max="246.0" y-min="243.0"/>
+<inno:td col="6" id="table-3-20-6" x-max="259.0" x-min="246.05" y-max="246.0" y-min="243.0"/>
+</inno:tr>
+<inno:tr row="21">
+<inno:td col="1" id="table-3-21-1" x-max="85.05" x-min="45.0" y-max="256.5" y-min="246.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-21-2" x-max="86.0" x-min="85.05" y-max="256.5" y-min="246.0"/>
+<inno:td col="3" id="table-3-21-3" x-max="88.0" x-min="86.0" y-max="256.5" y-min="246.0"/>
+<inno:td col="4" colspan="22" id="table-3-21-4" x-max="218.05" x-min="115.0" y-max="256.5" y-min="246.0">
+<inno:font font-name="Calibri" font-size="11.00pt">of arbitrator or umpire, 232-265</inno:font>
+</inno:td>
+<inno:td col="5" id="table-3-21-5" x-max="229.95" x-min="218.05" y-max="256.5" y-min="246.0"/>
+<inno:td col="6" id="table-3-21-6" x-max="238.5" x-min="229.95" y-max="256.5" y-min="246.0"/>
+<inno:td col="7" id="table-3-21-7" x-max="246.05" x-min="238.5" y-max="256.5" y-min="246.0"/>
+<inno:td col="8" id="table-3-21-8" x-max="259.0" x-min="246.05" y-max="256.5" y-min="246.0"/>
+</inno:tr>
+<inno:tr row="22">
+<inno:td col="1" id="table-3-22-1" x-max="85.05" x-min="45.0" y-max="265.5" y-min="256.5"/>
+<inno:td col="2" id="table-3-22-2" x-max="86.0" x-min="85.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="3" id="table-3-22-3" x-max="88.0" x-min="86.0" y-max="265.5" y-min="256.5"/>
+<inno:td col="4" id="table-3-22-4" x-max="94.05" x-min="88.0" y-max="265.5" y-min="256.5"/>
+<inno:td col="5" id="table-3-22-5" x-max="101.05" x-min="94.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="6" id="table-3-22-6" x-max="107.05" x-min="101.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="7" id="table-3-22-7" x-max="111.0" x-min="107.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="8" id="table-3-22-8" x-max="114.0" x-min="111.0" y-max="265.5" y-min="256.5"/>
+<inno:td col="9" id="table-3-22-9" x-max="115.0" x-min="114.0" y-max="265.5" y-min="256.5"/>
+<inno:td col="10" colspan="20" id="table-3-22-10" x-max="203.05" x-min="115.0" y-max="265.5" y-min="256.5">
+<inno:font font-name="Calibri" font-size="11.00pt">duration of powers, 256-265</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-22-11" x-max="205.05" x-min="203.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="12" id="table-3-22-12" x-max="218.05" x-min="205.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="13" id="table-3-22-13" x-max="229.95" x-min="218.05" y-max="265.5" y-min="256.5"/>
+<inno:td col="14" id="table-3-22-14" x-max="238.5" x-min="229.95" y-max="265.5" y-min="256.5"/>
+<inno:td col="15" id="table-3-22-15" x-max="246.05" x-min="238.5" y-max="265.5" y-min="256.5"/>
+<inno:td col="16" id="table-3-22-16" x-max="259.0" x-min="246.05" y-max="265.5" y-min="256.5"/>
+</inno:tr>
+<inno:tr row="23">
+<inno:td col="1" id="table-3-23-1" x-max="85.05" x-min="45.0" y-max="272.95" y-min="265.5"/>
+<inno:td col="2" id="table-3-23-2" x-max="86.0" x-min="85.05" y-max="272.95" y-min="265.5"/>
+<inno:td col="3" id="table-3-23-3" x-max="88.0" x-min="86.0" y-max="272.95" y-min="265.5"/>
+<inno:td col="4" id="table-3-23-4" x-max="94.05" x-min="88.0" y-max="272.95" y-min="265.5"/>
+<inno:td col="5" id="table-3-23-5" x-max="101.05" x-min="94.05" y-max="272.95" y-min="265.5"/>
+<inno:td col="6" colspan="23" id="table-3-23-6" x-max="198.95" x-min="101.05" y-max="272.95" y-min="265.5"><inno:nec bbox="162.1 372.68 167.13 375.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">extent of powers, 232-255</inno:font></inno:td>
+<inno:td col="7" id="table-3-23-7" x-max="203.05" x-min="198.95" y-max="272.95" y-min="265.5"/>
+<inno:td col="8" id="table-3-23-8" x-max="205.05" x-min="203.05" y-max="272.95" y-min="265.5"/>
+<inno:td col="9" id="table-3-23-9" x-max="218.05" x-min="205.05" y-max="272.95" y-min="265.5"/>
+<inno:td col="10" colspan="3" id="table-3-23-10" rowspan="2" x-max="246.05" x-min="218.05" y-max="285.5" y-min="265.5">
+<inno:font font-name="Calibri" font-size="11.00pt">266-283</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-23-11" x-max="259.0" x-min="246.05" y-max="272.95" y-min="265.5"/>
+</inno:tr>
+<inno:tr row="24">
+<inno:td col="1" colspan="26" id="table-3-24-1" x-max="186.05" x-min="45.0" y-max="285.5" y-min="272.95"><inno:font font-name="Calibri" font-size="11.00pt">,</inno:font><inno:br/><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">rights and liabilities of arbitrator</inno:font></inno:td>
+<inno:td col="2" id="table-3-24-2" x-max="192.5" x-min="186.05" y-max="285.5" y-min="272.95">
+<inno:font font-name="Calibri" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="3" colspan="4" id="table-3-24-3" x-max="218.05" x-min="192.5" y-max="285.5" y-min="272.95">
+<inno:font font-name="Calibri" font-size="11.00pt">r umpire,</inno:font>
+</inno:td>
+<inno:td col="4" id="table-3-24-4" x-max="259.0" x-min="246.05" y-max="285.5" y-min="272.95"/>
+</inno:tr>
+<inno:tr row="25">
+<inno:td col="1" id="table-3-25-1" x-max="85.05" x-min="45.0" y-max="290.95" y-min="285.5"/>
+<inno:td col="2" id="table-3-25-2" x-max="86.0" x-min="85.05" y-max="290.95" y-min="285.5"/>
+<inno:td col="3" id="table-3-25-3" x-max="88.0" x-min="86.0" y-max="290.95" y-min="285.5"/>
+<inno:td col="4" id="table-3-25-4" x-max="94.05" x-min="88.0" y-max="290.95" y-min="285.5"/>
+<inno:td col="5" id="table-3-25-5" x-max="101.05" x-min="94.05" y-max="290.95" y-min="285.5"/>
+<inno:td col="6" colspan="29" id="table-3-25-6" x-max="246.05" x-min="101.05" y-max="290.95" y-min="285.5"><inno:nec bbox="162.1 343.08 167.13 346.26" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">enforcement of payment of fees 269-274</inno:font></inno:td>
+<inno:td col="7" id="table-3-25-7" x-max="259.0" x-min="246.05" y-max="290.95" y-min="285.5"/>
+</inno:tr>
+<inno:tr row="26">
+<inno:td col="1" id="table-3-26-1" x-max="85.05" x-min="45.0" y-max="303.5" y-min="290.95"/>
+<inno:td col="2" id="table-3-26-2" x-max="86.0" x-min="85.05" y-max="303.5" y-min="290.95"/>
+<inno:td col="3" id="table-3-26-3" x-max="88.0" x-min="86.0" y-max="303.5" y-min="290.95"/>
+<inno:td col="4" id="table-3-26-4" x-max="94.05" x-min="88.0" y-max="303.5" y-min="290.95"/>
+<inno:td col="5" id="table-3-26-5" x-max="101.05" x-min="94.05" y-max="303.5" y-min="290.95"/>
+<inno:td col="6" id="table-3-26-6" x-max="107.05" x-min="101.05" y-max="303.5" y-min="290.95"/>
+<inno:td col="7" id="table-3-26-7" x-max="111.0" x-min="107.05" y-max="303.5" y-min="290.95"/>
+<inno:td col="8" id="table-3-26-8" x-max="114.0" x-min="111.0" y-max="303.5" y-min="290.95"/>
+<inno:td col="9" colspan="5" id="table-3-26-9" x-max="143.0" x-min="114.0" y-max="303.5" y-min="290.95">
+<inno:font font-name="Calibri" font-size="11.00pt">liabilities</inno:font>
+</inno:td>
+<inno:td col="10" id="table-3-26-10" x-max="145.0" x-min="143.0" y-max="303.5" y-min="290.95"/>
+<inno:td col="11" colspan="8" id="table-3-26-11" x-max="175.95" x-min="145.0" y-max="303.5" y-min="290.95">
+<inno:font font-name="Calibri" font-size="11.00pt">of arbitrato</inno:font>
+</inno:td>
+<inno:td col="12" colspan="9" id="table-3-26-12" x-max="218.05" x-min="175.95" y-max="303.5" y-min="290.95">
+<inno:font font-name="Calibri" font-size="11.00pt">,<inno:br/>r, 275-278</inno:font>
+</inno:td>
+<inno:td col="13" id="table-3-26-13" x-max="229.95" x-min="218.05" y-max="303.5" y-min="290.95"/>
+<inno:td col="14" id="table-3-26-14" x-max="238.5" x-min="229.95" y-max="303.5" y-min="290.95"/>
+<inno:td col="15" id="table-3-26-15" x-max="246.05" x-min="238.5" y-max="303.5" y-min="290.95"/>
+<inno:td col="16" id="table-3-26-16" x-max="259.0" x-min="246.05" y-max="303.5" y-min="290.95"/>
+</inno:tr>
+<inno:tr row="27">
+<inno:td col="1" id="table-3-27-1" x-max="85.05" x-min="45.0" y-max="313.0" y-min="303.5"/>
+<inno:td col="2" id="table-3-27-2" x-max="86.0" x-min="85.05" y-max="313.0" y-min="303.5"/>
+<inno:td col="3" id="table-3-27-3" x-max="88.0" x-min="86.0" y-max="313.0" y-min="303.5"/>
+<inno:td col="4" id="table-3-27-4" x-max="94.05" x-min="88.0" y-max="313.0" y-min="303.5"/>
+<inno:td col="5" id="table-3-27-5" x-max="101.05" x-min="94.05" y-max="313.0" y-min="303.5"/>
+<inno:td col="6" id="table-3-27-6" x-max="107.05" x-min="101.05" y-max="313.0" y-min="303.5"/>
+<inno:td col="7" id="table-3-27-7" x-max="111.0" x-min="107.05" y-max="313.0" y-min="303.5"/>
+<inno:td col="8" id="table-3-27-8" x-max="114.0" x-min="111.0" y-max="313.0" y-min="303.5"/>
+<inno:td col="9" id="table-3-27-9" x-max="115.0" x-min="114.0" y-max="313.0" y-min="303.5"/>
+<inno:td col="10" id="table-3-27-10" x-max="119.05" x-min="115.0" y-max="313.0" y-min="303.5">
+<inno:font font-name="Calibri" font-size="11.00pt">r</inno:font>
+</inno:td>
+<inno:td col="11" colspan="23" id="table-3-27-11" x-max="238.5" x-min="119.05" y-max="313.0" y-min="303.5">
+<inno:font font-name="Calibri" font-size="11.00pt">emoval of arbitrator or umpire, 279-283</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-27-12" x-max="246.05" x-min="238.5" y-max="313.0" y-min="303.5"/>
+<inno:td col="13" id="table-3-27-13" x-max="259.0" x-min="246.05" y-max="313.0" y-min="303.5"/>
+</inno:tr>
+<inno:tr row="28">
+<inno:td col="1" id="table-3-28-1" x-max="85.05" x-min="45.0" y-max="320.0" y-min="313.0"/>
+<inno:td col="2" id="table-3-28-2" x-max="86.0" x-min="85.05" y-max="320.0" y-min="313.0"/>
+<inno:td col="3" id="table-3-28-3" x-max="88.0" x-min="86.0" y-max="320.0" y-min="313.0"/>
+<inno:td col="4" id="table-3-28-4" x-max="94.05" x-min="88.0" y-max="320.0" y-min="313.0"/>
+<inno:td col="5" id="table-3-28-5" x-max="101.05" x-min="94.05" y-max="320.0" y-min="313.0"/>
+<inno:td col="6" id="table-3-28-6" x-max="107.05" x-min="101.05" y-max="320.0" y-min="313.0"/>
+<inno:td col="7" colspan="21" id="table-3-28-7" x-max="192.5" x-min="107.05" y-max="320.0" y-min="313.0">
+<inno:font font-name="Calibri" font-size="11.00pt">remuneration, 266-268</inno:font>
+</inno:td>
+<inno:td col="8" id="table-3-28-8" x-max="198.95" x-min="192.5" y-max="320.0" y-min="313.0"/>
+<inno:td col="9" id="table-3-28-9" x-max="203.05" x-min="198.95" y-max="320.0" y-min="313.0"/>
+<inno:td col="10" id="table-3-28-10" x-max="205.05" x-min="203.05" y-max="320.0" y-min="313.0"/>
+<inno:td col="11" id="table-3-28-11" x-max="218.05" x-min="205.05" y-max="320.0" y-min="313.0"/>
+<inno:td col="12" id="table-3-28-12" x-max="229.95" x-min="218.05" y-max="320.0" y-min="313.0"/>
+<inno:td col="13" id="table-3-28-13" x-max="238.5" x-min="229.95" y-max="320.0" y-min="313.0"/>
+<inno:td col="14" id="table-3-28-14" x-max="246.05" x-min="238.5" y-max="320.0" y-min="313.0"/>
+<inno:td col="15" id="table-3-28-15" x-max="259.0" x-min="246.05" y-max="320.0" y-min="313.0"/>
+</inno:tr>
+<inno:tr row="29">
+<inno:td col="1" colspan="4" id="table-3-29-1" x-max="94.05" x-min="45.0" y-max="330.0" y-min="320.0"><inno:nec bbox="90.1 283.43 95.15 287.36" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">conduct</inno:font></inno:td>
+<inno:td col="2" colspan="8" id="table-3-29-2" rowspan="2" x-max="131.0" x-min="94.05" y-max="341.5" y-min="320.0">
+<inno:font font-name="Calibri" font-size="11.00pt">of reference,<inno:br/>arbitrator’s d</inno:font>
+</inno:td>
+<inno:td col="3" colspan="3" id="table-3-29-3" rowspan="2" x-max="149.5" x-min="131.0" y-max="341.5" y-min="320.0">
+<inno:font font-name="Calibri" font-size="11.00pt">, 284-3<inno:br/>uty of</inno:font>
+</inno:td>
+<inno:td col="4" id="table-3-29-4" x-max="158.0" x-min="149.5" y-max="330.0" y-min="320.0">
+<inno:font font-name="Calibri" font-size="11.00pt">,<inno:br/>44</inno:font>
+</inno:td>
+<inno:td col="5" id="table-3-29-5" x-max="158.95" x-min="158.0" y-max="330.0" y-min="320.0"/>
+<inno:td col="6" id="table-3-29-6" x-max="167.0" x-min="158.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="7" id="table-3-29-7" x-max="168.95" x-min="167.0" y-max="330.0" y-min="320.0"/>
+<inno:td col="8" id="table-3-29-8" x-max="169.95" x-min="168.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="9" id="table-3-29-9" x-max="174.95" x-min="169.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="10" id="table-3-29-10" x-max="175.95" x-min="174.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="11" id="table-3-29-11" x-max="177.95" x-min="175.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="12" id="table-3-29-12" x-max="181.95" x-min="177.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="13" id="table-3-29-13" x-max="184.05" x-min="181.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="14" id="table-3-29-14" x-max="186.05" x-min="184.05" y-max="330.0" y-min="320.0"/>
+<inno:td col="15" id="table-3-29-15" x-max="192.5" x-min="186.05" y-max="330.0" y-min="320.0"/>
+<inno:td col="16" id="table-3-29-16" x-max="198.95" x-min="192.5" y-max="330.0" y-min="320.0"/>
+<inno:td col="17" colspan="4" id="table-3-29-17" rowspan="2" x-max="229.95" x-min="198.95" y-max="341.5" y-min="320.0">
+<inno:font font-name="Calibri" font-size="11.00pt">, 340-344</inno:font>
+</inno:td>
+<inno:td col="18" id="table-3-29-18" x-max="238.5" x-min="229.95" y-max="330.0" y-min="320.0"/>
+<inno:td col="19" id="table-3-29-19" x-max="246.05" x-min="238.5" y-max="330.0" y-min="320.0"/>
+<inno:td col="20" id="table-3-29-20" x-max="259.0" x-min="246.05" y-max="330.0" y-min="320.0"/>
+</inno:tr>
+<inno:tr row="30">
+<inno:td col="1" id="table-3-30-1" x-max="85.05" x-min="45.0" y-max="341.5" y-min="330.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-30-2" x-max="86.0" x-min="85.05" y-max="341.5" y-min="330.0"/>
+<inno:td col="3" id="table-3-30-3" x-max="88.0" x-min="86.0" y-max="341.5" y-min="330.0"/>
+<inno:td col="4" id="table-3-30-4" x-max="94.05" x-min="88.0" y-max="341.5" y-min="330.0"/>
+<inno:td col="5" id="table-3-30-5" x-max="158.0" x-min="149.5" y-max="341.5" y-min="330.0">
+<inno:font font-name="Calibri" font-size="11.00pt">full</inno:font>
+</inno:td>
+<inno:td col="6" colspan="12" id="table-3-30-6" x-max="198.95" x-min="158.0" y-max="341.5" y-min="330.0">
+<inno:font font-name="Calibri" font-size="11.00pt">l consideration</inno:font>
+</inno:td>
+<inno:td col="7" id="table-3-30-7" x-max="238.5" x-min="229.95" y-max="341.5" y-min="330.0"/>
+<inno:td col="8" id="table-3-30-8" x-max="246.05" x-min="238.5" y-max="341.5" y-min="330.0"/>
+<inno:td col="9" id="table-3-30-9" x-max="259.0" x-min="246.05" y-max="341.5" y-min="330.0"/>
+</inno:tr>
+<inno:tr row="31">
+<inno:td col="1" colspan="19" id="table-3-31-1" x-max="168.95" x-min="45.0" y-max="352.0" y-min="341.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">basis of decision, 314-332</inno:font></inno:td>
+<inno:td col="2" id="table-3-31-2" x-max="169.95" x-min="168.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="3" id="table-3-31-3" x-max="174.95" x-min="169.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="4" id="table-3-31-4" x-max="175.95" x-min="174.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="5" id="table-3-31-5" x-max="177.95" x-min="175.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="6" id="table-3-31-6" x-max="181.95" x-min="177.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="7" id="table-3-31-7" x-max="184.05" x-min="181.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="8" id="table-3-31-8" x-max="186.05" x-min="184.05" y-max="352.0" y-min="341.5"/>
+<inno:td col="9" id="table-3-31-9" x-max="192.5" x-min="186.05" y-max="352.0" y-min="341.5"/>
+<inno:td col="10" id="table-3-31-10" x-max="198.95" x-min="192.5" y-max="352.0" y-min="341.5"/>
+<inno:td col="11" id="table-3-31-11" x-max="203.05" x-min="198.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="12" id="table-3-31-12" x-max="205.05" x-min="203.05" y-max="352.0" y-min="341.5"/>
+<inno:td col="13" id="table-3-31-13" x-max="218.05" x-min="205.05" y-max="352.0" y-min="341.5"/>
+<inno:td col="14" id="table-3-31-14" x-max="229.95" x-min="218.05" y-max="352.0" y-min="341.5"/>
+<inno:td col="15" id="table-3-31-15" x-max="238.5" x-min="229.95" y-max="352.0" y-min="341.5"/>
+<inno:td col="16" id="table-3-31-16" x-max="246.05" x-min="238.5" y-max="352.0" y-min="341.5"/>
+<inno:td col="17" id="table-3-31-17" x-max="259.0" x-min="246.05" y-max="352.0" y-min="341.5"/>
+</inno:tr>
+<inno:tr row="32">
+<inno:td col="1" colspan="14" id="table-3-32-1" x-max="145.0" x-min="45.0" y-max="361.0" y-min="352.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">general, 284-288</inno:font></inno:td>
+<inno:td col="2" id="table-3-32-2" x-max="149.5" x-min="145.0" y-max="361.0" y-min="352.0"/>
+<inno:td col="3" id="table-3-32-3" x-max="158.0" x-min="149.5" y-max="361.0" y-min="352.0"/>
+<inno:td col="4" id="table-3-32-4" x-max="158.95" x-min="158.0" y-max="361.0" y-min="352.0"/>
+<inno:td col="5" id="table-3-32-5" x-max="167.0" x-min="158.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="6" id="table-3-32-6" x-max="168.95" x-min="167.0" y-max="361.0" y-min="352.0"/>
+<inno:td col="7" id="table-3-32-7" x-max="169.95" x-min="168.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="8" id="table-3-32-8" x-max="174.95" x-min="169.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="9" id="table-3-32-9" x-max="175.95" x-min="174.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="10" id="table-3-32-10" x-max="177.95" x-min="175.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="11" id="table-3-32-11" x-max="181.95" x-min="177.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="12" id="table-3-32-12" x-max="184.05" x-min="181.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="13" id="table-3-32-13" x-max="186.05" x-min="184.05" y-max="361.0" y-min="352.0"/>
+<inno:td col="14" id="table-3-32-14" x-max="192.5" x-min="186.05" y-max="361.0" y-min="352.0"/>
+<inno:td col="15" id="table-3-32-15" x-max="198.95" x-min="192.5" y-max="361.0" y-min="352.0"/>
+<inno:td col="16" id="table-3-32-16" x-max="203.05" x-min="198.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="17" id="table-3-32-17" x-max="205.05" x-min="203.05" y-max="361.0" y-min="352.0"/>
+<inno:td col="18" id="table-3-32-18" x-max="218.05" x-min="205.05" y-max="361.0" y-min="352.0"/>
+<inno:td col="19" id="table-3-32-19" x-max="229.95" x-min="218.05" y-max="361.0" y-min="352.0"/>
+<inno:td col="20" id="table-3-32-20" x-max="238.5" x-min="229.95" y-max="361.0" y-min="352.0"/>
+<inno:td col="21" id="table-3-32-21" x-max="246.05" x-min="238.5" y-max="361.0" y-min="352.0"/>
+<inno:td col="22" id="table-3-32-22" x-max="259.0" x-min="246.05" y-max="361.0" y-min="352.0"/>
+</inno:tr>
+<inno:tr row="33">
+<inno:td col="1" id="table-3-33-1" x-max="85.05" x-min="45.0" y-max="370.5" y-min="361.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" colspan="23" id="table-3-33-2" x-max="181.95" x-min="85.05" y-max="370.5" y-min="361.0">
+<inno:font font-name="Calibri" font-size="11.00pt">presence of parties, 289-295</inno:font>
+</inno:td>
+<inno:td col="3" id="table-3-33-3" x-max="184.05" x-min="181.95" y-max="370.5" y-min="361.0"/>
+<inno:td col="4" id="table-3-33-4" x-max="186.05" x-min="184.05" y-max="370.5" y-min="361.0"/>
+<inno:td col="5" id="table-3-33-5" x-max="192.5" x-min="186.05" y-max="370.5" y-min="361.0"/>
+<inno:td col="6" id="table-3-33-6" x-max="198.95" x-min="192.5" y-max="370.5" y-min="361.0"/>
+<inno:td col="7" id="table-3-33-7" x-max="203.05" x-min="198.95" y-max="370.5" y-min="361.0"/>
+<inno:td col="8" id="table-3-33-8" x-max="205.05" x-min="203.05" y-max="370.5" y-min="361.0"/>
+<inno:td col="9" id="table-3-33-9" x-max="218.05" x-min="205.05" y-max="370.5" y-min="361.0"/>
+<inno:td col="10" id="table-3-33-10" x-max="229.95" x-min="218.05" y-max="370.5" y-min="361.0"/>
+<inno:td col="11" id="table-3-33-11" x-max="238.5" x-min="229.95" y-max="370.5" y-min="361.0"/>
+<inno:td col="12" id="table-3-33-12" x-max="246.05" x-min="238.5" y-max="370.5" y-min="361.0"/>
+<inno:td col="13" id="table-3-33-13" x-max="259.0" x-min="246.05" y-max="370.5" y-min="361.0"/>
+</inno:tr>
+<inno:tr row="34">
+<inno:td col="1" id="table-3-34-1" x-max="85.05" x-min="45.0" y-max="380.5" y-min="370.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-34-2" x-max="86.0" x-min="85.05" y-max="380.5" y-min="370.5"/>
+<inno:td col="3" id="table-3-34-3" x-max="88.0" x-min="86.0" y-max="380.5" y-min="370.5"/>
+<inno:td col="4" colspan="13" id="table-3-34-4" x-max="158.0" x-min="88.0" y-max="380.5" y-min="370.5">
+<inno:font font-name="Calibri" font-size="11.00pt">procedure, 296-313</inno:font>
+</inno:td>
+<inno:td col="5" id="table-3-34-5" x-max="158.95" x-min="158.0" y-max="380.5" y-min="370.5"/>
+<inno:td col="6" id="table-3-34-6" x-max="167.0" x-min="158.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="7" id="table-3-34-7" x-max="168.95" x-min="167.0" y-max="380.5" y-min="370.5"/>
+<inno:td col="8" id="table-3-34-8" x-max="169.95" x-min="168.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="9" id="table-3-34-9" x-max="174.95" x-min="169.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="10" id="table-3-34-10" x-max="175.95" x-min="174.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="11" id="table-3-34-11" x-max="177.95" x-min="175.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="12" id="table-3-34-12" x-max="181.95" x-min="177.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="13" id="table-3-34-13" x-max="184.05" x-min="181.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="14" id="table-3-34-14" x-max="186.05" x-min="184.05" y-max="380.5" y-min="370.5"/>
+<inno:td col="15" id="table-3-34-15" x-max="192.5" x-min="186.05" y-max="380.5" y-min="370.5"/>
+<inno:td col="16" id="table-3-34-16" x-max="198.95" x-min="192.5" y-max="380.5" y-min="370.5"/>
+<inno:td col="17" id="table-3-34-17" x-max="203.05" x-min="198.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="18" id="table-3-34-18" x-max="205.05" x-min="203.05" y-max="380.5" y-min="370.5"/>
+<inno:td col="19" id="table-3-34-19" x-max="218.05" x-min="205.05" y-max="380.5" y-min="370.5"/>
+<inno:td col="20" id="table-3-34-20" x-max="229.95" x-min="218.05" y-max="380.5" y-min="370.5"/>
+<inno:td col="21" id="table-3-34-21" x-max="238.5" x-min="229.95" y-max="380.5" y-min="370.5"/>
+<inno:td col="22" id="table-3-34-22" x-max="246.05" x-min="238.5" y-max="380.5" y-min="370.5"/>
+<inno:td col="23" id="table-3-34-23" x-max="259.0" x-min="246.05" y-max="380.5" y-min="370.5"/>
+</inno:tr>
+<inno:tr row="35">
+<inno:td col="1" id="table-3-35-1" x-max="85.05" x-min="45.0" y-max="390.5" y-min="380.5">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-35-2" x-max="86.0" x-min="85.05" y-max="390.5" y-min="380.5"/>
+<inno:td col="3" colspan="27" id="table-3-35-3" x-max="203.05" x-min="86.0" y-max="390.5" y-min="380.5">
+<inno:font font-name="Calibri" font-size="11.00pt">responsibility of arbitrator, 333-339</inno:font>
+</inno:td>
+<inno:td col="4" id="table-3-35-4" x-max="205.05" x-min="203.05" y-max="390.5" y-min="380.5"/>
+<inno:td col="5" id="table-3-35-5" x-max="218.05" x-min="205.05" y-max="390.5" y-min="380.5"/>
+<inno:td col="6" id="table-3-35-6" x-max="229.95" x-min="218.05" y-max="390.5" y-min="380.5"/>
+<inno:td col="7" id="table-3-35-7" x-max="238.5" x-min="229.95" y-max="390.5" y-min="380.5"/>
+<inno:td col="8" id="table-3-35-8" x-max="246.05" x-min="238.5" y-max="390.5" y-min="380.5"/>
+<inno:td col="9" id="table-3-35-9" x-max="259.0" x-min="246.05" y-max="390.5" y-min="380.5"/>
+</inno:tr>
+<inno:tr row="36">
+<inno:td col="1" colspan="14" id="table-3-36-1" x-max="145.0" x-min="45.0" y-max="396.95" y-min="390.5"><inno:nec bbox="90.1 177.93 95.15 181.86" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">questions of law 345-348</inno:font></inno:td>
+<inno:td col="2" id="table-3-36-2" x-max="149.5" x-min="145.0" y-max="396.95" y-min="390.5"/>
+<inno:td col="3" id="table-3-36-3" x-max="158.0" x-min="149.5" y-max="396.95" y-min="390.5"/>
+<inno:td col="4" id="table-3-36-4" x-max="158.95" x-min="158.0" y-max="396.95" y-min="390.5"/>
+<inno:td col="5" id="table-3-36-5" x-max="167.0" x-min="158.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="6" id="table-3-36-6" x-max="168.95" x-min="167.0" y-max="396.95" y-min="390.5"/>
+<inno:td col="7" id="table-3-36-7" x-max="169.95" x-min="168.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="8" id="table-3-36-8" x-max="174.95" x-min="169.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="9" id="table-3-36-9" x-max="175.95" x-min="174.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="10" id="table-3-36-10" x-max="177.95" x-min="175.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="11" id="table-3-36-11" x-max="181.95" x-min="177.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="12" id="table-3-36-12" x-max="184.05" x-min="181.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="13" id="table-3-36-13" x-max="186.05" x-min="184.05" y-max="396.95" y-min="390.5"/>
+<inno:td col="14" id="table-3-36-14" x-max="192.5" x-min="186.05" y-max="396.95" y-min="390.5"/>
+<inno:td col="15" id="table-3-36-15" x-max="198.95" x-min="192.5" y-max="396.95" y-min="390.5"/>
+<inno:td col="16" id="table-3-36-16" x-max="203.05" x-min="198.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="17" id="table-3-36-17" x-max="205.05" x-min="203.05" y-max="396.95" y-min="390.5"/>
+<inno:td col="18" id="table-3-36-18" x-max="218.05" x-min="205.05" y-max="396.95" y-min="390.5"/>
+<inno:td col="19" id="table-3-36-19" x-max="229.95" x-min="218.05" y-max="396.95" y-min="390.5"/>
+<inno:td col="20" id="table-3-36-20" x-max="238.5" x-min="229.95" y-max="396.95" y-min="390.5"/>
+<inno:td col="21" id="table-3-36-21" x-max="246.05" x-min="238.5" y-max="396.95" y-min="390.5"/>
+<inno:td col="22" id="table-3-36-22" x-max="259.0" x-min="246.05" y-max="396.95" y-min="390.5"/>
+</inno:tr>
+<inno:tr row="37">
+<inno:td col="1" colspan="5" id="table-3-37-1" x-max="101.05" x-min="45.0" y-max="408.0" y-min="396.95"><inno:nec bbox="90.1 163.03 95.15 166.96" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">references</inno:font></inno:td>
+<inno:td col="2" colspan="5" id="table-3-37-2" x-max="119.05" x-min="101.05" y-max="408.0" y-min="396.95">
+<inno:font font-name="Calibri" font-size="11.00pt">,<inno:br/>under</inno:font>
+</inno:td>
+<inno:td col="3" colspan="3" id="table-3-37-3" x-max="143.0" x-min="119.05" y-max="408.0" y-min="396.95">
+<inno:font font-name="Calibri" font-size="11.00pt">order o</inno:font>
+</inno:td>
+<inno:td col="4" colspan="3" id="table-3-37-4" x-max="158.0" x-min="143.0" y-max="408.0" y-min="396.95">
+<inno:font font-name="Calibri" font-size="11.00pt">f cour</inno:font>
+</inno:td>
+<inno:td col="5" colspan="5" id="table-3-37-5" x-max="174.95" x-min="158.0" y-max="408.0" y-min="396.95">
+<inno:font font-name="Calibri" font-size="11.00pt">rt, 349</inno:font>
+</inno:td>
+<inno:td col="6" colspan="6" id="table-3-37-6" x-max="192.5" x-min="174.95" y-max="408.0" y-min="396.95">
+<inno:font font-name="Calibri" font-size="11.00pt">-360</inno:font>
+</inno:td>
+<inno:td col="7" id="table-3-37-7" x-max="198.95" x-min="192.5" y-max="408.0" y-min="396.95"/>
+<inno:td col="8" id="table-3-37-8" x-max="203.05" x-min="198.95" y-max="408.0" y-min="396.95"/>
+<inno:td col="9" id="table-3-37-9" x-max="205.05" x-min="203.05" y-max="408.0" y-min="396.95"/>
+<inno:td col="10" id="table-3-37-10" x-max="218.05" x-min="205.05" y-max="408.0" y-min="396.95"/>
+<inno:td col="11" id="table-3-37-11" x-max="229.95" x-min="218.05" y-max="408.0" y-min="396.95"/>
+<inno:td col="12" id="table-3-37-12" x-max="238.5" x-min="229.95" y-max="408.0" y-min="396.95"/>
+<inno:td col="13" id="table-3-37-13" x-max="246.05" x-min="238.5" y-max="408.0" y-min="396.95"/>
+<inno:td col="14" id="table-3-37-14" x-max="259.0" x-min="246.05" y-max="408.0" y-min="396.95"/>
+</inno:tr>
+<inno:tr row="38">
+<inno:td col="1" id="table-3-38-1" x-max="85.05" x-min="45.0" y-max="417.0" y-min="408.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-38-2" x-max="86.0" x-min="85.05" y-max="417.0" y-min="408.0"/>
+<inno:td col="3" id="table-3-38-3" x-max="88.0" x-min="86.0" y-max="417.0" y-min="408.0"/>
+<inno:td col="4" id="table-3-38-4" x-max="94.05" x-min="88.0" y-max="417.0" y-min="408.0"/>
+<inno:td col="5" id="table-3-38-5" x-max="101.05" x-min="94.05" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">po</inno:font>
+</inno:td>
+<inno:td col="6" id="table-3-38-6" x-max="107.05" x-min="101.05" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">w</inno:font>
+</inno:td>
+<inno:td col="7" id="table-3-38-7" x-max="111.0" x-min="107.05" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">er</inno:font>
+</inno:td>
+<inno:td col="8" id="table-3-38-8" x-max="114.0" x-min="111.0" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">r</inno:font>
+</inno:td>
+<inno:td col="9" id="table-3-38-9" x-max="115.0" x-min="114.0" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">t</inno:font>
+</inno:td>
+<inno:td col="10" id="table-3-38-10" x-max="119.05" x-min="115.0" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">to</inno:font>
+</inno:td>
+<inno:td col="11" id="table-3-38-11" x-max="127.5" x-min="119.05" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">ap</inno:font>
+</inno:td>
+<inno:td col="12" id="table-3-38-12" x-max="131.0" x-min="127.5" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">p</inno:font>
+</inno:td>
+<inno:td col="13" id="table-3-38-13" x-max="143.0" x-min="131.0" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">oint</inno:font>
+</inno:td>
+<inno:td col="14" id="table-3-38-14" x-max="145.0" x-min="143.0" y-max="417.0" y-min="408.0"/>
+<inno:td col="15" id="table-3-38-15" x-max="149.5" x-min="145.0" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">ar</inno:font>
+</inno:td>
+<inno:td col="16" colspan="4" id="table-3-38-16" x-max="168.95" x-min="149.5" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">rbitrato</inno:font>
+</inno:td>
+<inno:td col="17" colspan="7" id="table-3-38-17" x-max="186.05" x-min="168.95" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">or for r</inno:font>
+</inno:td>
+<inno:td col="18" colspan="3" id="table-3-38-18" rowspan="2" x-max="203.05" x-min="186.05" y-max="418.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">refere</inno:font>
+</inno:td>
+<inno:td col="19" colspan="2" id="table-3-38-19" rowspan="2" x-max="218.05" x-min="203.05" y-max="418.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">nce, 3</inno:font>
+</inno:td>
+<inno:td col="20" id="table-3-38-20" x-max="229.95" x-min="218.05" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">349-</inno:font>
+</inno:td>
+<inno:td col="21" id="table-3-38-21" x-max="238.5" x-min="229.95" y-max="417.0" y-min="408.0">
+<inno:font font-name="Calibri" font-size="11.00pt">351</inno:font>
+</inno:td>
+<inno:td col="22" id="table-3-38-22" x-max="246.05" x-min="238.5" y-max="417.0" y-min="408.0"/>
+<inno:td col="23" id="table-3-38-23" x-max="259.0" x-min="246.05" y-max="417.0" y-min="408.0"/>
+</inno:tr>
+<inno:tr row="39">
+<inno:td col="1" id="table-3-39-1" x-max="85.05" x-min="45.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="2" id="table-3-39-2" x-max="86.0" x-min="85.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="3" id="table-3-39-3" x-max="88.0" x-min="86.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="4" id="table-3-39-4" x-max="94.05" x-min="88.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="5" id="table-3-39-5" x-max="101.05" x-min="94.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="6" id="table-3-39-6" x-max="107.05" x-min="101.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="7" id="table-3-39-7" x-max="111.0" x-min="107.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="8" id="table-3-39-8" x-max="114.0" x-min="111.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="9" id="table-3-39-9" x-max="115.0" x-min="114.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="10" id="table-3-39-10" x-max="119.05" x-min="115.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="11" id="table-3-39-11" x-max="127.5" x-min="119.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="12" id="table-3-39-12" x-max="131.0" x-min="127.5" y-max="418.0" y-min="417.0"/>
+<inno:td col="13" id="table-3-39-13" x-max="143.0" x-min="131.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="14" id="table-3-39-14" x-max="145.0" x-min="143.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="15" id="table-3-39-15" x-max="149.5" x-min="145.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="16" id="table-3-39-16" x-max="158.0" x-min="149.5" y-max="418.0" y-min="417.0"/>
+<inno:td col="17" id="table-3-39-17" x-max="158.95" x-min="158.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="18" id="table-3-39-18" x-max="167.0" x-min="158.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="19" id="table-3-39-19" x-max="168.95" x-min="167.0" y-max="418.0" y-min="417.0"/>
+<inno:td col="20" id="table-3-39-20" x-max="169.95" x-min="168.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="21" id="table-3-39-21" x-max="174.95" x-min="169.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="22" id="table-3-39-22" x-max="175.95" x-min="174.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="23" id="table-3-39-23" x-max="177.95" x-min="175.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="24" id="table-3-39-24" x-max="181.95" x-min="177.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="25" id="table-3-39-25" x-max="184.05" x-min="181.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="26" id="table-3-39-26" x-max="186.05" x-min="184.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="27" id="table-3-39-27" x-max="229.95" x-min="218.05" y-max="418.0" y-min="417.0"/>
+<inno:td col="28" id="table-3-39-28" x-max="238.5" x-min="229.95" y-max="418.0" y-min="417.0"/>
+<inno:td col="29" id="table-3-39-29" x-max="246.05" x-min="238.5" y-max="418.0" y-min="417.0"/>
+<inno:td col="30" id="table-3-39-30" rowspan="2" x-max="259.0" x-min="246.05" y-max="429.05" y-min="417.0">
+<inno:font font-name="Calibri" font-size="11.00pt">360</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="40">
+<inno:td col="1" id="table-3-40-1" x-max="85.05" x-min="45.0" y-max="429.05" y-min="418.0">
+<inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font>
+</inno:td>
+<inno:td col="2" id="table-3-40-2" x-max="86.0" x-min="85.05" y-max="429.05" y-min="418.0"/>
+<inno:td col="3" id="table-3-40-3" x-max="88.0" x-min="86.0" y-max="429.05" y-min="418.0"/>
+<inno:td col="4" colspan="5" id="table-3-40-4" x-max="114.0" x-min="88.0" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">powers</inno:font>
+</inno:td>
+<inno:td col="5" id="table-3-40-5" x-max="115.0" x-min="114.0" y-max="429.05" y-min="418.0"/>
+<inno:td col="6" colspan="6" id="table-3-40-6" x-max="149.5" x-min="115.0" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">of referee w</inno:font>
+</inno:td>
+<inno:td col="7" id="table-3-40-7" x-max="158.0" x-min="149.5" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">he</inno:font>
+</inno:td>
+<inno:td col="8" id="table-3-40-8" x-max="158.95" x-min="158.0" y-max="429.05" y-min="418.0"/>
+<inno:td col="9" id="table-3-40-9" x-max="167.0" x-min="158.95" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">re</inno:font>
+</inno:td>
+<inno:td col="10" colspan="7" id="table-3-40-10" x-max="184.05" x-min="167.0" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">whole</inno:font>
+</inno:td>
+<inno:td col="11" colspan="5" id="table-3-40-11" x-max="205.05" x-min="184.05" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">action</inno:font>
+</inno:td>
+<inno:td col="12" colspan="2" id="table-3-40-12" x-max="229.95" x-min="205.05" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">referred,</inno:font>
+</inno:td>
+<inno:td col="13" colspan="2" id="table-3-40-13" x-max="246.05" x-min="229.95" y-max="429.05" y-min="418.0">
+<inno:font font-name="Calibri" font-size="11.00pt">, 357-</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="41">
+<inno:td col="1" colspan="23" id="table-3-41-1" x-max="177.95" x-min="45.0" y-max="436.95" y-min="429.05"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">reference for trial, 352-356</inno:font></inno:td>
+<inno:td col="2" id="table-3-41-2" x-max="181.95" x-min="177.95" y-max="436.95" y-min="429.05"/>
+<inno:td col="3" id="table-3-41-3" x-max="184.05" x-min="181.95" y-max="436.95" y-min="429.05"/>
+<inno:td col="4" id="table-3-41-4" x-max="186.05" x-min="184.05" y-max="436.95" y-min="429.05"/>
+<inno:td col="5" id="table-3-41-5" x-max="192.5" x-min="186.05" y-max="436.95" y-min="429.05"/>
+<inno:td col="6" id="table-3-41-6" x-max="198.95" x-min="192.5" y-max="436.95" y-min="429.05"/>
+<inno:td col="7" id="table-3-41-7" x-max="203.05" x-min="198.95" y-max="436.95" y-min="429.05"/>
+<inno:td col="8" id="table-3-41-8" x-max="205.05" x-min="203.05" y-max="436.95" y-min="429.05"/>
+<inno:td col="9" id="table-3-41-9" x-max="218.05" x-min="205.05" y-max="436.95" y-min="429.05"/>
+<inno:td col="10" id="table-3-41-10" x-max="229.95" x-min="218.05" y-max="436.95" y-min="429.05"/>
+<inno:td col="11" id="table-3-41-11" x-max="238.5" x-min="229.95" y-max="436.95" y-min="429.05"/>
+<inno:td col="12" id="table-3-41-12" x-max="246.05" x-min="238.5" y-max="436.95" y-min="429.05"/>
+<inno:td col="13" id="table-3-41-13" x-max="259.0" x-min="246.05" y-max="436.95" y-min="429.05"/>
+</inno:tr>
+<inno:tr row="42">
+<inno:td col="1" id="table-3-42-1" x-max="85.05" x-min="45.0" y-max="448.5" y-min="436.95"><inno:nec bbox="90.1 102.83 95.15 106.76" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">stay o</inno:font></inno:td>
+<inno:td col="2" colspan="15" id="table-3-42-2" x-max="158.0" x-min="85.05" y-max="448.5" y-min="436.95">
+<inno:font font-name="Calibri" font-size="11.00pt">of proceedings, 126-190</inno:font>
+</inno:td>
+<inno:td col="3" id="table-3-42-3" x-max="158.95" x-min="158.0" y-max="448.5" y-min="436.95"/>
+<inno:td col="4" id="table-3-42-4" x-max="167.0" x-min="158.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="5" id="table-3-42-5" x-max="168.95" x-min="167.0" y-max="448.5" y-min="436.95"/>
+<inno:td col="6" id="table-3-42-6" x-max="169.95" x-min="168.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="7" id="table-3-42-7" x-max="174.95" x-min="169.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="8" id="table-3-42-8" x-max="175.95" x-min="174.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="9" id="table-3-42-9" x-max="177.95" x-min="175.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="10" id="table-3-42-10" x-max="181.95" x-min="177.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="11" id="table-3-42-11" x-max="184.05" x-min="181.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="12" id="table-3-42-12" x-max="186.05" x-min="184.05" y-max="448.5" y-min="436.95"/>
+<inno:td col="13" id="table-3-42-13" x-max="192.5" x-min="186.05" y-max="448.5" y-min="436.95"/>
+<inno:td col="14" id="table-3-42-14" x-max="198.95" x-min="192.5" y-max="448.5" y-min="436.95"/>
+<inno:td col="15" id="table-3-42-15" x-max="203.05" x-min="198.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="16" id="table-3-42-16" x-max="205.05" x-min="203.05" y-max="448.5" y-min="436.95"/>
+<inno:td col="17" id="table-3-42-17" x-max="218.05" x-min="205.05" y-max="448.5" y-min="436.95"/>
+<inno:td col="18" id="table-3-42-18" x-max="229.95" x-min="218.05" y-max="448.5" y-min="436.95"/>
+<inno:td col="19" id="table-3-42-19" x-max="238.5" x-min="229.95" y-max="448.5" y-min="436.95"/>
+<inno:td col="20" id="table-3-42-20" x-max="246.05" x-min="238.5" y-max="448.5" y-min="436.95"/>
+<inno:td col="21" id="table-3-42-21" x-max="259.0" x-min="246.05" y-max="448.5" y-min="436.95"/>
+</inno:tr>
+<inno:tr row="43">
+<inno:td col="1" colspan="28" id="table-3-43-1" x-max="198.95" x-min="45.0" y-max="459.0" y-min="448.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">application to stay action, 126-140</inno:font></inno:td>
+<inno:td col="2" id="table-3-43-2" x-max="203.05" x-min="198.95" y-max="459.0" y-min="448.5"/>
+<inno:td col="3" id="table-3-43-3" x-max="205.05" x-min="203.05" y-max="459.0" y-min="448.5"/>
+<inno:td col="4" id="table-3-43-4" x-max="218.05" x-min="205.05" y-max="459.0" y-min="448.5"/>
+<inno:td col="5" id="table-3-43-5" x-max="229.95" x-min="218.05" y-max="459.0" y-min="448.5"/>
+<inno:td col="6" id="table-3-43-6" x-max="238.5" x-min="229.95" y-max="459.0" y-min="448.5"/>
+<inno:td col="7" id="table-3-43-7" x-max="246.05" x-min="238.5" y-max="459.0" y-min="448.5"/>
+<inno:td col="8" id="table-3-43-8" x-max="259.0" x-min="246.05" y-max="459.0" y-min="448.5"/>
+</inno:tr>
+</inno:block></inno:table><inno:table id="table-4" type="number / bullet list"><inno:block page="3" page-height="512" page-width="396" x-max="255.0" x-min="57.0" y-max="229.0" y-min="45.0">
+<inno:tr row="1">
+<inno:td col="1" id="table-4-1-1" x-max="117.95" x-min="57.0" y-max="55.0" y-min="45.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">arbitrati</inno:font></inno:td>
+<inno:td col="2" id="table-4-1-2" x-max="142.05" x-min="117.95" y-max="55.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">on as con</inno:font>
+</inno:td>
+<inno:td col="3" id="table-4-1-3" x-max="161.05" x-min="142.05" y-max="55.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">ndition</inno:font>
+</inno:td>
+<inno:td col="4" id="table-4-1-4" x-max="199.0" x-min="161.05" y-max="55.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">precedent to</inno:font>
+</inno:td>
+<inno:td col="5" id="table-4-1-5" x-max="220.5" x-min="199.0" y-max="55.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">action,</inno:font>
+</inno:td>
+<inno:td col="6" id="table-4-1-6" x-max="255.0" x-min="220.5" y-max="55.0" y-min="45.0">
+<inno:font font-name="Calibri" font-size="11.00pt">, 151-157</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="2">
+<inno:td col="1" colspan="4" id="table-4-2-1" x-max="199.0" x-min="57.0" y-max="65.0" y-min="55.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">time for application, 141-150</inno:font></inno:td>
+<inno:td col="2" id="table-4-2-2" x-max="220.5" x-min="199.0" y-max="65.0" y-min="55.0"/>
+<inno:td col="3" id="table-4-2-3" x-max="255.0" x-min="220.5" y-max="65.0" y-min="55.0"/>
+</inno:tr>
+<inno:tr row="3">
+<inno:td col="1" colspan="6" id="table-4-3-1" x-max="255.0" x-min="57.0" y-max="75.5" y-min="65.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">validity and enforceability of arbitration clause, 158-178</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="4">
+<inno:td col="1" colspan="5" id="table-4-4-1" x-max="220.5" x-min="57.0" y-max="85.5" y-min="75.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">when court has jurisdiction, 179-181</inno:font></inno:td>
+<inno:td col="2" id="table-4-4-2" x-max="255.0" x-min="220.5" y-max="85.5" y-min="75.5"/>
+</inno:tr>
+<inno:tr row="5">
+<inno:td col="1" colspan="4" id="table-4-5-1" x-max="199.0" x-min="57.0" y-max="95.0" y-min="85.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">when stay granted, 182-190</inno:font></inno:td>
+<inno:td col="2" id="table-4-5-2" x-max="220.5" x-min="199.0" y-max="95.0" y-min="85.5"/>
+<inno:td col="3" id="table-4-5-3" x-max="255.0" x-min="220.5" y-max="95.0" y-min="85.5"/>
+</inno:tr>
+<inno:tr row="6">
+<inno:td col="1" colspan="4" id="table-4-6-1" x-max="199.0" x-min="57.0" y-max="104.5" y-min="95.0"><inno:nec bbox="90.1 634.53 95.15 638.46" cid="1" code="0xf0b7" fid="26:0"/> <inno:font font-name="Calibri" font-size="11.00pt">submission to arbitration, 15-125</inno:font></inno:td>
+<inno:td col="2" id="table-4-6-2" x-max="220.5" x-min="199.0" y-max="104.5" y-min="95.0"/>
+<inno:td col="3" id="table-4-6-3" x-max="255.0" x-min="220.5" y-max="104.5" y-min="95.0"/>
+</inno:tr>
+<inno:tr row="7">
+<inno:td col="1" colspan="6" id="table-4-7-1" x-max="255.0" x-min="57.0" y-max="114.5" y-min="104.5"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">nature and classification of submission, 15-120</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="8">
+<inno:td col="1" colspan="5" id="table-4-8-1" x-max="220.5" x-min="57.0" y-max="124.5" y-min="114.5"><inno:nec bbox="162.1 606.18 167.13 609.36" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">application of legislation, 50-67</inno:font></inno:td>
+<inno:td col="2" id="table-4-8-2" x-max="255.0" x-min="220.5" y-max="124.5" y-min="114.5"/>
+</inno:tr>
+<inno:tr row="9">
+<inno:td col="1" colspan="4" id="table-4-9-1" x-max="199.0" x-min="57.0" y-max="133.05" y-min="124.5"><inno:nec bbox="162.1 591.68 167.13 594.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">construction, 103-116</inno:font></inno:td>
+<inno:td col="2" id="table-4-9-2" x-max="220.5" x-min="199.0" y-max="133.05" y-min="124.5"/>
+<inno:td col="3" id="table-4-9-3" x-max="255.0" x-min="220.5" y-max="133.05" y-min="124.5"/>
+</inno:tr>
+<inno:tr row="10">
+<inno:td col="1" colspan="5" id="table-4-10-1" x-max="220.5" x-min="57.0" y-max="142.95" y-min="133.05"><inno:nec bbox="162.1 577.18 167.13 580.36" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">effect of arbitration clause, 84-86</inno:font></inno:td>
+<inno:td col="2" id="table-4-10-2" x-max="255.0" x-min="220.5" y-max="142.95" y-min="133.05"/>
+</inno:tr>
+<inno:tr row="11">
+<inno:td col="1" colspan="3" id="table-4-11-1" x-max="161.05" x-min="57.0" y-max="152.5" y-min="142.95"><inno:nec bbox="162.1 562.68 167.13 565.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">form, 98-102</inno:font></inno:td>
+<inno:td col="2" id="table-4-11-2" x-max="199.0" x-min="161.05" y-max="152.5" y-min="142.95"/>
+<inno:td col="3" id="table-4-11-3" x-max="220.5" x-min="199.0" y-max="152.5" y-min="142.95"/>
+<inno:td col="4" id="table-4-11-4" x-max="255.0" x-min="220.5" y-max="152.5" y-min="142.95"/>
+</inno:tr>
+<inno:tr row="12">
+<inno:td col="1" colspan="3" id="table-4-12-1" x-max="161.05" x-min="57.0" y-max="161.5" y-min="152.5"><inno:nec bbox="162.1 548.18 167.13 551.36" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">general,15-22</inno:font></inno:td>
+<inno:td col="2" id="table-4-12-2" x-max="199.0" x-min="161.05" y-max="161.5" y-min="152.5"/>
+<inno:td col="3" id="table-4-12-3" x-max="220.5" x-min="199.0" y-max="161.5" y-min="152.5"/>
+<inno:td col="4" id="table-4-12-4" x-max="255.0" x-min="220.5" y-max="161.5" y-min="152.5"/>
+</inno:tr>
+<inno:tr row="13">
+<inno:td col="1" colspan="4" id="table-4-13-1" x-max="199.0" x-min="57.0" y-max="170.5" y-min="161.5"><inno:nec bbox="162.1 533.68 167.13 536.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">intention of parties, 23-31</inno:font></inno:td>
+<inno:td col="2" id="table-4-13-2" x-max="220.5" x-min="199.0" y-max="170.5" y-min="161.5"/>
+<inno:td col="3" id="table-4-13-3" x-max="255.0" x-min="220.5" y-max="170.5" y-min="161.5"/>
+</inno:tr>
+<inno:tr row="14">
+<inno:td col="1" colspan="4" id="table-4-14-1" x-max="199.0" x-min="57.0" y-max="179.5" y-min="170.5"><inno:nec bbox="162.1 519.18 167.13 522.36" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">limitation periods, 32-36</inno:font></inno:td>
+<inno:td col="2" id="table-4-14-2" x-max="220.5" x-min="199.0" y-max="179.5" y-min="170.5"/>
+<inno:td col="3" id="table-4-14-3" x-max="255.0" x-min="220.5" y-max="179.5" y-min="170.5"/>
+</inno:tr>
+<inno:tr row="15">
+<inno:td col="1" colspan="6" id="table-4-15-1" x-max="255.0" x-min="57.0" y-max="189.5" y-min="179.5"><inno:nec bbox="162.1 504.68 167.13 507.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">matters which may be referred, 68-78</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="16">
+<inno:td col="1" colspan="5" id="table-4-16-1" x-max="220.5" x-min="57.0" y-max="199.5" y-min="189.5"><inno:nec bbox="162.1 490.18 167.13 493.36" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">ouster of court’s jurisdiction, 37-49</inno:font></inno:td>
+<inno:td col="2" id="table-4-16-2" x-max="255.0" x-min="220.5" y-max="199.5" y-min="189.5"/>
+</inno:tr>
+<inno:tr row="17">
+<inno:td col="1" colspan="3" id="table-4-17-1" x-max="161.05" x-min="57.0" y-max="208.5" y-min="199.5"><inno:nec bbox="162.1 475.68 167.13 478.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">parties, 87-97</inno:font></inno:td>
+<inno:td col="2" id="table-4-17-2" x-max="199.0" x-min="161.05" y-max="208.5" y-min="199.5"/>
+<inno:td col="3" id="table-4-17-3" x-max="220.5" x-min="199.0" y-max="208.5" y-min="199.5"/>
+<inno:td col="4" id="table-4-17-4" x-max="255.0" x-min="220.5" y-max="208.5" y-min="199.5"/>
+</inno:tr>
+<inno:tr row="18">
+<inno:td col="1" colspan="6" id="table-4-18-1" x-max="255.0" x-min="57.0" y-max="217.5" y-min="208.5"><inno:nec bbox="162.1 461.18 167.13 464.36" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">proceedings classified as arbitrations, 79-83</inno:font></inno:td>
+</inno:tr>
+<inno:tr row="19">
+<inno:td col="1" colspan="4" id="table-4-19-1" x-max="199.0" x-min="57.0" y-max="229.0" y-min="217.5"><inno:nec bbox="162.1 446.68 167.13 449.86" cid="1" code="0xf0a7" fid="14:0"/> <inno:font font-name="Calibri" font-size="11.00pt">void submissions, 117-120</inno:font></inno:td>
+<inno:td col="2" id="table-4-19-2" x-max="220.5" x-min="199.0" y-max="229.0" y-min="217.5"/>
+<inno:td col="3" id="table-4-19-3" x-max="255.0" x-min="220.5" y-max="229.0" y-min="217.5"/>
+</inno:tr>
+</inno:block></inno:table><inno:text id="text-5" type="text"><inno:block page="3" page-height="512" page-width="396" x-max="194.0" x-min="63.0" y-max="237.0" y-min="229.0"><inno:font font-name="CourierNewPSMT" font-size="11.00pt">o</inno:font> <inno:font font-name="Calibri" font-size="11.00pt">revocation of submission, 121-125</inno:font></inno:block></inno:text><inno:text id="text-6" type="text"><inno:block page="3" page-height="512" page-width="396" x-max="82.0" x-min="43.0" y-max="253.0" y-min="243.0"><inno:b><inno:font font-name="Calibri-Bold" font-size="11.00pt">definition,</inno:font></inno:b> <inno:font font-name="Calibri" font-size="11.00pt">1</inno:font></inno:block></inno:text><inno:text id="text-7" type="text"><inno:block page="3" page-height="512" page-width="396" x-max="79.0" x-min="43.0" y-max="267.0" y-min="255.0"><inno:b><inno:font font-name="Calibri-Bold" font-size="11.00pt">forms of,</inno:font></inno:b> <inno:font font-name="Calibri" font-size="11.00pt">2</inno:font></inno:block></inno:text><inno:text id="text-8" type="title / subtitle"><inno:block page="3" page-height="512" page-width="396" x-max="237.0" x-min="43.0" y-max="282.0" y-min="269.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">international commercial arbitration and foreign arbitral awards</inno:font>
+</inno:b>
+</inno:block></inno:text><inno:table id="table-5" type="number / bullet list"><inno:block page="3" page-height="512" page-width="396" x-max="213.0" x-min="57.0" y-max="363.0" y-min="286.0">
+<inno:tr row="1">
+<inno:td col="1" id="table-5-1-1" x-max="65.0" x-min="57.0" y-max="295.5" y-min="286.0"/>
+<inno:td col="2" id="table-5-1-2" x-max="213.0" x-min="65.0" y-max="295.5" y-min="286.0">
+<inno:font font-name="Calibri" font-size="11.00pt">Alberta, 621-623</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="2">
+<inno:td col="1" id="table-5-2-1" x-max="65.0" x-min="57.0" y-max="305.0" y-min="295.5"/>
+<inno:td col="2" id="table-5-2-2" x-max="213.0" x-min="65.0" y-max="305.0" y-min="295.5">
+<inno:font font-name="Calibri" font-size="11.00pt">British Columbia, 624-628</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="3">
+<inno:td col="1" id="table-5-3-1" x-max="65.0" x-min="57.0" y-max="315.0" y-min="305.0"/>
+<inno:td col="2" id="table-5-3-2" x-max="213.0" x-min="65.0" y-max="315.0" y-min="305.0">
+<inno:font font-name="Calibri" font-size="11.00pt">Canada, 629-631</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="4">
+<inno:td col="1" id="table-5-4-1" x-max="65.0" x-min="57.0" y-max="325.0" y-min="315.0"/>
+<inno:td col="2" id="table-5-4-2" x-max="213.0" x-min="65.0" y-max="325.0" y-min="315.0">
+<inno:font font-name="Calibri" font-size="11.00pt">enforcement of foreign arbitral awards, 652-656</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="5">
+<inno:td col="1" id="table-5-5-1" x-max="65.0" x-min="57.0" y-max="334.5" y-min="325.0"/>
+<inno:td col="2" id="table-5-5-2" x-max="213.0" x-min="65.0" y-max="334.5" y-min="325.0">
+<inno:font font-name="Calibri" font-size="11.00pt">general, 619, 620</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="6">
+<inno:td col="1" id="table-5-6-1" x-max="65.0" x-min="57.0" y-max="343.0" y-min="334.5"/>
+<inno:td col="2" id="table-5-6-2" x-max="213.0" x-min="65.0" y-max="343.0" y-min="334.5">
+<inno:font font-name="Calibri" font-size="11.00pt">Manitoba, 632</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="7">
+<inno:td col="1" id="table-5-7-1" x-max="65.0" x-min="57.0" y-max="353.5" y-min="343.0"/>
+<inno:td col="2" id="table-5-7-2" x-max="213.0" x-min="65.0" y-max="353.5" y-min="343.0">
+<inno:font font-name="Calibri" font-size="11.00pt">Ontario, 633-646</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="8">
+<inno:td col="1" id="table-5-8-1" x-max="65.0" x-min="57.0" y-max="363.0" y-min="353.5"/>
+<inno:td col="2" id="table-5-8-2" x-max="213.0" x-min="65.0" y-max="363.0" y-min="353.5">
+<inno:font font-name="Calibri" font-size="11.00pt">Saskatchewan, 647-651</inno:font>
+</inno:td>
+</inno:tr>
+</inno:block></inno:table><inno:text id="text-9" type="title / subtitle"><inno:block page="3" page-height="512" page-width="396" x-max="76.0" x-min="43.0" y-max="375.0" y-min="368.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">mediation</inno:font>
+</inno:b>
+</inno:block></inno:text><inno:table id="table-6" type="number / bullet list"><inno:block page="3" page-height="512" page-width="396" x-max="191.0" x-min="56.0" y-max="451.0" y-min="381.0">
+<inno:tr row="1">
+<inno:td col="1" id="table-6-1-1" x-max="65.5" x-min="56.0" y-max="392.5" y-min="381.0"/>
+<inno:td col="2" colspan="6" id="table-6-1-2" x-max="191.0" x-min="65.5" y-max="392.5" y-min="381.0">
+<inno:font font-name="Calibri" font-size="11.00pt">binding mediation, 666, 667</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="2">
+<inno:td col="1" id="table-6-2-1" x-max="65.5" x-min="56.0" y-max="401.5" y-min="392.5"/>
+<inno:td col="2" colspan="3" id="table-6-2-2" x-max="115.5" x-min="65.5" y-max="401.5" y-min="392.5">
+<inno:font font-name="Calibri" font-size="11.00pt">definition, 657</inno:font>
+</inno:td>
+<inno:td col="3" id="table-6-2-3" x-max="134.5" x-min="115.5" y-max="401.5" y-min="392.5"/>
+<inno:td col="4" id="table-6-2-4" x-max="147.5" x-min="134.5" y-max="401.5" y-min="392.5"/>
+<inno:td col="5" id="table-6-2-5" x-max="191.0" x-min="147.5" y-max="401.5" y-min="392.5"/>
+</inno:tr>
+<inno:tr row="3">
+<inno:td col="1" id="table-6-3-1" x-max="65.5" x-min="56.0" y-max="411.0" y-min="401.5"/>
+<inno:td col="2" colspan="2" id="table-6-3-2" x-max="107.05" x-min="65.5" y-max="411.0" y-min="401.5">
+<inno:font font-name="Calibri" font-size="11.00pt">enforcement</inno:font>
+</inno:td>
+<inno:td col="3" id="table-6-3-3" x-max="115.5" x-min="107.05" y-max="411.0" y-min="401.5">
+<inno:font font-name="Calibri" font-size="11.00pt">of</inno:font>
+</inno:td>
+<inno:td col="4" colspan="2" id="table-6-3-4" x-max="147.5" x-min="115.5" y-max="411.0" y-min="401.5">
+<inno:font font-name="Calibri" font-size="11.00pt">mediation,</inno:font>
+</inno:td>
+<inno:td col="5" id="table-6-3-5" x-max="191.0" x-min="147.5" y-max="411.0" y-min="401.5">
+<inno:font font-name="Calibri" font-size="11.00pt">673, 674</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="4">
+<inno:td col="1" id="table-6-4-1" x-max="65.5" x-min="56.0" y-max="421.05" y-min="411.0"/>
+<inno:td col="2" colspan="5" id="table-6-4-2" x-max="147.5" x-min="65.5" y-max="421.05" y-min="411.0">
+<inno:font font-name="Calibri" font-size="11.00pt">limitation periods, 668</inno:font>
+</inno:td>
+<inno:td col="3" id="table-6-4-3" x-max="191.0" x-min="147.5" y-max="421.05" y-min="411.0"/>
+</inno:tr>
+<inno:tr row="5">
+<inno:td col="1" id="table-6-5-1" x-max="65.5" x-min="56.0" y-max="430.5" y-min="421.05"/>
+<inno:td col="2" id="table-6-5-2" x-max="100.05" x-min="65.5" y-max="430.5" y-min="421.05">
+<inno:font font-name="Calibri" font-size="11.00pt">mediation</inno:font>
+</inno:td>
+<inno:td col="3" colspan="3" id="table-6-5-3" x-max="134.5" x-min="100.05" y-max="430.5" y-min="421.05">
+<inno:font font-name="Calibri" font-size="11.00pt">restrictions,</inno:font>
+</inno:td>
+<inno:td col="4" colspan="2" id="table-6-5-4" x-max="191.0" x-min="134.5" y-max="430.5" y-min="421.05">
+<inno:font font-name="Calibri" font-size="11.00pt">, 658-663</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="6">
+<inno:td col="1" id="table-6-6-1" x-max="65.5" x-min="56.0" y-max="440.5" y-min="430.5"/>
+<inno:td col="2" colspan="6" id="table-6-6-2" x-max="191.0" x-min="65.5" y-max="440.5" y-min="430.5">
+<inno:font font-name="Calibri" font-size="11.00pt">powers and duties of mediators, 664, 665</inno:font>
+</inno:td>
+</inno:tr>
+<inno:tr row="7">
+<inno:td col="1" id="table-6-7-1" x-max="65.5" x-min="56.0" y-max="451.0" y-min="440.5"/>
+<inno:td col="2" colspan="6" id="table-6-7-2" x-max="191.0" x-min="65.5" y-max="451.0" y-min="440.5">
+<inno:font font-name="Calibri" font-size="11.00pt">statutory mediation, 669-672</inno:font>
+</inno:td>
+</inno:tr>
+</inno:block></inno:table><inno:text id="text-10" type="title / subtitle"><inno:block page="3" page-height="512" page-width="396" x-max="108.0" x-min="43.0" y-max="463.0" y-min="454.0">
+<inno:b>
+<inno:font font-name="Calibri-Bold" font-size="11.00pt">statutory arbitration</inno:font>
+</inno:b>
+</inno:block></inno:text></inno:content>
+</inno:dom>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inno:dom xmlns:inno="http://innodatalabs.com/innodom">
+  <inno:meta/>
+  <inno:content><inno:text id="text-1" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="254.0" x-min="141.0" y-max="57.0" y-min="45.1">
+        <inno:b>
+          <inno:color rgb="#bdae86">
+            <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">CSA Staff Notice 45-328</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-2" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="331.0" x-min="63.0" y-max="83.0" y-min="70.0">
+        <inno:b>
+          <inno:color rgb="#bdae86">
+            <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">Update on Amendments relating to Syndicated Mortgages:</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-3" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="343.0" x-min="52.0" y-max="126.0" y-min="89.0">
+        <inno:b>
+          <inno:color rgb="#bdae86"><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">National Instrument 45-106</inno:font> <inno:font font-name="TimesNewRomanPS-BoldItalicMT" font-size="16.00pt"><inno:i>Prospectus Exemptions</inno:i></inno:font> <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">and National<inno:br/>Instrument 31-103</inno:font> <inno:font font-name="TimesNewRomanPS-BoldItalicMT" font-size="16.00pt"><inno:i>Registration Requirements, Exemptions and<inno:br/>Ongoing Registrant Obligations</inno:i></inno:font></inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-4" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="206.0" x-min="189.0" y-max="149.0" y-min="139.0">
+        <inno:b>
+          <inno:color rgb="#bdae86">
+            <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">and</inno:font>
+          </inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-5" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="350.0" x-min="43.0" y-max="194.0" y-min="156.0">
+        <inno:b>
+          <inno:color rgb="#bdae86"><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">Changes to Companion Policy 45-106CP</inno:font> <inno:font font-name="TimesNewRomanPS-BoldItalicMT" font-size="16.00pt"><inno:i>Prospectus Exemptions</inno:i></inno:font> <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="16.00pt">and<inno:br/>Companion Policy 31-103CP</inno:font> <inno:font font-name="TimesNewRomanPS-BoldItalicMT" font-size="16.00pt"><inno:i>Registration Requirements, Exemptions<inno:br/>and Ongoing Registrant Obligations</inno:i></inno:font></inno:color>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-6" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="108.0" x-min="43.0" y-max="209.0" y-min="199.0">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">February 25, 2021</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-7" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="89.0" x-min="43.0" y-max="228.0" y-min="219.0">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">Introduction</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-8" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="337.0" x-min="43.0" y-max="265.0" y-min="235.0"><inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">On August 6, 2020, the Canadian Securities Administrators (the</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">CSA</inno:font></inno:b> <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">or</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">we</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">) published the<inno:br/>following amendments and changes relating to syndicated mortgages (collectively, the</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">Final<inno:br/>Amendments</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">):</inno:font></inno:block></inno:text><inno:text id="text-9" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="333.0" x-min="58.0" y-max="298.9" y-min="271.0"><inno:nec bbox="90.0 360.34 95.51 364.62" cid="1" code="0xf0b7" fid="24:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">amendments to National Instrument 45-106</inno:font> <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt"><inno:i>Prospectus Exemptions</inno:i></inno:font> <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">and National<inno:br/>Instrument 31-103</inno:font> <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt"><inno:i>Registration Requirements, Exemptions and Ongoing Registrant<inno:br/>Obligations;</inno:i></inno:font></inno:block></inno:text><inno:text id="text-10" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="350.0" x-min="57.0" y-max="320.0" y-min="299.0"><inno:nec bbox="90.0 318.04 95.51 322.32" cid="1" code="0xf0b7" fid="24:0"/> <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">changes to Companion Policy 45-106CP</inno:font> <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt"><inno:i>Prospectus Exemptions</inno:i></inno:font> <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">and Companion Policy<inno:br/>31-103CP</inno:font> <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt"><inno:i>Registration Requirements, Exemptions and Ongoing Registrant Obligations.</inno:i></inno:font></inno:block></inno:text><inno:text id="text-11" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="334.0" x-min="43.0" y-max="349.0" y-min="329.0"><inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Certain jurisdictions also published associated local amendments (the</inno:font> <inno:b><inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">Local Amendments</inno:font></inno:b><inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">)<inno:br/>concurrently with the Final Amendments</inno:font><inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt"><inno:i>.</inno:i></inno:font></inno:block></inno:text><inno:text id="text-12" type="title / subtitle"><inno:block page="1" page-height="512" page-width="396" x-max="235.0" x-min="43.0" y-max="372.0" y-min="359.0">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">Anticipated Implementation Timeline and Effective Date</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-13" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="338.0" x-min="43.0" y-max="399.0" y-min="377.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">In the August 6, 2020 publication, it was contemplated that, subject to certain exceptions, the<inno:br/>Final Amendments and the Local Amendments would take effect on March 1, 2021.</inno:font>
+      </inno:block></inno:text><inno:text id="text-14" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="341.0" x-min="43.0" y-max="426.0" y-min="404.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">We now confirm that the Final Amendments and the Local Amendments will take effect in all<inno:br/>jurisdictions on March 1, 2021, except in Ontario and Québec.</inno:font>
+      </inno:block></inno:text><inno:text id="text-15" type="text"><inno:block page="1" page-height="512" page-width="396" x-max="350.0" x-min="43.0" y-max="462.0" y-min="431.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">In Québec, subject to requisite approvals, the Final Amendments and the Local Amendments are<inno:br/>expected to take effect on July 1, 2021, at the earliest. A local notice confirming the exact<inno:br/>effective date will be published, when determined.</inno:font>
+      </inno:block></inno:text><inno:text id="text-16" type="page number"><inno:block page="1" page-height="512" page-width="396" x-max="200.0" x-min="195.0" y-max="479.0" y-min="472.0">
+        <inno:font font-name="Calibri" font-size="11.00pt">1</inno:font>
+      </inno:block></inno:text><inno:text id="text-17" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="348.0" x-min="43.0" y-max="93.0" y-min="53.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">In Ontario, the Final Amendments and Local Amendments will become effective on the later of:<inno:br/>(a) March 1, 2021; and (b) the day on which sections 4 and 5 of Schedule 37 to Bill 177,<inno:br/>Stronger, Fairer Ontario Act (Budget Measures), 2017 are proclaimed into force. The<inno:br/>proclamation, and therefore the effective date in Ontario, is expected to be July 1, 2021.</inno:font>
+      </inno:block></inno:text><inno:text id="text-18" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="79.0" x-min="43.0" y-max="109.0" y-min="101.0">
+        <inno:b>
+          <inno:font font-name="TimesNewRomanPS-BoldMT" font-size="12.00pt">Questions</inno:font>
+        </inno:b>
+      </inno:block></inno:text><inno:text id="text-19" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="206.0" x-min="43.0" y-max="129.0" y-min="116.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Please refer your questions to any of the following:</inno:font>
+      </inno:block></inno:text><inno:text id="text-20" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="147.0" x-min="43.0" y-max="145.0" y-min="134.0">
+        <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt">
+          <inno:i>Autorité des marchés financiers</inno:i>
+        </inno:font>
+      </inno:block></inno:text><inno:text id="text-21" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="139.0" x-min="43.0" y-max="192.0" y-min="152.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Alexandra Lee<inno:br/>Senior Policy Adviser<inno:br/>514 395-0337, ext. 4465</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>alexandra.lee@lautorite.qc.ca</inno:u>
+          </inno:font>
+        </inno:color>
+      </inno:block></inno:text><inno:text id="text-22" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="144.0" x-min="43.0" y-max="208.0" y-min="196.0">
+        <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt">
+          <inno:i>Ontario Securities Commission</inno:i>
+        </inno:font>
+      </inno:block></inno:text><inno:text id="text-23" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="177.0" x-min="43.0" y-max="249.0" y-min="211.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">David Surat<inno:br/>Senior Legal Counsel, Corporate Finance<inno:br/>416 593-8052</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>dsurat@osc.gov.on.ca</inno:u>
+          </inno:font>
+        </inno:color>
+      </inno:block></inno:text><inno:text id="text-24" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="168.0" x-min="43.0" y-max="328.0" y-min="251.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Matthew Au<inno:br/>Senior Accountant, Corporate Finance<inno:br/>416 593-8132</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>mau@osc.gov.on.ca</inno:u>
+          </inno:font>
+        </inno:color>
+        <inno:br/>
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Melissa Taylor<inno:br/>Legal Counsel, Corporate Finance<inno:br/>416 596-4295</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>mtaylor@osc.gov.on.ca</inno:u>
+          </inno:font>
+        </inno:color>
+      </inno:block></inno:text><inno:text id="text-25" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="238.0" x-min="43.0" y-max="368.0" y-min="330.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Paul Hayward<inno:br/>Senior Legal Counsel, Compliance and Registrant Regulation<inno:br/>416 593-8288</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>phayward@osc.gov.on.ca</inno:u>
+          </inno:font>
+        </inno:color>
+      </inno:block></inno:text><inno:text id="text-26" type="title / subtitle"><inno:block page="2" page-height="512" page-width="396" x-max="143.0" x-min="43.0" y-max="384.0" y-min="373.0">
+        <inno:font font-name="TimesNewRomanPS-ItalicMT" font-size="12.00pt">
+          <inno:i>Alberta Securities Commission</inno:i>
+        </inno:font>
+      </inno:block></inno:text><inno:text id="text-27" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="115.0" x-min="43.0" y-max="423.0" y-min="387.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Lanion Beck<inno:br/>Senior Legal Counsel<inno:br/>403 355-3884</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>lanion.beck@asc.ca</inno:u>
+          </inno:font>
+        </inno:color>
+      </inno:block></inno:text><inno:text id="text-28" type="text"><inno:block page="2" page-height="512" page-width="396" x-max="116.0" x-min="43.0" y-max="465.0" y-min="425.0">
+        <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">Jan Bagh<inno:br/>Senior Legal Counsel<inno:br/>403 355-2804</inno:font>
+        <inno:br/>
+        <inno:color rgb="#0000ff">
+          <inno:font font-name="TimesNewRomanPSMT" font-size="12.00pt">
+            <inno:u>jan.bagh@asc.ca</inno:u>
+          </inno:font>
+        </inno:color>
+      </inno:block></inno:text><inno:text id="text-29" type="page number"><inno:block page="2" page-height="512" page-width="396" x-max="203.0" x-min="195.0" y-max="479.0" y-min="472.0">
+        <inno:font font-name="Calibri" font-size="11.00pt">2</inno:font>
+      </inno:block></inno:text></inno:content>
+</inno:dom>

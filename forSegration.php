@@ -188,7 +188,7 @@
                           <?php while(odbc_fetch_row($approvedFiles)): ?>
                               <?php if(odbc_result($approvedFiles, "status") == "Approved"): ?>
                               <tr>								  
-								  <td><a href="?path=<?= odbc_result($approvedFiles, "Id") ?>"><?= odbc_result($approvedFiles, "Ref")?></a></td>
+								               <td><a href="?path=<?= odbc_result($approvedFiles, "Id") ?>"><?= odbc_result($approvedFiles, "Ref")?></a></td>
                               </tr>
                               <?php endif;  ?>
                           <?php endwhile; ?>

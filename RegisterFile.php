@@ -7,6 +7,10 @@ session_start();
 
 $txtFiles=$_FILES['txtFiles']['name'];
 
+
+$WithImageEdit = "New";
+
+
 /*$path = "uploadfiles/SourceFiles/CFLQ-39.1.pdf";
 $totalPages = countPages($path);
 
@@ -24,6 +28,7 @@ function countPages($path) {
 
 if ($txtFiles!='') {
   $dirname="uploadfiles/SourceFiles";
+
   MultipleFileUploadEX('txtFiles',$BookID,'SourceFiles',$conWMS,$GGUserName,$GGPassword,$GGProductionMode);
 }
  
@@ -60,7 +65,10 @@ function MultipleFileUploadEX($prFileName,$TLID,$SubFolder,$conWMS,$GGUserName,$
 
         //$sqls="EXEC USP_PRIMO_INTEGRATE_old @ExecutionId=1,  @mainUrl='www.example.com',  @SourceUrl='www.example.com?filename=".$filename."',@Filename='".$filename."',@Jobid=''";
         //$sqls="EXEC USP_PRIMO_INTEGRATE @Filename='".$filename."',@Jobid=''";
-        $sqls="EXEC USP_PRIMO_INTEGRATE @Filename='".$filename."',@ProcessType='".$ProcessType."',@Jobid='' ";
+        //$sqls="EXEC USP_PRIMO_INTEGRATE @Filename='".$filename."',@ProcessType='".$ProcessType."',@Jobid='' ";
+
+        $sqls="EXEC USP_PRIMO_INTEGRATE @Filename='".$filename."',@ProcessType='".$ProcessType."',@WithImageEdit='".$WithImageEdit."',@Jobid='' ";
+
         ExecuteQuerySQLSERVER ($sqls,$conWMS);
 
 

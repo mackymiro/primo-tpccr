@@ -1,0 +1,457 @@
+﻿<ROOT>
+  <POLIDOC LABEL="CSA Staff Notice">
+    <POLIDENT>
+      <N></N>
+      <TI>Tables supplémentaires
+de retenues sur la paie</TI>
+      <DATE></DATE>
+    </POLIDENT>
+    <FREEFORM>
+      <BLOCK1>
+        <TI>Tables supplémentaires
+de retenues sur la paie</TI>
+        <P>
+          <BOLD>
+          
+            Ontario
+          
+        </BOLD>
+        </P>
+        <BLOCK2>
+          <TI>En vigueur
+le 1er janvier 2021</TI>
+          <P>
+            <BOLD>
+          Remarque
+        </BOLD>
+          </P>
+          <P>
+            <BOLD>
+          Vous devez consulter deux tables de retenues d’impôt pour déterminer les montants applicables – une table fédérale et une
+table provinciale.
+        </BOLD>
+          </P>
+        </BLOCK2>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Du nouveau à compter du 1er janvier 2021</TI>
+        <P>
+        Dans ce guide, vous trouverez les principaux changements survenus depuis la dernière édition.
+      </P>
+        <P>Ce guide tient compte de quelques changements à l’impôt sur le revenu annoncés récemment et qui entreront en vigueur
+le 1<SUP>er</SUP> janvier 2021. Au moment de l’impression, certaines modifications proposées à la loi n'étaient pas encore entrés en vigueur. Nous
+vous recommandons d’utiliser les nouvelles tables de retenues de cette édition afin d’effectuer vos retenues sur la paie à partir de la
+première paie de janvier 2021.</P>
+        <P>
+        Le Montant personnel de base fédéral a été modifié et nous avons retenu seulement la formule simplifiée.
+      </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Ou le RN ≤ 151 978 $, <BOLD>MPBF</BOLD> = 13 808 $;</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Ou 151 978 $ &lt; RN &lt; 216 511 $, <BOLD>MPBF</BOLD> = 13 808 $ - (RN <BOLD>-</BOLD> 151 978 $) × (1 387 $ / 64 533 $); et</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> Ou le RN ≥ 216 511 $, <BOLD>MPBF</BOLD> = 12 421 $.</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>Pour l’année 2021, les employeurs et payeurs peuvent se servir de 13 808 $ comme la valeur du <BOLD>MPBF</BOLD> pour leurs employés en
+attendant que leurs systèmes de retenues sur la paie soient mis à jour.</P>
+        <P>Si l’employeur ou le payeur se sert du <BOLD>MPBF</BOLD> de 13 808 $ pour tous leurs employés, les employés avec des revenus nets au-delà de
+151 978 $ peuvent demander que plus de taxe soit déduit en complétant le formulaire TD1.</P>
+        <P>
+        Les seuils de revenu de l’impôt fédéral ont été indexés pour 2021.
+      </P>
+        <P>
+        Le montant canadien fédéral de l’emploi pour 2021 est indexé à 1 257 $.
+      </P>
+        <P>
+        Les seuils de revenu, les montants personnels, les seuils de la surtaxe et les montants de réduction de l’impôt d l’Ontario sont indexés
+pour l’année 2021.
+      </P>
+        <BLOCK3>
+          <TI>Tables de retenues sur la paie</TI>
+          <P>Vous pouvez télécharger les guides T4008, Tables supplémentaires de retenues sur la paie<EM>,</EM> et T4032, Tables de retenues sur la paie, à
+partir de notre page Web à <BOLD>canada.ca/retenues-paie</BOLD>. Vous pouvez aussi choisir d’imprimer seulement les pages ou l’information dont
+vous avez besoin.</P>
+          <BLOCK3>
+            <TI>Calculateur en direct des retenues sur la paie</TI>
+            <P>Pour vos retenues sur la paie de 2021, vous pouvez utiliser notre Calculateur en direct des retenues sur la paie (CDRP). En utilisant le
+calculateur en direct, les retenues sur la paie seront plus faciles à déterminer. Le CDRP est disponible à <BOLD>canada.ca/cdrp</BOLD>.</P>
+          </BLOCK3>
+          <BLOCK3>
+            <TI>Laissez-nous vous aviser</TI>
+            <P>L’ARC offre un service numérique qui nous permet de vous communiquer immédiatement et <BOLD>gratuitement</BOLD> tous les nouveaux
+changements aux retenues sur la paie.</P>
+            <P>Pour vous inscrire, allez à la page Web de l’ARC à <BOLD>canada.ca/arc-listes-envois-electroniques</BOLD> et fournissez l’adresse numérique de
+votre entreprise pour chacune des listes d’envois qui vous intéressent.</P>
+          </BLOCK3>
+        </BLOCK3>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Avis Spécial</TI>
+        <BLOCK3>
+          <TI>Tables de retenues sur la paie (T4032)</TI>
+          <P>Dès le 1<SUP>er</SUP> janvier 2017, l’Agence du revenu du Canada ne produit plus les versions papiers et CD du guide T4032, Tables de retenues
+sur la paie. Les versions numériques du guide continuent d’être disponibles sur notre site Web à <BOLD>canada.ca/retenues-paie</BOLD>.</P>
+          <P>
+        Ce guide sert de supplément au guide T4032, Tables de retenues sur la paie. Consultez les Tables de retenues sur la paie de votre
+province ou de votre territoire pour obtenir plus de renseignements.
+      </P>
+          <P>
+        Ce guide explique des situations fiscales courantes dans un langage accessible. Pour obtenir plus de renseignements, communiquez avec
+votre bureau des services fiscaux.
+      </P>
+          <BLOCK4>
+            <TI>Remarque</TI>
+            <P>
+        Dans ce guide, toutes les expressions désignant des personnes visent à la fois les hommes et les femmes.
+      </P>
+          </BLOCK4>
+        </BLOCK3>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Renseignements généraux</TI>
+        <P>
+        Ce guide sert de supplément au guide T4032, Tables de retenues sur la paie. Consultez les Tables de retenues sur la paie de votre
+province ou de votre territoire pour obtenir plus de renseignements sur :
+      </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> ce qu’il y a de nouveau à compter du 1<SUP>er</SUP> janvier 2021</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> la façon de calculer les retenues d’impôt lorsque vous ne pouvez pas utiliser les tables
+’ ’</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> la façon de retenir l’impôt sur le revenu, les cotisations au Régime de pensions du Canada (RPC), et les cotisations d’assurance-
+emploi (AE)</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> les retenues sur la paie requises pour des périodes de paie autres que celles comprises dans ce guide</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>
+        Pour obtenir des renseignements sur les retenues, les versements et la production de déclarations sur les retenues sur la paie, consultez
+les guides de l’employeur suivants :
+      </P>
+        <BLOCK2 LABEL="Table">
+          <TMPTABLE>
+            <SGMLTBL>
+              <TBLHEAD TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> T4001, Guide de l’employeur – Les retenues sur la paie et les versements</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLHEAD>
+              <TBLBODY TBLWD="600">
+                <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                  <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                </TBLCDEFS>
+                <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> T4130, Guide de l’employeur – Avantages et allocations imposables</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> RC4110, Employé ou travailleur indépendant?</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> RC4120, Guide de l’employeur – Comment établir le feuillet T4 et le Sommaire</TBLCELL>
+                  </TBLROW>
+                  <TBLROW>
+                    <TBLCELL ROWSEP="HSINGLE" COLSTART="1"> RC4157, Comment retenir l’impôt sur les revenus de pension ou d’autres sources et établir le feuillet T4A et le Sommaire</TBLCELL>
+                  </TBLROW>
+                </TBLROWS>
+              </TBLBODY>
+            </SGMLTBL>
+          </TMPTABLE>
+        </BLOCK2>
+        <P>Vous pouvez télécharger et imprimer une copie des guides ci-dessus. Nos guides sont accessibles sur notre page Web
+à <BOLD>canada.ca/retenues-paie</BOLD>. Vous pouvez également utiliser gratuitement le <BOLD>Calculateur en direct des retenues sur la paie</BOLD>.</P>
+        <P>
+          <BOLD>
+          Remarque
+        </BOLD>
+        </P>
+        <P>
+        Vous pouvez aussi référer à l’édition de 2020 de ce guide jusqu’à la fin de 2021 pour résoudre les problèmes d’insuffisance qui
+pourraient se poser après le traitement de votre déclaration T4 de 2020, par suite de la Revue des gains assurables et ouvrant droit à
+pension (RGAP).
+      </P>
+      </BLOCK1>
+      <BLOCK1>
+        <TI>Codes de demande</TI>
+        <P>
+        Il se pourrait que vous ayez à demander à vos employés ou à vos pensionnés de remplir une déclaration fédérale et une déclaration
+provinciale des crédits d’impôt personnels (formulaires TD1 fédéral et provincial).
+      </P>
+        <P>
+        Le total du montant personnel qu’un employé demande déterminera le code de demande que vous utiliserez. Pour 2021, les montants
+demandés correspondant aux codes de demande fédéraux ne sont pas identiques aux montants demandés correspondant aux codes de
+demande provinciaux. Consultez le Tableau 1 et le Tableau 2.
+      </P>
+        <P>
+        Les codes de demande et les montants qui correspondent ne figurent pas sur le formulaire TD1 fédéral ou provincial.
+      </P>
+        <BLOCK3>
+          <TI>Explication des codes de demande</TI>
+          <BLOCK4>
+            <TI>Code de demande 0</TI>
+            <P>Ce code signifie <BOLD>qu’aucun montant n’est demandé</BOLD>. Si le code de demande fédéral est « 0 » parce que l’employé est un non-résident, le
+code de demande provincial doit aussi être « 0 ». Ce code peut aussi être utilisé si l’employé indique qu’il a plus d’un employeur ou
+payeur en même temps et a inscrit « 0 » sur la première page du formulaire TD1 pour 2021.</P>
+            <BLOCK4>
+              <TI>Codes de demande 1 à 10</TI>
+              <P>
+        Vous faites le rapprochement entre le montant total de la demande déclaré selon les formulaires TD1 de votre employé ou pensionné et
+les codes de demande correspondants. Vous regardez ensuite l’impôt pour la paie de l’employé selon le code de demande dans les tables
+d’impôt fédéral et provincial pour la période de paie.
+      </P>
+            </BLOCK4>
+            <BLOCK4>
+              <TI>Indexation des montants des codes de demande</TI>
+              <P>
+        Les crédits applicables à chaque code de demande fédéral et provincial ont été automatiquement augmentés dans les tables d’impôt
+par le facteur d’indexation de l’année courante. Si votre employé n’a pas rempli les formulaires TD1 fédéral et provincial pour 2021,
+vous continuez de retenir l’impôt sur le revenu en utilisant le même code de demande que vous avez utilisé l’année passée.
+      </P>
+            </BLOCK4>
+            <BLOCK4>
+              <TI>Tableau 1 – Codes de demande fédéraux pour 2021</TI>
+              <P>
+                <BOLD>
+          Remarque :
+        </BOLD>
+              </P>
+              <P>
+        En raison des changements législatifs au montant personnel de base fédéral, le tableau de Codes de demande ne pourra pas être
+produit avec des tranches de salaires comme auparavant. Par conséquence, le tableau de Codes de demande fédéral ne sera pas
+produit dans cette édition.
+      </P>
+              <BLOCK5 LABEL="Table">
+                <TMPTABLE>
+                  <SGMLTBL>
+                    <TBLHEAD TBLWD="600">
+                      <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                        <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                      </TBLCDEFS>
+                      <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                            <BOLD>
+              Tableau 2 – Codes de demande de l’Ontario pour 2021
+            </BOLD>
+                          </TBLCELL>
+                        </TBLROW>
+                      </TBLROWS>
+                    </TBLHEAD>
+                    <TBLBODY TBLWD="600">
+                      <TBLCDEFS COLSEP="VSINGLE" HALIGN="CENTER" CHARPOS="75%" TOPSEP="HSINGLE">
+                        <TBLCDEF COLWD="100" TBLUNITS="PERCENT" />
+                      </TBLCDEFS>
+                      <TBLROWS ROWSEP="HSINGLE" VALIGN="TOP" LEFTSEP="VSINGLE">
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+                            <BOLD>
+              Montant total de la demande ($)
+            </BOLD>
+                          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2">
+                            <BOLD>
+              Code de demande
+            </BOLD>
+                          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Nul
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            0
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            10 880,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            1
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            10 880,01 à 13 224,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            2
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            13 224,01 à 15 568,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            3
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            15 568,01 à 17 912,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            4
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            17 912,01 à 20 256,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            5
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            20 256,01 à 22 600,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            6
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            22 600,01 à 24 944,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            7
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            24 944,01 à 27 288,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            8
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            27 288,01 à 29 632,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            9
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            29 632,01 à 31 976,00
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            10
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            31 976,01 et plus
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            X
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            L’employeur doit faire le calcul manuel de l’impôt.
+          </TBLCELL>
+                        </TBLROW>
+                        <TBLROW>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="1">
+            Aucune retenue
+          </TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="2"></TBLCELL>
+                          <TBLCELL ROWSEP="HSINGLE" COLSTART="3">
+            E
+          </TBLCELL>
+                        </TBLROW>
+                      </TBLROWS>
+                    </TBLBODY>
+                  </SGMLTBL>
+                </TMPTABLE>
+              </BLOCK5>
+            </BLOCK4>
+          </BLOCK4>
+          <BLOCK3>
+            <TI>Revenus d’emploi de toutes provenances</TI>
+            <P>
+        Les employés peuvent indiquer, à la rubrique « Revenu provenant d’autres employeurs ou payeurs » des formulaires TD1 fédéral et
+provincial, que leurs revenus d’emploi de toutes provenances seront inférieurs au montant total de la demande. Si un employé indique
+que son revenu total prévu sera inférieur au « Montant total de la demande » des formulaires TD1, il n’y a pas lieu d’effectuer des
+retenues d’impôt fédéral ou provincial.
+      </P>
+            <P>
+        Cependant, en tant qu’employeur, si vous savez que cette déclaration est fausse, vous devez effectuer des retenues au titre de l’impôt
+fédéral et provincial, en fonction du code de demande applicable au « Montant total de la demande » des formulaires TD1.
+      </P>
+            <P>
+        Le fait d’accepter sciemment un formulaire TD1 renfermant des données fausses ou trompeuses constitue une infraction grave. En cas de
+doute, demandez conseil à votre bureau des services fiscaux.
+      </P>
+          </BLOCK3>
+        </BLOCK3>
+      </BLOCK1>
+    </FREEFORM>
+  </POLIDOC>
+</ROOT>
