@@ -486,7 +486,7 @@
                                     || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
                                     || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
                                     || $mainSubjectCodeSendFile == "SEC" || $mainSubjectCodeSendFile == "lab" || $mainSubjectCodeSendFile == "FedPress" 
-                                    || $mainSubjectCodeSendFile == "OECD" || $mainSubjectCodeSendFile == "CR"){
+                                    || $mainSubjectCodeSendFile == "OECD" || $mainSubjectCodeSendFile == "CR" || $mainSubjectCodeSendFile == "MAR"){
                                       $sourceType = "GenCon";
                                   }
 
@@ -507,18 +507,17 @@
                               $path = "TPCCR-Inventory/";
                               $zip = new ZipArchive;
                               $resFile = $zip->open($filename);
-                              $file_count = $zip->count();                            
-
+                              $file_count = $zip->count();  
+                              
+                        
                               if($resFile === TRUE) {
                                 $zip->extractTo($path);
-                                
                                 for($i = 0; $i < $file_count; $i++) {
                                     $file_name = $zip->getNameIndex($i);
+                                    $byteSize = $zip->statIndex($i)['size'];
                                     $fileExp = explode("/", $file_name);
                                     $fileZ = $fileExp[1];
-
-
-                                   // echo $file_name;
+    
                                    // echo "<br >";
 
                                     //if (preg_match('/\.xls$/i', $fileZ)) {
@@ -536,19 +535,15 @@
                                    
                                     $explodeFileExt = explode(".", $fileZ);
                                     $fileExt = $explodeFileExt[1];
-                                  
+                                    
+                                   
+
                                     if($fileExt == "xls"){
-
                                         $productTypeInv = "Inventory";
-                                        
                                         $fExp1 = explode("/", $file_name);
-                            
                                         $inputFileType111 = 'Xls';
-                                       
                                         $inputFileName111 = $fExp1[1];
-                                      
-
-                                                         
+                                        
                                         /**  Create a new Reader of the type defined in $inputFileType  **/
                                         $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($inputFileType111);
 
@@ -581,7 +576,7 @@
                                           || $mainSubjectCodeSendFile == "LAWREP" || $mainSubjectCodeSendFile == "LAWSOURCE" || $mainSubjectCodeSendFile == "LIT"
                                           || $mainSubjectCodeSendFile == "MONLEG" || $mainSubjectCodeSendFile == "PRINT" || $mainSubjectCodeSendFile == "PROOF" 
                                           || $mainSubjectCodeSendFile == "SEC" || $mainSubjectCodeSendFile == "lab" || $mainSubjectCodeSendFile == "FedPress" 
-                                          || $mainSubjectCodeSendFile == "OECD" || $mainSubjectCodeSendFile == "CR"){
+                                          || $mainSubjectCodeSendFile == "OECD" || $mainSubjectCodeSendFile == "CR" || $mainSubjectCodeSendFile == "MAR"){
                                             $processType = "New";
                                         }
                                      
@@ -595,85 +590,91 @@
                                               $cellF = $spreadsheet->getActiveSheet()->getCell("F$x")->getValue(); // Electronic data filename
                                               $cellG = $spreadsheet->getActiveSheet()->getCell("G$x")->getValue(); //  GRPAHICS
 
-                                              //echo $cellB.'<br />';
-                                              //echo $cellC.'<br />';
-                                              //echo $cellD.'<br />';
-                                              //echo $cellF.'<br >';
+                                              echo $cellB.'<br />';
+                                              echo $cellC.'<br />';
+                                              echo $cellD.'<br />';
+                                              echo $cellF.'<br >';
 
                                           
                                               if($cellF != ""){
                                                   //$querySql = "SELECT * FROM TPCCR_INVENTORY WHERE DocFilename='$cellF'";
                                                   //$queryResult2 = odbc_exec($conWMS, $querySql);
                                                   $insertInventorySendThisFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                  VALUES('$dataId1', '$cellF', '0', '$mainSubjectFile', '0', '0', '$cellA', 'null', 'null', '$cellB', '$cellC', '$cellD', '$cellE', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                                  VALUES('$dataId1', '$cellF', '0', '$mainSubjectFile', '0', '0', '$cellA', 'null', 'null', '$cellB', '$cellC', '$cellD', '$cellE', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
                                                   $resSendThisFile = ExecuteQuerySQLSERVER($insertInventorySendThisFile, $conWMS);
                                                 
   
                                               }     
 
                                         }   
-
                                      
-                                       // echo "files".$inputFileName111.'<br />';
+                                        echo "files".$inputFileName111.'<br />';
                                         $insertInventoryFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                        VALUES('$dataId1', '$inputFileName111', '0', '$mainSubjectFile', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '$created_at', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                        VALUES('$dataId1', '$inputFileName111', '0', '$mainSubjectFile', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
                                         $res1IF = ExecuteQuerySQLSERVER($insertInventoryFile, $conWMS);
-                                       
-                                    
+                                                                       
                                     }else{
-                                      //echo $file_name.'<br />';
-
                                          $productTypeInv = "Inventory";
                                         
-                                        //echo $file_name;
-
-                                       if($fileExt == "doc"){
+                                        if($fileExt == "doc"){
                                              //echo $file_name. '<br />';
-                                             //echo "<br >";
                                              $fExp2 = explode("/", $file_name);
                                              $inputFileDoc = $fExp2[1];
+
                                             
-                                             //echo $inputFileDoc.'<br >';
-
                                               $patternInv = '(\b(inventory)\b)';
+                                              
                                               if(preg_match_all($patternInv, $inputFileDoc)){
-                                                  echo $inputFileDoc;
-                                                  //echo "<br />";
 
-                                                  $insertInventoryDocFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                  VALUES('$dataId1', '$inputFileDoc', '0', '$mainSubjectFile', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '$created_at', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
-                                                  $resDocFule= ExecuteQuerySQLSERVER($insertInventoryDocFile, $conWMS);
+                                                   $insertInventoryDocFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                   VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                   $resDocFule= ExecuteQuerySQLSERVER($insertInventoryDocFile, $conWMS);
                                               }else{
-                                                  
-                                                 //echo $inputFileDoc;
-                                                  $insertInventoryDocFileNotInv = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                  VALUES('$dataId1', '$inputFileDoc', '0', '$mainSubjectFile', '0', '0', '0', 'null', 'null', 'null', 'null', 'null', '$created_at', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
-                                                  $resDocFile= ExecuteQuerySQLSERVER($insertInventoryDocFileNotInv, $conWMS);
+                                                
+                                                 $patternInvSpecs = '(\b(specs)\b)';
+                                                 if(preg_match_all($patternInvSpecs, $inputFileDoc)){
+                                                      echo $inputFileDoc;
+                                                      echo "<br />";
+                                                      $insertInventorySpecs = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                      VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '0', '0', 'specs', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                      $resDoc= ExecuteQuerySQLSERVER($insertInventorySpecs, $conWMS); 
+                                                  }else{  
+                                                    echo $inputFileDoc;
+                                                    echo "<br />";
+
+                                                      $insertInventoryDocFileNotInv = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                      VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '0', '0', '0', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                      $resDoc= ExecuteQuerySQLSERVER($insertInventoryDocFileNotInv, $conWMS); 
+                                                  }
+
+                                                 
+                                                    
                                               }
 
-                                               
-                                      }
+                                           
+                                        
+                                        }
 
-
-                                      if($fileExt != "doc"){
-                                          $fPdf = explode("/", $file_name);
-                                          $inputFilePDF = $fPdf[1];
-
-                                          if(!empty($inputFilePDF)){
-                                              echo "<br >";
-
-                                              echo $inputFilePDF.'<br >';
-                                              $insertInventoryDocPdf = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                              VALUES('$dataId1', '$inputFilePDF', '0', '$mainSubjectFile', '0', '0', 'null', 'null', 'null', 'null', 'null', 'null', '$created_at', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
-                                              $resDocPdf= ExecuteQuerySQLSERVER($insertInventoryDocPdf, $conWMS);
-    
-                                          }                    
-
-                                      }
-
-                                    
                                        
-                                                                                                          
+                                      if($sourceType != "CandyCane"){
+                                          if($fileExt != "doc"){
+                                              $fPdf = explode("/", $file_name);
+                                              $inputFilePDF = $fPdf[1];
+
+                                              if(!empty($inputFilePDF)){
+                                                  echo "<br >";
+
+                                                  echo $inputFilePDF.'<br >';
+                                                  $insertInventoryDocPdf = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                  VALUES('$dataId1', '$inputFilePDF', '$mainSubjectFile', '$mainSubjectFile', '0', '0', 'PROOFS', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                  $resDocPdf= ExecuteQuerySQLSERVER($insertInventoryDocPdf, $conWMS);
+        
+                                              }                    
+
+                                          }
+                                      }
+
+                                                        
                                                           
                                     }
                                     
