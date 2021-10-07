@@ -109,6 +109,7 @@ $Task=$_GET['Task'];
 			  <li class="active"><a href="ftpfile.php"><i class="fa fa-file"></i>FTP file</a></li>
 			  <!--<li class="active"><a href="downloading.php"><i class="fa fa-file"></i>Downloaded</a></li>-->
 			  <li class="active"><a href="inventory.php"><i class="fa fa-file"></i>Inventory</a> </li>
+			  <li class="active"><a href="graphic-inventory.php"><i class="fa fa-file"></i>Graphic Inventory</a> </li>
 			  <li class="active"><a href="forSegration.php"><i class="fa fa-file"></i>For Segration files </a></li>
 			  <li class="active"><a href="forPostingfile.php"><i class="fa fa-file"></i>For Posting files </a></li>
 			  

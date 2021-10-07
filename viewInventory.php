@@ -246,6 +246,14 @@ include ("sideBar.php");
                       $getEmailN = odbc_exec($conWMS, $getEmailNotif);
 
                       $dataN = odbc_fetch_array($getEmailN);
+
+                      //get the subcategory in tpccr inventory
+                      $getSub = "SELECT * FROM TPCCR_INVENTORY WHERE RefId='$getFilePath'";
+                      $getSubCat = odbc_exec($conWMS, $getSub);
+
+                      $dataSub = odbc_fetch_array($getSubCat);
+                     
+
                     ?>
                     <br />
                     <br />
@@ -256,6 +264,7 @@ include ("sideBar.php");
                     ?>
 					
                     <form id="InventoryFiles" name="InventoryFiles" action="updateInventory.php" method="post">
+                  
 
                    <?php if($dataExplode1[0] != "Ref"): ?>
                     <table width="30%" id='table' border='0'>
@@ -314,6 +323,9 @@ include ("sideBar.php");
                               <td class="bg bg-success">Number Of Pages</td>
                               <?php if($data['Source_Type'] == "CandyCane"): ?>
                                 <td class="bg bg-success">Document Type</td>
+                                <td id="subCat1" class="bg bg-success">Sub Category</td>
+                                <td id="subCat2" class="bg bg-success">Sub Category</td>
+                                <td id="subCat3" class="bg bg-success">Sub Category</td>
                               <?php else:?>
                                 <td class="bg bg-success">Product Type</td>
                               <?php endif; ?>
@@ -330,6 +342,7 @@ include ("sideBar.php");
                               <td class="bg bg-success">WithTIFF</td>
                               <td class="bg bg-success">WithImageEdit</td>
                               <td class="bg bg-success">WithDocSegregate</td>
+                              <td class="bg bg-success">Segregations</td>
                               <td class="bg bg-success">FileType</td>
                               <td class="bg bg-success">ByteSize</td>
                               <!--<td class="bg bg-success">Jobname</td>
@@ -353,27 +366,27 @@ include ("sideBar.php");
                                 <td><input type="text" readonly="readonly" placeholder="Number Of Pages" class="form-control" id="numberOfPages<?= odbc_result($getResults, "Id"); ?>" name="data[<?= odbc_result($getResults, "Id"); ?>][numberOfPages]" value="<?= odbc_result($getResults, "NumberOfPages"); ?>" ></td>
                                 <td>
                                     <?php if($data['Source_Type'] == "CandyCane"): ?>
-                                        <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
+                                        <select id="my-select" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][productType]">
                                             <option value="">-- SELECT PRODUCT TYPE --</option>
-                                            <option value="BUDGET DOCUMENTS" <?= (odbc_result($getResults, "ProductType") == "1") ? ' selected="selected"' : '';?>>BUDGET DOCUMENTS</option>
-                                            <option value="CANADA BORDER MEMORANDA" <?= (odbc_result($getResults, "ProductType") ==  "2") ? ' selected="selected"' : '';?>>CANADA BORDER MEMORANDA</option>
-                                            <option value="CANADIAN TAX HIGHLIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "3") ? ' selected="selected"' : '';?>>CANADIAN TAX HIGHLIGHTS</option>
-                                            <option value="COMMENTARY DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "4") ? ' selected="selected"' : '';?>>COMMENTARY DOCUMENTS</option>
-                                            <option value="CORPORATE TAX DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "5") ? ' selected="selected"' : '';?>>CORPORATE TAX DOCUMENTS</option>
-                                            <option value="CRA DOCUMENTS / POLICY DOCUMENTS" <?= (odbc_result($getResults, "ProductType") ==  "6") ? ' selected="selected"' : '';?>>CRA DOCUMENTS / POLICY DOCUMENTS</option>
-                                            <option value="FEDERAL DEPARTMENT OF FINANCE" <?= (odbc_result($getResults, "ProductType") ==  "7") ? ' selected="selected"' : '';?>>FEDERAL DEPARTMENT OF FINANCE</option>
-                                            <option value="GST CASE NOTES" <?= (odbc_result($getResults, "ProductType") ==  "8") ? ' selected="selected"' : '';?>>GST CASE NOTES</option>
-                                            <option value="GST TIMES" <?= (odbc_result($getResults, "ProductType") ==  "9") ? ' selected="selected"' : '';?>>GST TIMES</option>
-                                            <option value="NEWSLETTERS" <?= (odbc_result($getResults, "ProductType") ==  "10") ? ' selected="selected"' : '';?>>NEWSLETTERS</option>
-                                            <option value="POUNDS TAX CASE NOTES" <?= (odbc_result($getResults, "ProductType") ==  "11") ? ' selected="selected"' : '';?>>POUNDS TAX CASE NOTES</option> 
-                                            <option value="TAX HYPERION" <?= (odbc_result($getResults, "ProductType") ==  "12") ? ' selected="selected"' : '';?>>TAX HYPERION</option>
-                                            <option value="TAX TIMES" <?= (odbc_result($getResults, "ProductType") ==  "13") ? ' selected="selected"' : '';?>>TAX TIMES</option>
-                                            <option value="TEI (Tax Executives Institute, Inc.) COMMENTARY" <?= (odbc_result($getResults, "ProductType") ==  "14") ? ' selected="selected"' : '';?>>TEI (Tax Executives Institute, Inc.) COMMENTARY</option> 
-                                            <option value="PROVINCIAL DOCUMENTS"  <?= (odbc_result($getResults, "ProductType") ==  "15") ? ' selected="selected"' : '';?>>PROVINCIAL DOCUMENTS</option>
-                                            <option value="TREATIES/CONVENTIONS" <?= (odbc_result($getResults, "ProductType") ==  "16") ? ' selected="selected"' : '';?>>TREATIES/CONVENTIONS</option>
-                                            <option value="REMISSIONS/REMISSION ORDERS" <?= (odbc_result($getResults, "ProductType") ==  "17") ? ' selected="selected"' : '';?>>REMISSIONS/REMISSION ORDERS</option> 
-                                            <option value="PRIVATE LETTER RULINGS" <?= (odbc_result($getResults, "ProductType") ==  "18") ? ' selected="selected"' : '';?>>PRIVATE LETTER RULINGS</option>
-                                            <option value="PRACTICAL INSIGHTS" <?= (odbc_result($getResults, "ProductType") ==  "19") ? ' selected="selected"' : '';?>>PRACTICAL INSIGHTS</option>
+                                            <option value="1" <?= (odbc_result($getResults, "ProductType") == "1") ? ' selected="selected"' : '';?>>BUDGET DOCUMENTS</option>
+                                            <option value="2" <?= (odbc_result($getResults, "ProductType") ==  "2") ? ' selected="selected"' : '';?>>CANADA BORDER MEMORANDA</option>
+                                            <option value="3" <?= (odbc_result($getResults, "ProductType") ==  "3") ? ' selected="selected"' : '';?>>CANADIAN TAX HIGHLIGHTS</option>
+                                            <option value="4" <?= (odbc_result($getResults, "ProductType") ==  "4") ? ' selected="selected"' : '';?>>COMMENTARY DOCUMENTS</option>
+                                            <option value="5" <?= (odbc_result($getResults, "ProductType") ==  "5") ? ' selected="selected"' : '';?>>CORPORATE TAX DOCUMENTS</option>
+                                            <option value="6" <?= (odbc_result($getResults, "ProductType") ==  "6") ? ' selected="selected"' : '';?>>CRA DOCUMENTS / POLICY DOCUMENTS</option>
+                                            <option value="7" <?= (odbc_result($getResults, "ProductType") ==  "7") ? ' selected="selected"' : '';?>>FEDERAL DEPARTMENT OF FINANCE</option>
+                                            <option value="8" <?= (odbc_result($getResults, "ProductType") ==  "8") ? ' selected="selected"' : '';?>>GST CASE NOTES</option>
+                                            <option value="9" <?= (odbc_result($getResults, "ProductType") ==  "9") ? ' selected="selected"' : '';?>>GST TIMES</option>
+                                            <option value="10" <?= (odbc_result($getResults, "ProductType") ==  "10") ? ' selected="selected"' : '';?>>NEWSLETTERS</option>
+                                            <option value="11" <?= (odbc_result($getResults, "ProductType") ==  "11") ? ' selected="selected"' : '';?>>POUNDS TAX CASE NOTES</option> 
+                                            <option value="12" <?= (odbc_result($getResults, "ProductType") ==  "12") ? ' selected="selected"' : '';?>>TAX HYPERION</option>
+                                            <option value="13" <?= (odbc_result($getResults, "ProductType") ==  "13") ? ' selected="selected"' : '';?>>TAX TIMES</option>
+                                            <option value="14" <?= (odbc_result($getResults, "ProductType") ==  "14") ? ' selected="selected"' : '';?>>TEI (Tax Executives Institute, Inc.) COMMENTARY</option> 
+                                            <option value="15"  <?= (odbc_result($getResults, "ProductType") ==  "15") ? ' selected="selected"' : '';?>>PROVINCIAL DOCUMENTS</option>
+                                            <option value="16" <?= (odbc_result($getResults, "ProductType") ==  "16") ? ' selected="selected"' : '';?>>TREATIES/CONVENTIONS</option>
+                                            <option value="17" <?= (odbc_result($getResults, "ProductType") ==  "17") ? ' selected="selected"' : '';?>>REMISSIONS/REMISSION ORDERS</option> 
+                                            <option value="18" <?= (odbc_result($getResults, "ProductType") ==  "18") ? ' selected="selected"' : '';?>>PRIVATE LETTER RULINGS</option>
+                                            <option value="19" <?= (odbc_result($getResults, "ProductType") ==  "19") ? ' selected="selected"' : '';?>>PRACTICAL INSIGHTS</option>
                                         </select>
 
                                     <?php elseif($data['Source_Type'] == "GenCon"): ?>
@@ -442,6 +455,59 @@ include ("sideBar.php");
                                     <?php endif; ?>
                                     
                                 </td>
+                                <?php if($data['Source_Type'] == "CandyCane"): ?>
+                               
+                                <td id="innerSubCat1">
+                                      <select  class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][subCat1]">
+                                          <option value="0">--Please Select--</option>
+                                          <option value="Application Policies" <?= (odbc_result($getResults, "sub_category") ==  "Application Policies") ? ' selected="selected"' : '';?>>Application Policies</option>
+                                          <option value="Charities Policy Statements" <?= (odbc_result($getResults, "sub_category") ==  "Charities Policy Statements") ? ' selected="selected"' : '';?>>Charities Policy Statements </option>
+                                          <option value="Fact Sheets" <?= (odbc_result($getResults, "sub_category") ==  "Fact Sheets") ? ' selected="selected"' : '';?>>Fact Sheets </option>
+                                          <option value="GST/HST Policy Statements" <?= (odbc_result($getResults, "sub_category") ==  "GST/HST Policy Statements") ? ' selected="selected"' : '';?>>GST/HST Policy Statements </option>
+                                          <option value="GST/HST Memoranda (New Series)" <?= (odbc_result($getResults, "sub_category") ==  "GST/HST Memoranda (New Series)") ? ' selected="selected"' : '';?>>GST/HST Memoranda (New Series) </option>
+                                          <option value="GST/HST Notices" <?= (odbc_result($getResults, "sub_category") ==  "GST/HST Notices") ? ' selected="selected"' : '';?>>GST/HST Notices </option>
+                                          <option value="GST/HST Technical Information Bulletins" <?= (odbc_result($getResults, "sub_category") ==  "GST/HST Technical Information Bulletins") ? ' selected="selected"' : '';?>>GST/HST Technical Information Bulletins </option>
+                                          <option value="GST/HST News" <?= (odbc_result($getResults, "sub_category") ==  "GST/HST News") ? ' selected="selected"' : '';?>>GST/HST News </option>
+                                          <option value="GST/HST Views (Headquarter Letters)" <?= (odbc_result($getResults, "sub_category") ==  "GST/HST Views (Headquarter Letters)") ? ' selected="selected"' : '';?>>GST/HST Views (Headquarter Letters)</option>
+                                          <option value="Guides and Pamphlets" <?= (odbc_result($getResults, "sub_category") ==  "Guides and Pamphlets") ? ' selected="selected"' : '';?>>Guides and Pamphlets </option>
+                                          <option value="Information Circulars:" <?= (odbc_result($getResults, "sub_category") ==  "Information Circulars:") ? ' selected="selected"' : '';?>>Information Circulars: </option>
+                                          <option value="Interpretation Bulletins" <?= (odbc_result($getResults, "sub_category") ==  "Interpretation Bulletins") ? ' selected="selected"' : '';?>>Interpretation Bulletins </option>
+                                          <option value="News Releases/Communiqué De Presse" <?= (odbc_result($getResults, "sub_category") ==  "News Releases/Communiqué De Presse") ? ' selected="selected"' : '';?>>News Releases/Communiqué De Presse </option>
+                                          <option value="Toronto Centre Canada Revenue Agency & Professionals Group Newsletter" <?= (odbc_result($getResults, "sub_category") ==  "Toronto Centre Canada Revenue Agency & Professionals Group Newsletter") ? ' selected="selected"' : '';?>>Toronto Centre Canada Revenue Agency & Professionals Group Newsletter </option>
+                                          <option value="Notice / Avis / Newsletter / Nouvelles" <?= (odbc_result($getResults, "sub_category") ==  "Notice / Avis / Newsletter / Nouvelles") ? ' selected="selected"' : '';?>>Notice / Avis / Newsletter / Nouvelles </option>
+                                          <option value="Tax Alert" <?= (odbc_result($getResults, "sub_category") ==  "Tax Alert") ? ' selected="selected"' : '';?> >Tax Alert </option>
+                                          <option value="Technical News" <?= (odbc_result($getResults, "sub_category") ==  "Technical News") ? ' selected="selected"' : '';?>>Technical News</option>
+                                      </select>
+                                </td>
+                               
+                                <td id="innerSubCat2">
+                                      <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][subCat2]">
+                                          <option value="0">--Please Select--</option>
+                                          <option value="News Releases" <?= (odbc_result($getResults, "sub_category") ==  "News Releases") ? ' selected="selected"' : '';?>>News Releases</option>
+                                          <option value="Treaties" <?= (odbc_result($getResults, "sub_category") ==  "Treaties") ? ' selected="selected"' : '';?>>Treaties</option>
+                                      </select>
+                                </td>
+                                <td id="innerSubCat3">
+                                      <select class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][subCat3]">
+                                          <option value="0">--Please Select--</option>
+                                          <option value="i.Alberta" <?= (odbc_result($getResults, "sub_category") ==  "i.Alberta") ? ' selected="selected"' : '';?>>i. Alberta</option>
+                                          <option value="ii.British Columbia" <?= (odbc_result($getResults, "sub_category") ==  "ii.British Columbia") ? ' selected="selected"' : '';?>>ii.British Columbia</option>
+                                          <option value="iii.Manitoba" <?= (odbc_result($getResults, "sub_category") ==  "iii.Manitoba") ? ' selected="selected"' : '';?>>iii.Manitoba</option>
+                                          <option value="iv.New Brunswick" <?= (odbc_result($getResults, "sub_category") ==  "iv.New Brunswick") ? ' selected="selected"' : '';?>>iv.New Brunswick</option>
+                                          <option value="v.Newfoundland and Labrador" <?= (odbc_result($getResults, "sub_category") ==  "v.Newfoundland and Labrador") ? ' selected="selected"' : '';?>>v.Newfoundland and Labrador</option>
+                                          <option value="vi.Northwest Territories" <?= (odbc_result($getResults, "sub_category") ==  "vi.Northwest Territories") ? ' selected="selected"' : '';?>>vi. Northwest Territories </option>
+                                          <option value="vii.Nova Scotia" <?= (odbc_result($getResults, "sub_category") ==  "vii.Nova Scotia") ? ' selected="selected"' : '';?>>vii. Nova Scotia </option>
+                                          <option value="viii.Nunavut" <?= (odbc_result($getResults, "sub_category") ==  "viii.Nunavut") ? ' selected="selected"' : '';?>>viii.Nunavut</option>
+                                          <option value="ix.Ontario" <?= (odbc_result($getResults, "sub_category") ==  "ix.Ontario") ? ' selected="selected"' : '';?>>ix.Ontario</option>
+                                          <option value="x.P.E.I." <?= (odbc_result($getResults, "sub_category") ==  "x.P.E.I.") ? ' selected="selected"' : '';?>>x.P.E.I.</option>
+                                          <option value="xi.Quebec-a) Guides" <?= (odbc_result($getResults, "sub_category") ==  "xi.Quebec-a) Guides") ? ' selected="selected"' : '';?>>xi.Quebec-a) Guides</option>
+                                          <option value="xi.Quebec-b) Interpretation Bulletins/Bulletins d’interprétation: Abbrev" <?= (odbc_result($getResults, "sub_category") ==  "xi.Quebec-b) Interpretation Bulletins/Bulletins d’interprétation: Abbrev") ? ' selected="selected"' : '';?>>xi.Quebec-b) Interpretation Bulletins/Bulletins d’interprétation: Abbrev</option>
+                                          <option value="xi.Quebec-c) Lettres d’interprétation" <?= (odbc_result($getResults, "sub_category") ==  "xi.Quebec-c) Lettres d’interprétation") ? ' selected="selected"' : '';?>>xi.Quebec-c) Lettres d’interprétation</option>
+                                          <option value="xii.Saskatchewan" <?= (odbc_result($getResults, "sub_category") ==  "xii.Saskatchewan") ? ' selected="selected"' : '';?>>xii.Saskatchewan</option>
+                                          <option value="xiii.Yukon Territory" <?= (odbc_result($getResults, "sub_category") ==  "xiii.Yukon Territory") ? ' selected="selected"' : '';?>>xiii.Yukon Territory</option>
+                                      </select>
+                                </td>
+                                <?php endif; ?>
                                 <?php if($data['Source_Type'] != "GenCon" && $data['Source_Type'] != "Proofs" && $data['Source_Type'] != "FTP"): ?>
                                   <td><textarea placeholder="INIT ID"class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][initId]"><?= odbc_result($getResults, "INITID"); ?></textarea></td>
                                   <td><textarea placeholder="TI Content"class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][tiContent]"><?= odbc_result($getResults, "TI_content"); ?></textarea></td>
@@ -477,10 +543,14 @@ include ("sideBar.php");
                                         <option value="No" <?= (odbc_result($getResults, "WithDocSegregate") ==  "No") ? ' selected="selected"' : '';?>>No</option>
                                     </select>
                                 </td>
+                                <td>
+                                    <input type="radio" name="segregateFile" value="auto-segregation"  /> auto-segregation
+                                    <input type="radio" name="segregateFile" value="manual-segregation"  /> manual-segregation
+                                </td>
                                 <td><textarea placeholder="FileType" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][fileType]"><?= odbc_result($getResults, "FileType"); ?></textarea></td>
-                                <td><textarea disabled placeholder="ByteSize" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][byteSize]"><?= odbc_result($getResults, "ByteSize"); ?></textarea></td>
+                                <td><textarea readonly="readonly" placeholder="ByteSize" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][byteSize]"><?= odbc_result($getResults, "ByteSize"); ?></textarea></td>
                                 <td><textarea disabled><?= odbc_result($getResults, "DateRegistered")?></textarea></td>
-                                <td><textarea></textarea></td>
+                                <td class="bg-danger"><textarea disabled><?= odbc_result($getResults, "due_date")?></textarea></td>
                                 <!-- <td><textarea placeholder="Jobname" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][jobName]"><?= odbc_result($getResults, "Jobname"); ?></textarea></td>
                                 <td><textarea placeholder="JobId" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][jobId]"><?= odbc_result($getResults, "JobId"); ?></textarea></td>
                                 <td><textarea placeholder="PriorityNo" class="form-control" name="data[<?= odbc_result($getResults, "Id"); ?>][priorityNo]"><?= odbc_result($getResults, "PriorityNo"); ?></textarea></td>
@@ -636,6 +706,68 @@ include ("sideBar.php");
             console.log(tt);
         };
     </script>
+    <script>     
+      <?php if($dataSub['sub_category'] != "" && $dataSub['ProductType'] == 6): ?>
+           $('#subCat1').show();
+           $("#innerSubCat1").show();
+      <?php else: ?>
+           $("#innerSubCat1").hide();
+           $('#subCat1').hide();
+      <?php endif;?>
+     
+      <?php if($dataSub['sub_category'] != "" && $dataSub['ProductType'] == 7): ?>
+           $('#subCat2').show();
+           $("#innerSubCat2").show();
+      <?php else: ?>
+           $("#innerSubCat2").hide();
+           $('#subCat2').hide();
+      <?php endif;?>
+
+
+      <?php if($dataSub['sub_category'] != "" && $dataSub['ProductType'] == 15): ?>
+           $('#subCat3').show();
+           $("#innerSubCat3").show();
+      <?php else: ?>
+           $("#innerSubCat3").hide();
+           $('#subCat3').hide();
+      <?php endif;?>
+
+      const mySelect = document.getElementById("my-select");
+      mySelect.addEventListener('change', function(){
+          if(this.value == "6"){
+            $('#subCat1').show();
+            $("#innerSubCat1").show();
+
+            $('#subCat2').hide();
+            $("#innerSubCat2").hide();
+          }else if(this.value == "7"){
+            $('#subCat2').show();
+            $("#innerSubCat2").show();
+
+            $('#subCat1').hide();
+            $("#innerSubCat1").hide();
+          }else if(this.value == "15"){
+            $('#subCat1').hide();
+            $("#innerSubCat1").hide();
+            $('#subCat2').hide();
+            $("#innerSubCat2").hide();
+
+
+            $('#subCat3').show();
+            $("#innerSubCat3").show();
+          }else{
+            $('#subCat1').hide();
+            $('#subCat2').hide();
+            $('#subCat3').hide();
+
+            $("#innerSubCat1").hide();
+            $("#innerSubCat2").hide();
+            $("#innerSubCat3").hide();
+
+          }
+      });
+
+</script>
 
 </body>
 </html>

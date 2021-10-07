@@ -157,6 +157,13 @@
         //fetch email from @sendthisfile
         $emailDataSendThisFile = imap_search($connection, 'FLAGGED FROM "@sendthisfile.com" ');
 
+        function count_pages($pdfname) {
+          $pdftext = file_get_contents($pdfname);
+          $num = preg_match_all("/\/Page\W/", $pdftext, $dummy);
+          return $num;
+  
+        }
+
     ?>  
 
     <!-- Main content -->
@@ -247,8 +254,18 @@
                             $pdf->Ln();
                             //$pdf->Cell(40,10,''.$messageBody.' ');
                             $pdf->Multicell(0, 5,".$partialMessage.");
-                          
+
+                            $getNumDays = '(\b([\^…1-9] days)\b)';
                             
+                            preg_match($getNumDays, $partialMessage, $getTat);
+
+                            $tatExp = explode(" ", $getTat[0]);
+                           
+                            $dueDate = date('Y-m-d', strtotime("+$tatExp[0] weekday"));    
+
+                            $GLOBALS['due_date'] = $dueDate;
+                            $GLOBALS['tat'] = $tatExp[0];
+      
                             //make directory
                             mkdir("TPCCR-Inventory/Ref-".$mainSubject."/");
 
@@ -305,8 +322,8 @@
 
                                 $refMainId = "Ref-".$mainSubject;
 
-                                $insertSql = "INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, Delivery_date, No_of_files, Source_Type, Source_Path, status, created_at, updated_at)
-                                VALUES('$refMainId', '$refMainId', '$refMainId',  '1', '$created_at', '0', '$sourceType', '0', 'null', '$created_at', '$updated_at')";
+                                $insertSql = "INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, due_date, Delivery_date, No_of_files, Source_Type, Source_Path, status, created_at, updated_at)
+                                VALUES('$refMainId', '$refMainId', '$refMainId', '$tatExp[0]', '$dueDate', '$created_at', '0', '$sourceType', '0', 'null', '$created_at', '$updated_at')";
                                 $res = ExecuteQuerySQLSERVER($insertSql,$conWMS);
 
                                 //$getIds = "SELECT Id FROM tbl_tpccr_outlook_files WHERE Ref='$mainSubject'";
@@ -321,8 +338,8 @@
                                 //VALUES('$dataId', '$fileNamePDF', '0', '$mainSubject', '1', '1', '0', '0', '0', '0', '$created_at', '1', '1', '1', '1', '1', '1', '1', '1', '$shipmentNamePlusRef',  '$sourceType' 'tat','1', '1', '1', '1', '1', '$created_at')";
                                 //$resIn = ExecuteQuerySQLSERVER($insertData, $conWMS);
 
-                                $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                VALUES('$dataIdOrg', '$fileNamePDF', '0', '$refMainId', '0', '0', 'null', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', '$sourceType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
+                                $insertInventory = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                VALUES('$dataIdOrg', '$fileNamePDF', '0', '$refMainId', '$dueDate' ,'0', '0', 'null', 'null', 'null', '0', '0', '0', '$created_at', 'NULL', 'NULL', 'NULL', '$sourceType',  '0', '0', 'Yes', 'NULL', '0',  '0', '0', '0', '$created_at')";
                                 $res1 = ExecuteQuerySQLSERVER($insertInventory, $conWMS);
 
 
@@ -390,24 +407,30 @@
                           <td class="bg bg-info">  <?= $overview[0]->subject; ?> </td>
                           <td><?= nl2br($partialMessage); ?></td>
                           <td class="bg bg-info"><?= $emailAttachments; ?></td>
-                          <td><?= $date; ?></td>
+                          <td><?= $date; ?>
+                        
+                        </td>
                           
                       </tr>
+
+            
                       
                       <?php endforeach; ?>
                   </tbody>
               </table>
               <?php endif; ?>
             </div>
+         
             <!-- fetch the email from sendthisfile -->
             <?php if(!empty($emailDataSendThisFile)): ?>
+             
               <?php foreach($emailDataSendThisFile as $emailDataIdent): ?>
                     <?php
                     
                       $overview1 = imap_fetch_overview($connection, $emailDataIdent, 0);
                   
                       $message1 = imap_fetchbody($connection, $emailDataIdent, "1");
-
+                      
                       $messageExcerpt1 = substr($message1, 0, 2000);
                       $partialMessage1 = trim(quoted_printable_decode($messageExcerpt1)); 
                       $date = date("d F, Y", strtotime($overview1[0]->date));
@@ -420,6 +443,8 @@
 
                       $created_at = date('Y-m-d H:i:s');
                       $updated_at = date('Y-m-d H:i:s');
+
+  
                     
                     ?>
                      <?php
@@ -460,6 +485,16 @@
                               $mainSubjectSplitSF = explode("-", $mainSubjectFile);
                               $mainSubjectCodeSendFile = $mainSubjectSplitSF[0];
 
+
+                                
+                              // get the subject name from email notificatino and compare to the filename of sendthisfile
+                           
+                              if($mainSubject){
+                                  $invDate = $GLOBALS['due_date'];
+                                  $tat = $GLOBALS['tat'];    
+                                                                   
+                              }
+
                               if(odbc_num_rows($queryResult1) > 0){
                                 //
                               }else{
@@ -492,8 +527,8 @@
 
                                 //$shipmentNamePlusRef1 = $mainSubjectCode . $created_at;
 
-                                $insertSql1 ="INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, Delivery_Date, No_of_files, Source_Type, Source_Path, created_at, updated_at)
-                                VALUES('$mainSubjectFile', '$mainSubjectFile', '$mainSubjectFile', '1', '$created_at', '1', '$sourceType', '0', '$created_at', '$updated_at')";
+                                $insertSql1 ="INSERT INTO tbl_tpccr_outlook_files(Ref, Bundle_No, Subject1, TAT, due_date, Delivery_Date, No_of_files, Source_Type, Source_Path, created_at, updated_at)
+                                VALUES('$mainSubjectFile', '$mainSubjectFile', '$mainSubjectFile', '$tat', '$invDate', '$created_at', '1', '$sourceType', '0', '$created_at', '$updated_at')";
                                 $res = ExecuteQuerySQLSERVER($insertSql1, $conWMS);  
 
 
@@ -508,8 +543,7 @@
                               $zip = new ZipArchive;
                               $resFile = $zip->open($filename);
                               $file_count = $zip->count();  
-                              
-                        
+                                       
                               if($resFile === TRUE) {
                                 $zip->extractTo($path);
                                 for($i = 0; $i < $file_count; $i++) {
@@ -517,7 +551,8 @@
                                     $byteSize = $zip->statIndex($i)['size'];
                                     $fileExp = explode("/", $file_name);
                                     $fileZ = $fileExp[1];
-    
+
+                                              
                                    // echo "<br >";
 
                                     //if (preg_match('/\.xls$/i', $fileZ)) {
@@ -536,13 +571,13 @@
                                     $explodeFileExt = explode(".", $fileZ);
                                     $fileExt = $explodeFileExt[1];
                                     
-                                   
-
+                               
                                     if($fileExt == "xls"){
                                         $productTypeInv = "Inventory";
                                         $fExp1 = explode("/", $file_name);
                                         $inputFileType111 = 'Xls';
-                                        $inputFileName111 = $fExp1[1];
+
+                                        $inputFileName111 = "$fExp1[1]";
                                         
                                         /**  Create a new Reader of the type defined in $inputFileType  **/
                                         $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($inputFileType111);
@@ -553,7 +588,7 @@
                                         $worksheet = $spreadsheet->getActiveSheet();
 
                                         $highestRow = $worksheet->getHighestRow(); // e.g. 10
-
+                                    
                                         //candy cane
                                         if($mainSubjectCodeSendFile == "AB" || $mainSubjectCodeSendFile == "AW" || $mainSubjectCodeSendFile == "BN" || $mainSubjectCodeSendFile == "CA" || $mainSubjectCodeSendFile == "CP" || $mainSubjectCodeSendFile == "CV" || $mainSubjectCodeSendFile == "DK" || $mainSubjectCodeSendFile == "HB" || $mainSubjectCodeSendFile == "JC" || $mainSubjectCodeSendFile == "MB" || $mainSubjectCodeSendFile == "SL" || $mainSubjectCodeSendFile == "SM" || $mainSubjectCodeSendFile == "RN" || $mainSubjectCodeSendFile == "LH"){
                                           $processType = "New";
@@ -589,18 +624,22 @@
                                               $cellE = $spreadsheet->getActiveSheet()->getCell("E$x")->getValue(); // <date>
                                               $cellF = $spreadsheet->getActiveSheet()->getCell("F$x")->getValue(); // Electronic data filename
                                               $cellG = $spreadsheet->getActiveSheet()->getCell("G$x")->getValue(); //  GRPAHICS
+                                              $cellI = $spreadsheet->getActiveSheet()->getCell("I$x")->getValue(); // PLACEMENT OF NEW  CONTENT INSTRUCTIONS
 
                                               echo $cellB.'<br />';
                                               echo $cellC.'<br />';
                                               echo $cellD.'<br />';
                                               echo $cellF.'<br >';
+                                              echo $cellI.'<br />';
 
-                                          
+                                              $cellFExp = explode(".", $cellF);
+
                                               if($cellF != ""){
+                                                 
                                                   //$querySql = "SELECT * FROM TPCCR_INVENTORY WHERE DocFilename='$cellF'";
                                                   //$queryResult2 = odbc_exec($conWMS, $querySql);
-                                                  $insertInventorySendThisFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                  VALUES('$dataId1', '$cellF', '0', '$mainSubjectFile', '0', '0', '$cellA', 'null', 'null', '$cellB', '$cellC', '$cellD', '$cellE', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                  $insertInventorySendThisFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                  VALUES('$dataId1', '$cellF', '0', '$mainSubjectFile', '$invDate', '0', '0', '$cellA', 'null', 'null', '$cellB', '$cellC', '$cellD', '$cellE', '$cellI', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$cellFExp[1]', '$byteSize',  '0', '0', '0', '$created_at')";
                                                   $resSendThisFile = ExecuteQuerySQLSERVER($insertInventorySendThisFile, $conWMS);
                                                 
   
@@ -608,13 +647,39 @@
 
                                         }   
                                      
-                                        echo "files".$inputFileName111.'<br />';
-                                        $insertInventoryFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                        VALUES('$dataId1', '$inputFileName111', '0', '$mainSubjectFile', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                        echo "files - ".$inputFileName111.'<br />';
+                                        $insertInventoryFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                        VALUES('$dataId1', '$inputFileName111', '0', '$mainSubjectFile', '$invDate', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileEx', '$byteSize',  '0', '0', '0', '$created_at')";
                                         $res1IF = ExecuteQuerySQLSERVER($insertInventoryFile, $conWMS);
                                                                        
                                     }else{
-                                         $productTypeInv = "Inventory";
+
+                                      if($sourceType == "CandyCane"){
+                                          if($fileExt == "pdf"){
+                                              $filePDF = explode("/", $file_name);
+                                      
+                                              $pathFolder = "TPCCR-Inventory/$mainSubjectFile/$filePDF[1]";
+                                              $pdfname = $pathFolder;
+                                              $totalPagesPDF = count_pages($pdfname);
+                                              $GLOBALS['tot_pages'] = $totalPagesPDF;
+                                              $totPages = $GLOBALS['tot_pages'];
+
+                                              $getDocFilename = "SELECT * FROM TPCCR_INVENTORY WHERE DocFilename='$filePDF[1]'";
+                                              $getFileDoc = odbc_exec($conWMS, $getDocFilename);
+
+                                              $dataPDF = odbc_fetch_array($getFileDoc);
+
+                                        
+                                              $dataDocF = $dataPDF['DocFilename'];
+
+                                              $updatePDF = "UPDATE TPCCR_INVENTORY set Pages='1-$totalPagesPDF', NumberOfPages='$totalPagesPDF' WHERE DocFilename='$dataDocF' ";
+                                              $upInv = ExecuteQuerySQLSERVER($updatePDF, $conWMS);
+                                          }
+                                        }
+                                   
+
+
+                                        $productTypeInv = "Inventory";
                                         
                                         if($fileExt == "doc"){
                                              //echo $file_name. '<br />';
@@ -626,24 +691,24 @@
                                               
                                               if(preg_match_all($patternInv, $inputFileDoc)){
 
-                                                   $insertInventoryDocFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                   VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                   $insertInventoryDocFile = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                   VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '$invDate', '0', '0', '$productTypeInv', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
                                                    $resDocFule= ExecuteQuerySQLSERVER($insertInventoryDocFile, $conWMS);
                                               }else{
                                                 
                                                  $patternInvSpecs = '(\b(specs)\b)';
                                                  if(preg_match_all($patternInvSpecs, $inputFileDoc)){
-                                                      echo $inputFileDoc;
+                                                      //echo $inputFileDoc;
                                                       echo "<br />";
-                                                      $insertInventorySpecs = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                      VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '0', '0', 'specs', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                      $insertInventorySpecs = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                      VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '$invDate', '0', '0', 'specs', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
                                                       $resDoc= ExecuteQuerySQLSERVER($insertInventorySpecs, $conWMS); 
                                                   }else{  
-                                                    echo $inputFileDoc;
+                                                   // echo $inputFileDoc;
                                                     echo "<br />";
 
-                                                      $insertInventoryDocFileNotInv = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                      VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '0', '0', '0', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                      $insertInventoryDocFileNotInv = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                      VALUES('$dataId1', '$inputFileDoc', '$mainSubjectFile', '$mainSubjectFile', '$invDate', '0', '0', '0', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
                                                       $resDoc= ExecuteQuerySQLSERVER($insertInventoryDocFileNotInv, $conWMS); 
                                                   }
 
@@ -655,6 +720,7 @@
                                         
                                         }
 
+                                    
                                        
                                       if($sourceType != "CandyCane"){
                                           if($fileExt != "doc"){
@@ -662,11 +728,11 @@
                                               $inputFilePDF = $fPdf[1];
 
                                               if(!empty($inputFilePDF)){
-                                                  echo "<br >";
-
-                                                  echo $inputFilePDF.'<br >';
-                                                  $insertInventoryDocPdf = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
-                                                  VALUES('$dataId1', '$inputFilePDF', '$mainSubjectFile', '$mainSubjectFile', '0', '0', 'PROOFS', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
+                                                  //echo "<br >";
+                                                  //echo "PDF ni candy cane";
+                                                  //echo $inputFilePDF.'<br >';
+                                                  $insertInventoryDocPdf = "INSERT INTO TPCCR_INVENTORY(RefId, DocFilename, Data, flag, due_date, Pages, NumberOfPages, ProductType, remarks, status, INITID, TI_content, N_content, Date, FinalFilename, GraphicsFilename, InlineCode, ProcessType, WithTIFF, WithImageEdit, WithDocSegregate,  FileType, ByteSize, Jobname, JobId, PriorityNo, DateRegistered)
+                                                  VALUES('$dataId1', '$inputFilePDF', '$mainSubjectFile', '$mainSubjectFile', '$invDate',  '0', '0', 'PROOFS', 'null', 'null', 'null', 'null', 'null', '0', 'NULL', 'NULL', 'NULL', '$processType',  '0', '0', 'Yes', '$fileExt', '$byteSize',  '0', '0', '0', '$created_at')";
                                                   $resDocPdf= ExecuteQuerySQLSERVER($insertInventoryDocPdf, $conWMS);
         
                                               }                    
